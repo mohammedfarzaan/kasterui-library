@@ -21,9 +21,9 @@ const Button3 = () => {
                 />
               </svg>
             </div>
-            <div className={styles['button-texxt']}>
-              <span className={styles.spann}>Powered By</span>
-              <span className={styles.spann}>GPT-Omni</span>
+            <div className={styles['button-text']}>
+              <span>Powered By</span>
+              <span>GPT-Omni</span>
             </div>
           </button>
         </div>
