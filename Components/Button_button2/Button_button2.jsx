@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './Button_button2.module.css'
 const Button_button2 = () => {
   return (

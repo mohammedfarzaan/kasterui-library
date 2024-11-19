@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './Button_button3.module.css'
 
 

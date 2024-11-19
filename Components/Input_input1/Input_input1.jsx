@@ -1,13 +1,12 @@
-import React from 'react'
+import styles from './Input_input1.module.css'
 
 const Input_input1 = () => {
     return (
         <div>
             <>
-  /* From Uiverse.io by 0xnihilism */
-                <div className="input__container">
-                    <div className="shadow__input" />
-                    <button className="input__button__shadow">
+                <div className={styles.input__container}>
+                    <div className={styles.shadow__input} />
+                    <button className={styles.input__button__shadow}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
@@ -22,7 +21,7 @@ const Input_input1 = () => {
                     <input
                         type="text"
                         name="username"
-                        className="input__search"
+                        className={styles.input__search}
                         placeholder="Enter username"
                     />
                 </div>

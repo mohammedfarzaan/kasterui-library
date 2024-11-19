@@ -1,11 +1,11 @@
-import React from 'react'
+import styles from './Input_input2.module.css'
+
 
 const Input_input2 = () => {
   return (
     <div>
       <>
-  /* From Uiverse.io by VijinV */
-        <div className="inputbox">
+        <div className={styles.inputbox}>
           <input required="required" type="text" />
           <span>Username</span>
           <i />
