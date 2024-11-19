@@ -6,7 +6,6 @@ const Button3 = () => {
   return (
     <div>
       <>
-  /* From Uiverse.io by 0xnihilism */
         <div className={styles['button-container']}>
           <button className={`${styles['brutalist-button']} ${styles.openai} ${styles['button-1']}`}>
             <div className={styles['openai-logo']}>
