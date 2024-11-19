@@ -1,15 +1,17 @@
 import React from 'react'
+import styles from './Button_button3.module.css'
+
 
 const Button3 = () => {
   return (
     <div>
       <>
   /* From Uiverse.io by 0xnihilism */
-        <div className="button-container">
-          <button className="brutalist-button openai button-1">
-            <div className="openai-logo">
+        <div className={styles['button-container']}>
+          <button className={`${styles['brutalist-button']} ${styles.openai} ${styles['button-1']}`}>
+            <div className={styles['openai-logo']}>
               <svg
-                className="openai-icon"
+                className={styles['openai-icon']}
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -19,7 +21,7 @@ const Button3 = () => {
                 />
               </svg>
             </div>
-            <div className="button-text">
+            <div className={styles['button-texxt']}>
               <span>Powered By</span>
               <span>GPT-Omni</span>
             </div>
