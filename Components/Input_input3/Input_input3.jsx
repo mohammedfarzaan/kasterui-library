@@ -19,3 +19,15 @@ const Input_input3 = () => {
 }
 
 export default Input_input3
+
+
+//     <>
+//     /* From Uiverse.io by Satwinder04 */
+//     <div className="input-container">
+//         <input type="text" id="input" required="" />
+//         <label htmlFor="input" className="label">
+//             Enter Text
+//         </label>
+//         <div className="underline" />
+//     </div>
+//     </>

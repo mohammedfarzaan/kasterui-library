@@ -1,4 +1,5 @@
-/* From Uiverse.io by Satwinder04 */ 
+/* Might not work in CSS Modules due to scoped nature, try putting the css on the global.css/app.css file and remove the import from the JSX file the original JSX structure is commented out */
+
 .input-container {
     position: relative;
     margin: 50px auto;
