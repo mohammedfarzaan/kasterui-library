@@ -6,7 +6,7 @@ const Button_button2 = () => {
       <>
   {/* From Uiverse.io by abrahamcalsin */}
         <button className={styles.button}>
-          <span className={styles.spann}>BUTTON</span>
+          <span>BUTTON</span>
         </button>
       </>
     </div>

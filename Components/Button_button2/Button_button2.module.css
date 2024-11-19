@@ -29,7 +29,7 @@
     width: 100%;
   }
   
-  .button .spann {
+  .button span {
     text-align: center;
     text-decoration: none;
     width: 100%;
@@ -42,7 +42,7 @@
     transition: all 0.3s ease-in-out;
   }
   
-  .button:hover .spann {
+  .button:hover span {
     color: #183153;
     animation: scaleUp 0.3s ease-in-out;
   }
