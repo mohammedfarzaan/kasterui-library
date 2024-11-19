@@ -1,18 +1,18 @@
-import React from 'react'
+import styles from './Loader_loader3.module.css';
+
 
 const Loader_loader3 = () => {
     return (
         <div>
             <>
-  /* From Uiverse.io by vinodjangid07 */
-                <div className="loader">
-                    <div className="truckWrapper">
-                        <div className="truckBody">
+                <div className={styles.loader}>
+                    <div className={styles.truckWrapper}>
+                        <div className={styles.truckBody}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 198 93"
-                                className="trucksvg"
+                                className={styles.trucksvg}
                             >
                                 <path
                                     strokeWidth={3}
@@ -74,12 +74,12 @@ const Loader_loader3 = () => {
                                 />
                             </svg>
                         </div>
-                        <div className="truckTires">
+                        <div className={styles.truckTires}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 30 30"
-                                className="tiresvg"
+                                className={styles.tiresvg}
                             >
                                 <circle
                                     strokeWidth={3}
@@ -95,7 +95,7 @@ const Loader_loader3 = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 30 30"
-                                className="tiresvg"
+                                className={styles.tiresvg}
                             >
                                 <circle
                                     strokeWidth={3}
@@ -108,7 +108,7 @@ const Loader_loader3 = () => {
                                 <circle fill="#DFDFDF" r={7} cy={15} cx={15} />
                             </svg>
                         </div>
-                        <div className="road" />
+                        <div className={styles.road} />
                         <svg
                             xmlSpace="preserve"
                             viewBox="0 0 453.459 453.459"
@@ -117,7 +117,7 @@ const Loader_loader3 = () => {
                             id="Capa_1"
                             version="1.1"
                             fill="#000000"
-                            className="lampPost"
+                            className={styles.lampPost}
                         >
                             <path
                                 d="M252.882,0c-37.781,0-68.686,29.953-70.245,67.358h-6.917v8.954c-26.109,2.163-45.463,10.011-45.463,19.366h9.993

@@ -1,16 +1,15 @@
-import React from 'react'
+import styles from './Loader_loader1.module.css'
 
 const Loader_loader1 = () => {
     return (
         <div>
             <>
-  /* From Uiverse.io by Nawsome */
-                <div className="typewriter">
-                    <div className="slide">
+                <div className={styles.typewriter}>
+                    <div className={styles.slide}>
                         <i />
                     </div>
-                    <div className="paper" />
-                    <div className="keyboard" />
+                    <div className={styles.paper} />
+                    <div className={styles.keyboard} />
                 </div>
             </>
 
