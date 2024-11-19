@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Button_button3.module.css'
 
 
-const Button3 = () => {
+const Button_button3 = () => {
   return (
     <div>
       <>
@@ -31,4 +31,4 @@ const Button3 = () => {
   )
 }
 
-export default Button3
+export default Button_button3

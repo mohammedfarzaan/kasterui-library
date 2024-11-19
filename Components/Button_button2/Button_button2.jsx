@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Button_button2.module.css'
-const Button2 = () => {
+const Button_button2 = () => {
   return (
     <div>
       <>
@@ -13,4 +13,4 @@ const Button2 = () => {
   )
 }
 
-export default Button2
+export default Button_button2
