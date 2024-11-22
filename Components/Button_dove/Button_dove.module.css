@@ -1,0 +1,37 @@
+
+/* From Uiverse.io by CPC23 - Tags: button, hover effect, hoverme, hover button */
+.icons-social-media {
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px;
+  width: 32px;
+  cursor: pointer !important;
+  transition: 300ms all ease-in-out;
+  position: relative;
+}
+
+.icons-social-media:hover {
+  translate: -0px -10px;
+}
+
+#instagram,
+    #youtube,#twitch {
+  transition: 300ms all ease-in-out;
+  clip-path: circle(65%);
+}
+
+#instagram:hover {
+  background-color: rgb(221, 157, 189);
+}
+
+#youtube {
+  height: 35px;
+}
+
+#youtube:hover {
+  background-color: rgb(241, 96, 96);
+}
+
+#twitch:hover {
+  background-color: rgb(196, 143, 245);
+}
