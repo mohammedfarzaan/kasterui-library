@@ -1,115 +1,121 @@
 
-/* From Uiverse.io by JaydipPrajapati1910 - Tags: button, shipping , buy now */
+/* From Uiverse.io by mrhyddenn - Tags: button, download */
 .button {
-  --width: 100px;
-  --height: 35px;
-  --tooltip-height: 35px;
-  --tooltip-width: 90px;
-  --gap-between-tooltip-to-button: 18px;
-  --button-color: #222;
-  --tooltip-color: #fff;
-  width: var(--width);
-  height: var(--height);
-  background: var(--button-color);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #0f1923;
+  cursor: pointer;
   position: relative;
-  text-align: center;
-  border-radius: 0.45em;
-  font-family: "Arial";
-  transition: background 0.3s;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .15s ease;
+}
+
+.button::before,
+.button::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid #7D8082;
+  transition: all .15s ease;
 }
 
 .button::before {
-  position: absolute;
-  content: attr(data-tooltip);
-  width: var(--tooltip-width);
-  height: var(--tooltip-height);
-  background-color: #555;
-  font-size: 0.9rem;
-  color: #fff;
-  border-radius: .25em;
-  line-height: var(--tooltip-height);
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
-  left: calc(50% - var(--tooltip-width) / 2);
+  top: 0;
+  border-bottom-width: 0;
 }
 
 .button::after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  border-top-color: #555;
-  left: calc(50% - 10px);
-  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  bottom: 0;
+  border-top-width: 0;
 }
 
-.button::after,.button::before {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
+.button:active,
+.button:focus {
+  outline: none;
 }
 
-.text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.button:active::before,
+.button:active::after {
+  right: 3px;
+  left: 3px;
 }
 
-.button-wrapper,.text,.icon {
+.button:active::before {
+  top: 3px;
+}
+
+.button:active::after {
+  bottom: 3px;
+}
+
+.button_lg {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0f1923;
   overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.button_lg::before {
+  content: '';
+  display: block;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  top: 0;
   left: 0;
-  color: #fff;
+  width: 2px;
+  height: 2px;
+  background-color: #0f1923;
 }
 
-.text {
-  top: 0
+.button_lg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #0f1923;
+  transition: all .2s ease;
 }
 
-.text,.icon {
-  transition: top 0.5s;
+.button_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: #ff4655;
+  transform: skew(-15deg);
+  transition: all .2s ease;
 }
 
-.icon {
-  color: #fff;
-  top: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon svg {
-  width: 24px;
-  height: 24px;
+.button_text {
+  position: relative;
 }
 
 .button:hover {
-  background: #222;
+  color: #0f1923;
 }
 
-.button:hover .text {
-  top: -100%;
+.button:hover .button_sl {
+  width: calc(100% + 15px);
 }
 
-.button:hover .icon {
-  top: 0;
+.button:hover .button_lg::after {
+  background-color: #fff;
 }
-
-.button:hover:before,.button:hover:after {
-  opacity: 1;
-  visibility: visible;
-}
-
-.button:hover:after {
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
-}
-
-.button:hover:before {
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
-}
-
-
-
 

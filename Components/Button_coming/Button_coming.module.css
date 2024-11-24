@@ -1,0 +1,35 @@
+
+/* From Uiverse.io by MetaBlue2000  - Tags: message, challenge, effect 3d */
+.button {
+  height: 50px;
+  width: 130px;
+  display: flex;
+  border: rgb(135, 135, 135) 2px solid;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 1px 1px 75px 5px grey;
+  z-index: -2;
+}
+
+.icon {
+  height: 18px;
+  display: flex;
+  margin-left: 5px;
+  border-radius: l;
+  z-index: -1;
+}
+
+.text {
+  font-variant: small-caps;
+  font-weight: 700;
+  font-size: 13.123px;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  align-items: center;
+  box-shadow: inset 10px 4px 8px rgb(209, 209, 209),
+    inset -10px -4px 8px rgba(255, 255, 255);
+}
+

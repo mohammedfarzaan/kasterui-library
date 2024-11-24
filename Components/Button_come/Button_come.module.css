@@ -1,0 +1,46 @@
+
+/* From Uiverse.io by vinodjangid07 - Tags: gradient, button, message, hover effect */
+.Btn {
+  width: 180px;
+  height: 45px;
+  border-radius: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  background: linear-gradient( to right,#44ea76, #39fad7);
+  transition-duration: .3s;
+  letter-spacing: 1.4px;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.Btn:hover {
+  transform: scale(0.95);
+  transition-duration: .3s;
+}
+
+.Btn::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 30%;
+  background: linear-gradient( to right,#44ea76, #39fad7);
+  filter: blur(10px);
+  bottom: -3px;
+  z-index: -1;
+  transition-duration: .3s;
+}
+
+.Btn:hover::before {
+  bottom: -1px;
+  filter: blur(5px);
+  transition-duration: .3s;
+}

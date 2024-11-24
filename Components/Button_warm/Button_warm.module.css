@@ -1,0 +1,36 @@
+
+/* From Uiverse.io by Bodyhc - Tags: button */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(66, 13, 240);
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  outline: 3px solid #270092;
+  cursor: pointer;
+  transition: ease-out .5s;
+}
+
+.button:hover {
+  width: 180px;
+  height: 60px;
+  outline-offset: 4px;
+  transform: scale(1.3) rotate(2deg);
+  background-color: blue;
+  box-shadow: 5px 20px #cdcbd4
+}
+
+.icon {
+  color: #270092;
+  margin-right: 5px;
+}
+
+.share {
+  margin-left: 5px;
+  color: #fff;
+}
+
+

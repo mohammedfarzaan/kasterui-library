@@ -1,0 +1,180 @@
+import React from "react";
+import styles from "./Button_any.module.css";
+
+const Button_any = () => (
+  <div>
+    <button className={styles["reward-btn"]}>
+      <span className={styles["IconContainer"]}>
+        <svg
+          className={styles["box-top"] + styles["box"]}
+          viewBox="0 0 60 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 18L58 18"
+            stroke="#6A8EF6"
+            stroke-width="4"
+            stroke-linecap="round"
+          ></path>
+          <circle
+            cx="20.5"
+            cy="9.5"
+            r="7"
+            fill="#101218"
+            stroke="#6A8EF6"
+            stroke-width="5"
+          ></circle>
+          <circle
+            cx="38.5"
+            cy="9.5"
+            r="7"
+            fill="#101218"
+            stroke="#6A8EF6"
+            stroke-width="5"
+          ></circle>
+        </svg>
+
+        <svg
+          className={styles["box-body"] + styles["box"]}
+          viewBox="0 0 58 44"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <mask id="path-1-inside-1_81_19" fill="white">
+            <rect width="58" height="44" rx="3"></rect>
+          </mask>
+          <rect
+            width="58"
+            height="44"
+            rx="3"
+            fill="#101218"
+            stroke="#6A8EF6"
+            stroke-width="8"
+            mask="url(#path-1-inside-1_81_19)"
+          ></rect>
+          <line
+            x1="-3.61529e-09"
+            y1="29"
+            x2="58"
+            y2="29"
+            stroke="#6A8EF6"
+            stroke-width="6"
+          ></line>
+          <path
+            d="M45.0005 20L36 3"
+            stroke="#6A8EF6"
+            stroke-width="5"
+            stroke-linecap="round"
+          ></path>
+          <path
+            d="M21 3L13.0002 19.9992"
+            stroke="#6A8EF6"
+            stroke-width="5"
+            stroke-linecap="round"
+          ></path>
+        </svg>
+
+        <span className={styles["coin"]}></span>
+      </span>
+      <span className={styles["text"]}>Rewards</span>
+    </button>
+  </div>
+);
+
+export default Button_any;
+
+{
+  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+}
+{
+  /*
+        
+        import React from 'react';
+
+        const Button_any = () => (
+         <div>
+          <button className="reward-btn">
+  <span className="IconContainer">
+    <svg
+      className="box-top box"
+      viewBox="0 0 60 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2 18L58 18"
+        stroke="#6A8EF6"
+        stroke-width="4"
+        stroke-linecap="round"
+      ></path>
+      <circle
+        cx="20.5"
+        cy="9.5"
+        r="7"
+        fill="#101218"
+        stroke="#6A8EF6"
+        stroke-width="5"
+      ></circle>
+      <circle
+        cx="38.5"
+        cy="9.5"
+        r="7"
+        fill="#101218"
+        stroke="#6A8EF6"
+        stroke-width="5"
+      ></circle>
+    </svg>
+
+    <svg
+      className="box-body box"
+      viewBox="0 0 58 44"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <mask id="path-1-inside-1_81_19" fill="white">
+        <rect width="58" height="44" rx="3"></rect>
+      </mask>
+      <rect
+        width="58"
+        height="44"
+        rx="3"
+        fill="#101218"
+        stroke="#6A8EF6"
+        stroke-width="8"
+        mask="url(#path-1-inside-1_81_19)"
+      ></rect>
+      <line
+        x1="-3.61529e-09"
+        y1="29"
+        x2="58"
+        y2="29"
+        stroke="#6A8EF6"
+        stroke-width="6"
+      ></line>
+      <path
+        d="M45.0005 20L36 3"
+        stroke="#6A8EF6"
+        stroke-width="5"
+        stroke-linecap="round"
+      ></path>
+      <path
+        d="M21 3L13.0002 19.9992"
+        stroke="#6A8EF6"
+        stroke-width="5"
+        stroke-linecap="round"
+      ></path>
+    </svg>
+
+    <span className="coin"></span>
+  </span>
+  <span className="text">Rewards</span>
+</button>
+        </div>
+        );
+
+        export default Button_any;
+        
+        
+         */
+}

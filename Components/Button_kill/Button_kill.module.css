@@ -1,73 +1,40 @@
 
-/* From Uiverse.io by Carlos-vargs - Tags: button, hover, animated */
+/* From Uiverse.io by Creatlydev  - Tags: button */
 .button {
+  line-height: 1;
+  background-color: transparent;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  border-radius: 36px;
-  font-weight: 700;
-  height: 54px;
-  font-size: 16px;
-  padding-inline: 20px;
-  background-color: transparent;
+  gap: 0.35em;
+  padding: 0.75em 1em;
+  padding-right: 1.25em;
   color: #fff;
-  text-transform: uppercase;
-  overflow: hidden;
-  text-align: center;
-  transition: all .25s ease-in-out;
-  z-index: 1;
-  border: none;
+  border: 1px solid transparent;
+  font-weight: 700;
+  border-radius: 2em;
+  font-size: 1rem;
+  box-shadow: 0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+  transition: transform 0.3s;
+
+  background: linear-gradient(
+    90deg,
+    rgba(77, 54, 208, 1) 0%,
+    rgba(132, 116, 254, 1) 100%
+  );
 }
 
-.button:is(:hover, :focus)::before {
-  transform: translateX(0%);
+.button__icon {
+  width: 1.5em;
+  height: 1.5em;
 }
 
-.text {
-  white-space: nowrap;
-  line-height: 1.2;
-  padding-inline-end: 44px;
-  z-index: 2;
+.button:hover {
+  border-color: #f4f5f2;
 }
 
-/* change the width and height to 100% when you use it in your layout */
-.button::after {
-  content: '';
-  position: absolute;
-  height: calc(100% - 2px);
-  width: calc(100% - 2px);
-  border: 1px solid #FFB400;
-  border-radius: 36px;
-  z-index: 2;
+.button:active {
+  transform: scale(0.98);
+  box-shadow: 0 0.5em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
 }
-
-.button::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #FFB400;
-  z-index: 1;
-  left: -2px;
-  transform: translateX(90%);
-  transition: all .3s ease-out;
-}
-
-.icon {
-  display: inherit;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-  width: 54px;
-  height: 54px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  background-color: #FFB400;
-  z-index: 2;
-}
-
 

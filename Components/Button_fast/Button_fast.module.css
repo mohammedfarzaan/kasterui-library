@@ -1,0 +1,111 @@
+
+/* From Uiverse.io by MRez321  - Tags: button, hover, animated, hover button, #button, button hover effect  */
+.button {
+  position: relative;
+  z-index: 5;
+  isolation: isolate;
+  cursor: pointer;
+  transition: 0.4s;
+
+  width: fit-content;
+  height: 4.8rem;
+  padding: 1rem;
+  margin-inline: auto;
+  border: solid 3px;
+  border-color: #0000004d #0000004d #00000080 #00000080;
+  border-radius: 0.8rem;
+
+  font-family: cursive;
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  animation: boxShadowRotation 2s linear infinite;
+}
+.button:hover,
+.button:active {
+  scale: 0.96;
+  border-color: #00000080 #00000080 #0000004d #0000004d;
+  padding: 2rem;
+  box-shadow: 0 0 4px 2px rgba(208, 212, 218, 0.979);
+  background: #fbfdfc;
+}
+
+.button::before,
+.button::after {
+  position: absolute;
+  content: "";
+  background: #f4f5f4;
+  transition: 0.4s;
+}
+.button::before {
+  z-index: -1;
+  inset: 0.3rem;
+  border-radius: 4rem;
+  box-shadow: inset 0 0 4px 2px rgba(208, 212, 218, 0.979);
+}
+.button:hover::before {
+  inset: 0.1rem;
+  z-index: -1;
+  margin-inline: auto;
+  border: solid 1px;
+  border-color: #00000080 #00000080 #0000004d #0000004d;
+  border-radius: 0.8rem;
+  animation: boxShadowRotation 2s linear infinite;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.button::after {
+  background: none;
+  z-index: -2;
+  border-radius: 1rem;
+}
+.button:hover::after {
+  inset: -0.5rem;
+  border: solid 1px #00000080;
+  box-shadow: 0 0 10px 4px #a1c4fd;
+  background: #c2e9fb;
+}
+
+.button svg {
+  width: 2rem;
+  height: 2rem;
+  z-index: 10;
+}
+.button:hover svg {
+  animation: rotation 0.8s linear;
+  filter: drop-shadow(0 0 10px 10px rgb(170, 166, 166));
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg) translate(0, 0) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) translate(-4rem, -2rem) scale(1.4);
+  }
+  100% {
+    transform: rotate(360deg) translate(0, 0) scale(1);
+  }
+}
+@keyframes boxShadowRotation {
+  0% {
+    box-shadow: inset 10px 10px 20px rgba(29, 43, 83, 0.2);
+  }
+  25% {
+    box-shadow: inset -10px 10px 20px rgba(29, 43, 83, 0.2);
+  }
+  50% {
+    box-shadow: inset -10px -10px 20px rgba(29, 43, 83, 0.2);
+  }
+  75% {
+    box-shadow: inset 10px -10px 20px rgba(29, 43, 83, 0.2);
+  }
+  100% {
+    box-shadow: inset 10px 10px 20px rgba(29, 43, 83, 0.2);
+  }
+}
+

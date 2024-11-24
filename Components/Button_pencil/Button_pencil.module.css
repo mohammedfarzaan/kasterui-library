@@ -1,0 +1,16 @@
+
+/* From Uiverse.io by andrew-demchenk0 - Tags: green, button, phone, circle, accept, accept call */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: none;
+  background-color: #30C04F;
+}
+
+.button:hover {
+  background-color: #2bac47;
+}

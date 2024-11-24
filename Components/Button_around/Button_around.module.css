@@ -1,0 +1,45 @@
+
+/* From Uiverse.io by andrew-demchenk0 - Tags: icon, black, button, Microphone, record, opacity */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 40px;
+  width: 114px;
+  border: none;
+  background: #1b1b1cde;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.lable {
+  line-height: 20px;
+  font-size: 17px;
+  color: #FF342B;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background: #1b1b1c;
+}
+
+.button:hover .svg-icon {
+  animation: scale 1s linear infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05) rotate(10deg);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

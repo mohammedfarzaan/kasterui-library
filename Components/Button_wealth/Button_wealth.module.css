@@ -1,0 +1,46 @@
+
+/* From Uiverse.io by 1osm - Tags: button */
+button {
+  width: 130px;
+  height: 45px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-width: 10px;
+  background: linear-gradient(to right, #5f6d7c, #456b8b, #49a6fc);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 10px;
+}
+
+button svg {
+  height: 40px;
+  width: 60px;
+  transform: translate(-30px,3px) rotate(90deg);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1)
+}
+
+button .Click {
+  transform: translate(20px,-33px);
+  font-size: 20px;
+  transition: 0.3s cubic-bezier(0.76, 0, 0.24, 1)
+}
+
+button .OnHover {
+  transform: translate(-15px,-56px);
+  font-size: 20px;
+  opacity: 0%;
+  transition: 0.3s cubic-bezier(0.76, 0, 0.24, 1)
+}
+
+button:hover svg {
+  transform: translate(40px,3px) rotate(90deg);
+}
+
+button:hover .Click {
+  opacity: 0%;
+}
+
+button:hover .OnHover {
+  opacity: 100%;
+}

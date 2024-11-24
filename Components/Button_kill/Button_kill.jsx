@@ -1,26 +1,68 @@
 import React from "react";
+import styles from "./Button_kill.module.css";
 
 const Button_kill = () => (
   <div>
-    <button className="group hover:bg-sky-600 relative bg-sky-700 rounded text-neutral-50 duration-500 font-bold flex justify-start gap-2 items-center p-2 pr-6">
+    <button className={styles["button"]}>
       <svg
-        className="w-8 h-8 fill-neutral-50"
-        height="100"
-        preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 100 100"
-        width="100"
-        x="0"
+        stroke-linejoin="round"
+        stroke-linecap="round"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        viewBox="0 0 24 24"
+        height="40"
+        width="40"
+        className={styles["button__icon"]}
         xmlns="http://www.w3.org/2000/svg"
-        y="0"
       >
-        <path d="M92.86,0H7.12A7.17,7.17,0,0,0,0,7.21V92.79A7.17,7.17,0,0,0,7.12,100H92.86A7.19,7.19,0,0,0,100,92.79V7.21A7.19,7.19,0,0,0,92.86,0ZM30.22,85.71H15.4V38H30.25V85.71ZM22.81,31.47a8.59,8.59,0,1,1,8.6-8.59A8.6,8.6,0,0,1,22.81,31.47Zm63,54.24H71V62.5c0-5.54-.11-12.66-7.7-12.66s-8.91,6-8.91,12.26V85.71H39.53V38H53.75v6.52H54c2-3.75,6.83-7.7,14-7.7,15,0,17.79,9.89,17.79,22.74Z"></path>
+        <path fill="none" d="M0 0h24v24H0z" stroke="none"></path>
+        <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
+        <path d="M7 11l5 5l5 -5"></path>
+        <path d="M12 4l0 12"></path>
       </svg>
-      <span className="border-l-2 px-1">Your Name</span>
-      <div className="group-hover:opacity-100 opacity-0 top-16 absolute z-10 inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-500 bg-sky-600 rounded-lg shadow-sm before:w-3 before:h-3 before:rotate-45 before:-top-1 before:left-20 before:bg-sky-600 before:absolute">
-        See my profile!
-      </div>
+      <span className={styles["button__text"]}>Download</span>
     </button>
   </div>
 );
 
 export default Button_kill;
+
+{
+  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+}
+{
+  /*
+        
+        import React from 'react';
+
+        const Button_kill = () => (
+         <div>
+          <button className="button">
+  <svg
+    stroke-linejoin="round"
+    stroke-linecap="round"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.5"
+    viewBox="0 0 24 24"
+    height="40"
+    width="40"
+    className="button__icon"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path fill="none" d="M0 0h24v24H0z" stroke="none"></path>
+    <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
+    <path d="M7 11l5 5l5 -5"></path>
+    <path d="M12 4l0 12"></path>
+  </svg>
+  <span className="button__text">Download</span>
+</button>
+        </div>
+        );
+
+        export default Button_kill;
+        
+        
+         */
+}

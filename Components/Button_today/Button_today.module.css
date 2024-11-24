@@ -1,0 +1,67 @@
+
+/* From Uiverse.io by vinodjangid07  - Tags: animation, purple, gradient, button, hover, svg, hover effect, projects */
+.Projects-Button {
+  width: fit-content;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+  gap: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(120deg, rgb(150, 86, 199), rgb(98, 47, 138));
+  transition: all 0.3s;
+  box-shadow: 0px 10px 10px rgba(144, 0, 255, 0.166);
+}
+.IconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+.svgBG {
+  width: 25px;
+  height: auto;
+}
+.svgFG {
+  width: 9px;
+  height: auto;
+  z-index: 2;
+  position: absolute;
+}
+.text {
+  color: rgb(240, 240, 240);
+  font-weight: 500;
+  font-size: 16px;
+}
+.Projects-Button:hover .svgFG {
+  animation: clockwise 2s linear infinite;
+}
+
+.Projects-Button:hover .svgBG {
+  animation: anti-clockwise 2s linear infinite;
+}
+@keyframes clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes anti-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.Projects-Button:hover {
+  background-color: rgb(119, 57, 166);
+}
+

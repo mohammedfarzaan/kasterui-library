@@ -1,0 +1,51 @@
+
+/* From Uiverse.io by benjimich  - Tags: skeuomorphism, animation, email, 3d, action, button, realistic, svg */
+.wrapper {
+  background-color: #fff;
+  padding: 0.5px;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.wrapper:hover {
+  scale: 1.05;
+}
+.wrapper:active {
+  scale: 1;
+}
+.container {
+  cursor: pointer;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: inherit;
+  border: 2px rgb(158, 158, 158) solid;
+  box-shadow: inset 0px -12px 20px -3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.container:hover {
+  box-shadow: 0px 10px 25px -3px rgba(0, 0, 0, 0.1),
+    inset 0px -12px 20px -3px rgba(0, 0, 0, 0.1);
+}
+.button {
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 50px;
+  border: none;
+  padding: 14px;
+  box-shadow: inset 0px 12px 20px -3px rgba(0, 0, 0, 0.1);
+}
+
+.imgSvg {
+  width: 24px;
+  margin-right: 14px;
+}
+.wrapper:hover .imgSvg {
+  transform: rotate(405deg);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.125);
+}
+

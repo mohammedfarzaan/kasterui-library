@@ -1,0 +1,23 @@
+
+/* From Uiverse.io by Cobp  - Tags: material design, 3d, button, rounded, light */
+.button {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 2px solid rgba(225, 225, 225, 0.9);
+  padding: 4px;
+  border: 3px solid #bfbfbf;
+  border-radius: 12px;
+  box-shadow: 0px 30px 50px 10px rgba(0, 0, 0, 0.2);
+}
+.text {
+  padding: 16px 10px;
+  display: flex;
+  aling-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1),
+    inset 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+

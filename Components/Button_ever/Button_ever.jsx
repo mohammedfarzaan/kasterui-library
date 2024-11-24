@@ -3,26 +3,30 @@ import styles from "./Button_ever.module.css";
 
 const Button_ever = () => (
   <div>
-    <button className={styles["button"]}>
-      <div className={styles["lid"]}>
-        <span className={styles["side"] + styles["top"]}></span>
-        <span className={styles["side"] + styles["front"]}></span>
-        <span className={styles["side"] + styles["back"]}> </span>
-        <span className={styles["side"] + styles["left"]}></span>
-        <span className={styles["side"] + styles["right"]}></span>
-      </div>
-      <div className={styles["panels"]}>
-        <div className={styles["panel-1"]}>
-          <div className={styles["panel-2"]}>
-            <div className={styles["btn-trigger"]}>
-              <span className={styles["btn-trigger-1"]}></span>
-              <span className={styles["btn-trigger-2"]}></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </button>
+    <button>Button</button>
   </div>
 );
 
 export default Button_ever;
+
+{
+  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+}
+{
+  /*
+        
+        import React from 'react';
+
+        const Button_ever = () => (
+         <div>
+          <button>
+  Button
+</button>
+        </div>
+        );
+
+        export default Button_ever;
+        
+        
+         */
+}
