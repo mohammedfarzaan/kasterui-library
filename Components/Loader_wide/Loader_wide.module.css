@@ -1,0 +1,133 @@
+
+/* From Uiverse.io by Subaashbala  - Tags: loader, game, animated, bounce animation */
+.loader {
+  position: relative;
+  width: 18rem; /* Reposition the obstacles and the bird if the width is changed */
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #6ccee7 60%, white);
+}
+#bird {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-80%, -50%);
+  width: 3rem;
+  height: auto;
+  animation: flap 500ms linear infinite;
+}
+.flappyBirdScene,
+.flappyBirdSceneBottom {
+  display: flex;
+  width: 20rem;
+  top: -23%;
+  position: relative;
+}
+.sceneTop {
+  display: flex;
+  width: fit-content;
+  animation: flow 5s linear infinite;
+}
+.sceneBottom {
+  display: flex;
+  width: fit-content;
+  animation: flowBottom 5s linear infinite;
+}
+#birdObstacle {
+  height: 8rem;
+  width: 2rem;
+  background: linear-gradient(
+    to right,
+    #9de558 0px,
+    #9de558 3px,
+    #e7ff8d 3px,
+    #e7ff8d 5px,
+    #9de858 5px,
+    #9de858 10px,
+    #74c029 10px,
+    #74c029 13px,
+    #9de558 13px,
+    #9de558 15px,
+    #74c029 22px,
+    #74c029 28px,
+    #59811a 28px,
+    #59811a 100%
+  );
+  border: solid;
+  position: relative;
+}
+.flappyBirdSceneBottom {
+  bottom: -25%;
+  left: 0;
+}
+#birdObstacle::after {
+  content: "";
+  position: absolute;
+  width: 135%;
+  height: 1.25rem;
+  top: 100%;
+  left: 50%;
+  border: solid;
+  transform: translate(-50%, 0);
+  background: linear-gradient(
+    to right,
+    #9de558 0px,
+    #9de558 3px,
+    #e7ff8d 3px,
+    #e7ff8d 5px,
+    #9de858 5px,
+    #9de858 10px,
+    #74c029 10px,
+    #74c029 13px,
+    #9de558 13px,
+    #9de558 15px,
+    #74c029 22px,
+    #74c029 28px,
+    #59811a 28px,
+    #59811a 100%
+  );
+}
+.birdObs2 {
+  transform: translate(0%, 15%);
+  left: 15%;
+}
+.birdObs3 {
+  transform: translate(0, 18%);
+  left: 30%;
+}
+.birdObs4 {
+  transform: translate(0, 15%);
+  left: 45%;
+}
+@keyframes flap {
+  from {
+    transform: translate(-80%, -50%);
+  }
+  25% {
+    transform: translate(-80%, -50%) rotate(-15deg);
+  }
+  50% {
+    transform: translate(-80%, -12%) rotate(5deg);
+  }
+  100% {
+    transform: translate(-80%, -50%);
+  }
+}
+@keyframes flow {
+  from {
+    transform: translate(0, -43%);
+  }
+  to {
+    transform: translate(-50%, -43%);
+  }
+}
+@keyframes flowBottom {
+  from {
+    transform: translate(0, 75%) rotateX(180deg);
+  }
+  to {
+    transform: translate(-50%, 75%) rotateX(180deg);
+  }
+}
+

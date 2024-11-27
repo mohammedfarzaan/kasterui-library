@@ -1,0 +1,72 @@
+
+/* From Uiverse.io by BlackisPlay  - Tags: material design, animation, 3d, minimalist, black, loading, loader */
+#wholeThing {
+  height: 700px;
+  width: 500px;
+  scale: 0.8;
+}
+
+#newtonsCradle,
+#newtonsCradleLeft,
+#newtonsCradleRight {
+  position: absolute;
+}
+
+#newtonsCradle {
+  top: 90px;
+  left: -115px; /*Use top and left to change the position of the newton's cradle*/
+}
+
+#newtonsCradleRight {
+  animation: swingRight 2s infinite both;
+  animation-delay: 1s;
+  rotate: -90deg;
+  grid-area: right;
+  top: -24px;
+  left: -37px; /*Use top and left to change the position of the right swinging ball*/
+}
+
+@keyframes swingRight {
+  0% {
+    rotate: -90deg;
+  }
+
+  30% {
+    rotate: 0deg;
+  }
+
+  75% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: -90deg;
+  }
+}
+
+#newtonsCradleLeft {
+  animation: swingLeft 2s infinite both ease-out;
+  rotate: 90deg;
+  grid-area: left;
+  top: -24px;
+  left: -173px; /*Use top and left to change the position of the left swinging ball*/
+}
+
+@keyframes swingLeft {
+  0% {
+    rotate: 90deg;
+  }
+
+  30% {
+    rotate: 0deg;
+  }
+
+  75% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 90deg;
+  }
+}
+

@@ -1,0 +1,26 @@
+
+/* From Uiverse.io by JkHuger - Tags: loader */
+.btn {
+  align-items: center;
+  background: #93e2cb;
+  border-radius: 4px;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  padding: 1rem;
+  width: 180px;
+}
+
+#line {
+  animation: linePencil .8s infinite linear;
+}
+
+@keyframes linePencil {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-150px);
+  }
+}
