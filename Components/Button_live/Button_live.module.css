@@ -1,210 +1,169 @@
 
-/* From Uiverse.io by KitoC - Tags: button */
-button {
-  --black-hole-color-2: rgb(242, 122, 42);
-  --black-hole-color: rgb(230, 148, 93);
-  font-size: 17px;
+/* From Uiverse.io by nima-mollazadeh  - Tags: button, button, text, yellow, purple, centered, rectangular, contrast, split, bicolor */
+.button_base {
+  margin: 0;
+  border: 0;
+  font-size: 18px;
   position: relative;
-  background: #212121;
-  padding: 0.5em;
-  border: 2px solid var(--black-hole-color);
-  border-radius: 8px;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -100px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  cursor: default;
 }
 
-button:hover {
-  border: 2px solid var(--black-hole-color-2);
-  animation: alert 1s alternate infinite linear;
+.button_base:hover {
+  cursor: pointer;
 }
 
-.blackhole {
-  padding: 3em;
-  background-color: black;
-  color: var(--black-hole-color);
+.b_3d {
+  perspective: 500px;
+  -webkit-perspective: 500px;
+  -moz-perspective: 500px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+.b_3d div {
   position: absolute;
-  animation: wiggle 3s alternate-reverse infinite linear;
-  top: -1em;
-  left: -8em;
+  text-align: center;
+  padding: 10px;
+  border: #000000 solid 1px;
+  pointer-events: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
-.blackhole, .blackhole::after, .blackhole::before, .blackhole .ring, .blackhole .ring::after {
-  content: "";
-  border: 2px solid var(--black-hole-color);
-  border-radius: 50%;
-  box-shadow: 0 0 3em,
-              0 0 1em;
-}
-
-.blackhole::after, .blackhole::before {
-  animation: writhe 3s alternate-reverse infinite linear;
-}
-
-.blackhole::before {
+.b_3d div:nth-child(1) {
+  color: #ffffff;
+  background-color: #7c00fe;
+  z-index: 0;
+  width: 100%;
+  height: 50px;
+  clip: rect(0px, 100px, 50px, 0px);
   position: absolute;
-  width: calc(100% + 0.5em);
-  height: calc(100% + 0.5em);
-  top: -9px;
-  left: -7px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform-origin: 50% 50% -25px;
+  -webkit-transform-origin: 50% 50% -25px;
+  -moz-transform-origin: 50% 50% -25px;
 }
 
-.blackhole::after {
+.b_3d div:nth-child(2) {
+  color: #000000;
+  background-color: #f9e400;
+  z-index: -1;
+  width: 100%;
+  height: 50px;
+  clip: rect(0px, 100px, 50px, 0px);
   position: absolute;
-  width: calc(100% + 8px);
-  height: calc(100% + 8px);
-  top: -6px;
-  left: -5px;
+  transform: rotateX(90deg);
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transform-origin: 50% 50% -25px;
+  -webkit-transform-origin: 50% 50% -25px;
+  -moz-transform-origin: 50% 50% -25px;
 }
 
-.blackhole .ring, .blackhole .ring::after {
-  content: "";
+.b_3d div:nth-child(3) {
+  color: #000000;
+  background-color: #f9e400;
+  z-index: 0;
+  width: 100%;
+  height: 50px;
+  clip: rect(0px, 200px, 50px, 100px);
   position: absolute;
-  left: -50%;
-  width: 200%;
-  border-top: none;
-  height: 2em;
-  border-width: 5px;
-  box-shadow: 0px 5px 10px var(--black-hole-color);
+  transition: all 0.2s ease 0.1s;
+  -webkit-transition: all 0.2s ease 0.1s;
+  -moz-transition: all 0.2s ease 0.1s;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform-origin: 50% 50% -25px;
+  -webkit-transform-origin: 50% 50% -25px;
+  -moz-transform-origin: 50% 50% -25px;
 }
 
-.blackhole .ring, .blackhole .ring::after {
-  animation: ring-writhe 3s alternate-reverse infinite linear;
-}
-
-.blackhole .block {
+.b_3d div:nth-child(4) {
+  color: #ffffff;
+  background-color: #7c00fe;
+  z-index: -1;
+  width: 100%;
+  height: 50px;
+  clip: rect(0px, 200px, 50px, 100px);
   position: absolute;
-  z-index: 90;
-  content: "";
-  background-color: black;
-  top: -20%;
-  left: 25%;
-  width: 50%;
-  height: 10px;
+  transform: rotateX(-90deg);
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transition: all 0.2s ease 0.1s;
+  -webkit-transition: all 0.2s ease 0.1s;
+  -moz-transition: all 0.2s ease 0.1s;
+  transform-origin: 50% 50% -25px;
+  -webkit-transform-origin: 50% 50% -25px;
+  -moz-transform-origin: 50% 50% -25px;
 }
 
-.blackhole .ring::after {
-  width: 110%;
-  left: -8%;
+.b_3d:hover div:nth-child(1) {
+  background-color: #7c00fe;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transform: rotateX(-90deg);
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
 }
 
-.blackhole .rocket {
-  fill: white;
-  height: 30px;
-  transform: rotate(-140deg);
-  animation: idle 1s alternate-reverse infinite linear;
+.b_3d:hover div:nth-child(2) {
+  color: #000000;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
 }
 
-.blackhole .rocket-path {
-  position: absolute;
-  top: -60px;
-  right: -60px;
+.b_3d:hover div:nth-child(3) {
+  background-color: #f9e400;
+  transition: all 0.2s ease 0.1s;
+  -webkit-transition: all 0.2s ease 0.1s;
+  -moz-transition: all 0.2s ease 0.1s;
+  transform: rotateX(90deg);
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
 }
 
-button:hover .rocket-path, button:focus .rocket-path {
-  z-index: 100;
-  animation: engine-start 0.2s alternate-reverse infinite linear;
+.b_3d:hover div:nth-child(4) {
+  color: #ffffff;
+  transition: all 0.2s ease 0.1s;
+  -webkit-transition: all 0.2s ease 0.1s;
+  -moz-transition: all 0.2s ease 0.1s;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
 }
 
-button:focus  .rocket-path {
-  animation: descend 1.2s linear forwards, 
-             descend-dissapear 0.1s linear forwards;
-  animation-delay: 0s, 1s;
-}
-
-button .text {
-  display: flex;
-  color: white;
-}
-
-@keyframes idle {
-  from {
-    transform: rotate(-130deg);
-  }
-
-  to {
-    transform: rotate(-140deg);
-  }
-}
-
-@keyframes alert {
-  from {
-    box-shadow: 0 0 0 var(--black-hole-color);
-  }
-
-  to {
-    box-shadow: 0 0 8px var(--black-hole-color);
-  }
-}
-
-@keyframes engine-start {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.05);
-  }
-}
-
-@keyframes descend {
-  from {
-    top: -60px;
-    right: -60px;
-    transform: scale(1);
-  }
-
-  to {
-    top: -10px;
-    right: -10px;
-    transform: scale(0.8);
-  }
-}
-
-@keyframes descend-dissapear {
-  from {
-    top: -10px;
-    right: -10px;
-    transform: scale(1);
-  }
-
-  to {
-    top: 20px;
-    right: 20px;
-    transform: scale(0);
-  }
-}
-
-@keyframes writhe {
-  from {
-    box-shadow: -4px -3px 35px var(--black-hole-color-2),
-              -4px -3px 5px;
-    transform: translateX(-1px) scale(1);
-  }
-
-  to {
-    box-shadow: 4px 3px 35px,
-              4px 3px 5px var(--black-hole-color-2);
-    transform: translateX(1px) scale(0.95);
-  }
-}
-
-@keyframes wiggle {
-  from {
-    transform: translateX(-3px);
-  }
-
-  to {
-    transform: translateX(3px);
-  }
-}
-
-@keyframes ring-writhe {
-  from {
-    transform: translateX(-2px) scale(1);
-    box-shadow: -2px 5px 10px var(--black-hole-color);
-  }
-
-  to {
-    box-shadow: 2px 5px 10px var(--black-hole-color-2);
-    transform: translateX(2px) scale(0.95);
-  }
+.back {
+  height: 200px;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  counter-increment: bc;
+  padding: 0px 5px 5px 5px;
 }
 

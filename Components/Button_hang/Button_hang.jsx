@@ -1,32 +1,31 @@
 import React from "react";
-import styles from "./Button_hang.module.css";
 
 const Button_hang = () => (
   <div>
-    <button>Hold that</button>
+    <button
+      title="Add New"
+      className="group cursor-pointer outline-none hover:rotate-90 duration-300"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="50px"
+        height="50px"
+        viewBox="0 0 24 24"
+        className="stroke-zinc-400 fill-none group-hover:fill-zinc-800 group-active:stroke-zinc-200 group-active:fill-zinc-600 group-active:duration-0 duration-300"
+      >
+        <path
+          d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+          strokeWidth="1.5"
+        ></path>
+        <path d="M8 12H16" strokeWidth="1.5"></path>
+        <path d="M12 16V8" strokeWidth="1.5"></path>
+      </svg>
+    </button>
   </div>
 );
 
 export default Button_hang;
 
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-        
-        import React from 'react';
-
-        const Button_hang = () => (
-         <div>
-          <button>
-  Hold that
-</button>
-        </div>
-        );
-
-        export default Button_hang;
-        
-        
-         */
+  /* */
 }

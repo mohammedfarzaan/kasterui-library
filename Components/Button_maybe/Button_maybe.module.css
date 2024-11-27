@@ -1,18 +1,45 @@
 
-/* From Uiverse.io by Dear31 - Tags: button */
-button {
-  background-color: rgb(255, 255, 255);
-  border: 3px solid black;
-  padding: 12px 32px;
-  border-radius: 22px;
-  box-shadow: 2px 2px 1px  black;
-  transition: all .2s ease;
-  font-size: 1em;
-  font-weight: 800;
+/* From Uiverse.io by Juanes200122 - Tags: simple, animation, button, hover, color, hover effect */
+a {
+  text-decoration: none;
 }
 
-button:hover {
-  transform: translate(-2px, -1px);
-  box-shadow: 7px 7px 1px  rgb(0, 0, 0);
-  transition: all .2s ease-in;
+.ov-btn-slide-left {
+  background: #fff;
+  color: #4741d7;
+  border: 2px solid #4741d7;
+  padding: 16px 20px;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.ov-btn-slide-left:hover {
+  color: #fff;
+}
+
+.ov-btn-slide-left::after {
+  content: "";
+  background: #4741d7;
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.ov-btn-slide-left:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }

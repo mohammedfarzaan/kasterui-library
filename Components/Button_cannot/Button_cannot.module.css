@@ -1,29 +1,24 @@
 
-/* From Uiverse.io by adamgiebl - Tags: icon, button */
-.cssbuttons-io-button {
-  display: flex;
-  align-items: center;
-  font-family: inherit;
-  font-weight: 500;
+/* From Uiverse.io by adamgiebl - Tags: 3d, blue, button */
+button {
   font-size: 16px;
-  padding: 0.7em 1.4em 0.7em 1.1em;
+  padding: 1em 3.3em;
+  transform: perspective(200px) rotateX(15deg);
   color: white;
-  background: #ad5389;
-  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+  font-weight: 900;
   border: none;
-  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
-  letter-spacing: 0.05em;
-  border-radius: 20em;
+  border-radius: 5px;
+  background: linear-gradient(0deg, rgba(63,94,251,1) 0%, rgba(70,135,252,1) 100%);
+  box-shadow: rgba(63,94,251,0.2) 0px 40px 29px 0px;
+  will-change: transform;
+  transition: all 0.3s;
+  border-bottom: 2px solid rgba(70,135,252,1);
 }
 
-.cssbuttons-io-button svg {
-  margin-right: 6px;
+button:hover {
+  transform: perspective(180px) rotateX(30deg) translateY(2px);
 }
 
-.cssbuttons-io-button:hover {
-  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
-}
-
-.cssbuttons-io-button:active {
-  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+button:active {
+  transform: perspective(170px) rotateX(36deg) translateY(5px);
 }

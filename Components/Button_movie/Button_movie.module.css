@@ -1,60 +1,91 @@
 
-/* From Uiverse.io by Dashrath-Sharma - Tags: button, text animation, animated, colorful, color, text, btn */
-.button {
-  border: none;
-  font-size: 17px;
-  padding: 1em 2em;
-  position: relative;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  z-index: 1;
-  background: #caf0f8;
-  border-radius: 8px;
-  box-shadow: 2px 2px 0 #333,
-             2px 2px 200px #ffba08 inset;
-  color: #fff;
+/* From Uiverse.io by cssbuttons-io - Tags: button */
+button {
+ position: relative;
+ border: none;
+ background: transparent;
+ padding: 0;
+ cursor: pointer;
+ outline-offset: 4px;
+ transition: filter 250ms;
+ user-select: none;
+ touch-action: manipulation;
 }
 
-.button:active {
-  transform: scale(.98);
+.shadow {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border-radius: 12px;
+ background: hsl(0deg 0% 0% / 0.25);
+ will-change: transform;
+ transform: translateY(2px);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
 }
 
-.button:hover {
-  box-shadow: 2px 2px 0 #333,
-             2px 2px 200px #003566 inset;
+.edge {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border-radius: 12px;
+ background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
 }
 
-.button::before {
-  content: '';
-  position: absolute;
-  left: -41%;
-  width: 150%;
-  height: 300%;
-  border-radius: 50%;
-  box-shadow: 2px 2px 0 #333,
-             0 0 0 8px #d00000 inset,
-             0 0 0 16px #dc2f02 inset,
-             0 0 0 24px #e85d04 inset,
-             0 0 0 32px #f48c06 inset,
-             0 0 0 40px #faa307 inset;
-  z-index: -1;
-  transition: .2s;
+.front {
+ display: block;
+ position: relative;
+ padding: 12px 27px;
+ border-radius: 12px;
+ font-size: 1.1rem;
+ color: white;
+ background: hsl(345deg 100% 47%);
+ will-change: transform;
+ transform: translateY(-4px);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
 }
 
-.button:active::before {
-  opacity: .001;
-  box-shadow: 2px 2px 200px #03045e inset;
+button:hover {
+ filter: brightness(110%);
 }
 
-.button:hover::before {
-  box-shadow: 2px 2px 0 #333,
-             0 0 0 8px #90e0ef inset,
-             0 0 0 16px #48cae4 inset,
-             0 0 0 24px #00b4d8 inset,
-             0 0 0 32px #0096c7 inset,
-             0 0 0 40px #0077b6 inset;
-  left: -9%;
-  width: 150%;
-  height: 300%;
+button:hover .front {
+ transform: translateY(-6px);
+ transition: transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .front {
+ transform: translateY(-2px);
+ transition: transform 34ms;
+}
+
+button:hover .shadow {
+ transform: translateY(4px);
+ transition: transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .shadow {
+ transform: translateY(1px);
+ transition: transform 34ms;
+}
+
+button:focus:not(:focus-visible) {
+ outline: none;
 }

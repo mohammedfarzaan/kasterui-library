@@ -1,24 +1,65 @@
 
-/* From Uiverse.io by Amikas - Tags: button */
+/* From Uiverse.io by Navs45  - Tags: icon, white, button, transition, btn, hover effect, html, css */
 .button {
-  background-color: #333;
-  color: #fff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  font-size: 17px;
+}
+.button {
+  border: none;
+  position: relative;
+  width: 249px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: -2px 2px 1.3px 1px #7f807f,
+    -5px 5px 2.8px 0px rgba(255, 255, 255, 0.5), -5px 7px 4.4px 0px #c5c6c5,
+    0px 0px 2.4px 4px #e4e5e4;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-  background-color: rgb(128, 95, 247);
+  background-color: #e0e0e0;
+  transform: translateY(-5px);
+  box-shadow: -2px 2px 1.3px 1px #7f807f,
+    -5px 5px 2.8px 0px rgba(255, 255, 255, 0.5), -5px 7px 4.4px 0px #c5c6c5,
+    0px 0px 2.4px 4px #e4e5e4, 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.button:active {
-  transform: translateY(0.5em);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 236px;
+  height: 69px;
+  flex-shrink: 0;
+  border-radius: 39px;
+
+  background: #fff;
+  box-shadow: -1px -1px 0px 0px rgba(141, 139, 139, 0.35),
+    38px 3px 13.2px 0px rgba(196, 196, 196, 0.25) inset,
+    -3px 1px 10.1px 0px rgba(87, 87, 87, 0.25) inset;
+  margin: 7px 4px 6px 7px;
 }
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+#text {
+  color: #0b0b0b;
+  font-family: "Poppins", sans-serif;
+  font-size: 23.1px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 4px;
+  transition: color 0.3s, transform 0.3s, text-shadow 0.3s;
+}
+#text:hover {
+  color: #fff;
+  text-shadow: 1px 1px 1px #acaaaa, 1px 2px 1px #7d7d7d, 1px 1px 1px #acaaaa,
+    1px 2px 1px #7d7d7d, 1px 20px 40px rgba(147, 147, 147, 0.3);
+}
+

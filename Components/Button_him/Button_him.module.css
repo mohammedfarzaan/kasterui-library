@@ -1,44 +1,62 @@
 
-/* From Uiverse.io by e-coders - Tags: simple, minimalist, button */
-button {
- appearance: none;
- background-color: transparent;
- border: 0.125em solid #1A1A1A;
- border-radius: 0.9375em;
- box-sizing: border-box;
- color: #3B3B3B;
- cursor: pointer;
- display: inline-block;
- font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
- font-size: 16px;
- font-weight: 600;
- line-height: normal;
- margin: 0;
- min-height: 3.75em;
- min-width: 0;
- outline: none;
- padding: 1em 2.3em;
- text-align: center;
- text-decoration: none;
- transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
- user-select: none;
- -webkit-user-select: none;
- touch-action: manipulation;
- will-change: transform;
+/* From Uiverse.io by Sameer2244 - Tags: button */
+.btn-container {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
 }
 
-button:disabled {
- pointer-events: none;
+.svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%,-50%);
+  transition: 0.5s;
 }
 
-button:hover {
- color: #fff;
- background-color: #1A1A1A;
- box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
- transform: translateY(-2px);
+.btn {
+  background-color: rgb(66, 125, 194);
+  z-index: 10;
+  color: white;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
-button:active {
- box-shadow: none;
- transform: translateY(0);
+.btn-container:hover {
+  box-shadow: rgba(66, 125, 194, 0.8) 0px 0px 54px;
 }
+
+.btn:hover {
+  outline: rgb(66, 125, 194) solid 2px;
+  background-color: #212121;
+}
+
+.btn-container:hover > .svg-1 {
+  transform: translate(130%,50%);
+}
+
+.btn-container:hover > .svg-2 {
+  transform: translate(-120%,-150%) rotate(30deg);
+}
+
+.btn-container:hover > .svg-3 {
+  transform: translate(60%,-150%) rotate(-45deg);
+}
+
+.btn-container:hover > .svg-4 {
+  transform: translate(-280%,0%) rotate(30deg);
+}
+
+.btn-container:hover > .svg-5 {
+  transform: translate(-80%,60%) rotate(-45deg);
+}
+
+.btn:active {
+  transform: scale(1.05);
+}
+

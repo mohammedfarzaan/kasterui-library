@@ -1,89 +1,70 @@
 
-/* From Uiverse.io by KINGFRESS - Tags: button */
-button {
-  font-weight: bold;
-  color: white;
-  border-radius: 2rem;
-  width: 95.02px;
-  height: 42.66px;
+/* From Uiverse.io by vinodjangid07 - Tags: button, neon, copy, hover effect */
+.Btn {
+  width: 120px;
+  height: 45px;
+  background-color: rgb(65, 64, 64);
   border: none;
-  background-color: #3653F8;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.342);
+  border-radius: 5px;
+  cursor: pointer;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-button .span-mother {
-  display: flex;
+  justify-content: center;
+  gap: 7px;
+  position: relative;
   overflow: hidden;
+  transition-duration: .5s;
 }
 
-button:hover .span-mother {
+.text {
+  color: rgb(184, 236, 104);
+  font-weight: 800;
+  letter-spacing: 1.1px;
+  z-index: 2;
+}
+
+.svgIcon {
+  z-index: 2;
+}
+
+.svgIcon path {
+  fill: rgb(184, 236, 104);
+}
+
+.Btn:hover {
+  color: rgb(230, 255, 193);
+}
+
+.effect {
   position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(184, 236, 104);
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
+  transition-duration: .5s;
 }
 
-button:hover .span-mother span {
-  transform: translateY(1.2em);
+.Btn:hover .effect {
+  transform: scale(15);
+  transform-origin: center;
+  opacity: 1;
+  transition-duration: .5s;
 }
 
-button .span-mother span:nth-child(1) {
-  transition: .2s;
+.Btn:hover {
+  box-shadow: 0px 0px 5px rgb(184, 236, 104),
+  0px 0px 10px rgb(184, 236, 104),
+  0px 0px 30px rgb(184, 236, 104);
+  transition-duration: .7s;
 }
 
-button .span-mother span:nth-child(2) {
-  transition: .3s;
+.Btn:hover .text {
+  color: rgb(65, 64, 64);
 }
 
-button .span-mother span:nth-child(3) {
-  transition: .4s;
-}
-
-button .span-mother span:nth-child(4) {
-  transition: .5s;
-}
-
-button .span-mother span:nth-child(5) {
-  transition: .6s;
-}
-
-button .span-mother span:nth-child(6) {
-  transition: .7s;
-}
-
-button .span-mother2 {
-  display: flex;
-  position: absolute;
-  overflow: hidden;
-}
-
-button .span-mother2 span {
-  transform: translateY(-1.2em);
-}
-
-button:hover .span-mother2 span {
-  transform: translateY(0);
-}
-
-button .span-mother2 span {
-  transition: .2s;
-}
-
-button .span-mother2 span:nth-child(2) {
-  transition: .3s;
-}
-
-button .span-mother2 span:nth-child(3) {
-  transition: .4s;
-}
-
-button .span-mother2 span:nth-child(4) {
-  transition: .5s;
-}
-
-button .span-mother2 span:nth-child(5) {
-  transition: .6s;
-}
-
-button .span-mother2 span:nth-child(6) {
-  transition: .7s;
+.Btn:hover .svgIcon path {
+  fill: rgb(65, 64, 64);
 }

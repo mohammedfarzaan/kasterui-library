@@ -1,19 +1,25 @@
 
-/* From Uiverse.io by deepak16375 - Tags: button, animated */
-.button {
-  padding: .9rem 1.5rem;
-  border: .2rem solid #443;
-  border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
-  color: #443;
-  background: none;
+/* From Uiverse.io by faxriddin20  - Tags: purple, button, download, #button */
+.download-btn {
+  border: 2px solid rgb(168, 38, 255);
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s ease;
   cursor: pointer;
-  margin-top: 1rem;
-  font-size: 1.7rem;
-  transition: all .2s linear;
 }
-
-.button:hover {
-  border-radius: 4% 95% 6% 95% / 95% 4% 92% 5%;
-  border: .2rem dashed #443;
+.download-btn svg {
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s ease;
+}
+.download-btn:hover svg {
+  fill: white;
+}
+.download-btn:hover {
+  background-color: rgb(168, 38, 255);
 }
 

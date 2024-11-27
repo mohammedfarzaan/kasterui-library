@@ -1,64 +1,47 @@
 
-/* From Uiverse.io by vinodjangid07 - Tags: button, comment, button hover effect  */
-.bookmarkBtn {
-  width: 130px;
-  height: 40px;
-  border-radius: 40px;
-  border: none;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition-duration: .3s;
-  overflow: hidden;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.062);
-}
-
-.IconContainer {
-  width: 30px;
-  height: 30px;
-  background-color: rgb(103, 74, 228);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  z-index: 2;
-  transition-duration: .3s;
-}
-
-.icon {
-  border-radius: 1px;
-}
-
-.text {
-  height: 100%;
-  width: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(26, 26, 26);
+/* From Uiverse.io by adamgiebl - Tags: button */
+button {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #FF0072;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #FF0072;
+  text-decoration: none;
+  transition: 0.3s ease all;
   z-index: 1;
-  transition-duration: .3s;
-  font-size: 1.04em;
-  font-weight: 600;
 }
 
-.bookmarkBtn:hover .IconContainer {
-  width: 120px;
-  border-radius: 40px;
-  transition-duration: .3s;
+button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #FF0072;
+  z-index: -1;
 }
 
-.bookmarkBtn:hover .text {
-  transform: translate(10px);
-  width: 0;
-  font-size: 0;
-  transition-duration: .3s;
+button:hover, button:focus {
+  color: white;
 }
 
-.bookmarkBtn:active {
-  transform: scale(0.95);
-  transition-duration: .3s;
+button:hover:before, button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+button:active {
+  transform: scale(0.9);
 }

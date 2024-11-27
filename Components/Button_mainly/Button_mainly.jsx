@@ -1,19 +1,47 @@
 import React from "react";
+import styles from "./Button_mainly.module.css";
 
 const Button_mainly = () => (
   <div>
-    <button className="relative px-10 py-3.5 overflow-hidden group bg-gradient-to-r from-gray-700 to-black relative hover:bg-gradient-to-r hover:from-gray-600 hover:to-black text-white transition-all ease-out duration-300">
-      <span className="absolute right-0 w-10 h-full top-0 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 -skew-x-12 group-hover:-translate-x-36 ease"></span>
-      <span className="relative text-xl font-semibold">Text Button</span>
+    <button>
+      <svg
+        height="24"
+        width="24"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path
+          d="M20 17h2v2H2v-2h2v-7a8 8 0 1 1 16 0v7zm-2 0v-7a6 6 0 1 0-12 0v7h12zm-9 4h6v2H9v-2z"
+          fill="currentColor"
+        ></path>
+      </svg>
     </button>
   </div>
 );
 
 export default Button_mainly;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
-  /* */
+  /*
+            
+        import React from 'react';
+
+        const Button_mainly = () => (
+         <div>
+          <button>
+    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M20 17h2v2H2v-2h2v-7a8 8 0 1 1 16 0v7zm-2 0v-7a6 6 0 1 0-12 0v7h12zm-9 4h6v2H9v-2z" fill="currentColor"></path>
+    </svg>
+</button>
+        </div>
+        );
+
+        export default Button_mainly;
+        
+        
+         */
 }

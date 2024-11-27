@@ -1,31 +1,42 @@
 
-/* From Uiverse.io by mi-series - Tags: simple, material design, 3d, green, minimalist, button, click, btn */
+/* From Uiverse.io by SalladShooter  - Tags: simple, gradient, button */
 .button {
-  width: 150px;
-  padding: 0;
-  border: none;
-  transform: rotate(5deg);
-  transform-origin: center;
-  font-family: "Gochi Hand", cursive;
-  text-decoration: none;
-  font-size: 15px;
-  padding-bottom: 3px;
-  border-radius: 5px;
-  box-shadow: 0 2px 0 #494a4b;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  background-color: #5CDB95;
+  cursor: pointer;
+  padding: 1em;
+  font-size: 1em;
+  width: 7em;
+  aspect-ratio: 1/0.25;
+  color: white;
+  background: #212121;
+  background-size: cover;
+  background-blend-mode: overlay;
+  border-radius: 0.5em;
+  outline: 0.1em solid #353535;
+  border: 0;
+  box-shadow: 0 0 1em 1em rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
 }
 
-.button span {
-  background: #f1f5f8;
-  display: block;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  border: 2px solid #494a4b;
-}
-
-.button:active {
-  transform: translateY(5px);
-  padding-bottom: 0px;
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 1em 0.45em rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, #212121, #252525);
+  background: radial-gradient(
+    circle at bottom,
+    rgba(50, 100, 180, 0.5) 10%,
+    #212121 70%
+  );
   outline: 0;
 }
+
+.icon {
+  fill: white;
+  width: 1em;
+  aspect-ratio: 1;
+  top: 0;
+  left: 0;
+  margin: auto;
+  transform: translate(-35%, 10%);
+}
+

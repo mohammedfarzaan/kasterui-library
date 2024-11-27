@@ -1,41 +1,33 @@
 
-/* From Uiverse.io by r7chardgh - Tags: button, hover, stars */
-.stars {
-  position: absolute;
-  opacity: 0;
-  top: -.3em;
-  right: -.3em;
-  height: 100%;
-  transition: transform 300ms,opacity 150ms;
+/* From Uiverse.io by Showbizfleet - Tags: button */
+button {
+  height: 50px;
+  margin: 5px;
+  width: 120px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #9c27b0, #f44336, #ff9800, #ffc107, #8bc34a, #4caf50, #2196f3, #03a9f4, #00bcd4, #009688);
+  background-size: 200%;
+  background-position: 0%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out;
 }
 
-.stars :nth-child(n) {
-  fill: #999;
+button:hover {
+  background-position: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25), inset 0px -2px 0px rgba(255, 255, 255, 0.2);
 }
 
-.button {
-  position: relative;
-  cursor: pointer;
-  padding: 1em 2em;
-  border: 0;
-  border-radius: .5em;
-  font-weight: bolder;
-  transition: transform 150ms, box-shadow 150ms;
-  box-shadow: 0 0 #999;
-  background-color: #f1f1f1;
-  color: #333;
+button:focus {
+  outline: none;
 }
 
-.button:hover {
-  transform: translate(.3em,-.3em);
-  box-shadow: -.3em .3em #999;
+button:active {
+  background-size: 100%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(255, 255, 255, 0.2);
 }
 
-.button:hover > .stars {
-  opacity: 1;
-  transform: translate(.2em,-.2em);
-}
-
-.button:active > .stars :nth-child(n) {
-  fill: #ccc;
-}

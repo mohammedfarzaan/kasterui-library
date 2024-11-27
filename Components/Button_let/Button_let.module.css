@@ -1,52 +1,26 @@
 
-/* From Uiverse.io by cssbuttons-io - Tags: button, ripple */
-button {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 17px;
-  padding: 1em 2.7em;
-  font-weight: 500;
-  background: #1F2937;
+/* From Uiverse.io by speadfreak  - Tags: button */
+.button {
+  background:
+    linear-gradient(140.14deg, #ec540e 15.05%, #d6361f 114.99%) padding-box,
+    linear-gradient(142.51deg, #ff9465 8.65%, #af1905 88.82%) border-box;
+  border-radius: 7px;
+  border: 2px solid transparent;
+
+  text-shadow: 1px 1px 1px #00000040;
+  box-shadow: 8px 8px 20px 0px #45090059;
+
+  padding: 10px 40px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
   color: white;
-  border: none;
-  position: relative;
-  overflow: hidden;
-  border-radius: 0.6em;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.gradient {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 0.6em;
-  margin-top: -0.25em;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+.button:hover {
+  box-shadow: none;
+  opacity: 80%;
 }
 
-.label {
-  position: relative;
-  top: -1px;
-}
-
-.transition {
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  transition-duration: 500ms;
-  background-color: rgba(16, 185, 129, 0.6);
-  border-radius: 9999px;
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-button:hover .transition {
-  width: 14em;
-  height: 14em;
-}
-
-button:active {
-  transform: scale(0.97);
-}

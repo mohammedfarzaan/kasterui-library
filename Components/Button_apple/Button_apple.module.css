@@ -1,59 +1,59 @@
 
-/* From Uiverse.io by Spacious74  - Tags: button */
-.btn-container {
-  padding: 3px;
-  background: linear-gradient(180deg, #f3aefe, #8d35d3);
-  border-radius: 19px;
-  transform: perspective(850px) rotateX(14deg) rotateY(8deg) rotateZ(-11deg);
-  color: white;
-  box-shadow:
-    -4px 4px 0px #5d2b82,
-    -5px 7px 8px #4d1e7491,
-    -10px 13px 18px #4d1e7450,
-    -20px 20px 40px #4d1e74a8;
-  position: relative;
-  transition: all 0.4s ease;
+/* From Uiverse.io by Damithkumara - Tags: button */
+button {
+ padding: 0.9em 1.8em;
+ text-transform: uppercase;
+ text-decoration: none;
+ letter-spacing: 4px;
+ color: transparent;
+ border: 3px solid #ff0;
+ font-size: 14px;
+ position: relative;
+ font-family: inherit;
+ background: transparent;
 }
 
-.btn-container:hover {
-  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  box-shadow:
-    0px 4px 5px #5d2b82,
-    0px 7px 8px #4d1e7491,
-    0px 13px 18px #4d1e7450,
-    0px 20px 40px #4d1e74a8;
-}
-.btn-container:active {
-  box-shadow:
-    0px 4px 5px #5c2b82c7,
-    0px 7px 8px #4d1e745b,
-    0px 5px 18px #4d1e7434,
-    0px 10px 40px #4d1e746e;
-}
-.btn-container:active > .button {
-  box-shadow: inset 0px 6px 10px #3114494b;
+button::before {
+ content: "button";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: #363636;
+ color: #ff0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: all 0.5s;
 }
 
-.button {
-  color: white;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  padding: 22px 24px;
-  font-size: 1.6rem;
-  font-weight: 600;
-  border-radius: 16px;
-  border: none;
-  background: linear-gradient(180deg, #d28dff, #8533c6);
-  box-shadow: inset 0px -6px 10px #3114494b;
-  text-shadow: -1px 1px 3px #2a0f3fbb;
-  transition: all 0.3s ease;
+button:hover::before {
+ left: 100%;
+ transform: scale(0) rotateY(360deg);
+ opacity: 0;
 }
-.svg {
-  margin-top: 2px;
-  font-weight: bold;
-  filter: drop-shadow(-2px 2px 1px #2a0f3f6c);
+
+button::after {
+ content: "button";
+ position: absolute;
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 100%;
+ background-color: #363636;
+ color: #ff0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: all 0.5s;
+ transform: scale(0) rotateY(0deg);
+ opacity: 0;
+}
+
+button:hover::after {
+ left: 0;
+ transform: scale(1) rotateY(360deg);
+ opacity: 1;
 }
 

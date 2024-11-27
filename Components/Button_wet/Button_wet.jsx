@@ -3,24 +3,33 @@ import styles from "./Button_wet.module.css";
 
 const Button_wet = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span>Button</span>
+    </button>
   </div>
 );
 
 export default Button_wet;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_wet = () => (
          <div>
-          <button className="button">
-  Button
+          <button>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span>Button</span>
 </button>
         </div>
         );

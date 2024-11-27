@@ -3,23 +3,24 @@ import styles from "./Button_alike.module.css";
 
 const Button_alike = () => (
   <div>
-    <button className={styles["button"]}>button</button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
 export default Button_alike;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_alike = () => (
          <div>
-          <button className="button">button</button>
+          <button className="button">
+  Button
+</button>
         </div>
         );
 

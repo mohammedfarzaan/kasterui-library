@@ -1,83 +1,32 @@
 
-/* From Uiverse.io by Medisetti-Venkata-Saikiran  - Tags: button */
-.social-login-icons {
-  display: flex;
-  align-items: center;
-}
-.social-login-icons svg {
+/* From Uiverse.io by mrhyddenn - Tags: button */
+.mouse-btn {
+  margin: 10px auto;
   width: 40px;
-}
-
-.social-icon-1,
-.social-icon-2,
-.social-icon-3,
-.social-icon-4 {
-  width: 50px;
-  height: 50px;
+  height: 80px;
+  border: 3px solid rgba(122, 122, 124, 0.918);
+  border-radius: 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/* .social-icon-1 i{
-    color: rgba(175, 7, 7, 0.899);
-    font-size:50px;
-
-} */
-/* .social-icon-2 i{
-    color: skyblue;
-    font-size:50px;
-
-} */
-/* .social-icon-3 i{
-    color: rgb(58 58 227 / 87%);
-    font-size:50px;
-
-} */
-/* .social-login-icons{
-    margin: 30px 0px;
-} */
-
-.socialcontainer {
-  height: 50px;
-  overflow: hidden;
-}
-.social-icon-1 {
-  transition-duration: 0.4s;
-  background-color: rgb(0, 0, 0);
-}
-.socialcontainer:hover .social-icon-1 {
-  transform: translateY(-50px);
-}
-.social-icon-2 {
-  transition-duration: 0.4s;
-  background: linear-gradient(
-    72.44deg,
-    #ff7a00 11.92%,
-    #ff0169 51.56%,
-    #d300c5 85.69%
-  );
-}
-.socialcontainer:hover .social-icon-2 {
-  transform: translateY(-50px);
-}
-.social-icon-3 {
-  transition-duration: 0.4s;
-  background: #316ff6;
 }
 
-.socialcontainer:hover .social-icon-3 {
-  transform: translateY(-50px);
-}
-.social-icon-4 {
-  transition-duration: 0.4s;
-  background: linear-gradient(
-    180deg,
-    rgba(129, 34, 144, 1) 0%,
-    rgba(77, 34, 124, 1) 91%
-  );
+.mouse-scroll {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), rgb(123, 124, 124));
+  border-radius: 50%;
+  margin: auto;
+  animation: scrolling13 1s linear infinite;
 }
 
-.socialcontainer:hover .social-icon-4 {
-  transform: translateY(-50px);
-}
+@keyframes scrolling13 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
 
+  100% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}

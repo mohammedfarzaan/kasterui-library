@@ -1,29 +1,41 @@
 
-/* From Uiverse.io by JkHuger - Tags: button, smooth, animated */
-.testbutton {
-  display: block;
-  font-family: helvetica;
-  color: #000;
-  font-size: 16px;
+/* From Uiverse.io by JohnnyCSilva - Tags: button */
+.btn_center {
+  display: table-cell;
+  vertical-align: middle;
+  border: none;
+  background-color: transparent;
+}
+
+.btn_center {
+  color: white;
+  margin: auto;
+  width: 150px;
+  line-height: 50px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border-radius: 0px;
   font-weight: bold;
-  box-shadow: 9px 8px 0px -1px#BEE2F9, 9px 8px 0px 1px #000;
-  padding: 12px 25px;
-  border-radius: 11px;
-  border: 2px solid #000;
-  background: linear-gradient(to top, #63B8EE, #468CCF);
-  transition: .3s;
-  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #031d67;
+  box-shadow: 0px 15px 18px -6px rgba(35, 22, 214, 0.65);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  position: relative;
 }
 
-.testbutton:hover {
-  transition: .3s;
-  transform: translate(-.3em, -.3em);
-  box-shadow: 14px 13px 0px -1px #BEE2F9, 14px 13px 0px 1px #000;
-  border: 2px solid #000;
+.btn_center:hover {
+  background-color: #051749;
+  box-shadow: 0px 22px 19px -8px rgba(16, 8, 119, 0.65);
+  transform: scale(1.02,1.02);
 }
 
-.testbutton:active {
-  transition: .3s;
-  transform: translate(.6em, .6em);
-  box-shadow: 0px 0px 0px -1px #BEE2F9, 0px 0px 0px 0.1px#000;
+.btn_center:active {
+  background-color: #051749;
+  box-shadow: 0px 12px 18px -4px rgba(7, 4, 51, 0.65);
+  transform: scale(0.95,0.95);
+  transition: all 0.4s -0.125s;
 }

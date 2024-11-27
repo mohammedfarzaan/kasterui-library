@@ -1,39 +1,64 @@
 
-/* From Uiverse.io by boryanakrasteva - Tags: button */
-.mouse {
-  width: 25px;
-  height: 40px;
-  border: 1px solid rgb(196, 196, 196);
-  background-color: transparent;
-  border-radius: 13px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* From Uiverse.io by OnCloud125252 - Tags: simple, black, button, simple button, more info, read more */
+/* Note that you only needs to edit the config to customize the button! */
+
+.plusButton {
+  /* Config start */
+  --plus_sideLength: 2.5rem;
+  --plus_topRightTriangleSideLength: 0.9rem;
+  /* Config end */
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: var(--plus_sideLength);
+  height: var(--plus_sideLength);
+  background-color: #000000;
+  overflow: hidden;
 }
 
-.scroll {
-  width: 3px;
-  height: 10px;
-  background-color: rgb(196, 196, 196);
-  border-radius: 2px;
+.plusButton::before {
   position: absolute;
-  bottom: 9px;
-  animation: move_918 1.5s linear infinite;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-width: 0 var(--plus_topRightTriangleSideLength) var(--plus_topRightTriangleSideLength) 0;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
 }
 
-@keyframes move_918 {
-  0% {
-    bottom: 9px;
-  }
+.plusButton:hover {
+  cursor: pointer;
+}
 
-  50% {
-    bottom: 5px;
-  }
+.plusButton:hover::before {
+  --plus_topRightTriangleSideLength: calc(var(--plus_sideLength) * 2);
+}
 
-  100% {
-    bottom: 9px;
-  }
+.plusButton:focus-visible::before {
+  --plus_topRightTriangleSideLength: calc(var(--plus_sideLength) * 2);
+}
+
+.plusButton>.plusIcon {
+  fill: white;
+  width: calc(var(--plus_sideLength) * 0.7);
+  height: calc(var(--plus_sideLength) * 0.7);
+  z-index: 1;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+
+.plusButton:hover>.plusIcon {
+  fill: black;
+  transform: rotate(180deg);
+}
+
+.plusButton:focus-visible>.plusIcon {
+  fill: black;
+  transform: rotate(180deg);
 }

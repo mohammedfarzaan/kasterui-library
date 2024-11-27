@@ -1,62 +1,60 @@
 
-/* From Uiverse.io by Gaurav-WebDev  - Tags: simple, button, hover, smooth, btn, hover effect */
+/* From Uiverse.io by andrew-demchenk0 - Tags: button */
 .button {
-  height: 50px;
-  width: 150px;
-  font-weight: 800;
-  border: none;
-  background-color: #3434;
-  color: #ffff;
-  border-radius: 20px;
-  cursor: pointer;
   position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #17795E;
+  background-color: #209978;
   overflow: hidden;
-  transition: all 0.7s;
 }
 
-.button::after {
-  content: "Me";
-  height: 100%;
-  width: 50%;
-  background-color: coral;
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button .button__icon {
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #17795E;
   display: flex;
   align-items: center;
-  justify-content: start;
-  padding-left: 10px;
-  box-sizing: border-box;
-  transition: all 0.7s;
+  justify-content: center;
 }
 
-.button::before {
-  content: "Hover";
-  height: 100%;
-  width: 50%;
-  background-color: teal;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding-right: 10px;
-  box-sizing: border-box;
-  transition: all 0.7s;
-}
-
-.button:hover::after {
-  right: -100px;
-}
-
-.button:hover::before {
-  left: -100px;
+.button .svg {
+  width: 20px;
+  fill: #fff;
 }
 
 .button:hover {
-  background-color: #000;
-  color: #fff;
-  transform: scale(1.2);
+  background: #17795E;
 }
 
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #146c54;
+}
+
+.button:active {
+  border: 1px solid #146c54;
+}

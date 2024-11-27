@@ -1,74 +1,51 @@
 
-/* From Uiverse.io by ChanduOffl  - Tags: icon, animation, white, button, message, btn, buttons, hover button */
+/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, transition, fill up */
 .button {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #fefefe;
-  border: 1px solid #dcdcdc;
-  border-radius: 12px;
-
-  font-family: "Ubuntu", sans-serif;
-  font-size: 16px;
+  display: inline-block;
+  padding: 15px 32px;
+  font-size: 17px;
   font-weight: bold;
-  color: #333;
-  cursor: pointer;
+  color: rgb(53, 53, 53);
+  background: transparent;
+  border-radius: 50px;
+  text-align: center;
   text-decoration: none;
-  transition: all 0.3s ease;
+  cursor: pointer;
   position: relative;
+  border: none;
+  z-index: 1;
   overflow: hidden;
-  z-index: 0;
-  outline: 2px solid #fafafa;
-  box-shadow: 9px 9px 44px #cecece3a, -9px -9px 44px #d3d3d33d,
-    inset 0 0 0 2px rgba(192, 192, 192, 0.25);
 }
 
-.button::before {
+.button:before {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 3px;
-  right: 3px;
-  bottom: 3px;
-  border-radius: 30px;
-  background: linear-gradient(
-    0deg,
-    #fbfbfb 0%,
-    #fafafa 5%,
-    #f7f7f7 72%,
-    #f2f2f2 86%,
-    #f0f0f0 100%
-  );
-  box-shadow: inset 0 2px 7px rgba(143, 143, 143, 0.16);
-  transition: all 0.3s ease;
+  top: 0%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: blanchedalmond;
+  transition: left 0.8s ease-in-out;
   z-index: -1;
-  margin: 2px;
 }
 
-.button:hover::before {
-  top: 1px;
-  left: 1px;
-  right: 1px;
-  bottom: 1px;
-  margin: 5px;
+.button:hover:before {
+  left: 0%;
 }
 
-.button:focus {
-  outline: 2px solid #fefefe;
-  box-shadow: 9px 9px 44px #cecece3a, -9px -9px 44px #d3d3d33d,
-    inset 0 0 0 2px rgba(192, 192, 192, 0.5);
+.button:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 0.8s ease-in-out;
+  z-index: -1;
 }
 
-.send-icon {
-  margin-right: 5px;
-  transition: transform 0.3s ease;
-}
-
-.button:hover .send-icon {
-  transform: translateX(7px);
-}
-
-.button:focus .send-icon {
-  transform: rotate(-40deg);
+.button:hover:after {
+  background-color: transparent;
 }
 

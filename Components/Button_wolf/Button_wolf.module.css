@@ -1,28 +1,63 @@
 
-/* From Uiverse.io by PriyanshuGupta28 - Tags: button, bootsrap button, button hover effect , 2d button */
-.swipe-button {
-  padding: 10px 20px;
-  font-size: 18px;
+/* From Uiverse.io by catraco - Tags: button, click, light&dark, startbutton  */
+.btn {
+  --color: #de5c9d;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
   border: none;
-  background: linear-gradient(45deg, #3498db, #e74c3c, #9b59b6, #2ecc71);
-  background-size: 200% 200%;
-  background-position: 0 0;
+  background-color: transparent;
+}
+
+.btn div {
+  letter-spacing: 2px;
+  font-weight: bold;
+  background: var(--color);
+  border-radius: 2rem;
   color: white;
-  border-radius: 5px;
+  padding: 1rem;
+}
+
+.btn::before {
+  content: '';
+  z-index: -1;
+  background-color: var(--color);
+  border: 2px solid white;
+  border-radius: 2rem;
+  width: 110%;
+  height: 100%;
+  position: absolute;
+  transform: rotate(10deg);
+  transition: .5s;
+  opacity: 0.2;
+}
+
+.btn:hover {
   cursor: pointer;
-  font-family: sans-serif;
-  transition: background-position 0.5s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  filter: brightness(1.2);
+  transform: scale(1.1);
 }
 
-.swipe-button:hover {
-  background-position: 100% 100%;
-  transform: scale(1.05);
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+.btn:hover::before {
+  transform: rotate(0deg);
+  opacity: 1;
 }
 
-.swipe-button:active {
-  transform: translateY(2px);
-  color: #fff;
- /* Change text color when active */
+.btn svg {
+  transform: translateX(-200%);
+  transition: .5s;
+  width: 0;
+  opacity: 0;
 }
 
+.btn:hover svg {
+  width: 25px;
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.btn:active {
+  filter: brightness(1.4);
+}

@@ -1,24 +1,30 @@
 
-/* From Uiverse.io by KSAplay - Tags: button */
-button {
-  background-color: #0050ec;
-  color: white;
-  font-size: 16px;
+/* From Uiverse.io by Gautammsharma - Tags: button */
+.comic-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
   font-weight: bold;
-  padding: 15px 20px;
-  border-radius: 2em;
-  cursor: pointer;
-  transition: 0.1s ease;
-  border-width: 0;
-  box-shadow: 1px 5px 0 0 #0e285d;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff5252;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
 }
 
-button:hover {
-  transform: translateY(-4px);
-  box-shadow: 1px 9px 0 0 #0e285d;
+.comic-button:hover {
+  background-color: #fff;
+  color: #ff5252;
+  border: 2px solid #ff5252;
+  box-shadow: 5px 5px 0px #ff5252;
 }
 
-button:active {
+.comic-button:active {
+  background-color: #fcf414;
+  box-shadow: none;
   transform: translateY(4px);
-  box-shadow: 0px 0px 0 0 #0e285d;
 }
+

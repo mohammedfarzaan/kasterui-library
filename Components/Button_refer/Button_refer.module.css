@@ -1,68 +1,60 @@
 
-/* From Uiverse.io by MopokD71304  - Tags: simple, button, advanced, input effect  */
-.nav_bar {
-  background-color: rgb(27, 27, 27);
-  position: relative;
+/* From Uiverse.io by aguerquin  - Tags: button, hover, cube, github, btn, hover button, 3d button, button hover effect  */
+.button-icon {
   display: flex;
-  transition: 0.4s;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 15px 15px;
-  border-radius: 15px;
+  border: 3px #fff solid;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
 }
 
-.bar1 {
-  border-radius: 30px;
-  background-color: rgb(255, 255, 255);
-  width: 50px;
-  margin-bottom: 15px;
-  transition: 0.4s;
-  height: 5px;
+.icon {
+  background-color: #fff;
+  padding: 10px 10px 5px 10px;
 }
 
-.bar2 {
-  border-radius: 30px;
-  background-color: rgb(255, 255, 255);
-  width: 50px;
+.icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.cube {
+  transition: all 0.4s;
+  transform-style: preserve-3d;
+  width: 200px;
+  height: 20px;
+}
+
+.button-icon:hover {
+  border-color: #ff98a2;
+}
+
+.button-icon:hover .cube {
+  transform: rotateX(90deg);
+}
+
+.side {
   position: absolute;
-  transition: 0.4s;
-  height: 5px;
+  height: 47px;
+  width: 200px;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
 }
 
-.bar3_h {
-  border-radius: 30px;
-  background-color: rgb(255, 255, 255);
-  width: 50px;
-  transition: 0.4s;
-  height: 5px;
+.top {
+  background: #ff98a2;
+  color: #fff;
+  transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
 }
 
-.bar4 {
-  border-radius: 30px;
-  background-color: rgb(255, 255, 255);
-  width: 50px;
-  margin-top: 15px;
-  transition: 0.4s;
-  height: 5px;
-}
-
-.nav_bar:hover {
-  border-radius: 50px;
-}
-.nav_bar:hover .bar3_h {
-  transform: rotate(-45deg);
-}
-.nav_bar:hover .bar2 {
-  transform: rotate(45deg);
-}
-
-.nav_bar:hover .bar1 {
-  opacity: 0;
-  width: 30px;
-}
-.nav_bar:hover .bar4 {
-  opacity: 0;
-  width: 30px;
+.front {
+  background: #222229;
+  color: #fff;
+  transform: translate3d(0, 0, 1em);
 }
 

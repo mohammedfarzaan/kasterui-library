@@ -1,59 +1,35 @@
 
-/* From Uiverse.io by nkhlrjrs - Tags: button, accept call, Call Us, Schedule a call */
-/* CSS code */
-.schedule-button {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #c49ff5;
-  color: #ffffff;
-  font-size: 16px;
-  text-decoration: none;
-  border-radius: 20px;
- /* Rounded corners */
-  transition: background-color 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
- /* Smooth transitions */
-  font-family: 'Poppins', sans-serif;
- /* Change font to Poppins */
+/* From Uiverse.io by KSAplay - Tags: button */
+.btn {
+  padding: 0.8em 2em 0.8em 2.5em;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 15px;
+  color: #f6fff6;
+  letter-spacing: 0.3em;
+  text-shadow: -2px 2px 5px #33fd30;
+  background-color: transparent;
+  border: 2px solid #bbfeb1;
+  box-shadow: 0 0 0px 1px #42f112,
+    0 0 10px 2px #33fd30,
+    inset 0 0 0px 1px #42f112,
+    inset 0 0 10px 2px #33fd30;
+  transition: 100ms;
 }
 
-.schedule-button:hover {
-  background-color: #6d21f2;
-  transform: translateX(-5px);
- /* Move button to the left */
+.btn:hover {
+  box-shadow: 0 0 0px 1px #42f112,
+    0 0 10px 2px #33fd30,
+    inset 0 0 0px 1px #42f112,
+    inset 0 0 30px 2px #33fd30;
+  text-shadow: 0 0 10px #33fd30;
+  transform: translateY(-5px);
 }
 
-.schedule-button .arrow {
-  display: none;
-  width: 20px;
-  height: 20px;
-  fill: #ffffff;
-  opacity: 0;
- /* Initial opacity */
-  transform: translateX(-20px) rotate(-45deg);
- /* Initial position */
-  transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
- /* Smooth transitions */
+.btn:active {
+  box-shadow: 0 0 0px 1px #42f112,
+    0 0 25px 2px #33fd30,
+    inset 0 0 0px 1px #42f112,
+    inset 0 0 30px 2px #33fd30;
+  transform: translateY(1px);
 }
-
-.schedule-button:hover .arrow {
-  display: inline-block;
-  opacity: 1;
- /* Fade in on hover */
-  animation: slide-in 0.4s forwards;
-}
-
-@keyframes slide-in {
-  from {
-    transform: translateX(-50px) rotate(-45deg);
-    opacity: 0.1;
- /* Slightly visible */
-  }
-
-  to {
-    transform: translateX(0) rotate(-45deg);
-    opacity: 1;
- /* Fully visible */
-  }
-}
-

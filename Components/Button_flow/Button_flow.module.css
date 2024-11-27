@@ -1,69 +1,88 @@
 
-/* From Uiverse.io by vinodjangid07 - Tags: gradient, notification, button, hover effect */
-.button {
-  width: 140px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background: linear-gradient(to left,rgb(173, 154, 255),rgb(149, 110, 255));
-  border-radius: 30px;
-  color: rgb(255, 255, 255);
-  font-weight: 600;
-  border: none;
+/* From Uiverse.io by OnCloud125252 - Tags: simple, black, button, animated, simple button */
+/* Note that you only needs to edit the config to customize the button! */
+
+.signInButton {
+  /* Config start */
+  --signIn_width: 6rem;
+  --signIn_height: 2.5rem;
+  --signIn_bottomLeftTriangleSideLength: 1rem;
+  --signIn_topRightTriangleSideLength: 0.9rem;
+  /* Config end */
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 6rem;
+  height: 2.5rem;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.signInButton::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-width: 0 var(--signIn_bottomLeftTriangleSideLength) var(--signIn_bottomLeftTriangleSideLength) 0;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+
+.signInButton::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: calc(var(--signIn_topRightTriangleSideLength) * 1.4142135623730950488016887242097);
+  height: calc(var(--signIn_topRightTriangleSideLength) * 1.4142135623730950488016887242097);
+  outline: 1px solid white;
+  transform: translate(50%, -50%) rotate(45deg);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+
+.signInButton:hover {
   cursor: pointer;
-  transition-duration: .2s;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
 }
 
-.bell {
-  width: 13px;
+.signInButton:hover::before {
+  --signIn_bottomLeftTriangleSideLength: calc(var(--signIn_width) + var(--signIn_height) - var(--signIn_topRightTriangleSideLength) + (var(--signIn_topRightTriangleSideLength) * 0.3));
 }
 
-.bell path {
-  fill: rgb(255, 255, 255);
+.signInButton:focus-visible::before {
+  --signIn_bottomLeftTriangleSideLength: calc(var(--signIn_width) + var(--signIn_height) - var(--signIn_topRightTriangleSideLength) + (var(--signIn_topRightTriangleSideLength) * 0.3));
 }
 
-.button:hover {
-  background: linear-gradient(to left,rgb(154, 131, 255),rgb(135, 91, 255));
+.signInButton:hover::after {
+  transform: translate(calc(50% + var(--signIn_topRightTriangleSideLength) * 0.1), calc((50% + var(--signIn_topRightTriangleSideLength) * 0.1) * -1)) rotate(45deg);
 }
 
-.button:active {
-  transform: scale(0.97);
-  transition-duration: .2s;
+.signInButton:focus-visible::after {
+  transform: translate(calc(50% + var(--signIn_topRightTriangleSideLength) * 0.1), calc((50% + var(--signIn_topRightTriangleSideLength) * 0.1) * -1)) rotate(45deg);
 }
 
-.button:hover .bell {
-  animation: bellRing 0.9s both;
+.signInButton:hover>.signInButtonText {
+  color: black;
 }
 
-/* bell ringing animation keyframes*/
-@keyframes bellRing {
-  0%,
-  100% {
-    transform-origin: top;
-  }
-
-  15% {
-    transform: rotateZ(10deg);
-  }
-
-  30% {
-    transform: rotateZ(-10deg);
-  }
-
-  45% {
-    transform: rotateZ(5deg);
-  }
-
-  60% {
-    transform: rotateZ(-5deg);
-  }
-
-  75% {
-    transform: rotateZ(2deg);
-  }
+.signInButton:focus-visible>.signInButtonText {
+  color: black;
 }
 
+.signInButtonText {
+  margin: auto 0;
+  color: white;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  z-index: 1;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}

@@ -1,33 +1,59 @@
 
-/* From Uiverse.io by Cornerstone-04 - Tags: button */
+/* From Uiverse.io by andrew-demchenk0 - Tags: button */
 button {
   position: relative;
-  background: none;
-  border: solid 1px #121212;
-  transition: linear 250ms;
-  width: 100px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
+  width: 130px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px #00acee solid;
+  overflow: hidden;
 }
 
-button:is(:hover,:focus) {
-  color: #fff;
+.text1 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-left: 22%;
 }
 
-button::after {
+.text2 {
   position: absolute;
-  content: '';
-  inset: 0;
-  z-index: -1;
-  background-color: #121212;
-  transform-origin: left;
-  transform: scaleX(0);
-  transition: linear 250ms;
+  top: 25%;
+  left: -50px;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
 }
 
-button:is(:hover, :focus)::after {
-  transform: scale(1);
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+}
+
+.icon::before {
+  position: absolute;
+  left: -100px;
+  top: 0;
+  z-index: -1;
+  content: '';
+  width: 130px;
+  height: 33px;
+  border-radius: 30px;
+  background-color: #00acee;
+}
+
+button:hover .icon {
+  transform: translateX(96px);
+  transition: transform 0.5s;
+}
+
+button:hover .text2 {
+  transform: translateX(100px);
+  transition: transform 0.6s;
+}
+
+button:active {
+  transform: scale(1.03);
 }

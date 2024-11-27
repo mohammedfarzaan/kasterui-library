@@ -1,59 +1,36 @@
 
-/* From Uiverse.io by andrew-demchenk0 - Tags: green, button, add */
-.button {
-  position: relative;
-  width: 150px;
-  height: 40px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  border: 1px solid #34974d;
-  background-color: #3aa856;
-}
-
-.button, .button__icon, .button__text {
-  transition: all 0.3s;
-}
-
-.button .button__text {
-  transform: translateX(30px);
+/* From Uiverse.io by mi-series - Tags: button */
+button {
+  width: 170px;
+  height: 60px;
   color: #fff;
-  font-weight: 600;
-}
-
-.button .button__icon {
-  position: absolute;
-  transform: translateX(109px);
-  height: 100%;
-  width: 39px;
-  background-color: #34974d;
+  background: #000;
+  font-size: 17px;
+  text-decoration: none;
+  margin: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0px 0px 0 #000;
+  transition: 0.5s;
+  position: relative;
 }
 
-.button .svg {
+button:hover {
+  box-shadow: 8px 10px 0 #000;
+  background: transparent;
+  border: 2px solid #000;
+  color: #000;
+  margin-top: 5px;
+}
+
+button span {
+  margin-left: 10px;
+  width: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+button:hover span {
   width: 30px;
-  stroke: #fff;
-}
-
-.button:hover {
-  background: #34974d;
-}
-
-.button:hover .button__text {
-  color: transparent;
-}
-
-.button:hover .button__icon {
-  width: 148px;
-  transform: translateX(0);
-}
-
-.button:active .button__icon {
-  background-color: #2e8644;
-}
-
-.button:active {
-  border: 1px solid #2e8644;
 }

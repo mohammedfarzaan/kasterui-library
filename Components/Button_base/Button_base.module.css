@@ -1,53 +1,107 @@
 
-/* From Uiverse.io by itay1313 - Tags: button */
-.box {
-  --border-radius: 4vmin;
-  --bg: #3A3544;
-  --color: #D0BCFF;
-  --deg: 30deg;
-  -webkit-perspective: 200px;
-  perspective: 200px;
-  -webkit-transform-origin: top center;
-  -ms-transform-origin: top center;
-  transform-origin: top center;
-  max-width: 350px;
-  text-align: center;
-  outline: none;
-  border: none;
-  background: none;
-}
-
-.button {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: rotateY(var(--deg));
-  transform: rotateY(var(--deg));
-  -webkit-transition: all 800ms ease-in-out;
-  transition: all 800ms ease-in-out;
-  border-radius: var(--border-radius);
-  font-style: normal;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
+/* From Uiverse.io by Li-Deheng - Tags: animation, button, hover, arrow, next */
+.btn-conteiner {
   display: flex;
-  font-size: 2vmin;
-  letter-spacing: 0.03vmin;
-  padding: 1.3vmin 2.5vmin;
-  background: var(--bg);
-  color: var(--color);
+  justify-content: center;
+  --color-text: #ffffff;
+  --color-background: #ff135a;
+  --color-outline: #ff145b80;
+  --color-shadow: #00000080;
 }
 
-.button:hover {
-  -webkit-transform: rotateY(calc(-1 * var(--deg)));
-  transform: rotateY(calc(-1 * var(--deg)));
+.btn-content {
+  display: flex;
+  align-items: center;
+  padding: 5px 30px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: 1s;
+  border-radius: 100px;
+  box-shadow: 0 0 0.2em 0 var(--color-background);
 }
 
-.box:active .button {
-  -webkit-transform: rotateY(calc(-1 * var(--deg) / 3));
-  transform: rotateY(calc(-1 * var(--deg) / 3));
+.btn-content:hover, .btn-content:focus {
+  transition: 0.5s;
+  -webkit-animation: btn-content 1s;
+  animation: btn-content 1s;
+  outline: 0.1em solid transparent;
+  outline-offset: 0.2em;
+  box-shadow: 0 0 0.4em 0 var(--color-background);
 }
 
-.box:focus .button {
-  border: 0.05vmin solid var(--color);
+.btn-content .icon-arrow {
+  transition: 0.5s;
+  margin-right: 0px;
+  transform: scale(0.6);
 }
 
+.btn-content:hover .icon-arrow {
+  transition: 0.5s;
+  margin-right: 25px;
+}
+
+.icon-arrow {
+  width: 20px;
+  margin-left: 15px;
+  position: relative;
+  top: 6%;
+}
+  
+/* SVG */
+#arrow-icon-one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+#arrow-icon-two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.btn-content:hover #arrow-icon-three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.btn-content:hover #arrow-icon-one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.btn-content:hover #arrow-icon-two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: var(--color-background);
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+/* Button animations */
+@-webkit-keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+@keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}

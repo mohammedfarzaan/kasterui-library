@@ -1,64 +1,64 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: simple, animation, button, hover, hover effect, print */
-.print-btn {
-  width: 100px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  border: 1px solid rgb(213, 213, 213);
-  border-radius: 10px;
-  gap: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  overflow: hidden;
-  font-weight: 500;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.065);
-  transition: all 0.3s;
-}
-.printer-wrapper {
+/* From Uiverse.io by vinodjangid07  - Tags: tooltip, button, hover, trash, delete, hover effect, bin */
+.deleteButton {
+  width: 40px;
+  height: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 100%;
+  gap: 3px;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
 }
-.printer-container {
-  height: 50%;
-  width: 100%;
+.deleteButton svg {
+  width: 44%;
+}
+.deleteButton:hover {
+  background-color: rgb(237, 56, 56);
+  overflow: visible;
+}
+.bin path {
+  transition: all 0.2s;
+}
+.deleteButton:hover .bin path {
+  fill: #fff;
+}
+.deleteButton:active {
+  transform: scale(0.98);
+}
+.tooltip {
+  --tooltip-color: rgb(41, 41, 41);
+  position: absolute;
+  top: -40px;
+  background-color: var(--tooltip-color);
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 8px 12px;
+  font-weight: 600;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.105);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+  opacity: 0;
+  transition: all 0.5s;
 }
-
-.printer-container svg {
-  width: 100%;
-  height: auto;
-  transform: translateY(4px);
-}
-.printer-page-wrapper {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-.printer-page {
-  width: 70%;
+.tooltip::before {
+  position: absolute;
+  width: 10px;
   height: 10px;
-  border: 1px solid black;
-  background-color: white;
-  transform: translateY(0px);
-  transition: all 0.3s;
-  transform-origin: top;
+  transform: rotate(45deg);
+  content: "";
+  background-color: var(--tooltip-color);
+  bottom: -10%;
 }
-.print-btn:hover .printer-page {
-  height: 16px;
-  background-color: rgb(239, 239, 239);
-}
-.print-btn:hover {
-  background-color: rgb(239, 239, 239);
+.deleteButton:hover .tooltip {
+  opacity: 1;
 }
 

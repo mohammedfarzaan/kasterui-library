@@ -1,45 +1,41 @@
 import React from "react";
-import styles from "./Button_word.module.css";
 
 const Button_word = () => (
   <div>
-    <button className={styles["button"]}>
-      <span>Add to cart</span>
-      <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-        <g
-          stroke-linejoin="round"
-          stroke-linecap="round"
-          id="SVGRepo_tracerCarrier"
-        ></g>
-        <g id="SVGRepo_iconCarrier">
-          {" "}
-          <defs> </defs>{" "}
-          <g id="cart">
-            {" "}
-            <circle
-              r="1.91"
-              cy="20.59"
-              cx="10.07"
-              className={styles["cls-1"]}
-            ></circle>{" "}
-            <circle
-              r="1.91"
-              cy="20.59"
-              cx="18.66"
-              className={styles["cls-1"]}
-            ></circle>{" "}
-            <path
-              d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"
-              className={styles["cls-1"]}
-            ></path>{" "}
-            <polyline
-              points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"
-              className={styles["cls-1"]}
-            ></polyline>{" "}
-          </g>{" "}
-        </g>
-      </svg>
+    <button className="cursor-pointer p-2 px-5 text-white rounded-lg shadow-lg shadow-black bg-gradient-to-b from-[#c654ff] to-[#b319ff] hover:shadow-inner hover:shadow-black hover:bg-[#b319ff]">
+      <div className="flex justify-around align-baseline">
+        <h1 className="px-2 text-xl">Join Today</h1>
+        <svg
+          strokeWidth="22.016"
+          transform="rotate(0)"
+          stroke="#ffffff"
+          xml:space="preserve"
+          viewBox="180 -220 100 800"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          xmlns="http://www.w3.org/2000/svg"
+          id="Layer_1"
+          version="1.1"
+          width="25px"
+          height="25px"
+          fill="#ffffff"
+        >
+          <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
+          <g
+            strokeWidth="2.048"
+            stroke="#CCCCCC"
+            strokeLinejoin="round"
+            strokeLinecap="round"
+            id="SVGRepo_tracerCarrier"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <g>
+              <g>
+                <path d="M388.418,240.915L153.752,6.248c-8.331-8.331-21.839-8.331-30.17,0c-8.331,8.331-8.331,21.839,0,30.17L343.163,256 L123.582,475.582c-8.331,8.331-8.331,21.839,0,30.17c8.331,8.331,21.839,8.331,30.17,0l234.667-234.667 C396.749,262.754,396.749,249.246,388.418,240.915z"></path>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
     </button>
   </div>
 );
@@ -47,24 +43,5 @@ const Button_word = () => (
 export default Button_word;
 
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-        
-        import React from 'react';
-
-        const Button_word = () => (
-         <div>
-          <button className="button">
-  <span>Add to cart</span>
-  <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <defs>  </defs> <g id="cart"> <circle r="1.91" cy="20.59" cx="10.07" className="cls-1"></circle> <circle r="1.91" cy="20.59" cx="18.66" className="cls-1"></circle> <path d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10" className="cls-1"></path> <polyline points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91" className="cls-1"></polyline> </g> </g></svg>
-</button>
-        </div>
-        );
-
-        export default Button_word;
-        
-        
-         */
+  /* */
 }

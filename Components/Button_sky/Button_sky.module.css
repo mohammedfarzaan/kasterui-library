@@ -1,44 +1,28 @@
 
-/* From Uiverse.io by AKAspidey01  - Tags: simple, flashy, animation, button, hover, smooth, hover effect, button hover effect  */
-.button {
-  cursor: pointer;
-  position: relative;
-  width: 5em;
-  height: 4em;
-  border: none;
-  background: rgb(248, 66, 42);
-  padding: 0.5em;
+/* From Uiverse.io by vinodjangid07  - Tags: button, hover effect, filter, setting */
+.filter {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 0.7em;
-  flex-direction: column;
-  transition-duration: 0.5s;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.021);
+  transition: all 0.3s;
 }
-.button:hover {
-  background: rgb(7, 142, 253);
+
+.filter svg {
+  height: 16px;
+  fill: rgb(77, 77, 77);
+  transition: all 0.3s;
 }
-.similar-line {
-  height: 0.2em;
-  background: #fff;
-  border-radius: 1em;
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+.filter:hover {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.11);
+  background-color: rgb(59, 59, 59);
 }
-.line-1 {
-  width: 40%;
-}
-.line-2 {
-  width: 70%;
-}
-.line-3 {
-  width: 90%;
-}
-.button:hover .line-1 {
-  width: 90%;
-}
-.button:hover .line-2 {
-  width: 70%;
-}
-.button:hover .line-3 {
-  width: 40%;
+.filter:hover svg {
+  fill: white;
 }
 

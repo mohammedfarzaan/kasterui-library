@@ -3,90 +3,47 @@ import styles from "./Button_ocean.module.css";
 
 const Button_ocean = () => (
   <div>
-    <button className={styles["button"]}>
-      <div className={styles["icon"]}>
-        <span className={styles["text-icon"] + styles["hide"]}>Icon</span>
-        <svg
-          className={styles["css-i6dzq1"]}
-          stroke-linejoin="round"
-          stroke-linecap="round"
-          fill="none"
-          stroke-width="2"
-          stroke="currentColor"
-          height="24"
-          width="24"
-          viewBox="0 0 24 24"
-        >
-          <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
-        </svg>
-      </div>
-      <span className={styles["title"]}> Anatomy </span>
-      <div className={styles["padding-left"] + styles["hide"]}>
-        <div className={styles["padding-left-line"]}>
-          <span className={styles["padding-left-text"]}>Left Padding</span>
-        </div>
-      </div>
-      <div className={styles["padding-right"] + styles["hide"]}>
-        <div className={styles["padding-right-line"]}>
-          <span className={styles["padding-right-text"]}>Right Padding</span>
-        </div>
-      </div>
-      <div className={styles["background"] + styles["hide"]}>
-        <span className={styles["background-text"]}>Background</span>
-      </div>
-      <div className={styles["border"] + styles["hide"]}>
-        <span className={styles["border-text"]}>Border Radius</span>
-      </div>
+    <button>
+      <svg
+        className="empty"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        width="32"
+        height="32"
+      >
+        <path fill="none" d="M0 0H24V24H0z"></path>
+        <path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2zm-3.566 15.604c.881-.556 1.676-1.109 2.42-1.701C18.335 14.533 20 11.943 20 9c0-2.36-1.537-4-3.5-4-1.076 0-2.24.57-3.086 1.414L12 7.828l-1.414-1.414C9.74 5.57 8.576 5 7.5 5 5.56 5 4 6.656 4 9c0 2.944 1.666 5.533 4.645 7.903.745.592 1.54 1.145 2.421 1.7.299.189.595.37.934.572.339-.202.635-.383.934-.571z"></path>
+      </svg>
+      <svg
+        className="filled"
+        height="32"
+        width="32"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0 0H24V24H0z" fill="none"></path>
+        <path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z"></path>
+      </svg>
+      Like
     </button>
   </div>
 );
 
 export default Button_ocean;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_ocean = () => (
          <div>
-          <button className="button">
-  <div className="icon">
-    <span className="text-icon hide">Icon</span>
-    <svg
-      className="css-i6dzq1"
-      stroke-linejoin="round"
-      stroke-linecap="round"
-      fill="none"
-      stroke-width="2"
-      stroke="currentColor"
-      height="24"
-      width="24"
-      viewBox="0 0 24 24"
-    >
-      <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
-    </svg>
-  </div>
-  <span className="title"> Anatomy </span>
-  <div className="padding-left hide">
-    <div className="padding-left-line">
-      <span className="padding-left-text">Left Padding</span>
-    </div>
-  </div>
-  <div className="padding-right hide">
-    <div className="padding-right-line">
-      <span className="padding-right-text">Right Padding</span>
-    </div>
-  </div>
-  <div className="background hide">
-    <span className="background-text">Background</span>
-  </div>
-  <div className="border hide">
-    <span className="border-text">Border Radius</span>
-  </div>
+          <button>
+  <svg className="empty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0H24V24H0z"></path><path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2zm-3.566 15.604c.881-.556 1.676-1.109 2.42-1.701C18.335 14.533 20 11.943 20 9c0-2.36-1.537-4-3.5-4-1.076 0-2.24.57-3.086 1.414L12 7.828l-1.414-1.414C9.74 5.57 8.576 5 7.5 5 5.56 5 4 6.656 4 9c0 2.944 1.666 5.533 4.645 7.903.745.592 1.54 1.145 2.421 1.7.299.189.595.37.934.572.339-.202.635-.383.934-.571z"></path></svg>
+  <svg className="filled" height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H24V24H0z" fill="none"></path><path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z"></path></svg>
+  Like
 </button>
         </div>
         );

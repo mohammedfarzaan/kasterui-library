@@ -3,23 +3,22 @@ import styles from "./Button_grass.module.css";
 
 const Button_grass = () => (
   <div>
-    <button> # NICE BUTTON</button>
+    <button> Button</button>
   </div>
 );
 
 export default Button_grass;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_grass = () => (
          <div>
-          <button> # NICE BUTTON
+          <button> Button
 </button>
         </div>
         );

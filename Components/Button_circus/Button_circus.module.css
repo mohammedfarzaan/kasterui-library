@@ -1,33 +1,25 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: animation, button, hover, trash, delete, transition, hover effect, bin */
-.bin-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 55px;
-  height: 55px;
-  border-radius: 15px;
-  background-color: rgb(255, 95, 95);
+/* From Uiverse.io by guilhermeyohan - Tags: button */
+.beach-button {
+  background-color: #fbc02d;
+  border: none;
+  border-radius: 5px;
+  color: #333;
   cursor: pointer;
-  border: 3px solid rgb(255, 201, 201);
-  transition-duration: 0.3s;
-}
-.bin-bottom {
-  width: 15px;
-}
-.bin-top {
-  width: 17px;
-  transform-origin: right;
-  transition-duration: 0.3s;
-}
-.bin-button:hover .bin-top {
-  transform: rotate(45deg);
-}
-.bin-button:hover {
-  background-color: rgb(255, 0, 0);
-}
-.bin-button:active {
-  transform: scale(0.9);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
 }
 
+.beach-button:hover {
+  background-color: #ffe082;
+}
+
+.beach-button svg {
+  height: 20px;
+  margin-right: 10px;
+  width: 20px;
+}

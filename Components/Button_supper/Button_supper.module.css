@@ -1,64 +1,39 @@
 
-/* From Uiverse.io by MetaBlue2000  - Tags: button */
+/* From Uiverse.io by Deri-Kurniawan  - Tags: button, colorful, btn, hover effect */
 .button {
+  position: relative;
   cursor: pointer;
-  border-radius: 15px;
-  border: solid 3px #a86bdd;
-  width: 210px;
-  height: 75px;
-  transform: rotate3d(1, 1, 1, 335deg);
-  padding-left: 20px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #ffffff;
-  background: linear-gradient(#bf76f9, #9a48dd);
-  backdrop-filter: blur(2px, black);
-  box-shadow: -8px 7px 1px #865ba9;
-  transition: all 0.4s ease-in-out;
+  padding: 6px 6px;
+  position: relative;
+  background: linear-gradient(
+    75deg,
+    rgba(192, 97, 237, 0.8),
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.4),
+    rgba(252, 144, 98, 0.8),
+    rgba(252, 144, 98, 0.8),
+    rgba(255, 255, 255, 0.4),
+    rgba(228, 89, 199, 0.8),
+    rgba(255, 255, 255, 0.4),
+    rgba(228, 89, 199, 0.8)
+  );
+  border: 1.5px solid transparent;
+  border-radius: 12px;
+  inset: 0;
 }
 
-.arrow {
-  padding: 5px;
-  width: 55px;
-  transition: all 0.4s ease-in-out;
-}
-
-.msg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button:hover .arrow {
-  transform: translateX(5px);
+.button .light-border {
+  padding: 8px 24px;
+  border: 0.1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
 .button:hover {
-  transform: translateX(10px);
-}
-
-.button p span {
-  display: inline-block;
-  opacity: 1;
-  animation: slideDown 0.8s ease forwards calc(var(--i) * 0.03s);
-}
-.button:hover p span {
-  opacity: 1;
-  animation: wave 0.5s ease forwards calc(var(--i) * 0.02s);
-}
-@keyframes wave {
-  30% {
-    opacity: 1;
-    transform: translateY(12px) translateX(0) rotate(0);
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(-3px) translateX(0) rotate(0);
-    color: var(--primary);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) translateX(0) rotate(0);
-  }
+  filter: contrast(1.2) brightness(1.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease-in-out;
 }
 

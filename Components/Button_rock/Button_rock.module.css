@@ -1,138 +1,40 @@
 
-/* From Uiverse.io by SelfMadeSystem  - Tags: animation, button, upload, line, lineart, line-art */
-.button {
-  position: relative;
-  width: 10rem;
-  height: 3rem;
-  cursor: pointer;
-  border: none;
-  background: none;
+/* From Uiverse.io by aadium - Tags: button, car, formula1 */
+.carbutton {
+  width: 200px;
+  height: 70px;
+  padding: 20px;
+  background: #212121;
+  border: 6px double #e8e8e8;
+  transition: 0.2s;
 }
 
-.button svg {
-  width: 100%;
-  height: 100%;
-  overflow: visible;
+.caption {
+  color: #e8e8e8;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  transition: 0.2s;
 }
 
-.border {
-  width: 100%;
-  height: 100%;
-  stroke: black;
-  stroke-width: 2px;
-  fill: #0000;
-  rx: 1em;
-  ry: 1em;
-  stroke-dasharray: 25;
-  transition: fill 0.25s;
-  animation: 4s linear infinite stroke-animation;
+.car {
+  fill: #e8e8e8;
+  width: 50px;
+  height: 50px;
+  margin-left: -120px;
+  margin-top: -35px;
+  transition: 0.2s ease-in-out;
 }
 
-.button:hover .border {
-  fill: #0001;
+.carbutton:not(:hover) .car {
+  opacity: 0%;
+  transform: translateX(-150px);
 }
 
-.button:focus .border {
-  transition: fill 0.25s 7.75s;
-  fill: #0000;
+.carbutton:hover .caption {
+  opacity: 0%;
 }
 
-@keyframes stroke-animation {
-  0% {
-    stroke-dashoffset: 100;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.txt-upload {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.txt-upload::after {
-  content: "";
-}
-
-.button:focus .rect {
-  stroke-dasharray: 50;
-}
-.button:focus .border {
-  stroke: #0000;
-}
-
-.button:focus .txt-upload {
-  opacity: 0;
-  transition: opacity 0.25s 8s;
-}
-
-.button:focus .txt-upload::after {
-  animation: 0.66666s anim step-end forwards,
-    1.33333s 0.6666s anim2 linear infinite alternate;
-}
-
-@keyframes anim {
-  0% {
-    content: "i";
-  }
-  50% {
-    content: "in";
-  }
-  to {
-    content: "ing";
-  }
-}
-
-@keyframes anim2 {
-  0% {
-    content: "ing";
-  }
-  33% {
-    content: "ing.";
-  }
-  66% {
-    content: "ing..";
-  }
-  to {
-    content: "ing...";
-  }
-}
-
-.loading {
-  width: 100%;
-  height: 100%;
-  stroke: #0055d4;
-  stroke-width: 2px;
-  fill: none;
-  rx: 1em;
-  ry: 1em;
-  stroke-dasharray: 0 100;
-}
-
-.button:focus .loading {
-  transition: stroke 0.5s 7.5s, stroke-dasharray 8s 0.5s ease-out;
-  stroke: #08ca08;
-  stroke-dasharray: 100 0;
-}
-
-.done {
-  fill: none;
-  stroke: #000;
-  stroke-dasharray: 0 100;
-}
-
-.button:focus .done-cloud {
-  transition: stroke-dasharray 0.75s 8.5s ease-out;
-  stroke-dasharray: 100 0;
-}
-
-.button:focus .done-check {
-  transition: stroke-dasharray 0.5s 9.2s ease-out;
-  stroke: #08ca08;
-  stroke-dasharray: 100 0;
+.carbutton:focus .car {
+  transform: translateX(120px);
 }
 

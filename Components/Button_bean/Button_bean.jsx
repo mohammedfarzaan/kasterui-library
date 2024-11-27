@@ -3,23 +3,26 @@ import styles from "./Button_bean.module.css";
 
 const Button_bean = () => (
   <div>
-    <button className={styles["button"]}> Get in touch</button>
+    <button className={styles["send-message-button"]}>
+      <span className={styles["icon"]}>✈️</span>{" "}
+      <span className={styles["text"]}>Send Message</span>
+    </button>
   </div>
 );
 
 export default Button_bean;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_bean = () => (
          <div>
-          <button className="button"> Get in touch
+          <button className="send-message-button">
+  <span className="icon">✈️</span> <span className="text">Send Message</span>
 </button>
         </div>
         );

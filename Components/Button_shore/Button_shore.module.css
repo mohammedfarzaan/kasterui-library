@@ -1,53 +1,45 @@
 
-/* From Uiverse.io by kosedagyazilim - Tags: button */
-.button {
-  display: inline-block;
-  padding: 12px 28px;
-  margin: 10px;
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-  background-image: linear-gradient(to bottom right, #00c6ff, #0072ff);
+/* From Uiverse.io by vinodjangid07  - Tags: animation, purple, gradient, button, hover, search, hover effect, explore */
+.Explore-Button {
+  width: fit-content;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  gap: 10px;
   border: none;
-  border-radius: 40px;
-  box-shadow: 0px 4px 0px #0072ff;
-  transition: all 0.2s ease-in-out;
-}
+  border-radius: 5px;
+  cursor: pointer;
 
-.button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0px 6px 0px #0072ff;
+  background: linear-gradient(120deg, rgb(65, 43, 95), rgb(96, 51, 154));
 }
-
-.button:active {
-  transform: translateY(0px);
-  box-shadow: none;
-  background-image: linear-gradient(to bottom right, #0072ff, #00c6ff);
+.IconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
 }
-
-.button:before,
-.button:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
+.telescope {
+  width: 100%;
+  height: auto;
+  transform-origin: center;
+  transition: all 1s;
+  transform: rotate(20deg);
 }
-
-.button:before {
-  top: -3px;
-  left: -3px;
-  border-radius: 40px;
-  border-top: 3px solid #fff;
-  border-left: 3px solid #fff;
+.tripod {
+  width: 60%;
+  height: auto;
 }
-
-.button:after {
-  bottom: -3px;
-  right: -3px;
-  border-radius: 40px;
-  border-bottom: 3px solid #fff;
-  border-right: 3px solid #fff;
+.text {
+  color: rgb(240, 240, 240);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
-
+.Explore-Button:hover .telescope {
+  transform: rotate(-35deg);
+}
 

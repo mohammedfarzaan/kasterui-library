@@ -1,56 +1,87 @@
 
-/* From Uiverse.io by barisdogansutcu  - Tags: button, checkbox, input, bold, italic, underline */
-.button-options .content {
-  display: flex;
+/* From Uiverse.io by KingHendrie  - Tags: simple, icon, animation, action, button, rounded, social media, button hover effect  */
+.send-checkbox {
+  display: none;
+}
+
+.send-button {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: solid 2px #29429b;
-  border-radius: 4px;
-  position: relative;
-}
-.button-options .content .label-layout {
-  min-width: 45px;
-  height: 45px;
-  display: flexa;
-  align-items: center;
-  justify-content: center;
-}
-.button-options .content .label-layout :is(b, i, u) {
-  display: grid;
-  place-content: center;
-  height: 100%;
-  color: #29429b;
-  font-size: 17px;
-  line-height: 1;
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  color: #2c2c2c;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
+    2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.button-options .content .label-layout[for="italicInput"] {
-  border-left: solid 2px #29429b;
-  border-right: solid 2px #29429b;
-  min-width: 49px;
+
+.send-checkbox:checked + .send-button .message {
+  opacity: 0;
 }
-.button-options .content input[type="checkbox"]:checked + .label-layout {
-  background-color: #29429b34;
+
+.send-checkbox:checked + .send-button .message-sent {
+  animation: fadeIn 3s forwards;
 }
-#boldInput:checked ~ .title {
-  font-weight: bold;
+
+.send-checkbox:checked + .send-button svg {
+  animation: send 1s forwards;
 }
-#italicInput:checked ~ .title {
-  font-style: italic;
+
+@keyframes rotate-hover {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(40deg);
+  }
 }
-#underlineInput:checked ~ .title {
-  text-decoration: underline;
+
+@keyframes send {
+  0% {
+    transform: translateX(0) rotate(40deg);
+  }
+  100% {
+    transform: translateX(150px) rotate(40deg);
+  }
 }
-.button-options .title {
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5px;
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.send-button .message-sent {
   position: absolute;
-  bottom: 0;
-  top: 2px;
-  transform: translateY(100%);
-  color: #29429b;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: #125b96;
+}
+
+.send-button:hover {
+  background-color: #e0e0e0;
+  box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.1),
+    3px 3px 7px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.send-button:hover svg {
+  animation: rotate-hover 0.2s;
+  transform: rotate(40deg);
 }
 

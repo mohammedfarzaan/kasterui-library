@@ -1,36 +1,41 @@
 
-/* From Uiverse.io by hannahyockel - Tags: button */
+/* From Uiverse.io by WhiteNervosa - Tags: button */
 button {
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
- padding: 15px 38px;
- border-radius: 16px;
- border: 1px solid transparent;
- color: #FFFFFF;
- background-color: #1DC9A0;
- font-size: 16px;
- letter-spacing: 1px;
- transition: all 0.15s linear;
+  font-size: 18px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
 }
 
+button:focus,
 button:hover {
- background-color: rgba(29, 201, 160, 0.08);
- border-color: #1DC9A0;
- color: #1DC9A0;
- transform: translateY(-5px) scale(1.05);
+  color: #fff;
 }
 
-button:active {
- background-color: transparent;
- border-color: #1DC9A0;
- color: #1DC9A0;
- transform: translateY(5px) scale(0.95);
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
 }
 
-button:disabled {
- background-color: rgba(255, 255, 255, 0.16);
- color: #8E8E93;
- border-color: #8E8E93;
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
 }

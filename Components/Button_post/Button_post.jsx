@@ -3,23 +3,23 @@ import styles from "./Button_post.module.css";
 
 const Button_post = () => (
   <div>
-    <button> Hexagonal Button</button>
+    <button className={styles["button"]}>Fondle ME!</button>
   </div>
 );
 
 export default Button_post;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_post = () => (
          <div>
-          <button> Hexagonal Button
+          <button className="button">
+    Fondle ME!
 </button>
         </div>
         );

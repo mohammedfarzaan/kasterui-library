@@ -1,58 +1,79 @@
 
-/* From Uiverse.io by e-coders - Tags: button, github */
-button {
- appearance: none;
- background-color: #FAFBFC;
- border: 1px solid rgba(27, 31, 35, 0.15);
- border-radius: 6px;
- box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
- box-sizing: border-box;
- color: #24292E;
- cursor: pointer;
- display: inline-block;
- font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
- font-size: 14px;
- font-weight: 500;
- line-height: 20px;
- list-style: none;
- padding: 6px 16px;
- position: relative;
- transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
- user-select: none;
- -webkit-user-select: none;
- touch-action: manipulation;
- vertical-align: middle;
- white-space: nowrap;
- word-wrap: break-word;
+/* From Uiverse.io by zebra76966  - Tags: animation, gradient, button, click animation */
+.rainbow-btn {
+  border: 2px;
+  border-radius: 35px;
+  width: 18em;
+  font-size: 2rem;
+  padding: 28px 28px;
+  color: black;
+  background: transparent;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-button:hover {
- background-color: #F3F4F6;
- text-decoration: none;
- transition-duration: 0.1s;
+.rainbow-btn::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  content: "";
+  height: 4.3em;
+  border-radius: 35px;
+  width: 18em;
+  filter: blur(1px);
+  background: radial-gradient(
+      at 0% 0%,
+      hsla(312, 66%, 67%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 28% 79%, hsla(355, 80%, 64%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 1%, hsla(279, 96%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 5% 91%, hsla(289, 80%, 70%, 1) 0px, transparent 50%),
+    radial-gradient(at 50% 37%, hsla(28, 100%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 27% 38%, hsla(189, 0%, 100%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
+    radial-gradient(at 64% 78%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
+    radial-gradient(at 72% 55%, hsla(240, 68%, 97%, 1) 0px, transparent 50%),
+    radial-gradient(at 51% 14%, hsla(28, 100%, 74%, 1) 0px, transparent 50%);
 }
 
-button:disabled {
- background-color: #FAFBFC;
- border-color: rgba(27, 31, 35, 0.15);
- color: #959DA5;
- cursor: default;
+.rainbow-btn .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 8px;
+  font-weight: 500;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  box-shadow: inset 0 0 1px 2px rgba(255, 255, 255, 0.712);
+}
+.rainbow-btn .content::before {
+  content: " ";
+  border: 10px double rgba(247, 201, 232, 0.5);
+  border-radius: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 17em;
+  height: 3em;
+  padding: 10px 8px;
+  position: absolute;
+  z-index: 2;
 }
 
-button:active {
- background-color: #EDEFF2;
- box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
- transition: none 0s;
+.rainbow-btn .content svg {
+  margin-right: 10px;
 }
 
-button:focus {
- outline: 1px transparent;
+.rainbow-btn:hover {
+  scale: 1.1;
+}
+.rainbow-btn:focus {
+  scale: 0.9;
 }
 
-button:before {
- display: none;
-}
-
-button:-webkit-details-marker {
- display: none;
-}

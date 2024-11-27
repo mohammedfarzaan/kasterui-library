@@ -1,20 +1,40 @@
 
-/* From Uiverse.io by rrr63 - Tags: button, hover, outlined, bootsrap button */
-.button {
-  font-size: 17px;
-  padding: 15px 35px;
-  border-radius: 5px;
-  outline: 2px solid #2835ba;
-  outline-offset: 0px;
-  background: #2835ba;
-  border: 0;
-  font-weight: bolder;
-  color: white;
-  transition: all .1s ease-in-out;
-  cursor: pointer;
+/* From Uiverse.io by CristianMontoya98 - Tags: button */
+.btn {
+ width: 6.5em;
+ height: 2.3em;
+ margin: 0.5em;
+ background: black;
+ color: white;
+ border: none;
+ border-radius: 0.625em;
+ font-size: 20px;
+ font-weight: bold;
+ cursor: pointer;
+ position: relative;
+ z-index: 1;
+ overflow: hidden;
 }
 
-.button:hover {
-  outline-offset: 3px;
-  outline: 3px solid #2835ba;
+button:hover {
+ color: black;
+}
+
+button:after {
+ content: "";
+ background: white;
+ position: absolute;
+ z-index: -1;
+ left: -20%;
+ right: -20%;
+ top: 0;
+ bottom: 0;
+ transform: skewX(-45deg) scale(0, 1);
+ transition: all 0.5s;
+}
+
+button:hover:after {
+ transform: skewX(-45deg) scale(1, 1);
+ -webkit-transition: all 0.5s;
+ transition: all 0.5s;
 }

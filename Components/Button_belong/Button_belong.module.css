@@ -1,52 +1,58 @@
 
-/* From Uiverse.io by barisdogansutcu  - Tags: button, message, send */
+/* From Uiverse.io by andrew-demchenk0 - Tags: animation, purple, button, opacity, key , small */
 .button {
-  cursor: pointer;
-  width: 190px;
-  height: 61px;
-  font-size: 17px;
-  font-weight: 700;
-  position: relative;
-  display: grid;
-  place-content: center;
-  box-shadow: inset -8px -8px 8px 0 rgba(174, 174, 192, 0.25),
-    inset 8px 8px 8px 0 #fff, -8px -8px 24px 0 #fff,
-    2px 10px 20px 0 rgba(121, 121, 131, 0.4);
-  border-radius: 12px;
-  border: double 2px transparent;
-  background-image: linear-gradient(white, white),
-    linear-gradient(to top, #7c7d7c, #d9dbd9);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  transition: all 0.3s ease;
-}
-
-.button_text {
-  z-index: 2;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
-}
-.button:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  width: calc(100% - 5px);
-  height: calc(100% - 5px);
-  border-radius: 50px;
-  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
-    10px 10px 15px rgba(70, 70, 70, 0),
-    inset -10px -10px 15px rgba(255, 255, 255, 0.5),
-    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
-}
-.button:active {
-  box-shadow: none;
-  transform: translateY(3px);
-  background-image: linear-gradient(white, white),
-    linear-gradient(to top, #7c7d7c7a, #d9dbd9);
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 32px;
+  width: 82px;
+  border: none;
+  background: #a549dacb;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
+.lable {
+  line-height: 20px;
+  font-size: 17px;
+  color: #fff;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.svg-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.button:hover {
+  background: #A649DA;
+}
+
+.button:hover .svg-icon {
+  animation: rot 0.5s linear infinite;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-6deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(6deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

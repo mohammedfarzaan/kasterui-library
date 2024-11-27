@@ -3,24 +3,25 @@ import styles from "./Button_prove.module.css";
 
 const Button_prove = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button>
+      <span className={styles["TxtEffect"]}>BUTTON</span>
+    </button>
   </div>
 );
 
 export default Button_prove;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_prove = () => (
          <div>
-          <button className="button">
-  Button
+          <button>
+    <span className="TxtEffect">BUTTON</span>
 </button>
         </div>
         );

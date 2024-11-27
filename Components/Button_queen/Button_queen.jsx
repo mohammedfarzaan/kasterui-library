@@ -3,23 +3,22 @@ import styles from "./Button_queen.module.css";
 
 const Button_queen = () => (
   <div>
-    <button className={styles["button"]}>Join Today ➞</button>
+    <button className={styles["button"]}>Hover Over Me</button>
   </div>
 );
 
 export default Button_queen;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_queen = () => (
          <div>
-          <button className="button">Join Today ➞</button>
+          <button className="button">Hover Over Me</button>
         </div>
         );
 

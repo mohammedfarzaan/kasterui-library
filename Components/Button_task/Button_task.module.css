@@ -1,48 +1,41 @@
 
-/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, animated */
-@keyframes glowing-pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-  }
-
-  70% {
-    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
-  }
-
-  100% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-  }
-}
-
-.button {
-  position: relative;
-  display: inline-block;
-  background: linear-gradient(to right, #FFB900, #FF7730);
+/* From Uiverse.io by nazarbayev01 - Tags: button, active */
+button {
+  padding: 1em 2em;
   border: none;
-  border-radius: 25px;
-  color: white;
-  padding: 10px 20px;
-  font-size: 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background: #DCFFFC;
   text-transform: uppercase;
-  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-  animation: glowing-pulse 2s infinite;
+  color: #088178;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #088178;
 }
 
-.button::before {
+button:hover {
+  color: #DCFFFC;
+  transform: scale(1);
+  outline: 2px solid #088178;
+  box-shadow: 4px 5px 17px -4px #088178;
+}
+
+button::before {
   content: "";
   position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  border-radius: 30px;
-  box-shadow: 0 0 20px #FF7730;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #088178;
+  transform: skewX(30deg);
+  z-index: -1;
+  transition: width 1000ms;
 }
 
-.button:hover::before {
-  opacity: 1;
+button:hover::before {
+  width: 250%;
 }
-

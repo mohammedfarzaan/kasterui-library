@@ -1,85 +1,52 @@
 
-/* From Uiverse.io by zanina-yassine  - Tags: minimalist, ios, navigation, tabs */
-/* Remove this container when use*/
-.component-title {
-  width: 100%;
-  position: absolute;
-  z-index: 999;
-  top: 30px;
-  left: 0;
-  padding: 0;
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #888;
-  text-align: center;
-}
-
-.tab-container {
-  position: relative;
-
+/* From Uiverse.io by vinodjangid07  - Tags: icon, animation, button, svg, arrow, next, go */
+.Btn-Container {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-
-  padding: 2px;
-
-  background-color: #dadadb;
-  border-radius: 9px;
+  width: 170px;
+  height: fit-content;
+  background-color: #1d2129;
+  border-radius: 40px;
+  box-shadow: 0px 5px 10px #bebebe;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  cursor: pointer;
 }
-
-.indicator {
-  content: "";
-  width: 130px;
-  height: 28px;
-  background: #ffffff;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  z-index: 9;
-  border: 0.5px solid rgba(0, 0, 0, 0.04);
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
-  border-radius: 7px;
-  transition: all 0.2s ease-out;
-}
-
-.tab {
-  width: 130px;
-  height: 28px;
-  position: absolute;
-  z-index: 99;
-  outline: none;
-  opacity: 0;
-}
-
-.tab_label {
-  width: 130px;
-  height: 28px;
-
-  position: relative;
-  z-index: 999;
-
+.icon-Container {
+  width: 45px;
+  height: 45px;
+  background-color: #f59aff;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  border: 0;
-
-  font-size: 0.75rem;
-  opacity: 0.6;
-
-  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #1d2129;
 }
-
-.tab--1:checked ~ .indicator {
-  left: 2px;
+.text {
+  width: calc(170px - 45px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1em;
+  letter-spacing: 1.2px;
 }
-
-.tab--2:checked ~ .indicator {
-  left: calc(130px + 2px);
+.icon-Container svg {
+  transition-duration: 1.5s;
 }
-
-.tab--3:checked ~ .indicator {
-  left: calc(130px * 2 + 2px);
+.Btn-Container:hover .icon-Container svg {
+  transition-duration: 1.5s;
+  animation: arrow 1s linear infinite;
+}
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    margin-left: 0px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 10px;
+  }
 }
 

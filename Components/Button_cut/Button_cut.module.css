@@ -1,52 +1,49 @@
 
-/* From Uiverse.io by rrr63 - Tags: button, hover, scale */
-.button {
-  padding: 10px 35px;
-  background-color: #EBF5EE;
-  font-weight: bolder;
-  border: 0px;
+/* From Uiverse.io by TISEPSE  - Tags: animation, button, click */
+.bck-grnd {
   position: relative;
-  cursor: pointer;
+  display: flex;
+  background-color: #dac0a3;
+  padding: 15px 20px;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  border: 3px solid transparent;
   overflow: hidden;
-  border-radius: 5px;
-  transition: all .2s ease-in-out .1s;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  z-index: 2;
+  border-radius: 10px;
+  letter-spacing: 3px;
+  box-shadow: 0 0.4rem #eadbc8;
+  box-shadow: 0.4rem 0.4rem 0 #eadbc8;
+  transition: 0.5s;
 }
 
-.button:hover {
-  background-color: #EBF5EE;
-  transform: scale(1.2) rotate(5deg);
-}
-
-.button:before {
-  content: '';
+.bck-grnd .style {
+  background: #f8f0e5;
+  height: 150px;
+  width: 100%;
   position: absolute;
-  background-color: #78A1BB;
-  height: 180%;
-  top: -30%;
-  left: -40%;
-  transform: rotateZ(20deg);
-  width: 40px;
-  transition: left .2s ease-in-out, left 0s;
+  left: 0;
+  bottom: 0;
+  border-radius: 30px 30px 0px 0px;
+  top: 120%;
+  z-index: -1;
+  transition: 0.5s;
 }
 
-.button:after {
-  content: '';
-  position: absolute;
-  background-color: #283044;
-  height: 180%;
-  top: -30%;
-  left: -40%;
-  transform: translateX(-40px) rotateZ(20deg);
-  width: 40px;
-  transition: left .2s ease-in-out, left 0s;
+.bck-grnd:hover .style {
+  top: -70%;
+  border-radius: 50px 50px 0px 0px;
 }
 
-.button:hover:after {
-  left: 150%;
-  transition: left .3s ease-in-out;
+.bck-grnd:hover {
+  color: #d8ba98;
+  border: 3px solid #dac0a3;
+  box-shadow: none;
 }
 
-.button:hover:before {
-  left: 150%;
-  transition: left .3s ease-in-out;
+.bck-grnd:active {
+  transform: scale(1.1);
 }
+

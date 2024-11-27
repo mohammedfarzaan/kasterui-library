@@ -3,45 +3,43 @@ import styles from "./Button_both.module.css";
 
 const Button_both = () => (
   <div>
-    <div className={styles["box"]}>
-      <button className={styles["button"]}>SPACE</button>
-      <div className={styles["space"]}>
-        <span style="--i: 31" className={styles["star"]}></span>
-        <span style="--i: 12" className={styles["star"]}></span>
-        <span style="--i: 57" className={styles["star"]}></span>
-        <span style="--i: 93" className={styles["star"]}></span>
-        <span style="--i: 23" className={styles["star"]}></span>
-        <span style="--i: 70" className={styles["star"]}></span>
-        <span style="--i: 6" className={styles["star"]}></span>
-      </div>
-    </div>
+    <a className={styles["playstore-button"]} href="#">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        className="icon"
+        viewBox="0 0 512 512"
+      >
+        <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+      </svg>
+      <span className={styles["texts"]}>
+        <span className={styles["text-1"]}>GET IT ON</span>
+        <span className={styles["text-2"]}>Google Play</span>
+      </span>
+    </a>
   </div>
 );
 
 export default Button_both;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_both = () => (
          <div>
-          <div className="box">
-  <button className="button">SPACE</button>
-  <div className="space">
-    <span style="--i: 31" className="star"></span>
-    <span style="--i: 12" className="star"></span>
-    <span style="--i: 57" className="star"></span>
-    <span style="--i: 93" className="star"></span>
-    <span style="--i: 23" className="star"></span>
-    <span style="--i: 70" className="star"></span>
-    <span style="--i: 6" className="star"></span>
-  </div>
-</div>
+          <a className="playstore-button" href="#">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="icon" viewBox="0 0 512 512">
+    <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+  </svg>
+  <span className="texts">
+    <span className="text-1">GET IT ON</span>
+    <span className="text-2">Google Play</span>
+  </span>
+</a>
         </div>
         );
 

@@ -1,48 +1,33 @@
 
-/* From Uiverse.io by irfnmdlptra - Tags: button */
+/* From Uiverse.io by satyamchaudharydev - Tags: icon, button, 3d button */
+/* inspired from this svgbackgrounds.com/ */
 .button {
-  position: relative;
-  display: inline-block;
-  padding: 12px 30px;
-  font-size: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border-radius: 40px;
-  background: linear-gradient(45deg, #FF0080, #FF8C00);
-  color: #fff;
+  width: fit-content;
+  display: flex;
+  padding: 0.8em 1.1em;
+  gap: 0.4rem;
   border: none;
-  cursor: pointer;
-  overflow: hidden;
-  z-index: 1;
+  font-weight: bold;
+  border-radius: 30px;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+  background: linear-gradient(15deg, #880088, #aa2068, #cc3f47, #de6f3d, #f09f33, #de6f3d, #cc3f47, #aa2068, #880088) no-repeat;
+  background-size: 300%;
+  background-position: left center;
+  transition: background .3s ease;
+  color: #fff;
 }
 
-.button:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 100%;
-  z-index: -1;
-  transition: all 0.5s ease;
+.button:hover {
+  background-size: 320%;
+  background-position: right center;
 }
 
-.button:hover:before {
-  width: 500px;
-  height: 500px;
+.button:hover svg {
+  fill: #fff;
 }
 
-.button span {
-  position: relative;
-  z-index: 2;
-  transition: all 0.3s ease;
+.button svg {
+  width: 23px;
+  fill: #f09f33;
+  transition: .3s ease;
 }
-
-.button:hover span {
-  transform: scale(1.2);
-}
-

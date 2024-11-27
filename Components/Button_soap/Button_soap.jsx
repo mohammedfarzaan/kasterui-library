@@ -3,24 +3,29 @@ import styles from "./Button_soap.module.css";
 
 const Button_soap = () => (
   <div>
-    <button className={styles["beautiful-button"]}>Click me!</button>
+    <button>
+      <span className={styles["txt"]}>click me</span>
+      <span className={styles["txt2"]}>You did it</span>
+      <span className={styles["gradient"]}></span>
+    </button>
   </div>
 );
 
 export default Button_soap;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_soap = () => (
          <div>
-          <button className="beautiful-button">
-  Click me!
+          <button>
+  <span className="txt">click me</span>
+  <span className="txt2">You did it</span>
+  <span className="gradient"></span>
 </button>
         </div>
         );

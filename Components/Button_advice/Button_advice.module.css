@@ -1,87 +1,50 @@
 
-/* From Uiverse.io by Subaashbala  - Tags: login, button, transition, hover button */
-button {
+/* From Uiverse.io by andrew-demchenk0 - Tags: twitter, youtube, facebook, button, social media, linkedin */
+.container {
+  position: relative;
+  width: 250px;
+ /*  choose your size */
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1em 0em 1em 1em;
-  background-color: yellow;
-  box-shadow: 4px 6px 0px black;
-  border: 4px solid;
-  border-radius: 15px;
-  position: relative;
-  overflow: hidden;
-  z-index: 100;
-  transition: box-shadow 250ms, transform 250ms, filter 50ms;
-}
-button:hover {
-  transform: translate(2px, 2px);
-  box-shadow: 2px 3px 0px black;
-}
-button:active {
-  filter: saturate(0.75);
-}
-button::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: pink;
-  z-index: -1;
-  transform: translateX(-100%);
-  transition: transform 250ms;
-}
-button:hover::after {
-  transform: translateX(0);
-}
-.bgContainer {
-  position: relative;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  overflow: hidden;
-  max-width: 35%; /* adjust this if the button text is not proper */
-  font-size: 2em;
-  font-weight: 600;
-}
-.bgContainer span {
-  position: relative;
-  transform: translateX(-100%);
-  transition: all 250ms;
-}
-.button:hover .bgContainer > span {
-  transform: translateX(0);
-}
-.arrowContainer {
-  padding: 1em;
-  margin-inline-end: 1em;
-  border: 4px solid;
-  border-radius: 50%;
-  background-color: pink;
-  position: relative;
-  overflow: hidden;
-  transition: transform 250ms, background-color 250ms;
-  z-index: 100;
-}
-.arrowContainer::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background-color: yellow;
-  transform: translateX(-100%);
-  z-index: -1;
-  transition: transform 250ms ease-in-out;
-}
-button:hover .arrowContainer::after {
-  transform: translateX(0);
-}
-button:hover .arrowContainer {
-  transform: translateX(5px);
-}
-button:active .arrowContainer {
-  transform: translateX(8px);
-}
-.arrowContainer svg {
-  vertical-align: middle;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
+.container button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #313638;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+}
+
+.container button:nth-child(1):hover {
+  background-color: #2753a7;
+}
+
+.container button:nth-child(2):hover {
+  background-color: #cd242b;
+}
+
+.container button:nth-child(3):hover {
+  background-color: #55acee;
+}
+
+.container button:nth-child(4):hover {
+  background-color: #0274b3;
+}
+
+.title {
+  color: gray;
+  font-weight: 700;
+  font-size: 17px;
+  position: absolute;
+  top: -35px;
+  left: 0;
+}

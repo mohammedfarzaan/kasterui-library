@@ -3,23 +3,27 @@ import styles from "./Button_solar.module.css";
 
 const Button_solar = () => (
   <div>
-    <button> Button</button>
+    <button>
+      <span className={styles["box"]}>Hover!</span>
+    </button>
   </div>
 );
 
 export default Button_solar;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_solar = () => (
          <div>
-          <button> Button
+          <button>
+    <span className="box">
+        Hover!
+    </span>
 </button>
         </div>
         );

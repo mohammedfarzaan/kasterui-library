@@ -1,66 +1,53 @@
 
-/* From Uiverse.io by vinodjangid07  - Website: https://dribbble.com/shots/18149466-Upgrade-to-Pro-Button/attachments/13347110?mode=media - Name: Mobin Madadi - Tags: link, button, hover, active, hover effect, pro, upgrade, redirect */
-.Btn-container {
-  width: fit-content;
-  height: fit-content;
+/* From Uiverse.io by vinodjangid07 - Tags: instagram, button, hover effect */
+.Btn {
   border: none;
-  background-color: #ebebeb;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px #e1e1e1;
-  transition: 0.2s;
-}
-.inner-wrapper {
-  width: fit-content;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f7f7f7;
-  border-radius: 5px;
-  padding: 8px 15px;
-  box-shadow: 0px 4px 10px #d3d3d3;
-  gap: 50px;
-  transition: 0.2s;
-}
-.text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-}
-.text p {
-  font-size: 1.2em;
-  font-weight: 600;
-  color: rgb(140, 140, 140);
-}
-.text .pro {
-  background-color: black;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 5px;
-}
-.icon {
-  width: 40px;
-  height: 40px;
-  background-color: white;
   border-radius: 50%;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: rotate(45deg);
-  transition: 0.2s;
-}
-.icon svg {
-  width: 15px;
-}
-.Btn-container:active {
-  transform: scale(1);
-}
-.Btn-container:active .inner-wrapper {
-  transform: scale(0.97);
-}
-.Btn-container:hover .icon {
-  transform: rotate(0deg);
+  transition-duration: .4s;
+  cursor: pointer;
+  position: relative;
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  overflow: hidden;
 }
 
+.svgIcon {
+  transition-duration: .3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.text {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 120px;
+  font-weight: 600;
+  opacity: 0;
+  transition-duration: .4s;
+}
+
+.Btn:hover {
+  width: 110px;
+  transition-duration: .4s;
+  border-radius: 30px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  transition-duration: .4s;
+}
+
+.Btn:hover .svgIcon {
+  opacity: 0;
+  transition-duration: .3s;
+}

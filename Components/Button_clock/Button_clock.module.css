@@ -1,112 +1,48 @@
 
-/* From Uiverse.io by JkHuger - Tags: button, progress, progress bar, download */
-.installer {
-  width: 200px;
-  height: 40px;
+/* From Uiverse.io by Mike11jr - Tags: button */
+.scene {
+ width: 10em;
+ justify-content: center;
+ align-items: center;
 }
 
-.installer label {
-  position: absolute;
-  height: 40px;
-  width: 200px;
-  border-radius: 5px;
-  overflow: hidden;
-  cursor: pointer;
+.cube {
+ color: #ccc;
+ cursor: pointer;
+ font-family: 'Roboto', sans-serif;
+ transition: all 0.85s cubic-bezier(.17,.67,.14,.93);
+ transform-style: preserve-3d;
+ transform-origin: 100% 50%;
+ width: 10em;
+ height: 4em;
 }
 
-.installer label input {
-  display: none;
+.cube:hover {
+ transform: rotateX(-90deg);
 }
 
-.installer label span {
-  position: absolute;
-  height: 40px;
-  width: 200px;
-  line-height: 40px;
-  text-align: center;
-  color: #fff;
-  background: #3F8EFC;
-  border-radius: 5px;
+.side {
+ box-sizing: border-box;
+ position: absolute;
+ display: inline-block;
+ height: 4em;
+ width: 10em;
+ text-align: center;
+ text-transform: uppercase;
+ padding-top: 1.5em;
+ font-weight: bold;
 }
 
-.installer label input:checked ~ span {
-  background: #87E544;
-  animation: downloadSuccess 3.1s ease;
+.top {
+ background: wheat;
+ color: #222229;
+ transform: rotateX(90deg) translate3d(0, 0, 2em);
+ box-shadow: inset 0 0 0 5px #fff;
 }
 
-.installer label span:after {
-  content: 'DOWNLOAD';
-  position: absolute;
-  width: 80%;
-  height: 100%;
-  left: 10%;
-}
-
-.installer label input:checked ~ span:after {
-  content: 'Thank you!';
-  animation: downloadState 3s;
-}
-
-.installer label span:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  opacity: 0;
-  background: rgba(255,255,255,.2);
-}
-
-.installer label input:checked ~ span:before {
-  animation: downloadProgress 3s cubic-bezier(.67,.13,.1,.81);
-}
-
-@keyframes downloadSuccess {
-  0%, 90% {
-    background: #3F8EFC;
-  }
-
-  100% {
-    background: #87E544;
-  }
-}
-
-@keyframes downloadState {
-  0%, 95% {
-    content: 'DOWNLOADING...'
-  }
-
-  100% {
-    content: 'Thank you for download!'
-  }
-}
-
-@keyframes downloadProgress {
-  0% {
-    width: 5%;
-    opacity: 1;
-  }
-
-  35% {
-    width: 17%;
-  }
-
-  64% {
-    width: 51%;
-  }
-
-  81% {
-    width: 70%;
-  }
-
-  90% {
-    width: 86%;
-    opacity: 1;
-  }
-
-  100% {
-    width: 100%;
-    opacity: 0;
-  }
+.front {
+ background: #222229;
+ color: #fff;
+ box-shadow: inset 0 0 0 5px #fff;
+ transform: translate3d(0, 0, 2em);
 }

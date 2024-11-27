@@ -2,25 +2,19 @@ import React from "react";
 
 const Button_iron = () => (
   <div>
-    <button className="cursor-pointer select-none text-[4rem] font-bold text-slate-100 relative group text-center flex justify-center">
-      <div className="absolute top-[6px] text-neutral-400 transition duration-300 drop-shadow-lg group-hover:drop-shadow-md group-active:drop-shadow-none">
-        boop!
-      </div>
-      <div className="absolute top-[5px] text-neutral-300">boop!</div>
-      <div className="absolute transition duration-300 transform group-hover:translate-y-1 group-active:translate-y-1.5">
-        boop!
-      </div>
-
-      <div className="dont-mind-me opacity-0">boop!</div>
+    <button className="cursor-grab w-32 h-32 flex items-center justify-center rounded-full bg-white animate-bounce">
+      <span className="h-20 w-20 rounded-full bg-yellow-500 hover:bg-red-500 relative rotate-90">
+        <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <span className="block h-2 w-2 bg-black rounded-full"></span>
+          <span className="block h-2 w-2 bg-black rounded-full mt-3"></span>
+        </span>
+      </span>
     </button>
   </div>
 );
 
 export default Button_iron;
 
-{
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
 {
   /* */
 }

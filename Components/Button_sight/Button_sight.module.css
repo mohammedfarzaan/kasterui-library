@@ -1,51 +1,22 @@
 
-/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, transition, fill up */
+/* From Uiverse.io by AKAspidey01  - Tags: neumorphism, flashy, button */
 .button {
-  display: inline-block;
-  padding: 15px 32px;
-  font-size: 17px;
-  font-weight: bold;
-  color: rgb(53, 53, 53);
-  background: transparent;
-  border-radius: 50px;
-  text-align: center;
-  text-decoration: none;
   cursor: pointer;
-  position: relative;
-  border: none;
-  z-index: 1;
-  overflow: hidden;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 5px 5px 21px #bababa, -5px -5px 21px #ffffff;
+  padding: 5px 5px;
+  border-radius: 12px;
+  border: 1px solid #000000bc;
 }
-
-.button:before {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: blanchedalmond;
-  transition: left 0.8s ease-in-out;
-  z-index: -1;
-}
-
-.button:hover:before {
-  left: 0%;
-}
-
-.button:after {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: background-color 0.8s ease-in-out;
-  z-index: -1;
-}
-
-.button:hover:after {
-  background-color: transparent;
+.button-inner-curve {
+  border-radius: 50px;
+  background: #e0e0e0;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: inset 5px 5px 15px #bababa, inset -5px -5px 15px #ffffff;
+  display: flex;
+  padding: 12px 15px 10px 15px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 

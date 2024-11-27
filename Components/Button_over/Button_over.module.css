@@ -1,75 +1,51 @@
 
-/* From Uiverse.io by KSAplay - Tags: button */
-.btn {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* From Uiverse.io by amerfad - Tags: button */
+.animated-button {
+  background-color: #ff6b6b;
+  border: none;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  padding: 1em 2em;
-  font-size: 15px;
-  font-weight: bold;
-  border-width: 0;
-  border-radius: 1.5em;
-  text-transform: uppercase;
-  transition: .2s ease;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
-.text {
-  font-size: 1.2em;
-  color: white;
-  z-index: 1;
-}
-
-.btn::before {
+.animated-button:after {
+  content: "";
   position: absolute;
-  content: '';
-  width: 120%;
-  height: 260%;
-  background-image: linear-gradient(135deg, rgba(0,5,255,1) 0%, rgba(255,0,159,1) 100%);
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
 }
 
-.btn::after {
-  position: absolute;
-  content: '';
-  width: 88%;
-  height: 80%;
-  border-width: 0;
-  border-radius: 1.2em;
-  background-color: black;
-  opacity: .7;
-  transition: 100ms ease;
+.animated-button:hover:after {
+  width: 210px;
+  height: 200px;
+  opacity: 1;
 }
 
-.btn:hover.btn {
-  transform: scale(1.1);
+.animated-button:focus {
+  outline: none;
 }
 
-.btn:hover.btn::after {
-  opacity: .5;
+.animated-button:active {
+  transform: translateY(2px);
+  box-shadow: none;
 }
-
-.btn:hover.btn::before {
-  animation: turn_4810 .4s infinite linear;
-}
-
-.btn:active.btn {
-  transform: scale(1.05);
-}
-
-.btn:active.btn::before {
-  transform: scale(1.05);
-  animation: turn_4810 .2s infinite linear;
-}
-
-@keyframes turn_4810 {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 

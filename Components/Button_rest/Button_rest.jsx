@@ -3,133 +3,53 @@ import styles from "./Button_rest.module.css";
 
 const Button_rest = () => (
   <div>
-    <div className={styles["container"]}>
-      <span className={styles["span-text"]}>
-        <svg
-          height="20pt"
-          width="20pt"
-          viewBox="0 0 20 20"
-          style="isolation:isolate"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <defs>
-            <clipPath id="_clipPath_bC9TwUVn0M3ipVC8aHmmX7RNkfzJwdgL">
-              <rect height="20" width="20"></rect>
-            </clipPath>
-          </defs>
-          <g clip-path="url(#_clipPath_bC9TwUVn0M3ipVC8aHmmX7RNkfzJwdgL)">
-            <rect
-              fill-opacity="0"
-              style="fill:rgb(1,0,1)"
-              height="20"
-              width="20"
-            ></rect>
-            <path
-              stroke-miterlimit="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke="rgb(0,0,0)"
-              stroke-width="1"
-              fill="rgb(0,0,0)"
-              d="M 10 1 L 10 9 L 15 9 L 10 19 L 10 12 L 5 12 L 10 1 Z"
-            ></path>
-          </g>
-        </svg>
-        Join now
-      </span>
-      <button className={styles["button"]}>
-        <span className={styles["span-outside"]}> </span>
-        <div className={styles["circles"]}>
-          <span className={styles["circle"]}> </span>
-          <span className={styles["circle"]}> </span>
-          <span className={styles["circle"]}> </span>
-          <span className={styles["circle"]}> </span>
-          <span className={styles["circle"]}> </span>
-          <span className={styles["circle"]}> </span>
-          <span className={styles["circle"]}> </span>
-          <span className={styles["circle"]}> </span>
-          <span className={styles["circle"]}> </span>
-          <span className={styles["circle"]}> </span>
-          <span className={styles["circle"]}> </span>
-          <span className={styles["circle"]}> </span>
-          <span className={styles["circle"]}> </span>
-          <span className={styles["circle"]}> </span>
-          <span className={styles["circle"]}> </span>
-        </div>
-      </button>
-    </div>
+    <button>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="2"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H11M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125"
+          stroke="#fffffff"
+          strokeWidth="2"
+        ></path>
+        <path
+          d="M17 15V18M17 21V18M17 18H14M17 18H20"
+          stroke="#fffffff"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        ></path>
+      </svg>
+      ADD FILE
+    </button>
   </div>
 );
 
 export default Button_rest;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_rest = () => (
          <div>
-          <div className="container">
-  <span className="span-text">
-    <svg
-      height="20pt"
-      width="20pt"
-      viewBox="0 0 20 20"
-      style="isolation:isolate"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <defs>
-        <clipPath id="_clipPath_bC9TwUVn0M3ipVC8aHmmX7RNkfzJwdgL">
-          <rect height="20" width="20"></rect>
-        </clipPath>
-      </defs>
-      <g clip-path="url(#_clipPath_bC9TwUVn0M3ipVC8aHmmX7RNkfzJwdgL)">
-        <rect
-          fill-opacity="0"
-          style="fill:rgb(1,0,1)"
-          height="20"
-          width="20"
-        ></rect>
-        <path
-          stroke-miterlimit="3"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke="rgb(0,0,0)"
-          stroke-width="1"
-          fill="rgb(0,0,0)"
-          d="M 10 1 L 10 9 L 15 9 L 10 19 L 10 12 L 5 12 L 10 1 Z"
-        ></path>
-      </g>
-    </svg>
-    Join now
-  </span>
-  <button className="button">
-    <span className="span-outside"> </span>
-    <div className="circles">
-      <span className="circle"> </span>
-      <span className="circle"> </span>
-      <span className="circle"> </span>
-      <span className="circle"> </span>
-      <span className="circle"> </span>
-      <span className="circle"> </span>
-      <span className="circle"> </span>
-      <span className="circle"> </span>
-      <span className="circle"> </span>
-      <span className="circle"> </span>
-      <span className="circle"> </span>
-      <span className="circle"> </span>
-      <span className="circle"> </span>
-      <span className="circle"> </span>
-      <span className="circle"> </span>
-    </div>
-  </button>
-</div>
+          <button>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H11M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125" stroke="#fffffff" strokeWidth="2"></path>
+<path d="M17 15V18M17 21V18M17 18H14M17 18H20" stroke="#fffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+  </svg>
+ADD FILE 
+</button>
         </div>
         );
 

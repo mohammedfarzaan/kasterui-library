@@ -1,31 +1,47 @@
 
-/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, transition */
+/* From Uiverse.io by praveen-prasad2 - Tags: button */
 .button {
-  display: inline-block;
   position: relative;
-  padding: 13px 20px;
-  border: none;
-  background: rgba(51, 50, 50, 0.287);
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  cursor: crosshair;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 3px;
+  border-radius: 6px;
   overflow: hidden;
 }
 
-.button:before {
-  content: '';
+.button::before {
+  content: "";
   position: absolute;
   top: 0;
-  left: -100%;
-  width: 100%;
+  left: 0;
+  width: 200%;
   height: 100%;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.14) 50%, transparent 100%);
-  transition: left 0.3s ease;
+  background: linear-gradient(115deg,
+        #4fcf70, #fad648, 
+        #a767e5,#12bcfe, 
+        #44ce7b);
+  background-size: 50% 100%;
+  border-radius: inherit;
 }
 
-.button:hover:before {
-  left: 100%;
+.button:hover::before {
+  animation: animate_border .75s
+        linear infinite;
+}
+
+.button span {
+  position: relative;
+  z-index: 2;
+  display: block;
+  background-color: #000;
+  padding: 13px 20px;
+  border-radius: 3px;
+}
+
+@keyframes animate_border {
+  to {
+    transform: translateX(-50%)
+  }
 }
 

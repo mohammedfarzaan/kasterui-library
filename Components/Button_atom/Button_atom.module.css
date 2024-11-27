@@ -1,34 +1,89 @@
 
-/* From Uiverse.io by AndrewHeinke - Tags: button */
-.space-btn {
-  background: #FBFBFF;
-  border: 2px solid #FF4F00;
-  color: #363537;
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 1;
-  letter-spacing: 1px;
-  padding: .5rem .75rem;
-  font-family: monospace;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
-              0 4px 2px rgba(0,0,0,0.09), 
-              0 8px 4px rgba(0,0,0,0.09), 
-              0 16px 8px rgba(0,0,0,0.09),
-              0 32px 16px rgba(0,0,0,0.09);
-  transition: .3s ease-in;
+/* From Uiverse.io by Cornerstone-04 - Tags: button */
+button {
+  cursor: pointer;
+  background: transparent;
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  outline: none;
+  border: 2px solid #0f0;
+  margin: 40px;
+  width: 150px;
+  height: 60px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #fff;
+  -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+  transition: 0.45s;
+  transition-delay: 0s;
 }
 
-.space-btn:hover {
-  background: #FF4F00;
-  color: white;
+button:hover {
+  transition-delay: 1.5s;
+  color: #000;
+  box-shadow: 0 0 10px #0f0,
+                0 0 20px #0f0,
+                0 0 40px #0f0, 
+                0 0 80px #0f0, 
+                0 0 100px #0f0;
 }
 
-.space-btn svg {
-  width: 1em;
-  height: 1em;
-  color: currentColor;
-  margin-right: .5rem;
+button span {
+  position: relative;
+  z-index: 100;
 }
+
+button::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #0f0;
+  box-shadow: 5px -8px 0 #0f0, 
+              5px 8px 0 #0f0;
+  transition: width 0.5s, 
+              left 0.5s, 
+              height 0.5s, 
+              box-shadow 0.5s;
+  transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+button:hover::before {
+  width: 60%;
+  height: 100%;
+  /* right: -2px; */
+  left: -2px;
+  box-shadow: 5px 0 0 #0f0, 
+              5px 0 0 #0f0;
+  transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #0f0;
+  box-shadow: -5px -8px 0 #0f0, 
+              -5px 8px 0 #0f0;
+  transition: width 0.5s, right 0.5s, height 0.5s, box-shadow 0.5s;
+  transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+button:hover::after {
+  width: 60%;
+  height: 102%;
+  right: -2px;
+  box-shadow: -5px 0 0 #0f0, -5px 0 0 #0f0;
+  transition-delay: 0s, 0.5s, 1s, 1s;
+}
+

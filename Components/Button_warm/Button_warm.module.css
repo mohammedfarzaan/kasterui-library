@@ -1,36 +1,45 @@
 
-/* From Uiverse.io by Bodyhc - Tags: button */
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(66, 13, 240);
-  width: 200px;
-  height: 50px;
-  border-radius: 10px;
-  font-size: 18px;
-  outline: 3px solid #270092;
-  cursor: pointer;
-  transition: ease-out .5s;
+/* From Uiverse.io by Peary74 - Tags: button, cloud, save */
+.btnCloud {
+  background-color: transparent;
+  position: relative;
+  fill: rgb(155, 153, 153);
+  border: none;
 }
 
-.button:hover {
-  width: 180px;
-  height: 60px;
-  outline-offset: 4px;
-  transform: scale(1.3) rotate(2deg);
-  background-color: blue;
-  box-shadow: 5px 20px #cdcbd4
+.btnCloud::after {
+  content: 'SAVE';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 3px 9px;
+  border-radius: 5px;
+  transition: 200ms linear;
+  transition-delay: 200ms;
+  color: black;
+  font-size: 13px;
+  visibility: hidden;
 }
 
 .icon {
-  color: #270092;
-  margin-right: 5px;
+  transform: scale(1.4);
+  transition: 200ms linear;
 }
 
-.share {
-  margin-left: 5px;
-  color: #fff;
+.btnCloud:hover > .icon {
+  transform: scale(1.7);
 }
 
+.btnCloud:hover > .icon path {
+  fill: #fff;
+  cursor: pointer;
+}
+
+.btnCloud:hover::after {
+  visibility: visible;
+  opacity: 1;
+  top: -100%;
+}
 

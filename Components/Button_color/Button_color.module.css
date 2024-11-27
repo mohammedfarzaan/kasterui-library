@@ -1,55 +1,111 @@
 
-/* From Uiverse.io by hannahyockel - Tags: button, remove, trash */
-button {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- padding: 1em;
- border: 0px solid transparent;
- background-color: rgba(100,77,237,0.08);
- border-radius: 1.25em;
- transition: all 0.2s linear;
+/* From Uiverse.io by doniaskima - Tags: button, animated */
+.btn-53,
+.btn-53 *,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+  border: 0 solid;
+  box-sizing: border-box;
 }
 
-button:hover {
- box-shadow: 3.4px 2.5px 4.9px rgba(0, 0, 0, 0.025),
-  8.6px 6.3px 12.4px rgba(0, 0, 0, 0.035),
-  17.5px 12.8px 25.3px rgba(0, 0, 0, 0.045),
-  36.1px 26.3px 52.2px rgba(0, 0, 0, 0.055),
-  99px 72px 143px rgba(0, 0, 0, 0.08);
+.btn-53 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
 }
 
-.tooltip {
- position: relative;
- display: inline-block;
+.btn-53:disabled {
+  cursor: default;
 }
 
-.tooltip .tooltiptext {
- visibility: hidden;
- width: 4em;
- background-color: rgba(0, 0, 0, 0.253);
- color: #fff;
- text-align: center;
- border-radius: 6px;
- padding: 5px 0;
- position: absolute;
- z-index: 1;
- top: 25%;
- left: 110%;
+.btn-53:-moz-focusring {
+  outline: auto;
 }
 
-.tooltip .tooltiptext::after {
- content: "";
- position: absolute;
- top: 50%;
- right: 100%;
- margin-top: -5px;
- border-width: 5px;
- border-style: solid;
- border-color: transparent rgba(0, 0, 0, 0.253) transparent transparent;
+.btn-53 svg {
+  display: block;
+  vertical-align: middle;
 }
 
-.tooltip:hover .tooltiptext {
- visibility: visible;
+.btn-53 [hidden] {
+  display: none;
 }
+
+.btn-53 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.btn-53 .original {
+  background: #fff;
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.btn-53:hover .original {
+  transform: translateY(100%);
+}
+
+.btn-53 .letters {
+  display: inline-flex;
+}
+
+.btn-53 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.btn-53 span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.btn-53:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-53:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.btn-53:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.btn-53:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.btn-53:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.btn-53:hover span:nth-child(6) {
+  transition-delay: 0.5s;
+}
+

@@ -1,75 +1,43 @@
 
-/* From Uiverse.io by itay1313 - Tags: button */
-.body {
-  --transition: all 0.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  --yellow-bg: transparent linear-gradient(114deg, #fdc100 0%, #dd7d00 100%) 0%
-    0% no-repeat padding-box;
-  color: white;
-  margin: 0;
-}
-
-.btn {
-  border-radius: 23px;
-  letter-spacing: 0.8px;
-  font-size: 14px;
-  font-weight: 300;
-  color: white;
-  white-space: nowrap;
-  margin: 20px auto;
-  width: 166px;
-  height: 45px;
+/* From Uiverse.io by andrew-demchenk0 - Tags: animation, calendar, button, creditcard, add, add to callendar */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 12px;
+  gap: 8px;
+  height: 40px;
+  width: 201px;
+  border: none;
+  background: #FF342B;
+  border-radius: 20px;
   cursor: pointer;
-  position: relative;
-  border: 1px solid #dd7d00;
-  background: transparent;
 }
 
-.btn::before {
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  content: "";
-  width: 50%;
-  height: 100%;
-  background: black;
-  position: absolute;
-  top: 0;
-  right: 0;
+.lable {
+  line-height: 22px;
+  font-size: 17px;
+  color: #fff;
+  font-family: sans-serif;
+  letter-spacing: 1px;
 }
 
-.btn:hover::before {
-  width: 100%;
+.button:hover {
+  background: #e52e26;
 }
 
-.btn.btn-hover {
-  border-radius: 50px;
-  position: relative;
+.button:hover .svg-icon {
+  animation: slope 1s linear infinite;
 }
 
-.btn.btn-hover .btn-text {
-  color: white;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  mix-blend-mode: lighten;
-}
+@keyframes slope {
+  0% {
+  }
 
-.btn.btn-hover::before {
-  border-radius: 50px;
-  width: 100%;
-  background: conic-gradient(
-    transparent 240deg, #ac633697 240deg,
-    #fff2af6a 300deg, transparent 300deg
-  )
-  100% / 64%
-  no-repeat, var(--yellow-bg);
-}
+  50% {
+    transform: rotate(10deg);
+  }
 
-.btn.btn-hover:hover .btn-text {
-  margin-right: 30px;
+  100% {
+  }
 }
-
-.btn.btn-hover:hover::before {
-  background-position: right;
-  border-radius: 23px;
-  width: 25%;
-}
-

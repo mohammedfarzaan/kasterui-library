@@ -1,62 +1,26 @@
 
-/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, box-shadow */
+/* From Uiverse.io by devestter - Tags: button, click, big, css, accept */
 .button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #000000;
+  padding: 12px 19px;
   border: none;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
+  color: rgb(16, 52, 170);
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
+  background-color: rgb(190, 219, 253);
+  border-radius: 7px;
+  font-weight: bold;
+  transition: 0.5s;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 13px;
+  box-shadow: rgba(150, 143, 143, 0.2) 0px 2px 8px 0px;
 }
 
 .button:hover {
-  background-color: #111111;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(164, 206, 253);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
-.button:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3);
+.saveicon {
+  width: 17px;
 }
-
-.button:active {
-  transform: translateY(1px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50px;
-  z-index: -1;
-  transition: all 0.3s ease-in-out;
-}
-
-.button:hover::before {
-  top: -8px;
-  left: -8px;
-  right: -8px;
-  bottom: -8px;
-}
-
-

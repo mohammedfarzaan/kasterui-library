@@ -1,44 +1,79 @@
 
-/* From Uiverse.io by Peary74 - Tags: neumorphism, button, delete */
-.del {
+/* From Uiverse.io by Z4drus  - Tags: simple, 3d, action, minimalist, white, black, button, smooth */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.material-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-text {
+  margin-left: 6px;
+  font-weight: 600;
+  color: black;
+}
+
+.button-3d {
+  -webkit-appearance: none;
+  appearance: none;
   position: relative;
-  top: 0;
-  left: 0;
-  width: 160px;
-  height: 50px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-width: 0;
+  padding: 0 8px;
+  min-width: 4em;
+  min-height: 4em;
+  box-sizing: border-box;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 20px;
 }
 
-.del div {
-  width: 100%;
-  height: 100%;
+.button-top {
   display: flex;
-  justify-content: center;
+
   align-items: center;
-  background: none;
-  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 30px;
-  letter-spacing: 1px;
-  color: #ff0000;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding: 10px 10px;
+  transform: translateY(0);
+  background-image: linear-gradient(to bottom, #e7e7e775, #ffffff);
+  border-radius: 20px;
+  transition: transform 0.3s, border-radius 0.3s, background 10s;
+}
+
+.button-3d:active .button-top {
+  border-radius: 10px 10px 8px 8px / 8px;
+  transform: translateY(2px);
+  background-image: linear-gradient(to bottom, #ffffff, #e7e7e7);
+}
+
+.button-bottom {
+  position: absolute;
   z-index: 1;
-  transition: .6s;
+  bottom: 4px;
+  left: 4px;
+  border-radius: 10px;
+  padding-top: 10px;
+  width: calc(100% - 8px);
+  height: calc(100% - 10px);
+  background-image: linear-gradient(to bottom, #ffffff, #e7e7e7);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+  transition: border-radius 0.2s, padding-top 0.2s;
 }
 
-.del:hover div {
-  letter-spacing: 4px;
-  color: #fff;
-  background: #ff0000;
+.button-3d:active .button-bottom {
+  border-radius: 10px 10px 8px 8px / 8px;
+  padding-top: 0;
 }
 
-
-
-
+.button-3d:active .button-base {
+  border-radius: 10px 10px 8px 8px / 8px;
+}
 

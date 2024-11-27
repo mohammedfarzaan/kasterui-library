@@ -1,53 +1,46 @@
 
-/* From Uiverse.io by andrew-demchenk0 - Tags: button, hover, add */
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 12px;
-  gap: 4px;
-  height: 32px;
-  width: 81px;
+/* From Uiverse.io by 1osm - Tags: button */
+button {
+  width: 130px;
+  height: 45px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-width: 10px;
+  background: linear-gradient(to right, #5f6d7c, #456b8b, #49a6fc);
   border: none;
-  background: #1b1b1cd0;
-  border-radius: 20px;
-  cursor: pointer;
+  letter-spacing: 0.05em;
+  border-radius: 10px;
 }
 
-.lable {
-  line-height: 22px;
-  font-size: 17px;
-  color: #DE8A2A;
-  font-family: sans-serif;
-  letter-spacing: 1px;
+button svg {
+  height: 40px;
+  width: 60px;
+  transform: translate(-30px,3px) rotate(90deg);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1)
 }
 
-.button:hover {
-  background: #1b1b1cea;
+button .Click {
+  transform: translate(20px,-33px);
+  font-size: 20px;
+  transition: 0.3s cubic-bezier(0.76, 0, 0.24, 1)
 }
 
-.button:hover .svg-icon {
-  animation: rotate 1.3s linear infinite;
+button .OnHover {
+  transform: translate(-15px,-56px);
+  font-size: 20px;
+  opacity: 0%;
+  transition: 0.3s cubic-bezier(0.76, 0, 0.24, 1)
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
+button:hover svg {
+  transform: translate(40px,3px) rotate(90deg);
+}
 
-  25% {
-    transform: rotate(10deg);
-  }
+button:hover .Click {
+  opacity: 0%;
+}
 
-  50% {
-    transform: rotate(0deg);
-  }
-
-  75% {
-    transform: rotate(-10deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
+button:hover .OnHover {
+  opacity: 100%;
 }

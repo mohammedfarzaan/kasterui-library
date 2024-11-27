@@ -1,59 +1,51 @@
 
-/* From Uiverse.io by vinodjangid07 - Tags: button, share, hover effect */
-.Btn {
-  width: 145px;
-  height: 45px;
-  background: linear-gradient(-45deg, #6bc5f8, #cf59e6, #6bc5f8, #cf59e6);
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* From Uiverse.io by mi-series - Tags: button, spin */
+button {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  background: transparent;
   cursor: pointer;
-  box-shadow: 5px 5px 0px #4dc6d93d;
-  background-size: 400% 400%;
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  outline: none;
+  text-align: center;
+  z-index: 2;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
-.svgContainer {
-  width: 45px;
+button::after {
+  position: absolute;
+  content: " ";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition: all 0.3s ease;
 }
 
-.svgContainer svg {
-  width: 16px;
+button:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  color: #fff;
 }
 
-.svgContainer svg path {
-  fill: white;
-}
-
-.textContainer {
-  width: 100px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 600;
-}
-
-.Btn:hover {
-  animation: gradient 5s ease infinite;
-}
-/* Button's gradient animation */
-@keyframes gradient {
-  0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0 50%;
-  }
+button:hover::after {
+  transform: scale(2) rotate(180deg);
+  background: #000;
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
 }

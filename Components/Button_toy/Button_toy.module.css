@@ -1,52 +1,54 @@
 
-/* From Uiverse.io by snguem  - Tags: icon, animation, button, hover */
-.button {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 230px;
-  height: 80px;
-  gap: 10px;
-  font-size: 20px;
-  font-weight: 700;
-  position: relative;
-  border-radius: 20px;
+/* From Uiverse.io by Dashrath-Sharma - Tags: button, slide */
+button {
   border: none;
-  box-shadow: 0px 0px 5px;
-  transition: width 0.5s 0.2s ease;
+  outline: none;
+  font-size: 17px;
+  padding: 1em 2em;
+  position: relative;
+  color: #14213d;
+  background: #f1f1f1;
+  display: grid;
+  font-weight: 700;
+  place-items: center;
+  transition: color 350ms linear 650ms;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
 }
-.button::after {
+
+button:hover {
+  color: #fca311;
+}
+
+button::before,
+button::after {
+  content: '';
   position: absolute;
-  content: "";
-  width: 95%;
-  height: 87%;
-  border-radius: 40px;
-  box-shadow: inset 5px 5px 25px #00000018, 1px 1px 10px #00000013;
-  transition: all 0.5s ease;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 0;
+  height: 6%;
 }
-.button:hover:after {
+
+button::before {
+  background: #fca311;
+  transition: width 350ms, height 350ms linear 650ms;
+}
+
+button:hover::before {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
-}
-.button svg {
-  width: 20px;
-  rotate: -45deg;
-  transform-origin: top;
-  transition: all 0.3s 0.2s ease-out;
-}
-.button:hover svg {
-  transform-origin: center;
-  width: 40px;
-}
-.button:hover span {
-  display: none;
-  margin: 0 auto;
 }
 
-.button:hover {
-  width: 100px;
-  gap: 0px;
+button:after {
+  background: #14213d;
+  transition: width 350ms linear 175ms, height 350ms linear 650ms;
 }
 
+button:hover::after {
+  width: 95%;
+  height: 100%;
+}

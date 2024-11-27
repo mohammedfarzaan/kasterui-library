@@ -1,63 +1,63 @@
 
-/* From Uiverse.io by KlaujonRuamni - Tags: button, html, css, click me */
-.beautiful-button {
-  position: relative;
-  display: inline-block;
-  background: linear-gradient(to bottom, #1b1c3f, #4a4e91);
- /* Gradient background */
+/* From Uiverse.io by KINGFRESS - Tags: gradient, button */
+button {
+  background-color: transparent;
   color: white;
- /* White text color */
-  font-family: "Segoe UI", sans-serif;
- /* Stylish and legible font */
   font-weight: bold;
-  font-size: 18px;
- /* Large font size */
+  height: 3.3em;
+  width: 12em;
   border: none;
- /* No border */
-  border-radius: 30px;
- /* Rounded corners */
-  padding: 14px 28px;
- /* Large padding */
+  border-radius: 25px;
   cursor: pointer;
- /* Cursor on hover */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
- /* Subtle shadow */
-  animation: button-shimmer 2s infinite;
-  transition: all 0.3s ease-in-out;
- /* Smooth transition */
+  transition: .4s ease;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Hover animation */
-.beautiful-button:hover {
-  background: linear-gradient(to bottom, #2c2f63, #5b67b7);
-  animation: button-particles 1s ease-in-out infinite;
-  transform: translateY(-2px);
+button .gradient {
+  height: 100%;
+  width: 350%;
+  background: linear-gradient(to right, #156aa3 25%, #64EAE7 65%, #16a085 90%);
+  position: absolute;
+  top: 0;
+  left: 60%;
+  transform: translateX(-50%);
+  z-index: -1;
+  transition: .4s ease;
 }
 
-/* Click animation */
-.beautiful-button:active {
-  transform: scale(0.95);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+button .txt {
+  transition: .4s ease .5s;
 }
 
-/* Shimmer animation */
-@keyframes button-shimmer {
-  0% {
-    background-position: left top;
-  }
-
-  100% {
-    background-position: right bottom;
-  }
+button .txt2 {
+  position: absolute;
+  opacity: 0;
+  transition: .4s;
 }
 
-/* Particle animation */
-@keyframes button-particles {
-  0% {
-    background-position: left top;
-  }
+button:hover .gradient {
+  transition: .4s ease;
+  transform: translateX(-40%);
+}
 
-  100% {
-    background-position: right bottom;
-  }
+button:focus .gradient {
+  background-size: 200%;
+  background-position: right;
+  transform: translateX(-88%);
+  transition: 1s ease;
+}
+
+button:focus .txt {
+  opacity: 0;
+  transition: .4s ease;
+}
+
+button:focus .txt2 {
+  opacity: 1;
+  transition: 1s ease .5s;
 }

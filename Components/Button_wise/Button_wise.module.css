@@ -1,46 +1,48 @@
 
-/* From Uiverse.io by vinodjangid07 - Tags: gradient, button, chat, hover effect */
-.chatBtn {
-  width: 55px;
-  height: 55px;
+/* From Uiverse.io by vinodjangid07 - Tags: button, next, hover effect, click effect */
+.button {
+  width: 120px;
+  height: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: none;
-  background-color: #FFE53B;
-  background-image: linear-gradient(147deg, #FFE53B, #FF2525,#FFE53B);
+  justify-content: flex-start;
+  gap: 12px;
   cursor: pointer;
-  padding-top: 3px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.164);
-  position: relative;
-  background-size: 300%;
-  background-position: left;
-  transition-duration: 1s;
+  border: 3px solid rgb(255, 239, 94);
+  background-color: rgb(255, 239, 94);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
 }
 
-.tooltip {
-  position: absolute;
-  top: -40px;
-  opacity: 0;
-  background-color: rgb(255, 180, 82);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
+.text {
+  width: 70%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: .5s;
-  pointer-events: none;
-  letter-spacing: 0.5px;
+  background-color: rgb(27, 27, 27);
+  color: white;
 }
 
-.chatBtn:hover .tooltip {
-  opacity: 1;
-  transition-duration: .5s;
+.arrow path {
+  fill: rgb(19, 19, 19);
 }
 
-.chatBtn:hover {
-  background-position: right;
-  transition-duration: 1s;
+.button:hover .arrow {
+  animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-8px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.button:active {
+  transform: scale(0.97);
 }

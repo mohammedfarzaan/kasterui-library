@@ -1,29 +1,66 @@
 
-/* From Uiverse.io by SteveBloX  - Tags: white, black, button, shadow, modern, b&w */
-.button {
-  border-radius: 8px;
-  height: 40px;
+/* From Uiverse.io by vinodjangid07  - Tags: animation, button, edit, hover effect */
+.editBtn {
+  width: 55px;
+  height: 55px;
+  border-radius: 20px;
   border: none;
-  background: #222;
-  color: white;
-  padding: 15px;
-  box-shadow: 0 1px 1px -1px #00000026, 0 2px 1px -1px #00000025,
-    0 3px 3px -2px #00000023, 0 7px 6px -2px #00000020,
-    0 13px 13px -3px #0000001b, 0 30px 30px -4px #0000000d;
-  font-weight: bold;
-  font-family: Montserrat;
-  cursor: pointer;
+  background-color: rgb(93, 93, 116);
   display: flex;
   align-items: center;
-  transition: 150ms ease-in-out;
+  justify-content: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.editBtn::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  background-color: rgb(102, 102, 141);
+  position: absolute;
+  z-index: 1;
+  transform: scale(0);
+  transition: all 0.3s;
+  border-radius: 50%;
+  filter: blur(10px);
+}
+.editBtn:hover::before {
+  transform: scale(1);
+}
+.editBtn:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.336);
 }
 
-.button:active {
-  scale: 0.95;
-  background: #fff;
-  color: black;
-  box-shadow: rgba(0, 0, 0, 0.26) 0px 1px 1px -1px,
-    rgba(0, 0, 0, 0.24) 0px 2px 3px -2px, rgba(0, 0, 0, 0.19) 0px 5px 9px -3px,
-    rgba(0, 0, 0, 0.03) 0px 16px 29px -4.5px;
+.editBtn svg {
+  height: 17px;
+  fill: white;
+  z-index: 3;
+  transition: all 0.2s;
+  transform-origin: bottom;
+}
+.editBtn:hover svg {
+  transform: rotate(-15deg) translateX(5px);
+}
+.editBtn::after {
+  content: "";
+  width: 25px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 19px;
+  left: -5px;
+  background-color: white;
+  border-radius: 2px;
+  z-index: 2;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-out;
+}
+.editBtn:hover::after {
+  transform: scaleX(1);
+  left: 0px;
+  transform-origin: right;
 }
 

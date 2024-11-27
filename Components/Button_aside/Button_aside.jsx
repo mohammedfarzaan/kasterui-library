@@ -4,73 +4,58 @@ import styles from "./Button_aside.module.css";
 const Button_aside = () => (
   <div>
     <button className={styles["button"]}>
-      <div className={styles["wrapper"]}>
+      <span className={styles["icon"]}>
         <svg
-          width="25"
-          height="45"
-          viewBox="-0.5 0 25 25"
-          fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 46 45"
+          height="45"
+          width="46"
         >
           <path
-            d="M2.33045 8.38999C0.250452 11.82 9.42048 14.9 9.42048 14.9C9.42048 14.9 12.5005 24.07 15.9305 21.99C19.5705 19.77 23.9305 6.13 21.0505 3.27C18.1705 0.409998 4.55045 4.74999 2.33045 8.38999Z"
-            stroke="#000000"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></path>
-          <path
-            d="M15.1999 9.12L9.41992 14.9"
-            stroke="#000000"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinejoin="round"
+            strokeLinecap="round"
+            strokeWidth="3"
+            stroke="black"
+            d="M29.5487 17.0828L27.4588 19.235L20.4922 26.4091M20.4922 26.4091L5.82359 21.5242C1.20662 19.9867 1.28359 13.4294 5.93538 12.0007L37.5858 2.27996C41.4233 1.10135 45.0151 4.69768 43.8315 8.53369L34.3384 39.3027C32.9045 43.9502 26.3517 44.022 24.8163 39.4069L20.4922 26.4091Z"
           ></path>
         </svg>
-        send message
-      </div>
+      </span>
+      <span>Send Message</span>
     </button>
   </div>
 );
 
 export default Button_aside;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_aside = () => (
          <div>
           <button className="button">
-  <div className="wrapper">
+  <span className="icon">
     <svg
-      width="25"
-      height="45"
-      viewBox="-0.5 0 25 25"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 46 45"
+      height="45"
+      width="46"
     >
       <path
-        d="M2.33045 8.38999C0.250452 11.82 9.42048 14.9 9.42048 14.9C9.42048 14.9 12.5005 24.07 15.9305 21.99C19.5705 19.77 23.9305 6.13 21.0505 3.27C18.1705 0.409998 4.55045 4.74999 2.33045 8.38999Z"
-        stroke="#000000"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      ></path>
-      <path
-        d="M15.1999 9.12L9.41992 14.9"
-        stroke="#000000"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
+        strokeLinecap="round"
+        strokeWidth="3"
+        stroke="black"
+        d="M29.5487 17.0828L27.4588 19.235L20.4922 26.4091M20.4922 26.4091L5.82359 21.5242C1.20662 19.9867 1.28359 13.4294 5.93538 12.0007L37.5858 2.27996C41.4233 1.10135 45.0151 4.69768 43.8315 8.53369L34.3384 39.3027C32.9045 43.9502 26.3517 44.022 24.8163 39.4069L20.4922 26.4091Z"
       ></path>
     </svg>
-    send message
-  </div>
+  </span>
+  <span>Send Message</span>
 </button>
         </div>
         );

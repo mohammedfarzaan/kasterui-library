@@ -1,111 +1,75 @@
 
-/* From Uiverse.io by MRez321  - Tags: button, hover, animated, hover button, #button, button hover effect  */
-.button {
+/* From Uiverse.io by vinodjangid07 - Tags: button, jelly, hover effect */
+.Btn {
   position: relative;
-  z-index: 5;
-  isolation: isolate;
+  width: 150px;
+  height: 55px;
+  border-radius: 45px;
+  border: none;
+  background-color: rgb(151, 95, 255);
+  color: white;
+  box-shadow: 0px 10px 10px rgb(210, 187, 253) inset,
+  0px 5px 10px rgba(5, 5, 5, 0.212),
+  0px -10px 10px rgb(124, 54, 255) inset;
   cursor: pointer;
-  transition: 0.4s;
-
-  width: fit-content;
-  height: 4.8rem;
-  padding: 1rem;
-  margin-inline: auto;
-  border: solid 3px;
-  border-color: #0000004d #0000004d #00000080 #00000080;
-  border-radius: 0.8rem;
-
-  font-family: cursive;
-  font-size: 1.4rem;
-  font-weight: 700;
-
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-
-  animation: boxShadowRotation 2s linear infinite;
-}
-.button:hover,
-.button:active {
-  scale: 0.96;
-  border-color: #00000080 #00000080 #0000004d #0000004d;
-  padding: 2rem;
-  box-shadow: 0 0 4px 2px rgba(208, 212, 218, 0.979);
-  background: #fbfdfc;
+  justify-content: center;
 }
 
-.button::before,
-.button::after {
+.Btn::before {
+  width: 70%;
+  height: 2px;
   position: absolute;
+  background-color: rgba(250, 250, 250, 0.678);
   content: "";
-  background: #f4f5f4;
-  transition: 0.4s;
-}
-.button::before {
-  z-index: -1;
-  inset: 0.3rem;
-  border-radius: 4rem;
-  box-shadow: inset 0 0 4px 2px rgba(208, 212, 218, 0.979);
-}
-.button:hover::before {
-  inset: 0.1rem;
-  z-index: -1;
-  margin-inline: auto;
-  border: solid 1px;
-  border-color: #00000080 #00000080 #0000004d #0000004d;
-  border-radius: 0.8rem;
-  animation: boxShadowRotation 2s linear infinite;
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-}
-.button::after {
-  background: none;
-  z-index: -2;
-  border-radius: 1rem;
-}
-.button:hover::after {
-  inset: -0.5rem;
-  border: solid 1px #00000080;
-  box-shadow: 0 0 10px 4px #a1c4fd;
-  background: #c2e9fb;
+  filter: blur(1px);
+  top: 7px;
+  border-radius: 50%;
 }
 
-.button svg {
-  width: 2rem;
-  height: 2rem;
-  z-index: 10;
-}
-.button:hover svg {
-  animation: rotation 0.8s linear;
-  filter: drop-shadow(0 0 10px 10px rgb(170, 166, 166));
+.Btn::after {
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  background-color: rgba(250, 250, 250, 0.137);
+  content: "";
+  filter: blur(1px);
+  bottom: 7px;
+  border-radius: 50%;
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg) translate(0, 0) scale(1);
-  }
-  50% {
-    transform: rotate(180deg) translate(-4rem, -2rem) scale(1.4);
-  }
-  100% {
-    transform: rotate(360deg) translate(0, 0) scale(1);
-  }
+.Btn:hover {
+  animation: jello-horizontal 0.9s both;
 }
-@keyframes boxShadowRotation {
+
+@keyframes jello-horizontal {
   0% {
-    box-shadow: inset 10px 10px 20px rgba(29, 43, 83, 0.2);
+    transform: scale3d(1, 1, 1);
   }
-  25% {
-    box-shadow: inset -10px 10px 20px rgba(29, 43, 83, 0.2);
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
   }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
   50% {
-    box-shadow: inset -10px -10px 20px rgba(29, 43, 83, 0.2);
+    transform: scale3d(1.15, 0.85, 1);
   }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
   75% {
-    box-shadow: inset 10px -10px 20px rgba(29, 43, 83, 0.2);
+    transform: scale3d(1.05, 0.95, 1);
   }
+
   100% {
-    box-shadow: inset 10px 10px 20px rgba(29, 43, 83, 0.2);
+    transform: scale3d(1, 1, 1);
   }
 }
 

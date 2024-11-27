@@ -1,79 +1,136 @@
 
-/* From Uiverse.io by KSAplay - Tags: button */
-.container {
-  transition: 200ms ease;
-}
-
-.button {
+/* From Uiverse.io by roroland - Tags: button */
+button {
+  --fs: 1.25em;
+  --col1: honeydew;
+  --col2: rgba(240, 128, 128, 0.603);
+  --col3: indianred;
+  --col4: maroon;
+  --pd: .5em .65em;
+  display: grid;
+  align-content: baseline;
+  appearance: none;
+  border: 0;
+  grid-template-columns: min-content 1fr;
+  padding: var(--pd);
+  font-size: var(--fs);
+  color: var(--col1);
+  background-color: var(--col3);
+  border-radius: 6px;
+  text-shadow: 1px 1px var(--col4);
+  box-shadow: inset -2px 1px 1px var(--col2),
+    inset 2px 1px 1px var(--col2);
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 40px;
-  border-width: 0;
-  border-radius: 1em;
-  background-color: #19171C;
-  transition: 500ms ease;
+  transition: all .75s ease-out;
+  transform-origin: center;
 }
 
-.button p {
-  font-size: 20px;
-  font-weight: bold;
-  background: rgb(137,60,21);
-  background: linear-gradient(90deg, rgba(137,60,21,1) 0%, rgba(255,222,68,1) 17%, rgba(177,116,30,1) 24%, rgba(255,231,82,1) 40%, rgba(224,147,38,1) 50%, rgba(228,150,42,1) 59%, rgba(176,120,27,1) 70%, rgba(239,179,51,1) 85%, rgba(135,58,26,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+button:hover {
+  color: var(--col4);
+  box-shadow: inset -2px 1px 1px var(--col2),
+    inset 2px 1px 1px var(--col2),
+    inset 0px -2px 20px var(--col4),
+    0px 20px 30px var(--col3),
+    0px -20px 30px var(--col2),
+    1px 2px 20px var(--col4);
+  text-shadow: 1px 1px var(--col2);
 }
 
-.button::before {
-  position: absolute;
+button:active {
+  animation: offset 1s ease-in-out infinite;
+  outline: 2px solid var(--col2);
+  outline-offset: 0;
+}
+
+button::after,
+button::before {
   content: '';
-  width: 190px;
-  height: 50px;
-  border-radius: 1em;
-  background-size: 100%;
-  background: rgb(137,60,21);
-  background: linear-gradient(90deg, rgba(137,60,21,1) 0%, rgba(255,222,68,1) 17%, rgba(177,116,30,1) 24%, rgba(255,231,82,1) 40%, rgba(224,147,38,1) 50%, rgba(228,150,42,1) 59%, rgba(176,120,27,1) 70%, rgba(239,179,51,1) 85%, rgba(135,58,26,1) 100%);
-  z-index: -1;
+  align-self: center;
+  justify-self: center;
+  height: .5em;
+  margin: 0 .5em;
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 1;
 }
 
-.container:hover .button::before {
-  animation: golden 5s infinite alternate ease-in-out;
+button::after {
+  position: relative;
+  border: 2px solid var(--col4);
+  border-radius: 50%;
+  transition: all .5s ease-out;
+  height: .1em;
+  width: .1em;
 }
 
-.container:hover .button p {
-  animation: golden 5s infinite alternate ease-in-out;
+button:hover::after {
+  border: 2px solid var(--col3);
+  transform: rotate(-120deg) translate(10%, 140%);
 }
 
-.container:hover {
-  transform: scale(1.1);
+button::before {
+  border-radius: 50% 0%;
+  border: 4px solid var(--col4);
+  box-shadow: inset 1px 1px var(--col2);
+  transition: all 1s ease-out;
+  transform: rotate(45deg);
+  height: .45em;
+  width: .45em;
 }
 
-.container:active {
-  transform: scale(1);
+button:hover::before {
+  border-radius: 50%;
+  border: 4px solid var(--col1);
+  transform: scale(1.25) rotate(0deg);
+  animation: blink 1.5s ease-out 1s infinite alternate;
 }
 
-.container:active .button::before {
-  animation: golden 1s infinite alternate ease-in-out;
+button:hover > span {
+  filter: contrast(150%);
 }
 
-.container:active .button p {
-  animation: golden 1s infinite alternate ease-in-out;
-}
-
-@keyframes golden {
+@keyframes blink {
   0% {
-    background-size: 100%;
-    background-position: 50%;
+    transform: scale(1, 1) skewX(0deg);
+    opacity: 1;
   }
 
-  50% {
-    background-size: 500%;
-    background-position: 0%;
+  5% {
+    transform: scale(1.5, .1) skewX(10deg);
+    opacity: .5;
   }
 
+  10%,
+  35% {
+    transform: scale(1, 1) skewX(0deg);
+    opacity: 1;
+  }
+
+  40% {
+    transform: scale(1.5, .1) skewX(10deg);
+    opacity: .25;
+  }
+
+  45%,
   100% {
-    background-size: 200%;
-    background-position: 100%;
+    transform: scale(1, 1) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes offset {
+  50% {
+    outline-offset: .15em;
+    outline-color: var(--col1);
+  }
+
+  55% {
+    outline-offset: .1em;
+    transform: translateY(1px);
+  }
+
+  80%,
+  100% {
+    outline-offset: 0;
   }
 }

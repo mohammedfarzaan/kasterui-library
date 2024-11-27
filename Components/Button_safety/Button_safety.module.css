@@ -1,39 +1,37 @@
 
-/* From Uiverse.io by ArturCodeCraft - Tags: button, scroll to top, scroll */
-/* <reset-style> ============================ */
-a {
-  text-decoration: none;
-}
-/* <main-style> ============================ */
-.scroll-up {
-	/* position: fixed; */
-  right: 3rem;
-  bottom: -50%;
-  z-index: 10;
-  width: 32px;
-  height: 32px;
-  border-radius: 4px;
-  background-color: rgba(29, 29, 31, 0.7);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+/* From Uiverse.io by CodeGame2010 - Tags: button */
+button {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  transition: bottom .4s, transform .4s;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  background: #08f;
+  color: #fff;
 }
 
-.scroll-up:hover {
-  transform: translateY(-.25rem);
+svg {
+  margin: 0 0 0 10px;
 }
 
-/* Show scroll-up */
-._show-scroll {
-  bottom: 3rem;
+button:hover svg {
+  margin: 0 0 0 25px;
+  transition: 0.3s;
 }
 
-@media (max-width: 1199.98px) {
-  .scroll-up {
-    right: 1rem;
-  }
+button:not(:hover) svg {
+  transition: 0.3s;
+}
+
+button:active {
+  transform: scale(0.9, 0.9);
+  transition: 200ms;
+}
+
+button:not(:active) {
+  transition: 200ms;
 }

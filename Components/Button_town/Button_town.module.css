@@ -1,64 +1,51 @@
 
-/* From Uiverse.io by fcb4355 - Tags: button, after, 3d button */
-.button {
+/* From Uiverse.io by Boosterrohit - Tags: active, about me */
+.box {
   position: relative;
-  padding: 10px 20px;
+  width: 120px;
+  height: 45px;
+  overflow: hidden;
   border: none;
-  color: #007ffe;
+  background-color: rgb(218, 203, 177);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top-left-radius: 20px;
   cursor: pointer;
-  transition: .3s;
-  transition-delay: .3s;
-  z-index: 0;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0 10px rgb(104, 134, 218);
 }
 
-.button::after {
+.box::before {
+  content: "";
   position: absolute;
-  content: '';
-  width: 17px;
-  height: 17px;
-  background-color: #007ffe;
-  right: -20px;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: .3s;
-  opacity: 0;
+  width: 15px;
+  height: 200px;
+  margin-top: -92px;
+  background: linear-gradient(#00ccff,#d400d4);
+  animation: amm 4s linear infinite;
 }
 
-.button::before {
+@keyframes amm {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text-button {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.box::after {
+  content: "";
   position: absolute;
-  z-index: 0;
-  content: '';
-  width: 17px;
-  height: 17px;
-  background-color: #007ffe;
-  left: -20px;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: .3s;
-  opacity: 0;
-}
-
-button:hover::after {
-  z-index: -1;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  border-radius: 0;
-  opacity: 1;
-}
-
-button:hover::before {
-  z-index: -1;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  border-radius: 0;
-  opacity: 1;
-}
-
-button:hover {
-  color: #fff;
-  box-shadow: 10px 50px 50px rgba(52, 152, 219,.2);
+  inset: 4px;
+  background-color: rgb(218, 203, 177);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }

@@ -1,37 +1,33 @@
 
-/* From Uiverse.io by Saiyed-Tanvir - Tags: button, box */
-.btn {
-  transform-style: preserve-3d;
-  perspective: 1000px;
+/* From Uiverse.io by Cornerstone-04 - Tags: button */
+button {
+  position: relative;
+  background: none;
+  border: solid 1px #121212;
+  transition: linear 250ms;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
 }
 
-.sides {
-  transition: all 0.07s;
-  cursor: pointer;
+button:is(:hover,:focus) {
+  color: #fff;
 }
 
-.top {
-  background: linear-gradient(259.35deg, #FF6B00 0%, #BD00FF 100%);
-  height: 2cm;
-  width: 4cm;
-  transform: rotateX(60deg);
-  font-weight: bolder;
-  padding: 0.5cm 1cm;
-  color: white;
+button::after {
+  position: absolute;
+  content: '';
+  inset: 0;
+  z-index: -1;
+  background-color: #121212;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: linear 250ms;
 }
 
-.front {
-  background: linear-gradient(280.65deg, #BD5000 0%, #8C00BD 100%);
-  height: 2cm;
-  width: 4cm;
-  transform: translateY(-38px) rotateX(-60deg);
-}
-
-.btn:active .top {
-  transform: rotateX(60deg) translateZ(0px);
-}
-
-.btn:active .front {
-  height: 0.1cm;
-  transform: rotateX(-60deg) translateZ(-26px);
+button:is(:hover, :focus)::after {
+  transform: scale(1);
 }

@@ -1,63 +1,38 @@
 
-/* From Uiverse.io by asgardOP  - Tags: action, button, modern, menu, btn, hover effect, html, css */
-.ul {
-  width: fit-content;
-  height: fit-content;
-  background-color: transparent;
-  list-style: none;
-}
-.li {
-  margin-bottom: 0px;
-}
-.button {
-  background-color: transparent;
-  font-family: sans-serif;
-  color: rgb(255, 255, 255);
-  border: none;
-  font-size: 22px;
-  font-weight: 700;
-  padding: 10px 30px;
-  cursor: pointer;
-  position: relative;
-  padding-left: 11px;
-  text-align: center;
-  transition: 0.1s;
-  z-index: 1;
-}
-
-.p {
-  z-index: 2;
-  position: relative;
-}
-
-.button:hover {
-  color: rgb(172, 40, 0);
-  text-align: center;
-}
-.button:hover::before {
-  transform: rotate(0deg);
-  width: 100%;
+/* From Uiverse.io by vinodjangid07 - Tags: gradient, button, submit, hover effect */
+.submitBtn {
+  width: 120px;
   height: 40px;
-  top: 2px;
-  border-radius: 3px;
-  background-color: rgb(255, 83, 53);
-}
-.button::before {
-  content: "";
-  border-radius: 1px;
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background-color: tomato;
-  left: -10px;
-  top: 19px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
   cursor: pointer;
-  transform: rotate(225deg);
-  transition: 0.3s;
-  z-index: -1;
+  color: white;
+  background: linear-gradient(to left,rgb(230, 35, 0),rgb(255, 174, 0));
+  letter-spacing: 0.7px;
 }
 
-.button:active::before {
-  background-color: rgb(255, 38, 0);
+.submitBtn:hover .arrow {
+  animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.submitBtn:active {
+  transform: scale(0.97);
+}

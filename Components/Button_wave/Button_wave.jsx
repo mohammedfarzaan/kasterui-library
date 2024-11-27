@@ -3,73 +3,41 @@ import styles from "./Button_wave.module.css";
 
 const Button_wave = () => (
   <div>
-    <div className={styles["button-group"]}>
-      <div className={styles["button-container"]}>
-        <a title="Go to the home page" href="#">
-          <svg>
-            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-          </svg>
-        </a>
-        <a title="Go to post list page" href="#">
-          <svg>
-            <path d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z"></path>
-            <path d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z"></path>
-          </svg>
-        </a>
-        <a title="Go to about me page" href="#">
-          <svg>
-            <path
-              fill-rule="evenodd"
-              d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-            ></path>
-          </svg>
-        </a>
-      </div>
-    </div>
+    <button className={styles["button"]}>
+      <span className={styles["text"]}>send message</span>
+      <span className={styles["icon"]}>
+        <svg
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+          data-icon="paper-plane"
+          width="20px"
+          aria-hidden="true"
+        >
+          <path
+            d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </span>
+    </button>
   </div>
 );
 
 export default Button_wave;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_wave = () => (
          <div>
-          <div className="button-group">
-  <div className="button-container">
-    <a title="Go to the home page" href="#">
-      <svg>
-        <path
-          d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
-        ></path>
-      </svg>
-    </a>
-    <a title="Go to post list page" href="#">
-      <svg>
-        <path
-          d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z"
-        ></path>
-        <path
-          d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z"
-        ></path>
-      </svg>
-    </a>
-    <a title="Go to about me page" href="#">
-      <svg>
-        <path
-          fill-rule="evenodd"
-          d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-        ></path>
-      </svg>
-    </a>
-  </div>
-</div>
+          <button className="button">
+  <span className="text">send message</span>
+  <span className="icon"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" data-icon="paper-plane" width="20px" aria-hidden="true"><path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z" fill="currentColor"></path></svg></span>
+</button>
         </div>
         );
 

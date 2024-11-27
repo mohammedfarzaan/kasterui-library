@@ -3,42 +3,91 @@ import styles from "./Button_cloud.module.css";
 
 const Button_cloud = () => (
   <div>
-    <button>
-      P L A Y
-      <div id="clip">
-        <div id="leftTop" className={styles["corner"]}></div>
-        <div id="rightBottom" className={styles["corner"]}></div>
-        <div id="rightTop" className={styles["corner"]}></div>
-        <div id="leftBottom" className={styles["corner"]}></div>
+    <button className={styles["button"]}>
+      <div className={styles["msg"]}>
+        <p>
+          <span style="--i:0">J</span>
+          <span style="--i:1">o</span>
+          <span style="--i:2">i</span>
+          <span style="--i:3">n</span>
+          <span>&nbsp;</span>
+          <span style="--i:4">T</span>
+          <span style="--i:5">o</span>
+          <span style="--i:6">d</span>
+          <span style="--i:7">a</span>
+          <span style="--i:8">y</span>
+        </p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 25 25"
+          className="arrow"
+        >
+          <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
+          <g
+            strokeLinejoin="round"
+            strokeLinecap="round"
+            id="SVGRepo_tracerCarrier"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              strokeWidth="1.2"
+              stroke="#ffffff"
+              d="M13 7L18.5 12.5L13 18M18.5 12.5H6"
+            ></path>
+          </g>
+        </svg>
       </div>
-      <span id="rightArrow" className={styles["arrow"]}></span>
-      <span id="leftArrow" className={styles["arrow"]}></span>
     </button>
   </div>
 );
 
 export default Button_cloud;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_cloud = () => (
          <div>
-          <button>
-    P L A Y
-    <div id="clip">
-        <div id="leftTop" className="corner"></div>
-        <div id="rightBottom" className="corner"></div>
-        <div id="rightTop" className="corner"></div>
-        <div id="leftBottom" className="corner"></div>
-    </div>
-    <span id="rightArrow" className="arrow"></span>
-    <span id="leftArrow" className="arrow"></span>
+          <button className="button">
+  <div className="msg">
+    <p>
+      <span style="--i:0">J</span>
+      <span style="--i:1">o</span>
+      <span style="--i:2">i</span>
+      <span style="--i:3">n</span>
+      <span>&nbsp;</span>
+      <span style="--i:4">T</span>
+      <span style="--i:5">o</span>
+      <span style="--i:6">d</span>
+      <span style="--i:7">a</span>
+      <span style="--i:8">y</span>
+    </p>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 25 25"
+      className="arrow"
+    >
+      <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
+      <g
+        strokeLinejoin="round"
+        strokeLinecap="round"
+        id="SVGRepo_tracerCarrier"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        <path
+          strokeWidth="1.2"
+          stroke="#ffffff"
+          d="M13 7L18.5 12.5L13 18M18.5 12.5H6"
+        ></path>
+      </g>
+    </svg>
+  </div>
 </button>
         </div>
         );

@@ -1,58 +1,61 @@
 
-/* From Uiverse.io by andrew-demchenk0 - Tags: animation, purple, button, opacity, key , small */
-.button {
+/* From Uiverse.io by ArturCodeCraft - Tags: icon, button, menuicon, menu button , hamburger menu */
+/* <reset-style> ============================ */
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+/* ============================ */
+/*  ======== */
+.background {
+  border-radius: 16px;
+  border: 1px solid #1a1a1a;
+  background: rgba(74, 74, 74, 0.39);
+  mix-blend-mode: luminosity;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.20);
+  backdrop-filter: blur(15px);
+  width: 65px;
+  height: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6px 12px;
-  gap: 8px;
+}
+
+/*  ======== */
+.menu__icon {
+  width: 32px;
   height: 32px;
-  width: 82px;
-  border: none;
-  background: #a549dacb;
-  border-radius: 20px;
-  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.lable {
-  line-height: 20px;
-  font-size: 17px;
-  color: #fff;
-  font-family: sans-serif;
-  letter-spacing: 1px;
+.menu__icon span {
+  width: 100%;
+  height: 0.125rem;
+  border-radius: 0.125rem;
+  background-color: rgb(0, 122, 255);
+  box-shadow: 0 .5px 2px 0 hsla(0, 0%, 0%, .2);
+  transition: transform .4s, background-color .4s, opacity .4s;
 }
 
-.svg-icon {
-  width: 20px;
-  height: 20px;
+.menu__icon:hover span:nth-child(1) {
+  background-color: rgb(255, 59, 48);
+  transform: translateY(11px) rotate(-45deg);
 }
 
-.button:hover {
-  background: #A649DA;
+.menu__icon:hover span:nth-child(2) {
+  transform: translate(-50%);
+  opacity: 0;
 }
 
-.button:hover .svg-icon {
-  animation: rot 0.5s linear infinite;
-}
-
-@keyframes rot {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(-6deg);
-  }
-
-  50% {
-    transform: rotate(0deg);
-  }
-
-  75% {
-    transform: rotate(6deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
+.menu__icon:hover span:nth-child(3) {
+  background-color: rgb(255, 59, 48);
+  transform: translateY(-11px) rotate(45deg);
 }

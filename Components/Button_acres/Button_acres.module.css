@@ -1,67 +1,101 @@
 
-/* From Uiverse.io by JaydipPrajapati1910 - Tags: glassmorphism, animation, blue, button, circle */
-.button {
-  width: 160px;
-  height: 55px;
-  transition: all 0.2s;
-  position: relative;
-  cursor: pointer;
-  background: none;
+/* From Uiverse.io by Yashasewi - Tags: button */
+button {
+  background: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  padding: 0.8rem 2rem;
+  font: 18px "Margarine", sans-serif;
   outline: none;
-  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  letter-spacing: 2px;
 }
 
-.button-inner {
-  width: inherit;
-  height: inherit;
-  background: rgba(255,255,255,.05);
-  box-shadow: 0 0 10px rgba(0,0,0,0.25);
-  backdrop-filter: blur(10px);
-  border-radius: 8px;
-  display: flex;
+.name {
+  width: 100%;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: 900;
-  letter-spacing: .1em;
-  color: blue;
+  padding: 0 0 3rem;
+  padding-top: 4rem;
+  font: 500 14px "Rubik", sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-.button:hover {
-  transform: scale(1.04) rotate(1deg);
-}
-
-.circle {
-  width: 20px;
-  height: 20px;
-  background: radial-gradient(blue,darkblue);
-  border-radius: 50%;
+.button-parrot .parrot {
   position: absolute;
-  animation: move-up6 2s ease-in infinite alternate-reverse;
+  width: 60px;
+  text-align: center;
+  animation: blink 0.8s infinite;
+  color: transparent;
 }
 
-.circle:nth-child(1) {
-  top: 0px;
-  left: 0px;
+.button-parrot .parrot:before {
+  content: "Click Me!";
 }
 
-.circle:nth-child(2) {
-  bottom: 0px;
-  right: 0px;
-  animation-name: move-down1;
+.button-parrot .parrot:nth-child(1) {
+  top: -30px;
+  left: -40px;
+  font: 12px/1 "Margarine", sans-serif;
+  transform: rotate(-20deg);
+  animation-duration: 0.5s;
 }
 
-@keyframes move-up6 {
-  to {
-    transform: translateY(-5px);
+.button-parrot .parrot:nth-child(2) {
+  font: 12px/1 "Margarine", sans-serif;
+  right: -40px;
+  top: -20px;
+  transform: rotate(15deg);
+  animation-duration: 0.3s;
+}
+
+.button-parrot .parrot:nth-child(3) {
+  font: 16px/1 "Margarine", sans-serif;
+  top: -60px;
+  left: 15px;
+  transform: rotate(10deg);
+  animation-duration: 1s;
+}
+
+.button-parrot .parrot:nth-child(4) {
+  font: 18px/1 "Margarine", sans-serif;
+  top: -70px;
+  left: 95px;
+  transform: rotate(2deg);
+  animation-duration: 0.7s;
+}
+
+.button-parrot .parrot:nth-child(5) {
+  font: 14px/1 "Margarine", sans-serif;
+  top: 80px;
+  left: 105px;
+  transform: rotate(-20deg);
+  animation-duration: 0.8s;
+}
+
+.button-parrot .parrot:nth-child(6) {
+  font: 12px/1 "Margarine", sans-serif;
+  top: 80px;
+  left: 5px;
+  transform: rotate(10deg);
+  animation-duration: 1.2s;
+}
+
+.button-parrot button:hover .parrot:before {
+  content: "Do it!";
+  width: 70px;
+}
+
+@keyframes blink {
+  25%, 75% {
+    color: transparent;
+  }
+
+  40%, 60% {
+    color: #fff;
   }
 }
-
-@keyframes move-down1 {
-  to {
-    transform: translateY(5px);
-  }
-}
-
-

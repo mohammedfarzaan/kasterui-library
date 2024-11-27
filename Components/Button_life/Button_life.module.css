@@ -1,47 +1,36 @@
 
-/* From Uiverse.io by mobinkakei - Tags: button */
+/* From Uiverse.io by garerim - Tags: button */
 .btn {
-  width: 140px;
-  height: 50px;
-  background: linear-gradient(to top, #00154c, #12376e, #23487f);
-  color: #fff;
-  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: inherit;
   border: none;
   outline: none;
-  cursor: pointer;
-  position: relative;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
+  color: #f1f1f1;
 }
 
-.btn span {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: top 0.5s;
-}
-
-.btn-text-one {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-
-.btn-text-two {
-  position: absolute;
-  width: 100%;
-  top: 150%;
-  left: 0;
-  transform: translateY(-50%);
-}
-
-.btn:hover .btn-text-one {
-  top: -100%;
-}
-
-.btn:hover .btn-text-two {
+.btn:hover .background {
+  height: inherit;
+  width: 120%;
   top: 50%;
 }
 
+.btn .background {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 3px;
+  width: 100%;
+  background-color: #006b92;
+  z-index: -1;
+  border-radius: 5px;
+  transition: all 0.3s;
+}

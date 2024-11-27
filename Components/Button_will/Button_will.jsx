@@ -3,28 +3,25 @@ import styles from "./Button_will.module.css";
 
 const Button_will = () => (
   <div>
-    <button className={styles["Btn"]}>
-      <p className={styles["text"]}>Button</p>
-      <span className={styles["BG"]}></span>
+    <button className={styles["btn-shine"]}>
+      <span>Shine</span>
     </button>
   </div>
 );
 
 export default Button_will;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_will = () => (
          <div>
-          <button className="Btn">
-  <p className="text">Button</p>
-  <span className="BG"></span>
+          <button className="btn-shine">
+    <span>Shine</span>
 </button>
         </div>
         );

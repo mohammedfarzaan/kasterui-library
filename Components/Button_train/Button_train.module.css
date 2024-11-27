@@ -1,50 +1,43 @@
 
-/* From Uiverse.io by alshahwan - Tags: instagram, button */
-/* From uiverse.io by @alshahwan */
-button {
-  background-color: #fff;
-  border: 1px solid #bc2a8d;
-  padding: 5px;
+/* From Uiverse.io by boryanakrasteva - Tags: button */
+.btn-wrapper {
+  width: 120px;
+  height: 50px;
   position: relative;
-  width: 7.2em;
-  height: 2em;
-  transition: 0.5s;
-  font-size: 17px;
-  border-radius: 0.4em;
+  z-index: 1;
+  background: linear-gradient(270deg, #96f061, #a259d3, #1d9de0, #e790b0);
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.363);
+  background-size: 800% 800%;
+  animation: animateBorder 9s ease infinite;
 }
 
-button p {
+.btn {
+  width: 95%;
+  height: 90%;
   position: absolute;
-  top: 0.4em;
-  left: 1.2em;
-  margin: 0;
-  padding: 0;
-  transition: .5s;
-  color: #bc2a8d;
+  padding: 5px;
+  border: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #212121;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+  color: white;
+  font-weight: bold;
 }
 
-button svg {
-  position: absolute;
-  top: 0.45em;
-  right: 0.5em;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-  transition: 0.5s;
-  height: 1em;
-  fill: #fff
-}
+@keyframes animateBorder {
+  0% {
+    background-position: 0% 50%
+  }
 
-button:hover p {
-  left: 0.6em;
-  color: #fff
-}
+  50% {
+    background-position: 100% 50%
+  }
 
-button:hover svg {
-  opacity: 1;
+  100% {
+    background-position: 0% 50%
+  }
 }
-
-button:hover {
-  background-color: #bc2a8d;
-}
-

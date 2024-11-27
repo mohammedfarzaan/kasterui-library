@@ -1,78 +1,57 @@
 
-/* From Uiverse.io by G4b413l - Tags: button, download */
-.buttonDownload {
- display: inline-block;
- position: relative;
- padding: 10px 25px;
- background-color: #4CC713;
- color: white;
- font-family: sans-serif;
- text-decoration: none;
- font-size: 0.9em;
- text-align: center;
- text-indent: 15px;
- border: none;
+/* From Uiverse.io by Pradeepsaranbishnoi - Tags: button */
+.social-links,.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.buttonDownload:hover {
- background-color: #45a21a;
- color: white;
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  background: white;
+  margin: 5px;
+  transition: 0.3s;
+  justify-content: center;
 }
 
-.buttonDownload:before, .buttonDownload:after {
- content: ' ';
- display: block;
- position: absolute;
- left: 15px;
- top: 52%;
+.social-btn svg {
+  height: 24px;
+  width: 24px;
 }
 
-.buttonDownload:before {
- width: 10px;
- height: 2px;
- border-style: solid;
- border-width: 0 2px 2px;
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
 }
 
-.buttonDownload:after {
- width: 0;
- height: 0;
- margin-left: 3px;
- margin-top: -7px;
- border-style: solid;
- border-width: 4px 4px 0 4px;
- border-color: transparent;
- border-top-color: inherit;
- animation: downloadArrow 1s linear infinite;
- animation-play-state: paused;
+.social-btn:hover {
+  width: 150px;
+  border-radius: 5px;
 }
 
-.buttonDownload:hover:before {
- border-color: #cdefbd;
+.social-btn:hover span {
+  padding: 2px;
+  width: 80px;
 }
 
-.buttonDownload:hover:after {
- border-top-color: #cdefbd;
- animation-play-state: running;
+#twitter svg {
+  fill: #1da1f2;
 }
 
-@keyframes downloadArrow {
- 0% {
-  margin-top: -7px;
-  opacity: 1;
- }
-
- 0.001% {
-  margin-top: -15px;
-  opacity: 0.4;
- }
-
- 50% {
-  opacity: 1;
- }
-
- 100% {
-  margin-top: 0;
-  opacity: 0.4;
- }
+#linkedin svg {
+  fill: #0e76a8;
 }
+
+#github {
+  fill: #333;
+}
+

@@ -1,48 +1,59 @@
 
-/* From Uiverse.io by vinodjangid07 - Tags: gradient, button, hover effect, gold, golden effect , subscribe, premium */
-.Btn {
-  width: 140px;
-  height: 40px;
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
-  background-size: 250%;
-  background-position: left;
-  color: #ffd277;
+/* From Uiverse.io by Deri-Kurniawan  - Tags: blue, button, hover, smooth, hover effect, hoverme, hover button, button hover effect  */
+.button {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition-duration: 1s;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 14px;
   overflow: hidden;
+  z-index: 1;
+  border: 1px solid rgb(221, 218, 218);
+  background: white;
+  font-weight: bold;
+  font-size: 16px;
+  color: #1993e4;
+  transition: all 1.2s linear;
+  cursor: pointer;
 }
 
-.Btn::before {
+.button::after {
+  content: "";
   position: absolute;
-  content: "SUBSCRIBE";
-  color: #ffd277;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 97%;
-  height: 90%;
-  border-radius: 8px;
-  transition-duration: 1s;
-  background-color: rgba(0, 0, 0, 0.842);
-  background-size: 200%;
+  background: linear-gradient(to right, #1993e4, #1993e456);
+  border-radius: 30%;
+  height: 96px;
+  width: 96px;
+  animation: spin infinite linear 1.8s;
+  animation-delay: 0;
+  bottom: -38px;
+  right: -112px;
+  transition: all 1.2s linear;
+  z-index: 0;
 }
 
-.Btn:hover {
-  background-position: right;
-  transition-duration: 1s;
+.button:hover {
+  color: #fff;
+  transition-duration: 1.2s;
 }
 
-.Btn:hover::before {
-  background-position: right;
-  transition-duration: 1s;
+.button:hover::after {
+  right: -60px;
+  bottom: -92px;
+  width: 256px;
+  height: 256px;
 }
 
-.Btn:active {
-  transform: scale(0.95);
+.button > .button-content {
+  position: relative;
+  z-index: 2;
 }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

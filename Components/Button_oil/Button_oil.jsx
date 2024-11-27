@@ -3,23 +3,22 @@ import styles from "./Button_oil.module.css";
 
 const Button_oil = () => (
   <div>
-    <button className={styles["button"]}>HOVER ME</button>
+    <button>Button</button>
   </div>
 );
 
 export default Button_oil;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_oil = () => (
          <div>
-          <button className="button">HOVER ME</button>
+          <button>Button</button>
         </div>
         );
 

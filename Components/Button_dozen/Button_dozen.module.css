@@ -1,124 +1,50 @@
 
-/* From Uiverse.io by fanishah - Tags: button */
+/* From Uiverse.io by fanishah - Tags: icon, button */
 .button {
+  font-family: inherit;
+  background: #2CA0D9;
+  color: white;
+  padding: 0.35em 0;
+  font-size: 17px;
+  border: none;
+  border-radius: 0.7em;
+  letter-spacing: 0.08em;
   position: relative;
-  padding: 12px 25px;
-  font-size: 1.5rem;
-  color: #1e9bff;
-  border: 2px solid rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-  text-shadow: 0 0 15px #1e9bff;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  transition: 0.5s;
-  z-index: 1;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 2.5em;
+  padding-left: 2.8em;
+  padding-right: 0.92em;
 }
 
-.button:hover {
-  color: #fff;
-  border: 2px solid rgba(0, 0, 0, 0);
-  box-shadow: 0 0 0px #1e9bff;
-}
-
-.button::before {
-  content: '';
+.button .icon {
+  background: #fff;
+  height: 2em;
+  width: 2em;
+  border-radius: 2em;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #1e9bff;
-  z-index: -1;
-  transform: scale(0);
-  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0.4em;
+  transition: all 0.5s;
 }
 
-.button:hover::before {
-  transform: scale(1);
-  transition-delay: 0.5s;
-  box-shadow: 0 0 10px #1e9bff,
-    0 0 30px #1e9bff,
-    0 0 60px #1e9bff;
+.icon svg {
+  margin-left: 0.1em;
+  transition: all 0.5s;
+  color: #2CA0D9;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
-.button span {
-  position: absolute;
-  background: #1e9bff;
-  pointer-events: none;
-  border-radius: 2px;
-  box-shadow: 0 0 10px #1e9bff,
-    0 0 20px #1e9bff,
-    0 0 30px #1e9bff,
-    0 0 50px #1e9bff,
-    0 0 100px #1e9bff;
-  transition: 0.5s ease-in-out;
-  transition-delay: 0.25s;
+.button:hover .icon svg {
+  transform: rotate(360deg);
 }
 
-.button:hover span {
-  opacity: 0;
-  transition-delay: 0s;
-}
-
-.button span:nth-child(1),
-.button span:nth-child(3) {
-  width: 40px;
-  height: 4px;
-}
-
-.button:hover span:nth-child(1),
-.button:hover span:nth-child(3) {
-  transform: translateX(0);
-}
-
-.button span:nth-child(2),
-.button span:nth-child(4) {
-  width: 4px;
-  height: 40px;
-}
-
-.button:hover span:nth-child(1),
-.button:hover span:nth-child(3) {
-  transform: translateY(0);
-}
-
-.button span:nth-child(1) {
-  top: calc(50% - 2px);
-  left: -50px;
-  transform-origin: left;
-}
-
-.button:hover span:nth-child(1) {
-  left: 50%;
-}
-
-.button span:nth-child(3) {
-  top: calc(50% - 2px);
-  right: -50px;
-  transform-origin: right;
-}
-
-.button:hover span:nth-child(3) {
-  right: 50%;
-}
-
-.button span:nth-child(2) {
-  left: calc(50% - 2px);
-  top: -50px;
-  transform-origin: top;
-}
-
-.button:hover span:nth-child(2) {
-  top: 50%;
-}
-
-.button span:nth-child(4) {
-  left: calc(50% - 2px);
-  bottom: -50px;
-  transform-origin: bottom;
-}
-
-.button:hover span:nth-child(4 ) {
-  bottom: 50%;
+.button:hover .icon {
+  width: calc(100% - 0.85rem);
+  border-radius: 0.5em;
 }

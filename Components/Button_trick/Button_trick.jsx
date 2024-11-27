@@ -3,25 +3,22 @@ import styles from "./Button_trick.module.css";
 
 const Button_trick = () => (
   <div>
-    <button>BUTTON</button>
+    <button className={styles["cyberpunk-button"]}>Click me</button>
   </div>
 );
 
 export default Button_trick;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_trick = () => (
          <div>
-          <button>
-  BUTTON
-</button>
+          <button className="cyberpunk-button">Click me</button>
         </div>
         );
 

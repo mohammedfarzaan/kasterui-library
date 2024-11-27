@@ -1,64 +1,184 @@
 
-/* From Uiverse.io by elijahwgummer-poc - Tags: button, bubble, animated, shine */
+/* From Uiverse.io by SelfMadeSystem  - Tags: 3d, pink, gradient, button, hover, active, 3d button */
 .button {
+  --br: 27px;
+  --w: 360px;
+  --h: 113px;
+  --bg-grad: radial-gradient(#fffd 10px, #0000 calc(var(--w) - 60px)),
+    linear-gradient(
+      70deg in lch,
+      #8e0dff,
+      #e39cf6 15%,
+      #fd9b9a 45%,
+      #ff7139 65%,
+      #fdbff1 85%
+    );
+
   position: relative;
-  display: inline-block;
-  padding: 12px 26px;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50px;
-  color: #fff;
-  background-color: #ff6b6b;
-  border: none;
+  cursor: pointer;
+  border-radius: var(--br);
+  isolation: isolate;
+  border: 0;
   overflow: hidden;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: var(--w);
+  height: var(--h);
 }
 
-.button span {
-  position: relative;
-  z-index: 1;
-}
-
-.button .overlay {
+.btn-bg {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  inset: 0;
+  z-index: -1;
+}
+
+:where(.btn-bg > div) {
+  position: absolute;
+  inset: 0;
+}
+
+.bg1 {
+  inset: -30px;
+  filter: url("#l-distort");
+  background: var(--bg-grad);
+}
+
+.bg2 {
+  left: 0;
+  top: 0;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  aspect-ratio: 1.5;
+  background: radial-gradient(#fffd 10px, #0000 60px);
+  filter: url("#m-distort");
 }
 
-.button .shine {
+.bg-cloud {
+  transform: translate(-50%);
+  aspect-ratio: 1.5;
+  background: radial-gradient(#fffd, #0000 70%);
+  filter: url("#m-distort");
+}
+
+.bd-sat {
+  mask: linear-gradient(#fff, #fff0 40% 60%, #fff);
+}
+
+.bd-sat::after {
+  content: "";
   position: absolute;
-  top: -80px;
-  left: -80px;
-  width: 160px;
-  height: 160px;
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.8) 0%, transparent 80%);
-  transform: rotate(45deg);
+  inset: -30px;
+  border-radius: calc(var(--br) + 30px);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  /* I forgor that I need the two mask composites because of firefoxxxxxx */
+  mask-composite: exclude;
+  mask-composite: xor;
+  background: var(--bg-grad);
+  filter: url("#l-distort") saturate(3);
+  padding: calc(30px + 7px);
+}
+
+.bd1 {
+  transition: opacity 0.5s;
+  border-radius: calc(var(--br) - 18px);
+  inset: 6px;
+  box-shadow: inset -13px -13px 5px -10px #fffa;
+}
+
+.button:hover .bd1 {
   opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
-.button:hover .overlay {
-  opacity: 0.7;
+.bd1h {
+  transition: opacity 0.5s;
+  border-radius: calc(var(--br) - 18px);
+  opacity: 0;
+  inset: 6px;
+  box-shadow: inset 13px 13px 5px -10px #fffa;
 }
 
-.button:hover .shine {
+.button:hover:not(:active) .bd1h {
   opacity: 1;
 }
 
-.button:hover {
-  background-color: #ff3333;
+.bd3 {
+  inset: 20px;
+  border-radius: 17px;
+  border: 2px solid #fff8;
+  box-shadow: 0px 0px 6px 0px #fffa, inset -6px -6px 6px -6px #fffa,
+    inset 0px 6px 6px -6px #0004;
+  filter: blur(1px);
 }
 
-.button:active {
-  background-color: #cc0000;
+.bd3a {
+  inset: 42px;
+  right: 38px;
+  border-radius: 10px;
+  filter: blur(4px);
+  box-shadow: 0px 0px 20px 2px #0001, inset 0px 0px 3px 0px #fffa;
+}
+
+.bd4 {
+  transition: opacity 0.5s;
+  border-radius: calc(var(--br) - 5px);
+  box-shadow: inset 8px 8px 5px -5px #0005;
+}
+
+.button:hover .bd4 {
+  opacity: 0;
+}
+
+.bd4h {
+  transition: opacity 0.5s;
+  opacity: 0;
+  border-radius: calc(var(--br) - 5px);
+  box-shadow: inset -8px -8px 5px -5px #0005;
+}
+
+.button:hover:not(:active) .bd4h {
+  opacity: 1;
+}
+
+.bd4d {
+  transition: opacity 0.5s;
+  opacity: 0;
+  border-radius: var(--br);
+  box-shadow: inset 0px 0px 5px 3px #0005;
+}
+
+.button:active .bd4d {
+  opacity: 1;
+}
+
+.bd5 {
+  left: 26px;
+  top: 10px;
+  width: 60px;
+  height: 12px;
+  box-shadow: inset 5px -5px 5px -5px #fff;
+  background: linear-gradient(30deg, #fff, #fff0);
+  border-radius: 99px;
+  filter: blur(1.5px);
+}
+
+.bd6 {
+  left: 2px;
+  top: 26px;
+  width: 20px;
+  height: 60px;
+  rotate: 10deg;
+  box-shadow: inset 7px 7px 7px -7px #fff;
+  /* background: linear-gradient(150deg, #fff, #fff0); */
+  border-radius: 99px;
+  filter: blur(1.5px);
+}
+
+.btn-txt {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  width: fit-content;
+  margin: auto;
+}
+
+.btn-txt svg {
+  height: 25px;
 }
 

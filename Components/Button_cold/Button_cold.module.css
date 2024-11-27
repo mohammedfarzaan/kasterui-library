@@ -1,29 +1,426 @@
 
-/* From Uiverse.io by gksckt - Tags: button */
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btn {
-  width: 170px;
-  height: 60px;
-  font-size: 18px;
-  background: #fff;
-  border: none;
-  border-radius: 50px;
-  color: #000;
-  outline: none;
+/* From Uiverse.io by Lakshay-art  - Tags: material design, neumorphism, glassmorphism, 3d, button, rounded, glow, creative */
+.button {
   cursor: pointer;
-  transition: all 0.4s;
+  width: 335px;
+  height: 110px;
+  border-radius: 30px;
+  border: 1px solid #e5c3e6;
+  position: relative;
+  overflow: hidden;
+  filter: brightness(0.9) contrast(1.2)
+    drop-shadow(0px 20px 16px rgba(0, 0, 0, 0.212));
+}
+#backdrop {
+  height: 110px;
+  width: 335px;
+  overflow: hidden;
+  border-radius: 30px;
+
+  background-color: rgb(255 255 255 / 5%);
+  backdrop-filter: blur(10px);
 }
 
-.btn:hover {
-  box-shadow: inset 0 0 0 4px #ef476f, 
-              inset 0 0 0 8px #ffd166, 
-              inset 0 0 0 12px #06d6a0,
-              inset 0 0 0 16px #118ab2;
-  background: #073b4c;
-  color: #fff;
+#backdrop2 {
+  height: 110px;
+  width: 335px;
+  overflow: hidden;
+  border-radius: 30px;
+
+  background-color: rgb(255 255 255 / 5%);
+  backdrop-filter: blur(6px);
 }
+.pink {
+  position: absolute;
+  background-color: #f05ee7;
+  filter: blur(6px);
+  border-radius: 50%;
+}
+.pinki {
+  position: absolute;
+  background-color: #ba63d9;
+  /* filter: blur(6px); */
+  border-radius: 50%;
+}
+.orange {
+  position: absolute;
+  background-color: #f37130;
+  filter: blur(6px);
+  border-radius: 50%;
+}
+.orangei {
+  position: absolute;
+  background-color: #ff4600;
+  filter: blur(3px);
+  border-radius: 50%;
+}
+.white {
+  position: absolute;
+  background-color: white;
+  /* filter: blur(5px); */
+  border-radius: 25px;
+}
+
+#pink1 {
+  top: -10px;
+  left: -10px;
+  height: 50px;
+  width: 150px;
+}
+
+#pink2 {
+  bottom: -10px;
+  left: -10px;
+  height: 50px;
+  width: 140px;
+}
+#pink3 {
+  top: -5px;
+  right: -10px;
+  height: 50px;
+  width: 120px;
+}
+
+#pink4 {
+  bottom: -5px;
+  right: -10px;
+  height: 50px;
+  width: 140px;
+}
+
+#pink5 {
+  top: 25px;
+  left: -20px;
+  height: 70px;
+  width: 120px;
+  opacity: 0.7;
+}
+#pink6 {
+  top: 25px;
+  right: -20px;
+  height: 70px;
+  width: 120px;
+  opacity: 0.7;
+}
+#pink7 {
+  top: 0px;
+  left: -5px;
+  height: 30px;
+  width: 30px;
+  /* opacity: 0.7; */
+}
+#pink8 {
+  bottom: -20px;
+  left: -20px;
+  height: 110px;
+  width: 50px;
+  /* opacity: 0.7; */
+}
+#pink9 {
+  top: 0px;
+  right: -20px;
+  height: 60px;
+  width: 50px;
+  opacity: 0.7;
+}
+#pink10 {
+  bottom: 0px;
+  right: -20px;
+  height: 20px;
+  width: 50px;
+  opacity: 0.7;
+}
+#pink11 {
+  top: 25px;
+  right: 40px;
+  height: 30px;
+  width: 70px;
+  opacity: 0.5;
+}
+#orange1 {
+  top: -15px;
+  left: 120px;
+  height: 50px;
+  width: 130px;
+}
+
+#orange2 {
+  top: 30px;
+  left: 90px;
+  height: 50px;
+  width: 170px;
+  opacity: 0.7;
+}
+#orange3 {
+  top: 80px;
+  left: 120px;
+  height: 50px;
+  width: 120px;
+}
+
+#orange5 {
+  top: 10px;
+  left: 160px;
+  height: 30px;
+  width: 30px;
+}
+#orange6 {
+  top: 15px;
+  left: 135px;
+  height: 20px;
+  width: 20px;
+}
+#orange7 {
+  top: 15px;
+  left: 115px;
+  height: 20px;
+  width: 15px;
+}
+#orange8 {
+  bottom: 15px;
+  left: 135px;
+  height: 25px;
+  width: 20px;
+}
+#orange9 {
+  bottom: 15px;
+  left: 195px;
+  height: 20px;
+  width: 15px;
+}
+
+#orange10 {
+  bottom: 0px;
+  left: 275px;
+  height: 25px;
+  width: 15px;
+}
+#orange11 {
+  bottom: 55px;
+  left: 240px;
+  height: 50px;
+  width: 35px;
+  opacity: 0.8;
+}
+
+#white1 {
+  top: 8px;
+  left: 20px;
+  height: 10px;
+  width: 130px;
+}
+
+#white2 {
+  top: 35px;
+  left: 40px;
+  height: 35px;
+  width: 70px;
+}
+#white3 {
+  top: 8px;
+  left: 200px;
+  height: 10px;
+  width: 70px;
+}
+#white4 {
+  top: 35px;
+  left: 205px;
+  height: 35px;
+  width: 120px;
+}
+#white5 {
+  top: 30px;
+  right: 9px;
+  height: 65px;
+  width: 30px;
+}
+#white6 {
+  bottom: 15px;
+  left: 40px;
+  height: 10px;
+  width: 70px;
+}
+#white7 {
+  bottom: 15px;
+  right: 40px;
+  height: 10px;
+  width: 70px;
+}
+#white8 {
+  top: 15px;
+  right: 20px;
+  height: 50px;
+  width: 30px;
+}
+#white9 {
+  top: 30px;
+  left: 0px;
+  height: 50px;
+  width: 5px;
+  opacity: 0.6;
+}
+#white10 {
+  top: 30px;
+  right: 0px;
+  height: 50px;
+  width: 3px;
+  opacity: 0.9;
+}
+#white11 {
+  top: 6px;
+  left: 25px;
+  height: 15px;
+  width: 100px;
+  background-color: transparent;
+  border-bottom: 7px solid white;
+  border-left: 7px solid white;
+  filter: blur(4px);
+}
+#white12 {
+  top: 15px;
+  left: 8px;
+  height: 25px;
+  width: 15px;
+  background-color: transparent;
+  border-top: 3px solid white;
+  border-right: 3px solid #fff9;
+  filter: blur(2px);
+}
+#white13 {
+  bottom: 6px;
+  right: 9px;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-right: 7px solid white;
+  border-top: 7px solid white;
+  filter: blur(3px);
+}
+#white14 {
+  bottom: 28px;
+  right: 3px;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-left: 7px solid white;
+  border-bottom: 7px solid white;
+  filter: blur(2px);
+}
+#white15 {
+  top: 10px;
+  right: 13px;
+  height: 10px;
+  width: 10px;
+  filter: blur(3px);
+}
+
+#white16 {
+  top: 28px;
+  left: 28px;
+  height: 12px;
+  width: 15px;
+  filter: blur(3px);
+}
+#whiteOverlay {
+  position: absolute;
+  /* background-color: #ffffff44; */
+  background: linear-gradient(
+    180deg,
+    #ffffff44 92px,
+    #ffffff11 96px,
+    #ffffff66 100px
+  );
+  top: 5px;
+  left: 5px;
+  width: 324px;
+  height: 100px;
+  border-radius: 26px;
+  /* filter: blur(1px); */
+}
+#whiteBorder {
+  position: absolute;
+  /* background-color: #ffffff44; */
+  /* background: linear-gradient(180deg,#ffffff44 95px,#ffffff11 98px,#ffffff44 100px); */
+  top: 15px;
+  left: 20px;
+  width: 295px;
+  height: 74px;
+  border-radius: 15px;
+  border: 5px solid #ffffff66;
+  filter: blur(2px);
+}
+#whiteBorder2 {
+  position: absolute;
+  /* background-color: #ffffff44; */
+  /* background: linear-gradient(180deg,#ffffff44 95px,#ffffff11 98px,#ffffff44 100px); */
+  top: 15px;
+  left: 20px;
+  width: 295px;
+  height: 74px;
+  border-radius: 15px;
+  border: 2px solid #ffffff44;
+  filter: blur(1px);
+}
+#text {
+  height: 110px;
+  width: 335px;
+  position: absolute;
+  top: 40px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#bg {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -155deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15) 50px,
+    rgba(0, 0, 0, 0.15) 100px,
+    rgba(225, 225, 225, 0.15) 150px
+  );
+  filter: blur(30px);
+}
+#pinkbg {
+  position: absolute;
+  background-color: #e59cfaaa;
+  border-radius: 50%;
+  bottom: -150px;
+  filter: blur(20px);
+  width: 400px;
+  height: 200px;
+  right: 30px;
+}
+#orangebg {
+  position: absolute;
+  background-color: #fb9a71aa;
+  border-radius: 50%;
+  bottom: -150px;
+  filter: blur(20px);
+  width: 250px;
+  height: 200px;
+  right: 0px;
+}
+#yellowbg {
+  position: absolute;
+  background-color: #f8b74555;
+  border-radius: 50%;
+  bottom: -150px;
+  filter: blur(20px);
+  width: 100px;
+  height: 200px;
+  right: 0px;
+}
+#purplebg {
+  position: absolute;
+  background-color: #9b27ee33;
+  border-radius: 50%;
+  bottom: -150px;
+  filter: blur(30px);
+  width: 100px;
+  height: 200px;
+  right: 50%;
+}
+

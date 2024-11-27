@@ -4,57 +4,35 @@ import styles from "./Button_rear.module.css";
 const Button_rear = () => (
   <div>
     <button className={styles["button"]}>
-      <div className={styles["lid"]}>
-        <span className={styles["side"] + styles["top"]}></span>
-        <span className={styles["side"] + styles["front"]}></span>
-        <span className={styles["side"] + styles["back"]}> </span>
-        <span className={styles["side"] + styles["left"]}></span>
-        <span className={styles["side"] + styles["right"]}></span>
-      </div>
-      <div className={styles["panels"]}>
-        <div className={styles["panel-1"]}>
-          <div className={styles["panel-2"]}>
-            <div className={styles["btn-trigger"]}>
-              <span className={styles["btn-trigger-1"]}></span>
-              <span className={styles["btn-trigger-2"]}></span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <span>
+        <svg
+          viewBox="0 0 24 24"
+          height="24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M9.145 18.29c-5.042 0-9.145-4.102-9.145-9.145s4.103-9.145 9.145-9.145 9.145 4.103 9.145 9.145-4.102 9.145-9.145 9.145zm0-15.167c-3.321 0-6.022 2.702-6.022 6.022s2.702 6.022 6.022 6.022 6.023-2.702 6.023-6.022-2.702-6.022-6.023-6.022zm9.263 12.443c-.817 1.176-1.852 2.188-3.046 2.981l5.452 5.453 3.014-3.013-5.42-5.421z"></path>
+        </svg>
+      </span>
     </button>
   </div>
 );
 
 export default Button_rear;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_rear = () => (
          <div>
           <button className="button">
-  <div className="lid">
-    <span className="side top"></span>
-    <span className="side front"></span>
-    <span className="side back"> </span>
-    <span className="side left"></span>
-    <span className="side right"></span>
-  </div>
-  <div className="panels">
-    <div className="panel-1">
-      <div className="panel-2">
-        <div className="btn-trigger">
-          <span className="btn-trigger-1"></span>
-          <span className="btn-trigger-2"></span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <span>
+    <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M9.145 18.29c-5.042 0-9.145-4.102-9.145-9.145s4.103-9.145 9.145-9.145 9.145 4.103 9.145 9.145-4.102 9.145-9.145 9.145zm0-15.167c-3.321 0-6.022 2.702-6.022 6.022s2.702 6.022 6.022 6.022 6.023-2.702 6.023-6.022-2.702-6.022-6.023-6.022zm9.263 12.443c-.817 1.176-1.852 2.188-3.046 2.981l5.452 5.453 3.014-3.013-5.42-5.421z"></path></svg>
+  </span>
 </button>
         </div>
         );

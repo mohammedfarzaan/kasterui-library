@@ -1,76 +1,52 @@
 
-/* From Uiverse.io by EmmaxPlay - Tags: button */
-.btn {
- padding: 0.9em 1.6em;
- border: none;
- outline: none;
- color: #FFF;
- font-family: inherit;
- font-weight: 500;
- font-size: 17px;
- cursor: pointer;
- position: relative;
- z-index: 0;
- border-radius: 12px;
+/* From Uiverse.io by mrhyddenn - Tags: twitter, button, hover */
+button {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(40, 144, 241);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(40, 144, 241);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
 }
 
-.btn::after {
- content: "";
- z-index: -1;
- position: absolute;
- width: 100%;
- height: 100%;
- background-color: rgb(46, 46, 46);
- left: 0;
- top: 0;
- border-radius: 10px;
-}
-/* glow */
-.btn::before {
- content: "";
- background: linear-gradient(
-    45deg,
-    #FF0000, #002BFF, #FF00C8, #002BFF,
-      #FF0000, #002BFF, #FF00C8, #002BFF
-);
- position: absolute;
- top: -2px;
- left: -2px;
- background-size: 600%;
- z-index: -1;
- width: calc(100% + 4px);
- height: calc(100% + 4px);
- filter: blur(8px);
- animation: glowing 20s linear infinite;
- transition: opacity .3s ease-in-out;
- border-radius: 10px;
- opacity: 0;
+button span {
+  margin: 10px;
 }
 
-@keyframes glowing {
- 0% {
-  background-position: 0 0;
- }
-
- 50% {
-  background-position: 400% 0;
- }
-
- 100% {
-  background-position: 0 0;
- }
+button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
 }
 
-/* hover */
-.btn:hover::before {
- opacity: 1;
+button:hover {
+  color: #fff;
+  border: 1px solid rgb(40, 144, 241);
 }
 
-.btn:active:after {
- background: transparent;
+button:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(40, 144, 241);
 }
-
-.btn:active {
- color: #000;
- font-weight: bold;
-}
+ 

@@ -1,161 +1,55 @@
 
-/* From Uiverse.io by Admin12121 - Tags: button, hover, hover effect */
-.printer {
-  --border: #00104b;
-  --background: #fff;
-  cursor: pointer;
-  width: 32px;
-  height: 18px;
+/* From Uiverse.io by gharsh11032000 - Tags: button, hover effect */
+.animated-button {
   position: relative;
-}
-
-.printer:before, .printer:after {
-  content: "";
-  position: absolute;
-  box-shadow: inset 0 0 0 2px var(--border);
-  background: var(--background);
-}
-
-.printer:before {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 14px;
-  border-radius: 3px;
-  z-index: 2;
-}
-
-.printer:after {
-  width: 26px;
-  height: 6px;
-  top: 0;
-  left: 3px;
-  border-radius: 3px 3px 0 0;
-}
-
-.printer .dot {
-  width: 24px;
-  height: 2px;
-  border-radius: 1px;
-  left: 4px;
-  bottom: 4px;
-  z-index: 4;
-  position: absolute;
-  background: var(--border);
-}
-
-.printer .dot:before, .printer .dot:after {
-  content: "";
-  position: absolute;
-  background: var(--border);
-  border-radius: 1px;
-  height: 2px;
-}
-
-.printer .dot:before {
-  width: 2px;
-  right: 0;
-  top: -5px;
-}
-
-.printer .dot:after {
-  width: 4px;
-  right: 3px;
-  top: -5px;
-}
-
-.printer .paper {
-  position: absolute;
-  z-index: 1;
-  width: 18px;
-  height: 20px;
-  border-radius: 2px;
-  box-shadow: inset 0 0 0 2px var(--border);
-  background: var(--background);
-  left: 7px;
-  bottom: 10px;
-  display: flex;
-  justify-content: center;
-  transform: perspective(40px) translateY(0) rotateX(4deg) translateZ(0);
-  -webkit-animation: paper 1.2s ease infinite;
-  animation: paper 1.2s ease infinite;
-  -webkit-animation-play-state: var(--state, running);
-  animation-play-state: var(--state, running);
-}
-
-.printer .paper .svg {
-  display: block;
-  width: 8px;
-  height: 8px;
-  margin-top: 4px;
-}
-
-.printer .output {
-  width: 32px;
-  height: 24px;
-  pointer-events: none;
-  top: 13px;
-  left: 0;
-  z-index: 3;
+  display: inline-block;
+  padding: 16px 32px;
+  border: none;
+  background-color: #2196F3;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
   overflow: hidden;
-  position: absolute;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.printer .output .paper-out {
-  position: absolute;
-  z-index: 1;
-  width: 18px;
-  height: 20px;
-  border-radius: 2px;
-  box-shadow: inset 0 0 0 2px var(--border);
-  background: var(--background);
-  left: 7px;
-  bottom: 0;
-  transform: perspective(40px) rotateX(40deg) translateY(-12px) translateZ(6px);
-  -webkit-animation: paper-out 1.2s ease infinite;
-  animation: paper-out 1.2s ease infinite;
-  -webkit-animation-play-state: var(--state, running);
-  animation-play-state: var(--state, running);
-}
-
-.printer .output .paper-out:before {
+.animated-button:before {
   content: "";
   position: absolute;
-  left: 3px;
-  top: 4px;
-  right: 3px;
-  height: 2px;
-  border-radius: 1px;
-  opacity: 0.5;
-  background: var(--border);
-  box-shadow: 0 3px 0 var(--border), 0 6px 0 var(--border);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.printer:not(:hover) {
-  --state: paused;
+.animated-button span {
+  position: relative;
+  z-index: 1;
 }
 
-@-webkit-keyframes paper {
-  50% {
-    transform: translateY(10px) translateZ(0);
-  }
+.animated-button:hover {
+  color: #2196F3;
+  background-color: #fff;
+  box-shadow: 0 0 20px hsla(263, 77%, 31%, 0);
 }
 
-@keyframes paper {
-  50% {
-    transform: translateY(10px) translateZ(0);
-  }
+.animated-button:active {
+  scale: 0.9;
 }
 
-@-webkit-keyframes paper-out {
-  50% {
-    transform: perspective(40px) rotateX(30deg) translateY(-4px) translateZ(6px);
-  }
+.animated-button:hover:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 1;
 }
 
-@keyframes paper-out {
-  50% {
-    transform: perspective(40px) rotateX(30deg) translateY(-4px) translateZ(6px);
-  }
-}
+
+
+
 

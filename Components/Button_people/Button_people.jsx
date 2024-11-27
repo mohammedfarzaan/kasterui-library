@@ -3,43 +3,81 @@ import styles from "./Button_people.module.css";
 
 const Button_people = () => (
   <div>
-    <button className={styles["Btn"]}>
-      <span className={styles["leftContainer"]}>
-        <svg
-          fill="white"
-          viewBox="0 0 512 512"
-          height="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"></path>
-        </svg>
-        <span className={styles["like"]}>Like</span>
-      </span>
-      <span className={styles["likeCount"]}>2,050</span>
+    <button className={styles["button"]}>
+      <div className={styles["inner"]}>
+        <div className={styles["svgs"]}>
+          <svg
+            viewBox="0 0 256 256"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+            className="svg-l"
+          >
+            <path
+              d="M240 128a15.79 15.79 0 0 1-10.5 15l-63.44 23.07L143 229.5a16 16 0 0 1-30 0l-23.06-63.44L26.5 143a16 16 0 0 1 0-30l63.44-23.06L113 26.5a16 16 0 0 1 30 0l23.07 63.44L229.5 113a15.79 15.79 0 0 1 10.5 15"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <svg
+            viewBox="0 0 256 256"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+            className="svg-s"
+          >
+            <path
+              d="M240 128a15.79 15.79 0 0 1-10.5 15l-63.44 23.07L143 229.5a16 16 0 0 1-30 0l-23.06-63.44L26.5 143a16 16 0 0 1 0-30l63.44-23.06L113 26.5a16 16 0 0 1 30 0l23.07 63.44L229.5 113a15.79 15.79 0 0 1 10.5 15"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+        Generate
+      </div>
     </button>
   </div>
 );
 
 export default Button_people;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_people = () => (
          <div>
-          <button className="Btn">
-  <span className="leftContainer">
-    <svg fill="white" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"></path></svg>
-    <span className="like">Like</span>
-  </span>
-  <span className="likeCount">
-    2,050
-  </span>
+          <button className="button">
+  <div className="inner">
+    <div className="svgs">
+      <svg
+        viewBox="0 0 256 256"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+        className="svg-l"
+      >
+        <path
+          d="M240 128a15.79 15.79 0 0 1-10.5 15l-63.44 23.07L143 229.5a16 16 0 0 1-30 0l-23.06-63.44L26.5 143a16 16 0 0 1 0-30l63.44-23.06L113 26.5a16 16 0 0 1 30 0l23.07 63.44L229.5 113a15.79 15.79 0 0 1 10.5 15"
+          fill="currentColor"
+        ></path>
+      </svg>
+      <svg
+        viewBox="0 0 256 256"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+        className="svg-s"
+      >
+        <path
+          d="M240 128a15.79 15.79 0 0 1-10.5 15l-63.44 23.07L143 229.5a16 16 0 0 1-30 0l-23.06-63.44L26.5 143a16 16 0 0 1 0-30l63.44-23.06L113 26.5a16 16 0 0 1 30 0l23.07 63.44L229.5 113a15.79 15.79 0 0 1 10.5 15"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </div>
+    Generate
+  </div>
 </button>
         </div>
         );

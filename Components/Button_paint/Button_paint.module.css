@@ -1,43 +1,77 @@
 
-/* From Uiverse.io by kevkevkevin - Tags: button, hover, creative, css, css effect, hoverme */
-.button {
-  border: 2px solid #246bfd;
-  color: #101a29;
-  line-height: 52px;
-  border-radius: 30px;
-  font-weight: 600;
-  height: 55px;
-  overflow: hidden;
-  padding: 0 30px;
+/* From Uiverse.io by SelfMadeSystem  - Tags: simple, neumorphism, skeuomorphism, icon, animation, gradient, button */
+:focus {
+  outline: none;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+
+.border {
   position: relative;
-  transition: all .5s ease;
-  z-index: 0;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: calc(6pt + 3px);
+  appearance: none;
+  font-weight: 600;
+  background: linear-gradient(#dfe1e0, #7f8180);
+  border: 1pt solid #e9ebea;
+  border-top-width: 0;
+  box-shadow: 0px 5px 15px 0px #0004;
+  transition: all 0.4s;
 }
 
-button:after {
+.border::before {
   content: "";
-  height: 100%;
-  left: -35%;
   position: absolute;
-  top: 0;
-  background: #246bfd;
-  -webkit-transform: skew(30deg);
-  transform: skew(30deg);
-  -webkit-transform-origin: top left;
-  transform-origin: top left;
-  transition: all .3s ease-in;
-  transition-duration: .6s;
-  width: 0;
-  z-index: -1;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 50%;
+  transition: inherit;
 }
 
-button:hover {
-  color: #fff;
-  background-color: #ffffff00;
-  border-color: #ffffff00;
+.border:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 15px 0px #0004;
 }
 
-button:hover:after {
-  height: 100%;
-  width: 135%;
+.border:hover:not(:active)::before {
+  bottom: -6px;
 }
+
+.border:active {
+  transform: translateY(0px);
+  box-shadow: 0px 5px 15px 0px #0000;
+  transition: all 0.3s;
+}
+
+.outer {
+  padding: 4pt;
+  background: linear-gradient(#fdfffe, #eceeed, #fdfffe);
+  border-radius: 6pt;
+}
+
+.inner {
+  background: linear-gradient(#eef0ef, #fafcfb, #eef0ef);
+  padding: 8pt;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  gap: 4pt;
+  text-shadow: 0px 1px 1px #0004;
+}
+
+.inner svg {
+  filter: drop-shadow(0px 1px 0px #0007);
+}
+
+:is(.inner, .outer) {
+  background-size: 100% 200%;
+  transition: background-position-y 0.5s;
+}
+
+:active :is(.inner, .outer) {
+  background-position-y: 100%;
+}
+

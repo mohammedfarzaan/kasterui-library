@@ -1,29 +1,35 @@
 
-/* From Uiverse.io by adamgiebl - Tags: icon, button */
-.cssbuttons-io-button {
+/* From Uiverse.io by MetaBlue2000  - Tags: message, challenge, effect 3d */
+.button {
+  height: 50px;
+  width: 130px;
   display: flex;
+  border: rgb(135, 135, 135) 2px solid;
   align-items: center;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 17px;
-  padding: 0.8em 1.5em 0.8em 1.2em;
-  color: white;
-  background: #ad5389;
-  background: linear-gradient(0deg, rgba(77,54,208,1) 0%, rgba(132,116,254,1) 100%);
-  border: none;
-  box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
-  letter-spacing: 0.05em;
-  border-radius: 20em;
+  border-radius: 12px;
+  box-shadow: 1px 1px 75px 5px grey;
+  z-index: -2;
 }
 
-.cssbuttons-io-button svg {
-  margin-right: 8px;
+.icon {
+  height: 18px;
+  display: flex;
+  margin-left: 5px;
+  border-radius: l;
+  z-index: -1;
 }
 
-.cssbuttons-io-button:hover {
-  box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+.text {
+  font-variant: small-caps;
+  font-weight: 700;
+  font-size: 13.123px;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  align-items: center;
+  box-shadow: inset 10px 4px 8px rgb(209, 209, 209),
+    inset -10px -4px 8px rgba(255, 255, 255);
 }
 
-.cssbuttons-io-button:active {
-  box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
-}

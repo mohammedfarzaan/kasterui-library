@@ -1,58 +1,33 @@
 
-/* From Uiverse.io by Creatlydev - Tags: button, hover effect, hover button */
+/* From Uiverse.io by reshades - Tags: button, hover, svg */
 .button {
-  text-decoration: none;
-  line-height: 1;
-  border-radius: 1.5rem;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 10px 10px 20px rgba(0,0,0,.05);
-  background-color: #fff;
-  color: #121212;
-  border: none;
-  cursor: pointer;
+  width: 10em;
+  height: 3em;
+  border-radius: 8px;
+  border: 0.15em solid rgb(162, 63, 255);
+  color: rgb(162, 63, 255);
+  background-color: #00000000;
+  transition: all 0.5s ease;
 }
 
-.button-decor {
-  position: absolute;
-  inset: 0;
-  background-color: var(--clr);
-  transform: translateX(-100%);
-  transition: transform .3s;
-  z-index: 0;
+.button .text {
+  display: none
 }
 
-.button-content {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  position: relative;
-  overflow: hidden;
+.button:hover>.text {
+  display: block;
 }
 
-.button__icon {
-  width: 48px;
-  height: 40px;
-  background-color: var(--clr);
-  display: grid;
-  place-items: center;
+.button:hover>svg {
+  display: none;
 }
 
-.button__text {
-  display: inline-block;
-  transition: color .2s;
-  padding: 2px 1.5rem 2px;
-  padding-left: .75rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  max-width: 150px;
+.button:hover {
+  background-color: rgb(162, 63, 255);
+  color: #fff
 }
 
-.button:hover .button__text {
-  color: #fff;
-}
-
-.button:hover .button-decor {
-  transform: translate(0);
+.button svg {
+  width: 1.5em;
+  margin-top: 3px;
 }

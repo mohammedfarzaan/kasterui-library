@@ -1,100 +1,83 @@
 
-/* From Uiverse.io by linkb15 - Tags: button */
-button {
-  --min-width: 180px;
-  --min-height: 42px;
-  --ring-min-size: 20px;
-  --ring-max-size: 150px;
-  --ring-width: 3px;
-  --main-bg-color: #814fd1;
-  --gradient-bg-color-1: rgb(222, 203, 226);
-  --gradient-bg-color-2: rgb(79, 131, 209);
-  --ring-color: #6f00ff;
-  --shadow-color: rgba(79, 99, 209, 0.64);
-  --hover-shadow-color: rgba(79, 99, 209, 0.64);
-  --main-fg-color: #313133;
-  --hover-fg-color: rgb(38, 11, 53);
-  min-width: var(--min-width);
-  min-height: var(--min-height);
-  font-size: 17px;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: var(--main-fg-color);
-  background: var(--main-bg-color);
-  background: linear-gradient(66deg, var(--gradient-bg-color-1) 0%, var(--gradient-bg-color-2) 100%);
+/* From Uiverse.io by vinodjangid07  - Tags: tooltip, gradient, button, hover effect, faq */
+.faq-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   border: none;
-  border-radius: 999px;
-  box-shadow: 12px 2px 24px var(--shadow-color);
-  transition: all 0.3s ease-in-out 0s;
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  outline: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
   position: relative;
-  padding: 10px;
 }
-
-button::before {
-  content: '';
-  border-radius: 999px;
-  min-width: calc(var(--min-width) + 12px);
-  min-height: calc(var(--min-height) + 12px);
-  border: var(--ring-width) solid var(--ring-color);
-  box-shadow: 0 0 60px var(--hover-shadow-color);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: all .3s ease-in-out 0s;
+.faq-button svg {
+  height: 1.5em;
+  fill: white;
 }
-
-button:hover, .button:focus {
-  color: var(--hover-fg-color);
-  transform: translateY(-6px);
+.faq-button:hover svg {
+  animation: jello-vertical 0.7s both;
 }
-
-button:active {
-  color: var(--main-fg-color);
-  transform: scale(0.95);
-}
-
-button:active::before {
-  border: 0px solid var(--ring-color);
-}
-
-button:hover::before, button:focus::before {
-  opacity: 1;
-}
-
-/* ring */
-button::after {
-  content: '';
-  width: var(--ring-min-size);
-  height: var(--ring-min-size);
-  border-radius: 100%;
-  border: var(--ring-width) solid var(--ring-color);
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: ring 1.5s infinite;
-}
-
-button:hover::after, button:focus::after {
-  animation: none;
-  display: none;
-}
-
-@keyframes ring {
+@keyframes jello-vertical {
   0% {
-    width: var(--ring-min-size);
-    height: var(--ring-min-size);
-    opacity: 0.5;
+    transform: scale3d(1, 1, 1);
   }
-
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
   100% {
-    width: var(--ring-max-size);
-    height: var(--ring-max-size);
-    opacity: 0;
+    transform: scale3d(1, 1, 1);
   }
 }
+
+.tooltip {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ff2525;
+  background-size: 1000%;
+  background-position: center;
+  transform: rotate(45deg);
+  bottom: -15%;
+  transition-duration: 0.3s;
+}
+
+.faq-button:hover .tooltip {
+  top: -40px;
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+

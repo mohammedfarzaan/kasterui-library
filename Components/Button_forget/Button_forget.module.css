@@ -1,63 +1,29 @@
 
-/* From Uiverse.io by Shreyanjalipb  - Tags: button */
-.emoji-button-container {
-  position: relative;
-  display: inline-block;
-}
-
-.emoji-button {
-  background-color: yellow;
-  border: none;
-  padding: 15px 30px;
-  font-size: 30px;
+/* From Uiverse.io by JkHuger - Tags: button, smooth, animated */
+.testbutton {
+  display: block;
+  font-family: helvetica;
+  color: #000;
+  font-size: 16px;
   font-weight: bold;
+  box-shadow: 9px 8px 0px -1px#BEE2F9, 9px 8px 0px 1px #000;
+  padding: 12px 25px;
+  border-radius: 11px;
+  border: 2px solid #000;
+  background: linear-gradient(to top, #63B8EE, #468CCF);
+  transition: .3s;
   cursor: pointer;
-  position: relative;
-  z-index: 10;
 }
 
-.emoji-animations {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  gap: 20px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
+.testbutton:hover {
+  transition: .3s;
+  transform: translate(-.3em, -.3em);
+  box-shadow: 14px 13px 0px -1px #BEE2F9, 14px 13px 0px 1px #000;
+  border: 2px solid #000;
 }
 
-.emoji {
-  font-size: 35px;
-  opacity: 0;
-  transform: translateY(0);
-  transition:
-    transform 0.5s ease,
-    opacity 0.5s ease;
+.testbutton:active {
+  transition: .3s;
+  transform: translate(.6em, .6em);
+  box-shadow: 0px 0px 0px -1px #BEE2F9, 0px 0px 0px 0.1px#000;
 }
-
-.emoji-button:hover + .emoji-animations {
-  opacity: 1;
-}
-
-.emoji-button:hover + .emoji-animations .emoji:nth-child(1) {
-  opacity: 1;
-  transform: translate(-50px, -50px);
-}
-
-.emoji-button:hover + .emoji-animations .emoji:nth-child(2) {
-  opacity: 1;
-  transform: translate(50px, -50px);
-}
-
-.emoji-button:hover + .emoji-animations .emoji:nth-child(3) {
-  opacity: 1;
-  transform: translate(-50px, 50px);
-}
-
-.emoji-button:hover + .emoji-animations .emoji:nth-child(4) {
-  opacity: 1;
-  transform: translate(50px, 50px);
-}
-

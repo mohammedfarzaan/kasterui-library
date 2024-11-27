@@ -1,48 +1,36 @@
 
-/* From Uiverse.io by PranabKumarSahoo - Tags: button */
+/* From Uiverse.io by ercnersoy - Tags: button */
 button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #560af0;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 16px;
-  width: 130px;
-  transition: all 0.2s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.2s;
-}
-
-button span:after {
-  content: '»';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -15px;
-  transition: 0.2s;
-}
-
-button:hover span {
-  padding-right: 15px;
-}
-
-button:hover span:after {
-  opacity: 1;
-  right: 0;
+ padding: 20px 30px;
+ border-radius: 30px;
+ border: 5px solid #ffffff;
+ background-color: #5584AC;
+ font-size: 15px;
+ color: white;
+ letter-spacing: 5px;
+ font-weight: bolder;
+ animation: none;
+ transition: all .5s ease-in-out;
+ font-family: 'Rajdhani', sans-serif;
 }
 
 button:hover {
-  color: #560af0;
-  background-color: #FFFFFF;
-  box-shadow: 4px 5px 17px -4px #560af0;
+ border-radius: 30px 30px 0px 30px;
+ box-shadow: inset 0px 30px 10px -25px black;
+ transition: all .5s ease-in-out;
+ animation: bounce42 1.6s infinite;
 }
+
+@keyframes bounce42 {
+ 0%, 20%, 50%, 80%, 100% {
+  transform: translateY(0);
+ }
+
+ 40% {
+  transform: translateY(-5px);
+ }
+
+ 60% {
+  transform: translateY(-5px);
+ }
+} 

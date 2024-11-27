@@ -1,58 +1,34 @@
 
-/* From Uiverse.io by gharsh11032000  - Tags: animation, button, animated, hover effect, simple button, hover button, button hover effect  */
-.btn {
-  position: relative;
-  transition: color 0.48s 0s cubic-bezier(0.23, 1, 0.32, 1),
-    transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+/* From Uiverse.io by Yaya12085 - Source: https://uiverse.io/satyamchaudharydev/great-seahorse-44 - Tags: button, design, hover button */
+.button {
+  width: fit-content;
   display: flex;
-  padding: 12px 24px;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  font-family: inherit;
-  font-size: 14px;
-  border: none;
+  padding: 1.2em 1rem;
   cursor: pointer;
-  color: #000000;
-  overflow: hidden;
-  text-decoration: none;
-  background-color: transparent;
+  gap: 0.4rem;
+  font-weight: bold;
+  border-radius: 30px;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+  background: linear-gradient(15deg, #880088, #aa2068, #cc3f47, #de6f3d, #f09f33, #de6f3d, #cc3f47, #aa2068, #880088) no-repeat;
+  background-size: 300%;
+  color: #fff;
+  border: none;
+  background-position: left center;
+  box-shadow: 0 30px 10px -20px rgba(0,0,0,.2);
+  transition: background .3s ease;
 }
 
-.btn span {
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.6;
+.button:hover {
+  background-size: 320%;
+  background-position: right center;
 }
 
-.btn::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0%;
-  top: 50%;
-  transform: translateY(-50%) scaleY(0);
-  width: 3px;
-  height: 100%;
-  background: #0a3cff;
-  transition: transform 0.48s 0.4s cubic-bezier(0.23, 1, 0.32, 1),
-    width 0.48s 0.1s cubic-bezier(0.23, 1, 0.32, 1);
+.button:hover svg {
+  fill: #fff;
 }
 
-.btn:hover {
-  color: #ffffff;
-  transition: color 0.48s 0.24s cubic-bezier(0.23, 1, 0.32, 1),
-    transform 0.48s 0.1s cubic-bezier(0.23, 1, 0.32, 1);
+.button svg {
+  width: 23px;
+  fill: #f09f33;
+  transition: .3s ease;
 }
-
-.btn:hover::before {
-  transform: translateY(-50%) scaleY(1);
-  width: 100%;
-  transition: transform 0.48s 0.1s cubic-bezier(0.23, 1, 0.32, 1),
-    width 0.48s 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.btn:active {
-  transform: scale(0.95);
-}
-

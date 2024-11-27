@@ -1,21 +1,32 @@
 
-/* From Uiverse.io by KhelVers  - Tags: simple, 3d, button */
+/* From Uiverse.io by Ratinax - Tags: simple, red, button, active */
+.container {
+  position: relative;
+  width: 4.5em;
+  height: 4em;
+  background-color: red;
+  overflow: hidden;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 2;
+  box-shadow: 0 .5em #AA1111;
+}
+
 .button {
   cursor: pointer;
-  font-size: large;
-  font-family: inherit;
-  font-weight: bold;
-  color: #0011ff;
-  background-color: #f8f8fd;
-  padding: 0.8em 2.2em;
-  border-radius: 50em;
-  border: 6px solid #8b93f8;
-  box-shadow: 0px 8px #1f35ff;
+  position: absolute;
+  text-transform: uppercase;
+  height: 110%;
+  width: 110%;
+  background-color: red;
+  color: white;
+  text-shadow: 0 0.1em 0.1em black;
 }
-.button:active {
-  position: relative;
-  top: 8px;
-  border: 6px solid #646fff;
-  box-shadow: 0px 0px;
+
+.container:has(.button:active) {
+  box-shadow: none;
+  margin-top: 2em;
 }
 

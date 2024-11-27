@@ -1,33 +1,88 @@
 
-/* From Uiverse.io by Showbizfleet - Tags: button */
+/* From Uiverse.io by alessandrodesign - Tags: button */
 button {
-  height: 50px;
-  margin: 5px;
-  width: 120px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  background: linear-gradient(145deg, #9c27b0, #f44336, #ff9800, #ffc107, #8bc34a, #4caf50, #2196f3, #03a9f4, #00bcd4, #009688);
-  background-size: 200%;
-  background-position: 0%;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #26c4c3;
+  border-right-color: transparent;
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 1), 0 0 10px rgb(194,255,255);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 1), 0 0 10px rgb(194,255,255);
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 20%, 100% 20%, 85% 100%, 80% 100%, 95% 20%, 50% 20%, 30% 0);
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 20%, 100% 20%, 85% 100%, 80% 100%, 95% 20%, 50% 20%, 30% 0);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  width: 150px;
+  height: 55px;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 0 1px 1px black;
+  position: relative;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 button:hover {
-  background-position: 100%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25), inset 0px -2px 0px rgba(255, 255, 255, 0.2);
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 20%, 100% 20%, 100% 100%, 100% 100%, 100% 20%, 50% 20%, 30% 0);
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 20%, 100% 20%, 100% 100%, 100% 100%, 100% 20%, 50% 20%, 30% 0);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
-button:focus {
-  outline: none;
+button::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 5px;
+  background-color: rgb(194,255,255);
+  -webkit-box-shadow: 0 0 5px rgb(194,255,255);
+  box-shadow: 0 0 5px rgb(194,255,255);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
+  -webkit-animation: btn 1s infinite ease-in-out;
+  animation: btn 1s infinite ease-in-out;
 }
 
-button:active {
-  background-size: 100%;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+button::before {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(194,255,255);
+  -webkit-box-shadow: 0 0 5px rgb(194,255,255);
+  box-shadow: 0 0 5px rgb(194,255,255);
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  z-index: 3;
+  animation: btn_51 1s infinite ease-in-out reverse;
 }
 
+@keyframes btn_51 {
+  0%,100% {
+    width: 100%;
+  }
+
+  25%,75% {
+    width: 0;
+  }
+
+  50% {
+    width: 50%;
+  }
+}

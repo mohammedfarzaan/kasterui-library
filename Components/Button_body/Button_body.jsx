@@ -3,75 +3,121 @@ import styles from "./Button_body.module.css";
 
 const Button_body = () => (
   <div>
-    <button
-      className={styles["action_has"] + styles["has_liked"]}
-      aria-label="like"
-      type="button"
-    >
-      <span data-icon="">
-        <svg
-          data-icon="aoeri"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          stroke-linejoin="round"
-          stroke-linecap="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
+    <button className={styles["palette-button"]}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 47 47"
+        className="palette"
+      >
+        <path
+          strokeWidth="2"
+          stroke="black"
+          d="M23.5 46C11.0736 46 1 35.9264 1 23.5C1 11.0736 11.0736 1 23.5 1C35.9264 1 46 11.0736 46 23.5C46 24.2461 45.7117 24.7823 45.1652 25.2415C44.5763 25.7365 43.6859 26.1372 42.5263 26.4835C41.3771 26.8267 40.0662 27.0884 38.6848 27.3617L38.6142 27.3757C37.275 27.6407 35.8737 27.9179 34.5961 28.2889C32.0955 29.015 29.5022 30.2591 29.1333 33.106C28.9574 34.463 29.3233 36.0257 30.2167 37.8342C31.0026 39.425 32.2278 41.2689 33.9671 43.4224C30.8413 45.0683 27.2807 46 23.5 46Z"
+        ></path>
+        <circle
           fill="none"
-        >
-          <path
-            d="m8.05,11.99c0-.84.28-1.07,1.2-1.25,1.6-.31,2.35-.74,3.14-1.54,1.19-1.21,1.58-1.97,2.18-3.24.66-1.69,1.55-2.82,3.04-2.76.9.03,2.33.8,1.67,2.72-.31.9-1.98,3.61-2.23,4.23-.18.46.4.8.8.8h2.5c1.2,0,2.2,1,2.2,2.2l-1.1,5.6c-.3,1.5-1.02,2.23-2.2,2.2h-7.6c-2,0-3.6-1.6-3.6-3.6v-5.35Z"
-            data-d="thumb"
-          ></path>
-          <path
-            d="m5.4,19.9c0,.6-.5,1.1-1.1,1.1h-1c-1,0-1.9-.9-1.9-1.9v-6.3c0-1,.9-1.9,1.9-1.9h.9c.7,0,1.2.6,1.2,1.2v7.7Z"
-            data-d="sleeves"
-          ></path>
-        </svg>
-      </span>
+          className="color-drop drop1"
+          strokeWidth="2"
+          stroke="black"
+          r="3.5"
+          cy="13.5"
+          cx="33.5"
+        ></circle>
+        <circle
+          fill="none"
+          className="color-drop drop2"
+          strokeWidth="2"
+          stroke="black"
+          r="3.5"
+          cy="10.5"
+          cx="20.5"
+        ></circle>
+        <circle
+          fill="none"
+          className="color-drop drop3"
+          strokeWidth="2"
+          stroke="black"
+          r="3.5"
+          cy="18.5"
+          cx="10.5"
+        ></circle>
+        <circle
+          fill="none"
+          className="color-drop drop4"
+          strokeWidth="2"
+          stroke="black"
+          r="3.5"
+          cy="31.5"
+          cx="11.5"
+        ></circle>
+      </svg>
+      Customize
     </button>
   </div>
 );
 
 export default Button_body;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_body = () => (
          <div>
-          <button className="action_has has_liked" aria-label="like" type="button">
-  <span data-icon=""
-    ><svg
-      data-icon="aoeri"
-      aria-hidden="true"
-      xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
-      stroke-linejoin="round"
-      stroke-linecap="round"
-      stroke-width="2"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
+          <button className="palette-button">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 47 47"
+    className="palette"
+  >
+    <path
+      strokeWidth="2"
+      stroke="black"
+      d="M23.5 46C11.0736 46 1 35.9264 1 23.5C1 11.0736 11.0736 1 23.5 1C35.9264 1 46 11.0736 46 23.5C46 24.2461 45.7117 24.7823 45.1652 25.2415C44.5763 25.7365 43.6859 26.1372 42.5263 26.4835C41.3771 26.8267 40.0662 27.0884 38.6848 27.3617L38.6142 27.3757C37.275 27.6407 35.8737 27.9179 34.5961 28.2889C32.0955 29.015 29.5022 30.2591 29.1333 33.106C28.9574 34.463 29.3233 36.0257 30.2167 37.8342C31.0026 39.425 32.2278 41.2689 33.9671 43.4224C30.8413 45.0683 27.2807 46 23.5 46Z"
+    ></path>
+    <circle
       fill="none"
-    >
-      <path
-        d="m8.05,11.99c0-.84.28-1.07,1.2-1.25,1.6-.31,2.35-.74,3.14-1.54,1.19-1.21,1.58-1.97,2.18-3.24.66-1.69,1.55-2.82,3.04-2.76.9.03,2.33.8,1.67,2.72-.31.9-1.98,3.61-2.23,4.23-.18.46.4.8.8.8h2.5c1.2,0,2.2,1,2.2,2.2l-1.1,5.6c-.3,1.5-1.02,2.23-2.2,2.2h-7.6c-2,0-3.6-1.6-3.6-3.6v-5.35Z"
-        data-d="thumb"
-      ></path>
-      <path
-        d="m5.4,19.9c0,.6-.5,1.1-1.1,1.1h-1c-1,0-1.9-.9-1.9-1.9v-6.3c0-1,.9-1.9,1.9-1.9h.9c.7,0,1.2.6,1.2,1.2v7.7Z"
-        data-d="sleeves"
-      ></path></svg
-  ></span>
+      className="color-drop drop1"
+      strokeWidth="2"
+      stroke="black"
+      r="3.5"
+      cy="13.5"
+      cx="33.5"
+    ></circle>
+    <circle
+      fill="none"
+      className="color-drop drop2"
+      strokeWidth="2"
+      stroke="black"
+      r="3.5"
+      cy="10.5"
+      cx="20.5"
+    ></circle>
+    <circle
+      fill="none"
+      className="color-drop drop3"
+      strokeWidth="2"
+      stroke="black"
+      r="3.5"
+      cy="18.5"
+      cx="10.5"
+    ></circle>
+    <circle
+      fill="none"
+      className="color-drop drop4"
+      strokeWidth="2"
+      stroke="black"
+      r="3.5"
+      cy="31.5"
+      cx="11.5"
+    ></circle>
+  </svg>
+  Customize
 </button>
         </div>
         );

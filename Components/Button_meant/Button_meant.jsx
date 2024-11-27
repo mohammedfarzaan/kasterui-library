@@ -1,30 +1,39 @@
 import React from "react";
+import styles from "./Button_meant.module.css";
 
 const Button_meant = () => (
   <div>
-    <div className="max-w-sm w-full mx-auto mt-5">
-      <div className="animate-pulse flex space-x-4 border border-gray-300 shadow-lg p-4 rounded-lg">
-        <div className="rounded-full bg-gray-300 h-10 w-10"></div>
-        <div className="flex-1 space-y-6 py-1">
-          <div className="h-2 bg-gray-300 rounded"></div>
-          <div className="space-y-3">
-            <div className="grid grid-cols-3 gap-4">
-              <div className="h-2 bg-gray-300 rounded col-span-2"></div>
-              <div className="h-2 bg-gray-300 rounded col-span-1"></div>
-            </div>
-            <div className="h-2 bg-gray-300 rounded"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <button className={styles["pushable"]}>
+      <span className={styles["shadow"]}></span>
+      <span className={styles["edge"]}></span>
+      <span className={styles["front"]}>Push Me</span>
+    </button>
   </div>
 );
 
 export default Button_meant;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
-  /* */
+  /*
+            
+        import React from 'react';
+
+        const Button_meant = () => (
+         <div>
+          <button className="pushable">
+      <span className="shadow"></span>
+      <span className="edge"></span>
+      <span className="front">
+        Push Me
+      </span>
+    </button>
+        </div>
+        );
+
+        export default Button_meant;
+        
+        
+         */
 }

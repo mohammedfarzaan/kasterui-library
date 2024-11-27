@@ -1,30 +1,56 @@
 
-/* From Uiverse.io by Iliasman2 - Tags: button */
-.designer-btn {
-  display: inline-block;
-  padding: 14px 40px;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 30px;
+/* From Uiverse.io by Vaperene  - Tags: simple, material design, neumorphism, icon, button, #button, button hover effect , 2d button */
+.send-message-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f300;
+  border: 2px solid #a5a5a500;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
   cursor: pointer;
-  border: 2px solid black;
-  transition: all 0.3s ease;
-  background: linear-gradient(to bottom, #b2b5b3, #a5a7a6);
-  color: rgb(57, 53, 53);
+  transition: background-color 0.3s, box-shadow 0.5s, border-color 0.4s,
+    padding 0.3s;
 }
 
-.designer-btn:hover {
-  border: 2px solid rgb(109, 107, 107);
-  color: #a5a7a6;
-  box-shadow: 0 5px #666;
-  transform: translateY(-5px);
-  background: linear-gradient(to bottom, #2e2f2e, #323433);
+.send-message-button:hover {
+  background-image: linear-gradient(59deg, #f3f3f3, #d7d6d6c0);
+  border-color: #e9e9e9;
 }
 
-.designer-btn:focus,
-.designer-btn:active {
-  transform: translateY(4px);
+.send-message-button:active {
 }
-  
+
+.send-message-content {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 8px 16px;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s;
+}
+
+.send-message-button:active .send-message-content {
+  box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.send-message-content svg {
+  margin-right: 10px;
+  fill: #1d0c0c;
+  transition: fill 0.3s;
+}
+
+.send-message-content span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.send-message-button:hover .send-message-content span {
+  color: #1d0c0c;
+}
 

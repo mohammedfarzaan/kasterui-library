@@ -3,29 +3,22 @@ import styles from "./Button_fur.module.css";
 
 const Button_fur = () => (
   <div>
-    <button className={styles["bt"]} id="bt">
-      <span className={styles["msg"]} id="msg"></span>
-      SEND
-    </button>
+    <button className={styles["btn"]}>cut</button>
   </div>
 );
 
 export default Button_fur;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_fur = () => (
          <div>
-          <button className="bt" id="bt">
-    <span className="msg" id="msg"></span>
-    SEND
-</button>
+          <button className="btn">cut</button>
         </div>
         );
 

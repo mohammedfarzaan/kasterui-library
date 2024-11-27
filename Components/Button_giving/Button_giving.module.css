@@ -1,47 +1,31 @@
 
-/* From Uiverse.io by Navarog21 - Tags: button */
+/* From Uiverse.io by cuatrofender - Tags: button */
 button {
-  width: 10em;
-  position: relative;
-  height: 3.5em;
-  border: 3px ridge #149CEA;
-  outline: none;
-  background-color: transparent;
-  color: white;
-  transition: 1s;
-  border-radius: 0.3em;
-  font-size: 16px;
-  font-weight: bold;
+ border: none;
+ font-family: sans-serif;
+ font-size: 17px;
+ background: transparent;
+ color: #006bb3;
+ border: solid 1px rgba(0, 107, 179, 0.2);
+ padding: 10px;
+ border-radius: 4px;
+ transition-duration: 0.2s;
 }
 
-button::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: #212121;
-  transition: 0.5s;
-  transform-origin: center;
+button:before {
+ content: "»";
+ opacity: 0;
+ margin-left: -15px;
+ transition-duration: 0.2s;
 }
 
-button::before {
-  content: "";
-  transform-origin: center;
-  position: absolute;
-  top: 80%;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: #212121;
-  transition: 0.5s;
-}
-
-button:hover::before, button:hover::after {
-  transform: scale(0)
+button:hover:before {
+ margin-left: 0px;
+ opacity: 1;
 }
 
 button:hover {
-  box-shadow: inset 0px 0px 25px #1479EA;
+ color: black;
+ background: rgba(0, 0, 0, 0.02);
+ border: solid 1px gainsboro;
 }

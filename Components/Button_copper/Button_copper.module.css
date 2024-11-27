@@ -1,92 +1,58 @@
 
-/* From Uiverse.io by Ahemtan - Tags: button */
-button {
+/* From Uiverse.io by Creatlydev - Tags: button, hover effect, hover button */
+.button {
+  text-decoration: none;
+  line-height: 1;
+  border-radius: 1.5rem;
+  overflow: hidden;
   position: relative;
-  background: #6a92ef;
-  color: white;
-  padding: .9rem 2.20rem;
-  border-radius: 2rem;
-  transition: .5s;
+  box-shadow: 10px 10px 20px rgba(0,0,0,.05);
+  background-color: #fff;
+  color: #121212;
   border: none;
+  cursor: pointer;
 }
 
-button::after {
-  content: '';
-  width: 80%;
-  height: 40%;
-  background: linear-gradient(80deg, hsl(217, 77%, 71%) 10%, hsl(218, 76%, 84%) 48%);
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -5px;
-  margin: 0 auto;
-  border-radius: 2rem;
-  filter: blur(8px);
-  z-index: -9;
-  opacity: 0;
-  transition: opacity .4s;
-}
-
-.text {
-  position: relative;
-  z-index: 10;
-}
-
-button svg {
+.button-decor {
   position: absolute;
   inset: 0;
-  margin: auto;
-  pointer-events: none;
-  transition: .6s;
-  opacity: 0;
+  background-color: var(--clr);
+  transform: translateX(-100%);
+  transition: transform .3s;
+  z-index: 0;
 }
 
-svg.star {
-  width: 18px;
-  transform: translate(-25px, -6px) rotate(55deg);
-  filter: blur(.4px);
-  color: hsl(210, 40%, 47%);
+.button-content {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
 }
 
-svg.moon {
-  width: 18px;
-  transform: translate(7px, -14) rotate(80deg);
-  filter: blur(.5px);
-  color: hsl(210, 40%, 47%);
+.button__icon {
+  width: 48px;
+  height: 40px;
+  background-color: var(--clr);
+  display: grid;
+  place-items: center;
 }
 
-svg.meteor {
-  width: 16px;
-  transform: translate(34px, -4px) rotate(-45deg);
-  filter: blur(.4px);
-  color: hsl(210, 40%, 47%);
+.button__text {
+  display: inline-block;
+  transition: color .2s;
+  padding: 2px 1.5rem 2px;
+  padding-left: .75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px;
 }
 
-button:active {
-  color: #ffffff;
-  transform: scale(1.2);
+.button:hover .button__text {
+  color: #fff;
 }
 
-button:hover::after {
-  opacity: 1;
-}
-
-button:hover {
-  transform: scale(1.3);
-}
-
-button:hover svg {
-  opacity: 1;
-}
-
-button:hover svg.star {
-  transform: translate(-55px, -20px) rotate(55deg) scale(1.8);
-}
-
-button:hover svg.moon {
-  transform: translate(50px, -32px) rotate(0deg) scale(1.4);
-}
-
-button:hover svg.meteor {
-  transform: translate(28px, 30px) rotate(260deg) scale(2);
+.button:hover .button-decor {
+  transform: translate(0);
 }

@@ -1,68 +1,47 @@
 
-/* From Uiverse.io by Peary74 - Tags: button, hover, hover button */
-.del {
+/* From Uiverse.io by vinodjangid07 - Tags: button, search, neon, hover effect, explore */
+.button {
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: rgb(161, 255, 20);
+  border-radius: 30px;
+  color: rgb(19, 19, 19);
+  font-weight: 600;
+  border: none;
   position: relative;
-  top: 0;
-  left: 0;
-  width: 160px;
-  height: 50px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;
+  transition-duration: .2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 8px;
+  transition-duration: .5s;
 }
 
-.del div {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  letter-spacing: 1px;
-  color: #000;
-  z-index: 1;
-  transition: .6s;
+.svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
 }
 
-.del:hover div {
-  letter-spacing: 4px;
-  color: #fff;
+.bell path {
+  fill: rgb(19, 19, 19);
 }
 
-.del::after,
-.del::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -99999;
-  transition: all .4s;
+.button:hover {
+  background-color: rgb(192, 255, 20);
+  transition-duration: .5s;
 }
 
-.del::after {
-  transform: translate(15px, 15px);
-  width: 35px;
-  height: 35px;
-  background: #000;
-  backdrop-filter: blur(5px);
-  border-radius: 10px;
+.button:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
 }
 
-.del:hover::after {
-  border-radius: 10px;
-  transform: translate(0, 0);
-  width: 100%;
-  height: 100%;
+.button:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
 }
-
-
 
 

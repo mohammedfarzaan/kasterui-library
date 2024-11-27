@@ -1,53 +1,39 @@
 
-/* From Uiverse.io by Ali-Tahmazi99 - Tags: button */
-/* From uiverse.io by @Ali-Tahmazi99 */
+/* From Uiverse.io by adamgiebl - Tags: button */
 button {
- display: inline-block;
- width: 150px;
- height: 50px;
- border-radius: 10px;
- border: 1px solid #03045e;
- position: relative;
- overflow: hidden;
- transition: all 0.5s ease-in;
- z-index: 1;
+  background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+  background-size: 800% 400%;
+  padding: 1em 2em;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  transition: all .5s ease-in-out;
+  animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
 }
 
-button::before,
-button::after {
- content: '';
- position: absolute;
- top: 0;
- width: 0;
- height: 100%;
- transform: skew(15deg);
- transition: all 0.5s;
- overflow: hidden;
- z-index: -1;
+button:hover {
+  animation: gradient 3s infinite;
+  transform: scale(1.05);
 }
 
-button::before {
- left: -10px;
- background: #240046;
+button:active {
+  animation: gradient 3s infinite;
+  transform: scale(0.8);
 }
 
-button::after {
- right: -10px;
- background: #5a189a;
-}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
 
-button:hover::before,
-button:hover::after {
- width: 58%;
-}
+  50% {
+    background-position: 100% 50%;
+  }
 
-button:hover span {
- color: #e0aaff;
- transition: 0.3s;
-}
-
-button span {
- color: #03045e;
- font-size: 18px;
- transition: all 0.3s ease-in;
+  100% {
+    background-position: 0% 50%;
+  }
 }

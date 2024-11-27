@@ -1,59 +1,61 @@
 
-/* From Uiverse.io by HecktorViegas  - Tags: button */
+/* From Uiverse.io by asgardOP  - Tags: icon, social, button, hover, dark, modern, social media, buttons */
 .button {
   cursor: pointer;
-  display: flex;
-  text-wrap: nowrap;
-  align-items: center;
-  gap: 0.9rem;
-  padding: 1.5rem 2rem;
-  border-radius: 1.2rem;
-  background: linear-gradient(to bottom, #e3a8fc, #8d38cf);
-  box-sizing: border-box;
-  box-shadow:
-    -3px 5px 1.5px #5a2982,
-    -15px 12px 20px #5a2982ba;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
   border: none;
-  transform: rotate3d(2, -1, 1, 343deg) rotatex(27deg) scale(0.9);
-  color: #ffcaf7;
-  font-weight: bold;
-  font-size: 1.2rem;
-  transition: all 0.2s;
+  background: linear-gradient(120deg, #833ab4, #fd1d1d, #fcb045);
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  transition: 0.1s;
+}
+.button svg {
+  color: white;
+  width: 30px;
+  height: 30px;
+  z-index: 9;
 }
 
-.button:before {
-  content: "";
-  width: 97%;
-  position: absolute;
-  height: 91%;
-  top: 4.5%;
-  z-index: -2;
-  left: 1.3%;
-  border-radius: 1.1rem;
-  box-shadow: inset 0 -5px 5px -1px #7926bc;
-  background: linear-gradient(to bottom, #d591ff, #7f2dc2);
+.button:nth-child(3) {
+  background: linear-gradient(120deg, #02ff2c, #008a12);
 }
 
-.button:hover {
-  transition: all 0.2s;
-  transform: scale(1.2);
-  box-shadow: inset -0.5px -3px 3px 1px #7926bc;
+.button:nth-child(4) {
+  background: rgb(69, 187, 255);
+}
+
+.button:nth-child(5) {
+  background: rgb(255, 33, 33);
+}
+
+.button:nth-child(6) {
+  background: black;
 }
 
 .button:active {
-  transition: all 0.1s;
-  box-shadow: inset 2px 2px 3px #5a2982ba;
-  transform: scale(1.15);
+  transform: scale(0.85);
 }
 
-.icon {
-  width: 1.8rem;
-  height: 1.8rem;
+.button::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background-color: #212121;
+  border-radius: 50px;
+  z-index: -1;
+  border: 0px solid rgba(255, 255, 255, 0.411);
+  transition: 0.4s;
 }
 
-.button span {
-  background: -webkit-linear-gradient(#ffe4fe, #ffcaf7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.button:hover::before {
+  width: 0px;
+  height: 0px;
 }
 

@@ -1,46 +1,59 @@
 
-/* From Uiverse.io by abbos97 - Tags: gradient, button */
-.moves-button {
-  padding: 10px 20px;
-  color: #000;
-  font-weight: 900;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
+/* From Uiverse.io by andrew-demchenk0 - Tags: red, button, delete */
+.button {
   position: relative;
-  overflow: hidden;
-  background-color: #fff;
-  border: 3px solid transparent;
-  border-image: linear-gradient(90deg, #f3f 20%, rgb(49, 18, 187) 60%);
-  border-image-slice: 1;
-}
-
-.moves-button::after {
-  content: 'Button';
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, rgb(245, 108, 245) 20%, rgb(119, 91, 245) 60%);
-  transition: transform 0.3s ease-out;
-  pointer-events: none;
+  border: 1px solid #cc0000;
+  background-color: #e50000;
+  overflow: hidden;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(35px);
   color: #fff;
+  font-weight: 600;
 }
 
-.moves-button:hover::after {
-  transform: translateX(-100%);
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #cc0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.moves-button:focus {
-  outline: none;
+.button .svg {
+  width: 20px;
 }
 
-/* Optional styling for the button on click */
-.moves-button:active {
-  transform: translateY(2px);
+.button:hover {
+  background: #cc0000;
 }
 
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #b20000;
+}
+
+.button:active {
+  border: 1px solid #b20000;
+}

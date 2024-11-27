@@ -3,42 +3,44 @@ import styles from "./Button_front.module.css";
 
 const Button_front = () => (
   <div>
-    <button className={styles["btn"]}>
+    <button className={styles["button"]}>
       <svg
-        height="24"
+        className="svg-icon"
         width="24"
-        fill="#FFFFFF"
         viewBox="0 0 24 24"
-        data-name="Layer 1"
-        id="Layer_1"
-        className={styles["sparkle"]}
+        height="24"
+        fill="none"
       >
-        <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"></path>
+        <g
+          strokeWidth="2"
+          strokeLinecap="round"
+          stroke="#056dfa"
+          fillRule="evenodd"
+          clipRule="evenodd"
+        >
+          <path d="m3 7h17c.5523 0 1 .44772 1 1v11c0 .5523-.4477 1-1 1h-16c-.55228 0-1-.4477-1-1z"></path>
+          <path d="m3 4.5c0-.27614.22386-.5.5-.5h6.29289c.13261 0 .25981.05268.35351.14645l2.8536 2.85355h-10z"></path>
+        </g>
       </svg>
-
-      <span className={styles["text"]}>Generate</span>
+      <span className={styles["lable"]}>Archive</span>
     </button>
   </div>
 );
 
 export default Button_front;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_front = () => (
          <div>
-          <button className="btn">
-    <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" className="sparkle">
-        <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"></path>
-    </svg>
-
-    <span className="text">Generate</span>
+          <button className="button">
+  <svg className="svg-icon" width="24" viewBox="0 0 24 24" height="24" fill="none"><g strokeWidth="2" strokeLinecap="round" stroke="#056dfa" fillRule="evenodd" clipRule="evenodd"><path d="m3 7h17c.5523 0 1 .44772 1 1v11c0 .5523-.4477 1-1 1h-16c-.55228 0-1-.4477-1-1z"></path><path d="m3 4.5c0-.27614.22386-.5.5-.5h6.29289c.13261 0 .25981.05268.35351.14645l2.8536 2.85355h-10z"></path></g></svg>
+  <span className="lable">Archive</span>
 </button>
         </div>
         );

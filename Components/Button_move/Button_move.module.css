@@ -1,23 +1,35 @@
 
-/* From Uiverse.io by sujithg444  - Tags: simple, button, hover effect, hoverme, buttons, multicolor */
-.gradient-button {
-  background: linear-gradient(
-    to right,
-    #ff5370,
-    #ff869a
-  ); /* Gradient from pink to orange */
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 25px;
+/* From Uiverse.io by alexmaracinaru - Tags: icon, button */
+button {
   cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  font-weight: 700;
+  font-family: Helvetica,"sans-serif";
+  transition: all .2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: #cfef00;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
 }
-.gradient-button:hover {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+button:hover {
+  background: #c4e201;
 }
+
+button > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+button:hover svg {
+  transform: translateX(5px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
 

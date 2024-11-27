@@ -1,22 +1,51 @@
 
-/* From Uiverse.io by Rodrypaladin - Tags: simple, animation, purple, pink, button, click, css, click animation */
-.button {
-  margin: 0 10px;
-  padding: 10px 30px;
-  border: 5px solid #DF34DB;
-  border-radius: 22px;
+/* From Uiverse.io by gagan-gv - Tags: button */
+.btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
   font-size: 20px;
-  color: #DF34DB;
-  transition: transform 0.1s ease-in, all 0.08s ease-in;
-  box-shadow: 0 5px 0 #dd04d9;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #040f16;
+  color: #f5f5f5;
 }
 
-.button:hover {
-  border-color: #ff00c8;
-  box-shadow: 0 5px 0 #ff00c8;
+.btn:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
 }
 
-.button:active {
-  transform: translateY(5px);
-  box-shadow: 0 0 0 #DF34DB;
+.btn .icon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.btn .text {
+  transform: translateX(55px);
+}
+
+.btn:hover .icon {
+  width: 175px;
+}
+
+.btn:hover .text {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active .icon {
+  transform: scale(0.85);
 }

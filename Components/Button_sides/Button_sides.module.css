@@ -1,21 +1,41 @@
 
-/* From Uiverse.io by 2Fl00rian6 - Tags: button */
+/* From Uiverse.io by NorthFishHasNa - Tags: button */
 button {
- background-color: rgb(20, 87, 244);
- border: 1px solid rgb(20, 87, 244);
- padding: 12px 20px;
- border-radius: 7px;
- transition: .3s;
- color: #fff;
+ display: inline-block;
+ border-radius: 4px;
+ background-color: #3d405b;
+ border: none;
+ color: #FFFFFF;
+ text-align: center;
+ font-size: 17px;
+ padding: 16px;
+ width: 130px;
+ transition: all 0.5s;
+ cursor: pointer;
+ margin: 5px;
 }
 
-button:hover {
- border: 1px solid rgb(20, 87, 244);
- background-color: transparent;
- color: rgb(20, 87, 244);
+button span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
 }
 
-button:focus {
- box-shadow: 0px 0px 0px 5px rgba(20, 87, 244, 0.37), 0px 0px 0px 10px rgba(20, 87, 244, 0.38);
- outline: none;
+button span:after {
+ content: '»';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -15px;
+ transition: 0.5s;
+}
+
+button:hover span {
+ padding-right: 15px;
+}
+
+button:hover span:after {
+ opacity: 1;
+ right: 0;
 }

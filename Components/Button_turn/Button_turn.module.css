@@ -1,38 +1,53 @@
 
-/* From Uiverse.io by ramdaniAli - Tags: button */
-button {
-  color: #4181f098;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  /* border: none; */
-  font-weight: bold;
-  font-size: 17px;
-  padding: 1rem 2rem;
-  border: 1px solid #ffffff1f;
-  border-radius: 20px;
-  background: #ebebeb;
-  -webkit-box-shadow: 5px 5px 15px #cccccc,
-              -5px -5px 15px #ffffff;
-  box-shadow: 5px 5px 15px #cccccc,
-              -5px -5px 15px #ffffff;
-  -webkit-transition: box-shadow 0.3s ease-in-out;
-  transition: box-shadow 0.3s ease-in-out;
+/* From Uiverse.io by JaydipPrajapati1910 - Tags: button, join now, buttton */
+.button {
+  color: white;
+  background-color: #222;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  text-align: center;
+  margin-right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  border: none;
 }
 
-button:hover {
-  color: #357af0;
-  background: linear-gradient(145deg, #d4d4d4, #fbfbfb);
-  -webkit-box-shadow: 5px 5px 15px #cccccc,
-              -5px -5px 15px #ffffff;
-  box-shadow: 5px 5px 15px #cccccc,
-              -5px -5px 15px #ffffff;
+.button:hover {
+  background-color: #fff;
+  color: #222;
+  border: 2px solid #222;
 }
 
-button:active {
-  color: #357af0;
-  background: #ebebeb;
-  -webkit-box-shadow: inset 5px 5px 15px #cccccc,
-              inset -5px -5px 15px #ffffff;
-  box-shadow: inset 5px 5px 15px #cccccc,
-              inset -5px -5px 15px #ffffff;
+.button:hover svg {
+  fill: #222;
 }
+
+.button svg {
+  display: inline;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 0.75rem;
+  color: white;
+}
+
+.button:hover svg {
+  animation: spin_357 0.5s linear;
+}
+
+@keyframes spin_357 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotatey(360deg);
+  }
+}
+
+

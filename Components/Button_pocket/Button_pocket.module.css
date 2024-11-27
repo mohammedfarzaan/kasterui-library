@@ -1,45 +1,103 @@
 
-/* From Uiverse.io by Bodyhc  - Tags: button, simple button, hover button, #button, tailwindbutton, 3d button, button hover effect , 2d button */
-.send-button {
-  display: flex;
-  height: 60px;
-  width: 180px;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #b7b7b7;
-  padding: 2px;
-  border-radius: 12px;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.6);
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  color: #000;
+/* From Uiverse.io by doniaskima - Tags: button, animated bar loader, DoubleTriangle  */
+.btn-9,
+.btn-9 *,
+.btn-9 :after,
+.btn-9 :before,
+.btn-9:after,
+.btn-9:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-9 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
   cursor: pointer;
-  transition: all 0.3s ease;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
 }
 
-.send {
-  display: flex;
-  width: 180px;
+.btn-9:disabled {
+  cursor: default;
+}
+
+.btn-9:-moz-focusring {
+  outline: auto;
+}
+
+.btn-9 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-9 [hidden] {
+  display: none;
+}
+
+.btn-9 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+
+.btn-9 span {
+  mix-blend-mode: difference;
+}
+
+.btn-9:after,
+.btn-9:before {
+  --tilt: 1.2rem;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  content: "";
+  display: block;
   height: 100%;
-  border-radius: 50px;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  font-weight: 700;
-  box-shadow: inset -3px 1px 10px #eff1ef, inset -3px 1px 10px #eff1ef;
-  transition: all 0.3s ease;
+  left: calc(-100% - var(--tilt));
+  position: absolute;
+  top: 0;
+  transform: translateX(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: calc(100% + var(--tilt));
 }
 
-.send-button svg {
-  margin-right: 10px;
-  width: 15px;
-  height: 15px;
-  transition: all 0.3s ease;
+.btn-9:after {
+  left: 100%;
+  transform: translateX(var(--progress, 0)) rotate(180deg);
+  z-index: -1;
 }
 
-.send-button:hover svg {
-  transform: rotate(50deg);
+.btn-9:hover:before {
+  --progress: 100%;
+}
+
+.btn-9:hover:after {
+  --progress: -100%;
 }
 

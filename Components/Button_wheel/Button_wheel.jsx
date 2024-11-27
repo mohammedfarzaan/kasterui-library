@@ -3,69 +3,80 @@ import styles from "./Button_wheel.module.css";
 
 const Button_wheel = () => (
   <div>
-    <div className={styles["button-options"]}>
-      <div className={styles["content"]}>
-        <input name="boldInput" id="boldInput" hidden="" type="checkbox" />
-        <label className={styles["label-layout"]} for="boldInput">
-          <b>B</b>
-        </label>
-
-        <input name="italicInput" id="italicInput" hidden="" type="checkbox" />
-        <label className={styles["label-layout"]} for="italicInput">
-          <i>i</i>
-        </label>
-
-        <input
-          name="underlineInput"
-          id="underlineInput"
-          hidden=""
-          type="checkbox"
-        />
-        <label className={styles["label-layout"]} for="underlineInput">
-          <u>U</u>
-        </label>
-        <span className={styles["title"]}>L❤VE FRONT-END</span>
-      </div>
-    </div>
+    <input
+      type="checkbox"
+      id="send-checkbox"
+      className={styles["send-checkbox"]}
+    />
+    <label for="send-checkbox" className={styles["send-button"]}>
+      <svg
+        className="svg-style"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        height="20px"
+        width="20px"
+      >
+        <path
+          strokeLinejoin="round"
+          strokeLinecap="round"
+          strokeWidth="1.5"
+          stroke="#292D32"
+          d="M7.39999 6.32003L15.89 3.49003C19.7 2.22003 21.77 4.30003 20.51 8.11003L17.68 16.6C15.78 22.31 12.66 22.31 10.76 16.6L9.91999 14.08L7.39999 13.24C1.68999 11.34 1.68999 8.23003 7.39999 6.32003Z"
+        ></path>
+        <path
+          strokeLinejoin="round"
+          strokeLinecap="round"
+          strokeWidth="1.5"
+          stroke="#292D32"
+          d="M10.11 13.6501L13.69 10.0601"
+        ></path>
+      </svg>
+      <span className={styles["message"]}>Send Message</span>
+      <span className={styles["message-sent"]}>Message Sent</span>
+    </label>
   </div>
 );
 
 export default Button_wheel;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_wheel = () => (
          <div>
-          <div className="button-options">
-  <div className="content">
-    <input name="boldInput" id="boldInput" hidden="" type="checkbox" />
-    <label className="label-layout" for="boldInput">
-      <b>B</b>
-    </label>
-
-    <input name="italicInput" id="italicInput" hidden="" type="checkbox" />
-    <label className="label-layout" for="italicInput">
-      <i>i</i>
-    </label>
-
-    <input
-      name="underlineInput"
-      id="underlineInput"
-      hidden=""
-      type="checkbox"
-    />
-    <label className="label-layout" for="underlineInput">
-      <u>U</u>
-    </label>
-    <span className="title">L❤VE FRONT-END</span>
-  </div>
-</div>
+          <input type="checkbox" id="send-checkbox" className="send-checkbox" />
+<label for="send-checkbox" className="send-button">
+  <svg
+    className="svg-style"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    height="20px"
+    width="20px"
+  >
+    <path
+      strokeLinejoin="round"
+      strokeLinecap="round"
+      strokeWidth="1.5"
+      stroke="#292D32"
+      d="M7.39999 6.32003L15.89 3.49003C19.7 2.22003 21.77 4.30003 20.51 8.11003L17.68 16.6C15.78 22.31 12.66 22.31 10.76 16.6L9.91999 14.08L7.39999 13.24C1.68999 11.34 1.68999 8.23003 7.39999 6.32003Z"
+    ></path>
+    <path
+      strokeLinejoin="round"
+      strokeLinecap="round"
+      strokeWidth="1.5"
+      stroke="#292D32"
+      d="M10.11 13.6501L13.69 10.0601"
+    ></path>
+  </svg>
+  <span className="message">Send Message</span>
+  <span className="message-sent">Message Sent</span>
+</label>
         </div>
         );
 

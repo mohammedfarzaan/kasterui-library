@@ -1,87 +1,58 @@
 
-/* From Uiverse.io by KINGFRESS - Tags: button, progress bar */
-button {
-  background-color: transparent;
-  width: 13em;
-  height: 3.3em;
-  border: 2px solid #1abc9c;
-  border-radius: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #1abc9c;
-  padding: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* From Uiverse.io by gharsh11032000  - Tags: animation, button, animated, hover effect, simple button, hover button, button hover effect  */
+.btn {
   position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-button .txt {
-  transition: .4s ease-in-out;
-  position: absolute;
-}
-
-button .txt2 {
-  transform: translateY(1em) scale(0);
-  color: #212121;
-  position: absolute;
-}
-
-button .loader-container {
-  height: 100%;
-  width: 100%;
-  background-color: transparent;
-  border-radius: inherit;
+  transition: color 0.48s 0s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
   display: flex;
-  justify-content: center;
+  padding: 12px 24px;
   align-items: center;
-  z-index: -1;
+  justify-content: center;
+  gap: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  color: #000000;
   overflow: hidden;
+  text-decoration: none;
+  background-color: transparent;
 }
 
-button .loader-container .loader {
-  height: 100%;
-  width: 100%;
-  background-color: #1abc9c;
-  border-radius: inherit;
-  transform: translateX(-13em);
+.btn span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.6;
 }
 
-button:focus {
-  transition: .4s ease-in-out .4s;
-  animation: scaling 1.5s ease-in-out 0s 1 both;
-}
-
-button:focus .txt {
+.btn::before {
+  content: "";
   position: absolute;
-  transform: translateY(-5em);
-  transition: .4s ease-in-out;
+  z-index: -1;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%) scaleY(0);
+  width: 3px;
+  height: 100%;
+  background: #0a3cff;
+  transition: transform 0.48s 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+    width 0.48s 0.1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-button:focus .txt2 {
-  transform: translateY(0) scale(1);
-  transition: .3s ease-in-out 1.7s;
+.btn:hover {
+  color: #ffffff;
+  transition: color 0.48s 0.24s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.48s 0.1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-button:focus .loader {
-  display: block;
-  transform: translate(0);
-  transition: .8s cubic-bezier(0,.4,1,.28) .4s;
-  animation: loading;
+.btn:hover::before {
+  transform: translateY(-50%) scaleY(1);
+  width: 100%;
+  transition: transform 0.48s 0.1s cubic-bezier(0.23, 1, 0.32, 1),
+    width 0.48s 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-@keyframes scaling {
-  20% {
-    height: 1.5em;
-  }
-
-  80% {
-    height: 1.5em;
-  }
-
-  100% {
-    height: 3.3em;
-  }
+.btn:active {
+  transform: scale(0.95);
 }
+

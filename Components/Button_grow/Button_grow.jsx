@@ -1,32 +1,45 @@
 import React from "react";
+import styles from "./Button_grow.module.css";
 
 const Button_grow = () => (
   <div>
-    <button className="flex items-center bg-blue-500 text-white gap-1 px-4 py-2 cursor-pointer text-gray-800 font-semibold tracking-widest rounded-md hover:bg-blue-400 duration-300 hover:gap-2 hover:translate-x-3">
-      Send
+    <button className={styles["fullscreen-btn"]}>
       <svg
-        className="w-5 h-5"
-        stroke="currentColor"
-        stroke-width="1.5"
-        viewBox="0 0 24 24"
-        fill="none"
+        viewBox="0 0 448 512"
+        height="1em"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
-          stroke-linejoin="round"
-          stroke-linecap="round"
-        ></path>
+        <path d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"></path>
       </svg>
+      <span className={styles["tooltip"]}>Fullscreen</span>
     </button>
   </div>
 );
 
 export default Button_grow;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
-  /* */
+  /*
+            
+        import React from 'react';
+
+        const Button_grow = () => (
+         <div>
+          <button className="fullscreen-btn">
+  <svg viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"
+    ></path>
+  </svg>
+  <span className="tooltip">Fullscreen</span>
+</button>
+        </div>
+        );
+
+        export default Button_grow;
+        
+        
+         */
 }

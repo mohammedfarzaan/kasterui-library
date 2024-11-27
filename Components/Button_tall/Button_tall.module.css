@@ -1,25 +1,12 @@
 
-/* From Uiverse.io by roufkp - Tags: button, hover */
+/* From Uiverse.io by Shoh2008 - Tags: button, valve */
 .button {
-  width: fit-content;
-  padding: 12px 28px;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: .1rem;
-  border: none;
-  background: transparent;
-  box-shadow: inset -20px -16px 0px 2px rgb(2 184 72);
-  border-radius: 100px;
-  color: rgb(67, 46, 19);
-  transition: all 1s cubic-bezier(.66, .00, .34, 1.00);
+  color: #f7f7f7;
+  background: #ff00f2;
+  height: 59px;
+  width: 167px;
+  font-size: 26px;
+  border-radius: 3px;
+  border: 10px #3b0876;
+  border-style: dashed double;
 }
-
-button:hover {
-  box-shadow: inset 0px 0px 0px 0px rgb(2 184 72);
-  background: rgb(33, 30, 24);
-  transform: translateY(-5px);
-  color: rgb(230, 221, 221);
-  font-weight: 700;
-}
-
-

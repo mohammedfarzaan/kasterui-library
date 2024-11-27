@@ -1,43 +1,48 @@
 
-/* From Uiverse.io by JkHuger - Tags: button */
-.rainbow-hover {
-  font-size: 16px;
-  font-weight: 700;
-  color: #ff7576;
-  background-color: #2B3044;
+/* From Uiverse.io by Adir-SL - Tags: pink, button, toy */
+button {
+  --fontSize: 2rem;
+  --button: 356, 80%;
+  --buttonColor: hsl(var(--button), 70%);
+  --sideColor: hsl(var(--button), 40%);
+  --text: hsl(var(--button), 30%);
+  --bgColor: #e8e8e8;
+  position: relative;
+  font-size: 0;
+  font-family: sans-serif;
+  transition: all 300ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+  border-radius: 999px;
+  padding: calc(var(--fontSize) / 2);
+  height: calc(var(--fontSize) * 2);
+  min-width: calc(var(--fontSize) * 2);
+  line-height: calc(var(--fontSize) * 0.75);
   border: none;
   outline: none;
+  background-color: var(--buttonColor);
+  transform: rotate(-25deg);
+  color: var(--text);
+  white-space: nowrap;
   cursor: pointer;
-  padding: 12px 24px;
-  position: relative;
-  line-height: 24px;
-  border-radius: 9px;
-  box-shadow: 0px 1px 2px #2B3044,
-    0px 4px 16px #2B3044;
-  transform-style: preserve-3d;
-  transform: scale(var(--s, 1)) perspective(600px)
-    rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
-  perspective: 600px;
-  transition: transform 0.1s;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: calc(var(--fontSize) / -25) calc(var(--fontSize) / 25) calc(var(--fontSize) / 25) #ffffffbb inset, calc(var(--fontSize) / -25) calc(var(--fontSize) / -50) calc(var(--fontSize) / 25) #ffffff88 inset,
+    0 0 calc(var(--fontSize) / 5) #0f004a77 inset, 0 0 0 calc(var(--fontSize) / 3.6) var(--buttonColor) inset,
+    0 0 calc(var(--fontSize) / 6.25) calc(var(--fontSize) / 3.125) #0f004a44 inset, calc(var(--fontSize) / -25) calc(var(--fontSize) / 12.5) 0 var(--sideColor),
+    calc(var(--fontSize) / -8.33) calc(var(--fontSize) / 12.5) calc(var(--fontSize) / 6.25) #0f004a44, calc(var(--fontSize) / -16.666) calc(var(--fontSize) / 12.5) calc(var(--fontSize) / 25) #0f004a66;
 }
 
-.sp {
-  background: linear-gradient(
-      90deg,
-      #866ee7,
-      #ea60da,
-      #ed8f57,
-      #fbd41d,
-      #2cca91
-    );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  display: block;
+button:hover {
+  transform: rotate(0);
+  overflow: visible;
+  font-size: var(--fontSize);
 }
 
-.rainbow-hover:active {
-  transition: 0.3s;
-  transform: scale(0.93);
+button::before,
+button::after {
+  content: ": ";
+  font-family: serif;
+  font-weight: bold;
+  text-shadow: calc(var(--fontSize) / 25) 0 0 var(--sideColor), 0 0 calc(var(--fontSize) / 12.5) #0f004a55,
+    calc(var(--fontSize) / 50) 0 0 var(--sideColor), calc(var(--fontSize) / 50) calc(var(--fontSize) / -50) 0 var(--sideColor);
+  color: var(--bgColor);
+  font-size: var(--fontSize);
 }

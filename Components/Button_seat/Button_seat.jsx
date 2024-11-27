@@ -1,11 +1,12 @@
 import React from "react";
-import styles from "./Button_seat.module.css";
 
 const Button_seat = () => (
   <div>
-    <button>
-      <span className={styles["text"]}>Hover me</span>
-      <span>Thanks!</span>
+    <button
+      className="cursor-pointer inline-flex items-center rounded-full px-9 py-3 text-xl font-mono font-semibold text-rose-600 hover:text-white border-2 border-rose-600
+hover:bg-rose-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-75 hover:bg-rose-600 duration-300  focus:bg-transparent"
+    >
+      BUTTON
     </button>
   </div>
 );
@@ -13,21 +14,5 @@ const Button_seat = () => (
 export default Button_seat;
 
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-        
-        import React from 'react';
-
-        const Button_seat = () => (
-         <div>
-          <button><span className="text">Hover me</span><span>Thanks!</span></button>
-        </div>
-        );
-
-        export default Button_seat;
-        
-        
-         */
+  /* */
 }

@@ -1,41 +1,26 @@
 
-/* From Uiverse.io by akshat-patel28 - Tags: glassmorphism, button, square, css, hover effect, css effect, hover button */
-.button {
-  width: 90px;
-  height: 90px;
-  border-radius: 15px;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 0px;
-  cursor: pointer;
-  outline: 0px;
-  padding: 0 2px;
-  font-weight: 600;
-  font-size: 18px;
+/* From Uiverse.io by kyle1dev  - Tags: button */
+.elegant-button {
+  background: linear-gradient(45deg, #00bfff, #1e90ff);
+  border: none;
+  border-radius: 8px;
   color: white;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.elegant-button:hover {
+  background: linear-gradient(45deg, #1e90ff, #00bfff);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+}
+.elegant-button:active {
+  background: linear-gradient(45deg, #00bfff, #1e90ff);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
 }
 
-.backdrop {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  background-color: rgb(36, 33, 228);
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  border-radius: 15px;
-  transform: translateX(-50%) translateY(-50%);
-  transition: all ease-in-out 0.5s;
-}
-
-.button:hover + .backdrop {
-  top: 48%;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  transform: rotate(15deg) translateX(-50%) translateY(-50%);
-}
-
-.button:active,.button:active +.backdrop {
-  box-shadow: none;
-}

@@ -1,16 +1,59 @@
 
-/* From Uiverse.io by ercnersoy - Tags: button */
-button {
-  padding: 1em 2em;
-  border-radius: 1em;
-  border: 5px solid #ffc107;
-  box-shadow: 0px 0px 0 rgb(227,165,0), 1px 1px 0 rgb(198,136,0), 2px 2px 0 rgb(170,108,0), 3px 3px 0 rgb(142,80,0), 4px 4px 3px rgba(0,0,0,0.63), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2);
+/* From Uiverse.io by vinodjangid07 - Tags: button, share, hover effect */
+.Btn {
+  width: 145px;
+  height: 45px;
+  background: linear-gradient(-45deg, #6bc5f8, #cf59e6, #6bc5f8, #cf59e6);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 5px 5px 0px #4dc6d93d;
+  background-size: 400% 400%;
 }
 
-.TxtEffect {
-  letter-spacing: .2rem;
-  font-size: 17px;
-  color: #ffc107;
-  font-family: "Arial Black", Gadget, sans-serif;
-  text-shadow: 0px 0px 0 rgb(227,165,0), 1px 1px 0 rgb(198,136,0), 2px 2px 0 rgb(170,108,0), 3px 3px 0 rgb(142,80,0), 4px 4px 3px rgba(0,0,0,0.63), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2);
+.svgContainer {
+  width: 45px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svgContainer svg {
+  width: 16px;
+}
+
+.svgContainer svg path {
+  fill: white;
+}
+
+.textContainer {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+}
+
+.Btn:hover {
+  animation: gradient 5s ease infinite;
+}
+/* Button's gradient animation */
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
 }

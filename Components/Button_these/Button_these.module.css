@@ -1,52 +1,29 @@
 
-/* From Uiverse.io by newrocker2468 - Tags: simple, green, button, hover, simple button, #button */
-.button1 {
-  background-color: white;
-  font-weight: bold;
-  font-size: 1em;
-  border: none;
-  border-radius: 5px;
-  padding: 1.2em;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
+/* From Uiverse.io by ArturCodeCraft - Tags: button, links, btn */
+/* <reset-style> ============================ */
+a {
+  text-decoration: none;
+}
+/* <main-style> ============================ */
+.menu__link {
+  color: #fff;
+  line-height: 2;
   position: relative;
-  overflow: hidden;
-  transition: all 500ms;
-  z-index: 99;
 }
 
-.button1::after {
-  content: "";
+.menu__link::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
   position: absolute;
-  width: 25px;
-  height: 25px;
-  border-radius: 20px;
-  bottom: -30px;
-  left: 45px;
-  background-color: #5affc0;
-  z-index: -99;
-  transition: all 500ms;
+  bottom: -.25rem;
+  left: 50%;
+  transition: width .4s, left .4s;
 }
 
-.button1:hover::after {
-  width: 120px;
-  height: 60px;
-  border-radius: 10px;
-  transition: all 500ms;
-  bottom: -1px;
-  left: -1px;
+.menu__link:hover::before {
+  width: 100%;
+  left: 0;
 }
-
-.button1:hover {
-  border-radius: 20px;
-  box-shadow: 0 0 100px 20px #5affc0;
-}
-
-.button1:active {
-  transform: translateY(10px);
-}
-
-.button1:focus {
-  border: 5px solid #a0fad8;
-}
-

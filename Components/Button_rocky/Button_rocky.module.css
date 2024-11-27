@@ -1,60 +1,61 @@
 
-/* From Uiverse.io by aguerquin  - Tags: button, hover, cube, github, btn, hover button, 3d button, button hover effect  */
-.button-icon {
+/* From Uiverse.io by satyamchaudharydev - Tags: button */
+button {
+  --primary-color: #645bff;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
   display: flex;
-  border: 3px #fff solid;
-  width: fit-content;
-  height: fit-content;
-  cursor: pointer;
-}
-
-.icon {
-  background-color: #fff;
-  padding: 10px 10px 5px 10px;
-}
-
-.icon svg {
-  width: 25px;
-  height: 25px;
-}
-
-.cube {
-  transition: all 0.4s;
-  transform-style: preserve-3d;
-  width: 200px;
-  height: 20px;
-}
-
-.button-icon:hover {
-  border-color: #ff98a2;
-}
-
-.button-icon:hover .cube {
-  transform: rotateX(90deg);
-}
-
-.side {
-  position: absolute;
-  height: 47px;
-  width: 200px;
-  display: flex;
-  font-size: 0.8em;
-  justify-content: center;
+  transition: 0.2s background;
   align-items: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  gap: 0.6em;
   font-weight: bold;
 }
 
-.top {
-  background: #ff98a2;
-  color: #fff;
-  transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.front {
-  background: #222229;
-  color: #fff;
-  transform: translate3d(0, 0, 1em);
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
 }
 
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}

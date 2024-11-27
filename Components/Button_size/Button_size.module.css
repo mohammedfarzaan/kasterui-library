@@ -1,76 +1,98 @@
 
-/* From Uiverse.io by roroland - Tags: flat design, button, flip, animated, two side */
-.flip-button {
-  --col1: #4CAF50;
-  --col2: #4f16ac;
-  --col3: #d8d1e4;
+/* From Uiverse.io by r7chardgh - Tags: 3d, button, nuclear-button */
+.button {
+  display: flex;
   position: relative;
-  min-width: 10rem;
-  min-height: 3rem;
-  perspective: 500px;
-}
-
-.flip-button .button {
-  appearance: none;
-  position: absolute;
-  inset: 0;
-  height: 100%;
-  border-radius: 30px;
-  font-size: .75em;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  background-color: var(--col1);
-  border: none;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 1s ease-out .5s;
+  background: none;
+  border: 0;
   transform-style: preserve-3d;
-  width: 100%;
-}
-
-.flip-button:hover .button {
-  background-color: var(--col2);
+  transform: rotateX(45deg)rotateZ(45deg);
   cursor: pointer;
-  transform: rotateY(180deg) scale(1.5);
-  transition: all .3s ease-out;
 }
 
-.flip-button:hover .button:active {
-  background-color: rgba(81, 23, 173, 0.75);
-  transform: rotateY(180deg) scale(1.45);
-  outline: 10px solid var(--col3);
-  transition: all .1s ease-out;
-}
-
-.flip-button .button::after {
-  content: '';
-  box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.25);
-  display: block;
-  border-radius: 30px;
-  height: 100%;
-  width: 100%;
-  transition: all .3s ease-out .95s;
-}
-
-.flip-button:hover .button::after {
-  box-shadow: 0px 0px 1px 10px rgba(160, 29, 149, 0.15);
-  transition: all .3s ease-out;
-}
-
-.flip-button .text-front,
-.flip-button .text-back {
-  display: block;
+.button > .red {
   position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
   top: 50%;
   left: 50%;
-  padding: 0 1.5em;
-  transform: translate(-50%, -50%);
-  backface-visibility: hidden;
-  width: 100%;
+  background-color: rgb(255, 49, 49);
+  transform: translate(-50%,-50%);
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.flip-button .text-back {
-  transform: translate(-50%, -50%) rotateY(180deg);
+.red::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1em;
+  left: 0;
+  background-color: rgb(255, 49, 49);
+  transform: rotateZ(-45deg) translateY(-.5em);
+  transition: height 150ms, transform 150ms;
+}
+
+.red::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: rgb(255, 49, 49);
+  transform: rotateZ(-45deg) translateY(-1em);
+  transition: transform 150ms;
+  border: 1px solid rgb(255, 196, 196);
+}
+
+.button > .base {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  background-color: rgb(245, 216, 90);
+  transform-style: preserve-3d;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgb(255, 255, 255);
+}
+
+.base::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(245, 216, 90);
+  transform-origin: bottom;
+  transform: rotateX(90deg);
+  border-right: 1px solid #fff;
+}
+
+.base::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(245, 216, 90);
+  transform-origin: right;
+  transform: rotateY(-90deg);
+  border-left: 1px solid #fff;
+}
+
+.button:active>.red::before {
+  transform: rotateZ(-45deg) translateY(0);
+  height: 0;
+}
+
+.button:active>.red::after {
+  transform: rotateZ(-45deg) translateY(0);
 }
 
 

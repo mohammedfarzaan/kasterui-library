@@ -1,44 +1,9 @@
 import React from "react";
-import styles from "./Button_love.module.css";
 
 const Button_love = () => (
   <div>
-    <button
-      className={styles["action_has"] + styles["has_saved"]}
-      aria-label="save"
-      type="button"
-    >
-      <svg
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="20"
-        stroke-linejoin="round"
-        stroke-linecap="round"
-        stroke-width="2"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        fill="none"
-      >
-        <path
-          d="m19,21H5c-1.1,0-2-.9-2-2V5c0-1.1.9-2,2-2h11l5,5v11c0,1.1-.9,2-2,2Z"
-          stroke-linejoin="round"
-          stroke-linecap="round"
-          data-path="box"
-        ></path>
-        <path
-          d="M7 3L7 8L15 8"
-          stroke-linejoin="round"
-          stroke-linecap="round"
-          data-path="line-top"
-        ></path>
-        <path
-          d="M17 20L17 13L7 13L7 20"
-          stroke-linejoin="round"
-          stroke-linecap="round"
-          data-path="line-bottom"
-        ></path>
-      </svg>
+    <button className="border-green-100 hover:border-green-200 text-green-900 rounded-lg border-4 cursor-pointer px-8 py-3 font-bold -skew-x-12 bg-gradient-to-bl from-green-400 to-green-300 opacity-80 hover:opacity-100 focus:opacity-100 focus:scale-105 transition-all duration-300 font-sans">
+      Button
     </button>
   </div>
 );
@@ -46,53 +11,5 @@ const Button_love = () => (
 export default Button_love;
 
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-        
-        import React from 'react';
-
-        const Button_love = () => (
-         <div>
-          <button className="action_has has_saved" aria-label="save" type="button">
-  <svg
-    aria-hidden="true"
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="20"
-    stroke-linejoin="round"
-    stroke-linecap="round"
-    stroke-width="2"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    fill="none"
-  >
-    <path
-      d="m19,21H5c-1.1,0-2-.9-2-2V5c0-1.1.9-2,2-2h11l5,5v11c0,1.1-.9,2-2,2Z"
-      stroke-linejoin="round"
-      stroke-linecap="round"
-      data-path="box"
-    ></path>
-    <path
-      d="M7 3L7 8L15 8"
-      stroke-linejoin="round"
-      stroke-linecap="round"
-      data-path="line-top"
-    ></path>
-    <path
-      d="M17 20L17 13L7 13L7 20"
-      stroke-linejoin="round"
-      stroke-linecap="round"
-      data-path="line-bottom"
-    ></path>
-  </svg>
-</button>
-        </div>
-        );
-
-        export default Button_love;
-        
-        
-         */
+  /* */
 }

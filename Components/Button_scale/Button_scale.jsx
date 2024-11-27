@@ -1,19 +1,23 @@
 import React from "react";
-import styles from "./Button_scale.module.css";
 
 const Button_scale = () => (
   <div>
-    <button>
+    <button className="inline-flex items-center px-4 py-2 bg-red-600 transition ease-in-out delay-75 hover:bg-red-700 text-white text-sm font-medium rounded-md hover:-translate-y-1 hover:scale-110">
       <svg
-        height="32"
-        width="32"
+        stroke="currentColor"
         viewBox="0 0 24 24"
+        fill="none"
+        className="h-5 w-5 mr-2"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M0 0H24V24H0z" fill="none"></path>
-        <path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z"></path>
+        <path
+          d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+          strokeWidth="2"
+          strokeLinejoin="round"
+          strokeLinecap="round"
+        ></path>
       </svg>
-      Like
+      Delete
     </button>
   </div>
 );
@@ -21,24 +25,5 @@ const Button_scale = () => (
 export default Button_scale;
 
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-        
-        import React from 'react';
-
-        const Button_scale = () => (
-         <div>
-          <button>
-  <svg height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H24V24H0z" fill="none"></path><path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z"></path></svg>
-  Like
-</button>
-        </div>
-        );
-
-        export default Button_scale;
-        
-        
-         */
+  /* */
 }

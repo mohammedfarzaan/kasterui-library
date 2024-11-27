@@ -3,25 +3,22 @@ import styles from "./Button_powder.module.css";
 
 const Button_powder = () => (
   <div>
-    <button className={styles["button"]}>Vite Button</button>
+    <button className={styles["animated-button"]}>hover me</button>
   </div>
 );
 
 export default Button_powder;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_powder = () => (
          <div>
-          <button className="button">
-  Vite Button
-</button>
+          <button className="animated-button">hover me</button>
         </div>
         );
 

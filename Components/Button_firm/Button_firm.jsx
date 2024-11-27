@@ -3,36 +3,58 @@ import styles from "./Button_firm.module.css";
 
 const Button_firm = () => (
   <div>
-    <button className={styles["connectBtn"]}>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="1em"
-        viewBox="0 0 640 512"
-        fill="white"
-      >
-        <path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path>
-      </svg>
-      Connect
-    </button>
+    <div className={styles["box"]}>
+      <button className={styles["button"]}>RAIN</button>
+      <div className={styles["rain"]}>
+        <span style="--i: 15" className={styles["raindrop"]}></span>
+        <span style="--i: 8" className={styles["raindrop"]}></span>
+        <span style="--i: 19" className={styles["raindrop"]}></span>
+        <span style="--i: 9" className={styles["raindrop"]}></span>
+        <span style="--i: 12" className={styles["raindrop"]}></span>
+        <span style="--i: 14" className={styles["raindrop"]}></span>
+        <span style="--i: 11" className={styles["raindrop"]}></span>
+        <span style="--i: 18" className={styles["raindrop"]}></span>
+        <span style="--i: 16" className={styles["raindrop"]}></span>
+        <span style="--i: 9" className={styles["raindrop"]}></span>
+        <span style="--i: 19" className={styles["raindrop"]}></span>
+        <span style="--i: 17" className={styles["raindrop"]}></span>
+        <span style="--i: 9" className={styles["raindrop"]}></span>
+        <span style="--i: 20" className={styles["raindrop"]}></span>
+      </div>
+    </div>
   </div>
 );
 
 export default Button_firm;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_firm = () => (
          <div>
-          <button className="connectBtn">
-  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" fill="white"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path></svg>
-  Connect
-</button>
+          <div className="box">
+  <button className="button">RAIN</button>
+  <div className="rain">
+    <span style="--i: 15" className="raindrop"></span>
+    <span style="--i: 8" className="raindrop"></span>
+    <span style="--i: 19" className="raindrop"></span>
+    <span style="--i: 9" className="raindrop"></span>
+    <span style="--i: 12" className="raindrop"></span>
+    <span style="--i: 14" className="raindrop"></span>
+    <span style="--i: 11" className="raindrop"></span>
+    <span style="--i: 18" className="raindrop"></span>
+    <span style="--i: 16" className="raindrop"></span>
+    <span style="--i: 9" className="raindrop"></span>
+    <span style="--i: 19" className="raindrop"></span>
+    <span style="--i: 17" className="raindrop"></span>
+    <span style="--i: 9" className="raindrop"></span>
+    <span style="--i: 20" className="raindrop"></span>
+  </div>
+</div>
         </div>
         );
 

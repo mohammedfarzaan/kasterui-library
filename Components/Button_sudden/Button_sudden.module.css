@@ -1,50 +1,81 @@
 
-/* From Uiverse.io by Kemboi-Dun - Tags: button */
+/* From Uiverse.io by Phelix652 - Tags: button */
 .btn {
-  font-size: 17px;
-  background: transparent;
-  border: none;
-  padding: 1em 1.5em;
-  color: #f8f8f8;
-  text-transform: uppercase;
-  position: relative;
-  transition: .5s ease;
-  cursor: pointer;
+  --btn-gradient: var(--btn-gradient-from),var(--btn-gradient-to);
+  border: 0 none;
+  appearance: none;
+  transition: all .3s;
+  border-radius: 10px;
+  background-color: var(--btn-bg);
+  box-shadow: 0 0 2px 2px var(--btn-shadow), 0 0 4px 4px var(--btn-shadow), 0 0 8px 8px var(--btn-shadow);
 }
 
-.btn::before {
-  content: '';
+.btn,
+.btn * {
+  box-sizing: border-box;
+}
+
+.btn-inner {
+  position: relative;
+  border-radius: inherit;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  min-width: 10rem;
+  padding: 1.5rem 2rem;
+  overflow: hidden;
+  color: var(--btn-text-color);
+}
+
+.btn-label {
   position: absolute;
-  right: 0;
-  top: 0;
-  height: 2px;
-  width: 0;
-  background-color: #f8f8f8;
-  transition: .5s ease;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+  top: 1px;
+  border-radius: inherit;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--btn-bg);
+  background-image: linear-gradient(to bottom,var(--btn-gradient));
 }
 
 .btn:hover {
-  color: #181818;
-  transition-delay: .5s;
+  transform: translateY(-5px);
+  letter-spacing: 3px;
+  box-shadow: rgba(0, 131, 253, 0.596) 0px 1px 80px 40px;
 }
 
-.btn:hover::before {
-  width: 100%;
+.btn:active {
+  border-radius: 40px;
+  transform: translateY(4px);
+  transition: 0.1s;
+  letter-spacing: 3px;
+  box-shadow: rgb(0, 131, 253) 0px 1px 80px 40px;
 }
 
-.btn::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 0;
-  width: 100%;
-  background-color: #f8f8f8;
-  transition: .4s ease;
-  z-index: -1;
+.btn:active .btn-blur:before {
+  --transition: 0.5s;
 }
 
-.btn:hover::after {
-  height: 100%;
-  transition-delay: 0.4s;
+.btn--primary {
+  --btn-bg: #111111;
+  --btn-gradient-from: #111111;
+  --btn-gradient-to: rgba(29, 6, 240, 0.5);
+  --btn-text-color: #ffffff;
+  --btn-shadow: #9b14c438;
 }
+
+@keyframes turn {
+  0% {
+    transform: translateY(-50%) rotate(0deg)
+  }
+
+  to {
+    transform: translateY(-50%) rotate(1turn)
+  }
+}
+

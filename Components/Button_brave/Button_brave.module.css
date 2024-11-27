@@ -1,97 +1,51 @@
 
-/* From Uiverse.io by mrhyddenn - Tags: button */
-.icon-btn {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #cdcdcd;
-  background: white;
-  border-radius: 25px;
-  overflow: hidden;
+/* From Uiverse.io by MuhammadHasann - Tags: button */
+button {
   position: relative;
-  transition: width 0.2s ease-in-out;
-  font-weight: 500;
-  font-family: inherit;
+  padding: 13px 35px;
+  background: #6d7973;
+  font-size: 17px;
+  font-weight: 900;
+  color: #ffffff;
+  border: 2px solid #6d7973;
+  border-radius: 25px;
+  transition: all .3s ease-in-out;
 }
 
-.add-btn:hover {
-  width: 120px;
-}
-
-.add-btn::before,
-.add-btn::after {
-  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+button::after {
   content: "";
   position: absolute;
-  height: 4px;
-  width: 10px;
-  top: calc(50% - 2px);
-  background: seagreen;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 124px;
+  height: 45px;
+  border: 3px solid #6d7973;
+  border-radius: 25px;
+  transition: all .3s ease-in-out;
+  z-index: 2;
 }
 
-.add-btn::after {
-  right: 14px;
-  overflow: hidden;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+button:hover::after {
+  animation: radar_45011 1s ease infinite .3s;
 }
 
-.add-btn::before {
-  left: 14px;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
+@keyframes radar_45011 {
+  from {
+    opacity: 1;
+    width: 124px;
+    height: 45px;
+    border-radius: 25px;
+  }
+
+  to {
+    opacity: 0;
+    width: 470px;
+    height: 220px;
+    border-radius: 150px;
+  }
 }
 
-.icon-btn:focus {
-  outline: none;
-}
-
-.btn-txt {
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-.add-btn:hover::before,
-.add-btn:hover::after {
-  width: 4px;
-  border-radius: 2px;
-}
-
-.add-btn:hover .btn-txt {
-  opacity: 1;
-}
-
-.add-icon::after,
-.add-icon::before {
-  transition: all 0.2s ease-in-out;
-  content: "";
-  position: absolute;
-  height: 20px;
-  width: 2px;
-  top: calc(50% - 10px);
-  background: seagreen;
-  overflow: hidden;
-}
-
-.add-icon::before {
-  left: 22px;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
-}
-
-.add-icon::after {
-  right: 22px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-}
-
-.add-btn:hover .add-icon::before {
-  left: 15px;
-  height: 4px;
-  top: calc(50% - 2px);
-}
-
-.add-btn:hover .add-icon::after {
-  right: 15px;
-  height: 4px;
-  top: calc(50% - 2px);
+button:active {
+  transform: scale(.9);
 }

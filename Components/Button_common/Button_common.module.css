@@ -1,73 +1,44 @@
 
-/* From Uiverse.io by sashadubovyi  - Tags: simple, animation, success, button */
-.btn {
-  cursor: pointer;
-  position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 20px;
-  font-weight: 400;
-  border: none;
+/* From Uiverse.io by Df12345677 - Tags: button, animated, add */
+.button {
+  height: 60px;
+  width: 200px;
+  background-color: #132233;
+  border: 2px solid rgb(182, 128, 128);
+  color: #eee;
+  transition: .6s;
+  font-size: 15px;
+  border-radius: 50px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  background: transparent;
-  color: #f93d21;
-  transition: all 100ms;
+  /* padding: 20px; */
   overflow: hidden;
-  height: 50px;
-  width: 170px;
 }
 
-.left-span {
-  position: absolute;
-  left: 0;
-  height: 50px;
-  width: 15px;
-  border-top: 1px solid #f93d21;
-  border-bottom: 1px solid #f93d21;
-  border-left: 1px solid #f93d21;
-  transition: all 500ms;
+.button span {
+  transform: translateX(10px);
+  transition: .5s;
 }
 
-.right-span {
-  position: absolute;
-  right: 0;
-  height: 50px;
-  width: 15px;
-  border-top: 1px solid #f93d21;
-  border-bottom: 1px solid #f93d21;
-  border-right: 1px solid #f93d21;
-  transition: all 500ms;
+.button svg {
+  transform: translateX(-300px);
+  transition: .6s;
+  z-index: 3;
+  height: 20px;
 }
 
-.text-btn {
-  position: absolute;
-  transform: translateX(0px);
-  width: 110px;
-  transition: all 200ms;
+.button:hover {
+  width: 60px;
+  background-color: rgba(51, 34, 51, 0.815);
+  box-shadow: 20px 20px 96px #bebebe,-20px -20px 96px #ffffff;
 }
 
-.hidden-text-btn {
-  position: absolute;
-  transform: translateX(150px);
-  opacity: 0;
-  transition: all 200ms;
+.button:hover svg {
+  transform: translateX(-5px);
 }
 
-.btn:hover .text-btn {
-  transform: translateX(-150px);
-  opacity: 0;
+.button:hover span {
+  transform: translateY(70px);
+  font-size: .1rem;
 }
-
-.btn:hover .hidden-text-btn {
-  transform: translateX(0px);
-  opacity: 1;
-}
-
-.btn:hover .right-span,
-.btn:hover .left-span {
-  width: 100%;
-}
-

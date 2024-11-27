@@ -1,68 +1,29 @@
 
-/* From Uiverse.io by Dashrath-Sharma - Tags: button, hover, glow, code, border, box */
-button {
-  color: red;
-  outline: none;
+/* From Uiverse.io by gksckt - Tags: button */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 170px;
+  height: 60px;
+  font-size: 18px;
+  background: #fff;
   border: none;
-  font-size: 17px;
-  padding: 1em 2em;
-  position: relative;
-  background: none;
+  border-radius: 50px;
+  color: #000;
+  outline: none;
   cursor: pointer;
+  transition: all 0.4s;
 }
 
-button:active {
-  transform: scale(.98);
-  box-shadow: .1px .1px 2px red;
-}
-
-button span {
-  position: absolute;
-  background: red;
-  transition: .5s;
-  box-shadow: 1px 1px 20px red;
-}
-
-button span:nth-child(1) {
-  top: 0;
-  left: 0;
-  width: 3px;
-  height: 30%;
-}
-
-button:hover span:nth-child(1) {
-  height: 100%;
-}
-
-button span:nth-child(2) {
-  top: 0;
-  left: 0;
-  width: 15%;
-  height: 3px;
-}
-
-button:hover span:nth-child(2) {
-  width: 100%;
-}
-
-button span:nth-child(3) {
-  bottom: 0;
-  right: 0;
-  width: 3px;
-  height: 30%;
-}
-
-button:hover span:nth-child(3) {
-  height: 100%;
-}
-
-button span:nth-child(4) {
-  bottom: 0;
-  right: 0;
-  width: 15%;
-  height: 3px;
-}
-
-button:hover span:nth-child(4) {
-  width: 100%;
+.btn:hover {
+  box-shadow: inset 0 0 0 4px #ef476f, 
+              inset 0 0 0 8px #ffd166, 
+              inset 0 0 0 12px #06d6a0,
+              inset 0 0 0 16px #118ab2;
+  background: #073b4c;
+  color: #fff;
 }

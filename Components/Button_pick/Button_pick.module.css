@@ -1,66 +1,29 @@
 
-/* From Uiverse.io by simontheonlyone - Source: no source link just the close button of Microsoft Windows - Tags: button, animated, click animation, close, minimal */
+/* From Uiverse.io by Carlos-vargs - Tags: button, animated, video, play */
 .button {
-  position: relative;
-  width: 6em;
-  height: 4em;
-  border: none;
-  background: none;
-}
-
-.X {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 33%;
-  width: 2em;
-  height: 1.5px;
-  background-color: #fff;
-  transform: rotate(45deg);
-}
-
-.Y {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 33%;
-  width: 2em;
-  height: 1.5px;
-  background-color: #fff;
-  transform: rotate(-45deg);
-}
-
-.close {
-  position: absolute;
   display: flex;
-  align-items: center;
   justify-content: center;
-  bottom: -40%;
-  left: 70%;
-  width: 3em;
-  height: 1.7em;
-  font-size: 16px;
-  background-color: rgb(254, 255, 225);
-  color: #000;
-  border: 1px solid #000;
-  pointer-events: none;
-  opacity: 0;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: linear-gradient(30deg, rgb(255, 130, 0) 20%, rgb(255, 38, 0) 80%);
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+  animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
+  align-items: center;
+  border: 0;
 }
 
-.button:hover {
-  background-color: rgb(210, 0, 0);
+.button:is(:hover, :focus) {
+  transform: scale(1.2);
 }
 
-.button:active {
-  background-color: rgb(130, 0, 0);
-}
-
-.button:hover > .close {
-  animation: close 0.2s forwards 1.25s;
-}
-
-@keyframes close {
+@keyframes pulse {
   100% {
-    opacity: 1;
+    box-shadow: 0 0 0 45px rgba(193,244,246,0);
   }
 }
+
+
+

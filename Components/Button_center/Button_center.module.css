@@ -1,152 +1,62 @@
 
-/* From Uiverse.io by Yatsu68 - Tags: button */
-button {
-  all: unset;
-  background-color: #1b2164;
-  color: #fff;
-  border-radius: 8px;
-  padding: 1rem;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
+/* From Uiverse.io by vinodjangid07  - Tags: button, save, hover effect, click effect, bookmark */
+.bookmarkBtn {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  background-color: rgb(12, 12, 12);
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
 }
 
-button span {
-  letter-spacing: 1.2px;
-  padding-left: 0.8rem;
-  padding-right: 0.6rem;
-  font-weight: 600;
+.IconContainer {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: 0.3s;
 }
 
-button:hover {
-  background: linear-gradient(-45deg, #1b2164, #6a33a8, #1b2164, #2ba6f5);
-  background-size: 400% 400%;
-  -webkit-transform: scale(1.01);
-  -ms-transform: scale(1.01);
-  transform: scale(1.01);
-  -webkit-animation: scaling-and-gradient 10s ease infinite;
-  animation: scaling-and-gradient 10s ease infinite;
+.icon {
+  border-radius: 1px;
 }
 
-button svg {
-  text-shadow: 0px 7px rgba(81,67,21,0.8), 
-	  -3px 0px 7px rgba(81,67,21,0.8), 
-	  0px 4px 7px rgba(81,67,21,0.8);
-  -webkit-animation: slide-in 1.6s ease-out both;
-  animation: slide-in 1.6s ease-out both;
+.text {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  transition-duration: 0.3s;
+  font-size: 1.04em;
 }
 
-button:active svg {
-  -webkit-animation: slide-out 0.4s ease-in forwards;
-  animation: slide-out 0.4s ease-in forwards;
+.bookmarkBtn:hover .IconContainer {
+  width: 90px;
+  transition-duration: 0.3s;
 }
 
-@-webkit-keyframes slide-out {
-  0% {
-    -webkit-transform: translateY(0) translateX(0) rotate(-35);
-    transform: translateY(0) translateX(0) rotate(-35);
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: translateY(-300px) translateX(-300px);
-    transform: translateY(-300px) translateX(-300px);
-    opacity: 0;
-  }
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: 0.3s;
 }
 
-@keyframes slide-out {
-  0% {
-    -webkit-transform: translateY(0) translateX(0) rotate(-35);
-    transform: translateY(0) translateX(0) rotate(-35);
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: translateY(-300px) translateX(-300px);
-    transform: translateY(-300px) translateX(-300px);
-    opacity: 0;
-  }
+.bookmarkBtn:active {
+  transform: scale(0.95);
+  transition-duration: 0.3s;
 }
 
-@-webkit-keyframes slide-in {
-  0% {
-    -webkit-transform: translateY(300px) translateX(300px);
-    transform: translateY(300px) translateX(300px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateY(0) translateX(0) rotate(-35);
-    transform: translateY(0) translateX(0) rotate(-35);
-    opacity: 1;
-  }
-}
-
-@keyframes slide-in {
-  0% {
-    -webkit-transform: translateY(300px) translateX(300px);
-    transform: translateY(300px) translateX(300px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateY(0) translateX(0) rotate(-35);
-    transform: translateY(0) translateX(0) rotate(-35);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes scaling-and-gradient {
-  0% {
-    background-position: 0% 50%;
-    scale: 1;
-  }
-
-  25% {
-    scale: 1.04;
-  }
-
-  50% {
-    background-position: 100% 50%;
-    scale: 1.06;
-  }
-
-  50% {
-    scale: 1.04;
-  }
-
-  100% {
-    background-position: 0% 50%;
-    scale: 1;
-  }
-}
-
-@keyframes scaling-and-gradient {
-  0% {
-    background-position: 0% 50%;
-    scale: 1;
-  }
-
-  25% {
-    scale: 1.04;
-  }
-
-  50% {
-    background-position: 100% 50%;
-    scale: 1.06;
-  }
-
-  50% {
-    scale: 1.04;
-  }
-
-  100% {
-    background-position: 0% 50%;
-    scale: 1;
-  }
-}

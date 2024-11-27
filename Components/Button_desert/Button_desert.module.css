@@ -1,58 +1,67 @@
 
-/* From Uiverse.io by garerim - Tags: button */
-button {
-  z-index: 2;
-  display: block;
-  width: fit-content;
-  height: auto;
-  outline: none;
-  border: none;
-  background-color: inherit;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 10px 20px;
+/* From Uiverse.io by JaydipPrajapati1910 - Tags: glassmorphism, animation, blue, button, circle */
+.button {
+  width: 160px;
+  height: 55px;
+  transition: all 0.2s;
   position: relative;
   cursor: pointer;
+  background: none;
+  outline: none;
+  border: none;
 }
 
-button::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
+.button-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(255,255,255,.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  color: blue;
+}
+
+.button:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(blue,darkblue);
+  border-radius: 50%;
   position: absolute;
-  top: 0%;
-  left: 0%;
-  transform: scaleX(0.2) scaleY(0.5) translate(250%, 100%);
-  border-top: solid 2px #333;
-  border-left: solid 4px #333;
-  transition: all .4s ease-in-out;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
 }
 
-button::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%) scaleX(0.2) scaleY(0.5);
-  border-bottom: solid 2px #333;
-  border-right: solid 4px #333;
-  transition: all .4s ease-in-out;
+.circle:nth-child(1) {
+  top: 0px;
+  left: 0px;
 }
 
-button:hover::before {
-  transform: translate(0%, 0%) scaleX(1) scaleY(1);
-  border-top: solid 1px #333;
-  border-left: solid 1px #333;
+.circle:nth-child(2) {
+  bottom: 0px;
+  right: 0px;
+  animation-name: move-down1;
 }
 
-button:hover::after {
-  transform: scaleX(1) scaleY(1) translate(0%, 0%);
-  border-bottom: solid 1px #333;
-  border-right: solid 1px #333;
+@keyframes move-up6 {
+  to {
+    transform: translateY(-5px);
+  }
 }
+
+@keyframes move-down1 {
+  to {
+    transform: translateY(5px);
+  }
+}
+
+

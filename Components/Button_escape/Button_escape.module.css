@@ -1,40 +1,32 @@
 
-/* From Uiverse.io by aadium - Tags: button, car, formula1 */
-.carbutton {
-  width: 200px;
-  height: 70px;
-  padding: 20px;
-  background: #212121;
-  border: 6px double #e8e8e8;
-  transition: 0.2s;
+/* From Uiverse.io by escannord  - Tags: simple, button, btn */
+.button {
+  cursor: pointer;
+  display: inline-block;
+  width: 14rem;
+  height: 4rem;
+  border: solid 2px;
+  background: linear-gradient(to right, #ff00ffb0, #ff9900a1, #ff00ff9f),
+    radial-gradient(rgb(255, 255, 255), rgb(255, 0, 0));
+  border-radius: 20px;
+  font-weight: 800;
+  position: relative;
+  border-image: linear-gradient(to right, #5e005e, #804d00, #eb1beb);
+  border-image-slice: 50;
 }
 
-.caption {
-  color: #e8e8e8;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
-  transition: 0.2s;
-}
-
-.car {
-  fill: #e8e8e8;
-  width: 50px;
-  height: 50px;
-  margin-left: -120px;
-  margin-top: -35px;
-  transition: 0.2s ease-in-out;
-}
-
-.carbutton:not(:hover) .car {
-  opacity: 0%;
-  transform: translateX(-150px);
-}
-
-.carbutton:hover .caption {
-  opacity: 0%;
-}
-
-.carbutton:focus .car {
-  transform: translateX(120px);
+.button::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  border: 1px solid rgba(255, 255, 255, 0.384);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.575),
+    inset 0px 0px 0px 0px rgba(255, 255, 255, 0.575);
 }
 

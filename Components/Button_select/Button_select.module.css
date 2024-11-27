@@ -1,28 +1,45 @@
 
-/* From Uiverse.io by deepak16375 - Tags: gradient, button, animated, gradients, hover effect, hoverme, hover button */
-.button {
-  font-size: 17px;
-  font-weight: bold;
-  border: 0px;
+/* From Uiverse.io by mostafabazyar - Tags: button */
+button {
+  position: relative;
+  margin: 1rem;
+  z-index: 2;
+  border-radius: 8px;
+  appearance: none;
+  padding: 1em 2em;
+  transition: all 0.2s;
+}
+
+button {
+  padding: 1.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+button::before {
+  content: "6";
+  position: absolute;
+  display: flex;
+  top: -0.75em;
+  right: -0.75em;
+  height: 1.8em;
+  width: 1.8em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: red;
   color: white;
-  background-color: #1877f2;
-  padding: 1rem 2rem;
-  border-radius: 15px;
-  cursor: pointer;
+  z-index: 999;
+  transition: all 0.2s;
 }
 
-.button:hover {
-  background-image: linear-gradient(90deg,
-		#B799FF 0%,
-		#ACBCFF 50%,
-		#AEE2FF 75%,
-		#E6FFFD 100%);
-  color: black;
-  animation: slide 10s linear infinite;
+button:hover {
+  border-radius: 3px;
+  border-color: red;
 }
 
-@keyframes slide {
-  100% {
-    background-position: 50rem;
-  }
+button:hover::before {
+  height: 2em;
+  width: 2em;
+  font-size: 1.5em;
 }

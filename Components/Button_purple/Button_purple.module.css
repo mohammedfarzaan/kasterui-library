@@ -1,131 +1,71 @@
 
-/* From Uiverse.io by Navarog21 - Tags: button */
-button {
-  --sunGradient: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
-  --moonGradient: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* From Uiverse.io by KSAplay - Tags: button */
+.button {
   position: relative;
-  width: 140px;
-  height: 60px;
-  color: white;
-  font-size: 1em;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 15px;
-  background-color: transparent;
-  transition: 0.5s;
-  overflow: hidden;
-  border: 4px solid black;
-}
-
-button:hover {
-  box-shadow: -15px -15px 500px white;
-  transition: 0.2s;
-}
-
-button:hover span {
-  background: var(--sunGradient);
-}
-
-.state {
-  position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: inherit;
-  transition: 0.4s;
-  width: 85%;
-  height: 82%;
-  border: 4px solid black;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.5em 2em;
+  border-radius: 2em;
+  border: 0 solid #fefefe;
+  background-color: #ece5d8;
+  color: #3b4255;
+  box-shadow: 0 0 9px -4px #797979;
+  transition: 100ms;
 }
 
-#sun {
-  display: none;
-  background-color: #212121;
-  opacity: 0.85;
+.button::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 2em;
+  background-color: #ffdf99;
+  opacity: 0;
+  z-index: 1;
+  transition: 100ms;
 }
 
-#moon {
-  background-color: #212121;
-  opacity: 0.85;
-}
-
-button:hover #sun {
+.circle {
+  position: absolute;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0.4em;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 1em;
+  background-color: #313131;
 }
 
-button:hover #moon {
-  display: none;
-}
-
-button:hover .lightRotation {
-  animation: 1s linear reverse infinite rotation413;
-}
-
-button:hover .lightRotation2 {
-  animation: 2s linear infinite rotation_413;
-}
-
-button:hover .lightRotation3 {
-  animation: 10s linear reverse infinite rotation_413;
-}
-
-button:hover .lightRotation4 {
-  animation: 3s linear infinite rotation_413;
-}
-
-.lightRotation {
+.circle::before {
   position: absolute;
-  transition: 0.4s;
-  z-index: -1;
-  width: 60px;
-  height: 500px;
-  transform: rotate(50deg);
-  border-radius: inherit;
-  background: var(--moonGradient);
+  content: '';
+  width: 32%;
+  height: 32%;
+  border-radius: 1em;
+  border: 3px solid #ffcd33;
 }
 
-.lightRotation2 {
-  position: absolute;
-  transition: 0.4s;
-  z-index: -1;
-  width: 75px;
-  height: 500px;
-  transform: rotate(110deg);
-  border-radius: inherit;
-  background: var(--moonGradient);
+.button span {
+  z-index: 2;
+  padding-left: 1.1em;
 }
 
-.lightRotation3 {
-  position: absolute;
-  transition: 0.4s;
-  z-index: -1;
-  width: 40px;
-  height: 260px;
-  border-radius: inherit;
-  background: var(--moonGradient);
+.button:hover {
+  border: 3px solid #fefefe;
+  box-shadow: 0 0 5px 0 #f0f0f0, inset 0 0 3px 0 #656565;
 }
 
-.lightRotation4 {
-  position: absolute;
-  transition: 0.4s;
-  z-index: -1;
-  width: 24px;
-  height: 220px;
-  transform: rotate(100deg);
-  border-radius: inherit;
-  background: var(--moonGradient);
+.button:active {
+  border: 0 solid #fefefe;
+  color: white;
+  box-shadow: inset 0 0 5px 0 #4b4b4b;
+  opacity: .7;
 }
 
-@keyframes rotation_413 {
-  from {
-    transform: rotate(0deg)
-  }
-
-  to {
-    transform: rotate(360deg)
-  }
+.button:active.button::after {
+  opacity: .5;
 }
-

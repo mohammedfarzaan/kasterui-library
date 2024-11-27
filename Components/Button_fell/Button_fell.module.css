@@ -1,28 +1,30 @@
 
-/* From Uiverse.io by ozgeozkaraa01 - Tags: button */
+/* From Uiverse.io by ozgeozkaraa01 - Tags: button, #button */
 button {
-  font-size: 20px;
-  background-color: white;
-  color: black;
-  width: 45px;
-  height: 45px;
-  opacity: 0.75;
-  border: 1px solid #e7eae8;
-  border-radius: 8px;
-  cursor: pointer;
-  animation: bounce_513 1s infinite;
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.5s linear;
+  padding: 1.2em;
+  background-color: #ACB1D6;
 }
 
-@keyframes bounce_513 {
-  0%,
-    100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-
-  50% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #AAAAAA;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  left: 62px;
+  width: 60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

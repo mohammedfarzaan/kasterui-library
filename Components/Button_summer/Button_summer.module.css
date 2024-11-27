@@ -1,37 +1,44 @@
 
-/* From Uiverse.io by KhaledMatalkah - Tags: button, hover */
+/* From Uiverse.io by gauravsharmadriveit - Tags: button, active, animated */
 .button {
-  background: transparent;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
-  transition: background-color 0.3s ease-in-out;
+  font-weight: 600;
+  display: inline-block;
   position: relative;
-  overflow: hidden;
+  border: 3px solid #fff;
+  padding: 15px 60px;
+  font-size: 16px;
 }
 
-.button:before {
-  content: "";
+.button::after, .button::before {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
-  pointer-events: none;
+  content: "";
+  width: 0;
+  height: 0;
+  transition: .5s;
 }
 
-.button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+button::after {
+  top: -3px;
+  left: -3px;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
 }
 
-.button:hover:before {
-  transform: translateX(0);
+button::before {
+  bottom: -3px;
+  right: -3px;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
 }
 
+button:hover {
+  color: #0668C9;
+  cursor: pointer;
+}
+
+button:hover::after,
+button:hover::before {
+  width: calc(50% + 3px);
+  height: calc(50% + 3px);
+  border-color: #0668C9;
+}

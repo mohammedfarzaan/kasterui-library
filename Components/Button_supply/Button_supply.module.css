@@ -1,63 +1,20 @@
 
-/* From Uiverse.io by catraco - Tags: button, click, light&dark, startbutton  */
-.btn {
-  --color: #de5c9d;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all .5s;
-  border: none;
-  background-color: transparent;
+/* From Uiverse.io by arieshiphop - Tags: button */
+button {
+ font-size: 17px;
+ padding: 0.5em 2em;
+ border: transparent;
+ box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+ background: dodgerblue;
+ color: white;
+ border-radius: 4px;
 }
 
-.btn div {
-  letter-spacing: 2px;
-  font-weight: bold;
-  background: var(--color);
-  border-radius: 2rem;
-  color: white;
-  padding: 1rem;
+button:hover {
+ background: rgb(2,0,36);
+ background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
 }
 
-.btn::before {
-  content: '';
-  z-index: -1;
-  background-color: var(--color);
-  border: 2px solid white;
-  border-radius: 2rem;
-  width: 110%;
-  height: 100%;
-  position: absolute;
-  transform: rotate(10deg);
-  transition: .5s;
-  opacity: 0.2;
-}
-
-.btn:hover {
-  cursor: pointer;
-  filter: brightness(1.2);
-  transform: scale(1.1);
-}
-
-.btn:hover::before {
-  transform: rotate(0deg);
-  opacity: 1;
-}
-
-.btn svg {
-  transform: translateX(-200%);
-  transition: .5s;
-  width: 0;
-  opacity: 0;
-}
-
-.btn:hover svg {
-  width: 25px;
-  transform: translateX(0%);
-  opacity: 1;
-}
-
-.btn:active {
-  filter: brightness(1.4);
+button:active {
+ transform: translate(0em, 0.2em);
 }

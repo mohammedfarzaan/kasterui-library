@@ -1,28 +1,21 @@
 
-/* From Uiverse.io by Praashoo7 - Tags: neumorphism, button, hover */
-button {
-  padding: 1em;
-  padding-left: 2em;
-  padding-right: 2em;
-  border-radius: 15px;
-  font-weight: bold;
-  transition: .4s ease-in-out;
-  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.2);
-  letter-spacing: 0.2em;
+/* From Uiverse.io by Tanvisharma31 - Tags: button */
+.space-adventure-button {
+  background-color: #1a1a2e;
+  color: #fff;
   border: none;
+  padding: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 40px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
 }
 
-button:hover {
-  letter-spacing: 0.5em;
-  transform: translateY(-0.8em);
-  background: #171717;
-  color: white;
+.space-adventure-button:hover {
+  background-color: #eb4d4b;
+  cursor: pointer;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
 }
 
-button:active {
-  letter-spacing: 0.4em;
-  transition: 0.1s all;
-  transform: translateY(-0.6em);
-  background: #171717;
-  color: white;
-}

@@ -1,48 +1,75 @@
 
-/* From Uiverse.io by ShrinilDhorda - Tags: button, download */
+/* From Uiverse.io by Creatlydev  - Tags: button, arrow, button, text, circular, modern, purple, interactive, css, awesome */
 .button {
-  padding: 0.8rem 4rem;
-  border: none;
-  outline: none;
-  font-size: 1.3rem;
-  border-radius: 0.3rem;
-  font-weight: 600;
-  background-color: rgba(255, 255, 255, 0.953);
-  position: relative;
-  overflow: hidden;
   cursor: pointer;
-  transition: 0.4s ease-in-out;
+  border: none;
+  background: #7808d0;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-content: center;
+  transition:
+    background 300ms,
+    transform 200ms;
+  font-weight: 600;
 }
 
-.button .text {
+.button__text {
   position: absolute;
-  left: 1.8rem;
-  top: 1.3rem;
-  transition: 0.4s ease-in-out;
-  color: rgb(50, 50, 50);
+  inset: 0;
+  animation: text-rotation 8s linear infinite;
+
+  > span {
+    position: absolute;
+    transform: rotate(calc(19deg * var(--index)));
+    inset: 7px;
+  }
 }
 
-.svg {
-  transform: translateY(-20px) rotate(30deg);
-  opacity: 0;
-  width: 2rem;
-  transition: 0.4s ease-in-out;
+.button__circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  background: #fff;
+  color: #7808d0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__icon--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
 }
 
 .button:hover {
-  background-color: rgb(50, 50, 50);
+  background: #000;
+  transform: scale(1.05);
 }
 
-.button:hover .svg {
-  display: inline-block;
-  transform: translateY(0px) rotate(0deg);
-  opacity: 1;
+.button:hover .button__icon {
+  color: #000;
 }
 
-.button:hover .text {
-  opacity: 0;
+.button:hover .button__icon:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
 }
 
-.button:active {
-  scale: 0.97;
+.button:hover .button__icon--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
 }
+
+@keyframes text-rotation {
+  to {
+    rotate: 360deg;
+  }
+}
+

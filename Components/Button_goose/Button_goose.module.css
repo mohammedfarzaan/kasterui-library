@@ -1,169 +1,59 @@
 
-/* From Uiverse.io by nima-mollazadeh  - Tags: button, button, text, yellow, purple, centered, rectangular, contrast, split, bicolor */
-.button_base {
-  margin: 0;
+/* From Uiverse.io by SanthoshSJ-Dev - Tags: simple, blue, button, bubble, plain */
+.button {
+  appearance: none;
+  background: transparent;
   border: 0;
-  font-size: 18px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  margin-top: -25px;
-  margin-left: -100px;
-  width: 200px;
-  height: 50px;
-  text-align: center;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  cursor: default;
-}
-
-.button_base:hover {
+  color: #fff;
   cursor: pointer;
+  font: inherit;
+  font-weight: 500;
+  line-height: 1;
+  padding: 1em 1.5em;
+  position: relative;
+  transition: filter 0.3s;
 }
 
-.b_3d {
-  perspective: 500px;
-  -webkit-perspective: 500px;
-  -moz-perspective: 500px;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
+.button:hover {
+  filter: brightness(1.1);
 }
 
-.b_3d div {
+.button:active {
+  filter: brightness(0.9);
+}
+
+.button>span {
+  display: block;
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  z-index: 1;
+}
+
+.button:hover>span {
+  transform: scale(1.05);
+}
+
+.button:active>span {
+  transform: scale(0.95);
+}
+
+.button>svg {
+  fill: #0c2cde;
   position: absolute;
-  text-align: center;
-  padding: 10px;
-  border: #000000 solid 1px;
-  pointer-events: none;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
 }
 
-.b_3d div:nth-child(1) {
-  color: #ffffff;
-  background-color: #7c00fe;
-  z-index: 0;
-  width: 100%;
-  height: 50px;
-  clip: rect(0px, 100px, 50px, 0px);
-  position: absolute;
-  transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  transform: rotateX(0deg);
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  transform-origin: 50% 50% -25px;
-  -webkit-transform-origin: 50% 50% -25px;
-  -moz-transform-origin: 50% 50% -25px;
+.button>svg>path {
+  transition: 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
-.b_3d div:nth-child(2) {
-  color: #000000;
-  background-color: #f9e400;
-  z-index: -1;
-  width: 100%;
-  height: 50px;
-  clip: rect(0px, 100px, 50px, 0px);
-  position: absolute;
-  transform: rotateX(90deg);
-  -webkit-transform: rotateX(90deg);
-  -moz-transform: rotateX(90deg);
-  transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  transform-origin: 50% 50% -25px;
-  -webkit-transform-origin: 50% 50% -25px;
-  -moz-transform-origin: 50% 50% -25px;
+.button:hover>svg>path {
+  d: path("M0,0 C0,-5 100,-5 100,0 C105,0 105,100 100,100 C100,105 0,105 0,100 C-5,100 -5,0 0,0");
 }
 
-.b_3d div:nth-child(3) {
-  color: #000000;
-  background-color: #f9e400;
-  z-index: 0;
-  width: 100%;
-  height: 50px;
-  clip: rect(0px, 200px, 50px, 100px);
-  position: absolute;
-  transition: all 0.2s ease 0.1s;
-  -webkit-transition: all 0.2s ease 0.1s;
-  -moz-transition: all 0.2s ease 0.1s;
-  transform: rotateX(0deg);
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  transform-origin: 50% 50% -25px;
-  -webkit-transform-origin: 50% 50% -25px;
-  -moz-transform-origin: 50% 50% -25px;
+.button:active>svg>path {
+  d: path("M0,0 C30,10 70,10 100,0 C95,30 95,70 100,100 C70,90 30,90 0,100 C5,70 5,30 0,0");
 }
-
-.b_3d div:nth-child(4) {
-  color: #ffffff;
-  background-color: #7c00fe;
-  z-index: -1;
-  width: 100%;
-  height: 50px;
-  clip: rect(0px, 200px, 50px, 100px);
-  position: absolute;
-  transform: rotateX(-90deg);
-  -webkit-transform: rotateX(-90deg);
-  -moz-transform: rotateX(-90deg);
-  transition: all 0.2s ease 0.1s;
-  -webkit-transition: all 0.2s ease 0.1s;
-  -moz-transition: all 0.2s ease 0.1s;
-  transform-origin: 50% 50% -25px;
-  -webkit-transform-origin: 50% 50% -25px;
-  -moz-transform-origin: 50% 50% -25px;
-}
-
-.b_3d:hover div:nth-child(1) {
-  background-color: #7c00fe;
-  transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  transform: rotateX(-90deg);
-  -webkit-transform: rotateX(-90deg);
-  -moz-transform: rotateX(-90deg);
-}
-
-.b_3d:hover div:nth-child(2) {
-  color: #000000;
-  transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  transform: rotateX(0deg);
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-}
-
-.b_3d:hover div:nth-child(3) {
-  background-color: #f9e400;
-  transition: all 0.2s ease 0.1s;
-  -webkit-transition: all 0.2s ease 0.1s;
-  -moz-transition: all 0.2s ease 0.1s;
-  transform: rotateX(90deg);
-  -webkit-transform: rotateX(90deg);
-  -moz-transform: rotateX(90deg);
-}
-
-.b_3d:hover div:nth-child(4) {
-  color: #ffffff;
-  transition: all 0.2s ease 0.1s;
-  -webkit-transition: all 0.2s ease 0.1s;
-  -moz-transition: all 0.2s ease 0.1s;
-  transform: rotateX(0deg);
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-}
-
-.back {
-  height: 200px;
-  float: left;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  counter-increment: bc;
-  padding: 0px 5px 5px 5px;
-}
-

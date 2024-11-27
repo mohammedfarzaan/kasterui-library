@@ -1,48 +1,61 @@
 
-/* From Uiverse.io by martinval9 - Tags: button */
+/* From Uiverse.io by boryanakrasteva - Tags: button */
 .btn {
- color: #B500FF;
- padding: 13px 20px;
- border: 2px solid #B500FF;
- font-size: 17px;
- transition: 0.3s;
- border-radius: 10px;
- font-family: Arial;
- font-weight: 600;
+  width: 120px;
+  height: 40px;
+  border: none;
+  position: relative;
+  transition: .2s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-.btn:hover {
- transition: 0.3s;
- background-color: #B500FF;
- margin-top: -20px;
- color: #fff;
- animation-name: button_animation;
- animation-duration: 3s;
- animation-iteration-count: infinite;
+.btn > .icon {
+  display: none;
+  transition: .2s linear;
 }
 
-.btn:active {
- transform: scale(0.97);
+.btn,
+.socials {
+  border-radius: 20px;
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.281));
 }
 
-@keyframes button_animation {
- 0% {
-  background-color: #B500FF;
- }
-
- 25% {
-  background-color: #000000;
- }
-
- 50% {
-  background-color: #B500FF;
- }
-
- 75% {
-  background-color: #000000;
- }
-
- 100% {
-  background-color: #B500FF;
- }
+.socials {
+  display: flex;
+  list-style: none;
+  width: 120px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  justify-content: space-around;
+  transition: .2s linear;
+  opacity: 0;
+  visibility: hidden;
 }
+
+.btn:focus > span {
+  display: none;
+}
+
+.btn:focus > .icon {
+  display: flex;
+}
+
+.btn:focus {
+  width: 40px;
+}
+
+.btn:focus > .socials {
+  opacity: 1;
+  visibility: visible;
+  top: -120%;
+}
+
+

@@ -1,12 +1,9 @@
 import React from "react";
-import styles from "./Button_term.module.css";
 
 const Button_term = () => (
   <div>
-    <button className={styles["btn-31"]}>
-      <span className={styles["text-container"]}>
-        <span className={styles["text"]}>Button</span>
-      </span>
+    <button className="btn animate-bounce rounded-full bg-gradient-to-r from-teal-400 to-blue-500 px-4 py-2 font-bold text-blue-900 transition-colors duration-300 hover:from-blue-400 hover:to-teal-500 hover:text-white hover:shadow-lg">
+      Click Me
     </button>
   </div>
 );
@@ -14,25 +11,5 @@ const Button_term = () => (
 export default Button_term;
 
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-        
-        import React from 'react';
-
-        const Button_term = () => (
-         <div>
-          <button className="btn-31">
-  <span className="text-container">
-    <span className="text">Button</span>
-  </span>
-</button>
-        </div>
-        );
-
-        export default Button_term;
-        
-        
-         */
+  /* */
 }

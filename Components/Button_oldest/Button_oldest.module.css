@@ -1,56 +1,65 @@
 
-/* From Uiverse.io by sabbircoder07 - Tags: button, animated, read more */
-button {
-  font-family: "Lexend Deca", sans-serif;
-  border: none;
-  background-image: linear-gradient(to right top, #5FFBF1,#D16BA5,#86A8E7);
-  color: #ffffff;
-  font-size: 17px;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  padding: 13px 26px;
+/* From Uiverse.io by 3bdel3ziz-T  - Tags: button, hover, smooth, dark, code, hover button, button hover effect , 2d button */
+.button,
+.button::before {
+  box-sizing: border-box;
+  --col-orange: #d17842;
+  --col-white: #fff;
+  --col-dark: #212121;
   cursor: pointer;
-  transform: skew(15deg);
-  transition: all 1s;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+  fill: var(--col-white);
+  color: var(--col-white);
+
+  color: var(col-dark);
+  font-family: "arial";
+}
+.button {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  background: var(--col-orange);
+  padding: 8px 50px;
+  position: relative;
+  transition: all 200ms;
+  border-radius: 25px;
+  z-index: 99;
 }
 
-.main-text {
-  display: inline-block;
-  transform: skew(-15deg);
+.button:hover {
+  border-color: transparent;
+  color: var(--col-dark);
+  background: transparent;
 }
 
-button:hover {
-  transform: translateY(-3px);
-  background-image: linear-gradient(to bottom, #D16BA5,#86A8E7,#5FFBF1);
-  border-radius: 26px;
-  animation: pulsate 1s infinite;
+.button::before {
+  height: fit-content;
+  content: "great work🥳";
+  position: absolute;
+  left: 40px;
+  width: 0;
+  overflow: hidden;
+  transition: all 550ms;
+  text-wrap: nowrap;
+  z-index: -1;
 }
 
-button:hover span {
-  display: inline-block;
-  transform: translateX(2px);
-  transition: all 1s;
+.button:hover::before {
+  width: 135px;
+  color: var(--col-white);
 }
 
-button:focus {
-  outline: none;
-  border-radius: 26px;
-  animation: pulsate 1s infinite;
+.button::after {
+  content: "hover me";
+  position: relative;
 }
 
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-    box-shadow: none;
-  }
-
-  50% {
-    transform: scale(1.03);
-    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.4);
-  }
-
-  100% {
-    transform: scale(1);
-    box-shadow: none;
-  }
+.button:hover::after {
+  display: none;
 }
+

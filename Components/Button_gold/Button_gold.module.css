@@ -1,35 +1,18 @@
 
-/* From Uiverse.io by Shoh2008 - Tags: button */
-button {
-  --b: 3px;
-   /* border thickness */
-  --s: .45em;
- /* size of the corner */
-  --color: #e2e2e2;
-  font-weight: bold;
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-  color: var(--color);
-  --_p: var(--s);
-  background: conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-  transition: .3s linear, color 0s, background-color 0s;
-  outline: var(--b) solid #0000;
-  outline-offset: .6em;
-  font-size: 16px;
-  border: 0;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+/* From Uiverse.io by VassoD  - Tags: minimalist, button, dark, simple button */
+.button {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease-in-out;
 }
 
-button:hover,
-button:focus-visible {
-  --_p: 0px;
-  outline-color: #ffffff;
-  outline-offset: .05em;
+.button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  text-decoration: underline;
 }
 
-button:active {
-  background: #ffffff;
-  color: #000000;
-}

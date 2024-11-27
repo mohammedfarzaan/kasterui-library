@@ -1,158 +1,56 @@
 
-/* From Uiverse.io by wizard503  - Tags: social, button, share */
-.share {
-  width: 150px;
-  height: 150px;
-  margin: 5em auto;
-  background: rgba(10, 237, 189, 1);
-  background: -webkit-radial-gradient(
-    top left,
-    rgba(10, 237, 189, 1),
-    rgba(37, 211, 103, 1)
-  );
-  background: -moz-radial-gradient(
-    top left,
-    rgba(10, 237, 189, 1),
-    rgba(37, 211, 103, 1)
-  );
-  background: radial-gradient(
-    to bottom right,
-    rgba(10, 237, 189, 1),
-    rgba(37, 211, 103, 1)
-  );
-  text-align: center;
-  border-radius: 100%;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+/* From Uiverse.io by nikk7007 - Tags: button */
+.button {
+ --color: #00A97F;
+ padding: 0.8em 1.7em;
+ background-color: transparent;
+ border-radius: .3em;
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ transition: .5s;
+ font-weight: 400;
+ font-size: 17px;
+ border: 1px solid;
+ font-family: inherit;
+ text-transform: uppercase;
+ color: var(--color);
+ z-index: 1;
 }
 
-.share a {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 90px;
-  height: 90px;
-  position: relative;
-  z-index: 1;
+.button::before, .button::after {
+ content: '';
+ display: block;
+ width: 50px;
+ height: 50px;
+ transform: translate(-50%, -50%);
+ position: absolute;
+ border-radius: 50%;
+ z-index: -1;
+ background-color: var(--color);
+ transition: 1s ease;
 }
 
-.share::after {
-  content: "Share";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 40%;
-  font-size: 25px;
-  font-weight: bold;
-  font-style: italic;
-  text-transform: uppercase;
-  color: #fff;
+.button::before {
+ top: -1em;
+ left: -1em;
 }
 
-.share:hover::after {
-  color: transparent;
+.button::after {
+ left: calc(100% + 1em);
+ top: calc(100% + 1em);
 }
 
-.share:hover {
-  background: rgba(242, 41, 92, 1);
-  background: -webkit-radial-gradient(
-    top left,
-    rgba(242, 41, 92, 1),
-    rgba(41, 172, 225, 1)
-  );
-  background: -moz-radial-gradient(
-    top left,
-    rgba(242, 41, 92, 1),
-    rgba(41, 172, 225, 1)
-  );
-  background: radial-gradient(
-    to bottom right,
-    rgba(242, 41, 92, 1),
-    rgba(41, 172, 225, 1)
-  );
+.button:hover::before, .button:hover::after {
+ height: 410px;
+ width: 410px;
 }
 
-.share a.fb {
-  background: #1266f1;
-  top: -5.65em;
-  left: -2.83em;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+.button:hover {
+ color: rgb(10, 25, 30);
 }
 
-.share a.tw {
-  background: #28abe1;
-  top: -6.55em;
-  right: -9.39em;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.share a.ins {
-  background: #f2295b;
-  bottom: 6.7em;
-  left: -7.5em;
-  -webkit-tra3nsition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.share a.wh {
-  background: #25d366;
-  right: -2.81em;
-  bottom: 7.5em;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.share:hover a.fb {
-  top: -0.96em;
-}
-
-.share:hover a.tw {
-  right: -2.8em;
-}
-
-.share:hover a.ins {
-  left: -2.84em;
-}
-
-.share:hover a.wh {
-  bottom: 12.3em;
-}
-
-.facebook {
-  padding-top: 45%;
-}
-
-.instagram {
-  padding-left: 30%;
-  padding-top: 15%;
-}
-
-.whatsapp {
-  padding-left: 15%;
-  padding-top: 15%;
-}
-
-.twitter {
-  padding-top: 25%;
-  padding-left: 10%;
-}
-
-.fb:hover {
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5) inset;
-}
-
-.tw:hover {
-  box-shadow: 10px 5px 30px 2px rgba(0, 0, 0, 0.5) inset;
-}
-
-.ins:hover {
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5) inset;
-}
-
-.wh:hover {
-  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5) inset;
+.button:active {
+ filter: brightness(.8);
 }
 

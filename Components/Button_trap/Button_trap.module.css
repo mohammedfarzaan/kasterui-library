@@ -1,115 +1,55 @@
 
-/* From Uiverse.io by JaydipPrajapati1910 - Tags: button, shipping , buy now */
+/* From Uiverse.io by BurgiSimon  - Tags: flashy, 3d, white, gradient, button, hover, smooth, neon */
 .button {
-  --width: 100px;
-  --height: 35px;
-  --tooltip-height: 35px;
-  --tooltip-width: 90px;
-  --gap-between-tooltip-to-button: 18px;
-  --button-color: #222;
-  --tooltip-color: #fff;
-  width: var(--width);
-  height: var(--height);
-  background: var(--button-color);
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #e8e8e8;
+  border: 1.6px solid #e2e2e2;
+  box-shadow: 6px 6px 10px #c5c5c5, -6px -6px 12px #ffffff;
+  transform: skewX(-5deg);
   position: relative;
-  text-align: center;
-  border-radius: 0.45em;
-  font-family: "Arial";
-  transition: background 0.3s;
+  overflow: hidden;
 }
 
 .button::before {
+  content: "";
   position: absolute;
-  content: attr(data-tooltip);
-  width: var(--tooltip-width);
-  height: var(--tooltip-height);
-  background-color: #555;
-  font-size: 0.9rem;
-  color: #fff;
-  border-radius: .25em;
-  line-height: var(--tooltip-height);
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
-  left: calc(50% - var(--tooltip-width) / 2);
-}
-
-.button::after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  border-top-color: #555;
-  left: calc(50% - 10px);
-  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
-}
-
-.button::after,.button::before {
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
   opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
+  transition: opacity 0.5s, filter 0.5s;
 }
 
-.text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button-wrapper,.text,.icon {
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  color: #fff;
-}
-
-.text {
-  top: 0
-}
-
-.text,.icon {
-  transition: top 0.5s;
-}
-
-.icon {
-  color: #fff;
-  top: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon svg {
-  width: 24px;
-  height: 24px;
-}
-
-.button:hover {
-  background: #222;
-}
-
-.button:hover .text {
-  top: -100%;
-}
-
-.button:hover .icon {
-  top: 0;
-}
-
-.button:hover:before,.button:hover:after {
+.button:hover::before {
+  filter: blur(10px);
   opacity: 1;
-  visibility: visible;
+  animation: animateBorder 8s linear infinite;
+  border: 4px solid rgb(255, 255, 255);
 }
 
-.button:hover:after {
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+@keyframes animateBorder {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
 }
 
-.button:hover:before {
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+.span {
+  color: black;
+  letter-spacing: 3px;
+  font-size: 18px;
 }
 
-
-
+.button:active {
+  box-shadow: 5px 5px 12px #cfcece, -4px -4px 12px #fcfcfc;
+}
 

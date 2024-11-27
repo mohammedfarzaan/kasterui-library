@@ -1,58 +1,87 @@
 
-/* From Uiverse.io by kamehame-ha - Tags: success, error, share, light&dark, clean, badges, working */
-/*
-
-This is actually the most neutral button desing of all time,
-fits everywhere no matter if it is dark or light mode,
-just change colors. 
-I created original using tailwindCSS, here's classes:
-
-text-blue-500 bg-blue-500/10 border border-blue-500 rounded-md px-2 py-[2px] text-sm cursor-pointer flex shrink-0
-text-yellow-500 bg-yellow-500/10 border border-yellow-500 rounded-md px-2 py-[2px] text-sm cursor-pointer flex shrink-0
-text-green-500 bg-green-500/10 border border-green-500 rounded-md px-2 py-[2px] text-sm cursor-pointer flex shrink-0
-text-indigo-500 bg-indigo-500/10 border border-indigo-500 rounded-md px-2 py-[2px] text-sm cursor-pointer flex shrink-0
-
-*/
-
-.badges {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem; /* 16px */
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.badges > button {
-  font-size: 0.875rem; /* 14px */
-  line-height: 1.25rem; /* 20px */
-  padding: 2px .5rem; /* 8px*/
-  cursor: pointer;
+/* From Uiverse.io by vinodjangid07 - Tags: button, superhero, captain, marvel, captain america */
+.Btn {
+  position: relative;
+  width: 180px;
+  height: 50px;
   border: none;
-  border-radius: 0.375rem; /* 6px */
-  outline: none;
+  background-color: #005f99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 8px 8px 0px rgb(12, 12, 12);
+  transition-duration: .3s;
 }
 
-.badges .blue {
-  background-color: rgba(59, 130, 246, 0.10);
-  color: rgb(59 130 246);
-  border: 1px rgb(59 130 246) solid;
+.Layer {
+  width: 60px;
+  position: absolute;
+  left: -30px;
+  transition-duration: .3s;
+  animation: spin 5s  linear infinite;
 }
 
-.badges .yellow {
-  background-color: rgba(234, 179, 8, 0.10);
-  color: rgb(234 179 8);
-  border: 1px rgb(234 179 8) solid;
+.Btn:hover {
+  transform: translateY(5px);
+  box-shadow: 3px 3px 0px black;
+  transition-duration: .3s;
 }
 
-.badges .green {
-  background-color: rgba(34, 197, 94, 0.10);
-  color: rgb(34 197 94);
-  border: 1px rgb(34 197 94) solid;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.badges .red {
-  background-color: rgba(239, 68, 68, 0.10);
-  color: rgb(239 68 68);
-  border: 1px rgb(239 68 68) solid;
+.Btn:hover .Layer {
+  left: 0%;
+  width: 100%;
+  transition-duration: .3s;
 }
+
+.text {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1em;
+  position: absolute;
+  z-index: 2;
+  transition-duration: .1s;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.Btn:hover .text {
+  color: transparent;
+  transition-duration: .3s;
+}
+/* svg colors */
+.cls-1 {
+  fill: #242021;
+}
+
+.cls-2 {
+  fill: #e82728;
+}
+
+.cls-3 {
+  fill: #fefefe;
+}
+
+.cls-4 {
+  fill: #e92728;
+}
+
+.cls-5 {
+  fill: #005f99;
+}
+
+.cls-6 {
+  fill: #fff;
+}
+/* svg colors */

@@ -1,33 +1,26 @@
 
-/* From Uiverse.io by Afacanc38 - Tags: skeuomorphism, minimalist, black, button, dark, cool btn */
-.button {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 2px;
-  background: #424242;
-  color: white;
-  box-shadow: 0 1px 0 0 rgba(255, 255, 255, .1) inset,
-    0 0 0 1px rgba(0, 0, 0, .7),
-    0 -1px 0 0 rgba(0, 0, 0, .7) inset,
-    0 1px 2px 1px rgba(0, 0, 0, .6);
+/* From Uiverse.io by tranmanhduy0810  - Tags: simple, button, code */
+.send-button {
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
   cursor: pointer;
-  transition: 50ms ease-out;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-.button:hover, .button:focus, .button:focus-visible {
-  background: #353535;
-  box-shadow: 0 1px 0 0 rgba(255, 255, 255, .05) inset,
-    0 0 0 1px rgba(0, 0, 0, .7),
-    0 -1px 0 0 rgba(0, 0, 0, .7) inset,
-    0 1px 2px 1px rgba(0, 0, 0, .6);
-  border: none;
-  outline: none;
+.send-button:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-.button:active {
-  background: #181818;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, .7) inset,
-    0 1px 0 0 rgba(255, 255, 255, .05),
-    0 1px 2px 1px rgba(0, 0, 0, .6) inset;
+.send-button img {
+  margin-right: 8px;
 }
+

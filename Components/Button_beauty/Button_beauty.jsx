@@ -3,25 +3,30 @@ import styles from "./Button_beauty.module.css";
 
 const Button_beauty = () => (
   <div>
-    <button>Button</button>
+    <div className={styles["mybutton"]}>
+      <button className={styles["button"]} type="button">
+        <span>Hello 😊</span>
+      </button>
+    </div>
   </div>
 );
 
 export default Button_beauty;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_beauty = () => (
          <div>
-          <button>
-  Button
+          <div className="mybutton">
+<button className="button" type="button">
+   <span>Hello 😊</span>
 </button>
+</div>
         </div>
         );
 

@@ -1,0 +1,307 @@
+
+/* From Uiverse.io by simontheonlyone - Tags: exotic, button, active, weather, animated, focus, night, day */
+button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11em;
+  height: 4em;
+  border: none;
+  border-radius: 2.1em;
+  background-color: rgb(23, 56, 128);
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color .2s linear 1.1s,
+  color .2s linear 1.1s;
+}
+
+button:active,
+button:focus {
+  background: rgb(254, 138, 30);
+}
+
+button .day {
+  position: absolute;
+  opacity: 0;
+  transition: all .2s ease 1.1s;
+}
+
+button .night {
+  transition: all .2s ease 1.1s;
+}
+
+button:active .night,
+button:focus .night {
+  color: transparent;
+}
+
+button:active .day,
+button:focus .day {
+  opacity: 1;
+}
+/* mini cloud */
+.mini-cloud {
+  content: '';
+  position: absolute;
+  inset: -26% 62%;
+  scale: 2;
+  opacity: 1;
+  color: rgb(150, 150, 150);
+  transform: rotate(3deg);
+  transition: scale .4s ease .3s,
+  opacity .4s ease 1.3s;
+  pointer-events: none;
+}
+/* lightning */
+.lightning {
+  content: '';
+  position: absolute;
+  inset: -4% 62%;
+  scale: 1.3;
+  transform: rotate(15deg);
+  transition: all .4s ease .2s,
+  opacity .4s ease 1.5s;
+  pointer-events: none;
+}
+/* stars */
+.stars {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+}
+
+.star1 {
+  inset: 15% 10%;
+  scale: 1.2;
+  opacity: 1;
+  transition: all .4s ease .4s,
+  opacity .4s ease 1.6s;
+}
+
+.star2 {
+  inset: 45% 80%;
+  scale: 1;
+  opacity: 1;
+  transition: all .4s ease .5s,
+  opacity .4s ease 1.7s;
+}
+/* cloud */
+.cloud {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  border: none;
+}
+
+.left-side {
+  width: 4.4em;
+  height: 4.4em;
+  bottom: 0;
+  left: -.8em;
+  scale: 1;
+  border-radius: 50%;
+  z-index: -5;
+  background-color: rgb(15, 39, 91);
+  transition: all .6s ease .6s;
+}
+
+.left-side1 {
+  width: 4.4em;
+  height: 4.4em;
+  bottom: 0;
+  left: -.4em;
+  scale: .95;
+  border-radius: 50%;
+  z-index: -4;
+  background-color: rgb(23, 56, 128);
+  transition: all .5s ease .5s;
+}
+
+.middle-side {
+  width: 9em;
+  height: 8.3em;
+  bottom: 0;
+  left: 1em;
+  border-radius: 50%;
+  scale: 1;
+  z-index: -7;
+  background-color: rgb(15, 39, 91);
+  transition: scale, bottom, .4s ease .8s, opactiy .2s linear .8s;
+}
+
+.middle-side1 {
+  width: 9em;
+  height: 8.3em;
+  bottom: -2px;
+  left: 1.1em;
+  scale: .95;
+  z-index: -6;
+  border-radius: 50%;
+  background-color: rgb(23, 56, 128);
+  transition: scale, bottom, .4s ease .75s, opactiy .2s linear .75s;
+}
+
+.right-side {
+  width: 5.5em;
+  height: 5.5em;
+  bottom: -1px;
+  right: -1.4em;
+  border-radius: 50%;
+  scale: .98;
+  z-index: -5;
+  background-color: rgb(15, 39, 91);
+  transition: all .6s ease .7s;
+}
+
+.right-side1 {
+  width: 5.5em;
+  height: 5.5em;
+  bottom: 0;
+  right: -1.05em;
+  border-radius: 50%;
+  scale: .92;
+  z-index: -4;
+  background-color: rgb(23, 56, 128);
+  transition: all .5s ease .6s;
+}
+/* night active animation */
+button:active .star1,
+button:focus .star1 {
+  scale: 0;
+  opacity: 0;
+}
+
+button:active .star2,
+button:focus .star2 {
+  scale: 0;
+  opacity: 0;
+}
+
+button:active .mini-cloud,
+button:focus .mini-cloud {
+  scale: 0;
+  opacity: 0;
+}
+
+button:active .lightning,
+button:focus .lightning {
+  scale: 0;
+  opacity: 0;
+}
+
+button:active .left-side,
+button:focus .left-side,
+button:active .left-side1,
+button:focus .left-side1 {
+  scale: 0;
+  opacity: 0;
+}
+
+button:active .middle-side,
+button:focus .middle-side,
+button:active .middle-side1,
+button:focus .middle-side1 {
+  scale: 0;
+  opacity: 0;
+  bottom: -40%;
+}
+
+button:active .right-side,
+button:focus .right-side,
+button:active .right-side1,
+button:focus .right-side1 {
+  scale: 0;
+  opacity: 0;
+}
+/* sun */
+.sun {
+  position: absolute;
+  top: -100%;
+  left: -4%;
+  width: 12em;
+  height: 12em;
+  background-color: #fe8a1e;
+  /* background: linear-gradient(blue, red); */
+  border: none;
+  border-radius: 50%;
+  scale: 0;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -10;
+  pointer-events: none;
+  transition: scale .3s ease 1.4s,
+      opacity .7s ease;
+}
+
+button:active .sun,
+button:focus .sun {
+  scale: .95;
+  opacity: 1;
+}
+/* sunshine */
+.sunshine {
+  content: '';
+  position: absolute;
+  width: 18.5em;
+  height: 18.5em;
+  scale: 0;
+  opacity: 0;
+  z-index: -9;
+  pointer-events: none;
+  animation: spin 15s infinite linear;
+  transition: scale .3s ease 1.5s,
+  opacity .1s ease;
+}
+
+button:active .sunshine,
+button:focus .sunshine {
+  scale: 1;
+  opacity: 1;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cloudflare {
+  position: absolute;
+  opacity: 0;
+  scale: 0;
+  pointer-events: none;
+}
+
+.cloudflare-one {
+  inset: 5% 77%;
+  width: 25px;
+  height: 25px;
+  transition: scale .3s ease 1.6s,
+  opacity .3s ease;
+}
+
+.cloudflare-two {
+  inset: -43% 45%;
+  width: 32px;
+  height: 32px;
+  transition: scale .3s ease 1.8s,
+  opacity .3s ease;
+}
+
+.cloudflare-three {
+  inset: -10% 17%;
+  width: 23px;
+  height: 23px;
+  transition: scale .3s ease 1.7s,
+  opacity .3s ease;
+}
+
+button:active .cloudflare,
+button:focus .cloudflare {
+  scale: 1;
+  opacity: 1;
+}

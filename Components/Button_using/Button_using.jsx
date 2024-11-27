@@ -3,47 +3,132 @@ import styles from "./Button_using.module.css";
 
 const Button_using = () => (
   <div>
-    <button className={styles["button"]}>
-      <div className={styles["button-overlay"]}></div>
-      <span>
-        Button{" "}
+    <div className={styles["container"]}>
+      <span className={styles["span-text"]}>
         <svg
+          height="20pt"
+          width="20pt"
+          viewBox="0 0 20 20"
+          style="isolation:isolate"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
           xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 53 58"
-          height="58"
-          width="53"
         >
-          <path
-            stroke-width="9"
-            stroke="currentColor"
-            d="M44.25 36.3612L17.25 51.9497C11.5833 55.2213 4.5 51.1318 4.50001 44.5885L4.50001 13.4115C4.50001 6.86824 11.5833 2.77868 17.25 6.05033L44.25 21.6388C49.9167 24.9104 49.9167 33.0896 44.25 36.3612Z"
-          ></path>
+          <defs>
+            <clipPath id="_clipPath_bC9TwUVn0M3ipVC8aHmmX7RNkfzJwdgL">
+              <rect height="20" width="20"></rect>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#_clipPath_bC9TwUVn0M3ipVC8aHmmX7RNkfzJwdgL)">
+            <rect
+              fill-opacity="0"
+              style="fill:rgb(1,0,1)"
+              height="20"
+              width="20"
+            ></rect>
+            <path
+              stroke-miterlimit="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              stroke="rgb(0,0,0)"
+              strokeWidth="1"
+              fill="rgb(0,0,0)"
+              d="M 10 1 L 10 9 L 15 9 L 10 19 L 10 12 L 5 12 L 10 1 Z"
+            ></path>
+          </g>
         </svg>
+        Join now
       </span>
-    </button>
+      <button className={styles["button"]}>
+        <span className={styles["span-outside"]}> </span>
+        <div className={styles["circles"]}>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+        </div>
+      </button>
+    </div>
   </div>
 );
 
 export default Button_using;
-
 {
   /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
 }
 {
   /*
-        
+            
         import React from 'react';
 
         const Button_using = () => (
          <div>
-          <button className="button">
-  <div className="button-overlay"></div>
-  <span>Button <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 53 58" height="58" width="53">
-<path stroke-width="9" stroke="currentColor" d="M44.25 36.3612L17.25 51.9497C11.5833 55.2213 4.5 51.1318 4.50001 44.5885L4.50001 13.4115C4.50001 6.86824 11.5833 2.77868 17.25 6.05033L44.25 21.6388C49.9167 24.9104 49.9167 33.0896 44.25 36.3612Z"></path>
-</svg></span>
-  
-</button>
+          <div className="container">
+  <span className="span-text">
+    <svg
+      height="20pt"
+      width="20pt"
+      viewBox="0 0 20 20"
+      style="isolation:isolate"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <clipPath id="_clipPath_bC9TwUVn0M3ipVC8aHmmX7RNkfzJwdgL">
+          <rect height="20" width="20"></rect>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#_clipPath_bC9TwUVn0M3ipVC8aHmmX7RNkfzJwdgL)">
+        <rect
+          fill-opacity="0"
+          style="fill:rgb(1,0,1)"
+          height="20"
+          width="20"
+        ></rect>
+        <path
+          stroke-miterlimit="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          stroke="rgb(0,0,0)"
+          strokeWidth="1"
+          fill="rgb(0,0,0)"
+          d="M 10 1 L 10 9 L 15 9 L 10 19 L 10 12 L 5 12 L 10 1 Z"
+        ></path>
+      </g>
+    </svg>
+    Join now
+  </span>
+  <button className="button">
+    <span className="span-outside"> </span>
+    <div className="circles">
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+    </div>
+  </button>
+</div>
         </div>
         );
 

@@ -1,61 +1,42 @@
 
-/* From Uiverse.io by benjimich - Tags: button, hover */
+/* From Uiverse.io by reshades - Tags: button, animated, glass button */
 .button {
-  cursor: pointer;
-  background: none;
-  border: none;
-  display: flex;
-  flex-direction: column;
-  width: 70px;
-  gap: 4px;
+  width: 10em;
+  height: 3em;
+  background-color: #e8e8e810;
+  color: #e8e8e8;
+  border: 1.2px solid #e8e8e870;
+  border-radius: 15px;
+  transition: all 0.5s ease;
 }
 
 .button:hover {
-  animation: move 2s infinite ease;
+  border: 1.2px solid #4073ff;
+  background-color: #00000000;
 }
 
-@keyframes move {
+.text {
+  margin-top: 10px
+}
+
+.svg {
+  filter: blur(20px);
+  z-index: -1;
+  opacity: 70%;
+  width: 6em;
+  animation: anim 3s infinite;
+}
+
+@keyframes anim {
   0% {
-    transform: translateX(0);
+    transform: translateY(-60px);
   }
 
   50% {
-    transform: translateX(20px);
+    transform: translateY(-35px);
   }
 
   100% {
-    transform: translateX(0);
+    transform: translateY(-60px);
   }
-}
-
-.round {
-  width: 6px;
-  height: 6px;
-  background: #3da9fc;
-  border-radius: 50%;
-}
-
-.line {
-  display: flex;
-  gap: 4px;
-}
-
-.two {
-  transform: translateX(10px);
-}
-
-.three {
-  transform: translateX(20px);
-}
-
-.four {
-  transform: translateX(30px);
-}
-
-.five {
-  transform: translateX(20px);
-}
-
-.six {
-  transform: translateX(10px);
 }

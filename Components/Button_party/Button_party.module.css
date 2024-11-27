@@ -1,41 +1,50 @@
 
-/* From Uiverse.io by aadium - Tags: button, twist, dynamic */
-.morph-button {
-  display: relative;
-  background-color: #66DA43;
-  color: #66DA43;
-  width: 85px;
-  height: 40px;
-  border: 2px solid transparent;
+/* From Uiverse.io by r7chardgh - Tags: button, hover, glitch */
+.button {
+  position: relative;
+  border: 0;
+  padding: 1em 2em;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  outline: .5em solid #fff;
+  outline-offset: -.3em;
+  color: #fff;
+  background-color: #333;
+  text-transform: uppercase;
 }
 
-.morph-button:hover {
-  transform: scale(1.5);
+.button:hover {
+  animation: shake 500ms infinite,glitch 400ms infinite steps(4);
 }
 
-.morph-button:active {
-  transform: scale(0.8);
-  background-color: #212121;
-  border: 2px solid #66DA43;
+@keyframes shake {
+  0% {
+  }
+
+  25% {
+    transform: translate(-.1em,-.1em);
+  }
+
+  50% {
+    transform: translate(.3em,0);
+  }
+
+  75% {
+    transform: translate(0,.3em);
+  }
+
+  100% {
+  }
 }
 
-.morph-button:before {
-  content: "Twist";
-  display: block;
-  position: absolute;
-  margin-top: -22px;
-  margin-left: -2px;
-  padding: 12px 25px;
-  transform-origin: center;
-  transition: transform 0.3s ease-in-out;
-  z-index: 1;
-  background-color: #212121;
-  border: 2px solid #66DA43;
-}
+@keyframes glitch {
+  from {
+    box-shadow: .8em .8em  rgba(240, 84, 219),
+  -.8em -.8em rgba(84, 240, 232);
+  }
 
-.morph-button:hover:before {
-  transform: rotate(45deg) scale(1.2);
+  to {
+    text-shadow: .3em .2em  rgba(240, 84, 219),
+  -.3em -.2em rgba(84, 240, 232);
+  }
 }
-
