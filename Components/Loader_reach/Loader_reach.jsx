@@ -3,17 +3,41 @@ import styles from "./Loader_reach.module.css";
 
 const Loader_reach = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["leaf"]}></div>
-      <div className={styles["leaf"]}></div>
-      <div className={styles["leaf"]}></div>
+    <div className={styles["rocket"]}>
+      <div className={styles["rocket-body"]}>
+        <div className={styles["body"]}></div>
+        <div className={styles["fin"] + styles["fin-left"]}></div>
+        <div className={styles["fin"] + styles["fin-right"]}></div>
+        <div className={styles["window"]}></div>
+      </div>
+      <div className={styles["exhaust-flame"]}></div>
+      <ul className={styles["exhaust-fumes"]}>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <ul className={styles["star"]}>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
   </div>
 );
 
 export default Loader_reach;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -22,11 +46,35 @@ export default Loader_reach;
 
         const Loader_reach = () => (
          <div>
-          <div className="loader">
-  <div className="leaf"></div>
-  <div className="leaf"></div>
-  <div className="leaf"></div>
-</div>
+          <div className="rocket">
+    <div className="rocket-body">
+      <div className="body"></div>
+      <div className="fin fin-left"></div>
+      <div className="fin fin-right"></div>
+      <div className="window"></div>
+    </div>
+    <div className="exhaust-flame"></div>
+    <ul className="exhaust-fumes">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <ul className="star">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
         </div>
         );
 

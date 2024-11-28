@@ -1,18 +1,127 @@
 import React from "react";
+import styles from "./Button_seat.module.css";
 
 const Button_seat = () => (
   <div>
-    <button
-      className="cursor-pointer inline-flex items-center rounded-full px-9 py-3 text-xl font-mono font-semibold text-rose-600 hover:text-white border-2 border-rose-600
-hover:bg-rose-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-75 hover:bg-rose-600 duration-300  focus:bg-transparent"
-    >
-      BUTTON
+    <button className={styles["container"]}>
+      <strong>SYNTHWAVE</strong>
+      <div id="glow">
+        <div className={styles["circle"]}></div>
+      </div>
+      <div className={styles["inner-container"]}>
+        <div className={styles["fade"]}></div>
+
+        <div className={styles["up-text"]}>
+          <div className={styles["crawl"]}>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+          </div>
+        </div>
+      </div>
     </button>
   </div>
 );
 
 export default Button_seat;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_seat = () => (
+         <div>
+          <button className="container">
+  <strong>SYNTHWAVE</strong>
+  <div id="glow">
+    <div className="circle"></div>
+  </div>
+  <div className="inner-container">
+    <div className="fade"></div>
+
+    <div className="up-text">
+      <div className="crawl">
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+      </div>
+    </div>
+  </div>
+</button>
+        </div>
+        );
+
+        export default Button_seat;
+        
+        
+         */
 }

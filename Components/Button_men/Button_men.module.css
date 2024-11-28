@@ -1,0 +1,99 @@
+
+/* From Uiverse.io by joe-herbert  - Tags: animation, button, hover, challenge */
+.button {
+  cursor: pointer;
+  padding: 20px 15px;
+  font-weight: 600;
+  font-size: 17px;
+  font-family: sans-serif;
+  border-radius: 15px;
+  position: relative;
+  background-clip: padding-box;
+  border: solid 3px transparent;
+  width: 185px;
+  height: 65px;
+  box-shadow: 5px 5px 20px -5px #aaa;
+  transition: transform 0.3s;
+}
+.button span {
+  transition: opacity 0.3s 0.3s;
+  margin-left: 5px;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -3px;
+  border-radius: inherit;
+  background: linear-gradient(to bottom, #ccc, #666);
+}
+.button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #eee, #ddd);
+  border-radius: 15px;
+}
+.button-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+.button-content:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: calc(-50% - 2.5px);
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  background: linear-gradient(to bottom, #dfdfdf, #efefef);
+  border-radius: 500px;
+  height: 50px;
+  transition: opacity 0.3s 0.3s;
+  filter: blur(1px);
+}
+.button svg {
+  position: relative;
+  left: 0;
+  width: 20px;
+  transform: rotate(-45deg);
+  transition: left 0.3s 0s, transform 0.3s 0s;
+}
+
+.button:hover .button-content:before,
+.button:hover span {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.button:hover svg {
+  transition: left 0.6s 0.3s, transform 0.6s 0.3s;
+  left: calc(50% - 17.5px);
+  transform: translate(-50%, 2px) rotate(270deg) scale(1.5);
+}
+.button:active {
+  transform: scale(0.9);
+}
+.button:active svg {
+  animation: spin 0.4s ease-in-out 0.3s 1;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, 2px) rotate(270deg) scale(1.5);
+  }
+  to {
+    transform: translate(-50%, 2px) rotate(630deg) scale(1.5);
+  }
+}
+

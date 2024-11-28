@@ -3,40 +3,18 @@ import styles from "./Loader_crack.module.css";
 
 const Loader_crack = () => (
   <div>
-    <div className={styles["cube"]}>
-      <div className={styles["topD"]}></div>
-      <div>
-        <span style="--i:0"></span>
-        <span style="--i:1"></span>
-        <span style="--i:2"></span>
-        <span style="--i:3"></span>
-      </div>
-
-      <div className={styles["cube2"]}>
-        <div>
-          <span style="--i:0"></span>
-          <span style="--i:1"></span>
-          <span style="--i:2"></span>
-          <span style="--i:3"></span>
-        </div>
-
-        <div className={styles["cube3"]}>
-          <div className={styles["top3"]}></div>
-          <div>
-            <span style="--i:0"></span>
-            <span style="--i:1"></span>
-            <span style="--i:2"></span>
-            <span style="--i:3"></span>
-          </div>
-        </div>
-      </div>
+    <div className={styles["lava-lamp"]}>
+      <div className={styles["bubble"]}></div>
+      <div className={styles["bubble1"]}></div>
+      <div className={styles["bubble2"]}></div>
+      <div className={styles["bubble3"]}></div>
     </div>
   </div>
 );
 
 export default Loader_crack;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -45,35 +23,11 @@ export default Loader_crack;
 
         const Loader_crack = () => (
          <div>
-          <div className="cube">
-  <div className="topD"></div>
-  <div>
-    <span style="--i:0"></span>
-    <span style="--i:1"></span>
-    <span style="--i:2"></span>
-    <span style="--i:3"></span>
-  </div>
-
-  <div className="cube2">
-    <div>
-      <span style="--i:0"></span>
-      <span style="--i:1"></span>
-      <span style="--i:2"></span>
-      <span style="--i:3"></span>
-    </div>
-
-    <div className="cube3">
-      <div className="top3"></div>
-      <div>
-        <span style="--i:0"></span>
-        <span style="--i:1"></span>
-        <span style="--i:2"></span>
-        <span style="--i:3"></span>
-      </div>
-
-    </div>
-
-  </div>
+          <div className="lava-lamp">
+  <div className="bubble"></div>
+  <div className="bubble1"></div>
+  <div className="bubble2"></div>
+  <div className="bubble3"></div>
 </div>
         </div>
         );

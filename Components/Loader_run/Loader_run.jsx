@@ -3,26 +3,18 @@ import styles from "./Loader_run.module.css";
 
 const Loader_run = () => (
   <div>
-    <div className={styles["spooky-house"]}>
-      <div className={styles["content-circle"]}>
-        <div className={styles["house"]}>
-          <div className={styles["porch"]}></div>
-          <div className={styles["first-floor"]}></div>
-          <div className={styles["second-floor"]}></div>
-          <div className={styles["roof"]}></div>
-          <div className={styles["door"]}></div>
-          <div className={styles["small-windows"]}></div>
-          <div className={styles["big-window"]}></div>
-          <div className={styles["frames"]}></div>
+    <div className={styles["cloader"]}>
+      <div className={styles["clface"]}>
+        <div className={styles["clsface"]}>
+          <div id="h2" className={styles["hand"]}></div>
         </div>
-        <div className={styles["moon"]}></div>
-        <div className={styles["rain"]}>
-          <div className={styles["dropOne"]}></div>
-          <div className={styles["dropTwo"]}></div>
-          <div className={styles["dropThree"]}></div>
-          <div className={styles["dropFour"]}></div>
-          <div className={styles["dropFive"]}></div>
-        </div>
+        <div className={styles["top"]}></div>
+        <div className={styles["bottom"]}></div>
+        <div className={styles["left"]}></div>
+        <div className={styles["right"]}></div>
+        <div id="sub" className={styles["pin"]}></div>
+        <div id="h1" className={styles["hand"]}></div>
+        <div id="main" className={styles["pin"]}></div>
       </div>
     </div>
   </div>
@@ -30,7 +22,7 @@ const Loader_run = () => (
 
 export default Loader_run;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -39,26 +31,18 @@ export default Loader_run;
 
         const Loader_run = () => (
          <div>
-          <div className="spooky-house">
-  <div className="content-circle">
-    <div className="house">
-      <div className="porch"></div>
-      <div className="first-floor"></div>
-      <div className="second-floor"></div>
-      <div className="roof"></div>
-      <div className="door"></div>
-      <div className="small-windows"></div>
-      <div className="big-window"></div>
-      <div className="frames"></div>
+          <div className="cloader">
+  <div className="clface">
+    <div className="clsface">
+      <div id="h2" className="hand"></div>
     </div>
-    <div className="moon"></div>
-    <div className="rain">
-      <div className="dropOne"></div>
-      <div className="dropTwo"></div>
-      <div className="dropThree"></div>
-      <div className="dropFour"></div>
-      <div className="dropFive"></div>
-    </div>
+    <div className="top"></div>
+    <div className="bottom"></div>
+    <div className="left"></div>
+    <div className="right"></div>
+    <div id="sub" className="pin"></div>
+    <div id="h1" className="hand"></div>
+    <div id="main" className="pin"></div>
   </div>
 </div>
         </div>

@@ -3,13 +3,18 @@ import styles from "./Loader_bee.module.css";
 
 const Loader_bee = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["con"]}>
+      <div className={styles["side"] + styles["left"]}></div>
+      <div className={styles["side"] + styles["right"]}></div>
+      <div className={styles["side"] + styles["rightAbove"]}></div>
+      <div className={styles["side"] + styles["bottom"]}></div>
+    </div>
   </div>
 );
 
 export default Loader_bee;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -18,7 +23,12 @@ export default Loader_bee;
 
         const Loader_bee = () => (
          <div>
-          <div className="loader"></div>
+          <div className="con">
+  <div className="side left"></div>
+  <div className="side right"></div>
+  <div className="side rightAbove"></div>
+  <div className="side bottom"></div>
+</div>
         </div>
         );
 

@@ -3,29 +3,27 @@ import styles from "./Button_wife.module.css";
 
 const Button_wife = () => (
   <div>
-    <button alt="BECOME A MEMBER">
-      <i>B</i>
-      <i>E</i>
-      <i>C</i>
-      <i>O</i>
-      <i>M</i>
-      <i>E</i>
-      <i>&nbsp;</i>
-      <i>A</i>
-      <i>&nbsp;</i>
-      <i>M</i>
-      <i>E</i>
-      <i>M</i>
-      <i>B</i>
-      <i>E</i>
-      <i>R</i>
+    <button className={styles["button"]}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 97 162"
+        height="162"
+        width="97"
+        className="svg"
+      >
+        <path
+          fill="#262626"
+          d="M47.2124 0H54.0796V151.644L86.6991 128.712H97L50.646 162L0 128.712H10.3009L47.2124 151.644V0Z"
+        ></path>
+      </svg>
     </button>
   </div>
 );
 
 export default Button_wife;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -34,22 +32,11 @@ export default Button_wife;
 
         const Button_wife = () => (
          <div>
-          <button alt="BECOME A MEMBER">
-  <i>B</i>
-  <i>E</i>
-  <i>C</i>
-  <i>O</i>
-  <i>M</i>
-  <i>E</i>
-  <i>&nbsp;</i>
-  <i>A</i>
-  <i>&nbsp;</i>
-  <i>M</i>
-  <i>E</i>
-  <i>M</i>
-  <i>B</i>
-  <i>E</i>
-  <i>R</i>
+          <button className="button">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 97 162" height="162" width="97" className="svg">
+<path fill="#262626" d="M47.2124 0H54.0796V151.644L86.6991 128.712H97L50.646 162L0 128.712H10.3009L47.2124 151.644V0Z"></path>
+</svg>
+
 </button>
         </div>
         );

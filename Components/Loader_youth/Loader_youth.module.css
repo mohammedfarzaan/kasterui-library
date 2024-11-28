@@ -1,102 +1,56 @@
 
-/* From Uiverse.io by Smit-Prajapati  - Tags: loader, dark, animated, loader, black, minimalist, circle, modern, symbol, geometric, ripple */
+/* From Uiverse.io by csemszepp - Source: https://codepen.io/SandipDust/pen/LYPOGLQ - Tags:  */
 .loader {
-  --size: 250px;
-  --duration: 2s;
-  --logo-color: grey;
-  --background: linear-gradient(
-    0deg,
-    rgba(50, 50, 50, 0.2) 0%,
-    rgba(100, 100, 100, 0.2) 100%
-  );
-  height: var(--size);
-  aspect-ratio: 1;
-  background: black;
-  position: relative;
+  -webkit-perspective: 700px;
+  perspective: 700px;
+  background: red;
+  padding: 10px 20px;
 }
 
-.loader .box {
-  position: absolute;
-  background: rgba(100, 100, 100, 0.15);
-  background: var(--background);
-  border-radius: 50%;
-  border-top: 1px solid rgba(100, 100, 100, 1);
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
-  backdrop-filter: blur(5px);
-  animation: ripple var(--duration) infinite ease-in-out;
+.loader>span {
+  font-size: 60px;
+  font-family: "franklin gothic medium",sans-serif;
+  display: inline-block;
+  animation: flip 2.6s infinite linear;
+  transform-origin: 0 70%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
-.loader .box:nth-child(1) {
-  inset: 40%;
-  z-index: 99;
+@keyframes flip {
+  35% {
+    transform: rotatex(360deg);
+  }
+
+  100% {
+    transform: rotatex(360deg);
+  }
 }
 
-.loader .box:nth-child(2) {
-  inset: 30%;
-  z-index: 98;
-  border-color: rgba(100, 100, 100, 0.8);
-  animation-delay: 0.2s;
+.loader>span:nth-child(even) {
+  color: white;
 }
 
-.loader .box:nth-child(3) {
-  inset: 20%;
-  z-index: 97;
-  border-color: rgba(100, 100, 100, 0.6);
-  animation-delay: 0.4s;
+.loader>span:nth-child(2) {
+  animation-delay: 0.3s;
 }
 
-.loader .box:nth-child(4) {
-  inset: 10%;
-  z-index: 96;
-  border-color: rgba(100, 100, 100, 0.4);
+.loader>span:nth-child(3) {
   animation-delay: 0.6s;
 }
 
-.loader .box:nth-child(5) {
-  inset: 0%;
-  z-index: 95;
-  border-color: rgba(100, 100, 100, 0.2);
-  animation-delay: 0.8s;
+.loader>span:nth-child(4) {
+  animation-delay: 0.9s;
 }
 
-.loader .logo {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-content: center;
-  padding: 30%;
+.loader>span:nth-child(5) {
+  animation-delay: 1.2s;
 }
 
-.loader .logo svg {
-  fill: var(--logo-color);
-  width: 100%;
-  animation: color-change var(--duration) infinite ease-in-out;
+.loader>span:nth-child(6) {
+  animation-delay: 1.5s
 }
 
-@keyframes ripple {
-  0% {
-    transform: scale(1);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
-  }
-  50% {
-    transform: scale(1.3);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 20px -0px;
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
-  }
+.loader>span:nth-child(7) {
+  animation-delay: 1.8s
 }
-
-@keyframes color-change {
-  0% {
-    fill: var(--logo-color);
-  }
-  50% {
-    fill: white;
-  }
-  100% {
-    fill: var(--logo-color);
-  }
-}
-

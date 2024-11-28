@@ -3,13 +3,15 @@ import styles from "./Button_escape.module.css";
 
 const Button_escape = () => (
   <div>
-    <button className={styles["button"]}>join now</button>
+    <button className={styles["btn-shape"]}>
+      <span className={styles["title"]}>hover me</span>
+    </button>
   </div>
 );
 
 export default Button_escape;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -18,7 +20,11 @@ export default Button_escape;
 
         const Button_escape = () => (
          <div>
-          <button className="button">join now</button>
+          <button className="btn-shape">
+    <span className="title">
+      hover me
+    </span>
+</button>
         </div>
         );
 

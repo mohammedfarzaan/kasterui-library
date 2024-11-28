@@ -1,37 +1,22 @@
 
-/* From Uiverse.io by Mike11jr - Tags: loader */
-.loader-wrapper {
- width: 60px;
- height: 60px;
-}
-
+/* From Uiverse.io by Shoh2008 - Tags: loader */
 .loader {
- box-sizing: border-box;
- width: 100%;
- height: 100%;
- border: 10px solid #162534;
- border-top-color: #4bc8eb;
- border-bottom-color: #f13a8f;
- border-radius: 50%;
- animation: rotate0925 5s linear infinite;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+  background: #FFF;
+  box-sizing: border-box;
+  animation: zeroRotation 1s ease infinite alternate-reverse;
 }
 
-.loader-inner {
- border-top-color: #36f372;
- border-bottom-color: #fff;
- animation-duration: 2.5s;
+@keyframes zeroRotation {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  100% {
+    transform: scale(0.3) rotate(360deg);
+  }
 }
-
-@keyframes rotate0925 {
- 0% {
-  transform: scale(1) rotate(360deg);
- }
-
- 50% {
-  transform: scale(.8) rotate(-360deg);
- }
-
- 100% {
-  transform: scale(1) rotate(360deg);
- }
-}
+    

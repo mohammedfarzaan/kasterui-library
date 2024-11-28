@@ -1,32 +1,32 @@
 
-/* From Uiverse.io by JaydipPrajapati1910 - Tags: red, loader, location  */
-.loader {
-  width: 44.8px;
-  height: 44.8px;
-  position: relative;
-  transform: rotate(45deg);
+/* From Uiverse.io by AqFox - Tags: loader */
+.spinner {
+ width: 56px;
+ height: 56px;
+ display: grid;
+ color: #004dff;
+ background: radial-gradient(farthest-side, currentColor calc(100% - 7px),#0000 calc(100% - 6px) 0);
+ -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 15px),#000 calc(100% - 13px));
+ border-radius: 50%;
+ animation: spinner-sm4bhi 2s infinite linear;
 }
 
-.loader:before,
-.loader:after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50% 50% 0 50%;
-  background: #0000;
-  background-image: radial-gradient(circle 11.2px at 50% 50%,#0000 94%, #ff4747);
+.spinner::before,
+.spinner::after {
+ content: "";
+ grid-area: 1/1;
+ background: linear-gradient(currentColor 0 0) center,
+          linear-gradient(currentColor 0 0) center;
+ background-size: 100% 11px,11px 100%;
+ background-repeat: no-repeat;
 }
 
-.loader:after {
-  animation: pulse-ytk0dhmd 1s infinite;
-  transform: perspective(336px) translateZ(0px);
+.spinner::after {
+ transform: rotate(45deg);
 }
 
-@keyframes pulse-ytk0dhmd {
-  to {
-    transform: perspective(336px) translateZ(168px);
-    opacity: 0;
-  }
+@keyframes spinner-sm4bhi {
+ 100% {
+  transform: rotate(1turn);
+ }
 }
-  
-

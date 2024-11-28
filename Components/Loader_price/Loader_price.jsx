@@ -3,21 +3,17 @@ import styles from "./Loader_price.module.css";
 
 const Loader_price = () => (
   <div>
-    <div id="page">
-      <div id="container">
-        <div id="ring"></div>
-        <div id="ring"></div>
-        <div id="ring"></div>
-        <div id="ring"></div>
-        <div id="h3">loading</div>
-      </div>
+    <div className={styles["loader"]}>
+      <div className={styles["bubble"]}></div>
+      <div className={styles["bubble"]}></div>
+      <div className={styles["bubble"]}></div>
     </div>
   </div>
 );
 
 export default Loader_price;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -26,14 +22,10 @@ export default Loader_price;
 
         const Loader_price = () => (
          <div>
-          <div id="page">
-        <div id="container">
-            <div id="ring"></div>
-            <div id="ring"></div>
-            <div id="ring"></div>
-            <div id="ring"></div>
-            <div id="h3">loading</div>
-        </div>
+          <div className="loader">
+  <div className="bubble"></div>
+  <div className="bubble"></div>
+  <div className="bubble"></div>
 </div>
         </div>
         );

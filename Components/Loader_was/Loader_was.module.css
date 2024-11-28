@@ -1,55 +1,65 @@
 
-/* From Uiverse.io by funkyjuice213 - Tags: loader, glow */
-.loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+/* From Uiverse.io by vikramsinghnegi  - Tags: loading, loader, html, css */
+.loader-spanne-20 {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  padding: 0;
 }
-
-.loader-bar {
-  height: 25px;
-  width: 6px;
-  margin: 0 3px;
-  border-radius: 20px;
-  animation: loader 2s ease-in-out infinite;
+.loader-spanne-20 > span {
+  position: absolute;
+  right: 0;
+  width: 3px;
+  height: 30px;
+  background-color: rgb(116, 204, 197);
+  display: block;
+  border-radius: 3px;
+  transform-origin: 50% 100%;
+  animation: move 2.8s linear infinite;
 }
-
-.bar-1 {
-  background: linear-gradient(to right, #00e6e6, #00ccff, #0099ff, #0066ff);
-  animation-delay: 0s;
-  box-shadow: 0px 0px 15px 3px #00e6e6;
+.loader-spanne-20 > span:nth-child(1) {
+  animation-delay: -0.4s;
 }
-
-.bar-2 {
-  background: linear-gradient(to right, #00ccff, #0099ff, #0066ff, #00e6e6);
-  animation-delay: 0.1s;
-  box-shadow: 0px 0px 15px 3px #00ccff;
+.loader-spanne-20 > span:nth-child(2) {
+  animation-delay: -0.8s;
 }
-
-.bar-3 {
-  background: linear-gradient(to right, #0099ff, #0066ff, #00e6e6, #00ccff);
-  animation-delay: 0.2s;
-  box-shadow: 0px 0px 15px 3px #0099ff;
+.loader-spanne-20 > span:nth-child(3) {
+  animation-delay: -1.2s;
 }
-
-.bar-4 {
-  background: linear-gradient(to right, #0066ff, #00e6e6, #00ccff, #0099ff);
-  animation-delay: 0.3s;
-  box-shadow: 0px 0px 15px 3px #0066ff;
+.loader-spanne-20 > span:nth-child(4) {
+  animation-delay: -1.6s;
 }
-
-@keyframes loader {
+.loader-spanne-20 > span:nth-child(5) {
+  animation-delay: -2s;
+}
+.loader-spanne-20 > span:nth-child(6) {
+  animation-delay: -2.4s;
+}
+.loader-spanne-20 > span:nth-child(7) {
+  animation-delay: -2.8s;
+}
+@keyframes move {
   0% {
-    transform: scaleY(1);
+    opacity: 0;
+    transform: translateX(0px) rotate(0deg);
   }
-
+  20% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(-40px) rotate(0deg);
+  }
   50% {
-    transform: scaleY(2);
+    opacity: 1;
+    transform: translateX(-50px) rotate(22deg);
   }
-
+  85% {
+    opacity: 1;
+    transform: translateX(-85px) rotate(60deg);
+  }
   100% {
-    transform: scaleY(1);
+    opacity: 0;
+    transform: translateX(-100px) rotate(65deg);
   }
 }
 

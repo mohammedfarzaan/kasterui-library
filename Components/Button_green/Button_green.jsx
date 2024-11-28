@@ -3,15 +3,18 @@ import styles from "./Button_green.module.css";
 
 const Button_green = () => (
   <div>
-    <button role="button" className={styles["golden-button"]}>
-      <span className={styles["golden-text"]}>Golden Button</span>
+    <button className={styles["button"]}>
+      <span className={styles["button_lg"]}>
+        <span className={styles["button_sl"]}></span>
+        <span className={styles["button_text"]}>Download Now</span>
+      </span>
     </button>
   </div>
 );
 
 export default Button_green;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -20,8 +23,11 @@ export default Button_green;
 
         const Button_green = () => (
          <div>
-          <button role="button" className="golden-button">
-  <span className="golden-text">Golden Button</span>
+          <button className="button">
+    <span className="button_lg">
+        <span className="button_sl"></span>
+        <span className="button_text">Download Now</span>
+    </span>
 </button>
         </div>
         );

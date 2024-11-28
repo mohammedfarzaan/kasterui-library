@@ -1,39 +1,65 @@
 
-/* From Uiverse.io by adamgiebl - Tags: button */
-button {
-  background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
-  background-size: 800% 400%;
-  padding: 1em 2em;
-  display: inline-block;
-  border: none;
-  border-radius: 10px;
-  font-size: 17px;
-  font-weight: 700;
-  color: white;
-  transition: all .5s ease-in-out;
-  animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+/* From Uiverse.io by SharpTH - Tags: button */
+.draw-border {
+ box-shadow: inset 0 0 0 4px #58afd1;
+ color: #58afd1;
+ transition: color 0.25s 0.0833333333s;
+ position: relative;
 }
 
-button:hover {
-  animation: gradient 3s infinite;
-  transform: scale(1.05);
+.draw-border::before, .draw-border::after {
+ border: 0 solid transparent;
+ box-sizing: border-box;
+ content: "";
+ pointer-events: none;
+ position: absolute;
+ width: 0;
+ height: 0;
+ bottom: 0;
+ right: 0;
 }
 
-button:active {
-  animation: gradient 3s infinite;
-  transform: scale(0.8);
+.draw-border::before {
+ border-bottom-width: 4px;
+ border-left-width: 4px;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+.draw-border::after {
+ border-top-width: 4px;
+ border-right-width: 4px;
 }
+
+.draw-border:hover {
+ color: #ffe593;
+}
+
+.draw-border:hover::before, .draw-border:hover::after {
+ border-color: #ffe593;
+ transition: border-color 0s, width 0.25s, height 0.25s;
+ width: 100%;
+ height: 100%;
+}
+
+.draw-border:hover::before {
+ transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after {
+ transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+ background: none;
+ border: none;
+ cursor: pointer;
+ line-height: 1.5;
+ font: 700 17px "Roboto Slab", sans-serif;
+ padding: 1em 2em;
+ letter-spacing: 0.05rem;
+}
+
+.btn:focus {
+ outline: 2px dotted #55d7dc;
+}
+
+

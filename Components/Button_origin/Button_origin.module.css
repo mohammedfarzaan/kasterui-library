@@ -1,56 +1,50 @@
 
-/* From Uiverse.io by KhaledMatalkah - Tags: material design, button, custom, hover button */
-.realistic-button {
-  display: inline-block;
-  position: relative;
-  padding: 15px 30px;
-  font-size: 18px;
-  font-weight: bold;
+/* From Uiverse.io by joe-watson-sbf - Tags: button, hover */
+.btn {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffedd3;
   text-transform: uppercase;
-  color: #fff;
-  background: linear-gradient(to bottom, #3498db, #2980b9);
-  border: 1px solid #2980b9;
-  border-radius: 5px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), inset 0px 2px 4px rgba(255, 255, 255, 0.2);
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  overflow: hidden;
-  transition: background-color 0.3s, transform 0.3s;
+  position: relative;
+  transition: .5s ease;
 }
 
-.realistic-button::before,
-        .realistic-button::after {
+.btn::before {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  z-index: -1;
-  transition: transform 0.3s;
-}
-
-.realistic-button::before {
-  top: 0;
-  left: -100%;
-  transform: skewX(-45deg);
-}
-
-.realistic-button::after {
+  left: 0;
   bottom: 0;
-  right: -100%;
-  transform: skewX(45deg);
+  height: 2px;
+  width: 0;
+  background-color: #ffc506;
+  transition: .5s ease;
 }
 
-.realistic-button:hover {
-  background: linear-gradient(to bottom, #042b46, #0a525cd8);
-  transform: translateY(-2px);
-  box-shadow: 0px 6px 8px rgba(0, 195, 255, 0.2), inset 0px 2px 4px rgba(255, 255, 255, 0.1);
+.btn:hover {
+  color: #1e1e2b;
+  transition-delay: .5s;
 }
 
-.realistic-button:hover::before {
-  transform: translateX(100%);
+.btn:hover::before {
+  width: 100%;
 }
 
-.realistic-button:hover::after {
-  transform: translateX(-100%);
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #ffc506;
+  transition: .4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
 }

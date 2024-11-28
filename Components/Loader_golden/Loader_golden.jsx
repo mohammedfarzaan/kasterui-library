@@ -3,18 +3,28 @@ import styles from "./Loader_golden.module.css";
 
 const Loader_golden = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["in"]}></div>
-      <div className={styles["out-1"]}></div>
-      <div className={styles["out-2"]}></div>
-      <div className={styles["out-3"]}></div>
+    <div className={styles["content"]}>
+      <div className={styles["planet"]}>
+        <div className={styles["ring"]}></div>
+        <div className={styles["cover-ring"]}></div>
+        <div className={styles["spots"]}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <p>loading</p>
     </div>
   </div>
 );
 
 export default Loader_golden;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -23,11 +33,22 @@ export default Loader_golden;
 
         const Loader_golden = () => (
          <div>
-          <div className="loader">
-<div className="in"></div>
-<div className="out-1"></div>
-<div className="out-2"></div>
-<div className="out-3"></div>
+          <div className="content">
+   <div className="planet">
+      <div className="ring"></div>
+         <div className="cover-ring"></div>
+      <div className="spots">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+
+      </div>
+   </div>
+   <p>loading</p>
 </div>
         </div>
         );

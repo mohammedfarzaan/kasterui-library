@@ -1,35 +1,49 @@
 
-/* From Uiverse.io by KSAplay - Tags: button */
-.btn {
-  padding: 0.5em 2em 0.5em 2.5em;
-  font-size: 1em;
-  font-weight: bold;
-  border-radius: 15px;
-  color: #fff6fb;
-  letter-spacing: 0.3em;
-  text-shadow: -2px 2px 5px #FD3084;
+/* From Uiverse.io by vinodjangid07 - Tags: gradient, button, hover effect */
+.Btn {
+  position: relative;
   background-color: transparent;
-  border: 2px solid #FEB1DE;
-  box-shadow: 0 0 0px 1px #F11271,
-    0 0 10px 2px #FD3084,
-    inset 0 0 0px 1px #F11271,
-    inset 0 0 10px 2px #FD3084;
-  transition: 100ms;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s;
 }
 
-.btn:hover {
-  box-shadow: 0 0 0px 1px #F11271,
-    0 0 10px 2px #FD3084,
-    inset 0 0 0px 1px #F11271,
-    inset 0 0 30px 2px #FD3084;
-  text-shadow: 0 0 10px #FD3084;
-  transform: translateY(-5px);
+.text {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(230, 230, 230, 0.466);
+  border: none;
+  border-radius: 7px;
+  backdrop-filter: blur(5px);
+  color: rgb(26, 26, 26);
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.8px;
 }
 
-.btn:active {
-  box-shadow: 0 0 0px 1px #F11271,
-    0 0 25px 2px #FD3084,
-    inset 0 0 0px 1px #F11271,
-    inset 0 0 30px 2px #FD3084;
-  transform: translateY(1px);
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(147deg, #FFE53B, #FF2525);
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  border-radius: 7px;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.Btn:hover {
+  transform: translateY(-2px);
+}
+
+.Btn:hover .BG {
+  transform: translateY(-1px);
 }

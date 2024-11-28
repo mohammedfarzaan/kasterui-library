@@ -1,51 +1,169 @@
 
-/* From Uiverse.io by SelfMadeSystem  - Tags: 3d, button, game, border, 3d button, illustrated */
-.button-container {
-  --background: #fefbff;
-  --inner-shadow: #9faef9;
-  --inner-outline: #34217d;
-  --inner-outline-bottom: #fafcfe;
-  --inner-outline-middle: #8880d5;
-  --inner-outline-outer-top: #fefcff;
-  --inner-outline-outer-bottom-1: #29107b;
-  --line-1: #8676c9;
-  --line-2: #5c69ca;
+/* From Uiverse.io by albertofanini-prog - Tags: button */
+.pulsa {
+  animation: pulsa 1.4s infinite;
+  min-width: 200px;
+  width: fit-content;
+  border-radius: 9999px;
+  /* overflow: hidden; */
+}
+
+.cta {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: none;
+  border-radius: 9999px;
+  padding: 8px 16px;
+  color: white;
+  font-size: 15px;
+  background: linear-gradient(109.6deg, #090979 11.2%, #9006A1 53.7%, #090979 100.2%);
+  letter-spacing: 0.08em;
+  font-weight: 800;
   position: relative;
-  background: var(--background);
-  cursor: pointer;
-  transition: all 0.2s;
-  font-size: 17px;
-  padding: 0.7em 1.8em;
-  border-radius: 5px;
-  box-shadow: inset 0px 1px 8px 1px var(--inner-shadow),
-    0px 2px 0px 0px var(--inner-outline-bottom),
-    0px -2px 0px 0px var(--inner-outline),
-    -2px -2px 0px 0px var(--inner-outline),
-    2px -2px 0px 0px var(--inner-outline),
-    0px 0px 0px 6px var(--inner-outline-middle),
-    0px -2px 0px 7px var(--inner-outline-outer-top),
-    0px 4px 0px 7px var(--inner-outline-outer-bottom-1);
 }
 
-.button-lines {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4em;
+.cta:active {
+  animation: pulsa-active .4s infinite;
 }
 
-.button-line-1 {
-  height: 0.2em;
-  width: 4em;
-  border-radius: 10em;
-  display: inline-block;
-  background: var(--line-1);
+.star {
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  animation: pulsa-stella 1.8s infinite;
+  transition: all .8s ease-in-out;
 }
 
-.button-line-2 {
-  height: 0.2em;
-  width: 3em;
-  border-radius: 10em;
-  display: inline-block;
-  background: var(--line-2);
+.star.a {
+  top: 8px;
+  left: 6px;
 }
 
+.star.b {
+  top: 2px;
+  left: 16px;
+}
+
+.star.c {
+  top: 18px;
+  left: 8px;
+}
+
+.star.d {
+  top: 14px;
+  left: 20px;
+}
+
+.star.e {
+  top: 30px;
+  left: 8px;
+}
+
+.star.f {
+  top: 24px;
+  left: 24px;
+}
+
+.star.g {
+  top: 10px;
+  left: 32px;
+}
+
+.pulsa:hover .star.a {
+  transform: translate3d(0px, 8px, 0);
+}
+
+.pulsa:hover .star.b {
+  transform: translate3d(-4px, 6px, 0);
+}
+
+.pulsa:hover .star.c {
+  transform: translate3d(14px, -8px, 0);
+}
+
+.pulsa:hover .star.d {
+  transform: translate3d(16px, -2px, 0);
+}
+
+.pulsa:hover .star.e {
+  transform: translate3d(58px, -20px, 0);
+}
+
+.pulsa:hover .star.f {
+  transform: translate3d(34px, 2px, 0);
+}
+
+.pulsa:hover .star.g {
+  transform: translate3d(10px, 16px, 0);
+}
+
+.rocket {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  z-index: -1;
+  transform: rotate(180deg);
+  transition: all .3s ease-in-out;
+}
+
+.pulsa:hover .rocket {
+  z-index: auto;
+  animation: muovi-razzo 1.8s linear;
+  transform: rotate(0deg);
+}
+
+@keyframes pulsa {
+  0% {
+    box-shadow: 0 0 0 0 #9006A1;
+  }
+
+  100% {
+    box-shadow: 0 0 0 8px #fbb32f01;
+  }
+}
+
+@keyframes pulsa-stella {
+  0% {
+    box-shadow: 0 0 0 0 #ffffff;
+  }
+
+  100% {
+    box-shadow: 0 0 0 4px #fbb32f01;
+  }
+}
+
+@keyframes muovi-razzo {
+  from {
+    transform: rotate(180deg);
+  }
+
+  25% {
+    transform: translate3d(40px, 32px, 0);
+  }
+
+  50% {
+    transform: translate3d(32px, -60px, 0);
+  }
+
+  75% {
+    transform: translate3d(0px, -60px, 0) rotate(0);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulsa-active {
+  0% {
+    box-shadow: 0 0 0 0 #9006A1;
+  }
+
+  100% {
+    box-shadow: 0 0 0 16px #fbb32f01;
+  }
+}

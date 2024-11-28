@@ -1,45 +1,59 @@
 
-/* From Uiverse.io by Subaashbala  - Tags: simple, neumorphism, button */
+/* From Uiverse.io by andrew-demchenk0 - Tags: green, button, add */
 .button {
-  cursor: pointer;
   position: relative;
-  border-radius: 55px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 15px;
-  gap: 8px;
-  font-size: 1rem;
-  font-weight: 900;
-  background-color: white;
-  border: none;
-  background: linear-gradient(to bottom, #ecefee, #fff);
-  transition: all 500ms;
-}
-.button::after {
-  content: "";
-  position: absolute;
-  width: 105%;
-  height: 115%;
-  background: linear-gradient(to top, #ecefeeb4, #fff);
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  border-radius: 15px;
-  padding: 2px;
-  transform: translate(-50%, -50%);
-  border: 2px solid #d5d6d5;
-  border-bottom: 3px solid #7b7d7cc0;
-  border-left: 2px solid #b5b5b5;
-  border-right: 2px solid #b5b5b5;
-  box-shadow: 0px 20px 45px #b5b9b8;
-}
-.icon svg {
-  width: 1.18rem;
-  height: auto;
-  vertical-align: middle;
-}
-.icon path {
-  stroke-width: 5px;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
 }
 
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.button:hover {
+  background: #34974d;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #2e8644;
+}
+
+.button:active {
+  border: 1px solid #2e8644;
+}

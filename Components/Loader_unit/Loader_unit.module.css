@@ -1,36 +1,41 @@
 
-/* From Uiverse.io by dvhoang2106 - Tags: loader */
-.spinner {
- display: inline-block;
- transform: translateZ(1px);
+/* From Uiverse.io by Satwinder04 - Tags: loader */
+.loader {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.spinner > div {
- display: inline-block;
- width: 64px;
- height: 64px;
- margin: 8px;
- border-radius: 50%;
- background: #fff;
- animation: spinner8344 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+.loader-text {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  align-self: center;
 }
 
-@keyframes spinner8344 {
- 0%,
+.loader-bar {
+  width: 30%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  animation: loader-bar-animation 2s ease-in-out infinite;
+}
+
+@keyframes loader-bar-animation {
+  0% {
+    /* transform: translateX(-100%) rotate(270deg); */
+    transform: translateX(-100%);
+  }
+
+  50% {
+    /* transform: translateX(100%) rotate(-90deg); */
+    transform: translateX(100%);
+  }
+
   100% {
-  animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
- }
-
- 0% {
-  transform: rotateY(0deg);
- }
-
- 50% {
-  transform: rotateY(1800deg);
-  animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
- }
-
- 100% {
-  transform: rotateY(3600deg);
- }
+    /* transform: translateX(-100%) rotate(270deg); */
+    transform: translateX(-100%);
+  }
 }

@@ -1,98 +1,68 @@
 
-/* From Uiverse.io by bhaveshxrawat - Tags: button */
-#br__btn {
+/* From Uiverse.io by gharsh11032000 - Tags: gradient, button, hover effect */
+.button {
+  position: relative;
+  border: none;
+  color: #e8e8e8;
+  background: #333333;
+  font-weight: 600;
+  font-size: 20px;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.188rem;
-  padding: .625em 1.25em;
-  position: relative;
+  height: 60px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0,0.2);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
   overflow: hidden;
-  border-radius: .75em;
-  border: 0;
-  color: #fff;
-  --degPrimary: 100.98deg;
 }
 
-#br__gradient {
-  position: absolute;
-  background: conic-gradient(from var(--degPrimary) at 50% 50%, #0E6CB9 -14.31deg, rgba(251, 251, 251, 0.5) 4.98deg, #1F1F1F 90.36deg, #FFFFFF 97.67deg, #151250 288.5deg, #401C73 315.27deg, #0E6CB9 345.69deg, rgba(251, 251, 251, 0.5) 364.98deg);
-  aspect-ratio: 1 / 1;
-  width: 220%;
-  bottom: -320%;
-  left: -110%;
-  border-radius: 50%;
-  z-index: 0;
-  user-select: none;
-  transition: transform 0.5s ease-in;
-}
-
-#br__btn:hover i {
-  transform: rotate(-105deg);
-}
-
-#br__btn:hover span {
-  transform: scale(0.62);
-  transition: 3s ease-in-out;
-}
-
-.star {
-  width: 1px;
-  height: 1px;
-  background-color: white;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  visibility: hidden;
-}
-
-.star:not(:hover) {
-  transition-duration: 0s;
-}
-
-.star:nth-child(2) {
-  right: 25%;
-}
-
-.star:nth-child(3) {
-  right: 60%;
-}
-
-.star:nth-child(4) {
-  right: 11%;
-}
-
-.star:nth-child(5) {
-  right: 22%;
-}
-
-.star:nth-child(6) {
-  right: 42%;
-}
-
-.star:nth-child(7) {
-  right: 62%;
-}
-
-.star:nth-child(8) {
-  right: 12%;
-}
-
-.star:nth-child(9) {
-  right: 82%;
-}
-
-#br__btn:hover .star {
-  visibility: visible;
-  top: calc(5px * var(--order)/2);
-  transition: top 1s ease-in 2s, 2s visibility ease-in 2s;
-}
-
-#br__btn:not(:hover) .txt {
-  transition-delay: 0.3s;
-  transition-duration: 0.5s;
-}
-
-.txt {
+.button .span {
   position: relative;
-  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition-delay: 0.6s;
 }
+
+.button:hover .span:nth-child(1) {
+  transform: translateY(-100%);
+  transition-delay: 0s;
+}
+
+.button:hover .span:nth-child(2) {
+  transform: translateY(-100%);
+  transition-delay: 0s;
+}
+
+.button:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: scaleX(0);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition-delay: 0;
+  transform-origin: left;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+  transition-delay: 0.6s;
+}
+
+.button:active {
+  box-shadow: none;
+}
+
+
+
+        

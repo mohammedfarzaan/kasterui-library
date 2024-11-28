@@ -1,57 +1,15 @@
 import React from "react";
-import styles from "./Button_one.module.css";
 
 const Button_one = () => (
   <div>
-    <div className={styles["box"]}>
-      <button className={styles["button"]}>LISTEN</button>
-      <div className={styles["music"]}>
-        <span className={styles["soundwave"]} style="--i: 12"></span>
-        <span className={styles["soundwave"]} style="--i: 31"></span>
-        <span className={styles["soundwave"]} style="--i: 25"></span>
-        <span className={styles["soundwave"]} style="--i: 18"></span>
-        <span className={styles["soundwave"]} style="--i: 11"></span>
-        <span className={styles["soundwave"]} style="--i: 23"></span>
-        <span className={styles["soundwave"]} style="--i: 16"></span>
-        <span className={styles["soundwave"]} style="--i: 34"></span>
-        <span className={styles["soundwave"]} style="--i: 19"></span>
-        <span className={styles["soundwave"]} style="--i: 14"></span>
-      </div>
-    </div>
+    <button className="animate-pulse bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-red-500 hover:to-purple-500 text-[#11324D] font-bold py-3 px-6 rounded-full shadow-lg hover:text-white transform transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-xl hover:rotate-12 hover:brightness-110">
+      Awesome Button
+    </button>
   </div>
 );
 
 export default Button_one;
-{
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Button_one = () => (
-         <div>
-          <div className="box">
-  <button className="button">LISTEN</button>
-  <div className="music">
-    <span className="soundwave" style="--i: 12"></span>
-    <span className="soundwave" style="--i: 31"></span>
-    <span className="soundwave" style="--i: 25"></span>
-    <span className="soundwave" style="--i: 18"></span>
-    <span className="soundwave" style="--i: 11"></span>
-    <span className="soundwave" style="--i: 23"></span>
-    <span className="soundwave" style="--i: 16"></span>
-    <span className="soundwave" style="--i: 34"></span>
-    <span className="soundwave" style="--i: 19"></span>
-    <span className="soundwave" style="--i: 14"></span>
-  </div>
-</div>
-        </div>
-        );
-
-        export default Button_one;
-        
-        
-         */
+{
+  /* */
 }

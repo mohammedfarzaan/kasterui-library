@@ -1,43 +1,39 @@
 
-/* From Uiverse.io by Manish-Tamang  - Tags: button, challenge, html */
-.send-message-btn {
-  background-color: #ffffff;
-  border: 2px solid #e0e0e0;
-  border-radius: 12px;
-  padding: 14px; /* Increased padding to adjust for 4px gap */
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+/* From Uiverse.io by ArturCodeCraft - Tags: button, scroll to top, scroll */
+/* <reset-style> ============================ */
+a {
+  text-decoration: none;
 }
-.send-message-btn:hover {
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-.send-message-btn:active {
-  transform: scale(0.98);
-}
-
-.inner-randi {
+/* <main-style> ============================ */
+.scroll-up {
+	/* position: fixed; */
+  right: 3rem;
+  bottom: -50%;
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: rgba(29, 29, 31, 0.7);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0;
-  border-radius: 24px;
-  padding: 10px 16px;
-  position: relative;
-  width: calc(100% - 1px);
-  height: calc(100% - 20px);
-  border: 2px solid #e0e0e0;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
-  color: #000;
-  white-space: nowrap;
+  overflow: hidden;
+  transition: bottom .4s, transform .4s;
 }
 
-.khatey {
-  margin-right: 8px;
-  transform: rotate(-30deg);
+.scroll-up:hover {
+  transform: translateY(-.25rem);
 }
 
+/* Show scroll-up */
+._show-scroll {
+  bottom: 3rem;
+}
+
+@media (max-width: 1199.98px) {
+  .scroll-up {
+    right: 1rem;
+  }
+}

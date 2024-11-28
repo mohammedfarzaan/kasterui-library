@@ -3,19 +3,30 @@ import styles from "./Button_stop.module.css";
 
 const Button_stop = () => (
   <div>
-    <button className={styles["button"]}>
-      <svg className="bell" viewBox="0 0 448 512">
-        <path d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"></path>
+    <button className={styles["beach-button"]}>
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 1L2 21h20z" fill="#fff"></path>
+        <path
+          d="M12 16.6l-4-4.2 1.4-1.4L12 13l6.6-6.6L18 9z"
+          fill="#1565c0"
+        ></path>
+        <path
+          d="M12 18h-.3c-3.8-.3-7-3.5-7.3-7.3H1.9c.4 4.5 4.2 8.2 8.8 8.7V22c1.6 0 3-1.3 3-3s-1.3-3-3-3z"
+          fill="#00838f"
+        ></path>
+        <path
+          d="M12 18c-.6 0-1.1-.1-1.6-.2-1.2-.4-2.2-1.4-2.6-2.6-.1-.5-.2-1-.2-1.6 0-.9.2-1.8.7-2.5l4.4 4.4-1.4 1.4-3-3v-4.2c.7-.4 1.6-.7 2.5-.7.6 0 1.1.1 1.6.2 1.2.4 2.2 1.4 2.6 2.6.1.5.2 1 .2 1.6 0 .9-.2 1.8-.7 2.5l-4.4-4.4 1.4-1.4 3 3v4.2c-.7.4-1.6.7-2.5.7z"
+          fill="#00acc1"
+        ></path>
       </svg>
-      Notifications
-      <div className={styles["arrow"]}>›</div>
+      <span>Download</span>
     </button>
   </div>
 );
 
 export default Button_stop;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -24,10 +35,14 @@ export default Button_stop;
 
         const Button_stop = () => (
          <div>
-          <button className="button">
-   <svg className="bell" viewBox="0 0 448 512"><path d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"></path></svg>
-  Notifications
-  <div className="arrow">›</div>
+          <button className="beach-button">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 1L2 21h20z" fill="#fff"></path>
+    <path d="M12 16.6l-4-4.2 1.4-1.4L12 13l6.6-6.6L18 9z" fill="#1565c0"></path>
+    <path d="M12 18h-.3c-3.8-.3-7-3.5-7.3-7.3H1.9c.4 4.5 4.2 8.2 8.8 8.7V22c1.6 0 3-1.3 3-3s-1.3-3-3-3z" fill="#00838f"></path>
+    <path d="M12 18c-.6 0-1.1-.1-1.6-.2-1.2-.4-2.2-1.4-2.6-2.6-.1-.5-.2-1-.2-1.6 0-.9.2-1.8.7-2.5l4.4 4.4-1.4 1.4-3-3v-4.2c.7-.4 1.6-.7 2.5-.7.6 0 1.1.1 1.6.2 1.2.4 2.2 1.4 2.6 2.6.1.5.2 1 .2 1.6 0 .9-.2 1.8-.7 2.5l-4.4-4.4 1.4-1.4 3 3v4.2c-.7.4-1.6.7-2.5.7z" fill="#00acc1"></path>
+  </svg>
+  <span>Download</span>
 </button>
         </div>
         );

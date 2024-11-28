@@ -1,29 +1,127 @@
 import React from "react";
+import styles from "./Button_nuts.module.css";
 
 const Button_nuts = () => (
   <div>
-    <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        fill="none"
-        className="w-5 h-5 mr-2 -ml-1"
-      >
-        <path
-          d="M12 4v12m8-8l-8 8-8-8"
-          strokeWidth="2"
-          strokeLinejoin="round"
-          strokeLinecap="round"
-        ></path>
-      </svg>
-      Download
+    <button className={styles["button"]}>
+      <p className={styles["button__text"]}>
+        <span style="--index: 0;">A</span>
+        <span style="--index: 1;">W</span>
+        <span style="--index: 2;">E</span>
+        <span style="--index: 3;">S</span>
+        <span style="--index: 4;">O</span>
+        <span style="--index: 5;">M</span>
+        <span style="--index: 6;">E</span>
+        <span style="--index: 7;"> </span>
+        <span style="--index: 8;">C</span>
+        <span style="--index: 9;">S</span>
+        <span style="--index: 10;">S</span>
+        <span style="--index: 11;"> </span>
+        <span style="--index: 12;">B</span>
+        <span style="--index: 13;">U</span>
+        <span style="--index: 14;">T</span>
+        <span style="--index: 15;">T</span>
+        <span style="--index: 16;">O</span>
+        <span style="--index: 17;">N</span>
+      </p>
+
+      <div className={styles["button__circle"]}>
+        <svg
+          viewBox="0 0 14 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="button__icon"
+          width="14"
+        >
+          <path
+            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+            fill="currentColor"
+          ></path>
+        </svg>
+
+        <svg
+          viewBox="0 0 14 15"
+          fill="none"
+          width="14"
+          xmlns="http://www.w3.org/2000/svg"
+          className="button__icon button__icon--copy"
+        >
+          <path
+            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
     </button>
   </div>
 );
 
 export default Button_nuts;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_nuts = () => (
+         <div>
+          <button className="button">
+  <p className="button__text">
+    <span style="--index: 0;">A</span>
+    <span style="--index: 1;">W</span>
+    <span style="--index: 2;">E</span>
+    <span style="--index: 3;">S</span>
+    <span style="--index: 4;">O</span>
+    <span style="--index: 5;">M</span>
+    <span style="--index: 6;">E</span>
+    <span style="--index: 7;"> </span>
+    <span style="--index: 8;">C</span>
+    <span style="--index: 9;">S</span>
+    <span style="--index: 10;">S</span>
+    <span style="--index: 11;"> </span>
+    <span style="--index: 12;">B</span>
+    <span style="--index: 13;">U</span>
+    <span style="--index: 14;">T</span>
+    <span style="--index: 15;">T</span>
+    <span style="--index: 16;">O</span>
+    <span style="--index: 17;">N</span>
+  </p>
+
+  <div className="button__circle">
+    <svg
+      viewBox="0 0 14 15"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="button__icon"
+      width="14"
+    >
+      <path
+        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        fill="currentColor"
+      ></path>
+    </svg>
+
+    <svg
+      viewBox="0 0 14 15"
+      fill="none"
+      width="14"
+      xmlns="http://www.w3.org/2000/svg"
+      className="button__icon button__icon--copy"
+    >
+      <path
+        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  </div>
+</button>
+        </div>
+        );
+
+        export default Button_nuts;
+        
+        
+         */
 }

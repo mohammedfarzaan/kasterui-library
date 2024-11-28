@@ -1,61 +1,31 @@
 
-/* From Uiverse.io by MuhammadHasann  - Tags: simple, minimalist, button */
+/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, transition */
 .button {
-  cursor: pointer;
-  --c: #0ea5e9;
-  padding: 12px 28px;
-  margin: 1em;
+  display: inline-block;
   position: relative;
-  min-width: 12em;
-  background: transparent;
-  font-size: 12px;
-  font-weight: bold;
-  color: var(--c);
-  text-align: center;
+  padding: 13px 20px;
+  border: none;
+  background: rgba(51, 50, 50, 0.287);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
   text-transform: uppercase;
-  font-family: sans-serif;
-  letter-spacing: 0.1em;
-  border: 2px solid var(--c);
-  border-radius: 8px;
+  cursor: crosshair;
   overflow: hidden;
-  z-index: 1;
-  transition: 0.5s;
 }
 
-.button span {
+.button:before {
+  content: '';
   position: absolute;
-  width: 25%;
+  top: 0;
+  left: -100%;
+  width: 100%;
   height: 100%;
-  background-color: var(--c);
-  transform: translateY(150%);
-  border-radius: 50%;
-  left: calc((var(--n) - 1) * 25%);
-  transition: 0.5s;
-  transition-delay: calc((var(--n) - 1) * 0.1s);
-  z-index: -1;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.14) 50%, transparent 100%);
+  transition: left 0.3s ease;
 }
 
-.button:hover {
-  color: black;
-}
-
-.button:hover span {
-  transform: translateY(0) scale(2);
-}
-
-.button span:nth-child(1) {
-  --n: 1;
-}
-
-.button span:nth-child(2) {
-  --n: 2;
-}
-
-.button span:nth-child(3) {
-  --n: 3;
-}
-
-.button span:nth-child(4) {
-  --n: 4;
+.button:hover:before {
+  left: 100%;
 }
 

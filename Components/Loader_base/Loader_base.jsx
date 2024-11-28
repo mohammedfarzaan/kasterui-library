@@ -3,19 +3,17 @@ import styles from "./Loader_base.module.css";
 
 const Loader_base = () => (
   <div>
-    <div className={styles["follow-the-leader-line"]}>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div className={styles["wrapper"]}>
+      <div className={styles["hoop"]}></div>
+      <div className={styles["sphere1"]}></div>
+      <div className={styles["sphere2"]}></div>
     </div>
   </div>
 );
 
 export default Loader_base;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -24,13 +22,11 @@ export default Loader_base;
 
         const Loader_base = () => (
          <div>
-          <div className="follow-the-leader-line">
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
+          <div className="wrapper">
+		<div className="hoop"></div>
+		<div className="sphere1"></div>
+		<div className="sphere2"></div>	
+	</div>
         </div>
         );
 

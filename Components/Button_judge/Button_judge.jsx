@@ -3,13 +3,21 @@ import styles from "./Button_judge.module.css";
 
 const Button_judge = () => (
   <div>
-    <button>INPUT</button>
+    <div className={styles["container"]}>
+      <button className={styles["button"]}>
+        <div className={styles["button__line"]}></div>
+        <div className={styles["button__line"]}></div>
+        <span className={styles["button__text"]}>Hover Me</span>
+        <div className={styles["button__drow1"]}></div>
+        <div className={styles["button__drow2"]}></div>
+      </button>
+    </div>
   </div>
 );
 
 export default Button_judge;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -18,9 +26,15 @@ export default Button_judge;
 
         const Button_judge = () => (
          <div>
-          <button>
-  INPUT
-</button>
+          <div className="container">
+  <button className="button">
+    <div className="button__line"></div>
+    <div className="button__line"></div>
+    <span className="button__text">Hover Me</span>
+    <div className="button__drow1"></div>
+    <div className="button__drow2"></div>
+  </button>  
+</div>
         </div>
         );
 

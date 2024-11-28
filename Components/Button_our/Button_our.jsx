@@ -1,17 +1,37 @@
 import React from "react";
+import styles from "./Button_our.module.css";
 
 const Button_our = () => (
   <div>
-    <button className="cursor-pointer w-28 h-10 font-poppins text-lg border-solid border-2 border-slate-400 rounded-3xl active:shadow-none hover:shadow-lg duration-300 transition hover:text-white hover:bg-gradient-to-r from-[#F28500] to-[#FF00FF] rounded p-1">
-      <span className="h-9 bg-black hover:text-white rounded-3xl p-1 px-6 transition duration-300">
-        Button
-      </span>
+    <button className={styles["submitBtn"]}>
+      Submit
+      <svg fill="white" viewBox="0 0 448 512" height="1em" className="arrow">
+        <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path>
+      </svg>
     </button>
   </div>
 );
 
 export default Button_our;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_our = () => (
+         <div>
+          <button className="submitBtn">
+  Submit
+  <svg fill="white" viewBox="0 0 448 512" height="1em" className="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+</button>
+        </div>
+        );
+
+        export default Button_our;
+        
+        
+         */
 }

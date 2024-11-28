@@ -1,117 +1,64 @@
 
-/* From Uiverse.io by Nawsome - Tags: 3d, loader, cube */
-.cube {
+/* From Uiverse.io by Hashir-Ahmed123  - Tags: animation, red, green, blue, purple, pink, gradient, smooth */
+@keyframes drop {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.lava-lamp {
   position: relative;
-  width: 300px;
-  height: 300px;
-  transform-style: preserve-3d;
-  transform: rotateX(-30deg);
-  animation: animateD 8s linear infinite;
+  width: 50px;
+  height: 100px;
+  background: #000;
+  border-radius: 25px;
+  overflow: hidden;
 }
 
-@keyframes animateD {
-  0% {
-    transform: rotateX(-15deg) rotateY(0deg);
-  }
-
-  100% {
-    transform: rotateX(-15deg) rotateY(-360deg);
-  }
-}
-
-.cube div {
+.bubble {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #e64980, #ff8787);
+  border-radius: 50%;
+  left: 15px;
+  animation: drop 5s ease-in-out infinite;
 }
-
-.cube2 {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  transform-style: preserve-3d;
-  animation: animateD2 5s ease-out infinite alternate;
-}
-
-@keyframes animateD2 {
-  0% {
-    transform: rotateX(0deg) rotateY(0deg);
-  }
-
-  100% {
-    transform: rotateX(180deg) rotateY(-360deg);
-  }
-}
-
-.cube2 div {
-  position: absolute;
-  top: 35px;
-  left: 0;
-  width: 65%;
-  height: 65%;
-  transform-style: preserve-3d;
-}
-
-.cube2 div span {
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  width: 65%;
-  height: 65%;
-  background: transparent;
-  border: 2px solid #7dff99;
-  transform: rotateY(calc(90deg * var(--i))) translateZ(62px);
-}
-
-.cube3 {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  transform-style: preserve-3d;
-  transform: rotateX(-30deg);
-  animation: animateD3 1s ease-in-out infinite alternate;
-}
-
-@keyframes animateD3 {
-  0% {
-    transform: rotateX(-90deg) rotateY(0deg);
-  }
-
-  100% {
-    transform: rotateX(90deg) rotateY(45deg);
-  }
-}
-
-.cube3 div {
-  position: absolute;
-  top: 70px;
-  left: 70px;
-  width: 15%;
-  height: 15%;
-  transform-style: preserve-3d;
-}
-
-.cube3 div span {
+.bubble1 {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #7dff99;
-  transform: rotateY(calc(90deg * var(--i))) translateZ(14px);
-  box-shadow: 0px 0px 7px #7dff99;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #82c91e, #3bc9db);
+  border-radius: 50%;
+  left: 1px;
+  animation: drop 3s ease-in-out infinite;
 }
-
-.top3 {
+.bubble2 {
   position: absolute;
   top: 0;
-  left: 0;
-  background: #7dff99;
-  transform: rotateX(90deg) translateZ(14px);
-  box-shadow: 0px 0px 10px #7dff99;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #7950f2, #f783ac);
+  border-radius: 50%;
+  left: 30px;
+  animation: drop 4s ease-in-out infinite;
 }
-
+.bubble3 {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #4481eb, #04befe);
+  border-radius: 50%;
+  left: 20px;
+  animation: drop 6s ease-in-out infinite;
+}
 

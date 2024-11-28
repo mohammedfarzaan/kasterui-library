@@ -3,16 +3,17 @@ import styles from "./Button_full.module.css";
 
 const Button_full = () => (
   <div>
-    <button className={styles["button"]}>
-      <span className={styles["one"]}>Download 0%</span>
-      <span className={styles["two"]}>100%</span>
+    <button type="button" className={styles["button"]}>
+      <div className={styles["button-top"]}>3D Button</div>
+      <div className={styles["button-bottom"]}></div>
+      <div className={styles["button-base"]}></div>
     </button>
   </div>
 );
 
 export default Button_full;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -21,9 +22,10 @@ export default Button_full;
 
         const Button_full = () => (
          <div>
-          <button className="button">
-  <span className="one">Download 0%</span>
-  <span className="two">100%</span>
+          <button type="button" className="button">
+  <div className="button-top">3D Button</div>
+  <div className="button-bottom"></div>
+  <div className="button-base"></div>
 </button>
         </div>
         );

@@ -3,15 +3,29 @@ import styles from "./Loader_pass.module.css";
 
 const Loader_pass = () => (
   <div>
-    <label className={styles["loader"]}>
-      <span className={styles["slider"]}></span>
-    </label>
+    <div id="timer">
+      <div id="div1"></div>
+      <div id="div2"></div>
+      <div id="div3"></div>
+      <div id="div4"></div>
+      <div id="div5"></div>
+      <div id="div6"></div>
+      <div id="div7"></div>
+      <div id="div8"></div>
+      <div id="div9"></div>
+      <div id="div10"></div>
+      <div id="div11"></div>
+      <div id="div12"></div>
+      <div id="div13"></div>
+      <div id="div14"></div>
+      <div id="div15"></div>
+    </div>
   </div>
 );
 
 export default Loader_pass;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -20,9 +34,23 @@ export default Loader_pass;
 
         const Loader_pass = () => (
          <div>
-          <label className="loader">
-  <span className="slider"></span>
-</label>
+          <div id="timer">
+  <div id="div1"></div>
+  <div id="div2"></div>
+  <div id="div3"></div>
+  <div id="div4"></div>
+  <div id="div5"></div>
+  <div id="div6"></div>
+  <div id="div7"></div>
+  <div id="div8"></div>
+  <div id="div9"></div>
+  <div id="div10"></div>
+  <div id="div11"></div>
+  <div id="div12"></div>
+  <div id="div13"></div>
+  <div id="div14"></div>
+  <div id="div15"></div>
+</div>
         </div>
         );
 

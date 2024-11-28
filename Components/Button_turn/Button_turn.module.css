@@ -1,53 +1,25 @@
 
-/* From Uiverse.io by JaydipPrajapati1910 - Tags: button, join now, buttton */
-.button {
-  color: white;
-  background-color: #222;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  line-height: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
-  text-align: center;
-  margin-right: 0.5rem;
-  display: inline-flex;
-  align-items: center;
-  border: none;
+/* From Uiverse.io by adamgiebl - Tags: button */
+button {
+ position: relative;
+ padding: 10px 40px;
+ margin: 0px 10px 10px 0px;
+ float: left;
+ border-radius: 3px;
+ font-size: 20px;
+ color: #FFF;
+ text-decoration: none;
+ background-color: #2ecc71;
+ border: none;
+ border-bottom: 5px solid #27ae60;
+ text-shadow: 0px -2px #27ae60;
+ -webkit-transition: all 0.1s;
+ transition: all 0.1s;
 }
 
-.button:hover {
-  background-color: #fff;
-  color: #222;
-  border: 2px solid #222;
+button:hover, button:active {
+ -webkit-transform: translate(0px,5px);
+ -ms-transform: translate(0px,5px);
+ transform: translate(0px,5px);
+ border-bottom: 1px solid #2ecc71;
 }
-
-.button:hover svg {
-  fill: #222;
-}
-
-.button svg {
-  display: inline;
-  width: 1.3rem;
-  height: 1.3rem;
-  margin-right: 0.75rem;
-  color: white;
-}
-
-.button:hover svg {
-  animation: spin_357 0.5s linear;
-}
-
-@keyframes spin_357 {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotatey(360deg);
-  }
-}
-
-

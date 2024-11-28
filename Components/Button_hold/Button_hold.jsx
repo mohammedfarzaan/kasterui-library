@@ -3,13 +3,18 @@ import styles from "./Button_hold.module.css";
 
 const Button_hold = () => (
   <div>
-    <button className={styles["btn"]}> Button</button>
+    <div>
+      <button className={styles["btn"]}>
+        <i className={styles["animation"]}></i>BUTTON
+        <i className={styles["animation"]}></i>
+      </button>
+    </div>
   </div>
 );
 
 export default Button_hold;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -18,8 +23,10 @@ export default Button_hold;
 
         const Button_hold = () => (
          <div>
-          <button className="btn"> Button
-</button>
+          <div>
+    <button className="btn"><i className="animation"></i>BUTTON<i className="animation"></i>
+    </button>
+</div>
         </div>
         );
 

@@ -1,51 +1,52 @@
 
-/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, transition, fill up */
+/* From Uiverse.io by barisdogansutcu  - Tags: button, message, send */
 .button {
-  display: inline-block;
-  padding: 15px 32px;
-  font-size: 17px;
-  font-weight: bold;
-  color: rgb(53, 53, 53);
-  background: transparent;
-  border-radius: 50px;
-  text-align: center;
-  text-decoration: none;
   cursor: pointer;
+  width: 190px;
+  height: 61px;
+  font-size: 17px;
+  font-weight: 700;
   position: relative;
-  border: none;
-  z-index: 1;
-  overflow: hidden;
+  display: grid;
+  place-content: center;
+  box-shadow: inset -8px -8px 8px 0 rgba(174, 174, 192, 0.25),
+    inset 8px 8px 8px 0 #fff, -8px -8px 24px 0 #fff,
+    2px 10px 20px 0 rgba(121, 121, 131, 0.4);
+  border-radius: 12px;
+  border: double 2px transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to top, #7c7d7c, #d9dbd9);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  transition: all 0.3s ease;
 }
 
+.button_text {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 .button:before {
   content: "";
   position: absolute;
-  top: 0%;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: blanchedalmond;
-  transition: left 0.8s ease-in-out;
-  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  border-radius: 50px;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
 }
-
-.button:hover:before {
-  left: 0%;
-}
-
-.button:after {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: background-color 0.8s ease-in-out;
-  z-index: -1;
-}
-
-.button:hover:after {
-  background-color: transparent;
+.button:active {
+  box-shadow: none;
+  transform: translateY(3px);
+  background-image: linear-gradient(white, white),
+    linear-gradient(to top, #7c7d7c7a, #d9dbd9);
 }
 

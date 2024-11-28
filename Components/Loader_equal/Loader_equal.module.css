@@ -1,46 +1,108 @@
 
-/* From Uiverse.io by Mike11jr - Tags: loader */
-.spinner {
- flex-direction: row;
- display: flex;
- align-items: center;
- justify-content: center;
+/* From Uiverse.io by csozidev - Tags: simple, animation, loader */
+/* Simple loader made by: csozi | Website: www.csozi.hu*/
+
+.square {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  height: 100px;
+  box-sizing: content-box;
+  animation: load-big 4s infinite;
+  transform-origin: 0px 100px;
 }
 
-.dot1, .dot2, .dot3 {
- width: 15px;
- height: 15px;
- border: double;
- border-color: white;
- border-radius: 50%;
- margin: 10px;
+.mini_square {
+  box-sizing: border-box;
+  height: 50px;
+  width: 50px;
+  background-color: darkcyan;
 }
 
-.dot1 {
- animation: jump765 1.6s -0.32s linear infinite;
- background: #2495ff;
+.sq-1 {
+  animation: load-left-top 4s infinite;
 }
 
-.dot2 {
- animation: jump765 1.6s -0.16s linear infinite;
- background: #2495ff;
+.sq-2 {
+  animation: load-right-top 4s infinite;
 }
 
-.dot3 {
- animation: jump765 1.6s linear infinite;
- background: #2495ff;
+.sq-4 {
+  animation: load-right-bottom 4s infinite;
 }
 
-@keyframes jump765 {
- 0%, 80%, 100% {
-  -webkit-transform: scale(0);
-  transform: scale(0);
- }
+@keyframes load-right-bottom {
+  0% {
+    translate: -50px 0px;
+  }
 
- 40% {
-  -webkit-transform: scale(2.0);
-  transform: scale(2.0);
- }
+  25% {
+    translate: 0px 0px;
+  }
+
+  100% {
+    translate: 0px 0px;
+  }
 }
 
+@keyframes load-right-top {
+  0% {
+    translate: -50px 50px;
+  }
 
+  25% {
+    translate: 0px 50px;
+  }
+
+  50% {
+    translate: 0px 0px;
+  }
+
+  100% {
+    translate: 0px 0px;
+  }
+}
+
+@keyframes load-left-top {
+  0% {
+    translate: 0px 50px;
+  }
+
+  25% {
+    translate: 50px 50px;
+  }
+
+  50% {
+    translate: 50px 0px;
+  }
+
+  75% {
+    translate: 0px 0px;
+  }
+
+  100% {
+    translate: 0px 0px;
+  }
+}
+
+@keyframes load-big {
+  0% {
+    scale: 1;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  74% {
+    scale: 1;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  75% {
+    scale: 1;
+    background-color: darkcyan;
+  }
+
+  100% {
+    scale: 0.5;
+    background-color: darkcyan;
+  }
+}

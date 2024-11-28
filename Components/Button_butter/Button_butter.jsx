@@ -1,50 +1,34 @@
 import React from "react";
-import styles from "./Button_butter.module.css";
 
 const Button_butter = () => (
   <div>
-    <button data-quantity="0" className={styles["btn-cart"]}>
-      <svg
-        className="icon-cart"
-        viewBox="0 0 24.38 30.52"
-        height="30.52"
-        width="24.38"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>icon-cart</title>
-        <path
-          transform="translate(-3.62 -0.85)"
-          d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"
-        ></path>
-      </svg>
-      <span className={styles["quantity"]}></span>
-    </button>
+    <ul className="mb-4 mt-4 list-none space-x-1">
+      <li className="inline-block text-left">
+        <a
+          className="relative mb-1 inline-block cursor-pointer select-none overflow-hidden whitespace-nowrap rounded p-2 text-center align-middle text-xs font-medium leading-5 tracking-wide text-slate-800 transition duration-300 ease-linear hover:text-blue-400 hover:shadow-2xl hover:shadow-blue-600"
+          href=""
+        >
+          <span className="sr-only hidden">Twitter</span>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            aria-label="Twitter"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            className="h-8 w-8 fill-current"
+          >
+            <g>
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+            </g>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </div>
 );
 
 export default Button_butter;
-{
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Button_butter = () => (
-         <div>
-          <button data-quantity="0" className="btn-cart">
-          <svg className="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
-            <title>icon-cart</title>
-            <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
-          </svg>
-          <span className="quantity"></span>
-        </button>
-        </div>
-        );
-
-        export default Button_butter;
-        
-        
-         */
+{
+  /* */
 }

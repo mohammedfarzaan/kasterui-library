@@ -1,50 +1,45 @@
 
-/* From Uiverse.io by joe-watson-sbf - Tags: button, hover */
-.btn {
-  font-size: 17px;
-  background: transparent;
+/* From Uiverse.io by andrew-demchenk0 - Tags: icon, black, button, Microphone, record, opacity */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 40px;
+  width: 114px;
   border: none;
-  padding: 1em 1.5em;
-  color: #ffedd3;
-  text-transform: uppercase;
-  position: relative;
-  transition: .5s ease;
+  background: #1b1b1cde;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-.btn::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: #ffc506;
-  transition: .5s ease;
+.lable {
+  line-height: 20px;
+  font-size: 17px;
+  color: #FF342B;
+  font-family: sans-serif;
+  letter-spacing: 1px;
 }
 
-.btn:hover {
-  color: #1e1e2b;
-  transition-delay: .5s;
+.button:hover {
+  background: #1b1b1c;
 }
 
-.btn:hover::before {
-  width: 100%;
+.button:hover .svg-icon {
+  animation: scale 1s linear infinite;
 }
 
-.btn::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 0;
-  width: 100%;
-  background-color: #ffc506;
-  transition: .4s ease;
-  z-index: -1;
-}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
 
-.btn:hover::after {
-  height: 100%;
-  transition-delay: 0.4s;
-  color: aliceblue;
+  50% {
+    transform: scale(1.05) rotate(10deg);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

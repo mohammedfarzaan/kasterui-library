@@ -3,35 +3,31 @@ import styles from "./Loader_basis.module.css";
 
 const Loader_basis = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["item"]} style="--i:0;"></div>
-      <div className={styles["item"]} style="--i:1;"></div>
-      <div className={styles["item"]} style="--i:2;"></div>
-      <div className={styles["item"]} style="--i:3;"></div>
-      <div className={styles["item"]} style="--i:4;"></div>
-      <div className={styles["item"]} style="--i:5;"></div>
-      <div className={styles["item"]} style="--i:6;"></div>
-      <div className={styles["item"]} style="--i:7;"></div>
-      <div className={styles["item"]} style="--i:8;"></div>
-      <div className={styles["item"]} style="--i:9;"></div>
-      <div className={styles["item"]} style="--i:10;"></div>
-      <div className={styles["item"]} style="--i:11;"></div>
-      <div className={styles["item"]} style="--i:12;"></div>
-      <div className={styles["item"]} style="--i:13;"></div>
-      <div className={styles["item"]} style="--i:14;"></div>
-      <div className={styles["item"]} style="--i:15;"></div>
-      <div className={styles["item"]} style="--i:16;"></div>
-      <div className={styles["item"]} style="--i:17;"></div>
-      <div className={styles["item"]} style="--i:18;"></div>
-      <div className={styles["item"]} style="--i:19;"></div>
-      <div className={styles["item"]} style="--i:20;"></div>
+    <div className={styles["loader"]}>
+      <div className={styles["loader__balls"]}>
+        <div className={styles["loader__balls__group"]}>
+          <div className={styles["ball"] + styles["item1"]}></div>
+          <div className={styles["ball"] + styles["item1"]}></div>
+          <div className={styles["ball"] + styles["item1"]}></div>
+        </div>
+        <div className={styles["loader__balls__group"]}>
+          <div className={styles["ball"] + styles["item2"]}></div>
+          <div className={styles["ball"] + styles["item2"]}></div>
+          <div className={styles["ball"] + styles["item2"]}></div>
+        </div>
+        <div className={styles["loader__balls__group"]}>
+          <div className={styles["ball"] + styles["item3"]}></div>
+          <div className={styles["ball"] + styles["item3"]}></div>
+          <div className={styles["ball"] + styles["item3"]}></div>
+        </div>
+      </div>
     </div>
   </div>
 );
 
 export default Loader_basis;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -40,29 +36,25 @@ export default Loader_basis;
 
         const Loader_basis = () => (
          <div>
-          <div className="container">
-      <div className="item" style="--i:0;"></div>
-      <div className="item" style="--i:1;"></div>
-      <div className="item" style="--i:2;"></div>
-      <div className="item" style="--i:3;"></div>
-      <div className="item" style="--i:4;"></div>
-      <div className="item" style="--i:5;"></div>
-      <div className="item" style="--i:6;"></div>
-      <div className="item" style="--i:7;"></div>
-      <div className="item" style="--i:8;"></div>
-      <div className="item" style="--i:9;"></div>
-      <div className="item" style="--i:10;"></div>
-      <div className="item" style="--i:11;"></div>
-      <div className="item" style="--i:12;"></div>
-      <div className="item" style="--i:13;"></div>
-      <div className="item" style="--i:14;"></div>
-      <div className="item" style="--i:15;"></div>
-      <div className="item" style="--i:16;"></div>
-      <div className="item" style="--i:17;"></div>
-      <div className="item" style="--i:18;"></div>
-      <div className="item" style="--i:19;"></div>
-      <div className="item" style="--i:20;"></div>
+          <div className="loader">
+  <div className="loader__balls">
+    <div className="loader__balls__group">
+      <div className="ball item1"></div>
+      <div className="ball item1"></div>
+      <div className="ball item1"></div>
     </div>
+    <div className="loader__balls__group">
+      <div className="ball item2"></div>
+      <div className="ball item2"></div>
+      <div className="ball item2"></div>
+    </div>
+    <div className="loader__balls__group">
+      <div className="ball item3"></div>
+      <div className="ball item3"></div>
+      <div className="ball item3"></div>
+    </div>
+  </div>
+</div>
         </div>
         );
 

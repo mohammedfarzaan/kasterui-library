@@ -1,40 +1,25 @@
 
-/* From Uiverse.io by aadium - Tags: button, car, formula1 */
-.carbutton {
-  width: 200px;
-  height: 70px;
-  padding: 20px;
-  background: #212121;
-  border: 6px double #e8e8e8;
-  transition: 0.2s;
+/* From Uiverse.io by elijahgummer  - Tags: simple, login, 3d, button, modern, click effect */
+button {
+  font: inherit;
+  background-color: #f0f0f0;
+  border: 0;
+  color: #242424;
+  border-radius: 0.5em;
+  font-size: 1.35rem;
+  padding: 0.375em 1em;
+  font-weight: 600;
+  text-shadow: 0 0.0625em 0 #fff;
+  box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
+    0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
+    0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
+  transition: 0.15s ease;
+  cursor: pointer;
 }
-
-.caption {
-  color: #e8e8e8;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
-  transition: 0.2s;
-}
-
-.car {
-  fill: #e8e8e8;
-  width: 50px;
-  height: 50px;
-  margin-left: -120px;
-  margin-top: -35px;
-  transition: 0.2s ease-in-out;
-}
-
-.carbutton:not(:hover) .car {
-  opacity: 0%;
-  transform: translateX(-150px);
-}
-
-.carbutton:hover .caption {
-  opacity: 0%;
-}
-
-.carbutton:focus .car {
-  transform: translateX(120px);
+button:active {
+  translate: 0 0.225em;
+  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+    0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+    0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
 }
 

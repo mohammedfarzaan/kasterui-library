@@ -1,59 +1,151 @@
 
-/* From Uiverse.io by PriyanshuGupta28 - Tags: loader, circle loader, cool loader, 3d loader */
+/* From Uiverse.io by NlghtM4re - Tags: progress, progress bar, loader, glow, bars, animated */
 .loader {
-  flex-direction: row;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  position: relative;
 }
 
-.circle {
-  width: 20px;
-  height: 20px;
-  background-color: #8BC6EC;
-  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+.loader:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
   border-radius: 50%;
-  margin-right: 1rem;
-  animation: pulse 1.2s ease-in-out infinite;
 }
 
-.circle:nth-child(2) {
+.loader-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.loader-block {
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+  margin: 2px;
+  background-color: rgb(53, 143, 246);
+  box-shadow: 0 0 30px rgb(53, 143, 246);
+  animation: loader 5s infinite;
+}
+
+.loader-block:nth-child(1) {
   animation-delay: 0.2s;
-  background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
-.circle:nth-child(3) {
+.loader-block:nth-child(2) {
   animation-delay: 0.4s;
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
-.circle:nth-child(4) {
+.loader-block:nth-child(3) {
   animation-delay: 0.6s;
-  background-color: #8EC5FC;
-  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 }
 
-.circle:nth-child(5) {
+.loader-block:nth-child(4) {
   animation-delay: 0.8s;
-  background-color: #00DBDE;
-  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 }
 
-@keyframes pulse {
+.loader-block:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.loader-block:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+.loader-block:nth-child(7) {
+  animation-delay: 1.4s;
+}
+
+.loader-block:nth-child(8) {
+  animation-delay: 1.6s;
+}
+
+.loader-block:nth-child(9) {
+  animation-delay: 1.8s;
+}
+
+.loader-block:nth-child(10) {
+  animation-delay: 2s;
+}
+
+.loader-block:nth-child(11) {
+  animation-delay: 2.2s;
+}
+
+.loader-block:nth-child(12) {
+  animation-delay: 2.4s;
+}
+
+.loader-block:nth-child(13) {
+  animation-delay: 2.6s;
+}
+
+.loader-block:nth-child(14) {
+  animation-delay: 2.8s;
+}
+
+.loader-block:nth-child(15) {
+  animation-delay: 3s;
+}
+
+.loader-block:nth-child(16) {
+  animation-delay: 3.2s;
+}
+
+.loader-block:nth-child(17) {
+  animation-delay: 3.4s;
+}
+
+.loader-block:nth-child(18) {
+  animation-delay: 3.6s;
+}
+
+.loader-block:nth-child(19) {
+  animation-delay: 3.8s;
+}
+
+.loader-block:nth-child(20) {
+  animation-delay: 4s;
+}
+
+.loader-block:nth-child(21) {
+  animation-delay: 4.2s;
+}
+
+.loader-block:nth-child(22) {
+  animation-delay: 4.4s;
+}
+
+.loader-block:nth-child(23) {
+  animation-delay: 4.6s;
+}
+
+.loader-block:nth-child(24) {
+  animation-delay: 4.8s;
+}
+
+@keyframes loader {
   0% {
-    transform: scale(0.8);
-    opacity: 0.7;
-  }
-
-  50% {
     transform: scale(1);
-    opacity: 1;
+    box-shadow: 0 0 40px rgb(53, 143, 246);
   }
 
-  100% {
-    transform: scale(0.8);
-    opacity: 0.7;
+  13% {
+    transform: scale(1, 4);
+    box-shadow: 0 0 60px rgb(53, 143, 246);
+  }
+
+  26% {
+    transform: scale(1);
+    box-shadow: 0 0 40px rgb(53, 143, 246);
   }
 }
+

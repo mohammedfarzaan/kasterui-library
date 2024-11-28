@@ -1,51 +1,18 @@
 
-/* From Uiverse.io by alshahwan - Tags: button, linkedin, follow */
-/* From uiverse.io by @alshahwan */
-/* From uiverse.io by @alshahwan */
+/* From Uiverse.io by AnshKaushal - Tags: button */
 button {
-  background-color: #fff;
-  border: 1px solid #0077b5;
-  padding: 5px;
-  position: relative;
-  width: 7.2em;
-  height: 2em;
-  transition: 0.5s;
-  font-size: 17px;
-  border-radius: 0.4em;
-}
-
-button p {
-  position: absolute;
-  top: 0.4em;
-  left: 1.2em;
-  margin: 0;
-  padding: 0;
-  transition: .5s;
-  color: #0077b5;
-}
-
-button svg {
-  position: absolute;
-  top: 0.45em;
-  right: 0.5em;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-  transition: 0.5s;
-  height: 1em;
-  fill: #fff
-}
-
-button:hover p {
-  left: 0.6em;
-  color: #fff
-}
-
-button:hover svg {
-  opacity: 1;
+  border: 1.5px solid black;
+  padding: 10px;
+  width: 100px;
+  margin: 15px;
+  color: #f5f0f0;
+  background-color: #101014;
+  box-shadow: 3px 3px 6px #101014;
+  transition: transform 0.3s ease-in-out;
 }
 
 button:hover {
-  background-color: #0077b5;
+  background-color: #f5f0f0;
+  color: #101014;
+  transform: scale(1.2);
 }
-

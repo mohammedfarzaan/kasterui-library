@@ -1,71 +1,62 @@
 
-/* From Uiverse.io by bociKond - Source: https://10015.io - Tags: green, loader, spinner, custom, variables */
-.spinner {
-  position: relative;
-  width: 24.6px;
-  height: 24.6px;
-  animation-name: rotateSpin;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  --clr: #3E885B;
+/* From Uiverse.io by Shoh2008 - Tags: loader */
+.loader {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  transform-origin: 50% 125%;
+  animation: mov-y 1s infinite linear;
 }
 
-@keyframes rotateSpin {
-  0% {
-    transform: rotate(0deg);
+.loader:before,
+      .loader:after {
+  content: "";
+  flex: 1;
+  background: #fff;
+  transform-origin: 0% 100%;
+  animation: rtr-x 1s infinite linear;
+}
+
+.loader:before {
+  transform-origin: 100% 100%;
+  animation-name: rtr-rx;
+}
+
+@keyframes mov-y {
+  0%,25% {
+    transform: translateY(0)     scaleY(1)
   }
 
-  100% {
-    transform: rotate(360deg);
+  49% {
+    transform: translateY(-75%)  scaleY(1)
+  }
+
+  50% {
+    transform: translateY(-75%)  scaleY(-1)
+  }
+
+  75%,100% {
+    transform: translateY(-150%) scaleY(-1)
   }
 }
 
-.spinner div {
-  width: 100%;
-  height: 100%;
-  background-color: var(--clr);
-  border-radius: 50%;
-  animation: spinnerAni 1s infinite backwards;
-}
-
-.spinner div:nth-child(1) {
-  animation-delay: 0.12s;
-  background-color: var(--clr);
-  opacity: .9;
-}
-
-.spinner div:nth-child(2) {
-  animation-delay: 0.24s;
-  background-color: var(--clr);
-  opacity: .8;
-}
-
-.spinner div:nth-child(3) {
-  animation-delay: 0.36s;
-  background-color: var(--clr);
-  opacity: .7;
-}
-
-.spinner div:nth-child(4) {
-  animation-delay: 0.48s;
-  background-color: var(--clr);
-  opacity: .6;
-}
-
-.spinner div:nth-child(5) {
-  animation-delay: 0.60s;
-  background-color: var(--clr);
-  opacity: .5;
-}
-
-@keyframes spinnerAni {
-  0% {
-    transform: rotate(0deg) translateY(-200%);
+@keyframes rtr-x {
+  25%,75% {
+    transform: rotate(0deg)
   }
 
-  60%, 100% {
-    transform: rotate(360deg) translateY(-200%);
+  50% {
+    transform: rotate(90deg)
   }
 }
+
+@keyframes rtr-rx {
+  25%,75% {
+    transform: rotate(0deg)
+  }
+
+  50% {
+    transform: rotate(-90deg)
+  }
+}
+    

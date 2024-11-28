@@ -1,18 +1,46 @@
 
-/* From Uiverse.io by roufkp - Tags: gradient, button, light, hover effect */
-.button {
-  width: fit-content;
-  padding: 12px 24px;
-  border-radius: 100px;
+/* From Uiverse.io by vinodjangid07 - Tags: gradient, button, message, hover effect */
+.Btn {
+  width: 180px;
+  height: 45px;
+  border-radius: 40px;
   border: none;
-  box-shadow: inset 0px 22px 20px 10px rgb(0, 0, 0);
-  font-weight: 800;
-  color: antiquewhite;
-  letter-spacing: .1rem;
-  transition: all 0.51s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  background: linear-gradient( to right,#44ea76, #39fad7);
+  transition-duration: .3s;
+  letter-spacing: 1.4px;
 }
 
-.button:hover {
-  transform: translateY(5px);
-  box-shadow: inset 1px -11px 25px 10px rgb(91, 88, 240);
+.svgIcon path {
+  fill: white;
+}
+
+.Btn:hover {
+  transform: scale(0.95);
+  transition-duration: .3s;
+}
+
+.Btn::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 30%;
+  background: linear-gradient( to right,#44ea76, #39fad7);
+  filter: blur(10px);
+  bottom: -3px;
+  z-index: -1;
+  transition-duration: .3s;
+}
+
+.Btn:hover::before {
+  bottom: -1px;
+  filter: blur(5px);
+  transition-duration: .3s;
 }

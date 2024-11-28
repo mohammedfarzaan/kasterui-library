@@ -1,95 +1,79 @@
 
-/* From Uiverse.io by Yogeshawghad0477  - Tags: simple, animation, loader, html, css */
-#div1 {
+/* From Uiverse.io by TemRevil  - Tags:  */
+.loading {
   width: 100%;
-  background: transparent;
-
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+.loading-box {
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.color {
+  background-color: #eee;
+  border-radius: 5px;
+}
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 120px 120px 120px;
+  grid-template-areas:
+    "l1 l2 l3"
+    "l1 l2 l4"
+    "l6 l6 l5";
+  gap: 10px;
 }
 
-@keyframes animateHeight {
+.l1 {
+  grid-area: l1;
+  animation: Loading 6s 0s infinite linear;
+}
+.l2 {
+  grid-area: l2;
+  animation: Loading 5s 1s infinite linear;
+}
+.l3 {
+  grid-area: l3;
+  animation: Loading 4s 2s infinite linear;
+}
+.l4 {
+  grid-area: l4;
+  animation: Loading 3s 3s infinite linear;
+}
+.l5 {
+  grid-area: l5;
+  animation: Loading 2s 4s infinite linear;
+}
+.l6 {
+  grid-area: l6;
+  animation: Loading 1s 5s infinite linear;
+}
+
+@keyframes Loading {
   0% {
-    height: 0px;
+    background-color: #eee;
   }
   50% {
-    height: 50px;
+    background-color: #333;
+  }
+  100% {
+    background-color: #eee;
   }
 }
 
-#l,
-#m {
-  width: 150px;
-  height: 70px;
-  position: relative;
-  overflow: hidden;
-  background-color: black;
-  border-radius: 0px 200px 0px 200px;
-  -moz-border-radius: 0px 200px 0px 200px;
-  -webkit-border-radius: 0px 200px 0px 200px;
-  border: 1px solid transparent;
-  animation: animateHeight 1s infinite alternate-reverse;
+@media (max-width: 500px) {
+  .loading-box {
+    width: 90%;
+  }
 }
-#m {
-  border-radius: 200px 0px 200px 0px;
-  -moz-border-radius: 200px 0px 200px 0px;
-  -webkit-border-radius: 200px 0px 200px 0px;
-}
-.pupil,
-.pupl2,
-.pupil3,
-.pupil4,
-.p5 {
-  overflow: hidden;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.158);
-}
-.pupil3,
-.pupil4 {
-  width: 18px;
-  height: 3.5px;
-  overflow: visible;
-}
-
-.pupil {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(
-    rgb(255, 105, 105),
-    rgb(129, 249, 129),
-    rgb(96, 96, 255),
-    rgb(71, 71, 71)
-  );
-}
-.pupl2 {
-  width: 25px;
-  height: 25px;
-  background: linear-gradient(
-    rgb(255, 2, 2),
-    rgb(0, 255, 0),
-    rgb(0, 0, 255),
-    rgb(0, 0, 0)
-  );
-}
-.p5 {
-  width: 42px;
-  height: 42px;
-  background: linear-gradient(
-    rgb(252, 71, 71),
-    rgb(70, 249, 70),
-    rgb(63, 63, 254),
-    rgb(48, 47, 47)
-  );
-}
-.pupil3 {
-  width: 5px;
-  height: 18px;
+@media (max-width: 400px) {
+  .grid {
+    grid-template-rows: 80px 80px 80px;
+  }
 }
 

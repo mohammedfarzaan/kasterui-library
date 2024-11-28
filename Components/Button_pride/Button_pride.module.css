@@ -1,43 +1,65 @@
 
-/* From Uiverse.io by praveen-prasad2 - Tags: button */
-button {
-  width: 100px;
+/* From Uiverse.io by 3bdel3ziz-T  - Tags: button, hover, smooth, dark, code, hover button, button hover effect , 2d button */
+.button,
+.button::before {
+  box-sizing: border-box;
+  --col-orange: #d17842;
+  --col-white: #fff;
+  --col-dark: #212121;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+  fill: var(--col-white);
+  color: var(--col-white);
+
+  color: var(col-dark);
+  font-family: "arial";
+}
+.button {
+  width: 200px;
   height: 50px;
-  border-radius: 30em;
-  font-size: 15px;
-  font-family: inherit;
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  background: var(--col-orange);
+  padding: 8px 50px;
   position: relative;
-  overflow: hidden;
-  z-index: 1;
-  box-shadow: 6px 6px 12px #c5c5c5,
-             -6px -6px 12px #ffffff;
+  transition: all 200ms;
+  border-radius: 25px;
+  z-index: 99;
 }
 
-button:hover {
-  color: #ffffff;
-  transform: scale(1.1);
-  outline: 2px solid #70bdca;
-  box-shadow: 4px 5px 17px -4px #268391;
+.button:hover {
+  border-color: transparent;
+  color: var(--col-dark);
+  background: transparent;
 }
 
-button::before {
-  content: "";
+.button::before {
+  height: fit-content;
+  content: "great work🥳";
   position: absolute;
-  left: -50px;
-  top: 0;
+  left: 40px;
   width: 0;
-  height: 100%;
-  background-color: #2c9caf;
-  transform: skewX(45deg);
+  overflow: hidden;
+  transition: all 550ms;
+  text-wrap: nowrap;
   z-index: -1;
-  transition: width 1000ms;
 }
 
-button:hover::before {
-  width: 250%;
+.button:hover::before {
+  width: 135px;
+  color: var(--col-white);
 }
 
+.button::after {
+  content: "hover me";
+  position: relative;
+}
 
-
+.button:hover::after {
+  display: none;
+}
 

@@ -1,32 +1,81 @@
 
-/* From Uiverse.io by escannord  - Tags: simple, button, btn */
-.button {
-  cursor: pointer;
-  display: inline-block;
-  width: 14rem;
-  height: 4rem;
-  border: solid 2px;
-  background: linear-gradient(to right, #ff00ffb0, #ff9900a1, #ff00ff9f),
-    radial-gradient(rgb(255, 255, 255), rgb(255, 0, 0));
-  border-radius: 20px;
-  font-weight: 800;
+/* From Uiverse.io by misaraadel - Tags: button, creative, 3d button, css animation, hover idea */
+.btn-shape {
+  transition: all .3s linear;
+  width: 168px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  outline: none;
+  background-color: #020202;
+  border-radius: 50px;
+  border: 0px;
   position: relative;
-  border-image: linear-gradient(to right, #5e005e, #804d00, #eb1beb);
-  border-image-slice: 50;
+  z-index: 99;
+  cursor: pointer;
 }
 
-.button::before {
-  content: "";
-  display: inline-block;
+.btn-shape::after,
+.btn-shape::before {
+  content: '';
   position: absolute;
-  width: 90%;
-  height: 70%;
-  border: 1px solid rgba(255, 255, 255, 0.384);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 8px;
-  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.575),
-    inset 0px 0px 0px 0px rgba(255, 255, 255, 0.575);
+  background-color: #020202;
+  width: 100%;
+  opacity: 0;
+  height: 100%;
+  left: 0;
+  border-radius: 100px;
+  bottom: 0;
+  z-index: -2;
+  transition: all .3s linear;
 }
 
+.btn-shape span {
+  font-size: 16px;
+  font-weight: 700;
+  transition: all .3s linear;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.btn-shape:hover {
+  transform: translate(-12px, -12px);
+}
+
+.btn-shape:hover:after {
+  transform: translate(6px, 6px);
+  opacity: .5;
+}
+
+.btn-shape:hover::before {
+  transform: translate(12px, 12px);
+  opacity: .3;
+}
+
+.btn-shape:hover span {
+  animation: storm .4s linear both;
+}
+
+@keyframes storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}

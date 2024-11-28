@@ -1,0 +1,116 @@
+
+/* From Uiverse.io by 212004ALJI - Tags: button */
+button {
+  --color2: #ff206e;
+  padding: 15px 30px;
+  border-radius: 18px;
+  border: 1px solid #282828;
+  background-color: #212121;
+  box-shadow: inset 2px 2px 5px rgb(22, 22, 22);
+  position: relative;
+  overflow: hidden;
+}
+
+button::after {
+  content: '';
+  height: 30px;
+  width: 60px;
+  position: absolute;
+  box-shadow: 0 0 20px 10px var(--color2);
+  bottom: -45px;
+  left: 21%;
+  transition: 0.4s 0.3s;
+}
+
+button svg {
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  --move7: inset(0 0 0 0);
+  clip-path: inset(50% 50% 50% 50%);
+  margin-left: 5px;
+  transition: 0.4s;
+}
+
+button:hover svg {
+  clip-path: var(--move7);
+  animation: glitch_4011 0.4s;
+  animation-timing-function: steps(2, end);
+}
+
+button:hover:after {
+  bottom: -40px;
+  width: 100px;
+}
+
+button .icon_shadow {
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+  color: var(--color2);
+  font-weight: bold;
+  filter: drop-shadow(0 0 10px var(--color2));
+}
+
+button:hover .icon_shadow {
+  filter: drop-shadow(0 0 10px var(--color2));
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+

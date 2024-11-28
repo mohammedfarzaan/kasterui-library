@@ -3,111 +3,35 @@ import styles from "./Loader_apart.module.css";
 
 const Loader_apart = () => (
   <div>
-    <main>
-      <svg height="128px" width="128px" viewBox="0 0 128 128" className="pl1">
-        <defs>
-          <linearGradient y2="1" x2="1" y1="0" x1="0" id="pl-grad">
-            <stop stop-color="#000" offset="0%"></stop>
-            <stop stop-color="#fff" offset="100%"></stop>
-          </linearGradient>
-          <mask id="pl-mask">
-            <rect
-              fill="url(#pl-grad)"
-              height="128"
-              width="128"
-              y="0"
-              x="0"
-            ></rect>
-          </mask>
-        </defs>
-        <g fill="var(--primary)">
-          <g className="pl1__g">
-            <g transform="translate(20,20) rotate(0,44,44)">
-              <g className="pl1__rect-g">
-                <rect
-                  height="40"
-                  width="40"
-                  ry="8"
-                  rx="8"
-                  className="pl1__rect"
-                ></rect>
-                <rect
-                  transform="translate(0,48)"
-                  height="40"
-                  width="40"
-                  ry="8"
-                  rx="8"
-                  className="pl1__rect"
-                ></rect>
-              </g>
-              <g transform="rotate(180,44,44)" className="pl1__rect-g">
-                <rect
-                  height="40"
-                  width="40"
-                  ry="8"
-                  rx="8"
-                  className="pl1__rect"
-                ></rect>
-                <rect
-                  transform="translate(0,48)"
-                  height="40"
-                  width="40"
-                  ry="8"
-                  rx="8"
-                  className="pl1__rect"
-                ></rect>
-              </g>
-            </g>
-          </g>
-        </g>
-        <g mask="url(#pl-mask)" fill="hsl(343,90%,50%)">
-          <g className="pl1__g">
-            <g transform="translate(20,20) rotate(0,44,44)">
-              <g className="pl1__rect-g">
-                <rect
-                  height="40"
-                  width="40"
-                  ry="8"
-                  rx="8"
-                  className="pl1__rect"
-                ></rect>
-                <rect
-                  transform="translate(0,48)"
-                  height="40"
-                  width="40"
-                  ry="8"
-                  rx="8"
-                  className="pl1__rect"
-                ></rect>
-              </g>
-              <g transform="rotate(180,44,44)" className="pl1__rect-g">
-                <rect
-                  height="40"
-                  width="40"
-                  ry="8"
-                  rx="8"
-                  className="pl1__rect"
-                ></rect>
-                <rect
-                  transform="translate(0,48)"
-                  height="40"
-                  width="40"
-                  ry="8"
-                  rx="8"
-                  className="pl1__rect"
-                ></rect>
-              </g>
-            </g>
-          </g>
+    <div id="triangle">
+      <svg
+        id="Layer_1"
+        data-name="Layer 1"
+        version="1.1"
+        viewBox="0 0 2000 2000"
+      >
+        <polygon
+          className="cls-1"
+          points="928 781 1021 951 784.5 1371.97 1618 1371.97 1530.32 1544 509 1539 928 781"
+        ></polygon>
+        <polygon
+          className="cls-3"
+          points="1618 1371.97 784.5 1371.97 874.93 1211 1346 1211 923.1 456 1110.06 456 1618 1371.97"
+        ></polygon>
+        <g id="Layer_2" data-name="Layer 2">
+          <polygon
+            className="cls-2"
+            points="418 1372.74 509 1539 928 781 1162.32 1211 1346 1211 923.1 456 418 1372.74"
+          ></polygon>
         </g>
       </svg>
-    </main>
+    </div>
   </div>
 );
 
 export default Loader_apart;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -116,47 +40,24 @@ export default Loader_apart;
 
         const Loader_apart = () => (
          <div>
-          <main>
-	<svg height="128px" width="128px" viewBox="0 0 128 128" className="pl1">
-		<defs>
-			<linearGradient y2="1" x2="1" y1="0" x1="0" id="pl-grad">
-				<stop stop-color="#000" offset="0%"></stop>
-				<stop stop-color="#fff" offset="100%"></stop>
-			</linearGradient>
-			<mask id="pl-mask">
-				<rect fill="url(#pl-grad)" height="128" width="128" y="0" x="0"></rect>
-			</mask>
-		</defs>
-		<g fill="var(--primary)">
-			<g className="pl1__g">
-				<g transform="translate(20,20) rotate(0,44,44)">
-					<g className="pl1__rect-g">
-						<rect height="40" width="40" ry="8" rx="8" className="pl1__rect"></rect>
-						<rect transform="translate(0,48)" height="40" width="40" ry="8" rx="8" className="pl1__rect"></rect>
-					</g>
-					<g transform="rotate(180,44,44)" className="pl1__rect-g">
-						<rect height="40" width="40" ry="8" rx="8" className="pl1__rect"></rect>
-						<rect transform="translate(0,48)" height="40" width="40" ry="8" rx="8" className="pl1__rect"></rect>
-					</g>
-				</g>
-			</g>
-		</g>
-		<g mask="url(#pl-mask)" fill="hsl(343,90%,50%)">
-			<g className="pl1__g">
-				<g transform="translate(20,20) rotate(0,44,44)">
-					<g className="pl1__rect-g">
-						<rect height="40" width="40" ry="8" rx="8" className="pl1__rect"></rect>
-						<rect transform="translate(0,48)" height="40" width="40" ry="8" rx="8" className="pl1__rect"></rect>
-					</g>
-					<g transform="rotate(180,44,44)" className="pl1__rect-g">
-						<rect height="40" width="40" ry="8" rx="8" className="pl1__rect"></rect>
-						<rect transform="translate(0,48)" height="40" width="40" ry="8" rx="8" className="pl1__rect"></rect>
-					</g>
-				</g>
-			</g>
-		</g>
-	</svg>
-</main>
+          <div id="triangle">
+  <svg id="Layer_1" data-name="Layer 1" version="1.1" viewBox="0 0 2000 2000">
+    <polygon
+      className="cls-1"
+      points="928 781 1021 951 784.5 1371.97 1618 1371.97 1530.32 1544 509 1539 928 781"
+    ></polygon>
+    <polygon
+      className="cls-3"
+      points="1618 1371.97 784.5 1371.97 874.93 1211 1346 1211 923.1 456 1110.06 456 1618 1371.97"
+    ></polygon>
+    <g id="Layer_2" data-name="Layer 2">
+      <polygon
+        className="cls-2"
+        points="418 1372.74 509 1539 928 781 1162.32 1211 1346 1211 923.1 456 418 1372.74"
+      ></polygon>
+    </g>
+  </svg>
+</div>
         </div>
         );
 

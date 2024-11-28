@@ -1,58 +1,36 @@
 
-/* From Uiverse.io by TISEPSE - Source: https://www.youtube.com/watch?v=B7Z6qERVTvM - Tags: material design, black, button */
-a {
-  position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  border: 2px solid #fefefe;
-  text-transform: uppercase;
-  color: #fefefe;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 20px;
-}
-
-a::before {
-  content: '';
-  position: absolute;
-  top: 6px;
-  left: -2px;
-  width: calc(100% + 4px);
-  height: calc(100% - 12px);
-  background-color: #212121;
-  transition: 0.3s ease-in-out;
-  transform: scaleY(1);
-}
-
-a:hover::before {
-  transform: scaleY(0);
-}
-
-a::after {
-  content: '';
-  position: absolute;
-  left: 6px;
-  top: -2px;
-  height: calc(100% + 4px);
-  width: calc(100% - 12px);
-  background-color: #212121;
-  transition: 0.3s ease-in-out;
-  transform: scaleX(1);
-  transition-delay: 0.5s;
-}
-
-a:hover::after {
-  transform: scaleX(0);
-}
-
-a span {
-  position: relative;
-  z-index: 3;
-}
-
+/* From Uiverse.io by ferlagher - Tags: button */
 button {
-  background-color: none;
+  position: relative;
+  font-size: 1.2em;
+  padding: 0.7em 1.4em;
+  background-color: #BF0426;
   text-decoration: none;
-  background-color: #212121;
   border: none;
+  border-radius: 0.5em;
+  color: #DEDEDE;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+button::before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgba(150,4,31,1) 50%, rgba(191,4,38,1) 60%);
+  border-radius: 0 0 0.5em 0;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+button:hover::before {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+button:active {
+  box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+  transform: translate(0.1em, 0.1em);
 }

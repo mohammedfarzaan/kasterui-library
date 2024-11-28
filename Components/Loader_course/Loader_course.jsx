@@ -3,17 +3,27 @@ import styles from "./Loader_course.module.css";
 
 const Loader_course = () => (
   <div>
-    <div className={styles["loading"]}>
-      <div className={styles["diamond"]}></div>
-      <div className={styles["diamond"] + styles["middle"]}></div>
-      <div className={styles["diamond"]}></div>
+    <div className={styles["pl"]}>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__text"]}>Loading…</div>
     </div>
   </div>
 );
 
 export default Loader_course;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -22,10 +32,20 @@ export default Loader_course;
 
         const Loader_course = () => (
          <div>
-          <div className="loading">
-  <div className="diamond"></div>
-  <div className="diamond middle"></div>
-  <div className="diamond"></div>
+          <div className="pl">
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__text">Loading…</div>
 </div>
         </div>
         );

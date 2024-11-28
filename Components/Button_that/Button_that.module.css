@@ -1,43 +1,62 @@
 
-/* From Uiverse.io by mrhyddenn - Tags: button */
-button {
-  background: transparent;
-  color: #fff;
-  font-size: 17px;
-  text-transform: uppercase;
-  font-weight: 600;
+/* From Uiverse.io by vinodjangid07 - Tags: gradient, button, hover effect, premium */
+.Btn {
+  width: 45px;
+  height: 45px;
   border: none;
-  padding: 20px 30px;
-  perspective: 30rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+  border-radius: 50%;
+  background: linear-gradient(-50deg,rgb(39, 107, 255),rgb(112, 186, 255),rgb(39, 107, 255));
+  background-size: 250%;
+  background-position: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition-duration: .5s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
 }
 
-button::before {
-  content: '';
-  display: block;
+.logoIcon {
+  fill: white;
+}
+
+.tooltip {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  background: linear-gradient(320deg, rgba(0, 140, 255, 0.678), rgba(128, 0, 128, 0.308));
-  z-index: 1;
-  transition: background 3s;
+  top: -20px;
+  opacity: 0;
+  background: linear-gradient(to right,rgb(39, 107, 255),rgb(108, 184, 255));
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
 }
 
-button:hover::before {
-  animation: rotate 1s;
-  transition: all .5s;
+.tooltip::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(45deg,rgb(39, 107, 255),rgb(108, 184, 255));
+  background-size: 1000%;
+  background-position: center;
+  transform: rotate(45deg);
+  bottom: -15%;
+  transition-duration: .3s;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotateY(180deg);
-  }
+.Btn:hover .tooltip {
+  top: -50px;
+  opacity: 1;
+  transition-duration: .3s;
+}
 
-  100% {
-    transform: rotateY(360deg);
-  }
+.Btn:hover {
+  background-position: right;
+  transition-duration: .5s;
 }

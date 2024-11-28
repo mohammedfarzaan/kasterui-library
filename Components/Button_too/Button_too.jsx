@@ -3,13 +3,27 @@ import styles from "./Button_too.module.css";
 
 const Button_too = () => (
   <div>
-    <button> Hover Me</button>
+    <div className={styles["background"]}>
+      <button className={styles["change-theme__icon"]}>
+        <span className={styles["icon-sun-moon"]}></span>
+        <span className={styles["sun-rays"]}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
   </div>
 );
 
 export default Button_too;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -18,8 +32,21 @@ export default Button_too;
 
         const Button_too = () => (
          <div>
-          <button> Hover Me
-</button>
+          <div className="background">
+  <button className="change-theme__icon">
+    <span className="icon-sun-moon"></span>
+    <span className="sun-rays">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </button>
+</div>
         </div>
         );
 

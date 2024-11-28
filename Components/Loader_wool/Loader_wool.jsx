@@ -3,20 +3,16 @@ import styles from "./Loader_wool.module.css";
 
 const Loader_wool = () => (
   <div>
-    <div className={styles["cube"]}>
-      <div className={styles["face"] + styles["front"]}></div>
-      <div className={styles["face"] + styles["back"]}></div>
-      <div className={styles["face"] + styles["right"]}></div>
-      <div className={styles["face"] + styles["left"]}></div>
-      <div className={styles["face"] + styles["top"]}></div>
-      <div className={styles["face"] + styles["bottom"]}></div>
+    <div className={styles["textWrapper"]}>
+      <p className={styles["text"]}>Loading...</p>
+      <div className={styles["invertbox"]}></div>
     </div>
   </div>
 );
 
 export default Loader_wool;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -25,13 +21,9 @@ export default Loader_wool;
 
         const Loader_wool = () => (
          <div>
-          <div className="cube">
-    <div className="face front"></div>
-    <div className="face back"></div>
-    <div className="face right"></div>
-    <div className="face left"></div>
-    <div className="face top"></div>
-    <div className="face bottom"></div>
+          <div className="textWrapper">
+  <p className="text">Loading...</p>
+  <div className="invertbox"></div>
 </div>
         </div>
         );

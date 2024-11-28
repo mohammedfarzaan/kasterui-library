@@ -1,99 +1,102 @@
 
-/* From Uiverse.io by shadowmurphy - Tags: simple, material design, neumorphism, skeuomorphism, loader */
-.pl1 {
-  display: block;
-  width: 8em;
-  height: 8em;
+/* From Uiverse.io by BlackisPlay  - Tags: simple, icon, animation, 3d, loader */
+.cls-1 {
+  fill: #f15a24;
+  animation: cls1 4s ease infinite both;
 }
 
-.pl1__g,
-  .pl1__rect {
-  animation: pl1-a 1.5s cubic-bezier(0.65,0,0.35,1) infinite;
-}
-
-.pl1__g {
-  transform-origin: 64px 64px;
-}
-
-.pl1__rect:first-child {
-  animation-name: pl1-b;
-}
-
-.pl1__rect:nth-child(2) {
-  animation-name: pl1-c;
-}
-
-@keyframes pl1-a {
-  from {
-    transform: rotate(0);
+@keyframes cls1 {
+  0% {
+    fill: #f15a24;
   }
 
-  80%,
-      to {
-    animation-timing-function: steps(1,start);
-    transform: rotate(90deg);
+  34% {
+    fill: #ed1c24;
+  }
+
+  66% {
+    fill: #f7931e;
+  }
+
+  100% {
+    fill: #f15a24;
   }
 }
 
-@keyframes pl1-b {
-  from {
-    animation-timing-function: cubic-bezier(0.33,0,0.67,0);
-    width: 40px;
-    height: 40px;
+.cls-1,
+.cls-2,
+.cls-3 {
+  stroke-width: 0px;
+}
+
+.cls-2 {
+  fill: #f7931e;
+  animation: cls2 4s ease infinite both;
+}
+
+@keyframes cls2 {
+  0% {
+    fill: #f7931e;
   }
 
-  20% {
-    animation-timing-function: steps(1,start);
-    width: 40px;
-    height: 0;
+  34% {
+    fill: #f15a24;
   }
 
-  60% {
-    animation-timing-function: cubic-bezier(0.65,0,0.35,1);
-    width: 0;
-    height: 40px;
+  66% {
+    fill: #ed1c24;
   }
 
-  80%,
-      to {
-    width: 40px;
-    height: 40px;
+  100% {
+    fill: #f7931e;
   }
 }
 
-@keyframes pl1-c {
-  from {
-    animation-timing-function: cubic-bezier(0.33,0,0.67,0);
-    width: 40px;
-    height: 40px;
-    transform: translate(0,48px);
+.cls-3 {
+  fill: #ed1c24;
+  animation: cls3 4s ease infinite both;
+}
+
+@keyframes cls3 {
+  0% {
+    fill: #ed1c24;
   }
 
-  20% {
-    animation-timing-function: cubic-bezier(0.33,1,0.67,1);
-    width: 40px;
-    height: 88px;
-    transform: translate(0,0);
+  34% {
+    fill: #f7931e;
   }
 
-  40% {
-    animation-timing-function: cubic-bezier(0.33,0,0.67,0);
-    width: 40px;
-    height: 40px;
-    transform: translate(0,0);
+  66% {
+    fill: #f15a24;
   }
 
-  60% {
-    animation-timing-function: cubic-bezier(0.33,1,0.67,1);
-    width: 88px;
-    height: 40px;
-    transform: translate(0,0);
-  }
-
-  80%,
-      to {
-    width: 40px;
-    height: 40px;
-    transform: translate(48px,0);
+  100% {
+    fill: #ed1c24;
   }
 }
+
+.cls-4 {
+  display: none;
+}
+
+#triangle {
+  height: 400px;
+  width: 400px;
+  padding-top: 30px;
+  animation: triangle 4s both infinite;
+}
+
+@keyframes triangle {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+

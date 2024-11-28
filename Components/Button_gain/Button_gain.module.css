@@ -1,27 +1,19 @@
 
-/* From Uiverse.io by ozgeozkaraa01 - Tags: button, buttons, desined Button */
-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* From Uiverse.io by ZiyadOuamna  - Tags: button, active, like, dark, light, shadow, modern, click */
+.button {
   cursor: pointer;
-  transition: all 0.3s linear;
-  border-radius: 10px;
-  border: 1px solid #F2BED1;
   padding: 10px 20px;
+  border-radius: 15px;
+  background-color: gray;
+  font-weight: bolder;
+  font-size: 25px;
+  border: 2px solid black;
+  transition: all 0.5s;
+}
+.button:hover {
+  background-color: aqua;
+  box-shadow: 0px 0px 15px aqua;
+
+  transform: scale(0.9);
 }
 
-button > svg {
-  margin-left: 5px;
-  transition: all 0.4s ease-in;
-}
-
-button:hover > svg {
-  font-size: 1.2em;
-  transform: translateX(6px);
-}
-
-button:hover {
-  box-shadow: 10px 10px 40px #d1d1d1;
-  transform: translateY(-5px);
-}

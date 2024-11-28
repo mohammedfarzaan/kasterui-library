@@ -1,0 +1,70 @@
+
+/* From Uiverse.io by andrew-demchenk0 - Tags: switch */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34.5px;
+  overflow: hidden;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.commutator {
+  cursor: pointer;
+  position: absolute;
+  top: -29%;
+  left: -14%;
+  transition: .4s;
+}
+
+.iron-man {
+  position: absolute;
+  top: -27%;
+  left: -100%;
+  transform: rotate(90deg);
+}
+
+.input:checked + .slider {
+  background-color: #2196F3;
+}
+
+.input:checked + .slider .commutator {
+  transform: translateX(34.5px);
+  opacity: 0;
+}
+
+.input:checked + .slider .iron-man {
+  animation: show_5911 1.3s ease-in-out forwards;
+}
+
+@keyframes show_5911 {
+  0% {
+    transform: translateX(0px) rotate(90deg);
+  }
+
+  50% {
+    transform: translateX(75px) rotate(90deg);
+  }
+
+  100% {
+    transform: translateX(79px) rotate(0deg);
+  }
+}

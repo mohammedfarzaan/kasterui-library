@@ -1,103 +1,44 @@
 
-/* From Uiverse.io by mrhyddenn - Tags: button */
+/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, ease */
 .button {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 5px;
   cursor: pointer;
   position: relative;
-  text-align: center;
-  display: block;
-  width: 200px;
-  border: none;
-  font-size: 12px;
-  height: 45px;
-  text-decoration: none;
-  font-weight: 600;
   overflow: hidden;
-  box-shadow: 0 10px 50px #006eff;
-  border-radius: 10px;
-  padding: 10px 20px;
-}
-
-.button .ten {
-  line-height: 52px;
-}
-
-.button:hover .slidein {
-  left: 0%;
-}
-
-.button:hover .two {
-  left: 0%;
-  transition-delay: 1.5s;
-}
-
-.button:hover .three {
-  left: 0%;
-  transition-delay: 3s;
-}
-
-.button:hover .four {
-  left: 0%;
-  transition-delay: 4.5s;
-}
-
-.button:hover .five {
-  left: 0%;
-  transition-delay: 6s;
-}
-
-.button:hover .six {
-  left: 0%;
-  transition-delay: 7.5s;
-}
-
-.button:hover .seven {
-  left: 0%;
-  transition-delay: 9s;
-}
-
-.button:hover .eight {
-  left: 0%;
-  transition-delay: 10.5s;
-}
-
-.button:hover .nine {
-  left: 0%;
-  transition-delay: 12s;
-}
-
-.button:hover .ten {
-  left: 0%;
-  transition-delay: 14s;
-}
-
-.button .slidein {
-  background: #3398ff;
-  left: -100%;
-  z-index: 2;
-}
-
-.button a {
-  text-transform: uppercase;
-  transition: left 300ms;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 1px;
-  background: #006eff;
-  position: absolute;
+  transition: background-color 0.3s ease-in, transform 0.3s ease;
+  font-size: 18px;
   font-weight: bold;
-  z-index: 1;
+  border: none;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.button:before {
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 0;
   height: 100%;
-  color: #fff;
+  background-color: #76a6ca;
+  opacity: 0;
+  transition: width 0.7s ease-in-out, opacity 0.9s ease;
 }
 
-.slidein:nth-child( even) {
-  background: #348bfc !important;
+.button:hover {
+  transform: scale(1.05);
 }
 
-.slidein:nth-child( odd) {
-  background: #0873ff !important;
+.button:hover:before {
+  width: 100%;
+  opacity: 0.6;
 }
+
+.button:active {
+  background-color: #76a6ca;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  transform: scale(0.98);
+}
+

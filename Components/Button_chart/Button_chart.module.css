@@ -1,59 +1,59 @@
 
-/* From Uiverse.io by andrew-demchenk0 - Tags: button */
-button {
-  position: relative;
-  width: 130px;
-  height: 35px;
-  border-radius: 30px;
-  background-color: white;
-  border: 1px #00acee solid;
+/* From Uiverse.io by vinodjangid07  - Tags: animation, black, button, arrow, hover effect, back to top, scroll to top */
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
   overflow: hidden;
+  position: relative;
 }
 
-.text1 {
-  font-size: 17px;
-  font-weight: 700;
-  margin-left: 22%;
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
 }
 
-.text2 {
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(181, 160, 255);
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button::before {
   position: absolute;
-  top: 25%;
-  left: -50px;
-  font-weight: 700;
-  font-size: 14px;
+  bottom: -20px;
+  content: "Back to Top";
   color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
 }
 
-.icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform 0.5s;
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
 }
 
-.icon::before {
-  position: absolute;
-  left: -100px;
-  top: 0;
-  z-index: -1;
-  content: '';
-  width: 130px;
-  height: 33px;
-  border-radius: 30px;
-  background-color: #00acee;
-}
-
-button:hover .icon {
-  transform: translateX(96px);
-  transition: transform 0.5s;
-}
-
-button:hover .text2 {
-  transform: translateX(100px);
-  transition: transform 0.6s;
-}
-
-button:active {
-  transform: scale(1.03);
-}

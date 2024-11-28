@@ -1,64 +1,68 @@
 
-/* From Uiverse.io by vinodjangid07 - Tags: button, comment, button hover effect  */
-.bookmarkBtn {
-  width: 130px;
-  height: 40px;
-  border-radius: 40px;
-  border: none;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* From Uiverse.io by cssbuttons-io - Tags: button */
+.c-button {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0.9em 1.6em;
   cursor: pointer;
-  transition-duration: .3s;
-  overflow: hidden;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.062);
-}
-
-.IconContainer {
-  width: 30px;
-  height: 30px;
-  background-color: rgb(103, 74, 228);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  z-index: 2;
-  transition-duration: .3s;
-}
-
-.icon {
-  border-radius: 1px;
-}
-
-.text {
-  height: 100%;
-  width: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(26, 26, 26);
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
   z-index: 1;
-  transition-duration: .3s;
-  font-size: 1.04em;
-  font-weight: 600;
 }
 
-.bookmarkBtn:hover .IconContainer {
-  width: 120px;
-  border-radius: 40px;
-  transition-duration: .3s;
+.c-button--gooey {
+  color: #06c8d9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 4px solid #06c8d9;
+  border-radius: 0;
+  position: relative;
+  transition: all 700ms ease;
 }
 
-.bookmarkBtn:hover .text {
-  transform: translate(10px);
-  width: 0;
-  font-size: 0;
-  transition-duration: .3s;
+.c-button--gooey .c-button__blobs {
+  height: 100%;
+  filter: url(#goo);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -3px;
+  right: -1px;
+  z-index: -1;
 }
 
-.bookmarkBtn:active {
-  transform: scale(0.95);
-  transition-duration: .3s;
+.c-button--gooey .c-button__blobs div {
+  background-color: #06c8d9;
+  width: 34%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  transform: scale(1.4) translateY(125%) translateZ(0);
+  transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(1) {
+  left: -5%;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(2) {
+  left: 30%;
+  transition-delay: 60ms;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(3) {
+  left: 66%;
+  transition-delay: 25ms;
+}
+
+.c-button--gooey:hover {
+  color: #fff;
+}
+
+.c-button--gooey:hover .c-button__blobs div {
+  transform: scale(1.4) translateY(0) translateZ(0);
 }

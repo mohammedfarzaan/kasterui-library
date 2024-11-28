@@ -3,47 +3,17 @@ import styles from "./Button_wolf.module.css";
 
 const Button_wolf = () => (
   <div>
-    <button className={styles["btn"]}>
-      <div>GET STARTED</div>
-      <svg
-        fill="none"
-        viewBox="0 0 24 24"
-        height="25px"
-        width="25px"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          strokeLinejoin="round"
-          strokeLinecap="round"
-          stroke-miterlimit="10"
-          strokeWidth="2"
-          stroke="white"
-          d="M11.6801 14.62L14.2401 12.06L11.6801 9.5"
-        ></path>
-        <path
-          strokeLinejoin="round"
-          strokeLinecap="round"
-          stroke-miterlimit="10"
-          strokeWidth="2"
-          stroke="white"
-          d="M4 12.0601H14.17"
-        ></path>
-        <path
-          strokeLinejoin="round"
-          strokeLinecap="round"
-          stroke-miterlimit="10"
-          strokeWidth="2"
-          stroke="white"
-          d="M12 4C16.42 4 20 7 20 12C20 17 16.42 20 12 20"
-        ></path>
-      </svg>
+    <button>
+      <span className={styles["txt"]}>click me</span>
+      <span className={styles["txt2"]}>You did it</span>
+      <span className={styles["gradient"]}></span>
     </button>
   </div>
 );
 
 export default Button_wolf;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -52,13 +22,10 @@ export default Button_wolf;
 
         const Button_wolf = () => (
          <div>
-          <button className="btn">
-  <div>GET STARTED</div>
-  <svg fill="none" viewBox="0 0 24 24" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
-<path strokeLinejoin="round" strokeLinecap="round" stroke-miterlimit="10" strokeWidth="2" stroke="white" d="M11.6801 14.62L14.2401 12.06L11.6801 9.5"></path>
-<path strokeLinejoin="round" strokeLinecap="round" stroke-miterlimit="10" strokeWidth="2" stroke="white" d="M4 12.0601H14.17"></path>
-<path strokeLinejoin="round" strokeLinecap="round" stroke-miterlimit="10" strokeWidth="2" stroke="white" d="M12 4C16.42 4 20 7 20 12C20 17 16.42 20 12 20"></path>
-</svg>
+          <button>
+  <span className="txt">click me</span>
+  <span className="txt2">You did it</span>
+  <span className="gradient"></span>
 </button>
         </div>
         );

@@ -3,21 +3,17 @@ import styles from "./Loader_soil.module.css";
 
 const Loader_soil = () => (
   <div>
-    <div className={styles["pyramid-loader"]}>
-      <div className={styles["wrapper"]}>
-        <span className={styles["side"] + styles["side1"]}></span>
-        <span className={styles["side"] + styles["side2"]}></span>
-        <span className={styles["side"] + styles["side3"]}></span>
-        <span className={styles["side"] + styles["side4"]}></span>
-        <span className={styles["shadow"]}></span>
-      </div>
-    </div>
+    <svg className="loader" viewBox="0 0 100 100">
+      <circle className="moon moon-back"></circle>
+      <circle className="planet"></circle>
+      <circle className="moon moon-front"></circle>
+    </svg>
   </div>
 );
 
 export default Loader_soil;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -26,15 +22,11 @@ export default Loader_soil;
 
         const Loader_soil = () => (
          <div>
-          <div className="pyramid-loader">
-  <div className="wrapper">
-    <span className="side side1"></span>
-    <span className="side side2"></span>
-    <span className="side side3"></span>
-    <span className="side side4"></span>
-    <span className="shadow"></span>
-  </div>  
-</div>
+          <svg className="loader" viewBox="0 0 100 100">
+    <circle className="moon moon-back"></circle>
+    <circle className="planet"></circle>
+    <circle className="moon moon-front"></circle>
+</svg>
         </div>
         );
 

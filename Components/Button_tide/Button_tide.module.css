@@ -1,99 +1,41 @@
 
-/* From Uiverse.io by MuhammadHasann - Tags: button */
-button {
-  position: relative;
-  padding: 18px 55px;
-  font-size: 15px;
+/* From Uiverse.io by vikiWayne - Tags: button */
+.button {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
   font-weight: bold;
-  color: #fff;
-  background: linear-gradient(87deg, #6d67e4, #7743db, #4e31aa, #6d67e4, #6d67e4);
-  background-size: 600% 600%;
-  border: 3px solid #7743db;
-  border-radius: 8px;
-  /* filter: drop-shadow(0 0 4px #9F73AB); */
-  box-shadow: inset 0 0 10px 1px #7743db, 0 0 10px 5px #7743db;
-  cursor: pointer;
-  transition: all 0.5s;
-  animation: GradientAnimation 25s ease infinite;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #2c9caf;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #2c9caf;
 }
 
-button::after {
-  content: "";
-  position: absolute;
-  width: 202px;
-  height: 54px;
-  top: 0;
-  left: -17px;
-  border: 5px solid #453c67;
-  border-width: 0 2px 4px 0;
-  border-radius: 100%;
-  filter: drop-shadow(0px 0px 6px rgba(78, 49, 180, 1));
-  transform: rotate(-30deg);
-  animation: LinerAfter 15s ease infinite;
+button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
 }
 
 button::before {
   content: "";
   position: absolute;
-  width: 200px;
-  height: 50px;
+  left: -50px;
   top: 0;
-  left: -20px;
-  border: 5px solid #6d67e4;
-  border-width: 0 12px 8px 4px;
-  border-radius: 100%;
-  filter: drop-shadow(0px 0px 6px rgba(109, 103, 228, 1));
-  /* box-shadow: inset 0 0 10px 1px #4E31AA, 0 0 10px 5px #4E31AA; */
-  transform: rotate(-30deg);
-  transition: all 0.5s;
-  animation: LinerBefore 15s ease infinite;
+  width: 0;
+  height: 100%;
+  background-color: #2c9caf;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
 }
 
-@keyframes GradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes LinerAfter {
-  0% {
-    left: -27px;
-    height: 54px;
-  }
-
-  50% {
-    left: -7px;
-    height: 37px;
-  }
-
-  100% {
-    left: -27px;
-    height: 54px;
-  }
-}
-
-@keyframes LinerBefore {
-  0% {
-    left: -30px;
-    height: 50px;
-  }
-
-  50% {
-    left: -10px;
-    height: 33px;
-  }
-
-  100% {
-    left: -30px;
-    height: 50px;
-  }
+button:hover::before {
+  width: 250%;
 }
 

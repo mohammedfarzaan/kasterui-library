@@ -1,65 +1,39 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: tooltip, button, hover, hover effect, bug, report */
-.BugButton {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3px;
-  background-color: transparent;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.2s;
-  position: relative;
-  overflow: hidden;
-}
-.BugButton svg {
-  width: 44%;
-}
-.BugButton:hover {
-  background-color: rgb(61, 41, 71);
-  overflow: visible;
-}
-.bugsvg path {
-  transition: all 0.2s;
-}
-.BugButton:hover .bugsvg path {
-  stroke: #fff;
-}
-.BugButton:active {
-  transform: scale(0.98);
-}
-.tooltip {
-  --tooltip-color: rgb(41, 41, 41);
-  position: absolute;
-  top: -40px;
-  background-color: var(--tooltip-color);
-  color: white;
-  border-radius: 5px;
+/* From Uiverse.io by Web-Potato - Tags: button */
+button {
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: #212121;
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
   font-size: 12px;
-  padding: 8px 12px;
-  font-weight: 600;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.105);
+}
+
+button span {
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-  opacity: 0;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: #212121;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #fff;
+  border: 0.08em solid #fff;
+  box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+button span:hover {
   transition: all 0.5s;
-  min-width: 100px;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
 }
-.tooltip::before {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  transform: rotate(45deg);
-  content: "";
-  background-color: var(--tooltip-color);
-  bottom: -10%;
+
+button span:not(hover) {
+  transition: all 1s;
 }
-.BugButton:hover .tooltip {
-  opacity: 1;
-}
+
 

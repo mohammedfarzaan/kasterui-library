@@ -1,51 +1,68 @@
 
-/* From Uiverse.io by vinodjangid07 - Tags: icon, button, pay */
-.Btn {
-  width: 130px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(15, 15, 15);
+/* From Uiverse.io by Dashrath-Sharma - Tags: button, hover, glow, code, border, box */
+button {
+  color: red;
+  outline: none;
   border: none;
-  color: white;
-  font-weight: 600;
-  gap: 8px;
-  cursor: pointer;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  font-size: 17px;
+  padding: 1em 2em;
   position: relative;
-  overflow: hidden;
-  transition-duration: .3s;
+  background: none;
+  cursor: pointer;
 }
 
-.svgIcon {
-  width: 16px;
+button:active {
+  transform: scale(.98);
+  box-shadow: .1px .1px 2px red;
 }
 
-.svgIcon path {
-  fill: white;
-}
-
-.Btn::before {
-  width: 130px;
-  height: 130px;
+button span {
   position: absolute;
-  content: "";
-  background-color: white;
-  border-radius: 50%;
-  left: -100%;
+  background: red;
+  transition: .5s;
+  box-shadow: 1px 1px 20px red;
+}
+
+button span:nth-child(1) {
   top: 0;
-  transition-duration: .3s;
-  mix-blend-mode: difference;
+  left: 0;
+  width: 3px;
+  height: 30%;
 }
 
-.Btn:hover::before {
-  transition-duration: .3s;
-  transform: translate(100%,-50%);
-  border-radius: 0;
+button:hover span:nth-child(1) {
+  height: 100%;
 }
 
-.Btn:active {
-  transform: translate(5px,5px);
-  transition-duration: .3s;
+button span:nth-child(2) {
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 3px;
+}
+
+button:hover span:nth-child(2) {
+  width: 100%;
+}
+
+button span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 3px;
+  height: 30%;
+}
+
+button:hover span:nth-child(3) {
+  height: 100%;
+}
+
+button span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  width: 15%;
+  height: 3px;
+}
+
+button:hover span:nth-child(4) {
+  width: 100%;
 }

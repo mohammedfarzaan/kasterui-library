@@ -1,71 +1,59 @@
 
-/* From Uiverse.io by andrew-demchenk0 - Tags: button */
-button {
-  position: relative;
-  width: 130px;
-  height: 35px;
-  border-radius: 30px;
-  background-color: white;
-  border: 1px #000000 solid;
-  overflow: hidden;
+/* From Uiverse.io by vinodjangid07 - Tags: button, share, hover effect */
+.Btn {
+  width: 145px;
+  height: 45px;
+  background: linear-gradient(-45deg, #6bc5f8, #cf59e6, #6bc5f8, #cf59e6);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 5px 5px 0px #4dc6d93d;
+  background-size: 400% 400%;
 }
 
-.text1 {
-  font-size: 17px;
-  font-weight: 700;
-  margin-left: 22%;
+.svgContainer {
+  width: 45px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.text2 {
-  position: absolute;
-  top: 25%;
-  left: -50px;
-  font-weight: 700;
-  font-size: 14px;
+.svgContainer svg {
+  width: 16px;
+}
+
+.svgContainer svg path {
+  fill: white;
+}
+
+.textContainer {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
+  font-weight: 600;
 }
 
-.icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform 0.5s;
+.Btn:hover {
+  animation: gradient 5s ease infinite;
 }
+/* Button's gradient animation */
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
 
-.icon::before {
-  position: absolute;
-  left: -100px;
-  top: 0;
-  z-index: -1;
-  content: '';
-  width: 130px;
-  height: 33px;
-  border-radius: 30px;
-  background-color: #000000;
-}
+  50% {
+    background-position: 100% 50%;
+  }
 
-.icon::after {
-  position: absolute;
-  left: 0.5px;
-  top: 0.5px;
-  z-index: -1;
-  content: '';
-  width: 32px;
-  height: 32px;
-  border-radius: 100%;
-  background-color: white;
-}
-
-button:hover .icon {
-  transform: translateX(97.5px);
-  transition: transform 0.5s;
-}
-
-button:hover .text2 {
-  transform: translateX(100px);
-  transition: transform 0.6s;
-}
-
-button:active {
-  transform: scale(1.03);
+  100% {
+    background-position: 0 50%;
+  }
 }

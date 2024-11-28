@@ -1,41 +1,35 @@
 
-/* From Uiverse.io by WhiteNervosa - Tags: button */
-button {
-  font-size: 18px;
-  color: #e1e1e1;
-  font-family: inherit;
-  font-weight: 800;
-  cursor: pointer;
+/* From Uiverse.io by SujitAdroja  - Tags: simple, material design, button, hover effect, hoverme, hover button, button hover effect , button hover */
+.btn {
   position: relative;
-  border: none;
   background: none;
-  text-transform: uppercase;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color;
+  border: 2px solid black;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
 }
-
-button:focus,
-button:hover {
-  color: #fff;
-}
-
-button:focus:after,
-button:hover:after {
-  width: 100%;
-  left: 0%;
-}
-
-button:after {
+.btn::before {
   content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
+  height: 0%;
   width: 0%;
-  height: 2px;
-  background-color: #fff;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  position: absolute;
+  background-color: #494958;
+  transition: all 0.3s;
 }
+.btn:hover {
+  border: 2px solid #32323c;
+  color: white;
+}
+.btn:hover::before {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.3rem;
+}
+

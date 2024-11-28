@@ -1,29 +1,55 @@
 import React from "react";
+import styles from "./Button_stared.module.css";
 
 const Button_stared = () => (
   <div>
-    <button className="cursor-pointer flex justify-between bg-gray-800 px-3 py-2 rounded-full text-white tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-mono w-[150px]">
-      Resume
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="2"
-        stroke="currentColor"
-        className="w-5 h-5 animate-bounce"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
-        ></path>
-      </svg>
-    </button>
+    <div className={styles["main__action"]}>
+      <a className={styles["main__scroll"]} href="#">
+        <div className={styles["main__scroll-box"]}>
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M11.9997 13.1716L7.04996     8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"
+              fill="rgba(28,28,30,1)"
+            ></path>
+          </svg>
+        </div>
+
+        <span className={styles["main__scroll-text"]}>Scroll</span>
+      </a>
+    </div>
   </div>
 );
 
 export default Button_stared;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_stared = () => (
+         <div>
+          <div className="main__action">
+  <a className="main__scroll" href="#">
+    <div className="main__scroll-box">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  	    <path d="M0 0h24v24H0z" fill="none"></path>
+  	    <path d="M11.9997 13.1716L7.04996     8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z" fill="rgba(28,28,30,1)">
+  	    </path>
+	  </svg>
+    </div>
+
+    <span className="main__scroll-text">Scroll</span>
+  </a>
+</div>
+        </div>
+        );
+
+        export default Button_stared;
+        
+        
+         */
 }

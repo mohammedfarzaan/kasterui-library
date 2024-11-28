@@ -1,36 +1,19 @@
 
-/* From Uiverse.io by AHMED-MIT - Tags: loader */
+/* From Uiverse.io by AqFox - Tags: loader */
 .spinner {
-  position: relative;
-  width: 35.2px;
-  height: 35.2px;
+ width: 56px;
+ height: 56px;
+ border-radius: 50%;
+ padding: 7px;
+ background: conic-gradient(from 135deg at top,#004dff 90deg, #0000 0) 0 calc(50% - 4px)/19px 9.5px,
+          radial-gradient(farthest-side at bottom left,#0000 calc(100% - 7px),#004dff calc(100% - 6px) 99%,#0000) top right/50%  50% content-box content-box,
+          radial-gradient(farthest-side at top,#0000 calc(100% - 7px),#004dff calc(100% - 6px) 99%,#0000) bottom   /100% 50% content-box content-box;
+ background-repeat: no-repeat;
+ animation: spinner-v8og74 1s infinite linear;
 }
 
-.spinner::before,
-.spinner::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  display: block;
-  animation: spinner-b4c8mmhg 0.5s backwards, spinner-49opz7hg 1.25s 0.5s infinite ease;
-  border: 8.8px solid #000000;
-  border-radius: 50%;
-  box-shadow: 0 -52.8px 0 -8.8px #000000;
-  position: absolute;
-}
-
-.spinner::after {
-  animation-delay: 0s, 1.25s;
-}
-
-@keyframes spinner-b4c8mmhg {
-  from {
-    box-shadow: 0 0 0 -8.8px #000000;
-  }
-}
-
-@keyframes spinner-49opz7hg {
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes spinner-v8og74 {
+ 100% {
+  transform: rotate(1turn);
+ }
 }

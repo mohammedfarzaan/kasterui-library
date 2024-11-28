@@ -1,81 +1,21 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: animation, loading, loader */
-.loader {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.wrapper {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.catContainer {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.catbody {
-  width: 80px;
-}
-.tail {
-  position: absolute;
-  width: 17px;
-  top: 50%;
-  animation: tail 0.5s ease-in infinite alternate-reverse;
-  transform-origin: top;
-}
-@keyframes tail {
-  0% {
-    transform: rotateZ(60deg);
+/* From Uiverse.io by omar-alghaish - Tags: loader */
+@keyframes animate8345 {
+  0%,100% {
+    filter: hue-rotate(0deg);
   }
+
   50% {
-    transform: rotateZ(0deg);
-  }
-  100% {
-    transform: rotateZ(-20deg);
-  }
-}
-.wall {
-  width: 300px;
-}
-.text {
-  display: flex;
-  flex-direction: column;
-  width: 50px;
-  position: absolute;
-  margin: 0px 0px 100px 120px;
-}
-.zzz {
-  color: black;
-  font-weight: 700;
-  font-size: 15px;
-  animation: zzz 2s linear infinite;
-}
-.bigzzz {
-  color: black;
-  font-weight: 700;
-  font-size: 25px;
-  margin-left: 10px;
-  animation: zzz 2.3s linear infinite;
-}
-@keyframes zzz {
-  0% {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-  100% {
-    color: transparent;
+    filter: hue-rotate(360deg);
   }
 }
 
+.loader {
+  color: rgb(0, 0, 0);
+  background: linear-gradient(to right, #2d60ec, #3ccfda);
+  font-size: 30px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate8345 9s linear infinite;
+  font-weight: bold;
+}

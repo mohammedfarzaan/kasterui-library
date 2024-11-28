@@ -4,47 +4,22 @@ import styles from "./Loader_spell.module.css";
 const Loader_spell = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["cubes"]}>
-        <div className={styles["cube"]}>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-        </div>
-        <div className={styles["cube"]}>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-        </div>
-        <div className={styles["cube"]}>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-        </div>
-        <div className={styles["cube"]}>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-        </div>
-      </div>
+      <span className={styles["l"]}>L</span>
+      <span className={styles["o"]}>o</span>
+      <span className={styles["a"]}>a</span>
+      <span className={styles["d"]}>d</span>
+      <span className={styles["i"]}>i</span>
+      <span className={styles["n"]}>n</span>
+      <span className={styles["g"]}>g</span>
+      <span className={styles["d1"]}>.</span>
+      <span className={styles["d2"]}>.</span>
     </div>
   </div>
 );
 
 export default Loader_spell;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -54,40 +29,15 @@ export default Loader_spell;
         const Loader_spell = () => (
          <div>
           <div className="loader">
-  <div className="cubes">
-    <div className="cube">
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-    </div>
-    <div className="cube">
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-    </div>
-    <div className="cube">
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-    </div>
-    <div className="cube">
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-    </div>
-  </div>
+  <span className="l">L</span>
+  <span className="o">o</span>
+  <span className="a">a</span>
+  <span className="d">d</span>
+  <span className="i">i</span>
+  <span className="n">n</span>
+  <span className="g">g</span>
+  <span className="d1">.</span>
+  <span className="d2">.</span>
 </div>
         </div>
         );

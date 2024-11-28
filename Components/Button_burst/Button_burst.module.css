@@ -1,67 +1,92 @@
 
-/* From Uiverse.io by elijahgummer  - Tags: icon, animation, 3d, button, hover, modern, play, cyan */
-.button-with-icon {
-  overflow: hidden;
-  display: inline-flex;
+/* From Uiverse.io by htwarriors108 - Tags: gradient, button, hover, clean, color, hover effect, buttons */
+button {
+  background-color: #fff;
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  cursor: pointer;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #0f988e;
-  font-family: "Istok Web", sans-serif;
-  letter-spacing: 1px;
-  padding: 0 12px;
-  text-align: center;
-  width: 120px;
-  height: 40px;
-  font-size: 14px;
+  transition: 0.5s;
+  border: none;
+}
+
+button:active {
+  scale: 1.2;
+}
+
+button:hover {
+  width: 180px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0);
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  opacity: 0;
+  transition: 0.5s;
+}
+
+button:hover::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  filter: blur(15px);
+  transition: 0.5s;
+  z-index: -1;
+  opacity: 0;
+}
+
+button:hover::after {
+  opacity: 0.5;
+}
+
+button svg {
+  color: #777;
+  width: auto;
+  height: 30px;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+
+button:hover svg {
+  transform: scale(0);
+  color: #fff;
+  transition-delay: 0s;
+}
+
+button span {
+  position: absolute;
+}
+
+button .title {
+  color: #fff;
+  font-size: 1.3em;
   text-transform: uppercase;
-  font-weight: normal;
-  border-radius: 3px;
-  outline: none;
-  user-select: none;
-  cursor: pointer;
-  transform: translateY(0px);
-  position: relative;
-  box-shadow:
-    inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 1px 20px rgba(0, 0, 0, 0),
-    0 3px 0 #0f988e,
-    0 3px 2px rgba(0, 0, 0, 0.2),
-    0 5px 10px rgba(0, 0, 0, 0.1),
-    0 10px 20px rgba(0, 0, 0, 0.1);
-  background: #15ccbe;
-  color: white;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-  transition: 150ms all ease-in-out;
+  letter-spacing: 0.1em;
+  transform: scale(0);
+  transition: 0.5s;
+  transition-delay: 0s;
+  font-weight: 600;
 }
 
-.button-with-icon .icon {
-  margin-right: 8px;
-  width: 24px;
-  height: 24px;
-  transition: all 0.5s ease-in-out;
+button:hover .title {
+  transform: scale(1);
+  transition-delay: 0.25s;
 }
-
-.button-with-icon:active {
-  transform: translateY(3px);
-  box-shadow:
-    inset 0 16px 2px -15px rgba(0, 0, 0, 0),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.15),
-    inset 0 1px 20px rgba(0, 0, 0, 0.1),
-    0 0 0 #0f988e,
-    0 0 0 2px rgba(255, 255, 255, 0.5),
-    0 0 0 rgba(0, 0, 0, 0),
-    0 0 0 rgba(0, 0, 0, 0);
-}
-
-.button-with-icon:hover .text {
-  transform: translateX(80px);
-}
-.button-with-icon:hover .icon {
-  transform: translate(23px);
-}
-
-.text {
-  transition: all 0.5s ease-in-out;
-}
-

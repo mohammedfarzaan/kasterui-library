@@ -3,13 +3,21 @@ import styles from "./Loader_done.module.css";
 
 const Loader_done = () => (
   <div>
-    <div className={styles["spinner"]}></div>
+    <div id="load">
+      <div>G</div>
+      <div>N</div>
+      <div>I</div>
+      <div>D</div>
+      <div>A</div>
+      <div>O</div>
+      <div>L</div>
+    </div>
   </div>
 );
 
 export default Loader_done;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -18,7 +26,15 @@ export default Loader_done;
 
         const Loader_done = () => (
          <div>
-          <div className="spinner"></div>
+          <div id="load">
+  <div>G</div>
+  <div>N</div>
+  <div>I</div>
+  <div>D</div>
+  <div>A</div>
+  <div>O</div>
+  <div>L</div>
+</div>
         </div>
         );
 

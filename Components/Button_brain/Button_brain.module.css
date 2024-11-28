@@ -1,80 +1,33 @@
 
-/* From Uiverse.io by boryanakrasteva - Tags: button, delete */
-.btn {
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border: none;
+/* From Uiverse.io by mouadh-n  - Website: https://youtu.be/b_8fHNIHFk4?si=L-0kb3bKz6VlasUc - Name:  Coding Play - Tags: simple, blue, purple, button, hover, btn, hover effect, css */
+a {
+  color: white;
   position: relative;
-  border-radius: 10px;
-  -webkit-box-shadow: 1px 1px 5px .2px #00000035;
-  box-shadow: 1px 1px 5px .2px #00000035;
-  -webkit-transition: .2s linear;
-  transition: .2s linear;
-  transition-delay: .2s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: space-between;
 }
-
-.btn:hover {
-  width: 150px;
-  transition-delay: .2s;
-}
-
-.btn:hover > .paragraph {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transition-delay: .4s;
-  transition-delay: .4s;
-}
-
-.btn:hover > .icon-wrapper .icon {
+.buuton {
+  font-weight: 600;
+  border-radius: 2em;
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.253);
+  backdrop-filter: blur(10px);
   transform: scale(1.1);
+  transition: 0.2s ease-in-out;
 }
-
-.bnt:hover > .icon-wrapper .icon path {
-  stroke: black;
-}
-
-.paragraph {
-  color: black;
-  visibility: hidden;
-  opacity: 0;
-  font-size: 18px;
-  margin-right: 20px;
-  padding-left: 20px;
-  -webkit-transition: .2s linear;
-  transition: .2s linear;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.icon-wrapper {
-  width: 50px;
-  height: 50px;
+.back {
   position: absolute;
+  background: linear-gradient(20deg, rgb(174, 6, 216) 0%, rgb(85, 31, 200));
   top: 0;
+  bottom: 0;
+  left: 0;
   right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: -1;
+  border-radius: 2em;
+  box-shadow: -5px 0 10px rgb(140, 12, 147), 5px 0 10px rgb(85, 31, 200);
+  transform: translateY(10px);
+}
+.buuton:hover {
+  transform: translateY(10px);
+  box-shadow: -10px 0 50px rgba(241, 0, 108, 0.352),
+    10px 0 50px rgb(85, 31, 200);
 }
 
-.icon {
-  transform: scale(.9);
-  transition: .2s linear;
-}
-
-.icon path {
-  stroke: #000;
-  stroke-width: 2px;
-  -webkit-transition: .2s linear;
-  transition: .2s linear;
-}

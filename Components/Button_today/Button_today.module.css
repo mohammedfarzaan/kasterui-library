@@ -1,33 +1,24 @@
 
-/* From Uiverse.io by mouadh-n  - Website: https://youtu.be/b_8fHNIHFk4?si=L-0kb3bKz6VlasUc - Name:  Coding Play - Tags: simple, blue, purple, button, hover, btn, hover effect, css */
-a {
-  color: white;
-  position: relative;
-}
-.buuton {
+/* From Uiverse.io by Creatlydev - Tags: neumorphism, button, simple button */
+.button {
+  --bg: linear-gradient(180deg,
+            hsla(0, 0%, 100%, .1),
+            hsla(0, 0%, 100%, 0)),
+        hsl(128, 52%, 45%);
+  box-shadow: 0 1px 2px #25114f66, 0 0 0 1px hsla(128, 50%, 45%, 0.761);
+  background-color: transparent;
+  border: none;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .25rem .5rem;
+  cursor: pointer;
+  padding-right: 1rem;
   font-weight: 600;
-  border-radius: 2em;
-  padding: 0.75rem 1.5rem;
-  background-color: rgba(255, 255, 255, 0.253);
-  backdrop-filter: blur(10px);
-  transform: scale(1.1);
-  transition: 0.2s ease-in-out;
+  color: #fff;
+  background: var(--bg);
+  white-space: nowrap;
+  border-radius: 6px;
+  border: 1px solid #fff3;
 }
-.back {
-  position: absolute;
-  background: linear-gradient(20deg, rgb(174, 6, 216) 0%, rgb(85, 31, 200));
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  border-radius: 2em;
-  box-shadow: -5px 0 10px rgb(140, 12, 147), 5px 0 10px rgb(85, 31, 200);
-  transform: translateY(10px);
-}
-.buuton:hover {
-  transform: translateY(10px);
-  box-shadow: -10px 0 50px rgba(241, 0, 108, 0.352),
-    10px 0 50px rgb(85, 31, 200);
-}
-

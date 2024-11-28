@@ -1,98 +1,48 @@
 
-/* From Uiverse.io by r7chardgh - Tags: 3d, button, nuclear-button */
-.button {
-  display: flex;
+/* From Uiverse.io by Subu19  - Tags: animation, button, hamburger, click, menu */
+.hamburger {
+  height: 50px;
+  width: 50px;
+  transform: 0.2s;
   position: relative;
-  background: none;
-  border: 0;
-  transform-style: preserve-3d;
-  transform: rotateX(45deg)rotateZ(45deg);
+}
+.hamburger .checkbox {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
   cursor: pointer;
 }
-
-.button > .red {
-  position: absolute;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  background-color: rgb(255, 49, 49);
-  transform: translate(-50%,-50%);
-  transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.line {
+  transition: 0.5s;
+  stroke-width: 6px;
+  stroke: black;
 }
-
-.red::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1em;
-  left: 0;
-  background-color: rgb(255, 49, 49);
-  transform: rotateZ(-45deg) translateY(-.5em);
-  transition: height 150ms, transform 150ms;
+.lineTop {
+  stroke-dasharray: 40 40;
+  stroke-dashoffset: 25;
 }
-
-.red::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  background-color: rgb(255, 49, 49);
-  transform: rotateZ(-45deg) translateY(-1em);
-  transition: transform 150ms;
-  border: 1px solid rgb(255, 196, 196);
+.lineBottom {
+  stroke-dasharray: 40 40;
+  stroke-dashoffset: 60;
 }
-
-.button > .base {
-  position: relative;
-  width: 3em;
-  height: 3em;
-  background-color: rgb(245, 216, 90);
-  transform-style: preserve-3d;
-  border-bottom: 1px solid rgb(255, 255, 255);
-  border-right: 1px solid rgb(255, 255, 255);
+.lineMid {
+  stroke-dasharray: 40 40;
 }
-
-.base::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgb(245, 216, 90);
-  transform-origin: bottom;
-  transform: rotateX(90deg);
-  border-right: 1px solid #fff;
+.hamburger .checkbox:checked + svg .line {
+  stroke: crimson;
 }
-
-.base::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgb(245, 216, 90);
-  transform-origin: right;
-  transform: rotateY(-90deg);
-  border-left: 1px solid #fff;
+.hamburger .checkbox:checked + svg .lineTop {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(45deg) translate(-7px, -5px);
 }
-
-.button:active>.red::before {
-  transform: rotateZ(-45deg) translateY(0);
-  height: 0;
+.hamburger .checkbox:checked + svg .lineMid {
+  stroke-dashoffset: 40;
 }
-
-.button:active>.red::after {
-  transform: rotateZ(-45deg) translateY(0);
+.hamburger .checkbox:checked + svg .lineBottom {
+  stroke-dashoffset: 0;
+  transform-origin: left;
+  transform: rotateZ(-45deg) translate(-5px, 5px);
 }
-
 

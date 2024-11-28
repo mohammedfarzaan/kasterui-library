@@ -3,18 +3,29 @@ import styles from "./Loader_nobody.module.css";
 
 const Loader_nobody = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["clockLoader"]}>
-        <div className={styles["clockHand"] + styles["minuteHand"]}></div>
-        <div className={styles["clockHand"] + styles["hourHand"]}></div>
+    <div
+      aria-busy="true"
+      aria-label="Loading"
+      role="progressbar"
+      className={styles["container"]}
+    >
+      <div className={styles["swing"]}>
+        <div className={styles["swing-l"]}></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className={styles["swing-r"]}></div>
       </div>
-      <div className={styles["decorativeElementContainer"]}>
-        <div
-          className={styles["decorativeElement"] + styles["decorativeElement1"]}
-        ></div>
-        <div
-          className={styles["decorativeElement"] + styles["decorativeElement2"]}
-        ></div>
+      <div className={styles["shadow"]}>
+        <div className={styles["shadow-l"]}></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className={styles["shadow-r"]}></div>
       </div>
     </div>
   </div>
@@ -22,7 +33,7 @@ const Loader_nobody = () => (
 
 export default Loader_nobody;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -31,15 +42,25 @@ export default Loader_nobody;
 
         const Loader_nobody = () => (
          <div>
-          <div className="loader">
-  <div className="clockLoader">
-    <div className="clockHand minuteHand"></div>
-    <div className="clockHand hourHand"></div>
-  </div>
-  <div className="decorativeElementContainer">
-    <div className="decorativeElement decorativeElement1"></div>
-    <div className="decorativeElement decorativeElement2"></div>
-  </div>
+          <div aria-busy="true" aria-label="Loading" role="progressbar" className="container">
+    <div className="swing">
+        <div className="swing-l"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className="swing-r"></div>
+    </div>
+    <div className="shadow">
+        <div className="shadow-l"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className="shadow-r"></div>
+    </div>
 </div>
         </div>
         );

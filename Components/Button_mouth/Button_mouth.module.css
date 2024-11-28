@@ -1,51 +1,42 @@
 
-/* From Uiverse.io by NAKAMOZ - Tags: button */
-button {
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
-  border: none;
-  font-size: 17px;
-  position: relative;
-  z-index: 3;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+/* From Uiverse.io by MINOTAURO18 - Tags: media, social, instagram, button, Discord, github */
+.redes {
+  width: 80px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-button::before {
-  content: "";
-  border: 3px solid white;
-  position: absolute;
-  left: -25px;
-  bottom: 0;
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 60px;
-  -webkit-border-radius: 60px;
-  -moz-border-radius: 60px;
-  -ms-border-radius: 60px;
-  -o-border-radius: 60px;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-}
-
-button:hover::before {
-  left: -25px;
-  bottom: -17.5px;
+.redes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 20px;
-  background-color: white;
-  z-index: -1;
+  height: 40px;
+  transition: all 0.3s ease-in-out;
 }
 
-button:hover {
-  color: #282828;
+.redes a svg {
+  width: 30px;
+  fill: #ffffff;
 }
 
+.redes .discord {
+  background-color: rgb(0, 60, 255);
+}
+
+.redes .github {
+  background-color: rgb(24, 22, 22);
+}
+
+.redes .twitter {
+  background-color: #33BBFF;
+}
+
+.redes .instagram {
+  background: linear-gradient(45deg, #833AB4, #FD1D1D, #F56040);
+}
+
+.redes a:hover {
+  width: 90px;
+}

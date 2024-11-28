@@ -3,15 +3,13 @@ import styles from "./Loader_small.module.css";
 
 const Loader_small = () => (
   <div>
-    <div className={styles["center-body"]}>
-      <div className={styles["loader-shape-3"]}></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
 export default Loader_small;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -20,9 +18,7 @@ export default Loader_small;
 
         const Loader_small = () => (
          <div>
-          <div className="center-body">
-  <div className="loader-shape-3"></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

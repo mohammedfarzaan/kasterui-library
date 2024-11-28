@@ -1,39 +1,21 @@
 
-/* From Uiverse.io by vishalparajuli - Tags: button, 3d button, 3d card */
+/* From Uiverse.io by Artahs  - Tags: action, red, button, button */
 .button {
-  width: 100px;
+  cursor: pointer;
+  border: solid;
+  border-color: #5b5958;
+  border-radius: 7px;
+  width: 200px;
   height: 50px;
-  position: relative;
-  perspective: 800px;
+  background-color: #730603;
+  color: #ffc900;
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: black 2px 1px;
+  -web-kit-box-shadow: inset 0px 0px 1.5px 2px #000000, 0px 0px 15px 3px #000000;
+  box-shadow: inset 0px 0px 1.5px 2px #000000, 0px 0px 15px 3px #000000;
+}
+.button:hover {
+  background-color: #a50000;
 }
 
-.button__front,
-  .button__back {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #3498db;
-  border-radius: 5px;
-  position: absolute;
-  backface-visibility: hidden;
-  transition: transform 0.5s ease;
-}
-
-.button__back {
-  background-color: #e74c3c;
-  transform: rotateY(180deg);
-}
-
-.button:hover .button__front {
-  transform: rotateY(-180deg);
-}
-
-.button:hover .button__back {
-  transform: rotateY(0);
-}

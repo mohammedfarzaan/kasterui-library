@@ -3,17 +3,28 @@ import styles from "./Loader_wing.module.css";
 
 const Loader_wing = () => (
   <div>
-    <div className={styles["loader"]}>
-      <span className={styles["bar"]}></span>
-      <span className={styles["bar"]}></span>
-      <span className={styles["bar"]}></span>
+    <div className={styles["container"]}>
+      <div className={styles["lds-spinner"]}>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   </div>
 );
 
 export default Loader_wing;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -22,10 +33,21 @@ export default Loader_wing;
 
         const Loader_wing = () => (
          <div>
-          <div className="loader">
-    <span className="bar"></span>
-    <span className="bar"></span>
-    <span className="bar"></span>
+          <div className="container">
+  <div className="lds-spinner">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
 </div>
         </div>
         );

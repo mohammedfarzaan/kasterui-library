@@ -3,18 +3,28 @@ import styles from "./Button_cup.module.css";
 
 const Button_cup = () => (
   <div>
-    <button className={styles["Btn"]}>
-      SKIP
-      <svg viewBox="0 0 320 512" className="svg">
-        <path d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4l192 160L256 241V96c0-17.7 14.3-32 32-32s32 14.3 32 32V416c0 17.7-14.3 32-32 32s-32-14.3-32-32V271l-11.5 9.6-192 160z"></path>
-      </svg>
-    </button>
+    <div className={styles["button-container"]}>
+      <button className={styles["button-3d"]}>
+        <div className={styles["button-top"]}>
+          <span className={styles["material-icons"]}>❮</span>
+        </div>
+        <div className={styles["button-bottom"]}></div>
+        <div className={styles["button-base"]}></div>
+      </button>
+      <button className={styles["button-3d"]}>
+        <div className={styles["button-top"]}>
+          <span className={styles["material-icons"]}>❯</span>
+        </div>
+        <div className={styles["button-bottom"]}></div>
+        <div className={styles["button-base"]}></div>
+      </button>
+    </div>
   </div>
 );
 
 export default Button_cup;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -23,14 +33,22 @@ export default Button_cup;
 
         const Button_cup = () => (
          <div>
-          <button className="Btn">
-  SKIP
-  <svg viewBox="0 0 320 512" className="svg">
-    <path
-      d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4l192 160L256 241V96c0-17.7 14.3-32 32-32s32 14.3 32 32V416c0 17.7-14.3 32-32 32s-32-14.3-32-32V271l-11.5 9.6-192 160z"
-    ></path>
-  </svg>
-</button>
+          <div className="button-container">
+  <button className="button-3d">
+    <div className="button-top">
+      <span className="material-icons">❮</span>
+    </div>
+    <div className="button-bottom"></div>
+    <div className="button-base"></div>
+  </button>
+  <button className="button-3d">
+    <div className="button-top">
+      <span className="material-icons">❯</span>
+    </div>
+    <div className="button-bottom"></div>
+    <div className="button-base"></div>
+  </button>
+</div>
         </div>
         );
 

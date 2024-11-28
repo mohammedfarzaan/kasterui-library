@@ -1,101 +1,75 @@
 
-/* From Uiverse.io by Baimyrzaev - Tags: button */
-button {
-  padding: 20px 60px;
-  background-color: #000;
+/* From Uiverse.io by wang3616359git - Tags: button */
+.bt {
   border: none;
+  user-select: none;
   font-size: 18px;
+  color: white;
+  text-align: center;
+  background-color: #0873bd;
+  box-shadow: #cacaca 2px 2px 10px 1px;
+  border-radius: 12px;
+  height: 60px;
+  line-height: 60px;
+  width: 155px;
+  transition: all 0.2s ease;
   position: relative;
-  /* overflow: hidden; */
-  transition: 500ms;
 }
 
-button span {
-  color: gray;
-  position: relative;
-  transition: 500ms;
-  transition-delay: 500ms;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 600;
-}
-
-button:before {
-  content: '';
+.msg {
+  height: 0;
+  width: 0;
+  border-radius: 2px;
   position: absolute;
-  width: 0%;
-  height: 0%;
-  left: 50%;
-  right: 50%;
-  top: 50%;
-  bottom: 50%;
-  transition: 500ms;
-  transition-delay: 500ms;
-  background-color: red;
-  box-shadow: 0 0 10px red,
-   0 0 30px red, 
-   0 0 50px red;
+  left: 15%;
+  top: 25%;
 }
 
-button div {
-  transition: 500ms;
-  position: absolute;
-  background-color: red;
-  box-shadow: 0 0 15px red, 0 0 30px red, 0 0 50px red;
+.bt:active {
+  transition: all 0.001s ease;
+  background-color: #5d9fcd;
+  box-shadow: #97989a 0 0 0 0;
+  transform: translateX(1px) translateY(1px);
 }
 
-button .top {
-  width: 15px;
-  height: 2px;
-  top: 0;
-  left: 0;
+.bt:hover .msg {
+  animation: msgRun 2s forwards;
 }
 
-button .bottom {
-  width: 15px;
-  height: 2px;
-  bottom: 0;
-  right: 0;
-}
+@keyframes msgRun {
+  0% {
+    border-top: #d6d6d9 0 solid;
+    border-bottom: #f2f2f5 0 solid;
+    border-left: #f2f2f5 0 solid;
+    border-right: #f2f2f5 0 solid;
+  }
 
-button .left {
-  width: 2px;
-  height: 15px;
-  top: 0;
-  left: 0;
-}
+  20% {
+    border-top: #d6d6d9 14px solid;
+    border-bottom: #f2f2f5 14px solid;
+    border-left: #f2f2f5 20px solid;
+    border-right: #f2f2f5 20px solid;
+  }
 
-button .right {
-  width: 2px;
-  height: 15px;
-  bottom: 0;
-  right: 0;
-}
+  25% {
+    border-top: #d6d6d9 12px solid;
+    border-bottom: #f2f2f5 12px solid;
+    border-left: #f2f2f5 18px solid;
+    border-right: #f2f2f5 18px solid;
+  }
 
-button:hover {
-  color: #000;
-}
+  80% {
+    border-top: transparent 12px solid;
+    border-bottom: transparent 12px solid;
+    border-left: transparent 18px solid;
+    border-right: transparent 18px solid;
+  }
 
-button:hover span {
-  color: #000;
-}
-
-button:hover:before {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-button:hover .top, 
-button:hover .bottom {
-  width: 100%;
-}
-
-button:hover .left,
-button:hover .right {
-  height: 100%;
+  100% {
+    transform: translateX(150px);
+    border-top: transparent 12px solid;
+    border-bottom: transparent 12px solid;
+    border-left: transparent 18px solid;
+    border-right: transparent 18px solid;
+  }
 }

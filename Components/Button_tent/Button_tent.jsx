@@ -3,18 +3,18 @@ import styles from "./Button_tent.module.css";
 
 const Button_tent = () => (
   <div>
-    <div className={styles["installer"]}>
-      <label for="progressLinux">
-        <input id="progressLinux" type="radio" />
-        <span></span>
-      </label>
-    </div>
+    <button data-text="Awesome" className={styles["button"]}>
+      <span className={styles["actual-text"]}>&nbsp;uiverse&nbsp;</span>
+      <span className={styles["hover-text"]} aria-hidden="true">
+        &nbsp;uiverse&nbsp;
+      </span>
+    </button>
   </div>
 );
 
 export default Button_tent;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -23,9 +23,10 @@ export default Button_tent;
 
         const Button_tent = () => (
          <div>
-          <div className="installer">
-	<label for="progressLinux"><input id="progressLinux" type="radio" /><span></span></label>
-</div>
+          <button data-text="Awesome" className="button">
+    <span className="actual-text">&nbsp;uiverse&nbsp;</span>
+    <span className="hover-text" aria-hidden="true">&nbsp;uiverse&nbsp;</span>
+</button>
         </div>
         );
 

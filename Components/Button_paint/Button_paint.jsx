@@ -3,27 +3,40 @@ import styles from "./Button_paint.module.css";
 
 const Button_paint = () => (
   <div>
-    <button className={styles["border"]}>
-      <div className={styles["outer"]}>
-        <div className={styles["inner"]}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            height="1.125rem"
-            width="1.125rem"
-          >
-            <path
-              fill="#000000"
-              d="M14.2199 21.63C13.0399 21.63 11.3699 20.8 10.0499 16.83L9.32988 14.67L7.16988 13.95C3.20988 12.63 2.37988 10.96 2.37988 9.78001C2.37988 8.61001 3.20988 6.93001 7.16988 5.60001L15.6599 2.77001C17.7799 2.06001 19.5499 2.27001 20.6399 3.35001C21.7299 4.43001 21.9399 6.21001 21.2299 8.33001L18.3999 16.82C17.0699 20.8 15.3999 21.63 14.2199 21.63ZM7.63988 7.03001C4.85988 7.96001 3.86988 9.06001 3.86988 9.78001C3.86988 10.5 4.85988 11.6 7.63988 12.52L10.1599 13.36C10.3799 13.43 10.5599 13.61 10.6299 13.83L11.4699 16.35C12.3899 19.13 13.4999 20.12 14.2199 20.12C14.9399 20.12 16.0399 19.13 16.9699 16.35L19.7999 7.86001C20.3099 6.32001 20.2199 5.06001 19.5699 4.41001C18.9199 3.76001 17.6599 3.68001 16.1299 4.19001L7.63988 7.03001Z"
-            ></path>
-            <path
-              fill="#000000"
-              d="M10.11 14.4C9.92005 14.4 9.73005 14.33 9.58005 14.18C9.29005 13.89 9.29005 13.41 9.58005 13.12L13.16 9.53C13.45 9.24 13.93 9.24 14.22 9.53C14.51 9.82 14.51 10.3 14.22 10.59L10.64 14.18C10.5 14.33 10.3 14.4 10.11 14.4Z"
-            ></path>
-          </svg>
-          Send Message
-        </div>
+    <button className={styles["styled-button"]}>
+      Register Now
+      <div className={styles["inner-button"]}>
+        <svg
+          id="Arrow"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+          height="30px"
+          width="30px"
+          className="icon"
+        >
+          <defs>
+            <linearGradient
+              y2="100%"
+              x2="100%"
+              y1="0%"
+              x1="0%"
+              id="iconGradient"
+            >
+              <stop
+                style="stop-color:#FFFFFF;stop-opacity:1"
+                offset="0%"
+              ></stop>
+              <stop
+                style="stop-color:#AAAAAA;stop-opacity:1"
+                offset="100%"
+              ></stop>
+            </linearGradient>
+          </defs>
+          <path
+            fill="url(#iconGradient)"
+            d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z"
+          ></path>
+        </svg>
       </div>
     </button>
   </div>
@@ -31,7 +44,7 @@ const Button_paint = () => (
 
 export default Button_paint;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -40,27 +53,28 @@ export default Button_paint;
 
         const Button_paint = () => (
          <div>
-          <button className="border">
-  <div className="outer">
-    <div className="inner">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        height="1.125rem"
-        width="1.125rem"
-      >
-        <path
-          fill="#000000"
-          d="M14.2199 21.63C13.0399 21.63 11.3699 20.8 10.0499 16.83L9.32988 14.67L7.16988 13.95C3.20988 12.63 2.37988 10.96 2.37988 9.78001C2.37988 8.61001 3.20988 6.93001 7.16988 5.60001L15.6599 2.77001C17.7799 2.06001 19.5499 2.27001 20.6399 3.35001C21.7299 4.43001 21.9399 6.21001 21.2299 8.33001L18.3999 16.82C17.0699 20.8 15.3999 21.63 14.2199 21.63ZM7.63988 7.03001C4.85988 7.96001 3.86988 9.06001 3.86988 9.78001C3.86988 10.5 4.85988 11.6 7.63988 12.52L10.1599 13.36C10.3799 13.43 10.5599 13.61 10.6299 13.83L11.4699 16.35C12.3899 19.13 13.4999 20.12 14.2199 20.12C14.9399 20.12 16.0399 19.13 16.9699 16.35L19.7999 7.86001C20.3099 6.32001 20.2199 5.06001 19.5699 4.41001C18.9199 3.76001 17.6599 3.68001 16.1299 4.19001L7.63988 7.03001Z"
-        ></path>
-        <path
-          fill="#000000"
-          d="M10.11 14.4C9.92005 14.4 9.73005 14.33 9.58005 14.18C9.29005 13.89 9.29005 13.41 9.58005 13.12L13.16 9.53C13.45 9.24 13.93 9.24 14.22 9.53C14.51 9.82 14.51 10.3 14.22 10.59L10.64 14.18C10.5 14.33 10.3 14.4 10.11 14.4Z"
-        ></path>
-      </svg>
-      Send Message
-    </div>
+          <button className="styled-button">
+  Register Now
+  <div className="inner-button">
+    <svg
+      id="Arrow"
+      viewBox="0 0 32 32"
+      xmlns="http://www.w3.org/2000/svg"
+      height="30px"
+      width="30px"
+      className="icon"
+    >
+      <defs>
+        <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
+          <stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
+          <stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        fill="url(#iconGradient)"
+        d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z"
+      ></path>
+    </svg>
   </div>
 </button>
         </div>

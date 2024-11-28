@@ -1,37 +1,48 @@
 
-/* From Uiverse.io by SevenAJJY - Tags: button, hover, code, click */
-.btn {
-  --main-color: #ffce06;
-  --main-alt-color: #fff696;
-  height: 44px;
-  font-size: 16px!important;
-  line-height: 44px;
-  font-weight: 700;
-  color: #3f5cc3;
-  text-shadow: 0 1px 1px #fff8c4;
-  text-transform: uppercase;
-  text-align: center;
-  -webkit-box-shadow: rgb(99 121 133 / 14%) 0 0 0 4px;
-  box-shadow: rgb(99 121 133 / 14%) 0 0 0 4px;
-  border-radius: 4px;
+/* From Uiverse.io by aryansagar2405  - Tags: button */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f0ff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.styled-button {
+  background: linear-gradient(145deg, #c77dff, #9a49f0);
+  color: #ffffff;
   border: none;
-  border-top: 1px solid var(--main-alt-color);
-  border-bottom: 1px solid var(--main-color);
-  background-color: var(--main-color);
-  outline: 0;
+  border-radius: 20px;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transform: rotateY(-5deg) rotateX(2deg);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   cursor: pointer;
-  margin: 0 0 5px 4px;
-  padding: 0 20px;
-  transition: transform .3s ease;
 }
 
-.btn:hover {
-  border-top-color: var(--main-alt-color);
-  border-bottom-color: var(--main-color);
-  background: -webkit-gradient(linear, left top, left bottom, from(#fae811), to(#f5d604));
+.styled-button .arrow {
+  font-size: 1.2em;
+  margin-left: 10px;
 }
 
-.btn:active {
-  transform: scale(0.7);
+.styled-button:hover {
+  transform: rotateY(-5deg) rotateX(2deg) translateY(-5px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
 }
 

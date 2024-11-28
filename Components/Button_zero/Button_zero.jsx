@@ -3,33 +3,47 @@ import styles from "./Button_zero.module.css";
 
 const Button_zero = () => (
   <div>
-    <button>
-      <div className={styles["svg-name-con"]}>
-        <div className={styles["svg-wrapper-1"]}>
-          <div className={styles["svg-wrapper"]}>
-            <svg
-              height="24"
-              width="24"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </div>
-        </div>
-        <span>Send Message</span>
-      </div>
+    <button className={styles["bin-button"]}>
+      <svg
+        className="bin-top"
+        viewBox="0 0 39 7"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line y1="5" x2="39" y2="5" stroke="white" strokeWidth="4"></line>
+        <line
+          x1="12"
+          y1="1.5"
+          x2="26.0357"
+          y2="1.5"
+          stroke="white"
+          strokeWidth="3"
+        ></line>
+      </svg>
+      <svg
+        className="bin-bottom"
+        viewBox="0 0 33 39"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <mask id="path-1-inside-1_8_19" fill="white">
+          <path d="M0 0H33V35C33 37.2091 31.2091 39 29 39H4C1.79086 39 0 37.2091 0 35V0Z"></path>
+        </mask>
+        <path
+          d="M0 0H33H0ZM37 35C37 39.4183 33.4183 43 29 43H4C-0.418278 43 -4 39.4183 -4 35H4H29H37ZM4 43C-0.418278 43 -4 39.4183 -4 35V0H4V35V43ZM37 0V35C37 39.4183 33.4183 43 29 43V35V0H37Z"
+          fill="white"
+          mask="url(#path-1-inside-1_8_19)"
+        ></path>
+        <path d="M12 6L12 29" stroke="white" strokeWidth="4"></path>
+        <path d="M21 6V29" stroke="white" strokeWidth="4"></path>
+      </svg>
     </button>
   </div>
 );
 
 export default Button_zero;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -38,26 +52,42 @@ export default Button_zero;
 
         const Button_zero = () => (
          <div>
-          <button>
-  <div className="svg-name-con">
-    <div className="svg-wrapper-1">
-      <div className="svg-wrapper">
-        <svg
-          height="24"
-          width="24"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M0 0h24v24H0z" fill="none"></path>
-          <path
-            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-            fill="currentColor"
-          ></path>
-        </svg>
-      </div>
-    </div>
-    <span>Send Message</span>
-  </div>
+          <button className="bin-button">
+  <svg
+    className="bin-top"
+    viewBox="0 0 39 7"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <line y1="5" x2="39" y2="5" stroke="white" strokeWidth="4"></line>
+    <line
+      x1="12"
+      y1="1.5"
+      x2="26.0357"
+      y2="1.5"
+      stroke="white"
+      strokeWidth="3"
+    ></line>
+  </svg>
+  <svg
+    className="bin-bottom"
+    viewBox="0 0 33 39"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <mask id="path-1-inside-1_8_19" fill="white">
+      <path
+        d="M0 0H33V35C33 37.2091 31.2091 39 29 39H4C1.79086 39 0 37.2091 0 35V0Z"
+      ></path>
+    </mask>
+    <path
+      d="M0 0H33H0ZM37 35C37 39.4183 33.4183 43 29 43H4C-0.418278 43 -4 39.4183 -4 35H4H29H37ZM4 43C-0.418278 43 -4 39.4183 -4 35V0H4V35V43ZM37 0V35C37 39.4183 33.4183 43 29 43V35V0H37Z"
+      fill="white"
+      mask="url(#path-1-inside-1_8_19)"
+    ></path>
+    <path d="M12 6L12 29" stroke="white" strokeWidth="4"></path>
+    <path d="M21 6V29" stroke="white" strokeWidth="4"></path>
+  </svg>
 </button>
         </div>
         );

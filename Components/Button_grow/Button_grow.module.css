@@ -1,40 +1,45 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: tooltip, button, hover effect, fullscreen, full window */
-.fullscreen-btn {
-  width: 25px;
-  height: 25px;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  cursor: pointer;
-  transition: all 0.3s;
+/* From Uiverse.io by Juanes200122 - Tags: simple, animation, button, hover, color, hover effect */
+a {
+  text-decoration: none;
+}
+
+.ov-btn-slide-left {
+  background: #fff;
+  color: #4741d7;
+  border: 2px solid #4741d7;
+  padding: 16px 20px;
+  border-radius: 3px;
   position: relative;
+  z-index: 1;
   overflow: hidden;
+  display: inline-block;
 }
 
-.fullscreen-btn svg {
-  height: 100%;
+.ov-btn-slide-left:hover {
+  color: #fff;
 }
-.fullscreen-btn:hover {
-  width: 30px;
-  height: 30px;
-  overflow: visible;
-}
-.tooltip {
+
+.ov-btn-slide-left::after {
+  content: "";
+  background: #4741d7;
   position: absolute;
-  top: -40px;
-  background-color: rgba(0, 0, 0, 0.753);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.8em;
-  transition: all 0.3s;
-  opacity: 0;
-}
-.fullscreen-btn:hover .tooltip {
-  transform: translateY(2.5px);
-  opacity: 1;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
+.ov-btn-slide-left:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}

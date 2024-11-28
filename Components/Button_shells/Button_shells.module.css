@@ -1,33 +1,39 @@
 
-/* From Uiverse.io by xueyuantan - Tags: button */
-button {
- width: 9em;
- height: 3em;
- border-radius: 30em;
- font-size: 15px;
- font-family: inherit;
- border: none;
- position: relative;
- overflow: hidden;
- z-index: 1;
- box-shadow: 6px 6px 12px #c5c5c5,
-             -6px -6px 12px #ffffff;
+/* From Uiverse.io by boryanakrasteva - Tags: button */
+.mouse {
+  width: 25px;
+  height: 40px;
+  border: 1px solid rgb(196, 196, 196);
+  background-color: transparent;
+  border-radius: 13px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-button::before {
- content: '';
- width: 0;
- height: 3em;
- border-radius: 30em;
- position: absolute;
- top: 0;
- left: 0;
- background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
- transition: .5s ease;
- display: block;
- z-index: -1;
+.scroll {
+  width: 3px;
+  height: 10px;
+  background-color: rgb(196, 196, 196);
+  border-radius: 2px;
+  position: absolute;
+  bottom: 9px;
+  animation: move_918 1.5s linear infinite;
 }
 
-button:hover::before {
- width: 9em;
+@keyframes move_918 {
+  0% {
+    bottom: 9px;
+  }
+
+  50% {
+    bottom: 5px;
+  }
+
+  100% {
+    bottom: 9px;
+  }
 }

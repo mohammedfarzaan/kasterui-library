@@ -1,68 +1,87 @@
 
-/* From Uiverse.io by MopokD71304  - Tags: simple, button, advanced, input effect  */
-.nav_bar {
-  background-color: rgb(27, 27, 27);
-  position: relative;
+/* From Uiverse.io by aryansagar2405  - Tags: button */
+.share-wrapper {
+  --gap: 0.5em;
+  --radius: 0.35em;
   display: flex;
-  transition: 0.4s;
   align-items: center;
+  text-align: center;
   justify-content: center;
-  flex-direction: column;
-  padding: 15px 15px;
-  border-radius: 15px;
+  --dot-bg: #212121;
+  --dot-color: #313131;
+  --dot-size: 1px;
+  --dot-space: 22px;
+  background:
+    linear-gradient(
+        90deg,
+        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
+    linear-gradient(
+        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+  border: 0.1em solid #313131;
+  padding: 0.5em;
+  border-radius: var(--radius);
+  box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
-.bar1 {
-  border-radius: 30px;
-  background-color: rgb(255, 255, 255);
-  width: 50px;
-  margin-bottom: 15px;
-  transition: 0.4s;
-  height: 5px;
+.check[type="checkbox"] {
+  display: none;
 }
 
-.bar2 {
-  border-radius: 30px;
-  background-color: rgb(255, 255, 255);
-  width: 50px;
-  position: absolute;
-  transition: 0.4s;
-  height: 5px;
+.container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: -0.25em;
+  margin-bottom: -0.25em;
 }
 
-.bar3_h {
-  border-radius: 30px;
-  background-color: rgb(255, 255, 255);
-  width: 50px;
-  transition: 0.4s;
-  height: 5px;
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: 0.5em;
+  fill: white;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.bar4 {
-  border-radius: 30px;
-  background-color: rgb(255, 255, 255);
-  width: 50px;
-  margin-top: 15px;
-  transition: 0.4s;
-  height: 5px;
+.icon.active {
+  display: none;
+  fill: #2196f3;
 }
 
-.nav_bar:hover {
-  border-radius: 50px;
-}
-.nav_bar:hover .bar3_h {
-  transform: rotate(-45deg);
-}
-.nav_bar:hover .bar2 {
-  transform: rotate(45deg);
+.check[type="checkbox"]:checked + .container .icon.active {
+  display: inline-block;
+  animation: pop 0.5s ease-in-out;
 }
 
-.nav_bar:hover .bar1 {
-  opacity: 0;
-  width: 30px;
+.check[type="checkbox"]:checked + .container .icon.inactive {
+  display: none;
 }
-.nav_bar:hover .bar4 {
-  opacity: 0;
-  width: 30px;
+
+.share-text {
+  margin-left: 0.5em;
+  padding: 0.5em;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 

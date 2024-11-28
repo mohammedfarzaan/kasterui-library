@@ -1,83 +1,73 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: tooltip, gradient, button, hover effect, faq */
-.faq-button {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: none;
-  background-color: #ffe53b;
-  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.151);
+/* From Uiverse.io by John-CFO  - Tags: simple, button, hover, hover effect */
+.BTN-style {
   position: relative;
-}
-.faq-button svg {
-  height: 1.5em;
-  fill: white;
-}
-.faq-button:hover svg {
-  animation: jello-vertical 0.7s both;
-}
-@keyframes jello-vertical {
-  0% {
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  40% {
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  50% {
-    transform: scale3d(0.85, 1.15, 1);
-  }
-  65% {
-    transform: scale3d(1.05, 0.95, 1);
-  }
-  75% {
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
+  width: 12em;
+  height: 3.8em;
+  border-width: 2px;
+  border-radius: 6px;
+  border-color: #ffff;
+  display: block;
+  padding: 8px;
+  background: linear-gradient(to left, #c0c0c0, #dcdcdc);
+  color: #ffffff;
+  line-height: 1.25rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
-.tooltip {
-  position: absolute;
-  top: -20px;
-  opacity: 0;
-  background-color: #ffe53b;
-  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: 0.2s;
-  pointer-events: none;
-  letter-spacing: 0.5px;
+.BTN-text {
+  font-weight: 500;
+  font-size: 0.975rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+  text-transform: uppercase;
 }
 
-.tooltip::before {
-  position: absolute;
+.BTN-style:hover {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+
+  cursor: pointer;
+}
+
+.BTN-style:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.BTN-style::before {
   content: "";
-  width: 10px;
-  height: 10px;
-  background-color: #ff2525;
-  background-size: 1000%;
-  background-position: center;
-  transform: rotate(45deg);
-  bottom: -15%;
-  transition-duration: 0.3s;
+  display: block;
+  width: 0px;
+  height: 85%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
 }
 
-.faq-button:hover .tooltip {
-  top: -40px;
-  opacity: 1;
-  transition-duration: 0.3s;
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
 }
 

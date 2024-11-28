@@ -3,18 +3,18 @@ import styles from "./Loader_pencil.module.css";
 
 const Loader_pencil = () => (
   <div>
-    <div className={styles["lava-lamp"]}>
-      <div className={styles["bubble"]}></div>
-      <div className={styles["bubble1"]}></div>
-      <div className={styles["bubble2"]}></div>
-      <div className={styles["bubble3"]}></div>
+    <div className={styles["loader"]}>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </div>
 );
 
 export default Loader_pencil;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -23,11 +23,11 @@ export default Loader_pencil;
 
         const Loader_pencil = () => (
          <div>
-          <div className="lava-lamp">
-  <div className="bubble"></div>
-  <div className="bubble1"></div>
-  <div className="bubble2"></div>
-  <div className="bubble3"></div>
+          <div className="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
 </div>
         </div>
         );

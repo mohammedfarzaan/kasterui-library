@@ -1,179 +1,34 @@
 import React from "react";
-import styles from "./Button_zoo.module.css";
 
 const Button_zoo = () => (
   <div>
-    <button className={styles["reward-btn"]}>
-      <span className={styles["IconContainer"]}>
+    <div className="group relative">
+      <button className="bg-white w-10 h-10 flex justify-center items-center rounded-lg hover:text-blue-600 hover:translate-y-1 hover:duration-300">
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          viewBox="0 0 24 24"
           fill="none"
-          viewBox="0 0 60 20"
-          className="box-top box"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <path
+            d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+            strokeLinejoin="round"
             strokeLinecap="round"
-            strokeWidth="4"
-            stroke="#6A8EF6"
-            d="M2 18L58 18"
-          ></path>
-          <circle
-            strokeWidth="5"
-            stroke="#6A8EF6"
-            fill="#101218"
-            r="7"
-            cy="9.5"
-            cx="20.5"
-          ></circle>
-          <circle
-            strokeWidth="5"
-            stroke="#6A8EF6"
-            fill="#101218"
-            r="7"
-            cy="9.5"
-            cx="38.5"
-          ></circle>
-        </svg>
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 58 44"
-          className="box-body box"
-        >
-          <mask fill="white" id="path-1-inside-1_81_19">
-            <rect rx="3" height="44" width="58"></rect>
-          </mask>
-          <rect
-            mask="url(#path-1-inside-1_81_19)"
-            strokeWidth="8"
-            stroke="#6A8EF6"
-            fill="#101218"
-            rx="3"
-            height="44"
-            width="58"
-          ></rect>
-          <line
-            strokeWidth="6"
-            stroke="#6A8EF6"
-            y2="29"
-            x2="58"
-            y1="29"
-            x1="-3.61529e-09"
-          ></line>
-          <path
-            strokeLinecap="round"
-            strokeWidth="5"
-            stroke="#6A8EF6"
-            d="M45.0005 20L36 3"
-          ></path>
-          <path
-            strokeLinecap="round"
-            strokeWidth="5"
-            stroke="#6A8EF6"
-            d="M21 3L13.0002 19.9992"
           ></path>
         </svg>
+      </button>
 
-        <span className={styles["coin"]}></span>
+      <span className="absolute w-20 text-center -bottom-12 left-[50%] -translate-x-[50%] origin-bottom tracking-wider z-20 scale-0 px-1 rounded-lg bg-white text-blue-600 py-2 text-sm transition-all duration-300 ease-in-out group-hover:scale-100">
+        00.00 MB<span> </span>
       </span>
-      <span className={styles["text"]}>Rewards</span>
-    </button>
+    </div>
   </div>
 );
 
 export default Button_zoo;
+
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-            
-        import React from 'react';
-
-        const Button_zoo = () => (
-         <div>
-          <button className="reward-btn">
-  <span className="IconContainer">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 60 20"
-      className="box-top box"
-    >
-      <path
-        strokeLinecap="round"
-        strokeWidth="4"
-        stroke="#6A8EF6"
-        d="M2 18L58 18"
-      ></path>
-      <circle
-        strokeWidth="5"
-        stroke="#6A8EF6"
-        fill="#101218"
-        r="7"
-        cy="9.5"
-        cx="20.5"
-      ></circle>
-      <circle
-        strokeWidth="5"
-        stroke="#6A8EF6"
-        fill="#101218"
-        r="7"
-        cy="9.5"
-        cx="38.5"
-      ></circle>
-    </svg>
-
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 58 44"
-      className="box-body box"
-    >
-      <mask fill="white" id="path-1-inside-1_81_19">
-        <rect rx="3" height="44" width="58"></rect>
-      </mask>
-      <rect
-        mask="url(#path-1-inside-1_81_19)"
-        strokeWidth="8"
-        stroke="#6A8EF6"
-        fill="#101218"
-        rx="3"
-        height="44"
-        width="58"
-      ></rect>
-      <line
-        strokeWidth="6"
-        stroke="#6A8EF6"
-        y2="29"
-        x2="58"
-        y1="29"
-        x1="-3.61529e-09"
-      ></line>
-      <path
-        strokeLinecap="round"
-        strokeWidth="5"
-        stroke="#6A8EF6"
-        d="M45.0005 20L36 3"
-      ></path>
-      <path
-        strokeLinecap="round"
-        strokeWidth="5"
-        stroke="#6A8EF6"
-        d="M21 3L13.0002 19.9992"
-      ></path>
-    </svg>
-
-    <span className="coin"></span>
-  </span>
-  <span className="text">Rewards</span>
-</button>
-        </div>
-        );
-
-        export default Button_zoo;
-        
-        
-         */
+  /* */
 }

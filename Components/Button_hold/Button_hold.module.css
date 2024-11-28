@@ -1,27 +1,41 @@
 
-/* From Uiverse.io by alexreyes091 - Tags: button */
+/* From Uiverse.io by mi-series - Tags: simple, material design, flashy, animation, purple, minimalist, button, animated */
 .btn {
- padding: 1rem 2rem;
- font-weight: 700;
- background: rgb(255, 255, 255);
- color: blueviolet;
- border-radius: .5rem;
- border-bottom: 2px solid blueviolet;
- border-right: 2px solid blueviolet;
- border-top: 2px solid white;
- border-left: 2px solid white;
- transition-duration: 1s;
- transition-property: border-top, 
-    border-left, 
-    border-bottom,
-    border-right,
-    box-shadow;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #40B3A2;
+  min-width: 200px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .btn:hover {
- border-top: 2px solid blueviolet;
- border-left: 2px solid blueviolet;
- border-bottom: 2px solid rgb(238, 103, 238);
- border-right: 2px solid rgb(238, 103, 238);
- box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+  opacity: .95;
+}
+
+.btn .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+  }
 }

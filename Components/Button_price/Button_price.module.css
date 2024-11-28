@@ -1,63 +1,26 @@
 
-/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, transition */
+/* From Uiverse.io by speadfreak  - Tags: button */
 .button {
-  display: inline-block;
-  padding: 15px 32px;
-  font-size: 17px;
-  font-weight: bold;
-  color: #fff;
-  background: linear-gradient(130deg, #ff6b6b, #c94d4d, #8e3636);
-  border-radius: 50px;
-  text-align: center;
-  text-decoration: none;
+  background:
+    linear-gradient(140.14deg, #ec540e 15.05%, #d6361f 114.99%) padding-box,
+    linear-gradient(142.51deg, #ff9465 8.65%, #af1905 88.82%) border-box;
+  border-radius: 7px;
+  border: 2px solid transparent;
+
+  text-shadow: 1px 1px 1px #00000040;
+  box-shadow: 8px 8px 20px 0px #45090059;
+
+  padding: 10px 40px;
+  line-height: 20px;
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  border: none;
-  border-style: solid;
-  border-width: 2px;
+  transition: all 0.3s;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.button:before,
-.button:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
-  pointer-events: none;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.button:before {
-  left: 100%;
-  background: linear-gradient(130deg, #ff6b6b, #c94d4d, #8e3636);
-  z-index: -1;
-}
-
-.button:hover:before {
-  transform: translateX(-50%);
-  opacity: 1;
-}
-
-.button:after {
-  right: 100%;
-  background: linear-gradient(130deg, #ff6b6b, #c94d4d, #8e3636);
-  z-index: -1;
-}
-
-.button:hover:after {
-  transform: translateX(50%);
-  opacity: 1;
-}
-
-.button:hover .button-text {
-  transform: translateY(-3px);
-}
-
-.button-text {
-  transition: transform 0.3s ease-in-out;
+.button:hover {
+  box-shadow: none;
+  opacity: 80%;
 }
 

@@ -4,33 +4,37 @@ import styles from "./Loader_canal.module.css";
 const Loader_canal = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["box"] + styles["box-1"]}>
-        <div className={styles["side-left"]}></div>
-        <div className={styles["side-right"]}></div>
-        <div className={styles["side-top"]}></div>
-      </div>
-      <div className={styles["box"] + styles["box-2"]}>
-        <div className={styles["side-left"]}></div>
-        <div className={styles["side-right"]}></div>
-        <div className={styles["side-top"]}></div>
-      </div>
-      <div className={styles["box"] + styles["box-3"]}>
-        <div className={styles["side-left"]}></div>
-        <div className={styles["side-right"]}></div>
-        <div className={styles["side-top"]}></div>
-      </div>
-      <div className={styles["box"] + styles["box-4"]}>
-        <div className={styles["side-left"]}></div>
-        <div className={styles["side-right"]}></div>
-        <div className={styles["side-top"]}></div>
-      </div>
+      <svg
+        preserveAspectRatio="xMidYMid meet"
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        y="0px"
+        x="0px"
+        className="container"
+      >
+        <path
+          d="M29.760000000000005 18.72 c0 7.28 -3.9200000000000004 13.600000000000001 -9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.840000000000002 2.64 c -3.6 0 -6.88 -0.96 -9.76 -2.64 c0 -7.28 3.9200000000000004 -13.52 9.840000000000002 -16.96 c2.8800000000000003 -1.6800000000000002 6.24 -2.64 9.76 -2.64 S26.880000000000003 17.040000000000003 29.760000000000005 18.72 c5.84 3.3600000000000003 9.76 9.68 9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.76 2.64 c -3.6 0 -6.88 -0.96 -9.840000000000002 -2.64 c -5.84 -3.3600000000000003 -9.76 -9.68 -9.76 -16.96 c0 -7.28 3.9200000000000004 -13.600000000000001 9.76 -16.96 C25.84 5.120000000000001 29.760000000000005 11.440000000000001 29.760000000000005 18.72z"
+          pathLength="100"
+          strokeWidth="4"
+          fill="none"
+          className="track"
+        ></path>
+        <path
+          d="M29.760000000000005 18.72 c0 7.28 -3.9200000000000004 13.600000000000001 -9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.840000000000002 2.64 c -3.6 0 -6.88 -0.96 -9.76 -2.64 c0 -7.28 3.9200000000000004 -13.52 9.840000000000002 -16.96 c2.8800000000000003 -1.6800000000000002 6.24 -2.64 9.76 -2.64 S26.880000000000003 17.040000000000003 29.760000000000005 18.72 c5.84 3.3600000000000003 9.76 9.68 9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.76 2.64 c -3.6 0 -6.88 -0.96 -9.840000000000002 -2.64 c -5.84 -3.3600000000000003 -9.76 -9.68 -9.76 -16.96 c0 -7.28 3.9200000000000004 -13.600000000000001 9.76 -16.96 C25.84 5.120000000000001 29.760000000000005 11.440000000000001 29.760000000000005 18.72z"
+          pathLength="100"
+          strokeWidth="4"
+          fill="none"
+          className="car"
+        ></path>
+      </svg>
     </div>
   </div>
 );
 
 export default Loader_canal;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -40,26 +44,30 @@ export default Loader_canal;
         const Loader_canal = () => (
          <div>
           <div className="loader">
-  <div className="box box-1">
-    <div className="side-left"></div>
-    <div className="side-right"></div>
-    <div className="side-top"></div>
-  </div>
-  <div className="box box-2">
-    <div className="side-left"></div>
-    <div className="side-right"></div>
-    <div className="side-top"></div>
-  </div>
-  <div className="box box-3">
-    <div className="side-left"></div>
-    <div className="side-right"></div>
-    <div className="side-top"></div>
-  </div>
-  <div className="box box-4">
-    <div className="side-left"></div>
-    <div className="side-right"></div>
-    <div className="side-top"></div>
-  </div>
+  <svg
+    preserveAspectRatio="xMidYMid meet"
+    width="40"
+    height="40"
+    viewBox="0 0 40 40"
+    y="0px"
+    x="0px"
+    className="container"
+  >
+    <path
+      d="M29.760000000000005 18.72 c0 7.28 -3.9200000000000004 13.600000000000001 -9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.840000000000002 2.64 c -3.6 0 -6.88 -0.96 -9.76 -2.64 c0 -7.28 3.9200000000000004 -13.52 9.840000000000002 -16.96 c2.8800000000000003 -1.6800000000000002 6.24 -2.64 9.76 -2.64 S26.880000000000003 17.040000000000003 29.760000000000005 18.72 c5.84 3.3600000000000003 9.76 9.68 9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.76 2.64 c -3.6 0 -6.88 -0.96 -9.840000000000002 -2.64 c -5.84 -3.3600000000000003 -9.76 -9.68 -9.76 -16.96 c0 -7.28 3.9200000000000004 -13.600000000000001 9.76 -16.96 C25.84 5.120000000000001 29.760000000000005 11.440000000000001 29.760000000000005 18.72z"
+      pathLength="100"
+      strokeWidth="4"
+      fill="none"
+      className="track"
+    ></path>
+    <path
+      d="M29.760000000000005 18.72 c0 7.28 -3.9200000000000004 13.600000000000001 -9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.840000000000002 2.64 c -3.6 0 -6.88 -0.96 -9.76 -2.64 c0 -7.28 3.9200000000000004 -13.52 9.840000000000002 -16.96 c2.8800000000000003 -1.6800000000000002 6.24 -2.64 9.76 -2.64 S26.880000000000003 17.040000000000003 29.760000000000005 18.72 c5.84 3.3600000000000003 9.76 9.68 9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.76 2.64 c -3.6 0 -6.88 -0.96 -9.840000000000002 -2.64 c -5.84 -3.3600000000000003 -9.76 -9.68 -9.76 -16.96 c0 -7.28 3.9200000000000004 -13.600000000000001 9.76 -16.96 C25.84 5.120000000000001 29.760000000000005 11.440000000000001 29.760000000000005 18.72z"
+      pathLength="100"
+      strokeWidth="4"
+      fill="none"
+      className="car"
+    ></path>
+  </svg>
 </div>
         </div>
         );

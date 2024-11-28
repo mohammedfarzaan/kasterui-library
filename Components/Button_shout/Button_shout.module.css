@@ -1,82 +1,168 @@
 
-/* From Uiverse.io by VashonG  - Tags: flashy, button, game, 3d button, shimmer, cred, neopop */
-.neo-pop-tilted-button {
-  border: 0.1px;
-  padding-bottom: 6px;
-  box-shadow: 1px 5px 7px #494a4b;
-  position: relative;
-  overflow: hidden;
-  background-color: #b7a81d;
+/* From Uiverse.io by 0xnihilism  - Tags: button, button hover effect , brutalism, template, minimalism, openai */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust this value to increase or decrease space between buttons */
+  padding: 20px;
+}
+
+.brutalist-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #000000;
+  border-radius: 12px;
+  padding: 0;
+  text-decoration: none;
   color: #000000;
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: bold;
+  position: relative;
+  box-shadow: 4px 4px 0px #000000;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 130px;
+  width: 130px;
   cursor: pointer;
-  transform: perspective(180px) rotateX(30deg) translateY(2px);
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.neo-pop-tilted-button::before {
+.brutalist-button.openai {
+  background-color: #356854;
+}
+
+.brutalist-button::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 60%;
-  width: 35%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(196, 196, 196, 0.8) 5px,
-    rgba(196, 196, 196, 0) 5px,
-    rgba(196, 196, 196, 0) 10px,
-    rgba(196, 196, 196, 0.8) 2px
-  );
-  animation: shimmer 5.5s infinite linear;
+  left: 50%;
+  bottom: -150%;
+  width: 300%;
+  height: 300%;
+  border-radius: 50%;
+  transform: translateX(-50%) scale(0);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 1;
 }
 
-.neo-pop-tilted-button span::before {
-  content: "";
+.brutalist-button.openai::before {
+  background-color: #316b58;
+}
+
+.brutalist-button.claude::before {
+  background-color: #e3d19c;
+}
+
+.brutalist-button:hover::before {
+  transform: translateX(-50%) scale(1);
+}
+
+.brutalist-button:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0px #000000;
+}
+
+.brutalist-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.openai-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 0;
-  left: 60%;
-  width: 35%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1) 5px,
-    rgba(255, 255, 255, 0) 5px,
-    rgba(255, 255, 255, 0) 10px,
-    rgba(255, 255, 255, 1) 2px
-  );
-  animation: shimmer 5.5s infinite linear;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes shimmer {
+.openai-logo {
+  align-items: center;
+  justify-content: center;
+  background-color: #0f1715; /* OpenAI's green color */
+  border-radius: 50%; /* This creates the circular background */
+}
+
+.openai-icon {
+  width: 54px;
+  height: 54px;
+  fill: #ffffff; /* White color for the SVG */
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes spin {
   0% {
-    transform: translateX(-1950%);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
-    transform: translateX(100%);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
-.neo-pop-tilted-button span {
-  background: #ffeb34;
-  padding: 1rem 2.5rem;
-  position: relative;
-  z-index: 1;
-  display: block;
-  border-radius: 0px;
-  border: 1px solid #494a4b;
+.brutalist-button:hover .openai-logo {
+  animation: spin 5s linear infinite;
+  width: 50px;
+  height: 50px;
+  top: 28%;
 }
 
-.neo-pop-tilted-button:focus {
-  outline: none;
+.brutalist-button:hover .openai-icon {
+  transform: scale(0.6);
 }
 
-.neo-pop-tilted-button:focus-visible {
-  box-shadow: 0 0 0 3px rgba(255, 235, 52, 0.5);
+.button-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.3;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  z-index: 2;
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  right: 0;
 }
 
-button:active {
-  transform: perspective(170px) rotateX(36deg) translateY(5px);
+.button-text span:first-child {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.button-text span:last-child {
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+}
+
+.brutalist-button:hover .button-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.brutalist-button.openai:hover .button-text {
+  color: #d3d3d3;
+}
+
+.brutalist-button.openai:hover .button-text span:last-child {
+  color: #d6cbbf;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .brutalist-button:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0px #000000;
+  }
 }
 

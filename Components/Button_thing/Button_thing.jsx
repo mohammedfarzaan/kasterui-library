@@ -1,15 +1,30 @@
 import React from "react";
+import styles from "./Button_thing.module.css";
 
 const Button_thing = () => (
   <div>
-    <button className="bg-purple-500 text-white px-4 py-2 rounded-full transition duration-200 ease-in-out hover:bg-purple-700 active:bg-purple-900 focus:outline-none">
-      Click me
-    </button>
+    <button> Button</button>
   </div>
 );
 
 export default Button_thing;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_thing = () => (
+         <div>
+          <button> Button
+</button>
+        </div>
+        );
+
+        export default Button_thing;
+        
+        
+         */
 }

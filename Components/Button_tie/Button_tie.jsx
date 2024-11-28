@@ -3,20 +3,16 @@ import styles from "./Button_tie.module.css";
 
 const Button_tie = () => (
   <div>
-    <button className={styles["btn-slice"]} href="#">
-      <div className={styles["top"]}>
-        <span>Sliced Button</span>
-      </div>
-      <div className={styles["bottom"]}>
-        <span>Sliced Button</span>
-      </div>
+    <button className={styles["send-message-button"]}>
+      <span className={styles["icon"]}>✈️</span>{" "}
+      <span className={styles["text"]}>Send Message</span>
     </button>
   </div>
 );
 
 export default Button_tie;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -25,9 +21,8 @@ export default Button_tie;
 
         const Button_tie = () => (
          <div>
-          <button className="btn-slice" href="#">
-  <div className="top"><span>Sliced Button</span></div>
-  <div className="bottom"><span>Sliced Button</span></div>
+          <button className="send-message-button">
+  <span className="icon">✈️</span> <span className="text">Send Message</span>
 </button>
         </div>
         );

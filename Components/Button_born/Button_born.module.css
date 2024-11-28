@@ -1,64 +1,57 @@
 
-/* From Uiverse.io by OnCloud125252 - Tags: simple, black, button, simple button, more info, read more */
-/* Note that you only needs to edit the config to customize the button! */
-
-.plusButton {
-  /* Config start */
-  --plus_sideLength: 2.5rem;
-  --plus_topRightTriangleSideLength: 0.9rem;
-  /* Config end */
-  position: relative;
+/* From Uiverse.io by vikas7754  - Tags: button, 3d button, mac button */
+.container {
+  background: #ff6f6f;
+  border-radius: 15px;
+  padding: 15px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid white;
-  width: var(--plus_sideLength);
-  height: var(--plus_sideLength);
-  background-color: #000000;
-  overflow: hidden;
+  gap: 15px;
+  box-shadow: 3px 5px 10px #ff7a7a, inset 3px 0 0 #ff5751d6,
+    inset -3px 0 0 #ff5751d6, inset 0 3px 0 #ffffff23, inset 0 -3px 0 #00000023;
 }
-
-.plusButton::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-width: 0 var(--plus_topRightTriangleSideLength) var(--plus_topRightTriangleSideLength) 0;
-  border-style: solid;
-  border-color: transparent white transparent transparent;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.2s;
-}
-
-.plusButton:hover {
+.btn {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background: #ff6f6f;
+  padding: 10px;
+  box-shadow: 0 0 5px #0000005a, 2px 2px 3px #00000078,
+    inset 1px 1px 2px #ffffff9d;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
+  transition: all 0.2s;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:focus {
+  animation: 0.3s clicked linear;
+}
+.cmd {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.c {
+  width: 75px;
+  font-size: 1.5rem;
+}
+@keyframes clicked {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px #00000067, inset 0 0 3px #ffffff78;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-.plusButton:hover::before {
-  --plus_topRightTriangleSideLength: calc(var(--plus_sideLength) * 2);
-}
-
-.plusButton:focus-visible::before {
-  --plus_topRightTriangleSideLength: calc(var(--plus_sideLength) * 2);
-}
-
-.plusButton>.plusIcon {
-  fill: white;
-  width: calc(var(--plus_sideLength) * 0.7);
-  height: calc(var(--plus_sideLength) * 0.7);
-  z-index: 1;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.2s;
-}
-
-.plusButton:hover>.plusIcon {
-  fill: black;
-  transform: rotate(180deg);
-}
-
-.plusButton:focus-visible>.plusIcon {
-  fill: black;
-  transform: rotate(180deg);
-}

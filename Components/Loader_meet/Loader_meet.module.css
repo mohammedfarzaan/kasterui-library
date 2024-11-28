@@ -1,47 +1,37 @@
 
-/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */
-/* HTML: <div class="loader"></div> */
-.loader {
-  width: 120px;
-  height: 20px;
-  background: linear-gradient(#000 50%,#0000 0),
-    linear-gradient(#0000 50%,#000 0),
-    linear-gradient(#000 50%,#0000 0),
-    linear-gradient(#0000 50%,#000 0),
-    linear-gradient(#000 50%,#0000 0),
-    linear-gradient(#0000 50%,#000 0)
-    #ddd;
-  background-size: calc(100%/6 + 1px) 200%;
-  background-repeat: no-repeat;
-  animation: l12 2s infinite;
+/* From Uiverse.io by EmmaxPlay - Tags: loader */
+.spinner {
+ position: relative;
+ width: 60px;
+ height: 60px;
+ border-radius: 50%;
 }
 
-@keyframes l12 {
-  0% {
-    background-position: calc(0*100%/5) 100%,calc(1*100%/5)   0%,calc(2*100%/5) 100%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%
-  }
+.spinner::before,
+.spinner:after {
+ content: "";
+ position: absolute;
+ border-radius: inherit;
+}
 
-  16.67% {
-    background-position: calc(0*100%/5)   0%,calc(1*100%/5)   0%,calc(2*100%/5) 100%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%
-  }
+.spinner:before {
+ width: 100%;
+ height: 100%;
+ background-image: linear-gradient(0deg, #ff00cc 0%, #333399 100%);
+ animation: spin8932 .5s infinite linear;
+}
 
-  33.33% {
-    background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5) 100%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%
-  }
+.spinner:after {
+ width: 85%;
+ height: 85%;
+ background-color: #212121;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
 
-  50% {
-    background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5)   0%,calc(4*100%/5) 100%,calc(5*100%/5)   0%
-  }
-
-  66.67% {
-    background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5) 100%,calc(4*100%/5) 100%,calc(5*100%/5)   0%
-  }
-
-  83.33% {
-    background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5) 100%,calc(4*100%/5)   0%,calc(5*100%/5)   0%
-  }
-
-  100% {
-    background-position: calc(0*100%/5)   0%,calc(1*100%/5) 100%,calc(2*100%/5)   0%,calc(3*100%/5) 100%,calc(4*100%/5)   0%,calc(5*100%/5) 100%
-  }
+@keyframes spin8932 {
+ to {
+  transform: rotate(360deg);
+ }
 }

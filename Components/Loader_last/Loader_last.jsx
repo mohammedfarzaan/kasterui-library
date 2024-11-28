@@ -3,28 +3,18 @@ import styles from "./Loader_last.module.css";
 
 const Loader_last = () => (
   <div>
-    <div className={styles["content"]}>
-      <div className={styles["planet"]}>
-        <div className={styles["ring"]}></div>
-        <div className={styles["cover-ring"]}></div>
-        <div className={styles["spots"]}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <p>loading</p>
+    <div className={styles["container"]}>
+      <div className={styles["top-left"]}></div>
+      <div className={styles["top-right"]}></div>
+      <div className={styles["bottom-left"]}></div>
+      <div className={styles["bottom-right"]}></div>
     </div>
   </div>
 );
 
 export default Loader_last;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -33,22 +23,11 @@ export default Loader_last;
 
         const Loader_last = () => (
          <div>
-          <div className="content">
-   <div className="planet">
-      <div className="ring"></div>
-         <div className="cover-ring"></div>
-      <div className="spots">
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-         <span></span>
-
-      </div>
-   </div>
-   <p>loading</p>
+          <div className="container">
+    <div className="top-left"></div>
+    <div className="top-right"></div>
+    <div className="bottom-left"></div>
+    <div className="bottom-right"></div>
 </div>
         </div>
         );

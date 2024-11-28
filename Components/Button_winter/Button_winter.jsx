@@ -3,15 +3,29 @@ import styles from "./Button_winter.module.css";
 
 const Button_winter = () => (
   <div>
-    <button>
-      <span> GAME ON</span>
-    </button>
+    <a className={styles["swipe"]}>
+      Get Started{" "}
+      <span className={styles["container"]}>
+        <svg
+          height="24"
+          width="24"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path
+            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </span>{" "}
+    </a>
   </div>
 );
 
 export default Button_winter;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -20,10 +34,7 @@ export default Button_winter;
 
         const Button_winter = () => (
          <div>
-          <button>
-  <span> GAME ON
-  </span>
-</button>
+          <a className="swipe">Get Started <span className="container"><svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg></span> </a>
         </div>
         );
 

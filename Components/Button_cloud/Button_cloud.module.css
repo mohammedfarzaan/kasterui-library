@@ -1,64 +1,19 @@
 
-/* From Uiverse.io by MetaBlue2000  - Tags: button */
+/* From Uiverse.io by deepak16375 - Tags: button, animated */
 .button {
+  padding: .9rem 1.5rem;
+  border: .2rem solid #443;
+  border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+  color: #443;
+  background: none;
   cursor: pointer;
-  border-radius: 15px;
-  border: solid 3px #a86bdd;
-  width: 210px;
-  height: 75px;
-  transform: rotate3d(1, 1, 1, 335deg);
-  padding-left: 20px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #ffffff;
-  background: linear-gradient(#bf76f9, #9a48dd);
-  backdrop-filter: blur(2px, black);
-  box-shadow: -8px 7px 1px #865ba9;
-  transition: all 0.4s ease-in-out;
-}
-
-.arrow {
-  padding: 5px;
-  width: 55px;
-  transition: all 0.4s ease-in-out;
-}
-
-.msg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button:hover .arrow {
-  transform: translateX(5px);
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  transition: all .2s linear;
 }
 
 .button:hover {
-  transform: translateX(10px);
-}
-
-.button p span {
-  display: inline-block;
-  opacity: 1;
-  animation: slideDown 0.8s ease forwards calc(var(--i) * 0.03s);
-}
-.button:hover p span {
-  opacity: 1;
-  animation: wave 0.5s ease forwards calc(var(--i) * 0.02s);
-}
-@keyframes wave {
-  30% {
-    opacity: 1;
-    transform: translateY(12px) translateX(0) rotate(0);
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(-3px) translateX(0) rotate(0);
-    color: var(--primary);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) translateX(0) rotate(0);
-  }
+  border-radius: 4% 95% 6% 95% / 95% 4% 92% 5%;
+  border: .2rem dashed #443;
 }
 

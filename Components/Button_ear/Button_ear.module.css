@@ -1,65 +1,88 @@
 
-/* From Uiverse.io by Navs45  - Tags: icon, white, button, transition, btn, hover effect, html, css */
-.button {
-  cursor: pointer;
-}
-.button {
-  border: none;
-  position: relative;
-  width: 249px;
-  height: 80px;
-  flex-shrink: 0;
-  border-radius: 15px;
-  background: #fff;
-  box-shadow: -2px 2px 1.3px 1px #7f807f,
-    -5px 5px 2.8px 0px rgba(255, 255, 255, 0.5), -5px 7px 4.4px 0px #c5c6c5,
-    0px 0px 2.4px 4px #e4e5e4;
-  transition: background-color 0.3s ease, transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.button:hover {
-  background-color: #e0e0e0;
-  transform: translateY(-5px);
-  box-shadow: -2px 2px 1.3px 1px #7f807f,
-    -5px 5px 2.8px 0px rgba(255, 255, 255, 0.5), -5px 7px 4.4px 0px #c5c6c5,
-    0px 0px 2.4px 4px #e4e5e4, 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.inner {
+/* From Uiverse.io by alessandrodesign - Tags: button */
+button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  width: 236px;
-  height: 69px;
-  flex-shrink: 0;
-  border-radius: 39px;
-
-  background: #fff;
-  box-shadow: -1px -1px 0px 0px rgba(141, 139, 139, 0.35),
-    38px 3px 13.2px 0px rgba(196, 196, 196, 0.25) inset,
-    -3px 1px 10.1px 0px rgba(87, 87, 87, 0.25) inset;
-  margin: 7px 4px 6px 7px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #26c4c3;
+  border-right-color: transparent;
+  -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 1), 0 0 10px rgb(194,255,255);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 1), 0 0 10px rgb(194,255,255);
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 20%, 100% 20%, 85% 100%, 80% 100%, 95% 20%, 50% 20%, 30% 0);
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 20%, 100% 20%, 85% 100%, 80% 100%, 95% 20%, 50% 20%, 30% 0);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  width: 150px;
+  height: 55px;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 0 1px 1px black;
+  position: relative;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-.icon {
-  width: 30px;
-  height: 30px;
+button:hover {
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 20%, 100% 20%, 100% 100%, 100% 100%, 100% 20%, 50% 20%, 30% 0);
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 20%, 100% 20%, 100% 100%, 100% 100%, 100% 20%, 50% 20%, 30% 0);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
-#text {
-  color: #0b0b0b;
-  font-family: "Poppins", sans-serif;
-  font-size: 23.1px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  padding: 4px;
-  transition: color 0.3s, transform 0.3s, text-shadow 0.3s;
-}
-#text:hover {
-  color: #fff;
-  text-shadow: 1px 1px 1px #acaaaa, 1px 2px 1px #7d7d7d, 1px 1px 1px #acaaaa,
-    1px 2px 1px #7d7d7d, 1px 20px 40px rgba(147, 147, 147, 0.3);
+button::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 5px;
+  background-color: rgb(194,255,255);
+  -webkit-box-shadow: 0 0 5px rgb(194,255,255);
+  box-shadow: 0 0 5px rgb(194,255,255);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
+  -webkit-animation: btn 1s infinite ease-in-out;
+  animation: btn 1s infinite ease-in-out;
 }
 
+button::before {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(194,255,255);
+  -webkit-box-shadow: 0 0 5px rgb(194,255,255);
+  box-shadow: 0 0 5px rgb(194,255,255);
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  z-index: 3;
+  animation: btn_51 1s infinite ease-in-out reverse;
+}
+
+@keyframes btn_51 {
+  0%,100% {
+    width: 100%;
+  }
+
+  25%,75% {
+    width: 0;
+  }
+
+  50% {
+    width: 50%;
+  }
+}

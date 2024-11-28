@@ -1,71 +1,114 @@
 
-/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, transition, transform */
-.button {
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #ff4081;
-  border: none;
-  border-radius: 50px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+/* From Uiverse.io by andrew-demchenk0 - Tags: button */
+button {
   position: relative;
+  width: 150px;
+  height: 60px;
   overflow: hidden;
-  z-index: 1;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding-left: 35px;
+  box-shadow: 2.9px 2.9px 2.2px rgba(0, 0, 0, 0.019),
+              5.2px 5.2px 5.3px rgba(0, 0, 0, 0.023),
+              7px 7px 10px rgba(0, 0, 0, 0.025),
+              8.7px 8.7px 17.9px rgba(0, 0, 0, 0.024),
+              11.3px 11.3px 33.4px rgba(0, 0, 0, 0.023),
+              20px 20px 80px rgba(0, 0, 0, 0.02);
 }
 
-.button::before {
-  content: "";
+.pika {
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background-color: rgba(255, 64, 129, 0.6);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.4s ease;
-  z-index: -1;
+  top: -100%;
+  left: 42%;
+  transition: 0.5s all;
+  animation: tilt 1.1s infinite ease-in-out;
 }
 
-.button::after {
-  content: "";
+@keyframes tilt {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+.pokeball {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
-  background-size: 30px 30px;
+  top: 25%;
+  left: 10%;
+  animation: rotate_4991 1s linear infinite;
+}
+
+@keyframes rotate_4991 {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+button:hover .pika {
+  top: 90%;
+}
+
+button:hover .pokeball {
+  animation: none;
+  transform: scale(0);
+}
+
+button:hover .go {
+  color: transparent;
+}
+
+.go {
+  position: absolute;
+  top: 18%;
+  left: 45%;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.pword, .pword2 {
+  position: absolute;
+  font-size: 13px;
   opacity: 0;
-  transition: opacity 0.4s ease;
+  animation: pulse-animation_0011 1s infinite;
 }
 
-.button:hover {
-  background-color: #e91e63;
-  transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+@keyframes pulse-animation_0011 {
+  0% {
+    transform: rotateZ(-30deg) scale(1);
+  }
+
+  50% {
+    transform: rotateZ(-30deg) scale(1.1);
+  }
+
+  100% {
+    transform: rotateZ(-30deg) scale(1);
+  }
 }
 
-.button:hover::before {
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%, -50%) rotate(45deg);
+.pword {
+  top: 30%;
+  left: 72%;
 }
 
-.button:hover::after {
+.pword2 {
+  top: 55%;
+  left: 75%;
+}
+
+button:hover .pword, button:hover .pword2 {
   opacity: 1;
-}
-
-.button:active {
-  background-color: #e91e63;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  transform: translateY(2px);
 }
 

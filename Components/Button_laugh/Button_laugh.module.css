@@ -1,76 +1,68 @@
 
-/* From Uiverse.io by EmmaxPlay - Tags: button */
-.btn {
- padding: 0.9em 1.6em;
- border: none;
- outline: none;
- color: #FFF;
- font-family: inherit;
- font-weight: 500;
- font-size: 17px;
- cursor: pointer;
- position: relative;
- z-index: 0;
- border-radius: 12px;
+/* From Uiverse.io by MopokD71304  - Tags: simple, button, advanced, input effect  */
+.nav_bar {
+  background-color: rgb(27, 27, 27);
+  position: relative;
+  display: flex;
+  transition: 0.4s;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 15px;
+  border-radius: 15px;
 }
 
-.btn::after {
- content: "";
- z-index: -1;
- position: absolute;
- width: 100%;
- height: 100%;
- background-color: rgb(46, 46, 46);
- left: 0;
- top: 0;
- border-radius: 10px;
-}
-/* glow */
-.btn::before {
- content: "";
- background: linear-gradient(
-    45deg,
-    #FF0000, #002BFF, #FF00C8, #002BFF,
-      #FF0000, #002BFF, #FF00C8, #002BFF
-);
- position: absolute;
- top: -2px;
- left: -2px;
- background-size: 600%;
- z-index: -1;
- width: calc(100% + 4px);
- height: calc(100% + 4px);
- filter: blur(8px);
- animation: glowing 20s linear infinite;
- transition: opacity .3s ease-in-out;
- border-radius: 10px;
- opacity: 0;
+.bar1 {
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  width: 50px;
+  margin-bottom: 15px;
+  transition: 0.4s;
+  height: 5px;
 }
 
-@keyframes glowing {
- 0% {
-  background-position: 0 0;
- }
-
- 50% {
-  background-position: 400% 0;
- }
-
- 100% {
-  background-position: 0 0;
- }
+.bar2 {
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  width: 50px;
+  position: absolute;
+  transition: 0.4s;
+  height: 5px;
 }
 
-/* hover */
-.btn:hover::before {
- opacity: 1;
+.bar3_h {
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  width: 50px;
+  transition: 0.4s;
+  height: 5px;
 }
 
-.btn:active:after {
- background: transparent;
+.bar4 {
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  width: 50px;
+  margin-top: 15px;
+  transition: 0.4s;
+  height: 5px;
 }
 
-.btn:active {
- color: #000;
- font-weight: bold;
+.nav_bar:hover {
+  border-radius: 50px;
 }
+.nav_bar:hover .bar3_h {
+  transform: rotate(-45deg);
+}
+.nav_bar:hover .bar2 {
+  transform: rotate(45deg);
+}
+
+.nav_bar:hover .bar1 {
+  opacity: 0;
+  width: 30px;
+}
+.nav_bar:hover .bar4 {
+  opacity: 0;
+  width: 30px;
+}
+

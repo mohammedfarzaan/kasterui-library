@@ -1,63 +1,30 @@
 
-/* From Uiverse.io by Gianluks90 - Tags: loader, rainbow */
-.loader {
-  height: 50px;
-  display: flex;
-  align-items: flex-end;
-  gap: 3px;
+/* From Uiverse.io by AqFox - Tags: blue, loader, spinner, wheel */
+.spinner {
+ width: 56px;
+ height: 56px;
+ border-radius: 50%;
+ color: #004dff;
+ background: linear-gradient(currentColor 0 0) center/100% 4px,
+          linear-gradient(currentColor 0 0) center/4px 100%,
+          radial-gradient(farthest-side,#0000 calc(100% - 7px),currentColor calc(100% - 6px)),
+          radial-gradient(circle 7px,currentColor 94%,#0000 0);
+ background-repeat: no-repeat;
+ animation: spinner-mu2ebf 1s infinite linear;
+ position: relative;
 }
 
-.bar {
-  height: 5px;
-  width: 12px;
-  animation-duration: 0.45s;
-  animation-name: changeHeight;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+.spinner::before {
+ content: "";
+ position: absolute;
+ inset: 0;
+ border-radius: inherit;
+ background: inherit;
+ transform: rotate(45deg);
 }
 
-.red {
-  background-color: #E50000;
-  box-shadow: 1px 1px 10px #E50000;
-  animation-delay: 0.10s;
-}
-
-.orange {
-  background-color: #FF8D00;
-  box-shadow: 1px 1px 10px #FF8D00;
-  animation-delay: 0.20s;
-}
-
-.yellow {
-  background-color: #FFEE00;
-  box-shadow: 1px 1px 10px #FFEE00;
-  animation-delay: 0.25s;
-}
-
-.green {
-  background-color: #008121;
-  box-shadow: 1px 1px 10px #008121;
-  animation-delay: 0.30s;
-}
-
-.blue {
-  background-color: #004CFF;
-  box-shadow: 1px 1px 10px #004CFF;
-  animation-delay: 0.35s;
-}
-
-.violet {
-  background-color: #760188;
-  box-shadow: 1px 1px 10px #760188;
-  animation-delay: 0.40s;
-}
-
-@keyframes changeHeight {
-  from {
-    height: 5px;
-  }
-
-  to {
-    height: 40px;
-  }
+@keyframes spinner-mu2ebf {
+ to {
+  transform: rotate(.5turn);
+ }
 }

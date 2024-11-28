@@ -3,15 +3,17 @@ import styles from "./Button_ran.module.css";
 
 const Button_ran = () => (
   <div>
-    <button className={styles["custom-btn"] + styles["btn-4"]}>
-      <span>Read More</span>
+    <button className={styles["btn-17"]}>
+      <span className={styles["text-container"]}>
+        <span className={styles["text"]}>Button</span>
+      </span>
     </button>
   </div>
 );
 
 export default Button_ran;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -20,7 +22,11 @@ export default Button_ran;
 
         const Button_ran = () => (
          <div>
-          <button className="custom-btn btn-4"><span>Read More</span></button>
+          <button className="btn-17">
+  <span className="text-container">
+    <span className="text">Button</span>
+  </span>
+</button>
         </div>
         );
 

@@ -3,17 +3,17 @@ import styles from "./Loader_enough.module.css";
 
 const Loader_enough = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
+    <div className={styles["spinner-box"]}>
+      <div className={styles["circle-border"]}>
+        <div className={styles["circle-core"]}></div>
+      </div>
     </div>
   </div>
 );
 
 export default Loader_enough;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -22,10 +22,10 @@ export default Loader_enough;
 
         const Loader_enough = () => (
          <div>
-          <div className="loader">
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
+          <div className="spinner-box">
+  <div className="circle-border">
+    <div className="circle-core"></div>
+  </div>  
 </div>
         </div>
         );

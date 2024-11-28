@@ -3,25 +3,13 @@ import styles from "./Loader_seat.module.css";
 
 const Loader_seat = () => (
   <div>
-    <div className={styles["spinner-container"]}>
-      <div className={styles["spinner"]}>
-        <div className={styles["spinner"]}>
-          <div className={styles["spinner"]}>
-            <div className={styles["spinner"]}>
-              <div className={styles["spinner"]}>
-                <div className={styles["spinner"]}></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
 export default Loader_seat;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -30,19 +18,7 @@ export default Loader_seat;
 
         const Loader_seat = () => (
          <div>
-          <div className="spinner-container">
-  <div className="spinner">
-   <div className="spinner">
-    <div className="spinner">
-      <div className="spinner">
-        <div className="spinner">
-            <div className="spinner"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

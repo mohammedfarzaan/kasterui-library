@@ -1,58 +1,22 @@
 
-/* From Uiverse.io by Peary74 - Tags: button, hover, hover button */
+/* From Uiverse.io by sherghan7 - Tags: button */
 button {
-  font-family: inherit;
-  font-size: 20px;
-  background: #212121;
-  color: white;
-  fill: rgb(155, 153, 153);
-  padding: 0.7em 1em;
-  padding-left: 0.9em;
-  display: flex;
-  align-items: center;
+  min-width: 120px;
+  background: #000;
+  color: #EEEEEE;
+  height: 40px;
+  margin: 10px;
   border: none;
-  border-radius: 15px;
-  font-weight: 1000;
-}
-
-button span {
-  display: block;
-  margin-left: 0.3em;
+  border-radius: 0 !important;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
   transition: all 0.3s ease-in-out;
 }
 
-button svg {
-  display: block;
-  transform-origin: center center;
-  transition: transform 0.3s ease-in-out;
-}
-
 button:hover {
+  box-shadow: #EEEEEE 0px 0px 0px 11px, #161616 0px 0px 0px 10px;
   background: #000;
-  bor
+  color: #EEEEEE;
 }
-
-button:hover .svg-wrapper {
-  transform: scale(1.25);
-  transition: .5s linear;
-}
-
-button:hover svg {
-  transform: translateX(1.2em) scale(1.1);
-  fill: #fff;
-}
-
-button:hover span {
-  opacity: 0;
-  transition: .5s linear;
-}
-
-button:active {
-  transform: scale(0.95);
-}
-
-
-
-
-
-

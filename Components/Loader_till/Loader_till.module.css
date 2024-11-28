@@ -1,35 +1,95 @@
 
-/* From Uiverse.io by doniaskima - Tags: material design, neumorphism, flashy, loader */
+/* From Uiverse.io by Rkyz - Tags: animation, loader, animal */
 .loader {
-  width: 80px;
-  height: 40px;
-  color: #000;
-  border: 2px solid currentColor;
-  border-right-color: transparent;
-  padding: 3px;
-  background: repeating-linear-gradient(90deg,currentColor 0 10px,#0000 0 15px) 
-    0/0% no-repeat content-box content-box;
-  position: relative;
-  animation: l5 2s infinite steps(6);
+  height: 50px;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
-.loader::before {
+.dot-two {
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding: 4px;
+  color: white;
+}
+
+.dot-one,
+.dot-three {
+  background-color: black;
+  height: 30px;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  animation: flap-wings 1s infinite ease-in-out;
+}
+
+.dot-two {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: black;
+  animation: flap-wings 1s infinite ease-in-out;
+  animation-delay: 0.1s;
+}
+
+.dot-two::before,
+.dot-two::after {
   content: "";
   position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: 100%;
-  width: 10px;
-  background: linear-gradient(
-        #0000   calc(50% - 7px),currentColor 0 calc(50% - 5px),
-        #0000 0 calc(50% + 5px),currentColor 0 calc(50% + 7px),#0000 0) left /100% 100%,
-    linear-gradient(currentColor calc(50% - 5px),#0000        0 calc(50% + 5px),currentColor 0) left /2px 100%,
-    linear-gradient(#0000        calc(50% - 5px),currentColor 0 calc(50% + 5px),#0000        0) right/2px 100%;
-  background-repeat: no-repeat;
+  background-color: black;
 }
 
-@keyframes l5 {
+.dot-two::before {
+  height: 20px;
+  width: 10px;
+  bottom: 20px;
+  left: 1px;
+  border-radius: 50% 50% 0 0;
+  transform: rotate(-20deg);
+}
+
+.dot-two::after {
+  height: 20px;
+  width: 10px;
+  bottom: 20px;
+  left: 19px;
+  transform: rotate(20deg);
+  border-radius: 50% 50% 0 0;
+}
+
+.dot-one::before,
+.dot-one::after,
+.dot-three::before,
+.dot-three::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+}
+
+.dot-one::before,
+.dot-three::before {
+  height: 30px;
+  width: 20px;
+  top: 10px;
+  left: 0;
+  background-color: #e8e8e8;
+ /*chnage this if u need dark mode to #212121 if need light mode #e8e8e8*/
+  border-radius: 50% 50% 0 0;
+}
+
+@keyframes flap-wings {
+  0%,
   100% {
-    background-size: 120%
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
   }
 }

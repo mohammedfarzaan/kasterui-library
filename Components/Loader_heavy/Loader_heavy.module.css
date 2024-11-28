@@ -1,57 +1,54 @@
 
-/* From Uiverse.io by mrhyddenn - Tags: loader */
+/* From Uiverse.io by SelfMadeSystem - Tags: loader */
 .loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  overflow: hidden;
-  height: 80px;
-  width: 80px;
-  border: 1px solid transparent;
-  box-shadow: 0 0 0 2px rgb(25, 116, 253);
-  border-radius: 50%;
-}
-
-.waves {
+  width: 12em;
+  height: 3em;
   position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: rgb(30, 146, 255);
-  box-shadow: inset 0 0 50px rgb(0,0,0,.3);
+  overflow: hidden;
+  border-bottom: 8px solid #000;
+  filter: url(#goo);
 }
 
-.waves::before,
-.waves::after {
+.loader::before {
   content: '';
+  width: 22em;
+  height: 18em;
+  background: #f00;
   position: absolute;
-  width: 200%;
-  height: 200%;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -75%);
-  background: #000;
+  border-radius: 50%;
+  left: -2em;
+  bottom: -18em;
+  animation: wee1 2s linear infinite;
 }
 
-.waves::before {
-  border-radius: 45%;
-  background: rgb(248, 248, 248);
-  animation: wave91234 5s linear infinite;
+.loader::after {
+  content: '';
+  width: 16em;
+  height: 12em;
+  background: #0ff;
+  position: absolute;
+  border-radius: 50%;
+  left: -4em;
+  bottom: -12em;
+  animation: wee2 2s linear infinite 0.75s;
 }
 
-.waves::after {
-  border-radius: 40%;
-  background: rgb(255,255,255,.5);
-  animation: wave91234 10s linear infinite;
-}
-
-@keyframes wave91234 {
+@keyframes wee1 {
   0% {
-    transform: translate(-50%, -75%) rotate(0deg);
+    transform: translateX(-10em) rotate(0deg);
   }
 
   100% {
-    transform: translate(-50%, -75%) rotate(360deg);
+    transform: translateX(7em) rotate(180deg);
+  }
+}
+
+@keyframes wee2 {
+  0% {
+    transform: translateX(-8em) rotate(0deg);
+  }
+
+  100% {
+    transform: translateX(8em) rotate(180deg);
   }
 }

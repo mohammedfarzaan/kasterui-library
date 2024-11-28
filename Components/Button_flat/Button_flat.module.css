@@ -1,69 +1,71 @@
 
-/* From Uiverse.io by satyamchaudharydev - Tags: button */
-button {
-  padding: 0;
-  margin: 0;
-  border: none;
-  background: none;
-}
-
-button {
-  --primary-color: #111;
-  --hovered-color: #c84747;
+/* From Uiverse.io by abuayaan01 - Tags: button, water, btn, waves, 3d button, Button design */
+.button {
+  background-color: #000;
+  border: 0px;
+  outline: 0px;
+  color: #fff;
+  width: 200px;
+  padding: 20px;
+  border-radius: 50px;
   position: relative;
-  display: flex;
-  font-weight: 600;
-  font-size: 20px;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-button p {
-  margin: 0;
-  position: relative;
-  font-size: 20px;
-  color: var(--primary-color)
-}
-
-button::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  left: 0;
-  bottom: -7px;
-  background: var(--hovered-color);
-  height: 2px;
-  transition: 0.3s ease-out;
-}
-
-button p::before {
-  position: absolute;
-/*   box-sizing: border-box; */
-  content: "Subscribe";
-  width: 0%;
-  inset: 0;
-  color: var(--hovered-color);
   overflow: hidden;
-  transition: 0.3s ease-out;
+  cursor: pointer;
 }
 
-button:hover::after {
-  width: 100%;
+.liquid {
+  background-color: #2893eb;
+  width: 200px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 5px -5px 25px #104e81,
+  inset -5px 0px 25px #104e81;
 }
 
-button:hover p::before {
-  width: 100%;
+.liquid::after {
+  content: '';
+  width: 450px;
+  height: 400px;
+  background: #000;
+  z-index: 1;
+  position: absolute;
+  left: -110px;
+  top: -380px;
+  border-radius: 45%;
+  animation: animate 5s linear 2s infinite;
 }
 
-button:hover svg {
-  transform: translateX(4px);
-  color: var(--hovered-color)
+.liquid::before {
+  content: '';
+  width: 450px;
+  height: 400px;
+  background-color: rgb(68, 160, 235);
+  z-index: 1;
+  position: absolute;
+  left: -110px;
+  top: -380px;
+  border-radius: 40%;
+  animation: animate 5s linear 1.8s infinite;
 }
 
-button svg {
-  color: var(--primary-color);
-  transition: 0.2s;
+.btn-txt {
   position: relative;
-  width: 15px;
-  transition-delay: 0.2s;
+  z-index: 1;
+  font-size: 22px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
 }
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+

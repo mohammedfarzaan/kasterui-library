@@ -1,34 +1,39 @@
 
-/* From Uiverse.io by vinodjangid07 - Tags: gradient, button, hover effect, gold, golden effect , subscribe, premium */
-.Btn {
-  width: 200px;
-  height: 40px;
-  border: none;
-  border-radius: 40px;
-  background: linear-gradient(to right,#bf953f,#fcf6ba,#b38728,#fbf5b7,#aa771c);
+/* From Uiverse.io by vishalparajuli - Tags: button, 3d button, 3d card */
+.button {
+  width: 100px;
+  height: 50px;
+  position: relative;
+  perspective: 800px;
+}
+
+.button__front,
+  .button__back {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  font-size: 0.8em;
-  color: rgb(121, 103, 3);
-  font-weight: 600;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-  transition-duration: 3s;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
-  background-size: 200% 200%;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 5px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
 }
 
-.logoIcon path {
-  fill: rgb(121, 103, 3);
+.button__back {
+  background-color: #e74c3c;
+  transform: rotateY(180deg);
 }
 
-.Btn:hover {
-  transform: scale(0.95);
-  transition-duration: 3s;
-  animation: gradient 5s ease infinite;
-  background-position: right;
+.button:hover .button__front {
+  transform: rotateY(-180deg);
 }
 
+.button:hover .button__back {
+  transform: rotateY(0);
+}

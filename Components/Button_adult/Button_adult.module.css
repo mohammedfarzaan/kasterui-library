@@ -1,47 +1,18 @@
 
-/* From Uiverse.io by pranav0s  - Tags: button */
+/* From Uiverse.io by roufkp - Tags: gradient, button, light, hover effect */
 .button {
   width: fit-content;
-  display: flex;
-  padding: 1.2em 1rem;
-  cursor: pointer;
-  gap: 0.4rem;
-  font-weight: bold;
-  border-radius: 30px;
-  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
-  background: linear-gradient(
-      15deg,
-      #880088,
-      #aa2068,
-      #cc3f47,
-      #de6f3d,
-      #f09f33,
-      #de6f3d,
-      #cc3f47,
-      #aa2068,
-      #880088
-    )
-    no-repeat;
-  background-size: 300%;
-  color: #fff;
+  padding: 12px 24px;
+  border-radius: 100px;
   border: none;
-  background-position: left center;
-  box-shadow: 0 30px 10px -20px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s ease;
+  box-shadow: inset 0px 22px 20px 10px rgb(0, 0, 0);
+  font-weight: 800;
+  color: antiquewhite;
+  letter-spacing: .1rem;
+  transition: all 0.51s ease-in-out;
 }
 
 .button:hover {
-  background-size: 320%;
-  background-position: right center;
+  transform: translateY(5px);
+  box-shadow: inset 1px -11px 25px 10px rgb(91, 88, 240);
 }
-
-.button:hover svg {
-  fill: #fff;
-}
-
-.button svg {
-  width: 23px;
-  fill: #f09f33;
-  transition: 0.3s ease;
-}
-

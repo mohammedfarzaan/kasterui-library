@@ -3,17 +3,19 @@ import styles from "./Button_trap.module.css";
 
 const Button_trap = () => (
   <div>
-    <div className={styles["div"]}>
-      <button className={styles["button"]}>
-        <span className={styles["span"]}> HOVER ME </span>
-      </button>
+    <div className={styles["container"]}>
+      <div className={styles["toggle"]}>
+        <input type="checkbox" />
+        <span className={styles["button"]}></span>
+        <span className={styles["label"]}>☼</span>
+      </div>
     </div>
   </div>
 );
 
 export default Button_trap;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -22,10 +24,12 @@ export default Button_trap;
 
         const Button_trap = () => (
          <div>
-          <div className="div">
-  <button className="button">
-    <span className="span"> HOVER ME </span>
-  </button>
+          <div className="container">
+  <div className="toggle">
+    <input type="checkbox" />
+    <span className="button"></span>
+    <span className="label">☼</span>
+  </div>
 </div>
         </div>
         );

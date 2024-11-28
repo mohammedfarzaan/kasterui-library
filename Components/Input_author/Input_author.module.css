@@ -1,0 +1,89 @@
+
+/* From Uiverse.io by siraj-ha  - Tags: input */
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  border-radius: 15px;
+  max-width: max-content;
+  margin: 100px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #000;
+  box-shadow: 5px 5px 10px rgba(108, 110, 255, 0.8),
+    -5px -5px 10px rgba(255, 89, 233, 0.8);
+}
+
+.search-input {
+  flex: 1;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+.material-symbols-outlined {
+  color: white;
+  cursor: pointer;
+}
+
+.search-icon,
+.filter-icon {
+  margin: 0 10px;
+}
+
+.search-icon {
+  color: white;
+  padding: 0 0 0 10px;
+}
+
+.filter-icon {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  font-size: 24px;
+  line-height: 1;
+  box-shadow: inset 0 0 10px rgba(158, 202, 237, 0.5);
+  padding: 5px;
+}
+
+.search-container:hover {
+  box-shadow: 10px 10px 20px rgba(108, 110, 255, 0.8),
+    -10px -10px 20px rgba(255, 89, 233, 0.8);
+  animation: rotateGlow 1.5s infinite alternate;
+}
+
+@keyframes rotateGlow {
+  0% {
+    box-shadow: 10px 10px 20px rgba(108, 110, 255, 0.8),
+      -10px -10px 20px rgba(255, 89, 233, 0.8);
+  }
+  50% {
+    box-shadow: -10px -10px 20px rgba(255, 89, 233, 0.8),
+      10px 10px 20px rgba(108, 110, 255, 0.8);
+  }
+  100% {
+    box-shadow: 10px 10px 20px rgba(108, 110, 255, 0.8),
+      -10px -10px 20px rgba(255, 89, 233, 0.8);
+  }
+}
+

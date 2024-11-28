@@ -1,18 +1,53 @@
 import React from "react";
+import styles from "./Button_below.module.css";
 
 const Button_below = () => (
   <div>
-    <button className="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-blue-500/30 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-blue-600/50 border border-white/20">
-      <span className="text-lg">Shimmer</span>
-      <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
-        <div className="relative h-full w-10 bg-white/30"></div>
+    <button>
+      <div>
+        <span>
+          <p>Hover Me</p>
+          <p>:)</p>
+        </span>
+      </div>
+      <div>
+        <span>
+          <p>Thanks</p>
+          <p>:D</p>
+        </span>
       </div>
     </button>
   </div>
 );
 
 export default Button_below;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_below = () => (
+         <div>
+          <button>
+  <div>
+    <span>
+      <p>Hover Me</p><p>:)</p>
+    </span>
+  </div>
+  <div>
+    <span>
+      <p>Thanks</p><p>:D</p>
+    </span>
+  </div>
+</button>
+        </div>
+        );
+
+        export default Button_below;
+        
+        
+         */
 }

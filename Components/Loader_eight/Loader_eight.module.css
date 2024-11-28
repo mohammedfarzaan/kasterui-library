@@ -1,58 +1,32 @@
 
-/* From Uiverse.io by escannord  - Tags: 3d, black, loading, loader, realistic */
-.loader {
-  width: 220px;
-  height: 220px;
+/* From Uiverse.io by Praashoo7 - Tags: animation, loader, dots */
+.load {
+  display: flex;
   border-radius: 50%;
-  position: relative;
-  border: solid 5px transparent;
-  box-shadow: 5px 5px 5px rgb(88, 87, 87), inset 5px 5px 5px rgb(85, 80, 80),
-    inset -1px -1px 10px rgba(0, 0, 0, 0.432),
-    -1px -1px 10px rgba(0, 0, 0, 0.281);
+  flex-direction: row;
 }
 
-.loader::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  width: 180px;
-  height: 180px;
+.progress {
+  width: 2em;
+  height: 2em;
+  margin: 0.4em;
+  scale: 0;
   border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 5px 5px 20px black, -2px -2px 40px black;
-  background: repeating-conic-gradient(
-    rgb(61, 59, 59) 0%,
-    rgb(248, 248, 246) 15%,
-    rgb(54, 52, 52) 33.33%
-  );
+  background: rgb(255, 255, 255);
+  animation: loading_492 2s ease infinite;
+  animation-delay: 1s;
 }
 
-.ball {
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  background: radial-gradient(
-    circle at 8px 5px,
-    white 5%,
-    rgba(54, 53, 53, 0.685)
-  );
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) translateX(97.5px);
-  animation: rotate 5s calc(var(--delay) * 0.2s) infinite linear;
-}
-
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg) translateX(97.5px);
-  }
-
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg) translateX(97.5px);
+@keyframes loading_492 {
+  50% {
+    scale: 1;
   }
 }
 
+.progress:nth-child(2) {
+  animation-delay: 1.3s;
+}
+
+.progress:nth-child(3) {
+  animation-delay: 1.7s;
+}

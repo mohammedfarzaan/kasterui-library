@@ -3,15 +3,13 @@ import styles from "./Button_atom.module.css";
 
 const Button_atom = () => (
   <div>
-    <button>
-      <span>Hover</span>
-    </button>
+    <button className={styles["button"]}>Click here ..</button>
   </div>
 );
 
 export default Button_atom;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -20,7 +18,9 @@ export default Button_atom;
 
         const Button_atom = () => (
          <div>
-          <button><span>Hover</span></button>
+          <button className="button">
+  Click here ..
+</button>
         </div>
         );
 

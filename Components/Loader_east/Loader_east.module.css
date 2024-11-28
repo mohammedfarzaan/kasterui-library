@@ -1,27 +1,53 @@
 
-/* From Uiverse.io by Victan78 - Tags: loader */
+/* From Uiverse.io by Cornerstone-04 - Tags: loader */
 .loader {
-  width: 100px;
-  height: 100px;
-  border: solid 4px rgba(231, 231, 231, 0);
-  border-top: solid 5px rgb(241, 68, 68);
+  width: 150px;
+  height: 150px;
+  border-left: 5px solid #38ff8e;
   border-radius: 50%;
-  transition: all 0.5s;
-  animation: rotation_51512 1.2s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation: right5231 0.9s linear infinite;
 }
 
-@keyframes rotation_51512 {
-  70% {
-    box-shadow: 0px 0px 10px 50px rgba(241, 57, 57, 0.526);
+.loader::before,
+  .loader::after {
+  content: "";
+  width: 120px;
+  height: 120px;
+  display: block;
+  position: absolute;
+  top: calc(50% - 60px);
+  left: calc(50% - 60px);
+  border-right: 5px solid #ffbe0b;
+  border-radius: 50%;
+  animation: left036 0.9s linear infinite;
+}
+
+.loader::after {
+  width: 90px;
+  height: 90px;
+  top: calc(50% - 45px);
+  left: calc(50% - 45px);
+  border: 0;
+  border-top: 5px solid #ff086e;
+  animation: none;
+}
+
+@keyframes right5231 {
+  from {
+    transform: rotate(0deg);
   }
 
-  90% {
-    box-shadow: 0px 0px 10px 50px rgba(241, 57, 57, 0.04);
-  }
-
-  100% {
-    opacity: 0.5;
+  to {
     transform: rotate(360deg);
   }
 }
 
+@keyframes left036 {
+  from {
+    transform: rotate(720deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}

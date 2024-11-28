@@ -3,15 +3,30 @@ import styles from "./Button_wool.module.css";
 
 const Button_wool = () => (
   <div>
-    <button className={styles["button"]}>
-      <p className={styles["text-inside"]}>HOVER ME</p>
+    <button>
+      <div className={styles["main"]}>
+        <div className={styles["rings"]} id="ring1"></div>
+        <div className={styles["rings"]} id="ring2"></div>
+        <div className={styles["asteriods-large"]} id="asteriod1"></div>
+        <div className={styles["asteriods-large"]} id="asteriod2"></div>
+        <div className={styles["asteriods-large"]} id="asteriod3"></div>
+        <div className={styles["asteriods-large"]} id="asteriod4"></div>
+        <div className={styles["asteriods-large"]} id="asteriod5"></div>
+        <div className={styles["asteriods-small"]} id="asteriod6"></div>
+        <div className={styles["asteriods-small"]} id="asteriod7"></div>
+        <div className={styles["asteriods-small"]} id="asteriod8"></div>
+        <div className={styles["asteriods-small"]} id="asteriod9"></div>
+        <div className={styles["asteriods-small"]} id="asteriod10"></div>
+        <div id="saturn"></div>
+        <div id="explore">Explore</div>
+      </div>
     </button>
   </div>
 );
 
 export default Button_wool;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -20,8 +35,24 @@ export default Button_wool;
 
         const Button_wool = () => (
          <div>
-          <button className="button">
-  <p className="text-inside">HOVER ME</p>
+          <button>
+  <div className="main">
+    <div className="rings" id="ring1"></div>
+    <div className="rings" id="ring2"></div>
+    <div className="asteriods-large" id="asteriod1"></div>
+    <div className="asteriods-large" id="asteriod2"></div>
+    <div className="asteriods-large" id="asteriod3"></div>
+    <div className="asteriods-large" id="asteriod4"></div>
+    <div className="asteriods-large" id="asteriod5"></div>
+    <div className="asteriods-small" id="asteriod6"></div>
+    <div className="asteriods-small" id="asteriod7"></div>
+    <div className="asteriods-small" id="asteriod8"></div>
+    <div className="asteriods-small" id="asteriod9"></div>
+    <div className="asteriods-small" id="asteriod10"></div>
+    <div id="saturn"></div>
+    <div id="explore">Explore</div>
+
+  </div>
 </button>
         </div>
         );

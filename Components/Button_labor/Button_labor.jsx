@@ -3,13 +3,15 @@ import styles from "./Button_labor.module.css";
 
 const Button_labor = () => (
   <div>
-    <button className={styles["learn-more"]}> Learn More</button>
+    <button className={styles["box"]}>
+      <span className={styles["button"]}>How Are you today?</span>
+    </button>
   </div>
 );
 
 export default Button_labor;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -18,8 +20,9 @@ export default Button_labor;
 
         const Button_labor = () => (
          <div>
-          <button className="learn-more"> Learn More
-</button>
+          <button className="box">
+    <span className="button">How Are you today?</span>
+  </button>
         </div>
         );
 

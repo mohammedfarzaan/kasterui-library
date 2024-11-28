@@ -3,13 +3,18 @@ import styles from "./Button_public.module.css";
 
 const Button_public = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button className={styles["btn-23"]}>
+      <span className={styles["text"]}>Button</span>
+      <span aria-hidden="" className={styles["marquee"]}>
+        Button
+      </span>
+    </button>
   </div>
 );
 
 export default Button_public;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -18,7 +23,10 @@ export default Button_public;
 
         const Button_public = () => (
          <div>
-          <button className="button">Button</button>
+          <button className="btn-23">
+  <span className="text">Button</span>
+  <span aria-hidden="" className="marquee">Button</span>
+</button>
         </div>
         );
 

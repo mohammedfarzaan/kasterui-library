@@ -3,18 +3,33 @@ import styles from "./Button_plate.module.css";
 
 const Button_plate = () => (
   <div>
-    <button className={styles["submitBtn"]}>
-      Submit
-      <svg fill="white" viewBox="0 0 448 512" height="1em" className="arrow">
-        <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path>
-      </svg>
+    <button>
+      <div className={styles["svg-name-con"]}>
+        <div className={styles["svg-wrapper-1"]}>
+          <div className={styles["svg-wrapper"]}>
+            <svg
+              height="24"
+              width="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <span>Send Message</span>
+      </div>
     </button>
   </div>
 );
 
 export default Button_plate;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -23,9 +38,26 @@ export default Button_plate;
 
         const Button_plate = () => (
          <div>
-          <button className="submitBtn">
-  Submit
-  <svg fill="white" viewBox="0 0 448 512" height="1em" className="arrow"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+          <button>
+  <div className="svg-name-con">
+    <div className="svg-wrapper-1">
+      <div className="svg-wrapper">
+        <svg
+          height="24"
+          width="24"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path
+            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <span>Send Message</span>
+  </div>
 </button>
         </div>
         );

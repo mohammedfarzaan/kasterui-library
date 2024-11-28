@@ -1,15 +1,33 @@
 import React from "react";
+import styles from "./Button_duty.module.css";
 
 const Button_duty = () => (
   <div>
-    <button className="bg-gradient-to-r from-pink-500 to-purple-500 hover:animate-pulse focus:outline-none text-white font-semibold py-3 px-6 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 hover:bg-opacity-90">
-      Click Me!
+    <button>
+      <span>Hover me</span>
     </button>
   </div>
 );
 
 export default Button_duty;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_duty = () => (
+         <div>
+          <button>
+    <span>Hover me</span>
+</button>
+        </div>
+        );
+
+        export default Button_duty;
+        
+        
+         */
 }

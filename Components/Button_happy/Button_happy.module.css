@@ -1,49 +1,53 @@
 
-/* From Uiverse.io by Manish-Tamang  - Tags: button, hover effect, html, css, 3d button, button hover effect  */
-a {
+/* From Uiverse.io by gharsh11032000 - Tags: button, hover effect */
+.animated-button {
   position: relative;
-  display: inline-flex;
-  width: 180px;
-  height: 55px;
-  margin: 0 15px;
-  perspective: 1000px;
-  text-decoration: none;
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #ffffff40;
+  box-shadow: 0 0 0 2px #ffffff20;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-a:before,
-a:after {
+.animated-button span:last-child {
   position: absolute;
-  content: "3D HOVER";
-  height: 55px;
-  width: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 5px solid black;
-  box-sizing: border-box;
-  font-size: 19px;
-  letter-spacing: 1px;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  transition: transform 0.25s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #2196F3;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-a:before {
-  color: #fff;
-  background: #000;
-  transform: rotateY(0deg) translateZ(25px);
+.animated-button span:first-child {
+  position: relative;
+  z-index: 1;
 }
 
-a:after {
-  color: #000;
-  transform: rotateX(90deg) translateZ(25px);
+.animated-button:hover {
+  box-shadow: 0 0 0 5px #2195f360;
+  color: #ffffff;
 }
 
-a:hover:before {
-  transform: translateZ(-25px) rotateX(-90deg);
+.animated-button:active {
+  scale: 0.95;
 }
 
-a:hover:after {
-  transform: rotateY(0deg) translateZ(25px);
+.animated-button:hover span:last-child {
+  width: 150px;
+  height: 150px;
+  opacity: 1;
 }
+
+
 

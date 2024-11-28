@@ -1,46 +1,33 @@
 import React from "react";
-import styles from "./Button_later.module.css";
 
 const Button_later = () => (
   <div>
-    <button>
+    <button
+      title="Save"
+      className="cursor-pointer flex items-center fill-lime-400 bg-lime-950 hover:bg-lime-900 active:border active:border-lime-400 rounded-md duration-100 p-2"
+    >
       <svg
-        viewBox="0 0 16 16"
-        className="bi bi-facebook"
-        fill="currentColor"
-        height="16"
-        width="16"
+        viewBox="0 -0.5 25 25"
+        height="20px"
+        width="20px"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+        <path
+          strokeLinejoin="round"
+          strokeLinecap="round"
+          strokeWidth="1.5"
+          d="M18.507 19.853V6.034C18.5116 5.49905 18.3034 4.98422 17.9283 4.60277C17.5532 4.22131 17.042 4.00449 16.507 4H8.50705C7.9721 4.00449 7.46085 4.22131 7.08577 4.60277C6.7107 4.98422 6.50252 5.49905 6.50705 6.034V19.853C6.45951 20.252 6.65541 20.6407 7.00441 20.8399C7.35342 21.039 7.78773 21.0099 8.10705 20.766L11.907 17.485C12.2496 17.1758 12.7705 17.1758 13.113 17.485L16.9071 20.767C17.2265 21.0111 17.6611 21.0402 18.0102 20.8407C18.3593 20.6413 18.5551 20.2522 18.507 19.853Z"
+          clipRule="evenodd"
+          fillRule="evenodd"
+        ></path>
       </svg>
-      <span>Facebook</span>
+      <span className="text-sm text-lime-400 font-bold pr-1">Save Post</span>
     </button>
   </div>
 );
 
 export default Button_later;
-{
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Button_later = () => (
-         <div>
-          <button>
-  <svg viewBox="0 0 16 16" className="bi bi-facebook" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-</svg>
-    <span>Facebook</span>
-</button>
-        </div>
-        );
-
-        export default Button_later;
-        
-        
-         */
+{
+  /* */
 }

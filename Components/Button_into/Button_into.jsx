@@ -3,54 +3,9 @@ import styles from "./Button_into.module.css";
 
 const Button_into = () => (
   <div>
-    <button className={styles["container"]}>
-      <strong>SYNTHWAVE</strong>
-      <div id="glow">
-        <div className={styles["circle"]}></div>
-      </div>
-      <div className={styles["inner-container"]}>
-        <div className={styles["fade"]}></div>
-
-        <div className={styles["up-text"]}>
-          <div className={styles["crawl"]}>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-            <div className={styles["grid-item"]}></div>
-          </div>
-        </div>
+    <button className={styles["button"]}>
+      <div className={styles["button__int"]}>
+        <span className={styles["button__span"]}>Button</span>
       </div>
     </button>
   </div>
@@ -58,7 +13,7 @@ const Button_into = () => (
 
 export default Button_into;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -67,54 +22,9 @@ export default Button_into;
 
         const Button_into = () => (
          <div>
-          <button className="container">
-  <strong>SYNTHWAVE</strong>
-  <div id="glow">
-    <div className="circle"></div>
-  </div>
-  <div className="inner-container">
-    <div className="fade"></div>
-
-    <div className="up-text">
-      <div className="crawl">
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-      </div>
-    </div>
+          <button className="button">
+  <div className="button__int">
+    <span className="button__span">Button</span>
   </div>
 </button>
         </div>

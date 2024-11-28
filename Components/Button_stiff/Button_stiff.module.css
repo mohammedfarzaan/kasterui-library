@@ -1,81 +1,39 @@
 
-/* From Uiverse.io by AkashKobal - Tags: button */
-.buttonDownload {
-  display: inline-block;
-  position: relative;
-  padding: 10px 25px;
-  background-color: #4CC713;
-  color: white;
-  font-family: sans-serif;
-  text-decoration: none;
-  font-size: 0.9em;
-  text-align: center;
-  text-indent: 15px;
+/* From Uiverse.io by Cornerstone-04 - Tags: button */
+button {
+  display: flex;
+  align-items: center;
+  color: #000;
+  background: none;
   border: none;
-  border-radius: 2em;
-  font-weight: bold;
+  padding: 12px 18px;
+  position: relative;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: monospace;
+  transition: linear .3s;
 }
 
-.buttonDownload:hover {
-  background-color: #1a60a2;
-  color: white;
+button:hover {
+  color: #fff;
 }
 
-.buttonDownload:before, .buttonDownload:after {
-  content: ' ';
-  display: block;
+button::before {
+  content: "";
   position: absolute;
-  left: 15px;
-  top: 52%;
+  top: 50%;
+  transform: translateY(-50%) translateX(calc(100% + 4px));
+  width: 45px;
+  height: 45px;
+  background-color: #dc143c;
+  border-radius: 50px;
+  transition: transform .25s .25s cubic-bezier(0, 0, .5, 2), width .25s cubic-bezier(0, 0, .5, 2);
+  z-index: -1;
 }
 
-.buttonDownload:before {
-  width: 10px;
-  height: 2px;
-  border-style: solid;
-  border-width: 0 2px 2px;
+button:hover::before {
+  width: 100%;
+  transform: translateY(-50%) translateX(-18px);
+  transition: transform .25s cubic-bezier(0,0,.5,2);
 }
-
-.buttonDownload:after {
-  width: 0;
-  height: 0;
-  margin-left: 3px;
-  margin-top: -7px;
-  border-style: solid;
-  border-width: 4px 4px 0 4px;
-  border-color: transparent;
-  border-top-color: inherit;
-  animation: downloadArrow 1s linear infinite;
-  animation-play-state: paused;
-}
-
-.buttonDownload:hover:before {
-  border-color: #bdd3ef;
-}
-
-.buttonDownload:hover:after {
-  border-top-color: #eff1f7;
-  animation-play-state: running;
-}
-
-@keyframes downloadArrow {
-  0% {
-    margin-top: -7px;
-    opacity: 1;
-  }
-
-  0.001% {
-    margin-top: -15px;
-    opacity: 0.4;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    margin-top: 0;
-    opacity: 0.4;
-  }
-}
-

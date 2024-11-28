@@ -3,13 +3,17 @@ import styles from "./Loader_till.module.css";
 
 const Loader_till = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["dot-one"]}></div>
+      <div className={styles["dot-two"]}>- -</div>
+      <div className={styles["dot-three"]}></div>
+    </div>
   </div>
 );
 
 export default Loader_till;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -18,7 +22,11 @@ export default Loader_till;
 
         const Loader_till = () => (
          <div>
-          <div className="loader"></div>
+          <div className="loader">
+ <div className="dot-one"></div> 
+ <div className="dot-two">-  -</div> 
+ <div className="dot-three"></div> 
+</div>
         </div>
         );
 

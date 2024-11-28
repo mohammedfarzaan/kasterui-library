@@ -1,84 +1,33 @@
 
-/* From Uiverse.io by misaraadel - Tags: button, clip-path, hover effect, clip, button hover effect , hover idea, hover me, clip path animation */
-.custom-btn {
-  width: 220px;
-  height: 50px;
+/* From Uiverse.io by Creatlydev  - Tags: button */
+.btn-github {
+  cursor: pointer;
   display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  position: relative;
-  z-index: 9;
-  border: 1px solid #5BA50E;
-  gap: 10px;
-  text-decoration: none;
-  background-color: #5BA50E;
-}
+  gap: 0.5rem;
+  border: none;
 
-.custom-btn::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
-  z-index: -1;
-  background-color: #fff;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-backdrop-filter: blur(32px);
+  backdrop-filter: blur(32px);
+  border-radius: 100px;
+  font-weight: 800;
+  place-content: center;
 
-.custom-btn span {
-  font-size: 16px;
-  font-weight: 700;
+  padding: 0.75rem 1rem;
+  font-size: 0.825rem;
+  line-height: 1rem;
+
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.04),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
   color: #fff;
 }
 
-.custom-btn:hover::after {
-  animation: sideClip 0.5s linear;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  opacity: 1;
+.btn-github:hover {
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
+    inset 0 0 0 1px rgba(252, 232, 3, 0.08);
+  color: #fce803;
+  transform: translate(0, -0.25rem);
+  background-color: rgba(255, 255, 255, 0.16);
 }
 
-.custom-btn:hover span {
-  animation: storm 0.4s linear both;
-  color: #5BA50E;
-}
-
-@keyframes sideClip {
-  0% {
-    clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
-  }
-
-  50% {
-    clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
-  }
-
-  100% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-}
-
-@keyframes storm {
-  0% {
-    transform: translate3d(0, 0, 0) translateZ(0);
-  }
-
-  25% {
-    transform: translate3d(4px, 0, 0) translateZ(0);
-  }
-
-  50% {
-    transform: translate3d(-3px, 0, 0) translateZ(0);
-  }
-
-  75% {
-    transform: translate3d(2px, 0, 0) translateZ(0);
-  }
-
-  100% {
-    transform: translate3d(0, 0, 0) translateZ(0);
-  }
-}

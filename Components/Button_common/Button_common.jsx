@@ -1,64 +1,38 @@
 import React from "react";
-import styles from "./Button_common.module.css";
 
 const Button_common = () => (
   <div>
-    <button className={styles["button"]}>
-      <span>Add to cart</span>
-      <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
-        <g
-          strokeLinejoin="round"
-          strokeLinecap="round"
-          id="SVGRepo_tracerCarrier"
-        ></g>
-        <g id="SVGRepo_iconCarrier">
-          {" "}
-          <defs> </defs>{" "}
-          <g id="cart">
-            {" "}
-            <circle
-              r="1.91"
-              cy="20.59"
-              cx="10.07"
-              className="cls-1"
-            ></circle>{" "}
-            <circle r="1.91" cy="20.59" cx="18.66" className="cls-1"></circle>{" "}
-            <path
-              d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"
-              className="cls-1"
-            ></path>{" "}
-            <polyline
-              points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"
-              className="cls-1"
-            ></polyline>{" "}
-          </g>{" "}
-        </g>
-      </svg>
-    </button>
+    <div className="flex items-center justify-center h-full">
+      <button
+        className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+        type="button"
+      >
+        Facebook
+      </button>
+      <button
+        className="text-white bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+        type="button"
+      >
+        YouTube
+      </button>
+      <button
+        className="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+        type="button"
+      >
+        Twitter
+      </button>
+      <button
+        className="text-white bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+        type="button"
+      >
+        Instagram
+      </button>
+    </div>
   </div>
 );
 
 export default Button_common;
-{
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Button_common = () => (
-         <div>
-          <button className="button">
-  <span>Add to cart</span>
-  <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeWidth="0" id="SVGRepo_bgCarrier"></g><g strokeLinejoin="round" strokeLinecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <defs>  </defs> <g id="cart"> <circle r="1.91" cy="20.59" cx="10.07" className="cls-1"></circle> <circle r="1.91" cy="20.59" cx="18.66" className="cls-1"></circle> <path d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10" className="cls-1"></path> <polyline points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91" className="cls-1"></polyline> </g> </g></svg>
-</button>
-        </div>
-        );
-
-        export default Button_common;
-        
-        
-         */
+{
+  /* */
 }

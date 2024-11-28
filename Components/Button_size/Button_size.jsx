@@ -3,16 +3,38 @@ import styles from "./Button_size.module.css";
 
 const Button_size = () => (
   <div>
-    <button className={styles["button"]}>
-      <span className={styles["base"]}></span>
-      <span className={styles["red"]}></span>
-    </button>
+    <div className={styles["hamburger"]}>
+      <input className={styles["checkbox"]} type="checkbox" />
+      <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
+        <path
+          className="lineTop line"
+          strokeLinecap="round"
+          strokeWidth="4"
+          stroke="black"
+          d="M6 11L44 11"
+        ></path>
+        <path
+          strokeLinecap="round"
+          strokeWidth="4"
+          stroke="black"
+          d="M6 24H43"
+          className="lineMid line"
+        ></path>
+        <path
+          strokeLinecap="round"
+          strokeWidth="4"
+          stroke="black"
+          d="M6 37H43"
+          className="lineBottom line"
+        ></path>
+      </svg>
+    </div>
   </div>
 );
 
 export default Button_size;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -21,10 +43,32 @@ export default Button_size;
 
         const Button_size = () => (
          <div>
-          <button className="button">
-  <span className="base"></span>
-  <span className="red"></span>
-</button>
+          <div className="hamburger">
+  <input className="checkbox" type="checkbox" />
+  <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
+    <path
+      className="lineTop line"
+      strokeLinecap="round"
+      strokeWidth="4"
+      stroke="black"
+      d="M6 11L44 11"
+    ></path>
+    <path
+      strokeLinecap="round"
+      strokeWidth="4"
+      stroke="black"
+      d="M6 24H43"
+      className="lineMid line"
+    ></path>
+    <path
+      strokeLinecap="round"
+      strokeWidth="4"
+      stroke="black"
+      d="M6 37H43"
+      className="lineBottom line"
+    ></path>
+  </svg>
+</div>
         </div>
         );
 

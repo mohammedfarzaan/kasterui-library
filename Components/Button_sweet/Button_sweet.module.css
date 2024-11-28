@@ -1,23 +1,26 @@
 
-/* From Uiverse.io by aadium - Tags: gradient, button, glow, colorful */
-button {
-  padding: 15px 32px;
-  font-size: 20px;
+/* From Uiverse.io by Bartek1238462 - Tags: button, hover, neon, hover effect */
+.button {
+  width: 120px;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
   color: white;
-  border: none;
-  border-radius: 5em;
-  background-size: 200% 100%;
-  background-image: linear-gradient(145deg, #ff53eb, #4b4bff, #5de7ff);
-  box-shadow: 3px 3px 10px 2px #4b4bff, -3px -3px 10px 2px #ff53eb;
-  transition: 0.5s;
+  border-radius: 25px;
+  transition: 1.5s;
 }
 
-button:hover {
-  background-position: 99%;
-  box-shadow: 3px 3px 10px 2px #5de7ff, -3px -3px 10px 2px #4b4bff;
+text-inside. {
+  font-weight: bold;
 }
 
-button:active {
-  transform: scale(0.8) rotate(5deg);
-  box-shadow: 3px 3px 15px 3px #5de7ff, -3px -3px 15px 3px #4b4bff;
+.button:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px
+,rgba(240, 46, 170, 0.4) 5px -5px, rgba(240, 46, 170, 0.3) 10px -10px, rgba(240, 46, 170, 0.2) 15px -15px, rgba(240, 46, 170, 0.1) 20px -20px, rgba(240, 46, 170, 0.05) 25px -25px
+,rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px
+,rgba(240, 46, 170, 0.4) -5px -5px, rgba(240, 46, 170, 0.3) -10px -10px, rgba(240, 46, 170, 0.2) -15px -15px, rgba(240, 46, 170, 0.1) -20px -20px, rgba(240, 46, 170, 0.05) -25px -25px;
+  background-color: rgba(240, 46, 170, 0.4);
+  color: rgb(56, 0, 36);
+  border: 2px solid white;
+  transform: scale(1.2,1.2);
 }

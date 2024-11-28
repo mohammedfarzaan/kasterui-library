@@ -1,44 +1,43 @@
 
-/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, ease */
-.button {
-  background-color: transparent;
-  color: #ffffff;
-  padding: 15px 30px;
-  border-radius: 5px;
-  cursor: pointer;
+/* From Uiverse.io by praveen-prasad2 - Tags: button */
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
   position: relative;
   overflow: hidden;
-  transition: background-color 0.3s ease-in, transform 0.3s ease;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
 }
 
-.button:before {
+button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+button::before {
   content: "";
   position: absolute;
+  left: -50px;
   top: 0;
-  left: 0;
   width: 0;
   height: 100%;
-  background-color: #76a6ca;
-  opacity: 0;
-  transition: width 0.7s ease-in-out, opacity 0.9s ease;
+  background-color: #2c9caf;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
 }
 
-.button:hover {
-  transform: scale(1.05);
+button:hover::before {
+  width: 250%;
 }
 
-.button:hover:before {
-  width: 100%;
-  opacity: 0.6;
-}
 
-.button:active {
-  background-color: #76a6ca;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
-  transform: scale(0.98);
-}
+
 

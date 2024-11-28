@@ -1,66 +1,42 @@
 
-/* From Uiverse.io by csozidev - Tags: loading, loader, smooth, text animation, animated, wave, text, infinite */
-/* Wave text loader made by: csozi | Website: english.csozi.hu*/
-
-.text {
-  color: black;
-  font-weight: bolder;
+/* From Uiverse.io by angelo2004-mateus - Tags: material design, neumorphism, animation, loader, animated, gradients */
+.loader {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94, 104, 121, 0.137);
 }
 
-@keyframes letter {
-  0% {
-    font-size: 30px;
-  }
+.loader:before {
+  height: 4rem;
+  width: 4rem;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background: #ececec;
+  border-radius: 50%;
+  border: 2px solid #e2e1e1;
+  box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+}
 
-  50% {
-    font-size: 40px;
-  }
+.loader span {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, rgb(89, 92, 252), rgb(226, 57, 241));
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
 
   100% {
-    font-size: 30px;
+    transform: rotate(360deg);
   }
-}
-
-.letter {
-  animation: letter 1s infinite;
-}
-
-.letter1 {
-  animation-delay: 0s;
-}
-
-.letter2 {
-  animation-delay: -0.9s;
-}
-
-.letter3 {
-  animation-delay: -0.8s;
-}
-
-.letter4 {
-  animation-delay: -0.7s;
-}
-
-.letter5 {
-  animation-delay: -0.6s;
-}
-
-.letter6 {
-  animation-delay: -0.5s;
-}
-
-.letter7 {
-  animation-delay: -0.4s;
-}
-
-.letter8 {
-  animation-delay: -0.3s;
-}
-
-.letter9 {
-  animation-delay: -0.2s;
-}
-
-.letter10 {
-  animation-delay: -0.1s;
 }

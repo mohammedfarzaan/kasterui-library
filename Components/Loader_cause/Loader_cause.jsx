@@ -1,22 +1,37 @@
 import React from "react";
+import styles from "./Loader_cause.module.css";
 
 const Loader_cause = () => (
   <div>
-    <div className="animate-pulse flex flex-col items-center gap-4 w-60">
-      <div>
-        <div className="w-48 h-6 bg-slate-400 rounded-md"></div>
-        <div className="w-28 h-4 bg-slate-400 mx-auto mt-3 rounded-md"></div>
-      </div>
-      <div className="h-7 bg-slate-400 w-full rounded-md"></div>
-      <div className="h-7 bg-slate-400 w-full rounded-md"></div>
-      <div className="h-7 bg-slate-400 w-full rounded-md"></div>
-      <div className="h-7 bg-slate-400 w-1/2 rounded-md"></div>
+    <div className={styles["loader"]}>
+      <div className={styles["leaf"]}></div>
+      <div className={styles["leaf"]}></div>
+      <div className={styles["leaf"]}></div>
     </div>
   </div>
 );
 
 export default Loader_cause;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Loader_cause = () => (
+         <div>
+          <div className="loader">
+  <div className="leaf"></div>
+  <div className="leaf"></div>
+  <div className="leaf"></div>
+</div>
+        </div>
+        );
+
+        export default Loader_cause;
+        
+        
+         */
 }

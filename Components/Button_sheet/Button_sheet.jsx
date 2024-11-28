@@ -2,25 +2,26 @@ import React from "react";
 
 const Button_sheet = () => (
   <div>
-    <button className="btn group flex items-center bg-transparent p-2 px-6 text-xl font-thin tracking-widest text-white">
-      <span className="relative pr-4 pb-1 text-black after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-blue-500 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
-        Hover Me
-      </span>
-      <svg
-        className="-translate-x-2 fill-slate-700 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:scale-x-105 group-hover:fill-blue-500"
-        id="arrow-horizontal"
-        xmlns="http://www.w3.org/2000/svg"
-        width="30"
-        height="10"
-        viewBox="0 0 46 16"
-      >
-        <path
-          id="Path_10"
-          data-name="Path 10"
-          d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-          transform="translate(30)"
-        ></path>
-      </svg>
+    <button className="group cursor-pointer border-2 border-gray-300 bg-white px-2 py-1 font-bold rounded-xl shadow-md">
+      <div className="flex bg-gray-50 rounded-full px-4 py-3 shadow-inner">
+        <svg
+          stroke="currentColor"
+          strokeWidth="1.5"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="size-6 -rotate-45 mr-1 group-hover:rotate-0 duration-300"
+        >
+          <path
+            d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+            strokeLinejoin="round"
+            strokeLinecap="round"
+          ></path>
+        </svg>
+        <span className="group-hover:translate-x-1.5 group-hover:duration-300">
+          Send Message
+        </span>
+      </div>
     </button>
   </div>
 );

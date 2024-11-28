@@ -1,41 +1,32 @@
 
-/* From Uiverse.io by aadium - Tags: button, twist, dynamic */
-.morph-button {
-  display: relative;
-  background-color: #66DA43;
-  color: #66DA43;
-  width: 85px;
-  height: 40px;
-  border: 2px solid transparent;
+/* From Uiverse.io by vishal2231179  - Tags: button, light&dark, hover effect, hoverme, hover button, 3d button, button hover effect , generate button */
+.button {
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
+  /* padding: 15px; */
+  padding: 20px;
+  width: 190px;
+  /* background-color: rgb(43, 43, 43); */
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  border-style: double;
+  border-color: rgba(74, 61, 255, 0.753);
 
-.morph-button:hover {
-  transform: scale(1.5);
+  color: rgba(126, 185, 236, 0.968);
+  background-image: linear-gradient(to right, rgb(14, 15, 58), rgb(49, 3, 118));
+  /* border-color: rgb(67, 67, 67); */
+  transition: 300ms;
 }
+.button:hover {
+  border-color: rgb(100, 43, 215);
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 5%;
 
-.morph-button:active {
-  transform: scale(0.8);
-  background-color: #212121;
-  border: 2px solid #66DA43;
+  box-shadow: 0px 5px 10px 1px rgb(0, 0, 0);
+  font-size: 22px;
+  transition: 400px;
 }
-
-.morph-button:before {
-  content: "Twist";
-  display: block;
-  position: absolute;
-  margin-top: -22px;
-  margin-left: -2px;
-  padding: 12px 25px;
-  transform-origin: center;
-  transition: transform 0.3s ease-in-out;
-  z-index: 1;
-  background-color: #212121;
-  border: 2px solid #66DA43;
-}
-
-.morph-button:hover:before {
-  transform: rotate(45deg) scale(1.2);
+.svg {
+  height: 20px;
 }
 

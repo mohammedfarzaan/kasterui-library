@@ -3,27 +3,17 @@ import styles from "./Button_jet.module.css";
 
 const Button_jet = () => (
   <div>
-    <button
-      type="button"
-      className={styles["btn"] + styles["cube"] + styles["cube-hover"]}
-    >
-      <div className={styles["bg-top"]}>
-        <div className={styles["bg-inner"]}></div>
-      </div>
-      <div className={styles["bg-right"]}>
-        <div className={styles["bg-inner"]}></div>
-      </div>
-      <div className={styles["bg"]}>
-        <div className={styles["bg-inner"]}></div>
-      </div>
-      <div className={styles["text"]}>Hover Me</div>
+    <button>
+      <a href="#" className={styles["btn2"]}>
+        <span className={styles["spn2"]}>HELLO !</span>
+      </a>
     </button>
   </div>
 );
 
 export default Button_jet;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -32,17 +22,8 @@ export default Button_jet;
 
         const Button_jet = () => (
          <div>
-          <button type="button" className="btn cube cube-hover">
-  <div className="bg-top">
-  <div className="bg-inner"></div>
-  </div>
-  <div className="bg-right">
-  <div className="bg-inner"></div>
-  </div>
-  <div className="bg">
-  <div className="bg-inner"></div>
-  </div>
-  <div className="text">Hover Me</div>
+          <button>
+  <a href="#" className="btn2"><span className="spn2">HELLO !</span></a>
 </button>
         </div>
         );

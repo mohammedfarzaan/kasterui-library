@@ -3,17 +3,48 @@ import styles from "./Loader_then.module.css";
 
 const Loader_then = () => (
   <div>
-    <div className={styles["eye"]}>
-      <div className={styles["up"]}></div>
-      <div className={styles["mid"]}></div>
-      <div className={styles["down"]}></div>
+    <div className={styles["loading"]}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="124"
+        height="124"
+        viewBox="0 0 124 124"
+      >
+        <circle
+          className="circle-loading"
+          cx="62"
+          cy="62"
+          r="59"
+          fill="none"
+          stroke="hsl(271, 76%, 74%)"
+          strokeWidth="6px"
+        ></circle>
+        <circle
+          className="circle"
+          cx="62"
+          cy="62"
+          r="59"
+          fill="none"
+          stroke="hsl(271, 76%, 53%)"
+          strokeWidth="6px"
+          strokeLinecap="round"
+        ></circle>
+        <polyline
+          className="check"
+          points="73.56 48.63 57.88 72.69 49.38 62"
+          fill="none"
+          stroke="hsl(271, 76%, 53%)"
+          strokeWidth="6px"
+          strokeLinecap="round"
+        ></polyline>
+      </svg>
     </div>
   </div>
 );
 
 export default Loader_then;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -22,10 +53,12 @@ export default Loader_then;
 
         const Loader_then = () => (
          <div>
-          <div className="eye">
-    <div className="up"></div>
-    <div className="mid"></div> 
-    <div className="down"></div> 
+          <div className="loading">
+  <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 124 124">
+    <circle className="circle-loading" cx="62" cy="62" r="59" fill="none" stroke="hsl(271, 76%, 74%)" strokeWidth="6px"></circle>
+    <circle className="circle" cx="62" cy="62" r="59" fill="none" stroke="hsl(271, 76%, 53%)" strokeWidth="6px" strokeLinecap="round"></circle>
+    <polyline className="check" points="73.56 48.63 57.88 72.69 49.38 62" fill="none" stroke="hsl(271, 76%, 53%)" strokeWidth="6px" strokeLinecap="round"></polyline>
+  </svg>
 </div>
         </div>
         );

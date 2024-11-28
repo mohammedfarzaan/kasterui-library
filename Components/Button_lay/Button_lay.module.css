@@ -1,135 +1,131 @@
 
-/* From Uiverse.io by doniaskima - Tags: button, animated */
-.btn-31,
-.btn-31 *,
-.btn-31 :after,
-.btn-31 :before,
-.btn-31:after,
-.btn-31:before {
-  border: 0 solid;
-  box-sizing: border-box;
+/* From Uiverse.io by Navarog21 - Tags: button */
+button {
+  --sunGradient: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+  --moonGradient: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 140px;
+  height: 60px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 15px;
+  background-color: transparent;
+  transition: 0.5s;
+  overflow: hidden;
+  border: 4px solid black;
 }
 
-.btn-31 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
-  background-color: #000;
-  background-image: none;
-  color: #fff;
-  cursor: pointer;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-size: 100%;
-  font-weight: 900;
-  line-height: 1.5;
-  margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
+button:hover {
+  box-shadow: -15px -15px 500px white;
+  transition: 0.2s;
 }
 
-.btn-31:disabled {
-  cursor: default;
+button:hover span {
+  background: var(--sunGradient);
 }
 
-.btn-31:-moz-focusring {
-  outline: auto;
+.state {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: inherit;
+  transition: 0.4s;
+  width: 85%;
+  height: 82%;
+  border: 4px solid black;
 }
 
-.btn-31 svg {
-  display: block;
-  vertical-align: middle;
+#sun {
+  display: none;
+  background-color: #212121;
+  opacity: 0.85;
 }
 
-.btn-31 [hidden] {
+#moon {
+  background-color: #212121;
+  opacity: 0.85;
+}
+
+button:hover #sun {
+  display: flex;
+}
+
+button:hover #moon {
   display: none;
 }
 
-.btn-31 {
-  border-width: 1px;
-  padding: 1rem 2rem;
-  position: relative;
-  text-transform: uppercase;
+button:hover .lightRotation {
+  animation: 1s linear reverse infinite rotation413;
 }
 
-.btn-31:before {
-  --progress: 100%;
-  background: #fff;
-  -webkit-clip-path: polygon(
-    100% 0,
-    var(--progress) var(--progress),
-    0 100%,
-    100% 100%
-  );
-  clip-path: polygon(
-    100% 0,
-    var(--progress) var(--progress),
-    0 100%,
-    100% 100%
-  );
-  content: "";
-  inset: 0;
+button:hover .lightRotation2 {
+  animation: 2s linear infinite rotation_413;
+}
+
+button:hover .lightRotation3 {
+  animation: 10s linear reverse infinite rotation_413;
+}
+
+button:hover .lightRotation4 {
+  animation: 3s linear infinite rotation_413;
+}
+
+.lightRotation {
   position: absolute;
-  transition: -webkit-clip-path 0.2s ease;
-  transition: clip-path 0.2s ease;
-  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+  transition: 0.4s;
+  z-index: -1;
+  width: 60px;
+  height: 500px;
+  transform: rotate(50deg);
+  border-radius: inherit;
+  background: var(--moonGradient);
 }
 
-.btn-31:hover:before {
-  --progress: 0%;
+.lightRotation2 {
+  position: absolute;
+  transition: 0.4s;
+  z-index: -1;
+  width: 75px;
+  height: 500px;
+  transform: rotate(110deg);
+  border-radius: inherit;
+  background: var(--moonGradient);
 }
 
-.btn-31 .text-container {
-  display: block;
-  overflow: hidden;
-  position: relative;
+.lightRotation3 {
+  position: absolute;
+  transition: 0.4s;
+  z-index: -1;
+  width: 40px;
+  height: 260px;
+  border-radius: inherit;
+  background: var(--moonGradient);
 }
 
-.btn-31 .text {
-  display: block;
-  font-weight: 900;
-  mix-blend-mode: difference;
-  position: relative;
+.lightRotation4 {
+  position: absolute;
+  transition: 0.4s;
+  z-index: -1;
+  width: 24px;
+  height: 220px;
+  transform: rotate(100deg);
+  border-radius: inherit;
+  background: var(--moonGradient);
 }
 
-.btn-31:hover .text {
-  -webkit-animation: move-up-alternate 0.3s ease forwards;
-  animation: move-up-alternate 0.3s ease forwards;
-}
-
-@-webkit-keyframes move-up-alternate {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(80%);
-  }
-
-  51% {
-    transform: translateY(-80%);
+@keyframes rotation_413 {
+  from {
+    transform: rotate(0deg)
   }
 
   to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes move-up-alternate {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(80%);
-  }
-
-  51% {
-    transform: translateY(-80%);
-  }
-
-  to {
-    transform: translateY(0);
+    transform: rotate(360deg)
   }
 }
 

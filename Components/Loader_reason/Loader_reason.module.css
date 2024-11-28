@@ -1,63 +1,58 @@
 
-/* From Uiverse.io by PriyanshuGupta28 - Tags: loader, 3d loader, 3d cude loader */
-.loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+/* From Uiverse.io by AqFox - Tags: 3d, loader, cube */
+.spinner {
+ width: 44px;
+ height: 44px;
+ animation: spinner-y0fdc1 2s infinite ease;
+ transform-style: preserve-3d;
 }
 
-.cube {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  transform-style: preserve-3d;
-  animation: spin 2s infinite linear;
+.spinner > div {
+ background-color: rgba(0,77,255,0.2);
+ height: 100%;
+ position: absolute;
+ width: 100%;
+ border: 2px solid #004dff;
 }
 
-.side {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  opacity: 0.8;
+.spinner div:nth-of-type(1) {
+ transform: translateZ(-22px) rotateY(180deg);
 }
 
-.front {
-  transform: translateZ(50px);
-  background: linear-gradient(45deg, #ff4e50, #f9d423);
+.spinner div:nth-of-type(2) {
+ transform: rotateY(-270deg) translateX(50%);
+ transform-origin: top right;
 }
 
-.back {
-  transform: translateZ(-50px);
-  background: linear-gradient(45deg, #40e0d0, #ff8c00);
+.spinner div:nth-of-type(3) {
+ transform: rotateY(270deg) translateX(-50%);
+ transform-origin: center left;
 }
 
-.top {
-  transform: rotateX(90deg) translateZ(50px);
-  background: linear-gradient(45deg, #800080, #00bfff);
+.spinner div:nth-of-type(4) {
+ transform: rotateX(90deg) translateY(-50%);
+ transform-origin: top center;
 }
 
-.bottom {
-  transform: rotateX(90deg) translateZ(-50px);
-  background: linear-gradient(45deg, #008000, #ffff00);
+.spinner div:nth-of-type(5) {
+ transform: rotateX(-90deg) translateY(50%);
+ transform-origin: bottom center;
 }
 
-.left {
-  transform: rotateY(90deg) translateZ(50px);
-  background: linear-gradient(45deg, #0000ff, #ff1493);
+.spinner div:nth-of-type(6) {
+ transform: translateZ(22px);
 }
 
-.right {
-  transform: rotateY(90deg) translateZ(-50px);
-  background: linear-gradient(45deg, #00ffff, #ff0000);
-}
+@keyframes spinner-y0fdc1 {
+ 0% {
+  transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+ }
 
-@keyframes spin {
-  0% {
-    transform: rotateX(0deg) rotateY(0deg);
-  }
+ 50% {
+  transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+ }
 
-  100% {
-    transform: rotateX(360deg) rotateY(360deg);
-  }
+ 100% {
+  transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+ }
 }

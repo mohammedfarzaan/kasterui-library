@@ -1,64 +1,33 @@
 
-/* From Uiverse.io by fcb4355 - Tags: button, after, 3d button */
+/* From Uiverse.io by Subaashbala  - Tags: animation, button, animated, stripe */
 .button {
-  position: relative;
-  padding: 10px 20px;
-  border: none;
-  color: #007ffe;
   cursor: pointer;
-  transition: .3s;
-  transition-delay: .3s;
-  z-index: 0;
+  font-size: 1.25em;
+  padding: 1em 2em;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  font-weight: 900;
+  background: repeating-linear-gradient(
+    45deg,
+    rgb(255, 209, 124),
+    rgb(255, 209, 124) 10px,
+    rgb(255, 139, 97) 10px,
+    rgb(255, 139, 97) 20px
+  );
+  animation: move 500ms infinite linear forwards;
+  animation-play-state: paused;
+  box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.199);
+}
+.button:hover {
+  animation-play-state: running;
+}
+@keyframes move {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 30px;
+  }
 }
 
-.button::after {
-  position: absolute;
-  content: '';
-  width: 17px;
-  height: 17px;
-  background-color: #007ffe;
-  right: -20px;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: .3s;
-  opacity: 0;
-}
-
-.button::before {
-  position: absolute;
-  z-index: 0;
-  content: '';
-  width: 17px;
-  height: 17px;
-  background-color: #007ffe;
-  left: -20px;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: .3s;
-  opacity: 0;
-}
-
-button:hover::after {
-  z-index: -1;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  border-radius: 0;
-  opacity: 1;
-}
-
-button:hover::before {
-  z-index: -1;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  border-radius: 0;
-  opacity: 1;
-}
-
-button:hover {
-  color: #fff;
-  box-shadow: 10px 50px 50px rgba(52, 152, 219,.2);
-}

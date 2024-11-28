@@ -1,75 +1,31 @@
 
-/* From Uiverse.io by LilaRest - Tags: neumorphism, skeuomorphism, animation, minimalist, button, heart, realistic, support */
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 22px 20px 25px;
-  box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  background-color: #e8e8e8;
-  border-color: #ffe2e2;
-  border-style: solid;
-  border-width: 9px;
-  border-radius: 35px;
-  font-size: 25px;
-  font-weight: 900;
-  color: rgb(134, 124, 124);
-  font-family: monospace;
-  transition: transform 400ms cubic-bezier(.68,-0.55,.27,2.5), 
-  border-color 400ms ease-in-out,
-  background-color 400ms ease-in-out;
-  word-spacing: -2px;
+/* From Uiverse.io by bandirevanth - Tags: button */
+.custom-btn {
+ width: 130px;
+ height: 40px;
+ color: #fff;
+ border-radius: 5px;
+ padding: 10px 25px;
+ font-family: 'Lato', sans-serif;
+ font-weight: 500;
+ background: transparent;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ position: relative;
+ display: inline-block;
+ box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+ outline: none;
 }
 
-@keyframes movingBorders {
-  0% {
-    border-color: #fce4e4;
-  }
-
-  50% {
-    border-color: #ffd8d8;
-  }
-
-  90% {
-    border-color: #fce4e4;
-  }
+.btn-1 {
+ background: rgb(6,14,131);
+ background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+ border: none;
 }
 
-button:hover {
-  background-color: #eee;
-  transform: scale(105%);
-  animation: movingBorders 3s infinite;
-}
-
-button svg {
-  fill: rgb(255, 110, 110);
-  margin-left: 13px;
-}
-
-@keyframes beatingHeart {
-  0% {
-    transform: scale(1);
-  }
-
-  15% {
-    transform: scale(1.15);
-  }
-
-  30% {
-    transform: scale(1);
-  }
-
-  45% {
-    transform: scale(1.15);
-  }
-
-  60% {
-    transform: scale(1);
-  }
-}
-
-button:hover svg {
-  transform: scale(105%);
-  border-color: #ffd8d8;
-  animation: beatingHeart 1.2s infinite;
+.btn-1:hover {
+ background: rgb(0,3,255);
+ background: linear-gradient(0deg, rgb(0, 17, 255) 0%, rgba(2,126,251,1) 100%);
 }

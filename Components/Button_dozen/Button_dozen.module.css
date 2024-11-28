@@ -1,50 +1,51 @@
 
-/* From Uiverse.io by fanishah - Tags: icon, button */
-.button {
-  font-family: inherit;
-  background: #2CA0D9;
-  color: white;
-  padding: 0.35em 0;
-  font-size: 17px;
+/* From Uiverse.io by alexmaracinaru - Tags: button, shop */
+.cta {
   border: none;
-  border-radius: 0.7em;
-  letter-spacing: 0.08em;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
   position: relative;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  overflow: hidden;
-  height: 2.5em;
-  padding-left: 2.8em;
-  padding-right: 0.92em;
+  color: black;
+  padding-bottom: 20px;
 }
 
-.button .icon {
-  background: #fff;
-  height: 2em;
-  width: 2em;
-  border-radius: 2em;
+.hover-underline-animation:after {
+  content: "";
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 0.4em;
-  transition: all 0.5s;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
-.icon svg {
-  margin-left: 0.1em;
-  transition: all 0.5s;
-  color: #2CA0D9;
-  width: 1.2rem;
-  height: 1.2rem;
-}
-
-.button:hover .icon svg {
-  transform: rotate(360deg);
-}
-
-.button:hover .icon {
-  width: calc(100% - 0.85rem);
-  border-radius: 0.5em;
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

@@ -1,50 +1,46 @@
 
-/* From Uiverse.io by r7chardgh - Tags: button, hover, glitch */
+/* From Uiverse.io by Kemboi-Dun - Tags: button */
 .button {
+  text-decoration: none;
+  padding: 14px 24px;
+  color: #121212;
+  border: 1px solid #181818;
+  overflow: hidden;
   position: relative;
-  border: 0;
-  padding: 1em 2em;
-  font-weight: 700;
-  cursor: pointer;
-  outline: .5em solid #fff;
-  outline-offset: -.3em;
-  color: #fff;
-  background-color: #333;
-  text-transform: uppercase;
+  transition: color .5s .25s;
+  border-radius: 2px;
+  background: transparent;
+}
+
+.button::before,
+.button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #181818;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: transform .5s cubic-bezier(.785, .135, .15, .86);
+}
+
+.button::before {
+  left: 0;
+  transform-origin: left;
+}
+
+.button::after {
+  right: 0;
+  transform-origin: right;
+}
+
+.button:hover::before,
+.button:hover::after {
+  transform: scaleX(1);
 }
 
 .button:hover {
-  animation: shake 500ms infinite,glitch 400ms infinite steps(4);
-}
-
-@keyframes shake {
-  0% {
-  }
-
-  25% {
-    transform: translate(-.1em,-.1em);
-  }
-
-  50% {
-    transform: translate(.3em,0);
-  }
-
-  75% {
-    transform: translate(0,.3em);
-  }
-
-  100% {
-  }
-}
-
-@keyframes glitch {
-  from {
-    box-shadow: .8em .8em  rgba(240, 84, 219),
-  -.8em -.8em rgba(84, 240, 232);
-  }
-
-  to {
-    text-shadow: .3em .2em  rgba(240, 84, 219),
-  -.3em -.2em rgba(84, 240, 232);
-  }
+  color: #f8f8f8;
+  transition-delay: .5s;
 }

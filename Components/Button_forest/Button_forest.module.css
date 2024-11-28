@@ -1,18 +1,45 @@
 
-/* From Uiverse.io by Dear31 - Tags: button */
+/* From Uiverse.io by mostafabazyar - Tags: button */
 button {
-  background-color: rgb(255, 255, 255);
-  border: 3px solid black;
-  padding: 12px 32px;
-  border-radius: 22px;
-  box-shadow: 2px 2px 1px  black;
-  transition: all .2s ease;
-  font-size: 1em;
-  font-weight: 800;
+  position: relative;
+  margin: 1rem;
+  z-index: 2;
+  border-radius: 8px;
+  appearance: none;
+  padding: 1em 2em;
+  transition: all 0.2s;
+}
+
+button {
+  padding: 1.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+button::before {
+  content: "6";
+  position: absolute;
+  display: flex;
+  top: -0.75em;
+  right: -0.75em;
+  height: 1.8em;
+  width: 1.8em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  z-index: 999;
+  transition: all 0.2s;
 }
 
 button:hover {
-  transform: translate(-2px, -1px);
-  box-shadow: 7px 7px 1px  rgb(0, 0, 0);
-  transition: all .2s ease-in;
+  border-radius: 3px;
+  border-color: red;
+}
+
+button:hover::before {
+  height: 2em;
+  width: 2em;
+  font-size: 1.5em;
 }

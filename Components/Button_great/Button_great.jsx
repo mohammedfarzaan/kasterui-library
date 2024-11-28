@@ -3,15 +3,18 @@ import styles from "./Button_great.module.css";
 
 const Button_great = () => (
   <div>
-    <button className={styles["custom-button"]}>
-      <span>Click Here </span>
-    </button>
+    <label className={styles["menuButton"]} for="check">
+      <input type="checkbox" id="check" />
+      <span className={styles["top"]}></span>
+      <span className={styles["mid"]}></span>
+      <span className={styles["bot"]}></span>
+    </label>
   </div>
 );
 
 export default Button_great;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -20,7 +23,12 @@ export default Button_great;
 
         const Button_great = () => (
          <div>
-          <button className="custom-button"><span>Click Here </span></button>
+          <label className="menuButton" for="check">
+    <input type="checkbox" id="check" />
+    <span className="top"></span>
+    <span className="mid"></span>
+    <span className="bot"></span>
+</label>
         </div>
         );
 

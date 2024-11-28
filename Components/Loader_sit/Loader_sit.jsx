@@ -3,24 +3,16 @@ import styles from "./Loader_sit.module.css";
 
 const Loader_sit = () => (
   <div>
-    <div id="container">
-      <div id="square" className={styles["shimmer"]}></div>
-      <div id="content">
-        <div id="content-title" className={styles["shimmer"]}></div>
-        <div id="content-desc">
-          <div className={styles["line"] + styles["shimmer"]}></div>
-          <div className={styles["line"] + styles["shimmer"]}></div>
-          <div className={styles["line"] + styles["shimmer"]}></div>
-          <div className={styles["line"] + styles["shimmer"]}></div>
-        </div>
-      </div>
+    <div className={styles["loader"]}>
+      <label>Redirecting...</label>
+      <div className={styles["loading"]}></div>
     </div>
   </div>
 );
 
 export default Loader_sit;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -29,17 +21,9 @@ export default Loader_sit;
 
         const Loader_sit = () => (
          <div>
-          <div id="container">
-  <div id="square" className="shimmer"></div>
-  <div id="content">
-    <div id="content-title" className="shimmer"></div>
-    <div id="content-desc">
-      <div className="line shimmer"></div>
-      <div className="line shimmer"></div>
-      <div className="line shimmer"></div>
-      <div className="line shimmer"></div>
-    </div>
-  </div>
+          <div className="loader">
+  <label>Redirecting...</label>
+  <div className="loading"></div>
 </div>
         </div>
         );

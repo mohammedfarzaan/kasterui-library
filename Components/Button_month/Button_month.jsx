@@ -1,15 +1,36 @@
 import React from "react";
+import styles from "./Button_month.module.css";
 
 const Button_month = () => (
   <div>
-    <button className="cursor-pointer uppercase font-mono bg-white font-bold py-2 px-4 rounded border-2 border-black shadow-[0.25rem_0.25rem_#121212] transition-[transform_50ms, box-shadow_50ms] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[0.125rem_0.125rem_#121212]">
-      Click me!
-    </button>
+    <div className={styles["buttons"]}>
+      <button className={styles["btn"]}>
+        <span></span>
+        <p data-start="good luck!" data-text="start!" data-title="new game"></p>
+      </button>
+    </div>
   </div>
 );
 
 export default Button_month;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_month = () => (
+         <div>
+          <div className="buttons">
+   <button className="btn"><span></span><p data-start="good luck!" data-text="start!" data-title="new game"></p></button>
+</div>
+        </div>
+        );
+
+        export default Button_month;
+        
+        
+         */
 }

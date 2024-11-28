@@ -4,36 +4,36 @@ import styles from "./Button_kind.module.css";
 const Button_kind = () => (
   <div>
     <button className={styles["button"]}>
-      <a
-        href="https://www.facebook.com/JDmOwO"
-        className={styles["no-link-style"]}
+      <svg
+        xml:space="preserve"
+        viewBox="0 0 256 256"
+        height="256"
+        width="256"
+        version="1.1"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-          version="1.0"
-          x="0px"
-          y="0px"
-          width="50"
-          height="50"
-          viewBox="0 0 50 50"
-          style="null"
-          className="icon icons8-Facebook-Filled"
+        <defs></defs>
+        <g
+          transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+          style="stroke: none; strokeWidth: 0; stroke-dasharray: none; strokeLinecap: butt; strokeLinejoin: miter; stroke-miterlimit: 10; fill: none; fillRule: nonzero; opacity: 1;"
         >
           <path
-            d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z"
-            fill="#ffffff"
+            strokeLinecap="round"
+            transform="matrix(1 0 0 1 0 0)"
+            style="stroke: none; strokeWidth: 1; stroke-dasharray: none; strokeLinecap: butt; strokeLinejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fillRule: nonzero; opacity: 1;"
+            d="M 71.79 34.614 c -0.334 -0.497 -0.926 -0.745 -1.513 -0.63 l -18.311 3.528 l 3.718 -35.877 c 0.071 -0.682 -0.332 -1.32 -0.979 -1.55 c -0.648 -0.229 -1.362 0.011 -1.738 0.585 L 18.202 53.746 c -0.328 0.5 -0.325 1.144 0.008 1.639 c 0.33 0.493 0.922 0.742 1.513 0.632 l 18.312 -3.529 l -3.718 35.876 c -0.071 0.684 0.332 1.322 0.979 1.551 C 35.455 89.971 35.622 90 35.792 90 c 0.502 0 0.965 -0.251 1.241 -0.67 l 34.765 -53.076 C 72.126 35.754 72.122 35.11 71.79 34.614 z"
           ></path>
-        </svg>
-      </a>
+        </g>
+      </svg>
+      Join Now
     </button>
-    <br />
   </div>
 );
 
 export default Button_kind;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -43,12 +43,30 @@ export default Button_kind;
         const Button_kind = () => (
          <div>
           <button className="button">
-  <a href="https://www.facebook.com/JDmOwO" className="no-link-style">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" style="null" className="icon icons8-Facebook-Filled">
-      <path d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z" fill="#ffffff"></path>
-    </svg>
-  </a>
-</button><br />
+  <svg
+    xml:space="preserve"
+    viewBox="0 0 256 256"
+    height="256"
+    width="256"
+    version="1.1"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs></defs>
+    <g
+      transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+      style="stroke: none; strokeWidth: 0; stroke-dasharray: none; strokeLinecap: butt; strokeLinejoin: miter; stroke-miterlimit: 10; fill: none; fillRule: nonzero; opacity: 1;"
+    >
+      <path
+        strokeLinecap="round"
+        transform="matrix(1 0 0 1 0 0)"
+        style="stroke: none; strokeWidth: 1; stroke-dasharray: none; strokeLinecap: butt; strokeLinejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fillRule: nonzero; opacity: 1;"
+        d="M 71.79 34.614 c -0.334 -0.497 -0.926 -0.745 -1.513 -0.63 l -18.311 3.528 l 3.718 -35.877 c 0.071 -0.682 -0.332 -1.32 -0.979 -1.55 c -0.648 -0.229 -1.362 0.011 -1.738 0.585 L 18.202 53.746 c -0.328 0.5 -0.325 1.144 0.008 1.639 c 0.33 0.493 0.922 0.742 1.513 0.632 l 18.312 -3.529 l -3.718 35.876 c -0.071 0.684 0.332 1.322 0.979 1.551 C 35.455 89.971 35.622 90 35.792 90 c 0.502 0 0.965 -0.251 1.241 -0.67 l 34.765 -53.076 C 72.126 35.754 72.122 35.11 71.79 34.614 z"
+      ></path>
+    </g>
+  </svg>
+  Join Now
+</button>
         </div>
         );
 

@@ -3,28 +3,29 @@ import styles from "./Button_glass.module.css";
 
 const Button_glass = () => (
   <div>
-    <div className={styles["box"]}>
-      <div className={styles["container"]}>
-        <button className={styles["button"]}>
-          <span>A</span>
-        </button>
-        <button className={styles["button"]}>
-          <span>B</span>
-        </button>
-        <button className={styles["button"]}>
-          <span>C</span>
-        </button>
-        <button className={styles["button"]}>
-          <span>D</span>
-        </button>
+    <button className={styles["uiverse"]}>
+      <div className={styles["wrapper"]}>
+        <span>UIVERSE</span>
+        <div className={styles["circle"] + styles["circle-12"]}></div>
+        <div className={styles["circle"] + styles["circle-11"]}></div>
+        <div className={styles["circle"] + styles["circle-10"]}></div>
+        <div className={styles["circle"] + styles["circle-9"]}></div>
+        <div className={styles["circle"] + styles["circle-8"]}></div>
+        <div className={styles["circle"] + styles["circle-7"]}></div>
+        <div className={styles["circle"] + styles["circle-6"]}></div>
+        <div className={styles["circle"] + styles["circle-5"]}></div>
+        <div className={styles["circle"] + styles["circle-4"]}></div>
+        <div className={styles["circle"] + styles["circle-3"]}></div>
+        <div className={styles["circle"] + styles["circle-2"]}></div>
+        <div className={styles["circle"] + styles["circle-1"]}></div>
       </div>
-    </div>
+    </button>
   </div>
 );
 
 export default Button_glass;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -33,14 +34,23 @@ export default Button_glass;
 
         const Button_glass = () => (
          <div>
-          <div className="box">
-  <div className="container">
-    <button className="button"><span>A</span></button>
-    <button className="button"><span>B</span></button>
-    <button className="button"><span>C</span></button>
-    <button className="button"><span>D</span></button>
-  </div>
-</div>
+          <button className="uiverse">
+    <div className="wrapper">
+        <span>UIVERSE</span>
+        <div className="circle circle-12"></div>
+        <div className="circle circle-11"></div>
+        <div className="circle circle-10"></div>
+        <div className="circle circle-9"></div>
+        <div className="circle circle-8"></div>
+        <div className="circle circle-7"></div>
+        <div className="circle circle-6"></div>
+        <div className="circle circle-5"></div>
+        <div className="circle circle-4"></div>
+        <div className="circle circle-3"></div>
+        <div className="circle circle-2"></div>
+        <div className="circle circle-1"></div>
+    </div>
+</button>
         </div>
         );
 

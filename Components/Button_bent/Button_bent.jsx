@@ -3,70 +3,21 @@ import styles from "./Button_bent.module.css";
 
 const Button_bent = () => (
   <div>
-    <input
-      className={styles["toggle-checkbox"]}
-      id="toggle-checkbox"
-      type="checkbox"
-    />
-    <label className={styles["button"]} for="toggle-checkbox">
-      <div className={styles["content"]}>
-        <span className={styles["letters"]}>
-          <span style="--i: 1" data-label="C">
-            C
-          </span>
-          <span style="--i: 2" data-label="o">
-            o
-          </span>
-          <span style="--i: 3" data-label="p">
-            p
-          </span>
-          <span style="--i: 4" data-label="y">
-            y
-          </span>
-          <span style="--i: 5" data-label="L">
-            L
-          </span>
-          <span style="--i: 6" data-label="i">
-            i
-          </span>
-          <span style="--i: 7" data-label="n">
-            n
-          </span>
-          <span style="--i: 8" data-label="k">
-            k
-          </span>
-        </span>
-        <div className={styles["icon-container"]}>
-          <svg
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth="1.6"
-            fill="none"
-            data-slot="icon"
-            className="icon"
-          >
-            <path
-              className="bm"
-              d="M12.0017 6V4M8.14886 7.40371L6.86328 5.87162M15.864 7.40367L17.1496 5.87158"
-            ></path>
-            <path
-              d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
-              strokeLinejoin="round"
-              strokeLinecap="round"
-              className="link"
-            ></path>
-          </svg>
-        </div>
-      </div>
-    </label>
+    <button className={styles["btn-save"]}>
+      <svg
+        viewBox="0 0 384 512"
+        height="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"></path>
+      </svg>
+    </button>
   </div>
 );
 
 export default Button_bent;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -75,44 +26,10 @@ export default Button_bent;
 
         const Button_bent = () => (
          <div>
-          <input className="toggle-checkbox" id="toggle-checkbox" type="checkbox" />
-<label className="button" for="toggle-checkbox">
-  <div className="content">
-    <span className="letters">
-      <span style="--i: 1" data-label="C">C</span>
-      <span style="--i: 2" data-label="o">o</span>
-      <span style="--i: 3" data-label="p">p</span>
-      <span style="--i: 4" data-label="y">y</span>
-      <span style="--i: 5" data-label="L">L</span>
-      <span style="--i: 6" data-label="i">i</span>
-      <span style="--i: 7" data-label="n">n</span>
-      <span style="--i: 8" data-label="k">k</span>
-    </span>
-    <div className="icon-container">
-      <svg
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        fill="none"
-        data-slot="icon"
-        className="icon"
-      >
-        <path
-          className="bm"
-          d="M12.0017 6V4M8.14886 7.40371L6.86328 5.87162M15.864 7.40367L17.1496 5.87158"
-        ></path>
-        <path
-          d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
-          strokeLinejoin="round"
-          strokeLinecap="round"
-          className="link"
-        ></path>
-      </svg>
-    </div>
-  </div>
-</label>
+          <button className="btn-save">
+    <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"></path></svg>
+    
+  </button>
         </div>
         );
 

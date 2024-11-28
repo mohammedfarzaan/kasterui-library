@@ -1,87 +1,57 @@
 
-/* From Uiverse.io by aryansagar2405  - Tags: button */
-.share-wrapper {
-  --gap: 0.5em;
-  --radius: 0.35em;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  --dot-bg: #212121;
-  --dot-color: #313131;
-  --dot-size: 1px;
-  --dot-space: 22px;
-  background:
-    linear-gradient(
-        90deg,
-        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
-        transparent 1%
-      )
-      center / var(--dot-space) var(--dot-space),
-    linear-gradient(
-        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
-        transparent 1%
-      )
-      center / var(--dot-space) var(--dot-space),
-    var(--dot-color);
-  border: 0.1em solid #313131;
-  padding: 0.5em;
-  border-radius: var(--radius);
-  box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-.check[type="checkbox"] {
-  display: none;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  margin-top: -0.25em;
-  margin-bottom: -0.25em;
-}
-
-.icon {
-  width: 1.5em;
-  height: 1.5em;
-  margin-left: 0.5em;
-  fill: white;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.icon.active {
-  display: none;
-  fill: #2196f3;
-}
-
-.check[type="checkbox"]:checked + .container .icon.active {
+/* From Uiverse.io by PriyanshuGupta28 - Tags: button, 3d button, cool button, button hover effect , smooth effect , smooth button */
+.button {
   display: inline-block;
-  animation: pop 0.5s ease-in-out;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #00b5ff, #005eff);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.check[type="checkbox"]:checked + .container .icon.inactive {
-  display: none;
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(100%) rotateX(90deg);
+  transition: transform 0.3s ease-in-out;
 }
 
-.share-text {
-  margin-left: 0.5em;
-  padding: 0.5em;
-  color: white;
-  font-family: Arial, sans-serif;
-  font-weight: bolder;
+.button:hover::before {
+  transform: translateY(0) rotateX(0);
 }
 
-@keyframes pop {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
+.button::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 15px;
+  border: 1px solid #00b5ff;
+  z-index: -1;
 }
 
+    /* Hover Effect */
+.button:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+    /* Active Effect */
+.button:active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
+}

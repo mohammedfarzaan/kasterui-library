@@ -4,22 +4,44 @@ import styles from "./Button_brief.module.css";
 const Button_brief = () => (
   <div>
     <button className={styles["button"]}>
-      <div className={styles["b-hover"]}>
-        <div className={styles["cir-1"] + styles["filter"]}></div>
-        <div className={styles["cir-2"] + styles["filter"]}></div>
-        <div className={styles["cir-3"] + styles["filter"]}></div>
-        <div className={styles["cir-4"] + styles["filter"]}></div>
-        <div className={styles["cir-5"] + styles["filter"]}></div>
-        <div className={styles["cir-6"] + styles["filter"]}></div>
-      </div>
-      Charge &amp; Go
+      <span>Add to cart</span>
+      <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
+        <g
+          strokeLinejoin="round"
+          strokeLinecap="round"
+          id="SVGRepo_tracerCarrier"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          {" "}
+          <defs> </defs>{" "}
+          <g id="cart">
+            {" "}
+            <circle
+              r="1.91"
+              cy="20.59"
+              cx="10.07"
+              className="cls-1"
+            ></circle>{" "}
+            <circle r="1.91" cy="20.59" cx="18.66" className="cls-1"></circle>{" "}
+            <path
+              d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10"
+              className="cls-1"
+            ></path>{" "}
+            <polyline
+              points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91"
+              className="cls-1"
+            ></polyline>{" "}
+          </g>{" "}
+        </g>
+      </svg>
     </button>
   </div>
 );
 
 export default Button_brief;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -29,15 +51,8 @@ export default Button_brief;
         const Button_brief = () => (
          <div>
           <button className="button">
-  <div className="b-hover">
-    <div className="cir-1 filter"></div>
-    <div className="cir-2 filter"></div>
-    <div className="cir-3 filter"></div>
-    <div className="cir-4 filter"></div>
-    <div className="cir-5 filter"></div>
-    <div className="cir-6 filter"></div>
-  </div>
-  Charge &amp; Go
+  <span>Add to cart</span>
+  <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g strokeWidth="0" id="SVGRepo_bgCarrier"></g><g strokeLinejoin="round" strokeLinecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <defs>  </defs> <g id="cart"> <circle r="1.91" cy="20.59" cx="10.07" className="cls-1"></circle> <circle r="1.91" cy="20.59" cx="18.66" className="cls-1"></circle> <path d="M.52,1.5H3.18a2.87,2.87,0,0,1,2.74,2L9.11,13.91H8.64A2.39,2.39,0,0,0,6.25,16.3h0a2.39,2.39,0,0,0,2.39,2.38h10" className="cls-1"></path> <polyline points="7.21 5.32 22.48 5.32 22.48 7.23 20.57 13.91 9.11 13.91" className="cls-1"></polyline> </g> </g></svg>
 </button>
         </div>
         );

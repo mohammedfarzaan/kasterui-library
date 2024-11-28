@@ -1,19 +1,37 @@
 import React from "react";
+import styles from "./Loader_origin.module.css";
 
 const Loader_origin = () => (
   <div>
-    <div className="text-center">
-      <div className="w-16 h-16 border-4 border-dashed rounded-full animate-spin border-yellow-500 mx-auto"></div>
-      <h2 className="text-zinc-900 dark:text-white mt-4">Loading...</h2>
-      <p className="text-zinc-600 dark:text-zinc-400">
-        Your adventure is about to begin
-      </p>
+    <div className={styles["leap-frog"]}>
+      <div className={styles["leap-frog__dot"]}></div>
+      <div className={styles["leap-frog__dot"]}></div>
+      <div className={styles["leap-frog__dot"]}></div>
     </div>
   </div>
 );
 
 export default Loader_origin;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Loader_origin = () => (
+         <div>
+          <div className="leap-frog">
+<div className="leap-frog__dot"></div>
+<div className="leap-frog__dot"></div>
+<div className="leap-frog__dot"></div>
+</div>
+        </div>
+        );
+
+        export default Loader_origin;
+        
+        
+         */
 }

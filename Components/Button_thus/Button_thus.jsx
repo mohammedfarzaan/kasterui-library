@@ -1,18 +1,33 @@
 import React from "react";
+import styles from "./Button_thus.module.css";
 
 const Button_thus = () => (
   <div>
-    <button
-      className="relative px-8 py-2 rounded-md bg-white isolation-auto z-10 border-2 border-lime-500
-        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-lime-500 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"
-    >
-      Hover Me
+    <button className={styles["box"]}>
+      <p className={styles["text-button"]}>Button</p>
     </button>
   </div>
 );
 
 export default Button_thus;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_thus = () => (
+         <div>
+          <button className="box">
+  <p className="text-button">Button</p>
+</button>
+        </div>
+        );
+
+        export default Button_thus;
+        
+        
+         */
 }

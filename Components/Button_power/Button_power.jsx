@@ -1,43 +1,29 @@
 import React from "react";
-import styles from "./Button_power.module.css";
 
 const Button_power = () => (
   <div>
-    <a id="scroll-up" className={styles["scroll-up"]} href="#">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 0h24v24H0z" fill="none"></path>
+    <button className="flex items-center bg-blue-500 text-white gap-1 px-4 py-2 cursor-pointer text-gray-800 font-semibold tracking-widest rounded-md hover:bg-blue-400 duration-300 hover:gap-2 hover:translate-x-3">
+      Send
+      <svg
+        className="w-5 h-5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
-          fill="rgba(255,255,255,1)"
-          d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z"
+          d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+          strokeLinejoin="round"
+          strokeLinecap="round"
         ></path>
       </svg>
-    </a>
+    </button>
   </div>
 );
 
 export default Button_power;
-{
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Button_power = () => (
-         <div>
-          <a id="scroll-up" className="scroll-up" href="#">
-	<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-		<path d="M0 0h24v24H0z" fill="none"></path>
-		<path fill="rgba(255,255,255,1)" d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z">
-		</path>
-	</svg>
-</a>
-        </div>
-        );
-
-        export default Button_power;
-        
-        
-         */
+{
+  /* */
 }

@@ -3,13 +3,13 @@ import styles from "./Button_mile.module.css";
 
 const Button_mile = () => (
   <div>
-    <button className={styles["my-button"]}>Click Me</button>
+    <button>Hover Me</button>
   </div>
 );
 
 export default Button_mile;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -18,7 +18,9 @@ export default Button_mile;
 
         const Button_mile = () => (
          <div>
-          <button className="my-button">Click Me</button>
+          <button>
+    Hover Me
+</button>
         </div>
         );
 

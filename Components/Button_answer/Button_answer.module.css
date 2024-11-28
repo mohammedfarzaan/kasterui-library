@@ -1,25 +1,36 @@
 
-/* From Uiverse.io by adamgiebl - Tags: button */
-button {
- position: relative;
- padding: 10px 40px;
- margin: 0px 10px 10px 0px;
- float: left;
- border-radius: 3px;
- font-size: 20px;
- color: #FFF;
- text-decoration: none;
- background-color: #2ecc71;
- border: none;
- border-bottom: 5px solid #27ae60;
- text-shadow: 0px -2px #27ae60;
- -webkit-transition: all 0.1s;
- transition: all 0.1s;
+/* From Uiverse.io by AKAspidey01 - Tags: button, arrow */
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  background: rgb(164, 46, 194);
+  color: #fff;
 }
 
-button:hover, button:active {
- -webkit-transform: translate(0px,5px);
- -ms-transform: translate(0px,5px);
- transform: translate(0px,5px);
- border-bottom: 1px solid #2ecc71;
+.button-text {
+  transform: translateX(15px);
+  font-size: 1.5em;
+  font-weight: 700;
+  transition-duration: 0.3s;
 }
+
+.iconer {
+  transform: translateY(35px);
+  transition-duration: 0.3s;
+}
+
+.button:hover .button-text {
+  transform: translateX(0px);
+}
+
+.button:hover .iconer {
+  transform: translateY(0px);
+}
+
+
+

@@ -3,31 +3,13 @@ import styles from "./Button_aware.module.css";
 
 const Button_aware = () => (
   <div>
-    <button className={styles["button"]}>
-      <div className={styles["lid"]}>
-        <span className={styles["side"] + styles["top"]}></span>
-        <span className={styles["side"] + styles["front"]}></span>
-        <span className={styles["side"] + styles["back"]}> </span>
-        <span className={styles["side"] + styles["left"]}></span>
-        <span className={styles["side"] + styles["right"]}></span>
-      </div>
-      <div className={styles["panels"]}>
-        <div className={styles["panel-1"]}>
-          <div className={styles["panel-2"]}>
-            <div className={styles["btn-trigger"]}>
-              <span className={styles["btn-trigger-1"]}></span>
-              <span className={styles["btn-trigger-2"]}></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </button>
+    <button>Button</button>
   </div>
 );
 
 export default Button_aware;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -36,24 +18,8 @@ export default Button_aware;
 
         const Button_aware = () => (
          <div>
-          <button className="button">
-  <div className="lid">
-    <span className="side top"></span>
-    <span className="side front"></span>
-    <span className="side back"> </span>
-    <span className="side left"></span>
-    <span className="side right"></span>
-  </div>
-  <div className="panels">
-    <div className="panel-1">
-      <div className="panel-2">
-        <div className="btn-trigger">
-          <span className="btn-trigger-1"></span>
-          <span className="btn-trigger-2"></span>
-        </div>
-      </div>
-    </div>
-  </div>
+          <button>
+    Button
 </button>
         </div>
         );

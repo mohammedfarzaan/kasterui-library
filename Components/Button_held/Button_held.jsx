@@ -1,72 +1,66 @@
 import React from "react";
+import styles from "./Button_held.module.css";
 
 const Button_held = () => (
   <div>
-    <button className="group cursor-pointer w-32 h-32 bg-red-600 active:bg-black group-active:bg-black rounded-full border-4 border-black flex relative items-center justify-center duration-300 transition-all hover:w-[8.4rem] hover:h-[8.4rem] ease-in-out">
-      <div className="absolute border-b-4 border-black w-full group-active:border-red-600 group-active:border-[2px]"></div>
-      <div className="absolute border-b-4 border-black w-full rotate-45 group-active:border-red-600 group-active:border-[1px]"></div>
-      <div className="absolute border-b-4 border-black w-full rotate-90 group-active:border-red-600 group-active:border-[1px]"></div>
-      <div className="absolute border-b-4 border-black w-full -rotate-45 group-active:border-red-600 group-active:border-[1px]"></div>
-
-      <div className="absolute border-4 border-black w-4 h-4 bg-red-500 rounded-full group-active:bg-black"></div>
-      <div className="absolute border-[.2rem] border-black w-8 h-8 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]"></div>
-      <div className="absolute border-[.2rem] border-black w-12 h-12 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]"></div>
-      <div className="absolute border-[.2rem] border-black w-16 h-16 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]"></div>
-      <div className="absolute border-[.2rem] border-black w-20 h-20 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]"></div>
-      <div className="absolute border-[.2rem] border-black w-24 h-24 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]"></div>
-      <div className="absolute border-[.2rem] border-black w-28 h-28 bg-transparent rounded-full group-active:border-red-600 group-active:border-[1px]"></div>
-      <div className="flex space-x-4 z-0">
-        <div className="bg-white w-12 h-12 rotate-45 border-t-[.6rem] border-b-[.4rem] border-l-8 border-r-2 border-black after:border-3 after:border-black rounded-full group-hover:border-t-[1rem] group-hover:border-b-[.6rem] group-active:border-red-600 group-active:border-y-[.4rem] group-active:border-x-[.1rem]">
-          <div className="border-b-3 border-black"></div>
-        </div>
-        <div className="bg-white  w-12 h-12 -rotate-45  border-t-[.6rem] border-b-[.4rem] border-l-[.1rem] border-r-8 border-black after:border-3 after:border-black rounded-full group-hover:border-t-[1rem] group-hover:border-b-[.6rem] group-active:border-red-600 group-active:border-y-[.4rem] group-active:border-x-[.1rem]">
-          <div className="border-b-3 border-black"></div>
-        </div>
-      </div>
-
-      <div className="invisible absolute -top-14 group-hover:visible transition-all duration-200 delay-400">
-        <div className="absolute bg-gradient-to-b from-yellow-500 to-yellow-400 w-12 h-12 rotate-[25deg] left-4 top-2">
-          <div className="absolute w-10 h-10 bg-[#212121] animate-spin -left-4 -top-4"></div>
-          <div className="absolute w-8 h-8 bg-[#212121] animate-spin -left-4 top-2"></div>
-          <div className="absolute w-4 h-4 bg-[#212121] animate-spin -left-2  top-8"></div>
-          <div className="absolute w-10 h-10 bg-[#212121] animate-spin -right-4 -top-4"></div>
-          <div className="absolute w-8 h-8 bg-[#212121] animate-spin -right-4 top-2"></div>
-          <div className="absolute w-4 h-4 bg-[#212121] animate-spin -right-2  top-8"></div>
-        </div>
-
-        <div className="absolute bg-gradient-to-b from-yellow-500 to-yellow-400 w-12 h-12 -rotate-[25deg] -left-16 top-2">
-          <div className="absolute w-10 h-10 bg-[#212121] animate-spin -left-4 -top-4"></div>
-          <div className="absolute w-8 h-8 bg-[#212121] animate-spin -left-4 top-2"></div>
-          <div className="absolute w-4 h-4 bg-[#212121] animate-spin -left-2  top-8"></div>
-          <div className="absolute w-10 h-10 bg-[#212121] animate-spin -right-4 -top-4"></div>
-          <div className="absolute w-8 h-8 bg-[#212121] animate-spin -right-4 top-2"></div>
-          <div className="absolute w-4 h-4 bg-[#212121] animate-spin -right-2  top-8"></div>
-        </div>
-
-        <div className="absolute bg-gradient-to-b from-yellow-500 to-yellow-400 w-12 h-12 -rotate-[60deg] -left-[6.7rem] top-[3rem]">
-          <div className="absolute w-10 h-10 bg-[#212121] animate-spin -left-4 -top-4"></div>
-          <div className="absolute w-8 h-8 bg-[#212121] animate-spin -left-4 top-2"></div>
-          <div className="absolute w-4 h-4 bg-[#212121] animate-spin -left-2  top-8"></div>
-          <div className="absolute w-10 h-10 bg-[#212121] animate-spin -right-4 -top-4"></div>
-          <div className="absolute w-8 h-8 bg-[#212121] animate-spin -right-4 top-2"></div>
-          <div className="absolute w-4 h-4 bg-[#212121] animate-spin -right-2  top-8"></div>
-        </div>
-
-        <div className="absolute bg-gradient-to-b from-yellow-500 to-yellow-400 w-12 h-12 rotate-[60deg] left-[3.6rem] top-[3rem]">
-          <div className="absolute w-10 h-10 bg-[#212121] animate-spin -left-4 -top-4"></div>
-          <div className="absolute w-8 h-8 bg-[#212121] animate-spin -left-4 top-2"></div>
-          <div className="absolute w-4 h-4 bg-[#212121] animate-spin -left-2  top-8"></div>
-          <div className="absolute w-10 h-10 bg-[#212121] animate-spin -right-4 -top-4"></div>
-          <div className="absolute w-8 h-8 bg-[#212121] animate-spin -right-4 top-2"></div>
-          <div className="absolute w-4 h-4 bg-[#212121] animate-spin -right-2  top-8"></div>
-        </div>
-      </div>
+    <button className={styles["button"]}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMid"
+        viewBox="0 0 256 262"
+        className="svg"
+      >
+        <path
+          fill="#4285F4"
+          d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"
+          className="blue"
+        ></path>
+        <path
+          fill="#34A853"
+          d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"
+          className="green"
+        ></path>
+        <path
+          fill="#FBBC05"
+          d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"
+          className="yellow"
+        ></path>
+        <path
+          fill="#EB4335"
+          d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"
+          className="red"
+        ></path>
+      </svg>
+      <span className={styles["text"]}>Continue with Google</span>
     </button>
   </div>
 );
 
 export default Button_held;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_held = () => (
+         <div>
+          <button className="button">
+  <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 262" className="svg">
+  <path fill="#4285F4" d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" className="blue"></path>
+  <path fill="#34A853" d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" className="green"></path>
+  <path fill="#FBBC05" d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" className="yellow"></path>
+  <path fill="#EB4335" d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" className="red"></path>
+</svg>
+<span className="text">Continue with Google</span>
+</button>
+        </div>
+        );
+
+        export default Button_held;
+        
+        
+         */
 }

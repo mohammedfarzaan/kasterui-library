@@ -1,60 +1,58 @@
 
-/* From Uiverse.io by Shoh2008 - Tags: loader, pong */
+/* From Uiverse.io by VashonG - Tags: loader, disney, magical, wand */
 .loader {
-  position: relative;
-  height: 40px;
-  width: 6px;
-  color: #FFF;
-  animation: paddles 0.75s ease-out infinite;
+  --hue: 210;
+  --size: 100px;
+  --border: 10px;
+  --speed: 1s;
+  --blur: var(--border);
 }
 
-.loader:before {
+.loader {
+  width: var(--border);
+  aspect-ratio: 1;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  --y: calc((var(--size) * -0.5) + (var(--border) * 0.5));
+  transform: rotate(0deg) translateY(var(--y));
+  animation: spin var(--speed) infinite linear;
+}
+
+.loader::before {
   content: "";
   position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 15px;
-  width: 12px;
-  height: 12px;
-  background-color: greenyellow;
+  inset: calc(var(--border) * -0.5);
   border-radius: 50%;
-  animation: ballbounce 0.6s ease-out infinite;
+  background: white;
+  filter: blur(var(--blur));
+  z-index: -1;
 }
 
-@keyframes paddles {
-  0% {
-    box-shadow: -25px -10px, 25px 10px
-  }
+.loader::after {
+  content: "";
+  width: var(--size);
+  aspect-ratio: 1;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  translate: -50% 0;
+  background: conic-gradient(
+    white,
+    hsl(var(--hue), 100%, 70%),
+    hsl(var(--hue), 100%, 10%),
+    transparent 65%
+  );
+  border-radius: 50%;
+  mask: radial-gradient(
+    transparent calc(((var(--size) * 0.5) - var(--border)) - 1px),
+    white calc((var(--size) * 0.5) - var(--border))
+  );
+}
 
-  50% {
-    box-shadow: -25px 8px, 25px -10px
-  }
-
-  100% {
-    box-shadow: -25px -10px, 25px 10px
+@keyframes spin {
+  to {
+    transform: rotate(-360deg) translateY(var(--y));
   }
 }
 
-@keyframes ballbounce {
-  0% {
-    transform: translateX(-20px) scale(1, 1.2)
-  }
-
-  25% {
-    transform: scale(1.2, 1)
-  }
-
-  50% {
-    transform: translateX(15px) scale(1, 1.2)
-  }
-
-  75% {
-    transform: scale(1.2, 1)
-  }
-
-  100% {
-    transform: translateX(-20px)
-  }
-}
-      

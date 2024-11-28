@@ -1,59 +1,61 @@
 
-/* From Uiverse.io by aboalsim114 - Tags: button */
+/* From Uiverse.io by eirikvold - Tags: button */
 button {
-  padding: 0.8em 1.8em;
-  border: 2px solid #fff;
-  position: relative;
-  overflow: hidden;
-  background-color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 18px;
-  transition: .3s;
-  z-index: 1;
   font-family: inherit;
-  color: #000;
-  border-radius: 30px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-button::after {
-  content: "";
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: red;
-  text-align: center;
+  font-size: 18px;
+  background: linear-gradient(to bottom, #4dc7d9 0%,#66a6ff 100%);
+  color: white;
+  padding: 0.8em 1.2em;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 800ms ease-in-out;
-  z-index: -1;
-  opacity: 80%;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
 }
 
-button::before {
-  content: "";
-  width: 0;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: blue;
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button span {
+  display: block;
+  margin-left: 0.4em;
+  transition: all 0.3s;
+}
+
+button svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+  transition: all 0.3s;
+}
+
+button .svg-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 800ms ease-in-out;
-  z-index: -1;
-  opacity: 60%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0.5em;
+  transition: all 0.3s;
 }
 
-button:hover::after {
-  width: 37.5%;
+button:hover .svg-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-button:hover::before {
-  width: 37.5%;
+button:hover svg {
+  transform: rotate(45deg);
 }
+
+

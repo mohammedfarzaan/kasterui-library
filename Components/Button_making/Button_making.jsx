@@ -3,16 +3,29 @@ import styles from "./Button_making.module.css";
 
 const Button_making = () => (
   <div>
-    <button className={styles["animated-button"]}>
-      <span>Hover me</span>
-      <span></span>
+    <button className={styles["button"]}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        viewBox="0 0 20 20"
+        height="20"
+        fill="none"
+        className="svg-icon"
+      >
+        <g strokeWidth="1.5" strokeLinecap="round" stroke="#de8a2a">
+          <circle r="7.5" cy="10" cx="10"></circle>
+          <path d="m9.99998 7.5v5"></path>
+          <path d="m7.5 9.99998h5"></path>
+        </g>
+      </svg>
+      <span className={styles["lable"]}>Add</span>
     </button>
   </div>
 );
 
 export default Button_making;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -21,9 +34,9 @@ export default Button_making;
 
         const Button_making = () => (
          <div>
-          <button className="animated-button">
-  <span>Hover me</span>
-  <span></span>
+          <button className="button">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" height="20" fill="none" className="svg-icon"><g strokeWidth="1.5" strokeLinecap="round" stroke="#de8a2a"><circle r="7.5" cy="10" cx="10"></circle><path d="m9.99998 7.5v5"></path><path d="m7.5 9.99998h5"></path></g></svg>
+  <span className="lable">Add</span>
 </button>
         </div>
         );

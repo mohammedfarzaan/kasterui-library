@@ -1,65 +1,58 @@
 
-/* From Uiverse.io by aadium - Tags: button, dropdown, menu button  */
-.paste-button {
-  position: relative;
-  display: block;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
+/* From Uiverse.io by Creatlydev - Tags: button, hover effect, hover button */
 .button {
-  background-color: #4CAF50;
-  color: #212121;
-  padding: 10px 15px;
-  font-size: 15px;
-  font-weight: bold;
-  border: 2px solid transparent;
-  border-radius: 15px;
+  text-decoration: none;
+  line-height: 1;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 10px 10px 20px rgba(0,0,0,.05);
+  background-color: #fff;
+  color: #121212;
+  border: none;
   cursor: pointer;
 }
 
-.dropdown-content {
-  display: none;
-  font-size: 13px;
+.button-decor {
   position: absolute;
-  z-index: 1;
-  min-width: 200px;
-  background-color: #212121;
-  border: 2px solid #4CAF50;
-  border-radius: 0px 15px 15px 15px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  inset: 0;
+  background-color: var(--clr);
+  transform: translateX(-100%);
+  transition: transform .3s;
+  z-index: 0;
 }
 
-.dropdown-content a {
-  color: #4CAF50;
-  padding: 8px 10px;
-  text-decoration: none;
-  display: block;
-  transition: 0.1s;
+.button-content {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
 }
 
-.dropdown-content a:hover {
-  background-color: #4CAF50;
-  color: #212121;
+.button__icon {
+  width: 48px;
+  height: 40px;
+  background-color: var(--clr);
+  display: grid;
+  place-items: center;
 }
 
-.dropdown-content a:focus {
-  background-color: #212121;
-  color: #4CAF50;
+.button__text {
+  display: inline-block;
+  transition: color .2s;
+  padding: 2px 1.5rem 2px;
+  padding-left: .75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px;
 }
 
-.dropdown-content #top:hover {
-  border-radius: 0px 13px 0px 0px;
+.button:hover .button__text {
+  color: #fff;
 }
 
-.dropdown-content #bottom:hover {
-  border-radius: 0px 0px 13px 13px;
+.button:hover .button-decor {
+  transform: translate(0);
 }
-
-.paste-button:hover button {
-  border-radius: 15px 15px 0px 0px;
-}
-
-.paste-button:hover .dropdown-content {
-  display: block;
-}
-

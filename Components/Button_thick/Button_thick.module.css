@@ -1,53 +1,46 @@
 
-/* From Uiverse.io by itay1313 - Tags: button */
-.box {
-  --border-radius: 4vmin;
-  --bg: #3A3544;
-  --color: #D0BCFF;
-  --deg: 30deg;
-  -webkit-perspective: 200px;
-  perspective: 200px;
-  -webkit-transform-origin: top center;
-  -ms-transform-origin: top center;
-  transform-origin: top center;
-  max-width: 350px;
-  text-align: center;
-  outline: none;
-  border: none;
-  background: none;
+/* From Uiverse.io by louloudev59 - Tags: button, hover, hover effect, snapchat */
+.snapchat-link {
+  display: inline-block;
 }
 
-.button {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: rotateY(var(--deg));
-  transform: rotateY(var(--deg));
-  -webkit-transition: all 800ms ease-in-out;
-  transition: all 800ms ease-in-out;
-  border-radius: var(--border-radius);
-  font-style: normal;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.snapchat-btn {
   display: flex;
-  font-size: 2vmin;
-  letter-spacing: 0.03vmin;
-  padding: 1.3vmin 2.5vmin;
-  background: var(--bg);
-  color: var(--color);
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: yellow;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
 }
 
-.button:hover {
-  -webkit-transform: rotateY(calc(-1 * var(--deg)));
-  transform: rotateY(calc(-1 * var(--deg)));
+.snapchat-btn svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.box:active .button {
-  -webkit-transform: rotateY(calc(-1 * var(--deg) / 3));
-  transform: rotateY(calc(-1 * var(--deg) / 3));
+.snapchat-btn:hover {
+  padding: 10px 20px;
 }
 
-.box:focus .button {
-  border: 0.05vmin solid var(--color);
+.snapchat-btn:hover svg {
+  display: none;
+}
+
+.snapchat-text {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.snapchat-btn:hover .snapchat-text {
+  opacity: 1;
 }
 

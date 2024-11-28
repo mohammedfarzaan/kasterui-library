@@ -1,50 +1,95 @@
 
-/* From Uiverse.io by AqFox - Tags: loader */
-.spinner {
- position: relative;
- width: 16px;
- height: 16px;
+/* From Uiverse.io by S4tyendra - Tags: loader, fly, ball, animated, love */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.spinner div {
- width: 100%;
- height: 100%;
- background-color: #004dff;
- border-radius: 50%;
- animation: spinner-4t3wzl 1.25s infinite backwards;
+.container .preloader {
+  animation: rotate 2.3s cubic-bezier(0.75, 0, 0.5, 1) infinite;
 }
 
-.spinner div:nth-child(1) {
- animation-delay: 0.15s;
- background-color: rgba(0,77,255,0.9);
+@keyframes rotate {
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(720deg);
+  }
 }
 
-.spinner div:nth-child(2) {
- animation-delay: 0.3s;
- background-color: rgba(0,77,255,0.8);
+.preloader span {
+  --c: #f23f3f;
+  position: absolute;
+  display: block;
+  height: 64px;
+  width: 64px;
+  background: var(--c);
+  border: 1px solid var(--c);
+  border-radius: 100%;
 }
 
-.spinner div:nth-child(3) {
- animation-delay: 0.45s;
- background-color: rgba(0,77,255,0.7);
+.preloader span:nth-child(1) {
+  transform: translate(-28px, -28px);
+  animation: shape_1 2.3s cubic-bezier(0.75, 0, 0.5, 1) infinite;
 }
 
-.spinner div:nth-child(4) {
- animation-delay: 0.6s;
- background-color: rgba(0,77,255,0.6);
+@keyframes shape_1 {
+  60% {
+    transform: scale(0.4);
+  }
 }
 
-.spinner div:nth-child(5) {
- animation-delay: 0.75s;
- background-color: rgba(0,77,255,0.5);
+.preloader span:nth-child(2) {
+  transform: translate(28px, -28px);
+  animation: shape_2 2.3s cubic-bezier(0.75, 0, 0.5, 1) infinite;
 }
 
-@keyframes spinner-4t3wzl {
- 0% {
-  transform: rotate(0deg) translateY(-200%);
- }
-
- 60%, 100% {
-  transform: rotate(360deg) translateY(-200%);
- }
+@keyframes shape_2 {
+  40% {
+    transform: scale(0.4);
+  }
 }
+
+.preloader span:nth-child(3) {
+  position: relative;
+  border-radius: 0px;
+  transform: scale(0.98) rotate(-45deg);
+  animation: shape_3 2.3s cubic-bezier(0.75, 0, 0.5, 1) infinite;
+}
+
+@keyframes shape_3 {
+  50% {
+    border-radius: 100%;
+    transform: scale(0.5) rotate(-45deg);
+  }
+
+  100% {
+    transform: scale(0.98) rotate(-45deg);
+  }
+}
+
+.shadow {
+  position: relative;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 16px;
+  width: 64px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  border: 1px solid #d9d9d9;
+  animation: shadow 2.3s cubic-bezier(0.75, 0, 0.5, 1) infinite;
+}
+
+@keyframes shadow {
+  50% {
+    transform: translateX(-50%) scale(0.5);
+    border-color: #f2f2f2;
+  }
+}
+

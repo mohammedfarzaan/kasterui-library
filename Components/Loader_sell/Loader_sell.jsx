@@ -4,33 +4,16 @@ import styles from "./Loader_sell.module.css";
 const Loader_sell = () => (
   <div>
     <div className={styles["loader"]}>
-      <span style="--i:1"></span>
-      <span style="--i:2"></span>
-      <span style="--i:3"></span>
-      <span style="--i:4"></span>
-      <span style="--i:5"></span>
-      <span style="--i:6"></span>
-      <span style="--i:7"></span>
-      <span style="--i:8"></span>
-      <span style="--i:9"></span>
-      <span style="--i:10"></span>
-      <span style="--i:11"></span>
-      <span style="--i:12"></span>
-      <span style="--i:13"></span>
-      <span style="--i:14"></span>
-      <span style="--i:15"></span>
-      <span style="--i:16"></span>
-      <span style="--i:17"></span>
-      <span style="--i:18"></span>
-      <span style="--i:19"></span>
-      <span style="--i:20"></span>
+      <div className={styles["box-1"]}></div>
+      <div className={styles["box-2"]}></div>
+      <div className={styles["box-3"]}></div>
     </div>
   </div>
 );
 
 export default Loader_sell;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -40,26 +23,9 @@ export default Loader_sell;
         const Loader_sell = () => (
          <div>
           <div className="loader">
-    <span style="--i:1"></span>
-    <span style="--i:2"></span>
-    <span style="--i:3"></span>
-    <span style="--i:4"></span>
-    <span style="--i:5"></span>
-    <span style="--i:6"></span>
-    <span style="--i:7"></span>
-    <span style="--i:8"></span>
-    <span style="--i:9"></span>
-    <span style="--i:10"></span>
-    <span style="--i:11"></span>
-    <span style="--i:12"></span>
-    <span style="--i:13"></span>
-    <span style="--i:14"></span>
-    <span style="--i:15"></span>
-    <span style="--i:16"></span>
-    <span style="--i:17"></span>
-    <span style="--i:18"></span>
-    <span style="--i:19"></span>
-    <span style="--i:20"></span>
+  <div className="box-1"></div>
+  <div className="box-2"></div>
+  <div className="box-3"></div>
 </div>
         </div>
         );

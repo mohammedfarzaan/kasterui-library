@@ -1,45 +1,76 @@
 
-/* From Uiverse.io by xantha01 - Tags: button, arrow, startbutton  */
-.swipe {
-  position: relative;
-  background-color: #F1F7F7;
-  width: 200px;
-  height: 60px;
-  color: rgba(255, , 204, 1);
-  border-radius: 60px;
+/* From Uiverse.io by SoloResearchLab  - Website: https://uiverse.io/emmanuelh-dev/itchy-turtle-88 - Name: emmanuelh-dev - Tags: tooltip, action, button, smooth */
+.button-group {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  letter-spacing: 2px;
-  border-top: 0.5px solid rgba(0, 0, 0, 0.35);
-  border-left: 0.5px solid rgba(0, 0, 0, 0.35);
-  padding-left: 40px;
-  cursor: pointer;
-  transition: 0.35s ease;
+  background-color: white;
+  padding: 15px; /* 1.25rem assuming base font size is 12px */
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
 }
 
-.swipe:hover {
-  padding-left: 0;
-  padding-right: 40px;
-  color: #324B4C;
-}
-
-.container {
-  position: absolute;
-  left: 5px;
-  width: 50px;
-  height: 50px;
-  background: #7AB5B7;
-  border-radius: 50%;
-  transition: 0.35s ease;
+.button-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #f1f4f7;
+  width: 100%;
+  padding: 15px; /* 1.5rem */
+  border-radius: 10px;
 }
 
-.swipe:hover .container {
-  left: calc(100% - 55px);
-  color: #324B4C;
+.button-container a {
+  color: #3b82f6; /* light-blue-light */
+  border: 2px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px; /* 4 * 5 (assuming 1 unit = 5px) */
+  padding: 10px; /* 2.5 * 4 */
+  background-color: #f3f4f6; /* light-secondary */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 9999px;
+  font-size: 14px;
+  text-align: center;
+  transition: all 0.2s ease;
 }
+
+.button-container a:last-child {
+  margin-right: 0;
+}
+
+.button-container a:hover {
+  color: black;
+  border-color: #3b82f6; /* light-blue-light */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-container a svg {
+  width: 20px; /* 5 * 4 */
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  .button-group {
+    background-color: #1f2937; /* box-dark */
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.5),
+      0px 2px 4px -1px rgba(0, 0, 0, 0.3);
+  }
+
+  .button-container {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .button-container a {
+    color: #9ca3af; /* gray-400 */
+    background-color: #374151; /* button-curved-default-dark */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  }
+
+  .button-container a:hover,
+  .button-container a:focus,
+  .button-container a:active {
+    background-color: #4b5563; /* button-curved-pressed-dark */
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+}
+

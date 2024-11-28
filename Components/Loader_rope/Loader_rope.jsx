@@ -3,20 +3,19 @@ import styles from "./Loader_rope.module.css";
 
 const Loader_rope = () => (
   <div>
-    <div className={styles["sharingon"]}>
-      <div className={styles["ring"]}>
-        <div className={styles["to"]}></div>
-        <div className={styles["to"]}></div>
-        <div className={styles["to"]}></div>
-        <div className={styles["circle"]}></div>
-      </div>
+    <div className={styles["loader"]}>
+      <div
+        className={
+          styles["justify-content-center"] + styles["jimu-primary-loading"]
+        }
+      ></div>
     </div>
   </div>
 );
 
 export default Loader_rope;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -25,13 +24,8 @@ export default Loader_rope;
 
         const Loader_rope = () => (
          <div>
-          <div className="sharingon">
-  <div className="ring">
-  <div className="to"></div>
-<div className="to"></div>
-<div className="to"></div>
-<div className="circle"></div>
-</div>
+          <div className="loader">
+  <div className="justify-content-center jimu-primary-loading"></div>
 </div>
         </div>
         );

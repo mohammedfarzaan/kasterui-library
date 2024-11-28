@@ -1,26 +1,29 @@
 
-/* From Uiverse.io by satyamchaudharydev - Tags: button */
-/* inspired form gumroad website */
-.button {
-  --bg: #000;
-  --hover-bg: #ff90e8;
-  --hover-text: #000;
-  color: #fff;
-  border: 1px solid var(--bg);
-  border-radius: 4px;
-  padding: 0.8em 2em;
-  background: var(--bg);
-  transition: 0.2s;
+/* From Uiverse.io by JkHuger - Tags: button, smooth, animated */
+.testbutton {
+  display: block;
+  font-family: helvetica;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 9px 8px 0px -1px#BEE2F9, 9px 8px 0px 1px #000;
+  padding: 12px 25px;
+  border-radius: 11px;
+  border: 2px solid #000;
+  background: linear-gradient(to top, #63B8EE, #468CCF);
+  transition: .3s;
+  cursor: pointer;
 }
 
-.button:hover {
-  color: var(--hover-text);
-  transform: translate(-0.25rem,-0.25rem);
-  background: var(--hover-bg);
-  box-shadow: 0.25rem 0.25rem var(--bg);
+.testbutton:hover {
+  transition: .3s;
+  transform: translate(-.3em, -.3em);
+  box-shadow: 14px 13px 0px -1px #BEE2F9, 14px 13px 0px 1px #000;
+  border: 2px solid #000;
 }
 
-.button:active {
-  transform: translate(0);
-  box-shadow: none;
+.testbutton:active {
+  transition: .3s;
+  transform: translate(.6em, .6em);
+  box-shadow: 0px 0px 0px -1px #BEE2F9, 0px 0px 0px 0.1px#000;
 }

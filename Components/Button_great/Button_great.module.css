@@ -1,69 +1,60 @@
 
-/* From Uiverse.io by estefaniarizzo  - Tags: button, click, animated, css effect, multicolor, hover button, 3d button */
-.custom-button {
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(45deg, #4caf50, #ffc107, #2196f3);
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 0 4px rgba(0, 0, 0, 0.1) inset;
-  position: relative;
-  overflow: hidden;
-  perspective: 1000px;
-  width: 200px;
-  height: 40px;
+/* From Uiverse.io by Laurits123456 - Tags: button, hamburger, menu, menuicon, 3d button, cool hamburger */
+/*pushing a hamburger menu into a pillow texture like background*/
+
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 13%;
+  color: #090909;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 0.5em;
+  background: #171717;
+  border: 1px solid #171717;
+  transition: all .3s;
+  box-shadow: inset 4px 4px 12px #3a3a3a,
+             inset -4px -4px 12px #000000;
 }
 
-.custom-button:hover {
-  transform: translateY(-2px) rotateX(20deg) rotateY(10deg);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 0 0 4px rgba(0, 0, 0, 0.2) inset;
-  background: linear-gradient(45deg, #02ff0e, #fc0000, #ae00ff);
+.menuButton:hover {
+  border: 1px solid black;
 }
 
-.custom-button:focus {
-  outline: none;
+.menuButton:active {
+  color: #666;
+  box-shadow: 6px 6px 12px #3a3a3a,
+             -6px -6px 12px #000000;
 }
 
-.custom-button:active {
-  transform: translateY(0) scale(1.1) rotate(45deg);
-  box-shadow: none;
-  animation: pulse 0.5s ease;
+input[type = "checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+  visibility: hidden;
 }
 
-.custom-button::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: calc(100% - 8px);
-  height: calc(100% - 8px);
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 6px;
-  z-index: -1;
+.menuButton span {
+  width: 30px;
+  height: 4px;
+  background: rgb(200,200,200);
+  border-radius: 100px;
+  transition: 0.3s ease;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1) rotate(120deg);
-  }
-  100% {
-    transform: scale(1);
-  }
+input[type]:checked ~ span.top {
+  transform: translateY(290%)rotate(45deg);
+  width: 40px;
 }
 
-.custom-button span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease;
-  opacity: 1; /* El texto principal estará visible por defecto */
+input[type]:checked ~ span.bot {
+  transform: translateY(-270%) rotate(-45deg);
+  width: 40px;
+  box-shadow: 0 0 10px #495057;
 }
 
+input[type]:checked ~ span.mid {
+  transform: translateX(-20px);
+  opacity: 0;
+}

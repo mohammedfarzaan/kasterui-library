@@ -1,66 +1,46 @@
 
-/* From Uiverse.io by Wendell47 - Tags: button, blur filter */
-.button {
-  display: inline-flex;
+/* From Uiverse.io by JkHuger - Tags: neumorphism, button */
+button {
+  width: 60px;
+  height: 60px;
+  transform: scale(1);
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background: rgb(228, 232, 236);
+  background: linear-gradient(45deg, rgb(228, 232, 236) 0%, rgb(234 234 234) 100%);
+  box-shadow: -2px -7px 10px #f1f1f1, 4px 6px 10px #d4d7da;
+  transition: all .3s;
+}
+
+button:active {
+  background: rgb(218, 221, 224);
+  background: linear-gradient(45deg, rgb(218, 221, 224) 0%, rgb(241, 241, 241) 100%);
+  box-shadow: -2px -7px 10px #d4d7da, 
+    4px 6px 10px #f1f1f1,
+    inset -2px -7px 10px #f1f1f1, 
+    inset 4px 6px 10px #d4d7da;
+  transition: all .3s;
+  transform: scale(.95);
+}
+
+button i {
+  font-size: 20px;
+  background: linear-gradient(-45deg, gray 0%, lightgray 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all .3s;
+}
+
+button:active i {
+  transform: scale(.9);
+  transition: all .3s;
+}
+
+.svg {
+  width: 25px;
+  height: 60px;
+  border-style: none;
   align-items: center;
-  justify-content: center;
-  padding: 15px 30px;
-  border: 0;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10rem;
-  transition: all 0.02s;
-  font-weight: bold;
-  color: rgb(37, 37, 37);
-  z-index: 0;
-  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
-}
-
-.button:hover {
-  background: rgb(193, 228, 248);
-  color: rgb(33, 0, 85);
-}
-
-.button:active {
-  transform: scale(0.97);
-}
-
-.hoverEffect {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-}
-
-.hoverEffect div {
-  background: rgb(222,0,75);
-  background: linear-gradient(90deg, rgba(222,0,75,1) 0%, rgba(191,70,255,1) 49%, rgba(0,212,255,1) 100%);
-  border-radius: 40rem;
-  width: 10rem;
-  height: 10rem;
-  transition: 0.4s;
-  filter: blur(20px);
-  animation: effect infinite 3s linear;
-  opacity: 0.5;
-}
-
-.button:hover .hoverEffect div {
-  width: 8rem;
-  height: 8rem;
-}
-
-@keyframes effect {
-
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }

@@ -3,89 +3,26 @@ import styles from "./Button_offer.module.css";
 
 const Button_offer = () => (
   <div>
-    <button className={styles["readmore-btn"]}>
-      <span className={styles["book-wrapper"]}>
+    <a className={styles["codepen-button"]}>
+      <span className={styles["span"]}>
+        <p className={styles["p"]}>Shop</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          fill="rgb(86, 69, 117)"
-          viewBox="0 0 126 75"
-          className="book"
+          height="1em"
+          viewBox="0 0 576 512"
+          fill="#000"
+          className="cart"
         >
-          <rect
-            strokeWidth="3"
-            stroke="#fff"
-            rx="7.5"
-            height="70"
-            width="121"
-            y="2.5"
-            x="2.5"
-          ></rect>
-          <line
-            strokeWidth="3"
-            stroke="#fff"
-            y2="75"
-            x2="63.5"
-            x1="63.5"
-          ></line>
-          <path
-            strokeLinecap="round"
-            strokeWidth="4"
-            stroke="#fff"
-            d="M25 20H50"
-          ></path>
-          <path
-            strokeLinecap="round"
-            strokeWidth="4"
-            stroke="#fff"
-            d="M101 20H76"
-          ></path>
-          <path
-            strokeLinecap="round"
-            strokeWidth="4"
-            stroke="#fff"
-            d="M16 30L50 30"
-          ></path>
-          <path
-            strokeLinecap="round"
-            strokeWidth="4"
-            stroke="#fff"
-            d="M110 30L76 30"
-          ></path>
-        </svg>
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 65 75"
-          className="book-page"
-        >
-          <path
-            strokeLinecap="round"
-            strokeWidth="4"
-            stroke="#fff"
-            d="M40 20H15"
-          ></path>
-          <path
-            strokeLinecap="round"
-            strokeWidth="4"
-            stroke="#fff"
-            d="M49 30L15 30"
-          ></path>
-          <path
-            strokeWidth="3"
-            stroke="#fff"
-            d="M2.5 2.5H55C59.1421 2.5 62.5 5.85786 62.5 10V65C62.5 69.1421 59.1421 72.5 55 72.5H2.5V2.5Z"
-          ></path>
+          <path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path>
         </svg>
       </span>
-      <span className={styles["text"]}> Read more </span>
-    </button>
+    </a>
   </div>
 );
 
 export default Button_offer;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -94,77 +31,20 @@ export default Button_offer;
 
         const Button_offer = () => (
          <div>
-          <button className="readmore-btn">
-  <span className="book-wrapper">
+          <a className="codepen-button"
+  ><span className="span"
+    ><p className="p">Shop</p>
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      fill="rgb(86, 69, 117)"
-      viewBox="0 0 126 75"
-      className="book"
-    >
-      <rect
-        strokeWidth="3"
-        stroke="#fff"
-        rx="7.5"
-        height="70"
-        width="121"
-        y="2.5"
-        x="2.5"
-      ></rect>
-      <line strokeWidth="3" stroke="#fff" y2="75" x2="63.5" x1="63.5"></line>
-      <path
-        strokeLinecap="round"
-        strokeWidth="4"
-        stroke="#fff"
-        d="M25 20H50"
-      ></path>
-      <path
-        strokeLinecap="round"
-        strokeWidth="4"
-        stroke="#fff"
-        d="M101 20H76"
-      ></path>
-      <path
-        strokeLinecap="round"
-        strokeWidth="4"
-        stroke="#fff"
-        d="M16 30L50 30"
-      ></path>
-      <path
-        strokeLinecap="round"
-        strokeWidth="4"
-        stroke="#fff"
-        d="M110 30L76 30"
-      ></path>
-    </svg>
-
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 65 75"
-      className="book-page"
+      height="1em"
+      viewBox="0 0 576 512"
+      fill="#000"
+      className="cart"
     >
       <path
-        strokeLinecap="round"
-        strokeWidth="4"
-        stroke="#fff"
-        d="M40 20H15"
-      ></path>
-      <path
-        strokeLinecap="round"
-        strokeWidth="4"
-        stroke="#fff"
-        d="M49 30L15 30"
-      ></path>
-      <path
-        strokeWidth="3"
-        stroke="#fff"
-        d="M2.5 2.5H55C59.1421 2.5 62.5 5.85786 62.5 10V65C62.5 69.1421 59.1421 72.5 55 72.5H2.5V2.5Z"
-      ></path>
-    </svg>
-  </span>
-  <span className="text"> Read more </span>
-</button>
+        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+      ></path></svg></span
+></a>
         </div>
         );
 

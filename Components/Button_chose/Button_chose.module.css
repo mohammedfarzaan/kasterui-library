@@ -1,81 +1,28 @@
 
-/* From Uiverse.io by MuhammadHasann - Tags: button */
-button {
-  position: relative;
-  padding: 13px 35px;
-  background: transparent;
-  font-size: 17px;
-  font-weight: 900;
+/* From Uiverse.io by Hysean2  - Tags: simple, minimalist, button, modern */
+.button {
+  cursor: pointer;
+  padding: 1em 1.8em;
+  border-radius: 2em;
+  border: 3px solid #414141;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+  background-color: #222222;
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.15);
   border: none;
-  transition: all .3s ease-in-out;
+  background: linear-gradient(
+    -80deg,
+    rgba(150, 93, 233, 1) 10%,
+    rgba(99, 88, 238, 1) 95%
+  );
 }
 
-button::after {
-  content: "Read More";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 155px;
-  height: 47px;
-  background-color: #ffffff;
-  font-size: 17px;
-  font-weight: 900;
-  line-height: 47px;
-  color: #181818;
-  border: 2px solid #181818;
-  border-radius: 50px;
-  transition: all .3s ease-in-out;
-  z-index: 2;
+.button:active {
+  transform: scale(0.95);
 }
 
-button:hover::after {
-  width: 165px;
-  height: 50px;
-  font-size: 18px;
-  line-height: 50px;
-}
-
-button:focus::after {
-  content: "Read less";
-  top: 200%;
-  width: 155px;
-  height: 47px;
-  font-size: 17px;
-  line-height: 47px;
-  z-index: -2;
-  pointer-events: none;
-}
-
-.icon {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 20px;
-  height: auto;
-  z-index: -3;
-  transition: all .3s ease-in-out;
-}
-
-button:focus .icon {
-  top: -250%;
-  width: 75px;
-  height: auto;
-}
-
-.fil0 {
-  fill: #333333
-}
-
-.fil2 {
-  fill: #222222
-}
-
-.fil1 {
-  fill: #181818
-}
-
-.fil3 {
-  fill: #181818
-}

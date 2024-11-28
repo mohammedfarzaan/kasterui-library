@@ -3,17 +3,24 @@ import styles from "./Loader_lay.module.css";
 
 const Loader_lay = () => (
   <div>
-    <div className={styles["loader"]}>
-      <span className={styles["hour"]}></span>
-      <span className={styles["min"]}></span>
-      <span className={styles["circel"]}></span>
+    <div className={styles["loading"]}>
+      <svg width="64px" height="48px">
+        <polyline
+          points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"
+          id="back"
+        ></polyline>
+        <polyline
+          points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"
+          id="front"
+        ></polyline>
+      </svg>
     </div>
   </div>
 );
 
 export default Loader_lay;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -22,10 +29,11 @@ export default Loader_lay;
 
         const Loader_lay = () => (
          <div>
-          <div className="loader">
-  <span className="hour"></span>
-  <span className="min"></span>
-  <span className="circel"></span>
+          <div className="loading">
+  <svg width="64px" height="48px">
+      <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
+    <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
+  </svg>
 </div>
         </div>
         );

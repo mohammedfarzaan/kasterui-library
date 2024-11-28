@@ -1,111 +1,118 @@
 
-/* From Uiverse.io by MRez321  - Tags: button, hover, animated, hover button, #button, button hover effect  */
-.button {
+/* From Uiverse.io by csozidev - Tags: simple, neumorphism, button, hover, share, modern, hover effect, hoverme, simple button, hover button */
+/* Cool share button made by: csozi | Website: english.csozi.hu*/
+
+.buttons {
   position: relative;
-  z-index: 5;
-  isolation: isolate;
-  cursor: pointer;
-  transition: 0.4s;
-
+  display: grid;
+  place-items: center;
+  height: fit-content;
   width: fit-content;
-  height: 4.8rem;
-  padding: 1rem;
-  margin-inline: auto;
-  border: solid 3px;
-  border-color: #0000004d #0000004d #00000080 #00000080;
-  border-radius: 0.8rem;
-
-  font-family: cursive;
-  font-size: 1.4rem;
-  font-weight: 700;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-
-  animation: boxShadowRotation 2s linear infinite;
-}
-.button:hover,
-.button:active {
-  scale: 0.96;
-  border-color: #00000080 #00000080 #0000004d #0000004d;
-  padding: 2rem;
-  box-shadow: 0 0 4px 2px rgba(208, 212, 218, 0.979);
-  background: #fbfdfc;
+  transition: 0.3s;
+  border-radius: 50%;
 }
 
-.button::before,
-.button::after {
+.buttons:hover {
+  padding: 60px;
+}
+
+.buttons:hover .button {
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+.main-button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  border: none;
+  background: #e8e8e8;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  border-radius: 50%;
+  transition: 0.2s;
+  z-index: 100;
+}
+
+.button {
   position: absolute;
-  content: "";
-  background: #f4f5f4;
-  transition: 0.4s;
-}
-.button::before {
-  z-index: -1;
-  inset: 0.3rem;
-  border-radius: 4rem;
-  box-shadow: inset 0 0 4px 2px rgba(208, 212, 218, 0.979);
-}
-.button:hover::before {
-  inset: 0.1rem;
-  z-index: -1;
-  margin-inline: auto;
-  border: solid 1px;
-  border-color: #00000080 #00000080 #0000004d #0000004d;
-  border-radius: 0.8rem;
-  animation: boxShadowRotation 2s linear infinite;
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-}
-.button::after {
-  background: none;
-  z-index: -2;
-  border-radius: 1rem;
-}
-.button:hover::after {
-  inset: -0.5rem;
-  border: solid 1px #00000080;
-  box-shadow: 0 0 10px 4px #a1c4fd;
-  background: #c2e9fb;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  border: none;
+  background: #e8e8e8;
+  box-shadow: 5px 5px 12px rgba(202, 202, 202, 0), -5px -5px 12px rgba(255, 255, 255, 0);
+  transition: 0.3s;
+  border-radius: 50%;
 }
 
-.button svg {
-  width: 2rem;
-  height: 2rem;
-  z-index: 10;
-}
-.button:hover svg {
-  animation: rotation 0.8s linear;
-  filter: drop-shadow(0 0 10px 10px rgb(170, 166, 166));
+.discord-button:hover {
+  background: #5865F2;
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg) translate(0, 0) scale(1);
-  }
-  50% {
-    transform: rotate(180deg) translate(-4rem, -2rem) scale(1.4);
-  }
-  100% {
-    transform: rotate(360deg) translate(0, 0) scale(1);
-  }
-}
-@keyframes boxShadowRotation {
-  0% {
-    box-shadow: inset 10px 10px 20px rgba(29, 43, 83, 0.2);
-  }
-  25% {
-    box-shadow: inset -10px 10px 20px rgba(29, 43, 83, 0.2);
-  }
-  50% {
-    box-shadow: inset -10px -10px 20px rgba(29, 43, 83, 0.2);
-  }
-  75% {
-    box-shadow: inset 10px -10px 20px rgba(29, 43, 83, 0.2);
-  }
-  100% {
-    box-shadow: inset 10px 10px 20px rgba(29, 43, 83, 0.2);
-  }
+.buttons:hover .discord-button {
+  translate: 70px 0px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
 }
 
+.twitter-button:hover {
+  background: #1CA1F1;
+}
+
+.buttons:hover .twitter-button {
+  translate: 47px -47px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+.reddit-button:hover {
+  background: #FF4500;
+}
+
+.buttons:hover .reddit-button {
+  translate: 0px -70px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+.messenger-button:hover {
+  background: #0093FF;
+}
+
+.buttons:hover .messenger-button {
+  translate: -47px -47px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+.pinterest-button:hover {
+  background: #F0002A;
+}
+
+.buttons:hover .pinterest-button {
+  translate: -70px 0px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+.instagram-button:hover {
+  background: #F914AF;
+}
+
+.buttons:hover .instagram-button {
+  translate: -47px 47px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+.snapchat-button:hover {
+  background: #FFFC00;
+}
+
+.buttons:hover .snapchat-button {
+  translate: 0px 70px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}
+
+.whatsapp-button:hover {
+  background: #25D366;
+}
+
+.buttons:hover .whatsapp-button {
+  translate: 47px 47px;
+  box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+}

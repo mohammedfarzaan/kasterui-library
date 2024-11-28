@@ -1,76 +1,32 @@
 
-/* From Uiverse.io by kamehame-ha - Tags: button, hover, Discord, dark, light */
-.light-button button.bt {
-  position: relative;
-  height: 200px;
-  display: flex;
-  align-items: flex-end;
-  outline: none;
-  background: none;
-  border: none;
+/* From Uiverse.io by TimTrayler - Tags: button */
+button {
+ --hover-shadows: 16px 16px 33px #121212,
+                   -16px -16px 33px #303030;
+ --accent: fuchsia;
+ font-weight: bold;
+ letter-spacing: 0.1em;
+ border: none;
+ border-radius: 1.1em;
+ background-color: #212121;
+ color: white;
+ padding: 1em 2em;
+ transition: box-shadow ease-in-out 0.3s,
+             background-color ease-in-out 0.1s,
+             letter-spacing ease-in-out 0.1s,
+             transform ease-in-out 0.1s;
+ box-shadow: 13px 13px 10px #1c1c1c,
+             -13px -13px 10px #262626;
 }
 
-.light-button button.bt .button-holder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100px;
-  width: 100px;
-  background-color: #0a0a0a;
-  border-radius: 5px;
-  color: #0f0f0f;
-  font-weight: 700;
-  transition: 300ms;
-  outline: #0f0f0f 2px solid;
-  outline-offset: 20;
+button:hover {
+ box-shadow: var(--hover-shadows);
 }
 
-.light-button button.bt .button-holder svg {
-  height: 50px;
-  fill: #0f0f0f;
-  transition: 300ms;
+button:active {
+ box-shadow: var(--hover-shadows),
+              var(--accent) 0px 0px 30px 5px;
+ background-color: var(--accent);
+ transform: scale(0.95);
 }
 
-.light-button button.bt .light-holder {
-  position: absolute;
-  height: 200px;
-  width: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.light-button button.bt .light-holder .dot {
-  position: absolute;
-  top: 0;
-  width: 10px;
-  height: 10px;
-  background-color: #0a0a0a;
-  border-radius: 10px;
-  z-index: 2;
-}
-
-.light-button button.bt .light-holder .light {
-  position: absolute;
-  top: 0;
-  width: 200px;
-  height: 200px;
-  clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
-  background: transparent;
-}
-
-.light-button button.bt:hover .button-holder svg {
-  fill: rgba(88, 101, 242, 1);
-}
-
-.light-button button.bt:hover .button-holder {
-  color: rgba(88, 101, 242, 1);
-  outline: rgba(88, 101, 242, 1) 2px solid;
-  outline-offset: 2px;
-}
-
-.light-button button.bt:hover .light-holder .light {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgba(88, 101, 242, 1) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
-}

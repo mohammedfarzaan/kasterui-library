@@ -1,33 +1,39 @@
 
-/* From Uiverse.io by Showbizfleet - Tags: button */
-button {
-  height: 50px;
-  margin: 5px;
-  width: 120px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
+/* From Uiverse.io by eslam-hany - Tags: button */
+.btn {
+  position: relative;
+  padding: 10px 50px;
+  font-size: 20px;
+  border: 1px solid #002B5B;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.btn:hover {
+  transform: scale(1.1);
   color: #fff;
-  border: none;
-  border-radius: 5px;
-  background: linear-gradient(145deg, #9c27b0, #f44336, #ff9800, #ffc107, #8bc34a, #4caf50, #2196f3, #03a9f4, #00bcd4, #009688);
-  background-size: 200%;
-  background-position: 0%;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s;
 }
 
-button:hover {
-  background-position: 100%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25), inset 0px -2px 0px rgba(255, 255, 255, 0.2);
+.btn::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 100%;
+  border-radius: 15px;
+  background: linear-gradient(#002B5b,#EA5455);
+  transition: all 0.5s;
+  z-index: -1;
 }
 
-button:focus {
-  outline: none;
+.btn:hover::after {
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  transition: all 0.5s;
 }
-
-button:active {
-  background-size: 100%;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(255, 255, 255, 0.2);
-}
-

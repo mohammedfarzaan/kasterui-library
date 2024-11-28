@@ -1,32 +1,21 @@
 
-/* From Uiverse.io by Fernando-sv - Tags: loader */
-.loader {
-  border: 4px solid rgba(0, 0, 0, .1);
-  border-left-color: transparent;
-  border-radius: 50%;
+/* From Uiverse.io by gagan-gv - Tags: loader */
+.loader span {
+ font-size: 22px;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: 600;
+ animation: blur 3s linear infinite;
+ line-height: 20px;
+ transition: all 0.5s;
+ letter-spacing: 0.2em;
 }
 
-.loader {
-  border: 4px solid rgba(0, 0, 0, .1);
-  border-left-color: transparent;
-  width: 36px;
-  height: 36px;
-}
+@keyframes blur {
+ 0%, 90% {
+  filter: blur(0);
+ }
 
-.loader {
-  border: 4px solid rgba(0, 0, 0, .1);
-  border-left-color: transparent;
-  width: 36px;
-  height: 36px;
-  animation: spin89345 1s linear infinite;
-}
-
-@keyframes spin89345 {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+ 50% {
+  filter: blur(10px);
+ }
 }

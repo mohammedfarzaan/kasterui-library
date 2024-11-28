@@ -3,16 +3,15 @@ import styles from "./Loader_cook.module.css";
 
 const Loader_cook = () => (
   <div>
-    <div className={styles["loading"]}>
-      <div className={styles["d1"]}></div>
-      <div className={styles["d2"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["cover"]}></div>
     </div>
   </div>
 );
 
 export default Loader_cook;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -21,9 +20,8 @@ export default Loader_cook;
 
         const Loader_cook = () => (
          <div>
-          <div className="loading">
-    <div className="d1"></div>
-    <div className="d2"></div>
+          <div className="loader">
+  <div className="cover"></div>
 </div>
         </div>
         );

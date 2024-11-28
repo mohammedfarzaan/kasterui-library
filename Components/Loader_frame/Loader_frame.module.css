@@ -1,33 +1,62 @@
 
-/* From Uiverse.io by dhruv465 - Tags: loader, animated, circle loader */
+/* From Uiverse.io by zebra76966 - Tags: loader, multicolor */
 .loader {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid #3498db;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
+  border-top: 8px solid hotpink;
+  border-bottom: 8px solid #f55951;
+  border-left: 8px solid #3a9efd;
+  border-right: 8px solid #1fff7c;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  animation: looper 5s infinite ease-in-out;
 }
 
-/* Add some glow effect */
-.loader::after {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  border-radius: 50%;
-  box-shadow: inset 0px 0px 20px #3498db;
-}
-
-/* Rotate the circle */
-@keyframes spin {
+@keyframes looper {
   0% {
-    transform: rotate(0deg);
+    border-radius: 100% 100% 100% 100%;
+    border-color: hotpink #3a9efd #1fff7c #f55951;
+  }
+
+  10% {
+    border-radius: 0% 100% 0% 0%;
+    border-color: #f55951;
+    transform: rotate(150deg);
+  }
+
+  20% {
+    border-radius: 0% 0% 0% 0%;
+    border-color: #3a9efd;
+  }
+
+  30% {
+    border-radius: 0% 0% 0% 0%;
+    border-color: #1fff7c;
+  }
+
+  40% {
+    border-radius: 0% 0% 0% 0%;
+    border-color: #3a9efd;
+  }
+
+  50% {
+    border-radius: 100%;
+    border-color: #f55951;
+  }
+
+  90% {
+    border-radius: 100%;
+    transform: rotate(360deg);
+    border-style: dashed;
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
+    border-radius: 100% 100% 100% 100%;
+    border-color: hotpink #3a9efd #1fff7c #f55951;
   }
 }
+
+
+
+
+

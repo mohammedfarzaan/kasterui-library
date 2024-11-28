@@ -3,13 +3,19 @@ import styles from "./Button_wire.module.css";
 
 const Button_wire = () => (
   <div>
-    <button className={styles["beautiful-button"]}>Click me!</button>
+    <button className={styles["button"]}>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Hover Me
+    </button>
   </div>
 );
 
 export default Button_wire;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -18,8 +24,12 @@ export default Button_wire;
 
         const Button_wire = () => (
          <div>
-          <button className="beautiful-button">
-  Click me!
+          <button className="button">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  Hover Me
 </button>
         </div>
         );

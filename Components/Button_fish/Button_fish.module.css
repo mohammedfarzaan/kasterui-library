@@ -1,43 +1,42 @@
 
-/* From Uiverse.io by yaasiinaxmed - Tags: button */
-button {
-  --color: #0077ff;
-  font-family: inherit;
-  display: inline-block;
-  width: 6em;
-  height: 2.6em;
-  line-height: 2.5em;
-  overflow: hidden;
-  margin: 20px;
-  font-size: 17px;
-  z-index: 1;
-  color: var(--color);
-  border: 2px solid var(--color);
-  border-radius: 6px;
-  position: relative;
+/* From Uiverse.io by RaspberryBee - Tags: send, button, rounded */
+.button {
+  height: 2em;
+  width: 5em;
+  border-radius: 1em;
+  border: 0.1rem solid transparent;
+  background-color: rgb(64, 146, 239);
+  transition: 0.3s;
+  font-size: 1em;
 }
 
-button::before {
-  position: absolute;
-  content: "";
-  background: var(--color);
-  width: 150px;
-  height: 200px;
-  z-index: -1;
-  border-radius: 50%;
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.05) rotate(3deg);
 }
 
-button:hover {
-  color: white;
+.button:active {
+  animation: borderMove 0.5s forwards;
+  transform: scale(0.9) rotate(-3deg);
+  background-color: rgb(0, 0, 0);
+  color: rgb(64, 146, 239);
+  border: 0.1rem solid rgb(38, 103, 224);
 }
 
-button:before {
-  top: 100%;
-  left: 100%;
-  transition: .3s all;
+@keyframes borderMove {
+  0% {
+    border-width: 0.1rem;
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    border-width: 0.4rem;
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  100% {
+    border-width: 0.15rem;
+    transform: scale(1) rotate(0deg);
+  }
 }
 
-button:hover::before {
-  top: -30px;
-  left: -30px;
-}

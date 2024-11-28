@@ -1,51 +1,39 @@
 
-/* From Uiverse.io by gagan-gv - Tags: button */
-.btn {
-  width: 150px;
-  height: 50px;
-  border-radius: 5px;
-  border: none;
-  transition: all 0.5s ease-in-out;
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  background: #040f16;
-  color: #f5f5f5;
-}
-
-.btn:hover {
-  box-shadow: 0 0 20px 0px #2e2e2e3a;
-}
-
-.btn .icon {
-  position: absolute;
-  height: 40px;
-  width: 70px;
+/* From Uiverse.io by kamehame-ha - Tags: icon, button, vscode, visualstudio */
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #007ACC;
+  outline: 3px #007ACC solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
 }
 
-.btn .text {
-  transform: translateX(55px);
+.button .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
 }
 
-.btn:hover .icon {
-  width: 175px;
+.button svg path {
+  transition: 400ms;
 }
 
-.btn:hover .text {
-  transition: all 0.5s;
-  opacity: 0;
+.button:hover {
+  background-color: transparent;
 }
 
-.btn:focus {
-  outline: none;
+.button:hover .text {
+  color: #007ACC;
 }
 
-.btn:active .icon {
-  transform: scale(0.85);
+.button:hover svg path {
+  fill: #007ACC;
 }

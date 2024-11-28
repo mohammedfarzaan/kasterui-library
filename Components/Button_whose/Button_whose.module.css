@@ -1,62 +1,66 @@
 
-/* From Uiverse.io by cssbuttons-io - Tags: icon, red, button, delete */
-button {
- width: 150px;
- height: 50px;
- cursor: pointer;
- display: flex;
- align-items: center;
- background: red;
- border: none;
- border-radius: 5px;
- box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
- background: #e62222;
+/* From Uiverse.io by simontheonlyone - Source: no source link just the close button of Microsoft Windows - Tags: button, animated, click animation, close, minimal */
+.button {
+  position: relative;
+  width: 6em;
+  height: 4em;
+  border: none;
+  background: none;
 }
 
-button, button span {
- transition: 200ms;
+.X {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  width: 2em;
+  height: 1.5px;
+  background-color: #fff;
+  transform: rotate(45deg);
 }
 
-button .text {
- transform: translateX(35px);
- color: white;
- font-weight: bold;
+.Y {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  width: 2em;
+  height: 1.5px;
+  background-color: #fff;
+  transform: rotate(-45deg);
 }
 
-button .icon {
- position: absolute;
- border-left: 1px solid #c41b1b;
- transform: translateX(110px);
- height: 40px;
- width: 40px;
- display: flex;
- align-items: center;
- justify-content: center;
+.close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -40%;
+  left: 70%;
+  width: 3em;
+  height: 1.7em;
+  font-size: 16px;
+  background-color: rgb(254, 255, 225);
+  color: #000;
+  border: 1px solid #000;
+  pointer-events: none;
+  opacity: 0;
 }
 
-button svg {
- width: 15px;
- fill: #eee;
+.button:hover {
+  background-color: rgb(210, 0, 0);
 }
 
-button:hover {
- background: #ff3636;
+.button:active {
+  background-color: rgb(130, 0, 0);
 }
 
-button:hover .text {
- color: transparent;
+.button:hover > .close {
+  animation: close 0.2s forwards 1.25s;
 }
 
-button:hover .icon {
- width: 150px;
- border-left: none;
- transform: translateX(0);
-}
-
-button:focus {
- outline: none;
-}
-
-button:active .icon svg {
- transform: scale(0.8);
+@keyframes close {
+  100% {
+    opacity: 1;
+  }
 }

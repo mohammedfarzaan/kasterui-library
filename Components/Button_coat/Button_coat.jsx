@@ -1,23 +1,31 @@
 import React from "react";
+import styles from "./Button_coat.module.css";
 
 const Button_coat = () => (
   <div>
-    <button className="cursor-pointer select-none text-[4rem] font-bold text-slate-100 relative group text-center flex justify-center">
-      <div className="absolute top-[6px] text-neutral-400 transition duration-300 drop-shadow-lg group-hover:drop-shadow-md group-active:drop-shadow-none">
-        boop!
-      </div>
-      <div className="absolute top-[5px] text-neutral-300">boop!</div>
-      <div className="absolute transition duration-300 transform group-hover:translate-y-1 group-active:translate-y-1.5">
-        boop!
-      </div>
-
-      <div className="dont-mind-me opacity-0">boop!</div>
-    </button>
+    <button className={styles["button"]}>ALT</button>
   </div>
 );
 
 export default Button_coat;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_coat = () => (
+         <div>
+          <button className="button">
+ALT
+</button>
+        </div>
+        );
+
+        export default Button_coat;
+        
+        
+         */
 }

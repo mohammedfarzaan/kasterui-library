@@ -1,15 +1,111 @@
 import React from "react";
+import styles from "./Button_layers.module.css";
 
 const Button_layers = () => (
   <div>
-    <button className="w-28 h-12 text-white font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg shadow-lg hover:scale-105 duration-200 hover:drop-shadow-2xl hover:shadow-[#7dd3fc] hover:cursor-pointer">
-      Button
+    <button className={styles["btn"]}>
+      <div className={styles["wrapper"]}>
+        <p className={styles["text"]}>Flowers </p>
+
+        <div className={styles["flower"] + styles["flower1"]}>
+          <div className={styles["petal"] + styles["one"]}></div>
+          <div className={styles["petal"] + styles["two"]}></div>
+          <div className={styles["petal"] + styles["three"]}></div>
+          <div className={styles["petal"] + styles["four"]}></div>
+        </div>
+        <div className={styles["flower"] + styles["flower2"]}>
+          <div className={styles["petal"] + styles["one"]}></div>
+          <div className={styles["petal"] + styles["two"]}></div>
+          <div className={styles["petal"] + styles["three"]}></div>
+          <div className={styles["petal"] + styles["four"]}></div>
+        </div>
+        <div className={styles["flower"] + styles["flower3"]}>
+          <div className={styles["petal"] + styles["one"]}></div>
+          <div className={styles["petal"] + styles["two"]}></div>
+          <div className={styles["petal"] + styles["three"]}></div>
+          <div className={styles["petal"] + styles["four"]}></div>
+        </div>
+        <div className={styles["flower"] + styles["flower4"]}>
+          <div className={styles["petal"] + styles["one"]}></div>
+          <div className={styles["petal"] + styles["two"]}></div>
+          <div className={styles["petal"] + styles["three"]}></div>
+          <div className={styles["petal"] + styles["four"]}></div>
+        </div>
+        <div className={styles["flower"] + styles["flower5"]}>
+          <div className={styles["petal"] + styles["one"]}></div>
+          <div className={styles["petal"] + styles["two"]}></div>
+          <div className={styles["petal"] + styles["three"]}></div>
+          <div className={styles["petal"] + styles["four"]}></div>
+        </div>
+        <div className={styles["flower"] + styles["flower6"]}>
+          <div className={styles["petal"] + styles["one"]}></div>
+          <div className={styles["petal"] + styles["two"]}></div>
+          <div className={styles["petal"] + styles["three"]}></div>
+          <div className={styles["petal"] + styles["four"]}></div>
+        </div>
+      </div>
     </button>
   </div>
 );
 
 export default Button_layers;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_layers = () => (
+         <div>
+          <button className="btn">
+    <div className="wrapper">
+        <p className="text">Flowers </p>
+
+        <div className="flower flower1">
+            <div className="petal one"></div>
+            <div className="petal two"></div>
+            <div className="petal three"></div>
+            <div className="petal four"></div>
+        </div>
+        <div className="flower flower2">
+            <div className="petal one"></div>
+            <div className="petal two"></div>
+            <div className="petal three"></div>
+            <div className="petal four"></div>
+        </div>
+        <div className="flower flower3">
+            <div className="petal one"></div>
+            <div className="petal two"></div>
+            <div className="petal three"></div>
+            <div className="petal four"></div>
+        </div>
+        <div className="flower flower4">
+            <div className="petal one"></div>
+            <div className="petal two"></div>
+            <div className="petal three"></div>
+            <div className="petal four"></div>
+        </div>
+        <div className="flower flower5">
+            <div className="petal one"></div>
+            <div className="petal two"></div>
+            <div className="petal three"></div>
+            <div className="petal four"></div>
+        </div>
+        <div className="flower flower6">
+            <div className="petal one"></div>
+            <div className="petal two"></div>
+            <div className="petal three"></div>
+            <div className="petal four"></div>
+        </div>
+    </div>
+</button>
+        </div>
+        );
+
+        export default Button_layers;
+        
+        
+         */
 }

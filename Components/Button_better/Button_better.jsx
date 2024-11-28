@@ -3,29 +3,15 @@ import styles from "./Button_better.module.css";
 
 const Button_better = () => (
   <div>
-    <button className={styles["btn"]}>
-      <svg>
-        <defs>
-          <linearGradient id="gradiant">
-            <stop stop-color="#FF8282" offset="0%"></stop>
-            <stop stop-color="#E178ED" offset="100%"></stop>
-          </linearGradient>
-        </defs>
-        <rect
-          height="50"
-          width="150"
-          stroke="url(#gradiant)"
-          fill="none"
-        ></rect>
-      </svg>
-      <span>Button</span>
+    <button className={styles["button"] + styles["type1"]}>
+      <span className={styles["btn-txt"]}>Hello</span>
     </button>
   </div>
 );
 
 export default Button_better;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -34,17 +20,8 @@ export default Button_better;
 
         const Button_better = () => (
          <div>
-          <button className="btn">
-  <svg>
-    <defs>
-        <linearGradient id="gradiant">
-            <stop stop-color="#FF8282" offset="0%"></stop>
-            <stop stop-color="#E178ED" offset="100%"></stop>
-        </linearGradient>
-    </defs>
-     <rect height="50" width="150" stroke="url(#gradiant)" fill="none"></rect>
-  </svg>
-    <span>Button</span>
+          <button className="button type1">
+  <span className="btn-txt">Hello</span>
 </button>
         </div>
         );

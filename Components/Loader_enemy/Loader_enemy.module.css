@@ -1,44 +1,24 @@
 
-/* From Uiverse.io by Cornerstone-04 - Tags: loader */
+/* From Uiverse.io by JaydipPrajapati1910 - Tags: animation, loader, ninja loader */
 .loader {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  transition: 0.5s linear;
+  width: 160px;
+  height: 160px;
+  color: #0000F4;
+  background: conic-gradient(from  165deg at top   ,#0000, currentColor 1deg 30deg,#0000 31deg) top,
+    conic-gradient(from   75deg at left  ,#0000, currentColor 1deg 30deg,#0000 31deg) left,
+    conic-gradient(from  -15deg at bottom,#0000, currentColor 1deg 30deg,#0000 31deg) bottom, 
+    conic-gradient(from -105deg at right ,#0000, currentColor 1deg 30deg,#0000 31deg) right;
+  background-size: 100% 50%,50% 100%;
+  -webkit-mask: radial-gradient(circle 10px,#0000 90%,#000);
+  background-repeat: no-repeat;
+  animation: sh1 1.5s infinite linear;
 }
 
-.ball {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  animation: bounce6135 1s alternate infinite;
-  transition: 0.5s linear;
-}
-
-.ball {
-  background: #fff;
-}
-
-.ball:nth-child(2) {
-  animation-delay: 0.25s;
-}
-
-.ball:nth-child(3) {
-  animation-delay: 0.5s;
-}
-
-@keyframes bounce6135 {
-  from {
-    transform: scale(2);
-  }
-
-  to {
-    transform: scale(1);
+@keyframes sh1 {
+ 
+  100% {
+    transform: rotate(1turn)
   }
 }
-
+  
 

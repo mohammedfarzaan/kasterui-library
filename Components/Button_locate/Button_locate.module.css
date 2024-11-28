@@ -1,43 +1,59 @@
 
-/* From Uiverse.io by JkHuger - Tags: button */
-.rainbow-hover {
-  font-size: 16px;
-  font-weight: 700;
-  color: #ff7576;
-  background-color: #2B3044;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 12px 24px;
+/* From Uiverse.io by andrew-demchenk0 - Tags: button */
+button {
   position: relative;
-  line-height: 24px;
-  border-radius: 9px;
-  box-shadow: 0px 1px 2px #2B3044,
-    0px 4px 16px #2B3044;
-  transform-style: preserve-3d;
-  transform: scale(var(--s, 1)) perspective(600px)
-    rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
-  perspective: 600px;
-  transition: transform 0.1s;
+  width: 130px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px #00acee solid;
+  overflow: hidden;
 }
 
-.sp {
-  background: linear-gradient(
-      90deg,
-      #866ee7,
-      #ea60da,
-      #ed8f57,
-      #fbd41d,
-      #2cca91
-    );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  display: block;
+.text1 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-left: 22%;
 }
 
-.rainbow-hover:active {
-  transition: 0.3s;
-  transform: scale(0.93);
+.text2 {
+  position: absolute;
+  top: 25%;
+  left: -50px;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+}
+
+.icon::before {
+  position: absolute;
+  left: -100px;
+  top: 0;
+  z-index: -1;
+  content: '';
+  width: 130px;
+  height: 33px;
+  border-radius: 30px;
+  background-color: #00acee;
+}
+
+button:hover .icon {
+  transform: translateX(96px);
+  transition: transform 0.5s;
+}
+
+button:hover .text2 {
+  transform: translateX(100px);
+  transition: transform 0.6s;
+}
+
+button:active {
+  transform: scale(1.03);
 }

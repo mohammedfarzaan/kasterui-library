@@ -1,133 +1,81 @@
 
-/* From Uiverse.io by Subaashbala  - Tags: loader, game, animated, bounce animation */
+/* From Uiverse.io by vinodjangid07  - Tags: animation, loading, loader */
 .loader {
-  position: relative;
-  width: 18rem; /* Reposition the obstacles and the bird if the width is changed */
-  aspect-ratio: 1;
-  overflow: hidden;
-  border-radius: 50%;
-  background: linear-gradient(to bottom, #6ccee7 60%, white);
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#bird {
+.wrapper {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.catContainer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.catbody {
+  width: 80px;
+}
+.tail {
   position: absolute;
-  left: 50%;
+  width: 17px;
   top: 50%;
-  transform: translate(-80%, -50%);
-  width: 3rem;
-  height: auto;
-  animation: flap 500ms linear infinite;
+  animation: tail 0.5s ease-in infinite alternate-reverse;
+  transform-origin: top;
 }
-.flappyBirdScene,
-.flappyBirdSceneBottom {
-  display: flex;
-  width: 20rem;
-  top: -23%;
-  position: relative;
-}
-.sceneTop {
-  display: flex;
-  width: fit-content;
-  animation: flow 5s linear infinite;
-}
-.sceneBottom {
-  display: flex;
-  width: fit-content;
-  animation: flowBottom 5s linear infinite;
-}
-#birdObstacle {
-  height: 8rem;
-  width: 2rem;
-  background: linear-gradient(
-    to right,
-    #9de558 0px,
-    #9de558 3px,
-    #e7ff8d 3px,
-    #e7ff8d 5px,
-    #9de858 5px,
-    #9de858 10px,
-    #74c029 10px,
-    #74c029 13px,
-    #9de558 13px,
-    #9de558 15px,
-    #74c029 22px,
-    #74c029 28px,
-    #59811a 28px,
-    #59811a 100%
-  );
-  border: solid;
-  position: relative;
-}
-.flappyBirdSceneBottom {
-  bottom: -25%;
-  left: 0;
-}
-#birdObstacle::after {
-  content: "";
-  position: absolute;
-  width: 135%;
-  height: 1.25rem;
-  top: 100%;
-  left: 50%;
-  border: solid;
-  transform: translate(-50%, 0);
-  background: linear-gradient(
-    to right,
-    #9de558 0px,
-    #9de558 3px,
-    #e7ff8d 3px,
-    #e7ff8d 5px,
-    #9de858 5px,
-    #9de858 10px,
-    #74c029 10px,
-    #74c029 13px,
-    #9de558 13px,
-    #9de558 15px,
-    #74c029 22px,
-    #74c029 28px,
-    #59811a 28px,
-    #59811a 100%
-  );
-}
-.birdObs2 {
-  transform: translate(0%, 15%);
-  left: 15%;
-}
-.birdObs3 {
-  transform: translate(0, 18%);
-  left: 30%;
-}
-.birdObs4 {
-  transform: translate(0, 15%);
-  left: 45%;
-}
-@keyframes flap {
-  from {
-    transform: translate(-80%, -50%);
-  }
-  25% {
-    transform: translate(-80%, -50%) rotate(-15deg);
+@keyframes tail {
+  0% {
+    transform: rotateZ(60deg);
   }
   50% {
-    transform: translate(-80%, -12%) rotate(5deg);
+    transform: rotateZ(0deg);
   }
   100% {
-    transform: translate(-80%, -50%);
+    transform: rotateZ(-20deg);
   }
 }
-@keyframes flow {
-  from {
-    transform: translate(0, -43%);
-  }
-  to {
-    transform: translate(-50%, -43%);
-  }
+.wall {
+  width: 300px;
 }
-@keyframes flowBottom {
-  from {
-    transform: translate(0, 75%) rotateX(180deg);
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  position: absolute;
+  margin: 0px 0px 100px 120px;
+}
+.zzz {
+  color: black;
+  font-weight: 700;
+  font-size: 15px;
+  animation: zzz 2s linear infinite;
+}
+.bigzzz {
+  color: black;
+  font-weight: 700;
+  font-size: 25px;
+  margin-left: 10px;
+  animation: zzz 2.3s linear infinite;
+}
+@keyframes zzz {
+  0% {
+    color: transparent;
   }
-  to {
-    transform: translate(-50%, 75%) rotateX(180deg);
+  50% {
+    color: black;
+  }
+  100% {
+    color: transparent;
   }
 }
 

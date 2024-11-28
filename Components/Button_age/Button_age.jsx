@@ -1,18 +1,31 @@
 import React from "react";
+import styles from "./Button_age.module.css";
 
 const Button_age = () => (
   <div>
-    <button
-      className="cursor-pointer animate-bounce px-10 pt-5 pb-5 rounded-full text-white text-xl 
- bg-gradient-to-r from-cyan-500 to-blue-500 hover:border-cyan-500 hover:shadow-2xl"
-    >
-      Button
-    </button>
+    <a className={styles["btn"]} href="#">
+      I am a button
+    </a>
   </div>
 );
 
 export default Button_age;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_age = () => (
+         <div>
+          <a className="btn" href="#">I am a button</a>
+        </div>
+        );
+
+        export default Button_age;
+        
+        
+         */
 }

@@ -1,169 +1,32 @@
 
-/* From Uiverse.io by JkHuger - Tags: 3d, loader, rotate, box */
-.cube {
-  top: -100px;
-  margin: 200px auto 0;
-  width: 100px;
-  height: 100Px;
+/* From Uiverse.io by Uncannypotato69  - Tags: simple, animation, white, black, loading, loader, text animation, css */
+.textWrapper {
+  height: fit-content;
+  min-width: 3rem;
+  width: fit-content;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.25ch;
   position: relative;
-  transform-style: preserve-3d;
-  animation: spin 3s infinite cubic-bezier(0.16, 0.61, 0.49, 0.91);
+  z-index: 0;
+  color: white;
 }
 
-.face {
+.invertbox {
   position: absolute;
-  width: 100%;
   height: 100%;
-  background: rgb(67, 191, 207);
-  border: 2px solid #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 15px #fff;
+  aspect-ratio: 1/1;
+  left: 0;
+  top: 0;
+  border-radius: 20%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: invert(100%);
+  animation: move 2s ease-in-out infinite;
 }
 
-.top {
-  transform: rotateX(90deg) translateZ(50px);
-  animation: shift-top 3s infinite ease-out;
-}
-
-.bottom {
-  transform: rotateX(-90deg) translateZ(50px);
-  animation: shift-bottom 3s infinite ease-out;
-}
-
-.right {
-  transform: rotateY(90deg) translateZ(50px);
-  animation: shift-right 3s infinite ease-out;
-}
-
-.left {
-  transform: rotateY(-90deg) translateZ(50px);
-  animation: shift-left 3s infinite ease-out;
-}
-
-.front {
-  transform: translateZ(50px);
-  animation: shift-front 3s infinite ease-out;
-}
-
-.back {
-  transform: rotateY(-180deg) translateZ(50px);
-  animation: shift-back 3s infinite ease-out;
-}
-
-@keyframes spin {
-  33% {
-    transform: rotateX(-36deg) rotateY(-405deg);
-  }
-
-  100% {
-    transform: rotateX(-36deg) rotateY(-405deg);
-  }
-}
-
-@keyframes shift-top {
-  33% {
-    transform: rotateX(90deg) translateZ(50px);
-  }
-
+@keyframes move {
   50% {
-    transform: rotateX(90deg) translateZ(100px);
-  }
-
-  60% {
-    transform: rotateX(90deg) translateZ(100px);
-  }
-
-  75% {
-    transform: rotateX(90deg) translateZ(50px);
+    left: calc(100% - 3rem);
   }
 }
 
-@keyframes shift-bottom {
-  33% {
-    transform: rotateX(-90deg) translateZ(50px);
-  }
-
-  50% {
-    transform: rotateX(-90deg) translateZ(100px);
-  }
-
-  60% {
-    transform: rotateX(-90deg) translateZ(100px);
-  }
-
-  75% {
-    transform: rotateX(-90deg) translateZ(50px);
-  }
-}
-
-@keyframes shift-right {
-  33% {
-    transform: rotateY(90deg) translateZ(50px);
-  }
-
-  50% {
-    transform: rotateY(90deg) translateZ(100px);
-  }
-
-  60% {
-    transform: rotateY(90deg) translateZ(100px);
-  }
-
-  75% {
-    transform: rotateY(90deg) translateZ(50px);
-  }
-}
-
-@keyframes shift-left {
-  33% {
-    transform: rotateY(-90deg) translateZ(50px);
-  }
-
-  50% {
-    transform: rotateY(-90deg) translateZ(100px);
-  }
-
-  60% {
-    transform: rotateY(-90deg) translateZ(100px);
-  }
-
-  75% {
-    transform: rotateY(-90deg) translateZ(50px);
-  }
-}
-
-@keyframes shift-front {
-  33% {
-    transform: translateZ(50px);
-  }
-
-  50% {
-    transform: translateZ(100px);
-  }
-
-  60% {
-    transform: translateZ(100px);
-  }
-
-  75% {
-    transform: translateZ(50px);
-  }
-}
-
-@keyframes shift-back {
-  33% {
-    transform: rotateY(-180deg) translateZ(50px);
-  }
-
-  50% {
-    transform: rotateY(-180deg) translateZ(100px);
-  }
-
-  60% {
-    transform: rotateY(-180deg) translateZ(100px);
-  }
-
-  75% {
-    transform: rotateY(-180deg) translateZ(50px);
-  }
-}

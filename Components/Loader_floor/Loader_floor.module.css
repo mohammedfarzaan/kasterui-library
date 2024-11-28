@@ -1,36 +1,42 @@
 
-/* From Uiverse.io by NlghtM4re - Tags: green, progress, progress bar, loader, shadow, download, neon, bars */
+/* From Uiverse.io by alexruix - Tags: loader, bars */
 .loader {
-  width: 60%;
-  height: 10px;
-  border-radius: 2px;
-  background-color: rgba(0, 0, 0, 0.2);
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  display: block;
+  background-color: currentColor;
+  margin: 20px auto;
+  position: relative;
+  color: #f2f2f2;
+  animation: animloader 0.3s 0.3s linear infinite alternate;
+}
+
+.loader::after,
+.loader::before {
+  content: '';
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  background: currentColor;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  animation: animloader 0.3s 0.45s linear infinite alternate;
 }
 
 .loader::before {
-  content: "";
-  position: absolute;
-  background-color: rgb(9, 188, 9);
-  width: 0%;
-  height: 100%;
-  border-radius: 2px;
-  animation: load 3.5s ease-in-out infinite;
-  box-shadow: rgb(9, 188, 9) 0px 2px 29px 0px;
+  left: -20px;
+  animation-delay: 0s;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-}
-
-@keyframes load {
-  50% {
-    width: 100%;
+@keyframes animloader {
+  0% {
+    height: 48px;
   }
 
   100% {
-    right: 0;
-    left: unset;
+    height: 4px;
   }
 }

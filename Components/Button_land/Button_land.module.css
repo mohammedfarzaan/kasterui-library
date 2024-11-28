@@ -1,17 +1,63 @@
 
-/* From Uiverse.io by killiandvcz - Tags: button */
-button {
-  padding: 7px 25px;
+/* From Uiverse.io by Spacious74  - Tags: 3d, button, realistic, code, social media, neo */
+.button {
+  cursor: pointer;
+  font-size: 1.6rem;
+  border-radius: 16px;
   border: none;
-  background: linear-gradient(-15deg, rgb(31, 33, 124) 0 50%, rgb(202, 76, 214) 90% 95%, rgb(221, 36, 83) 100%);
-  box-shadow: inset rgba(255, 255, 255, 0.418) 3px 3px 5px;
-  color: white;
-  font-family: 'Lora', serif;
-  font-style: italic;
-  border-radius: 50px;
-  transition: all .4s;
+  padding: 2px;
+  background: radial-gradient(circle 80px at 80% -10%, #ffffff, #181b1b);
+  position: relative;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 60%;
+  border-radius: 120px;
+  top: 0;
+  right: 0;
+  box-shadow: 0 0 20px #ffffff38;
+  z-index: -1;
 }
 
-button:hover {
-  box-shadow: inset rgba(255, 255, 255, 0.473) 4px 4px 5px;
+.blob1 {
+  position: absolute;
+  width: 70px;
+  height: 100%;
+  border-radius: 16px;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(
+    circle 60px at 0% 100%,
+    #3fe9ff,
+    #0000ff80,
+    transparent
+  );
+  box-shadow: -10px 10px 30px #0051ff2d;
 }
+
+.inner {
+  padding: 14px 25px;
+  border-radius: 14px;
+  color: #fff;
+  z-index: 3;
+  position: relative;
+  background: radial-gradient(circle 80px at 80% -50%, #777777, #0f1111);
+}
+.inner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 14px;
+  background: radial-gradient(
+    circle 60px at 0% 100%,
+    #00e1ff1a,
+    #0000ff11,
+    transparent
+  );
+  position: absolute;
+}
+

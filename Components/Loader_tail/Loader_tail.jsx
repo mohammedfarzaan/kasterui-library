@@ -4,18 +4,39 @@ import styles from "./Loader_tail.module.css";
 const Loader_tail = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
+      <div className={styles["loader-inner"]}>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+        <div className={styles["loader-block"]}></div>
+      </div>
     </div>
   </div>
 );
 
 export default Loader_tail;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -25,12 +46,33 @@ export default Loader_tail;
         const Loader_tail = () => (
          <div>
           <div className="loader">
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
+  <div className="loader-inner"> 
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
+    <div className="loader-block"></div>
   </div>
+</div>
         </div>
         );
 

@@ -1,193 +1,61 @@
 
-/* From Uiverse.io by Peary74 - Tags: red, button, heart */
-button {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  background: #fd1853;
-  font-family: "Montserrat", sans-serif;
-  overflow: hidden;
-  border: none;
+/* From Uiverse.io by cssbuttons-io - Tags: button */
+.button {
+ display: inline-block;
+ padding: 12px 24px;
+ border: 1px solid #4f4f4f;
+ border-radius: 4px;
+ transition: all 0.2s ease-in;
+ position: relative;
+ overflow: hidden;
+ font-size: 19px;
+ color: black;
+ z-index: 1;
 }
 
-button:after {
-  content: " ";
-  width: 0%;
-  height: 100%;
-  background: #fff;
-  position: absolute;
-  transition: all 0.4s ease-in-out;
-  right: 0;
+.button:before {
+ content: "";
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%) scaleY(1) scaleX(1.25);
+ top: 100%;
+ width: 140%;
+ height: 180%;
+ background-color: rgba(0, 0, 0, 0.05);
+ border-radius: 50%;
+ display: block;
+ transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+ z-index: -1;
 }
 
-button:hover::after {
-  right: auto;
-  left: 0;
-  width: 100%;
+.button:after {
+ content: "";
+ position: absolute;
+ left: 55%;
+ transform: translateX(-50%) scaleY(1) scaleX(1.45);
+ top: 180%;
+ width: 160%;
+ height: 190%;
+ background-color: #39bda7;
+ border-radius: 50%;
+ display: block;
+ transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+ z-index: -1;
 }
 
-button span {
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  padding: 18px 25px;
-  color: #fffcfd;
-  font-size: 1.125em;
-  font-weight: 700;
-  letter-spacing: 0.3em;
-  z-index: 20;
-  transition: all 0.3s ease-in-out;
+.button:hover {
+ color: #ffffff;
+ border: 1px solid #39bda7;
 }
 
-button:hover span {
-  animation: scaleUp 0.3s ease-in-out;
-  color: #fd1853;
+.button:hover:before {
+ top: -35%;
+ background-color: #39bda7;
+ transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
-button:hover {
-  animation: scaleUp 0.3s ease-in-out;
+.button:hover:after {
+ top: -45%;
+ background-color: #39bda7;
+ transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
-
-@keyframes scaleUp {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(0.95);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-.star-1 {
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  width: 25px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fd1853);
-  z-index: -5;
-  transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
-}
-
-.star-2 {
-  position: absolute;
-  top: 45%;
-  left: 45%;
-  width: 15px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fd1853);
-  z-index: -5;
-  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
-}
-
-.star-3 {
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  width: 5px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fd1853);
-  z-index: -5;
-  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
-}
-
-.star-4 {
-  position: absolute;
-  top: 20%;
-  left: 40%;
-  width: 8px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fd1853);
-  z-index: -5;
-  transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
-}
-
-.star-5 {
-  position: absolute;
-  top: 25%;
-  left: 45%;
-  width: 15px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fd1853);
-  z-index: -5;
-  transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
-}
-
-.star-6 {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  width: 5px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fd1853);
-  z-index: -5;
-  transition: all .8s ease;
-}
-
-button:hover .star-1 {
-  position: absolute;
-  top: -2%;
-  left: 0%;
-  width: 25px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fd1853);
-  z-index: 2;
-}
-
-button:hover .star-2 {
-  position: absolute;
-  top: 34%;
-  left: 41.5%;
-  width: 15px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fd1853);
-  z-index: 2;
-}
-
-button:hover .star-3 {
-  position: absolute;
-  top: 55%;
-  left: 25%;
-  width: 5px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fd1853);
-  z-index: 2;
-}
-
-button:hover .star-4 {
-  position: absolute;
-  top: 0%;
-  left: 55%;
-  width: 8px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fd1853);
-  z-index: 2;
-}
-
-button:hover .star-5 {
-  position: absolute;
-  top: 25%;
-  left: 85%;
-  width: 15px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fd1853);
-  z-index: 2;
-}
-
-button:hover .star-6 {
-  position: absolute;
-  top: 75%;
-  left: 60%;
-  width: 5px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fd1853);
-  z-index: 2;
-}
-
-

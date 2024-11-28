@@ -1,53 +1,37 @@
 
-/* From Uiverse.io by gagan-gv - Tags: loading, loader, glow */
-.spinner {
- height: 50px;
- width: max-content;
- font-size: 18px;
- font-weight: 600;
- font-family: monospace;
- letter-spacing: 1em;
- color: #f5f5f5;
- filter: drop-shadow(0 0 10px);
- display: flex;
- justify-content: center;
- align-items: center;
+/* From Uiverse.io by Mike11jr - Tags: loader */
+.loader-wrapper {
+ width: 60px;
+ height: 60px;
 }
 
-.spinner span {
- animation: loading6454 1.75s ease infinite;
+.loader {
+ box-sizing: border-box;
+ width: 100%;
+ height: 100%;
+ border: 10px solid #162534;
+ border-top-color: #4bc8eb;
+ border-bottom-color: #f13a8f;
+ border-radius: 50%;
+ animation: rotate0925 5s linear infinite;
 }
 
-.spinner span:nth-child(2) {
- animation-delay: 0.25s;
+.loader-inner {
+ border-top-color: #36f372;
+ border-bottom-color: #fff;
+ animation-duration: 2.5s;
 }
 
-.spinner span:nth-child(3) {
- animation-delay: 0.5s;
-}
-
-.spinner span:nth-child(4) {
- animation-delay: 0.75s;
-}
-
-.spinner span:nth-child(5) {
- animation-delay: 1s;
-}
-
-.spinner span:nth-child(6) {
- animation-delay: 1.25s;
-}
-
-.spinner span:nth-child(7) {
- animation-delay: 1.5s;
-}
-
-@keyframes loading6454 {
- 0%, 100% {
-  transform: translateY(0);
+@keyframes rotate0925 {
+ 0% {
+  transform: scale(1) rotate(360deg);
  }
 
  50% {
-  transform: translateY(-10px);
+  transform: scale(.8) rotate(-360deg);
+ }
+
+ 100% {
+  transform: scale(1) rotate(360deg);
  }
 }

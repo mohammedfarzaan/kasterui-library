@@ -1,79 +1,76 @@
 
-/* From Uiverse.io by xopc333 - Tags: animation, loader, svg, creative, css, loading animation */
-.loader {
-  width: 500px;
-  height: 250px;
+/* From Uiverse.io by NlghtM4re - Tags: 3d, green, loader, smooth, tree */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.circle {
-  fill: #F25A33;
+.tree {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(30deg);
+  animation: treeAnimate 5s linear infinite;
 }
 
-.circle-one {
-  opacity: 0;
-}
-
-.svg-stroke {
-  fill: transparent;
-  stroke-dasharray: 46.82, 93.64;
-  stroke-dashoffset: 46.82;
-  stroke: #F25A33;
-  opacity: 1;
-}
-
-.svg-wrap .svg-stroke {
-  animation: stroke-start 1.6s linear, stroke-end 1.6s 0.8s linear infinite;
-}
-
-.svg-wrap .circle-one {
-  animation: dot-one 0s 0.8s, move-dot 1.6s 0.8s linear infinite;
-}
-
-.svg-wrap .circle-two,
-.svg-wrap .circle-three {
-  animation: move-dot 1.6s 0.8s linear infinite;
-}
-
-@keyframes dot-one {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes stroke-start {
-  50% {
-    stroke-dashoffset: 46.82;
+@keyframes treeAnimate {
+  0% {
+    transform: rotateX(-20deg) rotateY(360deg);
   }
 
   100% {
-    stroke-dashoffset: 0;
+    transform: rotateX(-20deg) rotateY(0deg);
   }
 }
 
-@keyframes stroke-end {
-  50% {
-    stroke-dasharray: 46.82, 93.64;
-    stroke-dashoffset: 0;
-    transform: translateX(0);
-  }
-
-  100% {
-    stroke-dasharray: 0, 93.64;
-    stroke-dashoffset: -46.82;
-    transform: translateX(10px);
-  }
+.tree div {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: translateY(calc(25px * var(--x))) translateZ(0px);
 }
 
-@keyframes move-dot {
-  50% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(10px);
-  }
+.tree div.branch span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #69c069, #77dd77);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  border-bottom: 5px solid #00000019;
+  transform-origin: bottom;
+  transform: rotateY(calc(90deg * var(--i))) rotateX(30deg) translateZ(28.5px);
 }
+
+.tree div.stem span {
+  position: absolute;
+  top: 110px;
+ /* updated top value */
+  left: calc(50% - 7.5px);
+  width: 15px;
+  height: 50%;
+  background: linear-gradient(90deg, #bb4622, #df7214);
+  border-bottom: 5px solid #00000019;
+  transform-origin: bottom;
+  transform: rotateY(calc(90deg * var(--i))) translateZ(7.5px);
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  filter: blur(20px);
+  transform-style: preserve-3d;
+  transform: rotateX(90deg) translateZ(-65px);
+}
+

@@ -1,45 +1,34 @@
 
-/* From Uiverse.io by andrew-demchenk0 - Tags: icon, animation, red, button, opacity, pause, big */
-.button {
-  width: 122px;
-  height: 60px;
-  padding: 18px 22px 18px 20px;
-  gap: 1px;
+/* From Uiverse.io by AndrewHeinke - Tags: button */
+.space-btn {
+  background: #FBFBFF;
+  border: 2px solid #FF4F00;
+  color: #363537;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 1px;
+  padding: .5rem .75rem;
+  font-family: monospace;
+  border-radius: 4px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: #ff284818;
-  border-radius: 16px;
-  border: none;
-  cursor: pointer;
+  box-shadow: 0 2px 1px rgba(0,0,0,0.09), 
+              0 4px 2px rgba(0,0,0,0.09), 
+              0 8px 4px rgba(0,0,0,0.09), 
+              0 16px 8px rgba(0,0,0,0.09),
+              0 32px 16px rgba(0,0,0,0.09);
+  transition: .3s ease-in;
 }
 
-.label {
-  font-family: sans-serif;
-  height: 23px;
-  font-size: 19px;
-  line-height: 24px;
-  color: #FF2849;
+.space-btn:hover {
+  background: #FF4F00;
+  color: white;
 }
 
-.button:hover {
-  background: #ff284839;
-}
-
-.button:hover .svg-icon {
-  animation: pulse 0.7s linear infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.13);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+.space-btn svg {
+  width: 1em;
+  height: 1em;
+  color: currentColor;
+  margin-right: .5rem;
 }

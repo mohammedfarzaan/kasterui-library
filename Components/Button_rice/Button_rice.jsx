@@ -3,18 +3,15 @@ import styles from "./Button_rice.module.css";
 
 const Button_rice = () => (
   <div>
-    <div className={styles["buttons"]}>
-      <button className={styles["btn"]}>
-        <span></span>
-        <p data-start="good luck!" data-text="start!" data-title="new game"></p>
-      </button>
-    </div>
+    <button>
+      <span className={styles["text"]}>Button</span>
+    </button>
   </div>
 );
 
 export default Button_rice;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -23,9 +20,9 @@ export default Button_rice;
 
         const Button_rice = () => (
          <div>
-          <div className="buttons">
-   <button className="btn"><span></span><p data-start="good luck!" data-text="start!" data-title="new game"></p></button>
-</div>
+          <button>
+  <span className="text">Button</span>
+</button>
         </div>
         );
 

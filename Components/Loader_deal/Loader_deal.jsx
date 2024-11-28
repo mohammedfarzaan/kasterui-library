@@ -4,21 +4,21 @@ import styles from "./Loader_deal.module.css";
 const Loader_deal = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["block"] + styles["b_1"]}></div>
-      <div className={styles["block"] + styles["b_2"]}></div>
-      <div className={styles["block"] + styles["b_3"]}></div>
-      <div className={styles["block"] + styles["b_4"]}></div>
-      <div className={styles["block"] + styles["b_5"]}></div>
-      <div className={styles["block"] + styles["b_6"]}></div>
-      <div className={styles["block"] + styles["b_7"]}></div>
-      <div className={styles["block"] + styles["b_8"]}></div>
+      <div className={styles["cube"]}>
+        <div className={styles["face1"]}></div>
+        <div className={styles["face2"]}></div>
+        <div className={styles["face3"]}></div>
+        <div className={styles["face4"]}></div>
+        <div className={styles["face5"]}></div>
+        <div className={styles["face6"]}></div>
+      </div>
     </div>
   </div>
 );
 
 export default Loader_deal;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -28,14 +28,14 @@ export default Loader_deal;
         const Loader_deal = () => (
          <div>
           <div className="loader">
-  <div className="block b_1"></div>
-  <div className="block b_2"></div>
-  <div className="block b_3"></div>
-  <div className="block b_4"></div>
-  <div className="block b_5"></div>
-  <div className="block b_6"></div>
-  <div className="block b_7"></div>
-  <div className="block b_8"></div>
+  <div className="cube">
+    <div className="face1"></div>
+    <div className="face2"></div>
+    <div className="face3"></div>
+    <div className="face4"></div>
+    <div className="face5"></div>
+    <div className="face6"></div>
+  </div>
 </div>
         </div>
         );

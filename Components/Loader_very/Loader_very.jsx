@@ -3,16 +3,17 @@ import styles from "./Loader_very.module.css";
 
 const Loader_very = () => (
   <div>
-    <div className={styles["loader"]}>
-      <label>Redirecting...</label>
-      <div className={styles["loading"]}></div>
+    <div className={styles["cell"]}>
+      <div className={styles["card"]}>
+        <span className={styles["flower-loader"]}>Loading…</span>
+      </div>
     </div>
   </div>
 );
 
 export default Loader_very;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -21,9 +22,10 @@ export default Loader_very;
 
         const Loader_very = () => (
          <div>
-          <div className="loader">
-  <label>Redirecting...</label>
-  <div className="loading"></div>
+          <div className="cell">
+  <div className="card">
+    <span className="flower-loader">Loading…</span>
+  </div>
 </div>
         </div>
         );

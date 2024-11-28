@@ -1,82 +1,68 @@
 
-/* From Uiverse.io by Shoh2008 - Tags: loader */
+/* From Uiverse.io by Peary74 - Tags: loader, animated, google */
 .loader {
-  width: 96px;
-  height: 48px;
-  display: inline-block;
-  position: relative;
-  background: #5e5e5e;
-  border-radius: 48px 48px 0 0;
-  box-sizing: border-box;
-  overflow: hidden;
+  position: absolute;
 }
 
-.loader::after {
-  content: '';
-  box-sizing: border-box;
+.cercle {
   position: absolute;
-  width: 24px;
+  background: #3f7ee8;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  top: -40px;
+  left: -70px;
+  animation: move-up6 .4s ease-in infinite alternate-reverse;
+}
+
+.cercle:nth-child(2) {
+  width: 25px;
+  height: 25px;
+  top: -2px;
+  left: -5px;
+  background: #de4032;
+  animation: move-down1 .4s ease-in infinite alternate-reverse;
+}
+
+.cercle:nth-child(3) {
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: -7px;
+  background: #eeb205;
+  animation: move-updown1 .4s ease-in infinite alternate-reverse;
+}
+
+.cercle:nth-child(4) {
+  width: 12px;
   height: 12px;
-  border-radius: 24px 24px 0 0;
-  background: yellow;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
+  top: -10px;
+  left: 25px;
+  background: #31aa52;
+  animation: move-up6 .4s ease-in infinite alternate-reverse;
 }
 
-.loader::before {
-  content: '';
-  position: absolute;
-  width: 4px;
-  height: 32px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 0;
-  background: yellow;
-  transform-origin: 50% 100%;
-  box-sizing: border-box;
-  animation: animloader 2s linear infinite alternate;
-}
-
-@keyframes animloader {
-  0% {
-    transform: rotate(-70deg);
-  }
-
-  10% {
-    transform: rotate(-40deg);
-  }
-
-  20%, 45%, 35% {
-    transform: rotate(-10deg);
-  }
-
-  40%, 30% {
-    transform: rotate(-30deg);
-  }
-
-  50%, 60% {
-    transform: rotate(20deg);
-  }
-
-  55%, 65%, 75% {
-    transform: rotate(40deg);
-  }
-
-  70% {
-    transform: rotate(45deg);
-  }
-
-  85%, 90% {
-    transform: rotate(50deg);
-  }
-
-  95% {
-    transform: rotate(75deg);
-  }
-
-  100%, 93% {
-    transform: rotate(70deg);
+@keyframes move-up6 {
+  to {
+    transform: translateY(-5px);
   }
 }
+
+@keyframes move-down1 {
+  to {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes move-updown1 {
+  to {
+    transform: translateY(10px);
+  }
+
+  from {
+    transform: translateY(-7px);
+  }
+}
+
+
+

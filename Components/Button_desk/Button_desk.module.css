@@ -1,16 +1,41 @@
 
-/* From Uiverse.io by Webdevava - Tags: button */
+/* From Uiverse.io by felipesntr - Tags: button */
 button {
-  background: #111;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 6px;
-  color: #fff;
-  font-size: 30px;
+ font-size: 16px;
+ position: relative;
+ margin: auto;
+ padding: 1em 2.5em 1em 2.5em;
+ border: none;
+ background: #fff;
+ transition: all 0.1s linear;
+ box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
-  border: 3px solid #fff;
-  transform: rotate3d(0, 1, 0.5, 360deg);
-  transition: 1.5s;
+button:active {
+ transform: scale(0.95);
+}
+
+button span {
+ color: #464646;
+}
+
+button .border {
+ position: absolute;
+ border: 0.15em solid #fff;
+ transition: all 0.3s 0.08s linear;
+ top: 50%;
+ left: 50%;
+ width: 9em;
+ height: 3em;
+ transform: translate(-50%, -50%);
+}
+
+button:hover .border {
+ display: block;
+ width: 9.9em;
+ height: 3.7em;
+}
+
+.full-rounded {
+ border-radius: 2em;
 }

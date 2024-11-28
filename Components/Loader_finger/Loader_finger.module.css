@@ -1,51 +1,77 @@
 
-/* From Uiverse.io by ClawHack1 - Tags: loader */
+/* From Uiverse.io by Tsiangana - Tags: simple, animation, loading, loader, text animation */
 .loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
 }
 
-.loader__circle {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  margin: 0 4px;
-  animation: loader_901 1s ease-in-out infinite;
+.ani:nth-child(1) {
+  animation: ani1 2.1s ease-in-out 14s infinite;
 }
 
-.loader__circle:nth-of-type(1) {
-  background-color: #007aff;
-  animation-delay: 0;
-}
-
-.loader__circle:nth-of-type(2) {
-  background-color: #ff2d55;
-  animation-delay: 0.25s;
-}
-
-.loader__circle:nth-of-type(3) {
-  background-color: #34c759;
-  animation-delay: 0.5s;
-}
-
-.loader__circle:nth-of-type(4) {
-  background-color: #ff9500;
-  animation-delay: 0.75s;
-}
-
-@keyframes loader_901 {
-  0% {
-    transform: scale(1);
-  }
-
-  20% {
-    transform: scale(1.2);
-  }
-
-  40% {
-    transform: scale(1);
+@keyframes ani1 {
+  50% {
+    font-size: 40px;
   }
 }
 
+.ani:nth-child(2) {
+  animation: ani2 2.1s ease-in-out 12s infinite;
+}
+
+@keyframes ani2 {
+  50% {
+    font-size: 40px;
+  }
+}
+
+.ani:nth-child(3) {
+  animation: ani3 2.1s ease-in-out 10s infinite;
+}
+
+@keyframes ani3 {
+  50% {
+    font-size: 40px;
+  }
+}
+
+.ani:nth-child(4) {
+  animation: ani4 2.1s ease-in-out 8s infinite;
+}
+
+@keyframes ani4 {
+  50% {
+    font-size: 40px;
+  }
+}
+
+.ani:nth-child(5) {
+  animation: ani5 2.1s ease-in-out 6s infinite;
+}
+
+@keyframes ani5 {
+  50% {
+    font-size: 40px;
+  }
+}
+
+.ani:nth-child(6) {
+  animation: ani6 2.1s ease-in-out 4s infinite;
+}
+
+@keyframes ani6 {
+  50% {
+    font-size: 40px;
+  }
+}
+
+.ani:nth-child(7) {
+  animation: ani7 2.1s ease-in-out 2s infinite;
+}
+
+@keyframes ani7 {
+  50% {
+    font-size: 40px;
+  }
+}

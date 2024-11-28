@@ -1,50 +1,75 @@
 
-/* From Uiverse.io by alshahwan - Tags: instagram, button */
-/* From uiverse.io by @alshahwan */
-button {
-  background-color: #fff;
-  border: 1px solid #bc2a8d;
-  padding: 5px;
+/* From Uiverse.io by arshshaikh06 - Source: https://www.behance.net/gallery/117113957/Social-Share-Animation-Daily-UI-010 - Tags: button, hover, hover button, css button, css animation, cool button, button hover effect  */
+#button-container {
   position: relative;
-  width: 7.2em;
-  height: 2em;
-  transition: 0.5s;
-  font-size: 17px;
-  border-radius: 0.4em;
 }
 
-button p {
+.button {
   position: absolute;
-  top: 0.4em;
-  left: 1.2em;
-  margin: 0;
-  padding: 0;
-  transition: .5s;
-  color: #bc2a8d;
+  top: 50%;
+  left: 50%;
+  translate: -50% 50%;
+  background: #F4F7F5;
+  border: none;
+  border-radius: 25px;
+  height: 50px;
+  width: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in;
 }
 
-button svg {
-  position: absolute;
-  top: 0.45em;
-  right: 0.5em;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-  transition: 0.5s;
-  height: 1em;
-  fill: #fff
+#share {
+  color: #DC0654;
+  background: #fbe6ed;
 }
 
-button:hover p {
-  left: 0.6em;
-  color: #fff
+#facebook {
+  background: linear-gradient(-160deg, #00D2FF, #3A7BD5);
 }
 
-button:hover svg {
-  opacity: 1;
+#instagram {
+  background: linear-gradient(135deg, #833AB4, #FD1D1D, #FCB045);
 }
 
-button:hover {
-  background-color: #bc2a8d;
+#dribbble {
+  background: linear-gradient(-70deg, #D70652, #FF025E);
 }
 
+#github {
+  background: linear-gradient(-70deg, #171515, #FF025E);
+}
+
+#youtube {
+  background: #FF0000;
+}
+
+#button-container:hover button {
+  rotate: 360deg;
+}
+
+#button-container:hover #share {
+  rotate: 270deg;
+}
+
+#button-container:hover > #facebook {
+  translate: -300% 50%;
+}
+
+#button-container:hover > #instagram {
+  translate: -226.78% -126.78%;
+}
+
+#button-container:hover > #dribbble {
+  translate: -50% -200%;
+}
+
+#button-container:hover > #github {
+  translate: 126.78% -126.78%;
+}
+
+#button-container:hover > #youtube {
+  translate: 200% 50%;
+}

@@ -1,45 +1,38 @@
 
-/* From Uiverse.io by gharsh11032000 - Tags:  */
-.loader {
+/* From Uiverse.io by adilsarfraz02  - Tags: loader, spinner, smooth, custom, transition, effect loader, loading animation */
+.custom-loader {
+  width: 40px;
+  height: 10px;
+  color: #f000b4;
+  background: radial-gradient(farthest-side, currentColor 90%, #0000) left /
+      10px 10px,
+    radial-gradient(farthest-side, currentColor 90%, #0000) center/10px 10px,
+    radial-gradient(farthest-side, currentColor 90%, #0000) right / 10px 10px,
+    linear-gradient(currentColor 0 0) center/100% 4px;
+  background-repeat: no-repeat;
   position: relative;
-  width: 70px;
-  height: 70px;
+  animation: s6 2s infinite linear;
 }
-
-.loader-large {
+.custom-loader:before,
+.custom-loader:after {
+  content: "";
   position: absolute;
   inset: 0;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  background-color: #D4ADFC;
-  border-radius: 10px;
-  animation: loading 2s infinite;
+  background: inherit;
+  animation: inherit;
+  --s: calc(50% - 5px);
+  animation-direction: reverse;
+}
+.custom-loader:after {
+  --s: calc(5px - 50%);
 }
 
-.loader-small {
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  inset: 0;
-  margin: auto;
-  background-color: #5C469C;
-  z-index: 2;
-  border-radius: 6px;
-  animation: loading 2s infinite reverse;
-}
-
-@keyframes loading {
+@keyframes s6 {
   0% {
-    transform: rotate(0deg);
+    transform: translate(var(--s, 0)) rotate(0);
   }
-
-  50% {
-    transform: rotateY(180deg);
-  }
-
   100% {
-    transform: rotateX(180deg);
+    transform: translate(var(--s, 0)) rotate(1turn);
   }
 }
 

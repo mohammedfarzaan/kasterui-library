@@ -1,53 +1,58 @@
 
-/* From Uiverse.io by vinodjangid07 - Tags: button, arrow, hover effect, back to top, scroll to top */
-.Btn {
-  width: 45px;
-  height: 45px;
-  background: linear-gradient(#44ea76, #39fad7);
+/* From Uiverse.io by andrew-demchenk0 - Tags: animation, purple, button, opacity, key , small */
+.button {
   display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 32px;
+  width: 82px;
   border: none;
+  background: #a549dacb;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-.arrow path {
-  fill: white;
+.lable {
+  line-height: 20px;
+  font-size: 17px;
+  color: #fff;
+  font-family: sans-serif;
+  letter-spacing: 1px;
 }
 
-.text {
-  font-size: 0.7em;
-  width: 100px;
-  position: absolute;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: -18px;
-  opacity: 0;
-  transition-duration: .7s;
+.svg-icon {
+  width: 20px;
+  height: 20px;
 }
 
-.Btn:hover .text {
-  opacity: 1;
-  transition-duration: .7s;
+.button:hover {
+  background: #A649DA;
 }
 
-.Btn:hover .arrow {
-  animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.button:hover .svg-icon {
+  animation: rot 0.5s linear infinite;
 }
 
-@keyframes slide-in-bottom {
+@keyframes rot {
   0% {
-    transform: translateY(10px);
-    opacity: 0;
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-6deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(6deg);
   }
 
   100% {
-    transform: translateY(0);
-    opacity: 1;
+    transform: rotate(0deg);
   }
 }
-

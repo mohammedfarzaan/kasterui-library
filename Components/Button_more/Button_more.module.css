@@ -1,0 +1,30 @@
+
+/* From Uiverse.io by ozgeozkaraa01 - Tags: button, #button */
+button {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.5s linear;
+  padding: 1.2em;
+  background-color: #ACB1D6;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #AAAAAA;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  left: 62px;
+  width: 60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

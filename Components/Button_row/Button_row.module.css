@@ -1,21 +1,78 @@
 
-/* From Uiverse.io by cohencoo - Tags: button */
-button {
-  background: #282936;
-  padding: 10px 2rem;
-  outline: 2.5px solid #FEBF00;
-  outline-offset: 3px;
-  border: 0;
-  color: white;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1rem;
-  border-radius: 100rem;
+/* From Uiverse.io by asgardOP  - Tags: simple, animation, white, button, message, modern, btn, click animation */
+.button {
+  width: 170px;
+  height: 55px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  border-bottom: 2px solid rgb(77, 77, 77);
+  display: flex;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.349);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
   transition: 0.4s;
-  font-weight: 600;
+  background: linear-gradient(140deg, white, rgb(214, 214, 214));
 }
 
-button:hover {
-  outline-offset: 4.5px;
-  background: #FEBF00;
-  font-size: 1.1rem;
+.button:hover {
+  box-shadow: none;
+  transform: scaleY(0.6);
+  border-bottom: 2px solid rgb(77, 77, 77);
+  background: linear-gradient(160deg, white, rgb(214, 214, 214));
 }
+
+.button:active {
+  margin-top: 20px;
+  transition: 0.05s;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  bottom: 0px;
+  width: 170px;
+  height: 0px;
+  background: rgb(194, 194, 194);
+  border-top: 0px solid black;
+  border-bottom: 0px solid black;
+  transition: height 0.4s, bottom 0.4s, opacity 0s 0.35s;
+  opacity: 0;
+  box-shadow: inset 0px -10px 10px rgba(167, 167, 167, 0.719);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.button:hover::before {
+  height: 35px;
+  bottom: -27px;
+  opacity: 1;
+  border-bottom: 1px solid black;
+  transition: height 0.4s, bottom 0.4s;
+}
+
+.button:active::before {
+  height: 18px;
+  bottom: -9px;
+  transition: height 0.05s, bottom 0.05s, opacity 0s 0s;
+}
+
+.button div {
+  width: 150px;
+  height: 40px;
+  background: linear-gradient(180deg, rgba(212, 212, 212, 0.925), white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-weight: 900;
+}
+
+.button div svg {
+  width: 20px;
+  transform: rotate(40deg);
+  margin-right: 5px;
+}
+

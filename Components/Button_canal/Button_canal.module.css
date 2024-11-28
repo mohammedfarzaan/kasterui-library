@@ -1,59 +1,86 @@
 
-/* From Uiverse.io by Dashrath-Sharma  - Tags: glassmorphism, flashy, button, shadow, glow, border, box-shadow, buttons */
+/* From Uiverse.io by LilaRest  - Tags: neumorphism, skeuomorphism, social, button, like, heart, realistic, favorite */
 button {
-  cursor: pointer;
-  padding: 1em 2em;
-  font-weight: bold;
-  font-size: 20px;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  background: rgba(60, 73, 203, 0.35);
-  box-shadow: 0 0px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(14.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  -webkit-backdrop-filter: blur(14.5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 25px 20px 22px;
+  box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: #e8e8e8;
+  border-color: #ffe2e2;
+  border-style: solid;
+  border-width: 9px;
+  border-radius: 35px;
+  font-size: 25px;
+  font-weight: 900;
+  color: rgb(134, 124, 124);
+  font-family: monospace;
+  transition: transform 400ms cubic-bezier(.68,-0.55,.27,2.5), 
+  border-color 400ms ease-in-out,
+  background-color 400ms ease-in-out;
+  word-spacing: -2px;
+}
+
+@keyframes movingBorders {
+  0% {
+    border-color: #fce4e4;
+  }
+
+  50% {
+    border-color: #ffd8d8;
+  }
+
+  90% {
+    border-color: #fce4e4;
+  }
 }
 
 button:hover {
-  box-shadow: 0px 0 32px 0 rgba(31, 38, 135, 0.37),
-    0px 0 32px 0 rgba(31, 38, 135, 0.37), 0 0 42px 0px rgba(31, 38, 135, 0.37),
-    0 0 52px 0 rgba(31, 38, 135, 0.37);
-  border: 1px solid rgba(255, 255, 255, 0.58);
+  background-color: #eee;
+  transform: scale(105%);
+  animation: movingBorders 3s infinite;
 }
 
-button,
-button::before {
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  box-shadow: 0 0px 32px 0 rgba(31, 38, 135, 0.37);
+button svg {
+  margin-right: 11px;
+  fill: rgb(255, 110, 110);
+  transition: opacity 100ms ease-in-out;
 }
 
-button::before {
-  content: "Button";
+.filled {
   position: absolute;
-  background: blue;
-  width: 90%;
-  height: 80%;
-  background: rgba(26, 18, 241, 0.25);
-  backdrop-filter: blur(18.5px);
-  -webkit-backdrop-filter: blur(18.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  transition: 0.4s;
+  opacity: 0;
+  top: 20px;
+  left: 22px;
 }
 
-button:hover::before {
-  background: rgba(51, 57, 236, 0.4);
-  box-shadow: 1px 1px 2px 0 rgba(31, 38, 135, 0.37),
-    2px 2px 2px 0 rgba(31, 38, 135, 0.37), 0 0px 32px 0 rgba(31, 38, 135, 0.37),
-    0 0px 32px 1px rgba(31, 38, 135, 0.37), 0 0px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(5.5px);
-  -webkit-backdrop-filter: blur(5.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-button:active::before {
-  transform: scale(0.67);
+@keyframes beatingHeart {
+  0% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1.15);
+  }
+
+  30% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1.15);
+  }
+
+  60% {
+    transform: scale(1);
+  }
 }
 
+button:hover .empty {
+  opacity: 0;
+}
+
+button:hover .filled {
+  opacity: 1;
+  animation: beatingHeart 1.2s infinite;
+}

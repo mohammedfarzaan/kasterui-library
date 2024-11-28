@@ -4,25 +4,20 @@ import styles from "./Button_pilot.module.css";
 const Button_pilot = () => (
   <div>
     <button>
-      <div>
-        <span>
-          <p>Hover Me</p>
-          <p>:)</p>
-        </span>
-      </div>
-      <div>
-        <span>
-          <p>Thanks</p>
-          <p>:D</p>
-        </span>
-      </div>
+      <span>Hey! Siri</span>
+      <div className={styles["line"]}></div>
+      <div className={styles["line-2"]}></div>
+      <div className={styles["speak"]}></div>
+      <div className={styles["speak"] + styles["one"]}></div>
+      <div className={styles["speak"] + styles["two"]}></div>
+      <div className={styles["speak"] + styles["three"]}></div>
     </button>
   </div>
 );
 
 export default Button_pilot;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -32,16 +27,13 @@ export default Button_pilot;
         const Button_pilot = () => (
          <div>
           <button>
-  <div>
-    <span>
-      <p>Hover Me</p><p>:)</p>
-    </span>
-  </div>
-  <div>
-    <span>
-      <p>Thanks</p><p>:D</p>
-    </span>
-  </div>
+  <span>Hey! Siri</span>
+  <div className="line"></div>
+  <div className="line-2"></div>
+  <div className="speak"></div>
+  <div className="speak one"></div>
+  <div className="speak two"></div>
+  <div className="speak three"></div>
 </button>
         </div>
         );

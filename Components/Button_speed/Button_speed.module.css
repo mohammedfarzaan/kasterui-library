@@ -1,37 +1,30 @@
 
-/* From Uiverse.io by Saiyed-Tanvir - Tags: button, box */
-.btn {
-  transform-style: preserve-3d;
-  perspective: 1000px;
-}
-
-.sides {
-  transition: all 0.07s;
+/* From Uiverse.io by laminelawal - Tags: button, 3d button */
+button {
+  border-radius: 30px;
+  border: none;
   cursor: pointer;
-}
-
-.top {
-  background: linear-gradient(259.35deg, #FF6B00 0%, #BD00FF 100%);
-  height: 2cm;
-  width: 4cm;
-  transform: rotateX(60deg);
-  font-weight: bolder;
-  padding: 0.5cm 1cm;
+  outline: none;
+  width: 150px;
+  height: 54px;
+  background-image: linear-gradient(to top, #222 0%, #333 80%, #444 100%);
   color: white;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: monospace;
+  transition: all 0.3s;
+  text-shadow: 0 4px 3px black;
 }
 
-.front {
-  background: linear-gradient(280.65deg, #BD5000 0%, #8C00BD 100%);
-  height: 2cm;
-  width: 4cm;
-  transform: translateY(-38px) rotateX(-60deg);
+button:hover {
+  box-shadow: 0 4px 3px 1px #333, 0 6px 8px #222, 0 -4px 4px #222, 0 -6px 4px #333, inset 0 0 3px 3px black;
 }
 
-.btn:active .top {
-  transform: rotateX(60deg) translateZ(0px);
+button:active {
+  box-shadow: 0 4px 3px 1px #333, 0 6px 8px #222, 0 -4px 4px #222, 0 -6px 4px #333, inset 0 0 3px 3px black;
 }
 
-.btn:active .front {
-  height: 0.1cm;
-  transform: rotateX(-60deg) translateZ(-26px);
+button:focus {
+  box-shadow: 0 4px 3px 1px #333, 0 6px 8px #222, 0 -4px 4px #222, 0 -6px 4px #333, inset 0 5px 7px 0   black;
 }
+

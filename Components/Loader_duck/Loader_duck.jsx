@@ -3,14 +3,14 @@ import styles from "./Loader_duck.module.css";
 
 const Loader_duck = () => (
   <div>
-    <div className={styles["loading"]}>
-      <div className={styles["cube"]}>
-        <div className={styles["side"] + styles["front"]}></div>
-        <div className={styles["side"] + styles["back"]}></div>
-        <div className={styles["side"] + styles["top"]}></div>
-        <div className={styles["side"] + styles["bottom"]}></div>
-        <div className={styles["side"] + styles["left"]}></div>
-        <div className={styles["side"] + styles["right"]}></div>
+    <div className={styles["spinner-container"]}>
+      <div className={styles["spinner-inner"]}>
+        <div className={styles["spinner-outer"]}>
+          <div className={styles["spinner-inner-1"]}></div>
+          <div className={styles["spinner-inner-2"]}></div>
+          <div className={styles["spinner-inner-3"]}></div>
+          <div className={styles["spinner-inner-4"]}></div>
+        </div>
       </div>
     </div>
   </div>
@@ -18,7 +18,7 @@ const Loader_duck = () => (
 
 export default Loader_duck;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -27,14 +27,14 @@ export default Loader_duck;
 
         const Loader_duck = () => (
          <div>
-          <div className="loading">
-  <div className="cube">
-    <div className="side front"></div>
-    <div className="side back"></div>
-    <div className="side top"></div>
-    <div className="side bottom"></div>
-    <div className="side left"></div>
-    <div className="side right"></div>
+          <div className="spinner-container">
+  <div className="spinner-inner">
+    <div className="spinner-outer">
+      <div className="spinner-inner-1"></div>
+      <div className="spinner-inner-2"></div>
+      <div className="spinner-inner-3"></div>
+      <div className="spinner-inner-4"></div>
+    </div>
   </div>
 </div>
         </div>

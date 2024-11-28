@@ -1,35 +1,51 @@
 
-/* From Uiverse.io by asgardOP  - Tags: simple, button, hover, smooth, game, html, css */
-.button {
+/* From Uiverse.io by amerfad - Tags: button */
+.animated-button {
+  background-color: #ff6b6b;
+  border: none;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 4px 2px;
   cursor: pointer;
-  width: fit-content;
-  height: fit-content;
-  padding: 15px;
-  background-color: rgb(223, 223, 223);
-  border-left: 3px solid white;
-  border-top: 3px solid white;
-  border-right: 3px solid gray;
-  border-bottom: 3px solid gray;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 1.1rem;
-  font-weight: 900;
-  outline: 2px solid black;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
-.button:hover {
-  background-color: rgb(0, 197, 0);
-  color: white;
-  outline-color: white;
-  border-left: 3px solid rgb(0, 255, 0);
-  border-top: 3px solid rgb(0, 255, 0);
-  border-right: 3px solid green;
-  border-bottom: 3px solid green;
+.animated-button:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
 }
 
-.button:active {
-  border-left: 3px solid green;
-  border-top: 3px solid green;
-  border-right: 3px solid rgb(0, 255, 0);
-  border-bottom: 3px solid rgb(0, 255, 0);
+.animated-button:hover:after {
+  width: 210px;
+  height: 200px;
+  opacity: 1;
+}
+
+.animated-button:focus {
+  outline: none;
+}
+
+.animated-button:active {
+  transform: translateY(2px);
+  box-shadow: none;
 }
 

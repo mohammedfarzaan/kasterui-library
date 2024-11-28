@@ -3,13 +3,26 @@ import styles from "./Button_fat.module.css";
 
 const Button_fat = () => (
   <div>
-    <button className={styles["btn"]}>Watch</button>
+    <div
+      className={styles["item"] + styles["button-parrot"]}
+      style="--bg-color: #2c3e50"
+    >
+      <button>
+        Click Me!
+        <div className={styles["parrot"]}></div>
+        <div className={styles["parrot"]}></div>
+        <div className={styles["parrot"]}></div>
+        <div className={styles["parrot"]}></div>
+        <div className={styles["parrot"]}></div>
+        <div className={styles["parrot"]}></div>
+      </button>
+    </div>
   </div>
 );
 
 export default Button_fat;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -18,9 +31,16 @@ export default Button_fat;
 
         const Button_fat = () => (
          <div>
-          <button className="btn">
-  Watch
-</button>
+          <div className="item button-parrot" style="--bg-color: #2c3e50">
+    <button>Click Me!
+      <div className="parrot"></div>
+      <div className="parrot"></div>
+      <div className="parrot"></div>
+      <div className="parrot"></div>
+      <div className="parrot"></div>
+      <div className="parrot"></div>
+    </button>
+  </div>
         </div>
         );
 

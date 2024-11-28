@@ -3,13 +3,29 @@ import styles from "./Button_island.module.css";
 
 const Button_island = () => (
   <div>
-    <button className={styles["btn"]}>3D button</button>
+    <button className={styles["btn"]}>
+      <svg>
+        <defs>
+          <linearGradient id="gradiant">
+            <stop stop-color="#FF8282" offset="0%"></stop>
+            <stop stop-color="#E178ED" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <rect
+          height="50"
+          width="150"
+          stroke="url(#gradiant)"
+          fill="none"
+        ></rect>
+      </svg>
+      <span>Button</span>
+    </button>
   </div>
 );
 
 export default Button_island;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -18,7 +34,18 @@ export default Button_island;
 
         const Button_island = () => (
          <div>
-          <button className="btn">3D button</button>
+          <button className="btn">
+  <svg>
+    <defs>
+        <linearGradient id="gradiant">
+            <stop stop-color="#FF8282" offset="0%"></stop>
+            <stop stop-color="#E178ED" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+     <rect height="50" width="150" stroke="url(#gradiant)" fill="none"></rect>
+  </svg>
+    <span>Button</span>
+</button>
         </div>
         );
 

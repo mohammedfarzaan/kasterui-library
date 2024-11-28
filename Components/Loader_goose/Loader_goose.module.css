@@ -1,46 +1,75 @@
 
-/* From Uiverse.io by Tsiangana  - Tags: animation, loader, animated, creative, loading animation */
-.light {
-  position: absolute;
-  left: 22px;
-  fill: rgba(37, 37, 37, 0.774);
+/* From Uiverse.io by Fadhilmagass - Tags: simple, animation, loader */
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
 }
 
-.loader {
-  width: 80px;
-  height: 40px;
-  border: 2px solid #22f49e;
-  border-right-color: transparent;
-  padding: 3px;
-  background: repeating-linear-gradient(90deg, #22f49e 0 10px, #0000 0 15px)
-    left/0% 100% no-repeat content-box content-box;
-  position: relative;
-  animation: p5 2s infinite steps(6);
-}
-.loader::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: 100%;
+.dot {
+  display: inline-block;
   width: 10px;
-  background: linear-gradient(
-        #0000 calc(50% - 7px),
-        #22f49e 0 calc(50% - 5px),
-        #0000 0 calc(50% + 5px),
-        #22f49e 0 calc(50% + 7px),
-        #0000 0
-      )
-      left / 100% 100%,
-    linear-gradient(#22f49e calc(50% - 5px), #0000 0 calc(50% + 5px), #22f49e 0)
-      left / 2px 100%,
-    linear-gradient(#0000 calc(50% - 5px), #22f49e 0 calc(50% + 5px), #0000 0)
-      right/2px 100%;
-  background-repeat: no-repeat;
+  height: 10px;
+  margin-right: 6px;
+  border-radius: 50%;
+  -webkit-animation: dot-pulse2 1.5s ease-in-out infinite;
+  animation: dot-pulse2 1.5s ease-in-out infinite;
 }
-@keyframes p5 {
+
+.dot-1 {
+  background-color: #4285f4;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.dot-2 {
+  background-color: #34a853;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.dot-3 {
+  background-color: #fbbc05;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.dot-4 {
+  background-color: #ea4335;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+.dot-5 {
+  background-color: #4285f4;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+@keyframes dot-pulse2 {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+
   100% {
-    background-size: 120% 100%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.5;
   }
 }
 

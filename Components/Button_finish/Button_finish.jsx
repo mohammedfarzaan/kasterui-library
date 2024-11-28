@@ -3,28 +3,70 @@ import styles from "./Button_finish.module.css";
 
 const Button_finish = () => (
   <div>
-    <button className={styles["space-button"]}>
-      To a Galaxy far far away
-      <span className={styles["space-icon"]}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          viewBox="0 0 256 256"
-        >
-          <path
-            fill="white"
-            d="M148 224a4 4 0 0 1-4 4h-32a4 4 0 0 1 0-8h32a4 4 0 0 1 4 4Zm71.1-67.3l-12.4 55.6a12 12 0 0 1-7.7 8.8a14.4 14.4 0 0 1-4 .6a12 12 0 0 1-7.5-2.6L158.6 196H97.4l-28.9 23.1a12 12 0 0 1-7.5 2.6a14.4 14.4 0 0 1-4-.6a12 12 0 0 1-7.7-8.8l-12.4-55.6a12.4 12.4 0 0 1 2.5-10.3l30.5-36.5a117.4 117.4 0 0 1 7.9-35.8c11.8-30.5 33.8-50.3 42.7-57.5a12 12 0 0 1 15 .1c10.9 8.8 30.9 28.1 42.2 57.4a119 119 0 0 1 7.8 35l31.1 37.3a12.4 12.4 0 0 1 2.5 10.3ZM98.3 188h59.4c50.4-91.6-8-149.5-27.2-165.1a3.9 3.9 0 0 0-5 0C106 38.5 46.8 96.3 98.3 188Zm-7.5 3c-13-23.5-20-46.4-21-68.5l-24.2 29a4.1 4.1 0 0 0-.8 3.5l12.3 55.6a4 4 0 0 0 2.6 2.9a4 4 0 0 0 3.8-.6Zm119.6-39.5l-24.7-29.6c-.8 22.3-7.7 45.4-20.6 69.1l27.4 21.9a4 4 0 0 0 3.8.6a4 4 0 0 0 2.6-2.9l12.3-55.6a4.1 4.1 0 0 0-.8-3.5ZM128 104a8 8 0 1 0-8-8a8 8 0 0 0 8 8Z"
-          ></path>
-        </svg>
-      </span>
-    </button>
+    <input
+      className={styles["toggle-checkbox"]}
+      id="toggle-checkbox"
+      type="checkbox"
+    />
+    <label className={styles["button"]} for="toggle-checkbox">
+      <div className={styles["content"]}>
+        <span className={styles["letters"]}>
+          <span style="--i: 1" data-label="C">
+            C
+          </span>
+          <span style="--i: 2" data-label="o">
+            o
+          </span>
+          <span style="--i: 3" data-label="p">
+            p
+          </span>
+          <span style="--i: 4" data-label="y">
+            y
+          </span>
+          <span style="--i: 5" data-label="L">
+            L
+          </span>
+          <span style="--i: 6" data-label="i">
+            i
+          </span>
+          <span style="--i: 7" data-label="n">
+            n
+          </span>
+          <span style="--i: 8" data-label="k">
+            k
+          </span>
+        </span>
+        <div className={styles["icon-container"]}>
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            fill="none"
+            data-slot="icon"
+            className="icon"
+          >
+            <path
+              className="bm"
+              d="M12.0017 6V4M8.14886 7.40371L6.86328 5.87162M15.864 7.40367L17.1496 5.87158"
+            ></path>
+            <path
+              d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+              strokeLinejoin="round"
+              strokeLinecap="round"
+              className="link"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </label>
   </div>
 );
 
 export default Button_finish;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -33,12 +75,44 @@ export default Button_finish;
 
         const Button_finish = () => (
          <div>
-          <button className="space-button">
-  To a Galaxy far far away 
-  <span className="space-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256"><path fill="white" d="M148 224a4 4 0 0 1-4 4h-32a4 4 0 0 1 0-8h32a4 4 0 0 1 4 4Zm71.1-67.3l-12.4 55.6a12 12 0 0 1-7.7 8.8a14.4 14.4 0 0 1-4 .6a12 12 0 0 1-7.5-2.6L158.6 196H97.4l-28.9 23.1a12 12 0 0 1-7.5 2.6a14.4 14.4 0 0 1-4-.6a12 12 0 0 1-7.7-8.8l-12.4-55.6a12.4 12.4 0 0 1 2.5-10.3l30.5-36.5a117.4 117.4 0 0 1 7.9-35.8c11.8-30.5 33.8-50.3 42.7-57.5a12 12 0 0 1 15 .1c10.9 8.8 30.9 28.1 42.2 57.4a119 119 0 0 1 7.8 35l31.1 37.3a12.4 12.4 0 0 1 2.5 10.3ZM98.3 188h59.4c50.4-91.6-8-149.5-27.2-165.1a3.9 3.9 0 0 0-5 0C106 38.5 46.8 96.3 98.3 188Zm-7.5 3c-13-23.5-20-46.4-21-68.5l-24.2 29a4.1 4.1 0 0 0-.8 3.5l12.3 55.6a4 4 0 0 0 2.6 2.9a4 4 0 0 0 3.8-.6Zm119.6-39.5l-24.7-29.6c-.8 22.3-7.7 45.4-20.6 69.1l27.4 21.9a4 4 0 0 0 3.8.6a4 4 0 0 0 2.6-2.9l12.3-55.6a4.1 4.1 0 0 0-.8-3.5ZM128 104a8 8 0 1 0-8-8a8 8 0 0 0 8 8Z"></path></svg>
+          <input className="toggle-checkbox" id="toggle-checkbox" type="checkbox" />
+<label className="button" for="toggle-checkbox">
+  <div className="content">
+    <span className="letters">
+      <span style="--i: 1" data-label="C">C</span>
+      <span style="--i: 2" data-label="o">o</span>
+      <span style="--i: 3" data-label="p">p</span>
+      <span style="--i: 4" data-label="y">y</span>
+      <span style="--i: 5" data-label="L">L</span>
+      <span style="--i: 6" data-label="i">i</span>
+      <span style="--i: 7" data-label="n">n</span>
+      <span style="--i: 8" data-label="k">k</span>
     </span>
-  </button>
+    <div className="icon-container">
+      <svg
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        fill="none"
+        data-slot="icon"
+        className="icon"
+      >
+        <path
+          className="bm"
+          d="M12.0017 6V4M8.14886 7.40371L6.86328 5.87162M15.864 7.40367L17.1496 5.87158"
+        ></path>
+        <path
+          d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+          strokeLinejoin="round"
+          strokeLinecap="round"
+          className="link"
+        ></path>
+      </svg>
+    </div>
+  </div>
+</label>
         </div>
         );
 

@@ -1,84 +1,64 @@
 
-/* From Uiverse.io by SelfMadeSystem - Tags: material design, button, ripple */
-.btn {
-  border-radius: 0.5em;
-  font-size: larger;
-  height: 3em;
-  width: 6em;
-  position: relative;
-  border: none;
-  background-color: hsl(218, 68%, 52%);
-  overflow: hidden;
-  isolation: isolate;
-  color: white;
-  box-shadow: 1px 2px 4px #0007;
-  transition: background-color 0.2s;
-}
-
-.btn:hover {
-  background-color: hsl(218, 68%, 47%);
-}
-
-.btn > span {
-  position: relative;
-  pointer-events: none;
-  z-index: 10;
-}
-
-.ripple-container {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  grid-template-columns: repeat(12, 0.5em);
-}
-
-.ripple-container > span {
-  position: relative;
+/* From Uiverse.io by Randdose - Tags: button, transition, transform */
+.button {
+  all: unset;
   display: flex;
-  justify-content: center;
   align-items: center;
+  position: relative;
+  padding: 0.6em 2em;
+  border: mediumspringgreen solid 0.15em;
+  border-radius: 0.25em;
+  color: mediumspringgreen;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
 }
 
-.ripple-container > span::after {
+.button p {
+  z-index: 1;
+}
+
+.button:hover {
+  color: #212121;
+}
+
+.button:active {
+  border-color: teal;
+}
+
+.button::after, .button::before {
   content: "";
-  pointer-events: none;
   position: absolute;
-  background-color: hsl(218, 68%, 65%);
-  transition: width 0.5s ease-out, height 0.5s ease-out, opacity 1s;
-  width: 13em;
-  height: 13em;
-  opacity: 0;
-  border-radius: 999em;
+  width: 9em;
+  aspect-ratio: 1;
+  background: mediumspringgreen;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
 }
 
-.ripple-container > span:active::after {
-  transition: 0s;
-  width: 0em;
-  height: 0em;
-  opacity: 1;
+.button::before {
+  left: 0;
+  transform: translateX(-8em);
 }
 
-/*
-Use this instead if you want the ripple to start
-immediately on click but end abruptly on unclick:
-
-.ripple-container > span::after {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  background-color: hsl(218, 68%, 65%);
-  width: 0em;
-  height: 0em;
-  border-radius: 999em;
-  opacity: 1;
+.button::after {
+  right: 0;
+  transform: translateX(8em);
 }
 
-.ripple-container > span:active::after {
-  transition: width 0.25s ease-out, height 0.25s ease-out, opacity 0.75s;
-  width: 13em;
-  height: 13em;
-  opacity: 0;
+.button:hover:before {
+  transform: translateX(-1em);
 }
 
-Your Global selectors gets triggered by this:
-*/
+.button:hover:after {
+  transform: translateX(1em);
+}
+
+.button:active:before,
+.button:active:after {
+  background: teal;
+}

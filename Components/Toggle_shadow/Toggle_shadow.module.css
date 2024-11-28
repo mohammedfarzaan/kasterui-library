@@ -1,0 +1,95 @@
+
+/* From Uiverse.io by shadowfax29 - Tags: switch, toggle switch, plant , seed */
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  --mud: #8B4513;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom,skyblue 70%,var(--mud));
+  transition: .4s;
+  border-radius: 30px;
+  border: 2px solid black;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  transition: .4s;
+}
+
+.plant {
+  position: absolute;
+  bottom: 3px;
+  right: -30px;
+  z-index: 3;
+  opacity: 0;
+}
+
+.seed {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  transition: .4s;
+}
+
+.switch input:checked + .slider {
+  background-color: #156829;
+}
+
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #156829;
+}
+
+.switch input:checked + .slider:before,
+.switch input:checked + .slider .seed {
+  transform: translateX(1.5em);
+}
+
+.switch input:checked + .slider .seed {
+  opacity: 0;
+}
+
+.switch input:checked + .slider .plant {
+  animation: zoomIn 0.5s forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,25 +1,76 @@
 
-/* From Uiverse.io by McHaXYT  - Tags: neumorphism, flashy, icon, purple, button, hover, futuristic, creative */
-.button {
-  cursor: pointer;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  padding: 0.625rem 1rem;
-  color: rgb(242 242 242);
-  background-color: rgb(79 70 229);
-  background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-  font-weight: 600;
-  border-radius: 0.5rem;
-  border-style: none;
+/* From Uiverse.io by kamehame-ha - Tags: button, hover, Discord, dark, light */
+.light-button button.bt {
+  position: relative;
+  height: 200px;
   display: flex;
-  justify-content: center;
+  align-items: flex-end;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.light-button button.bt .button-holder {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  transition: all 0.35s linear;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background-color: #0a0a0a;
+  border-radius: 5px;
+  color: #0f0f0f;
+  font-weight: 700;
+  transition: 300ms;
+  outline: #0f0f0f 2px solid;
+  outline-offset: 20;
 }
 
-.button:hover {
-  box-shadow: inset 0 5px 25px 0 #af40ff, inset 0 10px 15px 0px #5b42f3,
-    inset 0 5px 25px 0px #00ddeb;
+.light-button button.bt .button-holder svg {
+  height: 50px;
+  fill: #0f0f0f;
+  transition: 300ms;
 }
 
+.light-button button.bt .light-holder {
+  position: absolute;
+  height: 200px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.light-button button.bt .light-holder .dot {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #0a0a0a;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.light-button button.bt .light-holder .light {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+  background: transparent;
+}
+
+.light-button button.bt:hover .button-holder svg {
+  fill: rgba(88, 101, 242, 1);
+}
+
+.light-button button.bt:hover .button-holder {
+  color: rgba(88, 101, 242, 1);
+  outline: rgba(88, 101, 242, 1) 2px solid;
+  outline-offset: 2px;
+}
+
+.light-button button.bt:hover .light-holder .light {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(88, 101, 242, 1) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+}

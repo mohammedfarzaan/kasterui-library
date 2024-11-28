@@ -1,37 +1,28 @@
 
-/* From Uiverse.io by ArturCodeCraft - Tags: button, links, btn */
-/* <reset-style> ============================ */
-button {
+/* From Uiverse.io by PriyanshuGupta28 - Tags: gradient, button */
+.my-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  transition: 0.2s ease-in-out;
   border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
+  border-radius: 4px;
   cursor: pointer;
-  font-family: inherit;
-}
-/* <main-style> ============================ */
-.menu__button {
-  min-width: 62px;
-  height: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 16px;
-  border: 1px solid #fff;
-  background-color: transparent;
-  transition: background-color .4s;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-.menu__button:hover {
-  background-color: #fff;
+.my-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.menu__button span {
-  color: #fff;
-  line-height: 1;
-  transition: color .4s;
+.my-button:active {
+  background-color: #00DBDE;
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 }
 
-.menu__button:hover span {
-  color: #000;
-}

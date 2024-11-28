@@ -3,19 +3,34 @@ import styles from "./Loader_led.module.css";
 
 const Loader_led = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["circle"]} tabindex="0"></div>
-      <div className={styles["circle"]} tabindex="0"></div>
-      <div className={styles["circle"]} tabindex="0"></div>
-      <div className={styles["circle"]} tabindex="0"></div>
-      <div className={styles["circle"]} tabindex="0"></div>
+    <div className={styles["jelly-triangle"]}>
+      <div className={styles["jelly-triangle__dot"]}></div>
+      <div className={styles["jelly-triangle__traveler"]}></div>
     </div>
+    <svg width="0" height="0" className="jelly-maker">
+      <defs>
+        <filter id="uib-jelly-triangle-ooze">
+          <feGaussianBlur
+            in="SourceGraphic"
+            stdDeviation="7.3"
+            result="blur"
+          ></feGaussianBlur>
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+            result="ooze"
+          ></feColorMatrix>
+          <feBlend in="SourceGraphic" in2="ooze"></feBlend>
+        </filter>
+      </defs>
+    </svg>
   </div>
 );
 
 export default Loader_led;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -24,13 +39,19 @@ export default Loader_led;
 
         const Loader_led = () => (
          <div>
-          <div className="loader">
-  <div className="circle" tabindex="0"></div>
-  <div className="circle" tabindex="0"></div>
-  <div className="circle" tabindex="0"></div>
-  <div className="circle" tabindex="0"></div>
-  <div className="circle" tabindex="0"></div>
+          <div className="jelly-triangle">
+<div className="jelly-triangle__dot"></div>
+<div className="jelly-triangle__traveler"></div>
 </div>
+<svg width="0" height="0" className="jelly-maker">
+  <defs>
+    <filter id="uib-jelly-triangle-ooze">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="7.3" result="blur"></feGaussianBlur>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="ooze"></feColorMatrix>
+      <feBlend in="SourceGraphic" in2="ooze"></feBlend>
+    </filter>
+  </defs>
+</svg>
         </div>
         );
 

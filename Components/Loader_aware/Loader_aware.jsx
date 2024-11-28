@@ -3,13 +3,26 @@ import styles from "./Loader_aware.module.css";
 
 const Loader_aware = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["window"]}>
+      <div className={styles["logo"]}>
+        <p className={styles["top"]}>Microsoft</p>
+        <p className={styles["mid"]}>
+          Windows<span>XP</span>
+        </p>
+        <p className={styles["bottom"]}>Professional</p>
+      </div>
+      <div className={styles["container"]}>
+        <div className={styles["box"]}></div>
+        <div className={styles["box"]}></div>
+        <div className={styles["box"]}></div>
+      </div>
+    </div>
   </div>
 );
 
 export default Loader_aware;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -18,7 +31,18 @@ export default Loader_aware;
 
         const Loader_aware = () => (
          <div>
-          <div className="loader"></div>
+          <div className="window">
+  <div className="logo">
+    <p className="top">Microsoft</p>
+    <p className="mid">Windows<span>XP</span></p>
+    <p className="bottom">Professional</p>
+  </div>
+  <div className="container">
+    <div className="box"></div>
+    <div className="box"></div>
+    <div className="box"></div>
+  </div>
+</div>
         </div>
         );
 

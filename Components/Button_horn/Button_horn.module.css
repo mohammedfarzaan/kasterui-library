@@ -1,75 +1,34 @@
 
-/* From Uiverse.io by itay1313 - Tags: button */
-.body {
-  --transition: all 0.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  --yellow-bg: transparent linear-gradient(114deg, #fdc100 0%, #dd7d00 100%) 0%
-    0% no-repeat padding-box;
-  color: white;
-  margin: 0;
+/* From Uiverse.io by watchakorn-18k - Tags: gradient, button, transition */
+.btn-space {
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 500% auto;
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.103);
+  border-radius: 10px;
 }
 
-.btn {
-  border-radius: 23px;
-  letter-spacing: 0.8px;
-  font-size: 14px;
-  font-weight: 300;
-  color: white;
-  white-space: nowrap;
-  margin: 20px auto;
-  width: 166px;
-  height: 45px;
-  cursor: pointer;
-  position: relative;
-  border: 1px solid #dd7d00;
-  background: transparent;
+.btn-space:hover {
+  background-position: right center;
+  border-image-source: linear-gradient(90deg, #d53a9d,#743ad5 );
+  -webkit-box-shadow: 0 0 20px #743ad5;
+  box-shadow: 0 0 20px #743ad5;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 10px #d53a9d;
 }
 
-.btn::before {
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  content: "";
-  width: 50%;
-  height: 100%;
-  background: black;
-  position: absolute;
-  top: 0;
-  right: 0;
+.space {
+  background-image: -webkit-gradient(linear, left top, right top, from(#743ad5), color-stop(51%, #d53a9d), to(#743ad5));
+  background-image: linear-gradient(to right, #743ad5 0%, #d53a9d 51%, #743ad5 100%);
+  border-image-source: linear-gradient(45deg, #743ad5, #d53a9d );
+  border-image-outset: 1em;
 }
 
-.btn:hover::before {
-  width: 100%;
-}
 
-.btn.btn-hover {
-  border-radius: 50px;
-  position: relative;
-}
 
-.btn.btn-hover .btn-text {
-  color: white;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  mix-blend-mode: lighten;
-}
-
-.btn.btn-hover::before {
-  border-radius: 50px;
-  width: 100%;
-  background: conic-gradient(
-    transparent 240deg, #ac633697 240deg,
-    #fff2af6a 300deg, transparent 300deg
-  )
-  100% / 64%
-  no-repeat, var(--yellow-bg);
-}
-
-.btn.btn-hover:hover .btn-text {
-  margin-right: 30px;
-}
-
-.btn.btn-hover:hover::before {
-  background-position: right;
-  border-radius: 23px;
-  width: 25%;
-}
 

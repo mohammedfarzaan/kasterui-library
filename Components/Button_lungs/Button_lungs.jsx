@@ -1,15 +1,41 @@
 import React from "react";
+import styles from "./Button_lungs.module.css";
 
 const Button_lungs = () => (
   <div>
-    <button className="px-6 py-2 font-semibold text-white bg-green-500 border-b-4 border-green-800 rounded shadow-lg shadow-green-600/50 hover:border-b-2 active:border-b-2">
-      Button
+    <button className={styles["btn"]}>
+      <svg
+        className="icon"
+        width="30"
+        height="30"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+      </svg>
     </button>
   </div>
 );
 
 export default Button_lungs;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_lungs = () => (
+         <div>
+          <button className="btn">
+ <svg className="icon" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path></svg>
+</button>
+        </div>
+        );
+
+        export default Button_lungs;
+        
+        
+         */
 }

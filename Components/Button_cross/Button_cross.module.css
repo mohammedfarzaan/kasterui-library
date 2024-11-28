@@ -1,0 +1,101 @@
+
+/* From Uiverse.io by mRcOol7  - Tags: button, #button, button hover effect  */
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  border: none;
+  border-radius: 9999px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5);
+}
+
+.button svg {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.button:hover svg {
+  transform: rotate(20deg) scale(1.1);
+  filter: drop-shadow(0 0 10px #ffd700);
+}
+
+.button span {
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out,
+    text-shadow 0.3s ease-in-out;
+}
+
+.button:hover span {
+  color: #ffd700;
+  text-shadow: 0 0 10px #ffd700;
+}
+
+.button .text-md {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out,
+    text-shadow 0.3s ease-in-out;
+}
+
+.button:hover .text-md {
+  color: #ffd700;
+  text-shadow: 0 0 10px #ffd700;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  animation: ripple 1s linear infinite;
+  pointer-events: none;
+}
+
+.button:active .ripple {
+  animation: ripple-on-click 0.6s linear;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes ripple-on-click {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+

@@ -1,28 +1,45 @@
 import React from "react";
+import styles from "./Button_birds.module.css";
 
 const Button_birds = () => (
   <div>
-    <button className="cursor-pointer bg-gray-800 px-3 py-2 rounded-md text-white tracking-wider shadow-xl animate-bounce hover:animate-none">
-      <svg
-        className="w-5 h-5"
-        stroke="currentColor"
-        strokeWidth="2"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
-          strokeLinejoin="round"
-          strokeLinecap="round"
-        ></path>
+    <button className={styles["space-button"]}>
+      <span>Explore space</span>
+      <svg viewBox="0 0 24 24">
+        <path d="M5.5 16.5l5-5-5-5"></path>
+        <path d="M11 11h8v2h-8z"></path>
+        <path d="M16.5 7.5l5-5-5-5"></path>
+        <path d="M19 4v8h-2v-8z"></path>
       </svg>
     </button>
   </div>
 );
 
 export default Button_birds;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_birds = () => (
+         <div>
+          <button className="space-button">
+  <span>Explore space</span>
+  <svg viewBox="0 0 24 24">
+    <path d="M5.5 16.5l5-5-5-5"></path>
+    <path d="M11 11h8v2h-8z"></path>
+    <path d="M16.5 7.5l5-5-5-5"></path>
+    <path d="M19 4v8h-2v-8z"></path>
+  </svg>
+</button>
+        </div>
+        );
+
+        export default Button_birds;
+        
+        
+         */
 }

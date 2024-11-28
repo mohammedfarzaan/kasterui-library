@@ -1,51 +1,42 @@
 
-/* From Uiverse.io by Shoh2008 - Tags: loader */
-.loader {
-  margin: auto;
-  width: 100px;
-  height: 30px;
-  overflow: hidden;
+/* From Uiverse.io by G4b413l - Tags: loader */
+.pulsar {
+  --uib-size: 40px;
+  --uib-speed: 0.9s;
+  --uib-color: white;
   position: relative;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  box-shadow: 0px 35px 0 -5px #aaa, 0 -5px 0 0px #ddd, 0 -25px 0 -5px #fff,
-    -25px -30px 0 0px #ddd, -25px 30px 0 0px #ddd, 25px -30px 0 0px #ddd,
-    25px 30px 0 0px #ddd, 20px 10px 0 5px #ddd, 20px -10px 0 5px #ddd,
-    -20px -10px 0 5px #ddd, -20px 10px 0 5px #ddd;
+  height: var(--uib-size);
+  width: var(--uib-size);
 }
 
-.loader:after,
-.loader:before {
-  content: "";
-  border-radius: 100%;
-  width: 35px;
-  height: 35px;
-  display: block;
+.pulsar::before,
+.pulsar::after {
+  content: '';
   position: absolute;
-  border: 4px dashed #fff;
-  bottom: -4px;
-  transform: rotate(0deg);
-  box-sizing: border-box;
-  animation: tape 4s linear infinite;
-}
-
-.loader:before {
-  right: 0;
-  box-shadow: 0 0 0 4px #fff, 0 0 0 34px #000;
-}
-
-.loader:after {
+  top: 0;
   left: 0;
-  box-shadow: 0 0 0 4px #fff, 0 0 0 65px #000;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: var(--uib-color);
+  animation: pulse9173412 var(--uib-speed) ease-in-out infinite;
+  transform: scale(0);
 }
 
-@keyframes tape {
-  0% {
-    transform: rotate(0deg) scale(0.4);
-  }
+.pulsar::after {
+  animation-delay: calc(var(--uib-speed) / -2);
+}
 
+@keyframes pulse9173412 {
+  0%,
   100% {
-    transform: rotate(-360deg) scale(0.4);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 0.25;
   }
 }
-      
+

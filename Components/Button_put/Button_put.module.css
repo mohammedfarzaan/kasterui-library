@@ -1,74 +1,65 @@
 
-/* From Uiverse.io by ChanduOffl  - Tags: icon, animation, white, button, message, btn, buttons, hover button */
+/* From Uiverse.io by Navs45  - Tags: icon, white, button, transition, btn, hover effect, html, css */
 .button {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #fefefe;
-  border: 1px solid #dcdcdc;
-  border-radius: 12px;
-
-  font-family: "Ubuntu", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
   cursor: pointer;
-  text-decoration: none;
-  transition: all 0.3s ease;
+}
+.button {
+  border: none;
   position: relative;
-  overflow: hidden;
-  z-index: 0;
-  outline: 2px solid #fafafa;
-  box-shadow: 9px 9px 44px #cecece3a, -9px -9px 44px #d3d3d33d,
-    inset 0 0 0 2px rgba(192, 192, 192, 0.25);
+  width: 249px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: -2px 2px 1.3px 1px #7f807f,
+    -5px 5px 2.8px 0px rgba(255, 255, 255, 0.5), -5px 7px 4.4px 0px #c5c6c5,
+    0px 0px 2.4px 4px #e4e5e4;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-.button::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  right: 3px;
-  bottom: 3px;
-  border-radius: 30px;
-  background: linear-gradient(
-    0deg,
-    #fbfbfb 0%,
-    #fafafa 5%,
-    #f7f7f7 72%,
-    #f2f2f2 86%,
-    #f0f0f0 100%
-  );
-  box-shadow: inset 0 2px 7px rgba(143, 143, 143, 0.16);
-  transition: all 0.3s ease;
-  z-index: -1;
-  margin: 2px;
+.button:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-5px);
+  box-shadow: -2px 2px 1.3px 1px #7f807f,
+    -5px 5px 2.8px 0px rgba(255, 255, 255, 0.5), -5px 7px 4.4px 0px #c5c6c5,
+    0px 0px 2.4px 4px #e4e5e4, 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.button:hover::before {
-  top: 1px;
-  left: 1px;
-  right: 1px;
-  bottom: 1px;
-  margin: 5px;
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 236px;
+  height: 69px;
+  flex-shrink: 0;
+  border-radius: 39px;
+
+  background: #fff;
+  box-shadow: -1px -1px 0px 0px rgba(141, 139, 139, 0.35),
+    38px 3px 13.2px 0px rgba(196, 196, 196, 0.25) inset,
+    -3px 1px 10.1px 0px rgba(87, 87, 87, 0.25) inset;
+  margin: 7px 4px 6px 7px;
 }
 
-.button:focus {
-  outline: 2px solid #fefefe;
-  box-shadow: 9px 9px 44px #cecece3a, -9px -9px 44px #d3d3d33d,
-    inset 0 0 0 2px rgba(192, 192, 192, 0.5);
+.icon {
+  width: 30px;
+  height: 30px;
 }
 
-.send-icon {
-  margin-right: 5px;
-  transition: transform 0.3s ease;
+#text {
+  color: #0b0b0b;
+  font-family: "Poppins", sans-serif;
+  font-size: 23.1px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 4px;
+  transition: color 0.3s, transform 0.3s, text-shadow 0.3s;
 }
-
-.button:hover .send-icon {
-  transform: translateX(7px);
-}
-
-.button:focus .send-icon {
-  transform: rotate(-40deg);
+#text:hover {
+  color: #fff;
+  text-shadow: 1px 1px 1px #acaaaa, 1px 2px 1px #7d7d7d, 1px 1px 1px #acaaaa,
+    1px 2px 1px #7d7d7d, 1px 20px 40px rgba(147, 147, 147, 0.3);
 }
 

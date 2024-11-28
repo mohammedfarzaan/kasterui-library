@@ -1,86 +1,61 @@
 
-/* From Uiverse.io by LilaRest  - Tags: neumorphism, skeuomorphism, social, button, like, heart, realistic, favorite */
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 25px 20px 22px;
-  box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  background-color: #e8e8e8;
-  border-color: #ffe2e2;
-  border-style: solid;
-  border-width: 9px;
-  border-radius: 35px;
-  font-size: 25px;
-  font-weight: 900;
-  color: rgb(134, 124, 124);
-  font-family: monospace;
-  transition: transform 400ms cubic-bezier(.68,-0.55,.27,2.5), 
-  border-color 400ms ease-in-out,
-  background-color 400ms ease-in-out;
-  word-spacing: -2px;
+/* From Uiverse.io by MuhammadHasann  - Tags: simple, minimalist, button */
+.button {
+  cursor: pointer;
+  --c: #0ea5e9;
+  padding: 12px 28px;
+  margin: 1em;
+  position: relative;
+  min-width: 12em;
+  background: transparent;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--c);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  border: 2px solid var(--c);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
 }
 
-@keyframes movingBorders {
-  0% {
-    border-color: #fce4e4;
-  }
-
-  50% {
-    border-color: #ffd8d8;
-  }
-
-  90% {
-    border-color: #fce4e4;
-  }
-}
-
-button:hover {
-  background-color: #eee;
-  transform: scale(105%);
-  animation: movingBorders 3s infinite;
-}
-
-button svg {
-  margin-right: 11px;
-  fill: rgb(255, 110, 110);
-  transition: opacity 100ms ease-in-out;
-}
-
-.filled {
+.button span {
   position: absolute;
-  opacity: 0;
-  top: 20px;
-  left: 22px;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
 }
 
-@keyframes beatingHeart {
-  0% {
-    transform: scale(1);
-  }
-
-  15% {
-    transform: scale(1.15);
-  }
-
-  30% {
-    transform: scale(1);
-  }
-
-  45% {
-    transform: scale(1.15);
-  }
-
-  60% {
-    transform: scale(1);
-  }
+.button:hover {
+  color: black;
 }
 
-button:hover .empty {
-  opacity: 0;
+.button:hover span {
+  transform: translateY(0) scale(2);
 }
 
-button:hover .filled {
-  opacity: 1;
-  animation: beatingHeart 1.2s infinite;
+.button span:nth-child(1) {
+  --n: 1;
 }
+
+.button span:nth-child(2) {
+  --n: 2;
+}
+
+.button span:nth-child(3) {
+  --n: 3;
+}
+
+.button span:nth-child(4) {
+  --n: 4;
+}
+

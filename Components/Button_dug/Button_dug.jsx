@@ -1,73 +1,29 @@
 import React from "react";
-import styles from "./Button_dug.module.css";
 
 const Button_dug = () => (
   <div>
-    <button className={styles["Btn-Container"]}>
-      <span className={styles["text"]}>let's go!</span>
-      <span className={styles["icon-Container"]}>
+    <button className="relative cursor-pointer opacity-90 hover:opacity-100 transition-opacity p-[2px] bg-black rounded-[16px] bg-gradient-to-t from-[#8122b0] to-[#dc98fd] active:scale-95">
+      <span className="w-full h-full flex items-center gap-2 px-8 py-3 bg-[#B931FC] text-[#f1d5fe] rounded-[14px] bg-gradient-to-t from-[#a62ce2] to-[#c045fc]">
         <svg
-          width="16"
-          height="19"
-          viewBox="0 0 16 19"
-          fill="nones"
+          stroke-width="2"
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          stroke="currentColor"
+          fill="none"
+          className="w-5 h-5"
+          viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle cx="1.61321" cy="1.61321" r="1.5" fill="black"></circle>
-          <circle cx="5.73583" cy="1.61321" r="1.5" fill="black"></circle>
-          <circle cx="5.73583" cy="5.5566" r="1.5" fill="black"></circle>
-          <circle cx="9.85851" cy="5.5566" r="1.5" fill="black"></circle>
-          <circle cx="9.85851" cy="9.5" r="1.5" fill="black"></circle>
-          <circle cx="13.9811" cy="9.5" r="1.5" fill="black"></circle>
-          <circle cx="5.73583" cy="13.4434" r="1.5" fill="black"></circle>
-          <circle cx="9.85851" cy="13.4434" r="1.5" fill="black"></circle>
-          <circle cx="1.61321" cy="17.3868" r="1.5" fill="black"></circle>
-          <circle cx="5.73583" cy="17.3868" r="1.5" fill="black"></circle>
+          <path d="M8 13V9m-2 2h4m5-2v.001M18 12v.001m4-.334v5.243a3.09 3.09 0 0 1-5.854 1.382L16 18a3.618 3.618 0 0 0-3.236-2h-1.528c-1.37 0-2.623.774-3.236 2l-.146.292A3.09 3.09 0 0 1 2 16.91v-5.243A6.667 6.667 0 0 1 8.667 5h6.666A6.667 6.667 0 0 1 22 11.667Z"></path>
         </svg>
+        Play Game
       </span>
     </button>
   </div>
 );
 
 export default Button_dug;
-{
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Button_dug = () => (
-         <div>
-          <button className="Btn-Container">
-  <span className="text">let's go!</span>
-  <span className="icon-Container">
-    <svg
-      width="16"
-      height="19"
-      viewBox="0 0 16 19"
-      fill="nones"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <circle cx="1.61321" cy="1.61321" r="1.5" fill="black"></circle>
-      <circle cx="5.73583" cy="1.61321" r="1.5" fill="black"></circle>
-      <circle cx="5.73583" cy="5.5566" r="1.5" fill="black"></circle>
-      <circle cx="9.85851" cy="5.5566" r="1.5" fill="black"></circle>
-      <circle cx="9.85851" cy="9.5" r="1.5" fill="black"></circle>
-      <circle cx="13.9811" cy="9.5" r="1.5" fill="black"></circle>
-      <circle cx="5.73583" cy="13.4434" r="1.5" fill="black"></circle>
-      <circle cx="9.85851" cy="13.4434" r="1.5" fill="black"></circle>
-      <circle cx="1.61321" cy="17.3868" r="1.5" fill="black"></circle>
-      <circle cx="5.73583" cy="17.3868" r="1.5" fill="black"></circle>
-    </svg>
-  </span>
-</button>
-        </div>
-        );
-
-        export default Button_dug;
-        
-        
-         */
+{
+  /* */
 }

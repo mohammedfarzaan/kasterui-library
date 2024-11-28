@@ -1,88 +1,89 @@
 
-/* From Uiverse.io by satyamchaudharydev - Tags: button */
+/* From Uiverse.io by KINGFRESS - Tags: button */
 button {
-  width: 140px;
-  height: 56px;
-  overflow: hidden;
+  font-weight: bold;
+  color: white;
+  border-radius: 2rem;
+  width: 95.02px;
+  height: 42.66px;
   border: none;
-  color: #fff;
-  background: none;
-  position: relative;
-  padding-bottom: 2em;
-}
-
-button > div,button > svg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  background-color: #3653F8;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-button:before {
-  content: "";
+button .span-mother {
+  display: flex;
+  overflow: hidden;
+}
+
+button:hover .span-mother {
   position: absolute;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  background: currentColor;
-  transition: transform 0.25s ease-out;
 }
 
-button:hover:before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+button:hover .span-mother span {
+  transform: translateY(1.2em);
 }
 
-button .clone > *,button .text > * {
-  opacity: 1;
-  font-size: 1.3rem;
-  transition: 0.2s;
-  margin-left: 4px;
+button .span-mother span:nth-child(1) {
+  transition: .2s;
 }
 
-button .clone > * {
-  transform: translateY(60px);
+button .span-mother span:nth-child(2) {
+  transition: .3s;
 }
 
-button:hover .clone > * {
-  opacity: 1;
-  transform: translateY(0px);
-  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+button .span-mother span:nth-child(3) {
+  transition: .4s;
 }
 
-button:hover .text > * {
-  opacity: 1;
-  transform: translateY(-60px);
-  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+button .span-mother span:nth-child(4) {
+  transition: .5s;
 }
 
-button:hover .clone > :nth-child(1) {
-  transition-delay: 0.15s;
+button .span-mother span:nth-child(5) {
+  transition: .6s;
 }
 
-button:hover .clone > :nth-child(2) {
-  transition-delay: 0.2s;
+button .span-mother span:nth-child(6) {
+  transition: .7s;
 }
 
-button:hover .clone > :nth-child(3) {
-  transition-delay: 0.25s;
+button .span-mother2 {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
 }
 
-button:hover .clone > :nth-child(4) {
-  transition-delay: 0.3s;
-}
-/* icon style and hover */
-button svg {
-  width: 20px;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%) rotate(-50deg);
-  transition: 0.2s ease-out;
+button .span-mother2 span {
+  transform: translateY(-1.2em);
 }
 
-button:hover svg {
-  transform: translateY(-50%) rotate(-90deg);
+button:hover .span-mother2 span {
+  transform: translateY(0);
+}
+
+button .span-mother2 span {
+  transition: .2s;
+}
+
+button .span-mother2 span:nth-child(2) {
+  transition: .3s;
+}
+
+button .span-mother2 span:nth-child(3) {
+  transition: .4s;
+}
+
+button .span-mother2 span:nth-child(4) {
+  transition: .5s;
+}
+
+button .span-mother2 span:nth-child(5) {
+  transition: .6s;
+}
+
+button .span-mother2 span:nth-child(6) {
+  transition: .7s;
 }

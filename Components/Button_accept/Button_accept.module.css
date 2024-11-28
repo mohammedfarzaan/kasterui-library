@@ -1,59 +1,67 @@
 
-/* From Uiverse.io by andrew-demchenk0 - Tags: red, button, delete */
-.button {
-  position: relative;
-  width: 150px;
-  height: 40px;
+/* From Uiverse.io by JaydipPrajapati1910 - Tags: button, water, transparent */
+button {
+  appearance: button;
+  outline: none;
+  border: none;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #222;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  border: 1px solid #cc0000;
-  background-color: #e50000;
-  overflow: hidden;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 19px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
-.button, .button__icon, .button__text {
-  transition: all 0.3s;
-}
-
-.button .button__text {
-  transform: translateX(35px);
-  color: #fff;
-  font-weight: 600;
-}
-
-.button .button__icon {
+button:after {
+  background-clip: padding-box;
+  box-shadow: inset 4px 4px 4px rgba(15, 15, 15, 0.315),
+    4px 4px 4px rgba(28, 28, 28, 0.13);
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  bottom: -4px;
+  content: "";
+  left: 0;
   position: absolute;
-  transform: translateX(109px);
-  height: 100%;
-  width: 39px;
-  background-color: #cc0000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }
 
-.button .svg {
-  width: 20px;
+button:main, button:focus {
+  user-select: auto;
 }
 
-.button:hover {
-  background: #cc0000;
+button:hover:not(:disabled) {
+  filter: brightness(1.1);
 }
 
-.button:hover .button__text {
-  color: transparent;
+button:disabled {
+  cursor: auto;
 }
 
-.button:hover .button__icon {
-  width: 148px;
-  transform: translateX(0);
+button:active:after {
+  border-width: 0 0 0px;
 }
 
-.button:active .button__icon {
-  background-color: #b20000;
+button:active {
+  padding-bottom: 10px;
 }
 
-.button:active {
-  border: 1px solid #b20000;
-}
+

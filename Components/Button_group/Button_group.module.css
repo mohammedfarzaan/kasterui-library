@@ -1,17 +1,51 @@
 
-/* From Uiverse.io by felipesntr - Tags: button */
+/* From Uiverse.io by MuhammadHasann - Tags: button */
 button {
-  font-size: 1rem;
-  padding: 0.8em 2em;
-  background-color: #000;
-  border: 3px solid yellow;
-  border-radius: 1em;
-  color: #fff;
-  font-weight: bolder;
-  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
-  box-shadow: -5px 5px 0px 0px yellow;
+  position: relative;
+  padding: 13px 35px;
+  background: #6d7973;
+  font-size: 17px;
+  font-weight: 900;
+  color: #ffffff;
+  border: 2px solid #6d7973;
+  border-radius: 25px;
+  transition: all .3s ease-in-out;
 }
 
-button:hover {
-  transform: translate(5px, -5px);
+button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 124px;
+  height: 45px;
+  border: 3px solid #6d7973;
+  border-radius: 25px;
+  transition: all .3s ease-in-out;
+  z-index: 2;
+}
+
+button:hover::after {
+  animation: radar_45011 1s ease infinite .3s;
+}
+
+@keyframes radar_45011 {
+  from {
+    opacity: 1;
+    width: 124px;
+    height: 45px;
+    border-radius: 25px;
+  }
+
+  to {
+    opacity: 0;
+    width: 470px;
+    height: 220px;
+    border-radius: 150px;
+  }
+}
+
+button:active {
+  transform: scale(.9);
 }

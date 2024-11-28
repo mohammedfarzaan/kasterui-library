@@ -1,34 +1,56 @@
 
-/* From Uiverse.io by sunnyshaikh - Tags: button */
-button {
+/* From Uiverse.io by barisdogansutcu  - Tags: button, checkbox, input, bold, italic, underline */
+.button-options .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px #29429b;
+  border-radius: 4px;
   position: relative;
-  background: #FBD148;
-  box-sizing: border-box;
-  border: 0;
-  outline: 0;
-  padding: 1rem 3rem;
-  font-size: 1em;
-  cursor: pointer;
-  transition: .25s ease;
 }
-
-button::before {
-  position: absolute;
-  content: '';
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  transform: translate(-5px, -5px);
-  width: 100%;
+.button-options .content .label-layout {
+  min-width: 45px;
+  height: 45px;
+  display: flexa;
+  align-items: center;
+  justify-content: center;
+}
+.button-options .content .label-layout :is(b, i, u) {
+  display: grid;
+  place-content: center;
   height: 100%;
-  border: 1px solid rgb(84, 84, 84);
-  transition: .25s ease;
+  color: #29429b;
+  font-size: 17px;
+  line-height: 1;
+  cursor: pointer;
+}
+.button-options .content .label-layout[for="italicInput"] {
+  border-left: solid 2px #29429b;
+  border-right: solid 2px #29429b;
+  min-width: 49px;
+}
+.button-options .content input[type="checkbox"]:checked + .label-layout {
+  background-color: #29429b34;
+}
+#boldInput:checked ~ .title {
+  font-weight: bold;
+}
+#italicInput:checked ~ .title {
+  font-style: italic;
+}
+#underlineInput:checked ~ .title {
+  text-decoration: underline;
+}
+.button-options .title {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  position: absolute;
+  bottom: 0;
+  top: 2px;
+  transform: translateY(100%);
+  color: #29429b;
 }
 
-button:hover {
-  transform: translate(-5px, -5px);
-}
-
-button:hover::before {
-  transform: translate(5px, 5px);
-}

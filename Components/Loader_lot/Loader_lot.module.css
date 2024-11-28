@@ -1,34 +1,48 @@
 
-/* From Uiverse.io by PriyanshuGupta28 - Tags: loader, 3d loader */
+/* From Uiverse.io by Mike11jr - Tags: loader */
 .spinner {
-  width: 56px;
-  height: 56px;
-  display: grid;
-  border-radius: 50%;
-  -webkit-mask: radial-gradient(farthest-side,#0000 40%,#6121d1 41%);
-  background: linear-gradient(0deg ,rgba(97,33,209,0.5) 50%,rgba(97,33,209,1) 0) center/4.5px 100%,
-        linear-gradient(90deg,rgba(97,33,209,0.25) 50%,rgba(97,33,209,0.75) 0) center/100% 4.5px;
-  background-repeat: no-repeat;
-  animation: spinner-d3o0rx 1s infinite steps(12);
+ width: 60px;
+ height: 60px;
+ position: relative;
 }
 
-.spinner::before,
-.spinner::after {
-  content: "";
-  grid-area: 1/1;
-  border-radius: 50%;
-  background: inherit;
-  opacity: 0.915;
-  transform: rotate(30deg);
+.spinner .dot {
+ position: absolute;
+ inset: 0;
+ display: flex;
+ justify-content: center;
 }
 
-.spinner::after {
-  opacity: 0.83;
-  transform: rotate(60deg);
+.spinner .dot::after {
+ content: "";
+ width: 7px;
+ height: 7px;
+ border-radius: 50%;
+ background-color: rgb(12, 180, 231);
 }
 
-@keyframes spinner-d3o0rx {
-  100% {
-    transform: rotate(1turn);
-  }
+@keyframes spin {
+ to {
+  transform: rotate(360deg);
+ }
+}
+
+.spinner .dot {
+ animation: spin 2s infinite;
+}
+
+.spinner .dot:nth-child(2) {
+ animation-delay: 100ms;
+}
+
+.spinner .dot:nth-child(3) {
+ animation-delay: 200ms;
+}
+
+.spinner .dot:nth-child(4) {
+ animation-delay: 300ms;
+}
+
+.spinner .dot:nth-child(5) {
+ animation-delay: 400ms;
 }

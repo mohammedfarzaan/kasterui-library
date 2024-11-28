@@ -1,45 +1,35 @@
 
-/* From Uiverse.io by mostafabazyar - Tags: button */
-button {
-  position: relative;
-  margin: 1rem;
-  z-index: 2;
-  border-radius: 8px;
-  appearance: none;
-  padding: 1em 2em;
-  transition: all 0.2s;
-}
-
-button {
-  padding: 1.2rem;
-  position: relative;
-  z-index: 1;
-}
-
-button::before {
-  content: "6";
-  position: absolute;
+/* From Uiverse.io by MetaBlue2000  - Tags: message, challenge, effect 3d */
+.button {
+  height: 50px;
+  width: 130px;
   display: flex;
-  top: -0.75em;
-  right: -0.75em;
-  height: 1.8em;
-  width: 1.8em;
-  justify-content: center;
+  border: rgb(135, 135, 135) 2px solid;
   align-items: center;
-  border-radius: 50%;
-  background-color: red;
-  color: white;
-  z-index: 999;
-  transition: all 0.2s;
+  border-radius: 12px;
+  box-shadow: 1px 1px 75px 5px grey;
+  z-index: -2;
 }
 
-button:hover {
-  border-radius: 3px;
-  border-color: red;
+.icon {
+  height: 18px;
+  display: flex;
+  margin-left: 5px;
+  border-radius: l;
+  z-index: -1;
 }
 
-button:hover::before {
-  height: 2em;
-  width: 2em;
-  font-size: 1.5em;
+.text {
+  font-variant: small-caps;
+  font-weight: 700;
+  font-size: 13.123px;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  align-items: center;
+  box-shadow: inset 10px 4px 8px rgb(209, 209, 209),
+    inset -10px -4px 8px rgba(255, 255, 255);
 }
+

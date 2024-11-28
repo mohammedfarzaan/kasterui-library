@@ -1,34 +1,15 @@
 import React from "react";
-import styles from "./Button_river.module.css";
 
 const Button_river = () => (
   <div>
-    <button>
-      <span>Button</span>
-      <i></i>
+    <button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+      Explore Now
     </button>
   </div>
 );
 
 export default Button_river;
-{
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Button_river = () => (
-         <div>
-          <button>
-    <span>Button</span><i></i>
-</button>
-        </div>
-        );
-
-        export default Button_river;
-        
-        
-         */
+{
+  /* */
 }

@@ -1,86 +1,68 @@
 
-/* From Uiverse.io by G4b413l - Tags: loader */
-.jelly-triangle {
- --uib-size: 42px;
- --uib-speed: 1.25s;
- --uib-color: #512727;
- position: relative;
- height: var(--uib-size);
- width: var(--uib-size);
- filter: url('#uib-jelly-triangle-ooze');
+/* From Uiverse.io by fanishah - Tags: loader */
+.loader {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
-.jelly-triangle__dot,
-.jelly-triangle::before,
-.jelly-triangle::after {
- content: '';
- position: absolute;
- width: 33%;
- height: 33%;
- background: var(--uib-color);
- border-radius: 100%;
+.bar {
+  width: 10px;
+  height: 70px;
+  background: hsl(0, 100%, 50%);
+  display: inline-block;
+  transform-origin: bottom center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  animation: loader8913 1.2s linear infinite;
 }
 
-.jelly-triangle__dot {
- top: 6%;
- left: 30%;
- animation: grow0 var(--uib-speed) ease infinite;
+.bar1 {
+  animation-delay: 0.1s;
 }
 
-.jelly-triangle::before {
- bottom: 6%;
- right: 0;
- animation: grow0 var(--uib-speed) ease calc(var(--uib-speed) * -0.666)
-    infinite;
+.bar2 {
+  animation-delay: 0.2s;
 }
 
-.jelly-triangle::after {
- bottom: 6%;
- left: 0;
- animation: grow0 var(--uib-speed) ease calc(var(--uib-speed) * -0.333)
-    infinite;
+.bar3 {
+  animation-delay: 0.3s;
 }
 
-.jelly-triangle__traveler {
- position: absolute;
- top: 6%;
- left: 30%;
- width: 33%;
- height: 33%;
- background: var(--uib-color);
- border-radius: 100%;
- animation: triangulate var(--uib-speed) ease infinite;
+.bar4 {
+  animation-delay: 0.4s;
 }
 
-.jelly-maker {
- width: 0;
- height: 0;
- position: absolute;
+.bar5 {
+  animation-delay: 0.5s;
 }
 
-@keyframes triangulate {
- 0%,
+.bar6 {
+  animation-delay: 0.6s;
+}
+
+.bar7 {
+  animation-delay: 0.7s;
+}
+
+.bar8 {
+  animation-delay: 0.8s;
+}
+
+@keyframes loader8913 {
+  0% {
+    transform: scaleY(0.1);
+  }
+
+  50% {
+    transform: scaleY(1);
+    background: yellowgreen;
+  }
+
   100% {
-  transform: none;
- }
-
- 33.333% {
-  transform: translate(120%, 175%);
- }
-
- 66.666% {
-  transform: translate(-95%, 175%);
- }
+    transform: scaleY(0.1);
+    background: transparent;
+  }
 }
 
-@keyframes grow0 {
- 0%,
-  100% {
-  transform: scale(1.5);
- }
-
- 20%,
-  70% {
-  transform: none;
- }
-}

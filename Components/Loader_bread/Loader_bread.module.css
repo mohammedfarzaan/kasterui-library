@@ -1,48 +1,26 @@
 
-/* From Uiverse.io by vikramsinghnegi  - Tags: simple, loader, blob */
-.blob {
-  width: 112px;
-  height: 112px;
-  display: grid;
-  background: #fff;
-  filter: blur(5.6px) contrast(10);
-  padding: 11.2px;
-  mix-blend-mode: darken;
+/* From Uiverse.io by cohencoo - Tags: loading, loader, download, downloading */
+.custom-loader {
+  width: 120px;
+  height: 22px;
+  border-radius: 20px;
+  color: #F4BF00;
+  border: 2px solid;
+  position: relative;
 }
 
-.blob:before,
-.blob:after {
+.custom-loader::before {
   content: "";
-  grid-area: 1/1;
-  width: 44.8px;
-  height: 44.8px;
-  background: #474bff;
-  animation: blob-rhf26m 2s infinite;
+  position: absolute;
+  margin: 2px;
+  inset: 0 100% 0 0;
+  border-radius: inherit;
+  background: #F4BF00;
+  animation: p6 2s infinite;
 }
 
-.blob:after {
-  animation-delay: -1s;
-}
-
-@keyframes blob-rhf26m {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  25% {
-    transform: translate(100%, 0);
-  }
-
-  50% {
-    transform: translate(100%, 100%);
-  }
-
-  75% {
-    transform: translate(0, 100%);
-  }
-
+@keyframes p6 {
   100% {
-    transform: translate(0, 0);
+    inset: 0
   }
 }
-

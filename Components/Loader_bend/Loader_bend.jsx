@@ -3,19 +3,22 @@ import styles from "./Loader_bend.module.css";
 
 const Loader_bend = () => (
   <div>
-    <div className={styles["loader"] + styles["l1"]}></div>
-    <div className={styles["loader"] + styles["l2"]}></div>
-    <div className={styles["loader"] + styles["l3"]}></div>
-    <div className={styles["loader"] + styles["l4"]}></div>
-    <div className={styles["loader"] + styles["l5"]}></div>
-    <div className={styles["loader"] + styles["l6"]}></div>
-    <div className={styles["loader"] + styles["l7"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["loaders"]}></div>
+      <div className={styles["loaders"]}></div>
+      <div className={styles["loaders"]}></div>
+      <div className={styles["loaders"]}></div>
+      <div className={styles["loaders"]}></div>
+      <div className={styles["loaders"]}></div>
+      <div className={styles["loaders"]}></div>
+      <div className={styles["loaders"]}></div>
+    </div>
   </div>
 );
 
 export default Loader_bend;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -24,13 +27,16 @@ export default Loader_bend;
 
         const Loader_bend = () => (
          <div>
-          <div className="loader l1"></div>
-<div className="loader l2"></div>
-<div className="loader l3"></div>
-<div className="loader l4"></div>
-<div className="loader l5"></div>
-<div className="loader l6"></div>
-<div className="loader l7"></div>
+          <div className="loader">
+    <div className="loaders"></div>
+    <div className="loaders"></div>
+    <div className="loaders"></div>
+    <div className="loaders"></div>
+    <div className="loaders"></div>
+    <div className="loaders"></div>
+    <div className="loaders"></div>
+    <div className="loaders"></div>
+</div>
         </div>
         );
 

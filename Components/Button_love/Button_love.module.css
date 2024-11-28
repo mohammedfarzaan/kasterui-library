@@ -1,0 +1,17 @@
+
+/* From Uiverse.io by mrhyddenn - Tags: button */
+button {
+  background: none;
+  border: none;
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: rgba(170, 170, 170, 0.062);
+  transition: 0.5s;
+}
+
+button svg {
+  color: #fff;
+}

@@ -3,21 +3,23 @@ import styles from "./Button_camera.module.css";
 
 const Button_camera = () => (
   <div>
-    <div className={styles["emoji-button-container"]}>
-      <button className={styles["emoji-button"]}>Hover Me</button>
-      <div className={styles["emoji-animations"]}>
-        <span className={styles["emoji"]}>😊</span>
-        <span className={styles["emoji"]}>🎸</span>
-        <span className={styles["emoji"]}>🚀</span>
-        <span className={styles["emoji"]}>❤️</span>
-      </div>
+    <div tabindex="0" className={styles["plusButton"]}>
+      <svg
+        className="plusIcon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 30 30"
+      >
+        <g mask="url(#mask0_21_345)">
+          <path d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z"></path>
+        </g>
+      </svg>
     </div>
   </div>
 );
 
 export default Button_camera;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -26,14 +28,12 @@ export default Button_camera;
 
         const Button_camera = () => (
          <div>
-          <div className="emoji-button-container">
-  <button className="emoji-button">Hover Me</button>
-  <div className="emoji-animations">
-    <span className="emoji">😊</span>
-    <span className="emoji">🎸</span>
-    <span className="emoji">🚀</span>
-    <span className="emoji">❤️</span>
-  </div>
+          <div tabindex="0" className="plusButton">
+  <svg className="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+    <g mask="url(#mask0_21_345)">
+      <path d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z"></path>
+    </g>
+  </svg>
 </div>
         </div>
         );

@@ -3,15 +3,24 @@ import styles from "./Button_myself.module.css";
 
 const Button_myself = () => (
   <div>
-    <button className={styles["mouse"]}>
-      <div className={styles["scroll"]}></div>
+    <button alt="tony stark">
+      <i>t</i>
+      <i>o</i>
+      <i>n</i>
+      <i>y</i>
+      <i>&nbsp;</i>
+      <i>s</i>
+      <i>t</i>
+      <i>a</i>
+      <i>r</i>
+      <i>k</i>
     </button>
   </div>
 );
 
 export default Button_myself;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -20,9 +29,17 @@ export default Button_myself;
 
         const Button_myself = () => (
          <div>
-          <button className="mouse">
-  <div className="scroll"></div>
-
+          <button alt="tony stark">
+  <i>t</i>
+  <i>o</i>
+  <i>n</i>
+  <i>y</i>
+  <i>&nbsp;</i>
+  <i>s</i>
+  <i>t</i>
+  <i>a</i>
+  <i>r</i>
+  <i>k</i>
 </button>
         </div>
         );

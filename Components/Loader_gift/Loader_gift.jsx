@@ -3,25 +3,15 @@ import styles from "./Loader_gift.module.css";
 
 const Loader_gift = () => (
   <div>
-    <div id="div1">
-      <div id="l" style="margin: 33px">
-        <div className={styles["pupil"]}>
-          <div className={styles["p5"]}>
-            <div className={styles["pupl2"]}>
-              <div className={styles["pupil3"]}></div>
-              <div className={styles["pupil4"]}></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="m" style="margin: 33px">
-        <div className={styles["pupil"]}>
-          <div className={styles["p5"]}>
-            <div className={styles["pupl2"]}>
-              <div className={styles["pupil3"]}></div>
-              <div className={styles["pupil4"]}></div>
-            </div>
-          </div>
+    <div className={styles["loading"]}>
+      <div className={styles["loading-box"]}>
+        <div className={styles["grid"]}>
+          <div className={styles["color"] + styles["l1"]}></div>
+          <div className={styles["color"] + styles["l2"]}></div>
+          <div className={styles["color"] + styles["l3"]}></div>
+          <div className={styles["color"] + styles["l4"]}></div>
+          <div className={styles["color"] + styles["l5"]}></div>
+          <div className={styles["color"] + styles["l6"]}></div>
         </div>
       </div>
     </div>
@@ -30,7 +20,7 @@ const Loader_gift = () => (
 
 export default Loader_gift;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -39,25 +29,15 @@ export default Loader_gift;
 
         const Loader_gift = () => (
          <div>
-          <div id="div1">
-  <div id="l" style="margin: 33px">
-    <div className="pupil">
-      <div className="p5">
-        <div className="pupl2">
-          <div className="pupil3"></div>
-          <div className="pupil4"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="m" style="margin: 33px">
-    <div className="pupil">
-      <div className="p5">
-        <div className="pupl2">
-          <div className="pupil3"></div>
-          <div className="pupil4"></div>
-        </div>
-      </div>
+          <div className="loading">
+  <div className="loading-box">
+    <div className="grid">
+      <div className="color l1"></div>
+      <div className="color l2"></div>
+      <div className="color l3"></div>
+      <div className="color l4"></div>
+      <div className="color l5"></div>
+      <div className="color l6"></div>
     </div>
   </div>
 </div>

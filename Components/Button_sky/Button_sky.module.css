@@ -1,28 +1,43 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: button, hover effect, filter, setting */
-.filter {
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
+/* From Uiverse.io by andrew-demchenk0 - Tags: animation, calendar, button, creditcard, add, add to callendar */
+.button {
   display: flex;
-  align-items: center;
   justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.192);
+  align-items: center;
+  padding: 9px 12px;
+  gap: 8px;
+  height: 40px;
+  width: 201px;
+  border: none;
+  background: #FF342B;
+  border-radius: 20px;
   cursor: pointer;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.021);
-  transition: all 0.3s;
 }
 
-.filter svg {
-  height: 16px;
-  fill: rgb(77, 77, 77);
-  transition: all 0.3s;
-}
-.filter:hover {
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.11);
-  background-color: rgb(59, 59, 59);
-}
-.filter:hover svg {
-  fill: white;
+.lable {
+  line-height: 22px;
+  font-size: 17px;
+  color: #fff;
+  font-family: sans-serif;
+  letter-spacing: 1px;
 }
 
+.button:hover {
+  background: #e52e26;
+}
+
+.button:hover .svg-icon {
+  animation: slope 1s linear infinite;
+}
+
+@keyframes slope {
+  0% {
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+  }
+}

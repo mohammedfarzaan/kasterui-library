@@ -3,33 +3,31 @@ import styles from "./Button_gas.module.css";
 
 const Button_gas = () => (
   <div>
-    <button id="btn-message" className={styles["button-message"]}>
-      <div className={styles["content-avatar"]}>
-        <div className={styles["status-user"]}></div>
-        <div className={styles["avatar"]}>
-          <svg
-            className="user-img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-          >
-            <path d="M12,12.5c-3.04,0-5.5,1.73-5.5,3.5s2.46,3.5,5.5,3.5,5.5-1.73,5.5-3.5-2.46-3.5-5.5-3.5Zm0-.5c1.66,0,3-1.34,3-3s-1.34-3-3-3-3,1.34-3,3,1.34,3,3,3Z"></path>
-          </svg>
-        </div>
+    <div className={styles["volume"]}>
+      <input type="checkbox" className={styles["volume-input"]} />
+      <div className={styles["volume-icon"]}>
+        <svg
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          stroke="currentColor"
+          strokeWidth="2"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="volume-svg"
+        >
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
       </div>
-      <div className={styles["notice-content"]}>
-        <div className={styles["username"]}>Jessica Sanders</div>
-        <div className={styles["lable-message"]}>
-          Message<span className={styles["number-message"]}>3</span>
-        </div>
-        <div className={styles["user-id"]}>@jessisanders</div>
-      </div>
-    </button>
+    </div>
   </div>
 );
 
 export default Button_gas;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -38,19 +36,27 @@ export default Button_gas;
 
         const Button_gas = () => (
          <div>
-          <button id="btn-message" className="button-message">
-	<div className="content-avatar">
-		<div className="status-user"></div>
-		<div className="avatar">
-			<svg className="user-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,12.5c-3.04,0-5.5,1.73-5.5,3.5s2.46,3.5,5.5,3.5,5.5-1.73,5.5-3.5-2.46-3.5-5.5-3.5Zm0-.5c1.66,0,3-1.34,3-3s-1.34-3-3-3-3,1.34-3,3,1.34,3,3,3Z"></path></svg>
-		</div>
-	</div>
-	<div className="notice-content">
-		<div className="username">Jessica Sanders</div>
-		<div className="lable-message">Message<span className="number-message">3</span></div>
-		<div className="user-id">@jessisanders</div>
-	</div>
-</button>
+          <div className="volume">
+  <input type="checkbox" className="volume-input" />
+  <div className="volume-icon">
+    <svg
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      stroke="currentColor"
+      strokeWidth="2"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="volume-svg"
+    >
+      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+      <path
+        d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"
+      ></path>
+    </svg>
+  </div>
+</div>
         </div>
         );
 

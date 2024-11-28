@@ -1,71 +1,53 @@
 
-/* From Uiverse.io by abuayaan01 - Tags: button, water, btn, waves, 3d button, Button design */
-.button {
-  background-color: #000;
-  border: 0px;
-  outline: 0px;
-  color: #fff;
-  width: 200px;
-  padding: 20px;
-  border-radius: 50px;
+/* From Uiverse.io by vinodjangid07 - Tags: red, button, superhero, iron man */
+button {
   position: relative;
-  overflow: hidden;
+  width: 180px;
+  height: 50px;
+  border: none;
+  background-color: rgb(231, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  border-radius: 0px;
   cursor: pointer;
+  box-shadow: 8px 8px 0px rgb(12, 12, 12);
+  transition-duration: .3s;
 }
 
-.liquid {
-  background-color: #2893eb;
-  width: 200px;
-  height: 70px;
+.layer {
+  width: 60px;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  box-shadow: inset 5px -5px 25px #104e81,
-  inset -5px 0px 25px #104e81;
+  left: -30px;
+  transition-duration: .3s;
+  fill: #ffaf02;
 }
 
-.liquid::after {
-  content: '';
-  width: 450px;
-  height: 400px;
-  background: #000;
-  z-index: 1;
+button:hover {
+  transform: translateY(5px);
+  box-shadow: 3px 3px 0px rgb(0, 0, 0);
+  transition-duration: .3s;
+}
+
+button:hover .layer {
+  left: 0%;
+  width: 100%;
+  transition-duration: .3s;
+}
+
+button p {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
   position: absolute;
-  left: -110px;
-  top: -380px;
-  border-radius: 45%;
-  animation: animate 5s linear 2s infinite;
+  z-index: 2;
+  transition-duration: .1s;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 
-.liquid::before {
-  content: '';
-  width: 450px;
-  height: 400px;
-  background-color: rgb(68, 160, 235);
-  z-index: 1;
-  position: absolute;
-  left: -110px;
-  top: -380px;
-  border-radius: 40%;
-  animation: animate 5s linear 1.8s infinite;
+button:hover p {
+  color: transparent;
+  transition-duration: .3s;
 }
-
-.btn-txt {
-  position: relative;
-  z-index: 1;
-  font-size: 22px;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-}
-
-@keyframes animate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 

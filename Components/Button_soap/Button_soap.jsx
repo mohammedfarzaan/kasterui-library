@@ -1,37 +1,20 @@
 import React from "react";
-import styles from "./Button_soap.module.css";
 
 const Button_soap = () => (
   <div>
-    <button>
-      <span className={styles["txt"]}>click me</span>
-      <span className={styles["txt2"]}>You did it</span>
-      <span className={styles["gradient"]}></span>
+    <button
+      className="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg
+border-blue-600
+border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
+    >
+      Button
     </button>
   </div>
 );
 
 export default Button_soap;
-{
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Button_soap = () => (
-         <div>
-          <button>
-  <span className="txt">click me</span>
-  <span className="txt2">You did it</span>
-  <span className="gradient"></span>
-</button>
-        </div>
-        );
-
-        export default Button_soap;
-        
-        
-         */
+{
+  /* */
 }

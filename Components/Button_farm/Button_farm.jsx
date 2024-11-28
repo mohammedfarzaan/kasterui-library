@@ -3,19 +3,25 @@ import styles from "./Button_farm.module.css";
 
 const Button_farm = () => (
   <div>
-    <div className={styles["container"]}>
-      <input name="power" id="power" type="checkbox" />
-      <label className={styles["power"]} for="power">
-        <span className={styles["icon-off"]}></span>
-        <span className={styles["light"]}></span>
-      </label>
-    </div>
+    <a
+      className={
+        styles["code-button"] +
+        styles["code-button--html"] +
+        styles["code-button--color"]
+      }
+      href="#"
+    >
+      <b className={styles["code-button__bracket"]}>&lt;</b>
+      <span className={styles["code-button__code"]}>/</span>
+      <span className={styles["code-button__text"]}>html</span>
+      <b className={styles["code-button__bracket"]}>&gt;</b>
+    </a>
   </div>
 );
 
 export default Button_farm;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -24,13 +30,12 @@ export default Button_farm;
 
         const Button_farm = () => (
          <div>
-          <div className="container">
-  <input name="power" id="power" type="checkbox" />
-  <label className="power" for="power">
-    <span className="icon-off"></span>
-    <span className="light"></span>
-  </label>
-</div>
+          <a className="code-button code-button--html code-button--color" href="#">
+  <b className="code-button__bracket">&lt;</b>
+  <span className="code-button__code">/</span>
+  <span className="code-button__text">html</span>
+  <b className="code-button__bracket">&gt;</b>
+</a>
         </div>
         );
 

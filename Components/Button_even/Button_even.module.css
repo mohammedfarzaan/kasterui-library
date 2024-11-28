@@ -1,72 +1,28 @@
 
-/* From Uiverse.io by gharsh11032000 - Tags: button, search, hover effect */
+/* From Uiverse.io by deepak16375 - Tags: gradient, button, animated, gradients, hover effect, hoverme, hover button */
 .button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #e8e8e8;
-  background-color: #212121;
-  width: 70px;
-  height: 70px;
-  font-size: 24px;
-  text-transform: uppercase;
-  border: 2px solid #212121;
-  border-radius: 50%;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.15),
-    2px 2px 2px rgba(0, 0, 0, 0.1),
-    -3px -3px 2px rgba(255, 255, 255, 0.05),
-    -2px -2px 1px rgba(255, 255, 255, 0.05);
-  overflow: hidden;
+  font-size: 17px;
+  font-weight: bold;
+  border: 0px;
+  color: white;
+  background-color: #1877f2;
+  padding: 1rem 2rem;
+  border-radius: 15px;
   cursor: pointer;
 }
 
-.button .span {
-  position: relative;
-  z-index: 2;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  background-color: #e8e8e8;
-  width: 150%;
-  height: 150%;
-  left: 0%;
-  bottom: 0%;
-  transform: translate(-100%, 100%) rotate(45deg);
-  border-radius: 15px;
-}
-
-.button:hover::before {
-  animation: shakeBack 0.6s forwards 0.6s;
-}
-
-.button:hover .span {
-  scale: 1.2;
-}
-
 .button:hover {
-  box-shadow: none;
+  background-image: linear-gradient(90deg,
+		#B799FF 0%,
+		#ACBCFF 50%,
+		#AEE2FF 75%,
+		#E6FFFD 100%);
+  color: black;
+  animation: slide 10s linear infinite;
 }
 
-.button:active {
-  scale: 0.95;
-}
-
-@keyframes shakeBack {
-  0% {
-    transform: translate(-100%, 100%) rotate(45deg);
-  }
-
-  50% {
-    transform: translate(15%, -15%) rotate(45deg);
-  }
-
+@keyframes slide {
   100% {
-    transform: translate(-10%, 10%) rotate(45deg);
+    background-position: 50rem;
   }
 }
-

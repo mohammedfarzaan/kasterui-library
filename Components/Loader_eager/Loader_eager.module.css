@@ -1,118 +1,85 @@
 
-/* From Uiverse.io by JkHuger - Source: I've seen on a website and i recreated it but i don't remember. - Tags: animation, music, rhythm */
-.wave-menu {
-  border: 4px solid #545FE5;
-  border-radius: 50px;
-  width: 200px;
-  height: 45px;
+/* From Uiverse.io by codebykay101 - Tags: animation, neon, css, effects */
+.container {
+  position: relative;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  transition: ease 0.2s;
-  position: relative;
-  background: #fff;
 }
 
-.wave-menu li {
-  list-style: none;
-  height: 30px;
-  width: 4px;
-  border-radius: 10px;
-  background: #545FE5;
-  margin: 0 6px;
-  padding: 0;
-  animation-name: wave1;
-  animation-duration: 0.3s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  transition: ease 0.2s;
+.container .square {
+  position: absolute;
+  width: 200px;
+  height: 200px;
 }
 
-.wave-menu:hover > li {
-  background: #fff;
+.container .square:nth-child(2) {
+  transform: translate(-25%, -25%) rotateX(180deg);
+  filter: hue-rotate(60deg);
 }
 
-.wave-menu:hover {
-  background: #545FE5;
+.container .square:nth-child(3) {
+  transform: translate(25%, 25%) rotate(180deg);
+  filter: hue-rotate(180deg);
 }
 
-.wave-menu li:nth-child(2) {
-  animation-name: wave2;
-  animation-delay: 0.2s;
+.container .square::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #0f0;
+  box-shadow: 0 0 0 8px #0f03, 0 0 0 15px #0f01;
+  animation: animateSquare 4s linear infinite;
 }
 
-.wave-menu li:nth-child(3) {
-  animation-name: wave3;
-  animation-delay: 0.23s;
-  animation-duration: 0.4s;
-}
-
-.wave-menu li:nth-child(4) {
-  animation-name: wave4;
-  animation-delay: 0.1s;
-  animation-duration: 0.3s;
-}
-
-.wave-menu li:nth-child(5) {
-  animation-delay: 0.5s;
-}
-
-.wave-menu li:nth-child(6) {
-  animation-name: wave2;
-  animation-duration: 0.5s;
-}
-
-.wave-menu li:nth-child(8) {
-  animation-name: wave4;
-  animation-delay: 0.4s;
-  animation-duration: 0.25s;
-}
-
-.wave-menu li:nth-child(9) {
-  animation-name: wave3;
-  animation-delay: 0.15s;
-}
-
-@keyframes wave1 {
-  from {
-    transform: scaleY(1);
+@keyframes animateSquare {
+  0% {
+    transform: translate(2px,2px);
   }
 
-  to {
-    transform: scaleY(0.5);
+  25% {
+    transform: translate(178px,2px);
+  }
+
+  50% {
+    transform: translate(178px,178px);
+  }
+
+  75% {
+    transform: translate(2px,178px);
+  }
+
+  100% {
+    transform: translate(2px,2px);
   }
 }
 
-@keyframes wave2 {
-  from {
-    transform: scaleY(0.3);
-  }
-
-  to {
-    transform: scaleY(0.6);
-  }
+.container .square span {
+  position: absolute;
+  inset: 10px;
+  overflow: hidden;
+  transform: rotate(calc(90deg * var(--i)));
 }
 
-@keyframes wave3 {
-  from {
-    transform: scaleY(0.6);
-  }
-
-  to {
-    transform: scaleY(0.8);
-  }
+.container .square span::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #0f0;
+  transform: translateX(-100%);
+  animation: animate 4s linear infinite;
+  animation-delay: calc(1s * var(--i));
 }
 
-@keyframes wave4 {
-  from {
-    transform: scaleY(0.2);
+@keyframes animate {
+  0% {
+    transform: translateX(-100%);
   }
 
-  to {
-    transform: scaleY(0.5);
+  50%,100% {
+    transform: translateX(100%);
   }
 }
-

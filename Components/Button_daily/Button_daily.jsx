@@ -3,25 +3,13 @@ import styles from "./Button_daily.module.css";
 
 const Button_daily = () => (
   <div>
-    <div className={styles["container"]}>
-      <button>
-        <span id="u">u</span>
-        <span id="n">n</span>
-        <span id="i">i</span>
-        <span id="v">v</span>
-        <span id="e">e</span>
-        <span id="r">r</span>
-        <span id="s">s</span>
-        <span id="ee">e</span>
-      </button>
-      <div className={styles["moon"]}></div>
-    </div>
+    <button className={styles["btn"]}>space</button>
   </div>
 );
 
 export default Button_daily;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -30,12 +18,9 @@ export default Button_daily;
 
         const Button_daily = () => (
          <div>
-          <div className="container">
-    <button>
-      <span id="u">u</span><span id="n">n</span><span id="i">i</span><span id="v">v</span><span id="e">e</span><span id="r">r</span><span id="s">s</span><span id="ee">e</span>
-    </button>
-      <div className="moon"></div>
-  </div>
+          <button className="btn">
+  space
+</button>
         </div>
         );
 

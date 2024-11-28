@@ -2,9 +2,13 @@ import React from "react";
 
 const Button_wide = () => (
   <div>
-    <button className="relative px-10 py-3.5 overflow-hidden group bg-gradient-to-r from-gray-700 to-black relative hover:bg-gradient-to-r hover:from-gray-600 hover:to-black text-white transition-all ease-out duration-300">
-      <span className="absolute right-0 w-10 h-full top-0 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 -skew-x-12 group-hover:-translate-x-36 ease"></span>
-      <span className="relative text-xl font-semibold">Text Button</span>
+    <button className="relative text-neutral-300 cursor-pointer w-28 h-28 bg-purple-300 rounded-full flex justify-center  items-center  text-neutral-400 transition duration-300 shadow-lg shadow-purple-400  active:shadow-none active:translate-y-1.5">
+      <div className="relative -top-[1px] cursor-pointer w-24 h-24 bg-purple-300 rounded-full border-8 border-white">
+        <div className="w-3 h-3 bg-purple-800 rounded-full relative top-5 left-5"></div>
+        <div className="w-3 h-3 bg-purple-800  rounded-full relative top-2 left-12"></div>
+        <div className="w-3 h-3 bg-purple-800 rounded-full relative top-5 left-5"></div>
+        <div className="w-3 h-3 bg-purple-800  rounded-full relative top-2 left-12"></div>
+      </div>
     </button>
   </div>
 );

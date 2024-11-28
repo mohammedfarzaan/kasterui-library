@@ -1,72 +1,82 @@
 
-/* From Uiverse.io by RoninLJY - Tags: loader, css, easy to use */
+/* From Uiverse.io by Shoh2008 - Tags: loader */
 .loader {
-  width: 85px;
-  height: 85px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-  animation: loading-rotate 3s linear infinite;
-}
-
-.item {
-  width: 40px;
-  height: 40px;
-  display: block;
+  width: 96px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+  background: #5e5e5e;
+  border-radius: 48px 48px 0 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
-.item:nth-of-type(1) {
-  background-color: #50DE68;
-  border-radius: 20px 20px 0 20px;
-  border-left: #ffffff 4px solid;
-  border-top: #f7f7f7 4px solid;
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 24px;
+  height: 12px;
+  border-radius: 24px 24px 0 0;
+  background: yellow;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
 }
 
-.item:nth-of-type(2) {
-  background-color: rgb(32, 80, 46);
-  border-radius: 20px 20px 20px 0;
-  border-right: #ffffff 4px solid;
-  border-top: #f7f7f7 4px solid;
+.loader::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 32px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  background: yellow;
+  transform-origin: 50% 100%;
+  box-sizing: border-box;
+  animation: animloader 2s linear infinite alternate;
 }
 
-.item:nth-of-type(3) {
-  background-color: rgb(0, 255, 55);
-  border-radius: 20px 0 20px 20px;
-  border-left: #ffffff 4px solid;
-  border-bottom: #f7f7f7 4px solid;
-}
-
-.item:nth-of-type(4) {
-  background-color: rgb(32, 182, 32);
-  border-radius: 0 20px 20px 20px;
-  border-right: #ffffff 4px solid;
-  border-bottom: #f7f7f7 4px solid;
-}
-
-@keyframes loading-rotate {
+@keyframes animloader {
   0% {
-    transform: scale(1) rotate(0);
+    transform: rotate(-70deg);
   }
 
-  20% {
-    transform: scale(1) rotate(72deg);
+  10% {
+    transform: rotate(-40deg);
   }
 
-  40% {
-    transform: scale(0.5) rotate(144deg);
+  20%, 45%, 35% {
+    transform: rotate(-10deg);
   }
 
-  60% {
-    transform: scale(0.5) rotate(216deg);
+  40%, 30% {
+    transform: rotate(-30deg);
   }
 
-  80% {
-    transform: scale(1) rotate(288deg);
+  50%, 60% {
+    transform: rotate(20deg);
   }
 
-  100% {
-    transform: scale(1) rotate(360deg);
+  55%, 65%, 75% {
+    transform: rotate(40deg);
+  }
+
+  70% {
+    transform: rotate(45deg);
+  }
+
+  85%, 90% {
+    transform: rotate(50deg);
+  }
+
+  95% {
+    transform: rotate(75deg);
+  }
+
+  100%, 93% {
+    transform: rotate(70deg);
   }
 }

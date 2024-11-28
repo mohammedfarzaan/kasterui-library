@@ -1,15 +1,53 @@
 import React from "react";
+import styles from "./Button_ball.module.css";
 
 const Button_ball = () => (
   <div>
-    <button className="px-8 z-30 py-4 bg-rose-400 rounded-md text-white relative font-semibold font-sans after:-z-20 after:absolute after:h-1 after:w-1 after:bg-rose-800 after:left-5 overflow-hidden after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 [text-shadow:3px_5px_2px_#be123c;] hover:[text-shadow:2px_2px_2px_#fda4af] text-2xl">
-      Hover Me
-    </button>
+    <div className={styles["button"]}>
+      <a className={styles["first"]}> Keep hovering me </a>
+      <a className={styles["slidein"]}> Welcome to uiverse</a>
+      <a className={styles["slidein"] + styles["two"]}> Keep going </a>
+      <a className={styles["slidein"] + styles["three"]}> Create on uiverse </a>
+      <a className={styles["slidein"] + styles["four"]}> Save favorite </a>
+      <a className={styles["slidein"] + styles["five"]}> ...and enjoy! </a>
+      <a className={styles["slidein"] + styles["six"]}> Respect us.</a>
+      <a className={styles["slidein"] + styles["seven"]}> and we will you. </a>
+      <a className={styles["slidein"] + styles["eight"]}> Happy coding. </a>
+      <a className={styles["slidein"] + styles["nine"]}> ...and thanks. </a>
+      <a className={styles["slidein"] + styles["ten"]}> uiverse.io </a>
+    </div>
   </div>
 );
 
 export default Button_ball;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_ball = () => (
+         <div>
+          <div className="button">
+    <a className="first"> Keep hovering me </a>
+    <a className="slidein"> Welcome to uiverse</a>
+    <a className="slidein two"> Keep going </a>
+    <a className="slidein three"> Create on uiverse </a>
+    <a className="slidein four"> Save favorite </a>
+    <a className="slidein five"> ...and enjoy! </a>
+    <a className="slidein six"> Respect us.</a>
+    <a className="slidein seven"> and we will you. </a>
+    <a className="slidein eight"> Happy coding. </a>
+    <a className="slidein nine"> ...and thanks. </a>
+    <a className="slidein ten"> uiverse.io </a>
+</div>
+        </div>
+        );
+
+        export default Button_ball;
+        
+        
+         */
 }

@@ -1,93 +1,95 @@
 
-/* From Uiverse.io by SelfMadeSystem - Tags: animation, loader, animated, google */
-/* Google flip animation thing */
+/* From Uiverse.io by Yogeshawghad0477  - Tags: simple, animation, loader, html, css */
+#div1 {
+  width: 100%;
+  background: transparent;
 
-#a {
-  transform-origin: center;
-  animation: a 2s step-end infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes a {
+@keyframes animateHeight {
   0% {
-    transform: rotate(90deg);
+    height: 0px;
   }
-
-  25% {
-    transform: rotate(180deg);
-  }
-
   50% {
-    transform: rotate(270deg);
-  }
-
-  75% {
-    transform: rotate(360deg);
+    height: 50px;
   }
 }
 
-#b {
-  animation: b1 1s linear infinite, b2 2s step-end infinite;
-  animation-delay: var(--delay, 0s);
+#l,
+#m {
+  width: 150px;
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 0px 200px 0px 200px;
+  -moz-border-radius: 0px 200px 0px 200px;
+  -webkit-border-radius: 0px 200px 0px 200px;
+  border: 1px solid transparent;
+  animation: animateHeight 1s infinite alternate-reverse;
+}
+#m {
+  border-radius: 200px 0px 200px 0px;
+  -moz-border-radius: 200px 0px 200px 0px;
+  -webkit-border-radius: 200px 0px 200px 0px;
+}
+.pupil,
+.pupl2,
+.pupil3,
+.pupil4,
+.p5 {
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.158);
+}
+.pupil3,
+.pupil4 {
+  width: 18px;
+  height: 3.5px;
+  overflow: visible;
 }
 
-@keyframes b1 {
-  0%,
-    100% {
-    d: path("M 0 12 a 12 12 0 0 1 24 0 a 12 12 0 0 0 -24 0");
-  }
-
-  25%,
-    75% {
-    d: path("M 0 12 a 12 12 0 0 1 24 0 a 12 0 0 0 0 -24 0");
-  }
+.pupil {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(
+    rgb(255, 105, 105),
+    rgb(129, 249, 129),
+    rgb(96, 96, 255),
+    rgb(71, 71, 71)
+  );
+}
+.pupl2 {
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(
+    rgb(255, 2, 2),
+    rgb(0, 255, 0),
+    rgb(0, 0, 255),
+    rgb(0, 0, 0)
+  );
+}
+.p5 {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(
+    rgb(252, 71, 71),
+    rgb(70, 249, 70),
+    rgb(63, 63, 254),
+    rgb(48, 47, 47)
+  );
+}
+.pupil3 {
+  width: 5px;
+  height: 18px;
 }
 
-@keyframes b2 {
-  0% {
-    fill: hsl(var(--c1), 100%, 43%);
-  }
-
-  50% {
-    fill: hsl(var(--c2), 100%, 43%);
-  }
-}
-
-#c {
-  animation: c1 1s linear infinite, c2 2s linear infinite;
-  animation-delay: var(--delay, 0s);
-}
-
-@keyframes c1 {
-  0%,
-    25%,
-    75%,
-    100% {
-    d: path("M 0 12 h 24 a 12 0  0 0 1 -24 0");
-  }
-
-  50% {
-    d: path("M 0 12 h 24 a 12 12 0 0 1 -24 0");
-  }
-}
-
-@keyframes c2 {
-  0%,
-    25% {
-    fill: hsl(var(--c1), 100%, 43%);
-  }
-
-  12.5%,
-    37.5% {
-    fill: hsl(var(--c1), 100%, 25%);
-  }
-
-  50%,
-    75% {
-    fill: hsl(var(--c2), 100%, 43%);
-  }
-
-  62.5%,
-    87.5% {
-    fill: hsl(var(--c2), 100%, 25%);
-  }
-}

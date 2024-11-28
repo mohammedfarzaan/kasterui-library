@@ -3,45 +3,32 @@ import styles from "./Button_enemy.module.css";
 
 const Button_enemy = () => (
   <div>
-    <div className={styles["container"]}>
-      <button className={styles["btn"] + styles["cmd"]}>
-        <svg
-          fill="#fff"
-          version="1.1"
-          id="Capa_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-          width="20px"
-          height="20px"
-          viewBox="0 0 80 80"
-          xml:space="preserve"
-        >
-          <g>
-            <path
-              d="M64,48L64,48h-8V32h8c8.836,0,16-7.164,16-16S72.836,0,64,0c-8.837,0-16,7.164-16,16v8H32v-8c0-8.836-7.164-16-16-16
-		S0,7.164,0,16s7.164,16,16,16h8v16h-8l0,0l0,0C7.164,48,0,55.164,0,64s7.164,16,16,16c8.837,0,16-7.164,16-16l0,0v-8h16v7.98
-		c0,0.008-0.001,0.014-0.001,0.02c0,8.836,7.164,16,16,16s16-7.164,16-16S72.836,48.002,64,48z M64,8c4.418,0,8,3.582,8,8
-		s-3.582,8-8,8h-8v-8C56,11.582,59.582,8,64,8z M8,16c0-4.418,3.582-8,8-8s8,3.582,8,8v8h-8C11.582,24,8,20.417,8,16z M16,72
-		c-4.418,0-8-3.582-8-8s3.582-8,8-8l0,0h8v8C24,68.418,20.418,72,16,72z M32,48V32h16v16H32z M64,72c-4.418,0-8-3.582-8-8l0,0v-8
-		h7.999c4.418,0,8,3.582,8,8S68.418,72,64,72z"
-            ></path>
-          </g>
-        </svg>
-        command
-      </button>
-      <a
-        href="https://freecodez.com/post/7jypdpp"
-        className={styles["btn"] + styles["c"]}
+    <button className={styles["button"]}>
+      <svg
+        viewBox="0 0 24 24"
+        height="48"
+        width="48"
+        xmlns="http://www.w3.org/2000/svg"
+        className="send-icon"
       >
-        C
-      </a>
-    </div>
+        <path
+          d="m16.066 10.184l-3.89-1.795c-2.154-.994-3.231-1.491-3.725-.982c-.493.509.038 1.572 1.101 3.698c.22.44.33.659.33.895s-.11.456-.33.895c-1.063 2.126-1.594 3.19-1.1 3.698c.493.51 1.57.012 3.725-.982l3.889-1.795c1.698-.784 2.548-1.176 2.548-1.816c0-.64-.85-1.032-2.549-1.816"
+          fill-opacity="0.4"
+          fill="currentColor"
+        ></path>
+        <path
+          d="M8.895 11.684L8.174 9.52a1 1 0 0 0-.707-.654l-1.78-.445a.8.8 0 0 0-.91 1.134l1.111 2.22a.5.5 0 0 1 0 .448l-1.11 2.22a.8.8 0 0 0 .91 1.134l1.78-.445a1 1 0 0 0 .706-.654l.72-2.163a1 1 0 0 0 0-.632"
+          fill="currentColor"
+        ></path>
+      </svg>
+      Send Message
+    </button>
   </div>
 );
 
 export default Button_enemy;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -50,34 +37,26 @@ export default Button_enemy;
 
         const Button_enemy = () => (
          <div>
-          <div className="container">
-  <button className="btn cmd">
-    <svg
-      fill="#fff"
-      version="1.1"
-      id="Capa_1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="20px"
-      height="20px"
-      viewBox="0 0 80 80"
-      xml:space="preserve"
-    >
-      <g>
-        <path
-          d="M64,48L64,48h-8V32h8c8.836,0,16-7.164,16-16S72.836,0,64,0c-8.837,0-16,7.164-16,16v8H32v-8c0-8.836-7.164-16-16-16
-		S0,7.164,0,16s7.164,16,16,16h8v16h-8l0,0l0,0C7.164,48,0,55.164,0,64s7.164,16,16,16c8.837,0,16-7.164,16-16l0,0v-8h16v7.98
-		c0,0.008-0.001,0.014-0.001,0.02c0,8.836,7.164,16,16,16s16-7.164,16-16S72.836,48.002,64,48z M64,8c4.418,0,8,3.582,8,8
-		s-3.582,8-8,8h-8v-8C56,11.582,59.582,8,64,8z M8,16c0-4.418,3.582-8,8-8s8,3.582,8,8v8h-8C11.582,24,8,20.417,8,16z M16,72
-		c-4.418,0-8-3.582-8-8s3.582-8,8-8l0,0h8v8C24,68.418,20.418,72,16,72z M32,48V32h16v16H32z M64,72c-4.418,0-8-3.582-8-8l0,0v-8
-		h7.999c4.418,0,8,3.582,8,8S68.418,72,64,72z"
-        ></path>
-      </g>
-    </svg>
-    command
-  </button>
-  <a href="https://freecodez.com/post/7jypdpp" className="btn c">C</a>
-</div>
+          <button className="button">
+  <svg
+    viewBox="0 0 24 24"
+    height="48"
+    width="48"
+    xmlns="http://www.w3.org/2000/svg"
+    className="send-icon"
+  >
+    <path
+      d="m16.066 10.184l-3.89-1.795c-2.154-.994-3.231-1.491-3.725-.982c-.493.509.038 1.572 1.101 3.698c.22.44.33.659.33.895s-.11.456-.33.895c-1.063 2.126-1.594 3.19-1.1 3.698c.493.51 1.57.012 3.725-.982l3.889-1.795c1.698-.784 2.548-1.176 2.548-1.816c0-.64-.85-1.032-2.549-1.816"
+      fill-opacity="0.4"
+      fill="currentColor"
+    ></path>
+    <path
+      d="M8.895 11.684L8.174 9.52a1 1 0 0 0-.707-.654l-1.78-.445a.8.8 0 0 0-.91 1.134l1.111 2.22a.5.5 0 0 1 0 .448l-1.11 2.22a.8.8 0 0 0 .91 1.134l1.78-.445a1 1 0 0 0 .706-.654l.72-2.163a1 1 0 0 0 0-.632"
+      fill="currentColor"
+    ></path>
+  </svg>
+  Send Message
+</button>
         </div>
         );
 

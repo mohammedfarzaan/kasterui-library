@@ -1,33 +1,55 @@
 
-/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */
-/* HTML: <div class="loader"></div> */
+/* From Uiverse.io by funkyjuice213 - Tags: loader, glow */
 .loader {
-  width: 60px;
-  height: 30px;
-  display: grid;
-  --c: #0000 calc(100% - 5px),#000 calc(100% - 4px) 96%,#0000;
-  background: radial-gradient(farthest-side at bottom,var(--c)) 0 0,
-    radial-gradient(farthest-side at top   ,var(--c)) 100% 100%;
-  background-size: calc(50% + 2px) 50%;
-  background-repeat: no-repeat;
-  animation: l14 1.5s infinite linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.loader:before,
-.loader:after {
-  content: "";
-  grid-area: 1/1;
-  background: inherit;
-  animation: inherit;
-  animation-duration: 2s;
+.loader-bar {
+  height: 25px;
+  width: 6px;
+  margin: 0 3px;
+  border-radius: 20px;
+  animation: loader 2s ease-in-out infinite;
 }
 
-.loader:after {
-  --s: -1;
+.bar-1 {
+  background: linear-gradient(to right, #00e6e6, #00ccff, #0099ff, #0066ff);
+  animation-delay: 0s;
+  box-shadow: 0px 0px 15px 3px #00e6e6;
 }
 
-@keyframes l14 {
+.bar-2 {
+  background: linear-gradient(to right, #00ccff, #0099ff, #0066ff, #00e6e6);
+  animation-delay: 0.1s;
+  box-shadow: 0px 0px 15px 3px #00ccff;
+}
+
+.bar-3 {
+  background: linear-gradient(to right, #0099ff, #0066ff, #00e6e6, #00ccff);
+  animation-delay: 0.2s;
+  box-shadow: 0px 0px 15px 3px #0099ff;
+}
+
+.bar-4 {
+  background: linear-gradient(to right, #0066ff, #00e6e6, #00ccff, #0099ff);
+  animation-delay: 0.3s;
+  box-shadow: 0px 0px 15px 3px #0066ff;
+}
+
+@keyframes loader {
+  0% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(2);
+  }
+
   100% {
-    transform: rotate(calc(var(--s,1)*1turn))
+    transform: scaleY(1);
   }
 }
+

@@ -3,30 +3,34 @@ import styles from "./Loader_above.module.css";
 
 const Loader_above = () => (
   <div>
-    <svg
-      xmlns="://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      height="24"
-      width="24"
-    >
-      <g id="a">
-        <g style="--c1: 120; --c2: 0; --delay: -0.5s">
-          <path id="b"></path>
-          <path id="c"></path>
-        </g>
-        <g style="--c1: 210; --c2: 60" transform="rotate(180 12 12)">
-          <path id="b"></path>
-          <path id="c"></path>
-        </g>
-      </g>
-    </svg>
+    <div id="div1">
+      <div id="l" style="margin: 33px">
+        <div className={styles["pupil"]}>
+          <div className={styles["p5"]}>
+            <div className={styles["pupl2"]}>
+              <div className={styles["pupil3"]}></div>
+              <div className={styles["pupil4"]}></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="m" style="margin: 33px">
+        <div className={styles["pupil"]}>
+          <div className={styles["p5"]}>
+            <div className={styles["pupl2"]}>
+              <div className={styles["pupil3"]}></div>
+              <div className={styles["pupil4"]}></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
 export default Loader_above;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -35,22 +39,28 @@ export default Loader_above;
 
         const Loader_above = () => (
          <div>
-          <svg xmlns="://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
-  <g id="a">
-    <g style="--c1: 120; --c2: 0; --delay: -0.5s">
-      <path id="b">
-      </path>
-      <path id="c">
-      </path>
-    </g>
-    <g style="--c1: 210; --c2: 60" transform="rotate(180 12 12)">
-      <path id="b">
-      </path>
-      <path id="c">
-      </path>
-    </g>
-  </g>
-</svg>
+          <div id="div1">
+  <div id="l" style="margin: 33px">
+    <div className="pupil">
+      <div className="p5">
+        <div className="pupl2">
+          <div className="pupil3"></div>
+          <div className="pupil4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="m" style="margin: 33px">
+    <div className="pupil">
+      <div className="p5">
+        <div className="pupl2">
+          <div className="pupil3"></div>
+          <div className="pupil4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
         );
 

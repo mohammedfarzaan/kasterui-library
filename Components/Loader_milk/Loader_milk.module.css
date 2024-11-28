@@ -1,37 +1,29 @@
 
-/* From Uiverse.io by mrhyddenn - Tags: gradient, loader, spinner */
+/* From Uiverse.io by Juanes200122 - Tags: simple, animation, loader, circle, html, css */
 .loader {
-  position: relative;
-  width: 40px;
-  height: 40px;
+  width: 15px;
+  aspect-ratio: 1;
   border-radius: 50%;
+  background: #000;
+  box-shadow: -20px 0px,20px 0px;
+  animation: l18 1s infinite;
 }
 
-.loader::before,
-.loader::after {
-  content: "";
-  position: absolute;
-  border-radius: inherit;
-}
+@keyframes l18 {
+ 
+  25% {
+    box-shadow: -20px -20px, 20px 20px
+  }
 
-.loader::before {
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(0deg, #ff00cc 0%, #333399 100%);
-  animation: load012323 .5s infinite linear;
-}
+  50% {
+    box-shadow: 0px -20px,  0px 20px
+  }
 
-.loader::after {
-  width: 85%;
-  height: 85%;
-  background-color: #222;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  75% {
+    box-shadow: 20px -20px,-20px 20px
+  }
 
-@keyframes load012323 {
-  to {
-    transform: rotate(360deg);
+  100% {
+    box-shadow: 20px   0px,-20px  0px
   }
 }

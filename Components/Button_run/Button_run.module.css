@@ -1,47 +1,83 @@
 
-/* From Uiverse.io by UmangLadha  - Tags: simple, button, html, css, buttons, hover button, #button, 3d button */
-.button {
-  background: #38579b;
-  border-top: 1px solid #38538c;
-  border-right: 1px solid #1f2d4d;
-  border-bottom: 1px solid #151e33;
-  border-left: 1px solid #1f2d4d;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d,
-    0 6px 0px #1f3053, 0 8px 4px 1px #111111;
-  -moz-box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d,
-    0 6px 0px #1f3053, 0 8px 4px 1px #111111;
-  box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053,
-    0 8px 4px 1px #111111;
-  color: #fff;
-  font: bold 20px "helvetica neue", helvetica, arial, sans-serif;
-  line-height: 1;
-  padding: 10px 0 12px 0;
-  text-align: center;
-  text-shadow: 0px -1px 1px #1e2d4d;
-  width: 150px;
-  -webkit-background-clip: padding-box;
+/* From Uiverse.io by Medisetti-Venkata-Saikiran  - Tags: button */
+.social-login-icons {
+  display: flex;
+  align-items: center;
+}
+.social-login-icons svg {
+  width: 40px;
 }
 
-.button:hover {
-  -webkit-box-shadow: inset 0 0px 20px 1px #87adff, 0px 1px 0 #1d2c4d,
-    0 6px 0px #1f3053, 0 8px 4px 1px #111111;
-  -moz-box-shadow: inset 0 0px 20px 1px #87adff, 0px 1px 0 #1d2c4d,
-    0 6px 0px #1f3053, 0 8px 4px 1px #111111;
-  box-shadow: inset 0 0px 20px 1px #87adff, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053,
-    0 8px 4px 1px #111111;
-  cursor: pointer;
+.social-icon-1,
+.social-icon-2,
+.social-icon-3,
+.social-icon-4 {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .social-icon-1 i{
+    color: rgba(175, 7, 7, 0.899);
+    font-size:50px;
+
+} */
+/* .social-icon-2 i{
+    color: skyblue;
+    font-size:50px;
+
+} */
+/* .social-icon-3 i{
+    color: rgb(58 58 227 / 87%);
+    font-size:50px;
+
+} */
+/* .social-login-icons{
+    margin: 30px 0px;
+} */
+
+.socialcontainer {
+  height: 50px;
+  overflow: hidden;
+}
+.social-icon-1 {
+  transition-duration: 0.4s;
+  background-color: rgb(0, 0, 0);
+}
+.socialcontainer:hover .social-icon-1 {
+  transform: translateY(-50px);
+}
+.social-icon-2 {
+  transition-duration: 0.4s;
+  background: linear-gradient(
+    72.44deg,
+    #ff7a00 11.92%,
+    #ff0169 51.56%,
+    #d300c5 85.69%
+  );
+}
+.socialcontainer:hover .social-icon-2 {
+  transform: translateY(-50px);
+}
+.social-icon-3 {
+  transition-duration: 0.4s;
+  background: #316ff6;
 }
 
-.button:active {
-  -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d,
-    0 2px 0 #1f3053, 0 4px 3px 0 #111111;
-  -moz-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d,
-    0 2px 0 #1f3053, 0 4px 3px 0 #111111;
-  box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053,
-    0 4px 3px 0 #111111;
-  transform: translateY(4px);
+.socialcontainer:hover .social-icon-3 {
+  transform: translateY(-50px);
+}
+.social-icon-4 {
+  transition-duration: 0.4s;
+  background: linear-gradient(
+    180deg,
+    rgba(129, 34, 144, 1) 0%,
+    rgba(77, 34, 124, 1) 91%
+  );
+}
+
+.socialcontainer:hover .social-icon-4 {
+  transform: translateY(-50px);
 }
 

@@ -1,49 +1,28 @@
 
-/* From Uiverse.io by andrew-demchenk0 - Tags: animation, purple, button, opacity, small, edit */
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 12px;
-  gap: 2px;
-  height: 40px;
-  width: 85px;
-  border: none;
-  background: #a549da3d;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.lable {
-  line-height: 22px;
-  font-size: 19px;
-  color: #A649DA;
-  font-family: sans-serif;
+/* From Uiverse.io by adamgiebl - Tags: simple, button, hover */
+button {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
   letter-spacing: 1px;
+  text-decoration: none;
+  color: #725AC1;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
 }
 
-.button:hover {
-  background: #a549da62;
+button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
 }
 
-.button:hover .svg-icon {
-  animation: lr 1s linear infinite;
-}
-
-@keyframes lr {
-  0% {
-    transform: translateX(0);
-  }
-
-  25% {
-    transform: translateX(-1px);
-  }
-
-  75% {
-    transform: translateX(1px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
+button:active {
+  transform: scale(0.9);
 }

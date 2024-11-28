@@ -1,51 +1,22 @@
 
-/* From Uiverse.io by catraco - Tags: button, ring, next, hover effect, startbutton , variables */
-.btn-class-name {
-  --color: 180,255, 100;
-  border-radius: .5em;
-  transition: .3s;
-  background-color: rgba(var(--color), .2);
-  color: rgb(var(--color));
-  fill: rgb(var(--color));
-  font-family: monospace;
-  font-weight: bolder;
-  font-size: x-large;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  cursor: pointer;
-  border: 2px solid rgb(var(--color));
-  box-shadow: 0 0 10px rgba(var(--color), .4);
-  outline: none;
-  display: flex;
-  align-items: center;
-  padding: .5em 1em;
-}
-
-.btn-class-name:hover {
-  box-shadow: 0 0 0 5px rgba(var(--color), .5);
-}
-
-.btn-class-name span {
-  transform: scale(.8);
-  transition: .3s;
-}
-
-.btn-class-name:hover span {
-  transform: scale(1);
-}
-
-.btn-class-name svg {
-  font-size: 0;
-  transform: scale(0.5) translateX(0%) rotate(-180deg);
-  transition: .3s;
-}
-
-.btn-class-name:hover svg {
+/* From Uiverse.io by Rodrypaladin - Tags: simple, animation, purple, pink, button, click, css, click animation */
+.button {
+  margin: 0 10px;
+  padding: 10px 30px;
+  border: 5px solid #DF34DB;
+  border-radius: 22px;
   font-size: 20px;
-  transform: scale(1) translateX(20%) rotate(0deg);
+  color: #DF34DB;
+  transition: transform 0.1s ease-in, all 0.08s ease-in;
+  box-shadow: 0 5px 0 #dd04d9;
 }
 
-.btn-class-name:active {
-  transition: 0s;
-  box-shadow: 0 0 0 5px rgb(var(--color));
+.button:hover {
+  border-color: #ff00c8;
+  box-shadow: 0 5px 0 #ff00c8;
+}
+
+.button:active {
+  transform: translateY(5px);
+  box-shadow: 0 0 0 #DF34DB;
 }

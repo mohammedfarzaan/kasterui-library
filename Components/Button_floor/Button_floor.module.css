@@ -1,28 +1,74 @@
 
-/* From Uiverse.io by Hysean2  - Tags: simple, minimalist, button, modern */
+/* From Uiverse.io by pradipkaityuiux - Tags: button, Oval button, desined Button, bootsrap button */
 .button {
+  background-color: #000fdb;
+  border: none;
+  padding: 20px 48px;
+  color: #fff;
   cursor: pointer;
-  padding: 1em 1.8em;
-  border-radius: 2em;
-  border: 3px solid #414141;
+  border-radius: 40px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.button span {
+  font-size: 24px;
   font-weight: bold;
-  font-size: 1em;
-  color: white;
-  background-color: #222222;
-  transition: transform 0.3s ease;
+}
+
+.button::before,
+.button::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  z-index: -1;
+  background-color: #535fff;
+  transition: all 0.3s 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.button::after {
+  right: -30px;
+  transform: translateX(30px) translateY(-110px) rotate(30deg);
+}
+
+.button::before {
+  left: -20px;
+  transform: translateX(-10px) translateY(50px) rotate(30deg);
+}
+
+.button:hover::before {
+  transform: rotate(30deg) translateY(10px) translateX(-15px);
+}
+
+.button:hover::after {
+  transform: rotate(30deg) translateY(-70px) translateX(-30px);
 }
 
 .button:hover {
-  transform: scale(1.15);
-  border: none;
-  background: linear-gradient(
-    -80deg,
-    rgba(150, 93, 233, 1) 10%,
-    rgba(99, 88, 238, 1) 95%
-  );
+  animation: wobel 0.3s ease-in-out;
 }
 
-.button:active {
-  transform: scale(0.95);
-}
+@keyframes wobel {
+  0% {
+    transform: scale(1);
+  }
 
+  20% {
+    transform: scale(1.1);
+  }
+
+  60% {
+    transform: scale(1.05);
+  }
+
+  80% {
+    transform: scale(0.85);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

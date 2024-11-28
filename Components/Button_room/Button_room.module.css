@@ -1,85 +1,55 @@
 
-/* From Uiverse.io by tarantino421 - Tags: button, hover button, matrix */
-.box {
-  --clr-shadow__border: #A8DF8E;
-  --clr-text: #F6F4EB;
-  --clr-code-line: #43ff85;
-  --clr-matrix: #020204;
-  --size: 3rem;
-  position: relative;
-  outline: 1px solid var(--clr-shadow__border);
-}
-
-.button {
-  font-weight: 600;
-  font-size: 1.5rem;
-  letter-spacing: 0.2rem;
-  color: var(--clr-text);
-  padding: calc(var(--size) / 3) var(--size);
-  background: transparent;
+/* From Uiverse.io by adamgiebl - Tags: icon, button */
+.cssbuttons-io-button {
+  background: #A370F0;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
   border: none;
-  cursor: pointer;
-  text-shadow: 2px 0px var(--clr-shadow__border), 0px 2px var(--clr-shadow__border),
-  -2px 0px var(--clr-shadow__border), 0px -2px var(--clr-shadow__border);
-}
-
-.matrix {
-  width: 100%;
-  height: 100%;
-  bottom: 0%;
-  transition: 0.5s ease-in-out;
-  z-index: -1;
-  opacity: 0;
+  letter-spacing: 0.05em;
   display: flex;
-  justify-content: center;
   align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
   overflow: hidden;
-  position: absolute;
-  background: var(--clr-matrix);
-}
-
-.box:hover .matrix {
-  opacity: 1;
-}
-
-.code-line {
   position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
   display: flex;
-  flex-direction: column-reverse;
-  transition: 0.5s;
-  min-height: 0.6rem;
-  min-width: 0.6rem;
-  animation: matrix-animation calc(.2s * var(--i)) linear infinite;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
 }
 
-.code {
-  text-shadow: 20px 100px var(--clr-code-line),-20px -50px var(--clr-code-line);
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: var(--clr-code-line);
-  opacity: 0.5;
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
 }
 
-.code:first-child {
-  color: var(--clr-text);
-  opacity: 1;
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
 }
 
-@keyframes matrix-animation {
-  0% {
-    transform: translateY(calc(-50% * var(--i)));
-  }
-
-  100% {
-    -webkit-transform: translateY(calc(50% * var(--i)));
-    transform: translateY(calc(50% * var(--i)));
-  }
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
 }
 
-
-
-
-
-
-
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
 

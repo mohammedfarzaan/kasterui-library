@@ -1,31 +1,58 @@
 
-/* From Uiverse.io by preshpi  - Website: https://10015.io/tools/css-loader-generator - Name: 10015 - Tags: loader, spinner, css */
+/* From Uiverse.io by exyreams - Tags: loading, loader, loading animation */
 .spinner {
-  width: 46px;
-  height: 46px;
-  display: grid;
-  animation: spinner-plncf9 3s infinite;
+  position: relative;
+  width: 80px;
+ /* Adjust the width accordingly */
+  height: 16px;
+ /* Keep the height the same */
 }
 
-.spinner::before,
-.spinner::after {
-  content: "";
-  grid-area: 1/1;
-  border: 9px solid;
+.spinner div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #004dff;
   border-radius: 50%;
-  border-color: #474bff #474bff #0000 #0000;
-  mix-blend-mode: darken;
-  animation: spinner-plncf9 1s infinite linear;
+  animation: spinner-4t3wzl 2s infinite linear;
 }
 
-.spinner::after {
-  border-color: #0000 #0000 #dbdcef #dbdcef;
-  animation-direction: reverse;
+.spinner div:nth-child(1) {
+  left: 0;
+  animation-delay: 0.15s;
+  background-color: rgba(0, 77, 255, 0.9);
 }
 
-@keyframes spinner-plncf9 {
+.spinner div:nth-child(2) {
+  left: 25%;
+  animation-delay: 0.3s;
+  background-color: rgba(0, 77, 255, 0.8);
+}
+
+.spinner div:nth-child(3) {
+  left: 50%;
+  animation-delay: 0.45s;
+  background-color: rgba(0, 77, 255, 0.7);
+}
+
+.spinner div:nth-child(4) {
+  left: 75%;
+  animation-delay: 0.6s;
+  background-color: rgba(0, 77, 255, 0.6);
+}
+
+.spinner div:nth-child(5) {
+  left: 100%;
+  animation-delay: 0.75s;
+  background-color: rgba(0, 77, 255, 0.5);
+}
+
+@keyframes spinner-4t3wzl {
+  0% {
+    transform: rotate(0deg) translateX(-100%);
+  }
+
   100% {
-    transform: rotate(1turn);
+    transform: rotate(360deg) translateX(-100%);
   }
 }
-

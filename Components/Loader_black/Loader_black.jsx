@@ -3,22 +3,17 @@ import styles from "./Loader_black.module.css";
 
 const Loader_black = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["cube"]}>
-        <div className={styles["face"]}></div>
-        <div className={styles["face"]}></div>
-        <div className={styles["face"]}></div>
-        <div className={styles["face"]}></div>
-        <div className={styles["face"]}></div>
-        <div className={styles["face"]}></div>
-      </div>
+    <div className={styles["eye"]}>
+      <div className={styles["up"]}></div>
+      <div className={styles["mid"]}></div>
+      <div className={styles["down"]}></div>
     </div>
   </div>
 );
 
 export default Loader_black;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -27,15 +22,10 @@ export default Loader_black;
 
         const Loader_black = () => (
          <div>
-          <div className="loader">
-    <div className="cube">
-        <div className="face"></div>
-        <div className="face"></div>
-        <div className="face"></div>
-        <div className="face"></div>
-        <div className="face"></div>
-        <div className="face"></div>
-    </div>
+          <div className="eye">
+    <div className="up"></div>
+    <div className="mid"></div> 
+    <div className="down"></div> 
 </div>
         </div>
         );

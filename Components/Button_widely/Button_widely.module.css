@@ -1,33 +1,41 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: animation, button, hover, trash, delete, transition, hover effect, bin */
-.bin-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 55px;
-  height: 55px;
-  border-radius: 15px;
-  background-color: rgb(255, 95, 95);
+/* From Uiverse.io by ahmedyasserdev  - Tags: button */
+.button {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #9b59b6;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 12px;
+  box-shadow:
+    0px 5px #7d3c98,
+    10px 14px 8px rgba(125, 60, 152, 0.4);
   cursor: pointer;
-  border: 3px solid rgb(255, 201, 201);
-  transition-duration: 0.3s;
+  transform: rotate3d(1, 1, 1, -10deg);
+  display: flex;
+  gap: 8px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
-.bin-bottom {
-  width: 15px;
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 4px #7d3c98,
+    0 6px 12px rgba(0, 0, 0, 0.2);
 }
-.bin-top {
-  width: 17px;
-  transform-origin: right;
-  transition-duration: 0.3s;
+
+.button:active {
+  transform: translateY(2px);
+  box-shadow:
+    0 2px #7d3c98,
+    0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.bin-button:hover .bin-top {
-  transform: rotate(45deg);
-}
-.bin-button:hover {
-  background-color: rgb(255, 0, 0);
-}
-.bin-button:active {
-  transform: scale(0.9);
+
+.button:focus {
+  outline: none;
 }
 

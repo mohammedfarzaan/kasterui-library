@@ -1,54 +1,25 @@
 
-/* From Uiverse.io by Rodrypaladin - Tags: animation, pink, button, dark, shadow, border, color, box-shadow */
-.button {
-  background-image: linear-gradient(to right bottom, #e300ff, #ff00aa, #ff5956, #ffb900, #fffe00);
+/* From Uiverse.io by AKHILJITH-VN - Tags: button */
+button {
+  height: auto;
+  width: auto;
+  text-align: justify;
+  background: linear-gradient(30deg,rgb(32, 252, 252),rgb(101, 101, 255)
+    ,rgb(254, 183, 196),rgb(224, 17, 224));
+  color: #ffffff;
   border: none;
-  font-size: 1.2em;
-  border-radius: 0;
-  padding: 4px;
-  transition: border-top-left-radius 0.2s ease-in, 
-  border-top-right-radius 0.2s ease-in 0.15s, 
-  border-bottom-right-radius 0.2s ease-in 0.3s,
-  border-bottom-left-radius 0.2s ease-in 0.45s, 
-  padding 0.2s ease-in;
-  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 6px #25d0e3;
+  transition: all 0.5s ease;
 }
 
-.button__int {
-  background-color: #212121;
-  color: white;
-  border-radius: 0;
-  padding: 10px 40px;
-  transition: all 0.2s ease-in,
-  border-top-left-radius 0.2s ease-in, 
-  border-top-right-radius 0.2s ease-in 0.15s, 
-  border-bottom-right-radius 0.2s ease-in 0.3s,
-  border-bottom-left-radius 0.2s ease-in 0.45s,
-  padding 0.2s ease-in;
-  font-weight: 600;
-  z-index: -1;
-  box-shadow: -25px -10px 30px -5px rgba(225, 0, 255, 0.7),
-    25px -10px 30px -5px rgba(255, 0, 212, 0.7),
-    25px 10px 30px -5px rgba(255, 174, 0, 0.7),
-    -25px 10px 30px -5px rgba(255, 230, 0, 0.7);
+button:hover {
+  background: linear-gradient(30deg,rgb(224, 17, 224), pink, rgb(60, 60, 255), rgb(32, 252, 252));
+  box-shadow: 2px 4px 6px #a8097e;
 }
-
-.button:active .button__int {
-  padding: 10px 30px;
-}
-
-.button:hover {
-  border-radius: 1.5em;
-}
-
-.button:hover .button__int {
-  border-radius: 1.3em;
-}
-
-.button:hover .button__int {
-  box-shadow: -15px -10px 30px -5px rgba(225, 0, 255, 0.8),
-    15px -10px 30px -5px rgba(255, 0, 212, 0.8),
-    15px 10px 30px -5px rgba(255, 174, 0, 0.8),
-    -15px 10px 30px -5px rgba(255, 230, 0.8);
-}
-
+  

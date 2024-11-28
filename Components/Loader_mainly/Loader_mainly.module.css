@@ -1,77 +1,86 @@
 
-/* From Uiverse.io by NlghtM4re - Tags: blue, loader, smooth, shadow, glow, neon */
-.container {
-  position: absolute;
-  top: 45%;
-  left: 48%;
+/* From Uiverse.io by Cybercom682  - Tags: animation, loader, magnet */
+.loader {
+  position: relative;
+  background-color: red;
+  height: 40px;
+  width: 10px;
+  border-radius: 6px 0px 0px 6px;
+  animation: rotate 5s infinite;
 }
-
-.square {
-  width: 8px;
-  height: 30px;
-  background: rgb(71, 195, 248);
-  border-radius: 10px;
-  display: block;
-  /*margin:10px;*/
-  -webkit-animation: turn 2.5s ease infinite;
-  animation: turn 2.5s ease infinite;
-  box-shadow: rgb(71, 195, 248) 0px 1px 15px 0px;
-}
-
-.top {
+.magnetism {
   position: absolute;
-  left: 40%;
-  top: 50%;
-  -webkit-transform: rotate(90deg);
+  color: rgb(0, 151, 252);
+  bottom: 0;
+  width: 80px;
+  left: 0%;
+  height: 40px;
+  border: solid 2px currentColor;
+  border-color: currentColor transparent transparent transparent;
+  border-radius: 50%;
   transform: rotate(90deg);
+  animation: go 0.5s ease-in-out infinite;
 }
 
-.bottom {
+.loader::before {
+  content: "";
+  left: 10px;
   position: absolute;
-  left: 40%;
-  top: 50%;
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+  background: rgb(255, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 50%,
+    rgba(158, 158, 158, 1) 50%,
+    rgba(184, 184, 184, 1) 100%
+  );
+  height: 10px;
+  width: 20px;
 }
-
-.left {
+.loader::after {
+  content: "";
+  left: 10px;
   position: absolute;
-  left: 40%;
-  top: 50%;
+  bottom: 0;
+  background: rgb(255, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 50%,
+    rgba(158, 158, 158, 1) 50%,
+    rgba(184, 184, 184, 1) 100%
+  );
+  height: 10px;
+  width: 20px;
 }
 
-.right {
-  position: absolute;
-  left: 40%;
-  top: 50%;
-  -webkit-transform: rotate(-180deg);
-  transform: rotate(-180deg);
-}
-
-@-webkit-keyframes turn {
+@keyframes rotate {
   0% {
-    transform: translateX(0) translateY(0) rotate(0);
+    transform: rotate(-30deg);
   }
-
   50% {
-    transform: translateX(400%) translateY(100%) rotate(90deg);
+    transform: rotate(30deg);
   }
-
   100% {
-    transform: translateX(0) translateY(0) rotate(0);
+    transform: rotate(-30deg);
   }
 }
 
-@keyframes turn {
+@keyframes go {
   0% {
-    transform: translateX(0) translateY(0) rotate(0);
+    left: 0%;
+    width: 30px;
+    opacity: 1;
   }
-
-  70% {
-    transform: translateX(400%) translateY(100%) rotate(90deg);
+  50% {
+    left: 100%;
+    width: 60px;
+    opacity: 0.5;
   }
-
   100% {
-    transform: translateX(0) translateY(0) rotate(0);
+    width: 90px;
+    left: 200%;
+    opacity: 0;
   }
 }
+

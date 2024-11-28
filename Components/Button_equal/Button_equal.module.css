@@ -1,98 +1,266 @@
 
-/* From Uiverse.io by ilkhoeri  - Tags: simple, button, toggle, svg, save */
-.action_has {
-  --color: 0 0% 60%;
-  --color-has: 211deg 100% 48%;
-  --sz: 1rem;
+/* From Uiverse.io by Lucaasbre  - Tags: button, animated, gradients, svg, css effect, multicolor, button hover effect , 2d button */
+.container {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  border-radius: 30px;
+  overflow: hidden;
   cursor: pointer;
+}
+
+.button {
+  border: none;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+      75deg,
+      rgb(170, 55, 200) 10%,
+      rgb(235, 100, 130) 20%,
+      rgb(245, 95, 90) 40%,
+      rgb(245, 110, 30) 60%,
+      rgb(235, 100, 130) 80%,
+      rgb(170, 55, 200) 90%
+    ),
+    linear-gradient(
+      75deg,
+      rgb(170, 55, 200) 0%,
+      rgb(235, 100, 130) 20%,
+      rgb(245, 95, 90) 40%,
+      rgb(245, 110, 30) 60%,
+      rgb(235, 100, 130) 80%,
+      rgb(170, 55, 200) 100%
+    );
+  background-size: 50% 100%;
+  animation: moveGradient 3s linear infinite paused;
+}
+
+.container:hover .button {
+  animation-play-state: running;
+}
+
+.container:active {
+  scale: 0.95;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.span-text {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(var(--sz) * 2.5);
-  width: calc(var(--sz) * 2.5);
-  padding: 0.4rem 0.5rem;
-  border-radius: 0.375rem;
-  border: 0.0625rem solid hsl(var(--color));
 }
 
-.has_saved:hover {
-  border-color: hsl(var(--color-has));
-}
-.has_liked:hover svg,
-.has_saved:hover svg {
-  color: hsl(var(--color-has));
-}
-
-.has_liked svg,
-.has_saved svg {
-  overflow: visible;
-  height: calc(var(--sz) * 1.75);
-  width: calc(var(--sz) * 1.75);
-  --ease: cubic-bezier(0.5, 0, 0.25, 1);
-  --zoom-from: 1.75;
-  --zoom-via: 0.75;
-  --zoom-to: 1;
-  --duration: 1s;
+.span-outside {
+  width: 300px;
+  height: 95px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background-color: #ffffff10;
+  filter: blur(1px);
+  z-index: 3;
 }
 
-.has_saved:hover path[data-path="box"] {
-  transition: all 0.3s var(--ease);
-  animation: has-saved var(--duration) var(--ease) forwards;
-  fill: hsl(var(--color-has) / 0.35);
-}
-.has_saved:hover path[data-path="line-top"] {
-  animation: has-saved-line-top var(--duration) var(--ease) forwards;
-}
-.has_saved:hover path[data-path="line-bottom"] {
-  animation: has-saved-line-bottom var(--duration) var(--ease) forwards,
-    has-saved-line-bottom-2 calc(var(--duration) * 1) var(--ease)
-      calc(var(--duration) * 0.75);
+.span-text > svg {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
 }
 
-@keyframes has-saved-line-top {
-  33.333% {
-    transform: rotate(0deg) translate(1px, 2px) scale(var(--zoom-from));
-    d: path("M 3 5 L 3 8 L 3 8");
-  }
-  66.666% {
-    transform: rotate(20deg) translate(2px, -2px) scale(var(--zoom-via));
-  }
-  99.999% {
-    transform: rotate(0deg) translate(0px, 0px) scale(var(--zoom-to));
-  }
+.circles .circle {
+  position: absolute;
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
-@keyframes has-saved-line-bottom {
-  33.333% {
-    transform: rotate(0deg) translate(1px, 2px) scale(var(--zoom-from));
-    d: path("M 17 20 L 17 13 L 7 13 L 7 20");
-  }
-  66.666% {
-    transform: rotate(20deg) translate(2px, -2px) scale(var(--zoom-via));
-  }
-  99.999% {
-    transform: rotate(0deg) translate(0px, 0px) scale(var(--zoom-to));
-    d: path("M 17 21 L 17 21 L 7 21 L 7 21");
-  }
+
+.circles .circle:nth-child(1) {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: blur(20px);
+  top: -80px;
+  left: 180px;
 }
-@keyframes has-saved-line-bottom-2 {
-  from {
-    d: path("M 17 21 L 17 21 L 7 21 L 7 21");
-  }
-  to {
-    transform: rotate(0deg) translate(0px, 0px) scale(var(--zoom-to));
-    d: path("M 17 20 L 17 13 L 7 13 L 7 20");
-    fill: white;
-  }
+
+.circles .circle:nth-child(2) {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+  filter: blur(10px);
+  top: -10px;
+  left: -50px;
 }
-@keyframes has-saved {
-  33.333% {
-    transform: rotate(0deg) translate(1px, 2px) scale(var(--zoom-from));
-  }
-  66.666% {
-    transform: rotate(20deg) translate(2px, -2px) scale(var(--zoom-via));
-  }
-  99.999% {
-    transform: rotate(0deg) translate(0px, 0px) scale(var(--zoom-to));
-  }
+
+.circles .circle:nth-child(3) {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px 80px 80px 40px;
+  width: 60px;
+  height: 40px;
+  top: 30px;
+  left: 35px;
+  filter: blur(10px);
+}
+
+.circles .circle:nth-child(4) {
+  position: absolute;
+  background-color: #fff;
+  rotate: 10deg;
+  width: 40px;
+  height: 40px;
+  top: 60px;
+  left: 130px;
+  filter: blur(20px);
+}
+
+.circles .circle:nth-child(5) {
+  position: absolute;
+  background-color: #fff;
+  width: 70px;
+  height: 70px;
+  top: 25px;
+  left: 250px;
+  filter: blur(18px);
+}
+
+.circles .circle:nth-child(6) {
+  position: absolute;
+  background-color: #fff;
+  rotate: 10deg;
+  width: 40px;
+  height: 40px;
+  top: 30px;
+  left: 190px;
+  filter: blur(10px);
+}
+
+.circles .circle:nth-child(7) {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 0 0 0 20px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  width: 210px;
+  height: 20px;
+  top: 0px;
+  left: 20px;
+  filter: blur(2px);
+}
+
+.circles .circle:nth-child(8) {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 0;
+  border-bottom: 6px solid #fff;
+  width: 60px;
+  height: 20px;
+  top: 60px;
+  left: 60px;
+  filter: blur(5px);
+}
+
+.circles .circle:nth-child(9) {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 0 20px 0 0;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
+  width: 50px;
+  height: 20px;
+  top: 19px;
+  right: 20px;
+  filter: blur(2px);
+}
+
+.circles .circle:nth-child(10) {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 0 20px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  width: 30px;
+  height: 50px;
+  bottom: 10px;
+  right: -10px;
+  filter: blur(2px);
+}
+
+.circles .circle:nth-child(11) {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 0 20px 0 0;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
+  width: 50px;
+  height: 20px;
+  bottom: 1px;
+  right: 20px;
+  filter: blur(2px);
+}
+
+.circles .circle:nth-child(12) {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 0 0 0 20px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  width: 210px;
+  height: 20px;
+  bottom: 20px;
+  left: 20px;
+  filter: blur(2px);
+}
+
+.circles .circle:nth-child(13) {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 0 20px 0 0;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
+  width: 20px;
+  height: 50px;
+  top: 10px;
+  left: 0px;
+  filter: blur(2px);
+}
+
+.circles .circle:nth-child(14) {
+  position: absolute;
+  background-color: white;
+  border-radius: 0 0 80px 40px;
+  width: 90px;
+  height: 20px;
+  top: 0px;
+  left: 20px;
+  filter: blur(9px);
+}
+
+.circles .circle:nth-child(15) {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 0;
+  border-bottom: 6px solid #fff;
+  width: 60px;
+  height: 20px;
+  top: 0px;
+  left: 30px;
+  filter: blur(3px);
 }
 

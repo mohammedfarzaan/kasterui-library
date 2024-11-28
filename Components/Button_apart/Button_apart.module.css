@@ -1,63 +1,28 @@
 
-/* From Uiverse.io by boryanakrasteva - Tags: button */
-.btn {
-  width: 140px;
-  height: 40px;
+/* From Uiverse.io by vinodjangid07  - Tags: button, hover effect, filter, setting */
+.filter {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border: none;
-  position: relative;
-  background-color: transparent;
-  transition: .2s cubic-bezier(0.19, 1, 0.22, 1);
-  opacity: 0.6;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.021);
+  transition: all 0.3s;
 }
 
-.btn::after {
-  content: '';
-  border-bottom: 3px double rgb(214, 207, 113);
-  width: 0;
-  height: 100%;
-  position: absolute;
-  margin-top: -5px;
-  top: 0;
-  left: 5px;
-  visibility: hidden;
-  opacity: 1;
-  transition: .2s linear;
+.filter svg {
+  height: 16px;
+  fill: rgb(77, 77, 77);
+  transition: all 0.3s;
 }
-
-.btn .icon {
-  transform: translateX(0%);
-  transition: .2s linear;
-  animation: attention 1.2s linear infinite;
+.filter:hover {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.11);
+  background-color: rgb(59, 59, 59);
 }
-
-.btn:hover::after {
-  visibility: visible;
-  opacity: 0.7;
-  width: 90%;
-}
-
-.btn:hover {
-  letter-spacing: 2px;
-  opacity: 1;
-}
-
-.btn:hover > .icon {
-  transform: translateX(30%);
-  animation: none;
-}
-
-@keyframes attention {
-  0% {
-    transform: translateX(0%);
-  }
-
-  50% {
-    transform: translateX(30%);
-  }
+.filter:hover svg {
+  fill: white;
 }
 

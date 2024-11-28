@@ -1,49 +1,17 @@
 import React from "react";
-import styles from "./Loader_thy.module.css";
 
 const Loader_thy = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["l"]}></div>
-      <div className={styles["l"]}></div>
-      <div className={styles["l"]}></div>
-      <div className={styles["l"]}></div>
-      <div className={styles["l"]}></div>
-      <div className={styles["l"]}></div>
-      <div className={styles["l"]}></div>
-      <div className={styles["l"]}></div>
-      <div className={styles["l"]}></div>
+    <div className="w-full min-h-screen gap-x-2 flex justify-center items-center">
+      <div className="w-5 bg-[#d991c2] animate-pulse h-5 rounded-full animate-bounce"></div>
+      <div className="w-5 animate-pulse h-5 bg-[#9869b8] rounded-full animate-bounce"></div>
+      <div className="w-5 h-5 animate-pulse bg-[#6756cc] rounded-full animate-bounce"></div>
     </div>
   </div>
 );
 
 export default Loader_thy;
-{
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Loader_thy = () => (
-         <div>
-          <div className="loader">
-  <div className="l"></div>
-  <div className="l"></div>
-  <div className="l"></div>
-  <div className="l"></div>
-  <div className="l"></div>
-  <div className="l"></div>
-  <div className="l"></div>
-  <div className="l"></div>
-  <div className="l"></div>
-</div>
-        </div>
-        );
-
-        export default Loader_thy;
-        
-        
-         */
+{
+  /* */
 }

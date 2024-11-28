@@ -1,21 +1,33 @@
 
-/* From Uiverse.io by 2Fl00rian6 - Tags: button */
+/* From Uiverse.io by portseif - Tags: button */
 button {
- background-color: rgb(20, 87, 244);
- border: 1px solid rgb(20, 87, 244);
- padding: 12px 20px;
- border-radius: 7px;
- transition: .3s;
- color: #fff;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
 }
 
-button:hover {
- border: 1px solid rgb(20, 87, 244);
- background-color: transparent;
- color: rgb(20, 87, 244);
+button:before {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  transition: all .42s cubic-bezier(.25,.8,.25,1);
+  width: 0;
 }
 
-button:focus {
- box-shadow: 0px 0px 0px 5px rgba(20, 87, 244, 0.37), 0px 0px 0px 10px rgba(20, 87, 244, 0.38);
- outline: none;
+button:hover:before {
+  background-color: #fff;
+  width: 3rem;
 }

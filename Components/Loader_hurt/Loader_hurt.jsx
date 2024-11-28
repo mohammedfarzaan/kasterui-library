@@ -4,34 +4,21 @@ import styles from "./Loader_hurt.module.css";
 const Loader_hurt = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["loaderMiniContainer"]}>
-        <div className={styles["barContainer"]}>
-          <span className={styles["bar"]}></span>
-          <span className={styles["bar"] + styles["bar2"]}></span>
-        </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 101 114"
-          className="svgIcon"
-        >
-          <circle
-            strokeWidth="7"
-            stroke="black"
-            transform="rotate(36.0692 46.1726 46.1727)"
-            r="29.5497"
-            cy="46.1727"
-            cx="46.1726"
-          ></circle>
-          <line
-            strokeWidth="7"
-            stroke="black"
-            y2="111.784"
-            x2="97.7088"
-            y1="67.7837"
-            x1="61.7089"
-          ></line>
-        </svg>
+      <div className={styles["circle"]}>
+        <div className={styles["dot"]}></div>
+        <div className={styles["outline"]}></div>
+      </div>
+      <div className={styles["circle"]}>
+        <div className={styles["dot"]}></div>
+        <div className={styles["outline"]}></div>
+      </div>
+      <div className={styles["circle"]}>
+        <div className={styles["dot"]}></div>
+        <div className={styles["outline"]}></div>
+      </div>
+      <div className={styles["circle"]}>
+        <div className={styles["dot"]}></div>
+        <div className={styles["outline"]}></div>
       </div>
     </div>
   </div>
@@ -39,7 +26,7 @@ const Loader_hurt = () => (
 
 export default Loader_hurt;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -49,34 +36,21 @@ export default Loader_hurt;
         const Loader_hurt = () => (
          <div>
           <div className="loader">
-  <div className="loaderMiniContainer">
-    <div className="barContainer">
-      <span className="bar"></span>
-      <span className="bar bar2"></span>
-    </div>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 101 114"
-      className="svgIcon"
-    >
-      <circle
-        strokeWidth="7"
-        stroke="black"
-        transform="rotate(36.0692 46.1726 46.1727)"
-        r="29.5497"
-        cy="46.1727"
-        cx="46.1726"
-      ></circle>
-      <line
-        strokeWidth="7"
-        stroke="black"
-        y2="111.784"
-        x2="97.7088"
-        y1="67.7837"
-        x1="61.7089"
-      ></line>
-    </svg>
+  <div className="circle">
+    <div className="dot"></div>
+    <div className="outline"></div>
+  </div>
+  <div className="circle">
+    <div className="dot"></div>
+    <div className="outline"></div>
+  </div>
+  <div className="circle">
+    <div className="dot"></div>
+    <div className="outline"></div>
+  </div>
+  <div className="circle">
+    <div className="dot"></div>
+    <div className="outline"></div>
   </div>
 </div>
         </div>

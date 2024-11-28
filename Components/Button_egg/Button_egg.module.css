@@ -1,63 +1,50 @@
 
-/* From Uiverse.io by AmIt-DasIT - Tags: button */
-.box {
-  width: 45px;
-  height: 45px;
-  background: #5cda5c;
-  border-radius: 25px;
+/* From Uiverse.io by vinodjangid07  - Tags: icon, button, dark, download, hover effect, play-store */
+.appstore-button {
   display: flex;
-  justify-items: center;
-  justify-content: center;
   align-items: center;
-  transition: 0.3s;
+  justify-content: center;
+  padding: 10px 12px;
+  border: 3px solid rgb(189, 189, 189);
+  background-color: rgb(15, 15, 15);
+  border-radius: 15px;
+  gap: 5px;
   cursor: pointer;
-  position: relative;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 100px -30px rgb(255, 255, 255);
 }
-
-.arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
+.appstore-button svg {
+  width: 45px;
 }
-
-.right {
-  transform: rotate(-45deg);
+.appstore-button svg path {
+  fill: white;
+  transition: all 0.3s;
 }
-
-.box:hover {
-  width: 160px;
-  background: linear-gradient(to right, #26d526, yellow);
-}
-
-.box:hover .arrow {
-  display: none;
-}
-
-.box .text {
-  display: none;
-}
-
-.box:hover .text {
+.button-text {
   display: flex;
-  font-size: 16px;
-  font-weight: 550;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s;
+}
+.top-text {
+  font-size: 13px;
+  font-weight: 600;
+}
+.bottom-text {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.appstore-button:hover {
+  background-color: rgb(236, 236, 236);
+  border: 3px solid rgb(138, 138, 138);
+}
+.appstore-button:hover .button-text {
   color: black;
-  letter-spacing: 0.6px;
-  animation: anima 0.6s ease;
 }
-
-@keyframes anima {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.box:active {
-  background: linear-gradient(to right, rgb(38, 213, 38, 0.8), rgba(255, 255, 0, 0.8));
+.appstore-button:hover svg path {
+  fill: black;
 }
 

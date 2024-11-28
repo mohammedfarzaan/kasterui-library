@@ -1,42 +1,41 @@
 
-/* From Uiverse.io by G4b413l - Tags: loader */
-.ping {
- --uib-size: 50px;
- --uib-speed: 1s;
- --uib-color: #3950cf;
- position: relative;
- height: var(--uib-size);
- width: var(--uib-size);
-}
-
-.ping::before,
-.ping::after {
- content: '';
- position: absolute;
- top: 0;
- left: 0;
- height: 100%;
- width: 100%;
+/* From Uiverse.io by AqFox - Tags: loader */
+.spinner {
+ --R: 28px;
+ --g1: #004dff 96%, #0000;
+ --g2: #d6d6fc 96%, #0000;
+ width: calc(2*var(--R));
+ height: calc(2*var(--R));
  border-radius: 50%;
- background-color: var(--uib-color);
- animation: pulse7132 var(--uib-speed) linear infinite;
- transform: scale(0);
- opacity: 0;
+ display: grid;
+ -webkit-mask: linear-gradient(#000 0 0);
+ animation: spinner-maxc6n 2s infinite linear;
 }
 
-.ping::after {
- animation-delay: calc(var(--uib-speed) / -2);
+.spinner::before,
+.spinner::after {
+ content: "";
+ grid-area: 1/1;
+ width: 50%;
+ background: radial-gradient(farthest-side,var(--g1)) calc(var(--R) + 0.866*var(--R) - var(--R)) calc(var(--R) - 0.5*var(--R)   - var(--R)),
+        radial-gradient(farthest-side,var(--g1)) calc(var(--R) + 0.866*var(--R) - var(--R)) calc(var(--R) - 0.5*var(--R)   - var(--R)),
+        radial-gradient(farthest-side,var(--g2)) calc(var(--R) + 0.5*var(--R)   - var(--R)) calc(var(--R) - 0.866*var(--R) - var(--R)),
+        radial-gradient(farthest-side,var(--g1)) 0 calc(-1*var(--R)),
+        radial-gradient(farthest-side,var(--g2)) calc(var(--R) - 0.5*var(--R)   - var(--R)) calc(var(--R) - 0.866*var(--R) - var(--R)),
+        radial-gradient(farthest-side,var(--g1)) calc(var(--R) - 0.866*var(--R) - var(--R)) calc(var(--R) - 0.5*var(--R)   - var(--R)),
+        radial-gradient(farthest-side,var(--g2)) calc(-1*var(--R))  0,
+        radial-gradient(farthest-side,var(--g1)) calc(var(--R) - 0.866*var(--R) - var(--R)) calc(var(--R) + 0.5*var(--R)   - var(--R));
+ background-size: calc(2*var(--R)) calc(2*var(--R));
+ background-repeat: no-repeat;
 }
 
-@keyframes pulse7132 {
- 0% {
-  transform: scale(0);
-  opacity: 1;
- }
+.spinner::after {
+ transform: rotate(180deg);
+ transform-origin: right;
+}
 
+@keyframes spinner-maxc6n {
  100% {
-  transform: scale(1);
-  opacity: 0;
+  transform: rotate(-1turn);
  }
 }
-

@@ -1,104 +1,64 @@
 
-/* From Uiverse.io by Na3ar-17  - Tags: icon, animation, white, button, hover, active, rounded, smooth */
-.container {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container * {
-  border: none;
-  outline: none;
-}
-
+/* From Uiverse.io by escannord  - Tags: gray, button, sendMessage */
 .button {
-  display: flex;
-  align-items: center;
-  position: relative;
-  justify-content: end;
   cursor: pointer;
-  width: 200px;
-  height: 65px;
-  border-radius: 13px;
-  font-size: 18px;
-  font-weight: 500;
-  background-color: #f9fbf9;
-  border: 3px solid #b7b8b7;
-  -webkit-box-shadow: 0px 10px 24px 0px rgba(214, 215, 214, 1);
-  -moz-box-shadow: 0px 10px 24px 0px rgba(214, 215, 214, 1);
-  box-shadow: 0px 10px 24px 0px rgba(214, 215, 214, 1);
-  overflow: hidden;
-  padding: 0px 13px;
-  border-top-color: #d3d3d3;
-  border-bottom-color: #7e7f7e;
-  transition: all 0.3s ease;
+  padding: 0.3rem 1rem;
+  min-width: 10rem;
+  min-height: 4rem;
+  font-weight: bold;
+  border: solid 1px white;
+  /*   background-color: white; */
+  background: linear-gradient(rgb(173, 171, 171) 50%, #4e4d4df8 100%);
+  position: relative;
+  border-radius: 15px;
+  z-index: 1;
+  font-size: 20px;
+  transition: 0.3s all;
+  text-shadow: 0 1px 1px #1c1c1c44;
+  box-shadow: 0px 2px 4px #1c1c1c48, 0px 30px 100px #1c1c1c33,
+    0px 15px 30px #1c1c1c2c, 0px 12px 6px #1c1c1c18;
 }
 
-.button .icon {
-  aspect-ratio: 1/1;
-  width: 25px;
-  z-index: 10;
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 30px;
-}
-
-.button .text {
-  z-index: 10;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-}
-.button .text .tab {
-  margin: 0px 2px;
-}
-.button .text span {
-  transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+button:hover:before {
+  background: linear-gradient(#ffffff8f 50%, #cacaca86 100%);
+  box-shadow: 0 -1px rgba(0, 0, 0, 0.171);
 }
 
 .button::before {
   content: "";
+  transition: 0.8s all;
+  inset: 7px 5px;
+  border-radius: 25px;
+  border: solid 1px #b4b4b473;
+  background: linear-gradient(#d8d6d686 15%, #faf9f9 80%);
+  z-index: -1;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 190px;
-  height: 52px;
-  background-color: #fff;
-  border-radius: 50px;
-  -webkit-box-shadow: inset 0px 10px 50px -40px rgba(66, 68, 90, 1);
-  -moz-box-shadow: inset 0px 10px 50px -40px rgba(66, 68, 90, 1);
-  box-shadow: inset 0px 10px 50px -40px rgba(66, 68, 90, 1);
-  transition: all 0.3s ease;
 }
-
-.button:hover::before {
-  width: 200px;
-  height: 64px;
-  border-radius: 13px;
-  -webkit-box-shadow: inset 0px -10px 50px -40px rgba(66, 68, 90, 1);
-  -moz-box-shadow: inset 0px -10px 50px -40px rgba(66, 68, 90, 1);
-  box-shadow: inset 0px -10px 50px -40px rgba(66, 68, 90, 1);
+.button:active {
+  box-shadow: none;
 }
-
-.button:hover .text span {
-  transform: translateY(80px);
-  opacity: 0;
+.icon {
+  display: inline-block;
+  transition: all 0.5s;
+  transform: none;
 }
 
 .button:hover .icon {
-  width: 35px;
+  transform: translateX(-7px) rotate(45deg);
+}
+.button::after {
+  content: "";
+  position: absolute;
+  width: 97%;
+  height: 90%;
+  z-index: -2;
+  border-radius: 15px;
+  background: linear-gradient(
+    rgb(255, 255, 255),
+    rgba(253, 253, 253, 0.589) 75%
+  );
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.button:active {
-  transform: translateY(5px);
+  transform: translate(-50%, -50%);
 }
 

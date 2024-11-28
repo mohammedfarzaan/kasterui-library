@@ -1,87 +1,91 @@
 
-/* From Uiverse.io by csozidev - Tags: simple, black, loader, loop */
-/* Simple loader made by: csozi | Website: www.csozi.hu*/
-
+/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader */
 .loader {
-  height: 50px;
-  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.cube {
   position: relative;
+  width: 50px;
+  height: 50px;
+  transform-style: preserve-3d;
+  animation: rotate-cube 2s infinite;
 }
 
-.block {
-  height: 10px;
-  width: 10px;
-  background-color: black;
+.face1,
+.face2,
+.face3,
+.face4,
+.face5,
+.face6 {
   position: absolute;
-  opacity: 0;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid #00BFFF;
+  box-sizing: border-box;
 }
 
-.b_1 {
-  top: 0;
-  left: 0;
-  animation: load 2s infinite;
-  animation-delay: 0;
+.face1 {
+  transform: rotateY(0deg) translateZ(25px);
+  animation: change-color 2s infinite;
 }
 
-.b_2 {
-  top: 0;
-  left: 20px;
-  animation: load 2s infinite;
-  animation-delay: 0.25s;
+.face2 {
+  transform: rotateX(90deg) translateZ(25px);
 }
 
-.b_3 {
-  top: 0;
-  right: 0;
-  animation: load 2s infinite;
-  animation-delay: 0.5s;
+.face3 {
+  transform: rotateY(90deg) translateZ(25px);
+  animation: change-color 2s infinite;
 }
 
-.b_4 {
-  top: 20px;
-  right: 0;
-  animation: load 2s infinite;
-  animation-delay: 0.75s;
+.face4 {
+  transform: rotateY(180deg) translateZ(25px);
+  animation: change-color 2s infinite;
 }
 
-.b_5 {
-  bottom: 0;
-  right: 0;
-  animation: load 2s infinite;
-  animation-delay: 1s;
+.face5 {
+  transform: rotateX(-90deg) translateZ(25px);
 }
 
-.b_6 {
-  bottom: 0;
-  left: 20px;
-  animation: load 2s infinite;
-  animation-delay: 1.25s;
+.face6 {
+  transform: rotateY(-90deg) translateZ(25px);
+  animation: change-color 2s infinite;
 }
 
-.b_7 {
-  bottom: 0;
-  left: 0;
-  animation: load 2s infinite;
-  animation-delay: 1.5s;
-}
-
-.b_8 {
-  top: 20px;
-  left: 0;
-  animation: load 2s infinite;
-  animation-delay: 1.75s;
-}
-
-@keyframes load {
-  0% {
-    opacity: 1;
+@keyframes rotate-cube {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
   }
 
-  85% {
-    opacity: 0;
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@keyframes change-color {
+  0% {
+    background-color: #00BFFF;
+  }
+
+  25% {
+    background-color: #FF1493;
+  }
+
+  50% {
+    background-color: #32CD32;
+  }
+
+  75% {
+    background-color: #FFA500;
   }
 
   100% {
-    opacity: 1;
+    background-color: #00BFFF;
   }
 }
+

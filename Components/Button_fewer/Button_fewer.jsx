@@ -1,31 +1,41 @@
 import React from "react";
+import styles from "./Button_fewer.module.css";
 
 const Button_fewer = () => (
   <div>
-    <button className="cursor-pointer shadow-xl hover:shadow-none duration-300 border-2 border-gray-400 p-1 w-40 h-14 rounded-xl bg-gray-50">
-      <div className="h-full flex gap-1 items-center justify-center shadow-inner shadow-black/10 rounded-full">
-        <svg
-          className="size-4 -rotate-45"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
-            strokeLinejoin="round"
-            strokeLinecap="round"
-          ></path>
-        </svg>
-        <span className="font-medium"> Send Telegram </span>
-      </div>
+    <button className={styles["Btn"]}>
+      SKIP
+      <svg viewBox="0 0 320 512" className="svg">
+        <path d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4l192 160L256 241V96c0-17.7 14.3-32 32-32s32 14.3 32 32V416c0 17.7-14.3 32-32 32s-32-14.3-32-32V271l-11.5 9.6-192 160z"></path>
+      </svg>
     </button>
   </div>
 );
 
 export default Button_fewer;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_fewer = () => (
+         <div>
+          <button className="Btn">
+  SKIP
+  <svg viewBox="0 0 320 512" className="svg">
+    <path
+      d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4l192 160L256 241V96c0-17.7 14.3-32 32-32s32 14.3 32 32V416c0 17.7-14.3 32-32 32s-32-14.3-32-32V271l-11.5 9.6-192 160z"
+    ></path>
+  </svg>
+</button>
+        </div>
+        );
+
+        export default Button_fewer;
+        
+        
+         */
 }

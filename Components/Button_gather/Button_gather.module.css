@@ -1,40 +1,19 @@
 
-/* From Uiverse.io by eduardo-amaro-maciel - Tags: blue, minimalist, button, hover, border, hover effect, css effect */
-.button {
-  width: 150px;
-  height: 50px;
-  border-radius: 50px;
-  background-color: transparent;
-  border: 2px solid #000814;
-  overflow: hidden;
-  position: relative;
-  font-size: 16px;
-  font-weight: 500;
+/* From Uiverse.io by Gianluks90 - Tags: button */
+button {
+  padding: 1em 2em;
+  font-size: 1em;
   text-transform: uppercase;
-  transition: 300ms ease;
+  letter-spacing: 0.1em;
+  color: #504f4f;
+  border: none;
+  background: #e0e0e0;
+  -webkit-box-shadow: 10px 10px 30px #bebebe, -20px -20px 60px #ffffff;
+  box-shadow: 10px 10px 30px #bebebe, -20px -20px 60px #ffffff;
 }
 
-.button::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-color: #003566;
-  top: 100%;
-  left: 0;
-  transition: 500ms ease;
+button:hover {
+  background: #e0e0e0;
+  -webkit-box-shadow: inset 10px 10px 30px #bebebe, inset -10px -10px 30px #ffffff;
+  box-shadow: inset 10px 10px 30px #bebebe, inset -10px -10px 30px #ffffff;
 }
-
-.button:hover {
-  color: #fff;
-  letter-spacing: 3px;
-}
-
-.button:hover::before {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-

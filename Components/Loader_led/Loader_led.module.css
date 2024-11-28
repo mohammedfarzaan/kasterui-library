@@ -1,53 +1,86 @@
 
-/* From Uiverse.io by forgingdestiny - Tags: simple, minimalist, loader, wave, css effect */
-/* Container for the loader */
-.loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10em;
+/* From Uiverse.io by G4b413l - Tags: loader */
+.jelly-triangle {
+ --uib-size: 42px;
+ --uib-speed: 1.25s;
+ --uib-color: #512727;
+ position: relative;
+ height: var(--uib-size);
+ width: var(--uib-size);
+ filter: url('#uib-jelly-triangle-ooze');
 }
 
-/* Circle elements */
-.circle {
-  width: 1em;
-  height: 1em;
-  margin: 0 0.25em;
-  border-radius: 50%;
-  background-color: #a8d5e2;
-  animation: wave 1.5s infinite ease-in-out;
-  transition: background-color 0.3s ease;
+.jelly-triangle__dot,
+.jelly-triangle::before,
+.jelly-triangle::after {
+ content: '';
+ position: absolute;
+ width: 33%;
+ height: 33%;
+ background: var(--uib-color);
+ border-radius: 100%;
 }
 
-/* Animation */
-@keyframes wave {
-  0%, 100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-1em);
-  }
+.jelly-triangle__dot {
+ top: 6%;
+ left: 30%;
+ animation: grow0 var(--uib-speed) ease infinite;
 }
 
-/* Delay for each circle */
-.circle:nth-child(1) {
-  animation-delay: 0s;
+.jelly-triangle::before {
+ bottom: 6%;
+ right: 0;
+ animation: grow0 var(--uib-speed) ease calc(var(--uib-speed) * -0.666)
+    infinite;
 }
 
-.circle:nth-child(2) {
-  animation-delay: 0.2s;
+.jelly-triangle::after {
+ bottom: 6%;
+ left: 0;
+ animation: grow0 var(--uib-speed) ease calc(var(--uib-speed) * -0.333)
+    infinite;
 }
 
-.circle:nth-child(3) {
-  animation-delay: 0.4s;
+.jelly-triangle__traveler {
+ position: absolute;
+ top: 6%;
+ left: 30%;
+ width: 33%;
+ height: 33%;
+ background: var(--uib-color);
+ border-radius: 100%;
+ animation: triangulate var(--uib-speed) ease infinite;
 }
 
-.circle:nth-child(4) {
-  animation-delay: 0.6s;
+.jelly-maker {
+ width: 0;
+ height: 0;
+ position: absolute;
 }
 
-.circle:nth-child(5) {
-  animation-delay: 0.8s;
+@keyframes triangulate {
+ 0%,
+  100% {
+  transform: none;
+ }
+
+ 33.333% {
+  transform: translate(120%, 175%);
+ }
+
+ 66.666% {
+  transform: translate(-95%, 175%);
+ }
 }
-  
+
+@keyframes grow0 {
+ 0%,
+  100% {
+  transform: scale(1.5);
+ }
+
+ 20%,
+  70% {
+  transform: none;
+ }
+}

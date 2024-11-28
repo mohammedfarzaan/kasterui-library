@@ -1,58 +1,49 @@
 
-/* From Uiverse.io by barisdogansutcu - Tags: button, game, among us */
-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 0 10px;
-  color: white;
-  text-shadow: 2px 2px rgb(116, 116, 116);
-  text-transform: uppercase;
-  border: solid 2px black;
-  letter-spacing: 1px;
-  font-weight: 600;
-  font-size: 17px;
-  background-color: hsl(49deg 98% 60%);
-  border-radius: 50px;
+/* From Uiverse.io by umairmanzoor1143  - Tags: loading, button, on, off, glow, circle, rotate, click */
+.button {
+  background: #fff;
   position: relative;
-  overflow: hidden;
-  transition: all .5s ease;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
 }
-
-button:active {
-  transform: scale(.9);
-  transition: all 100ms ease;
+.span {
+  display: inline-block;
 }
-
-button svg {
-  transition: all .5s ease;
-  z-index: 2;
+.button:hover {
+  font-size: 20px;
+  transform: skew(-5deg);
+  padding-right: 30px;
 }
-
-.play {
-  transition: all .5s ease;
-  transition-delay: 300ms;
-}
-
-button:hover svg {
-  transform: scale(3) translate(50%);
-}
-
-.now {
+.button::before {
+  content: "";
+  box-sizing: border-box;
   position: absolute;
-  left: 0;
-  transform: translateX(-100%);
-  transition: all .5s ease;
-  z-index: 2;
+  top: 50%;
+  left: 70%;
+  width: 15px;
+  height: 15px;
+  margin-top: -8px;
+  margin-left: -5px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #000;
+  opacity: 0;
+  animation: spinner 0.6s linear infinite;
+  transition: 0.5s;
+}
+.button:hover::before {
+  opacity: 1;
+  left: 85%;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-button:hover .now {
-  transform: translateX(10px);
-  transition-delay: 300ms;
-}
-
-button:hover .play {
-  transform: translateX(200%);
-  transition-delay: 300ms;
-}

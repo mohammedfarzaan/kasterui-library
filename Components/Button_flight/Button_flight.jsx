@@ -3,30 +3,29 @@ import styles from "./Button_flight.module.css";
 
 const Button_flight = () => (
   <div>
-    <button className={styles["button"]}>
-      <span className={styles["text"]}>
-        <svg viewBox="0 0 24 24" height="22px" width="22px">
-          <g fill="none">
-            <path
-              d="m18.636 15.67l1.716-5.15c1.5-4.498 2.25-6.747 1.062-7.934c-1.187-1.187-3.436-.438-7.935 1.062L8.33 5.364C4.7 6.574 2.885 7.18 2.37 8.067a2.717 2.717 0 0 0 0 2.73c.515.888 2.33 1.493 5.96 2.704c.584.194.875.291 1.119.454c.236.158.439.361.597.597c.163.244.26.535.454 1.118c1.21 3.63 1.816 5.446 2.703 5.962a2.72 2.72 0 0 0 2.731 0c.887-.516 1.492-2.331 2.703-5.962Z"
-              strokeWidth="1.5"
-              stroke="currentColor"
-            ></path>
-            <path
-              d="M16.212 8.848a.75.75 0 0 0-1.055-1.066zm-5.55 5.488l5.55-5.488l-1.055-1.066l-5.55 5.488z"
-              fill="currentColor"
-            ></path>
-          </g>
-        </svg>
-        Send Message
-      </span>
-    </button>
+    <div className={styles["box"]}>
+      <button className={styles["button"]}>FALL</button>
+      <div className={styles["falling-leaves"]}>
+        <span className={styles["leaf"]} style="--i: 13; --hue:20"></span>
+        <span className={styles["leaf"]} style="--i: 16; --hue:10"></span>
+        <span className={styles["leaf"]} style="--i: 17; --hue:0"></span>
+        <span className={styles["leaf"]} style="--i: 21; --hue:10"></span>
+        <span className={styles["leaf"]} style="--i: 13; --hue:90"></span>
+        <span className={styles["leaf"]} style="--i: 11; --hue:70"></span>
+        <span className={styles["leaf"]} style="--i: 14; --hue:40"></span>
+        <span className={styles["leaf"]} style="--i: 17; --hue:60"></span>
+        <span className={styles["leaf"]} style="--i: 19; --hue:0"></span>
+        <span className={styles["leaf"]} style="--i: 26; --hue:90"></span>
+        <span className={styles["leaf"]} style="--i: 17; --hue:60"></span>
+        <span className={styles["leaf"]} style="--i: 20; --hue:10"></span>
+      </div>
+    </div>
   </div>
 );
 
 export default Button_flight;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -35,24 +34,23 @@ export default Button_flight;
 
         const Button_flight = () => (
          <div>
-          <button className="button">
-  <span className="text">
-    <svg viewBox="0 0 24 24" height="22px" width="22px">
-      <g fill="none">
-        <path
-          d="m18.636 15.67l1.716-5.15c1.5-4.498 2.25-6.747 1.062-7.934c-1.187-1.187-3.436-.438-7.935 1.062L8.33 5.364C4.7 6.574 2.885 7.18 2.37 8.067a2.717 2.717 0 0 0 0 2.73c.515.888 2.33 1.493 5.96 2.704c.584.194.875.291 1.119.454c.236.158.439.361.597.597c.163.244.26.535.454 1.118c1.21 3.63 1.816 5.446 2.703 5.962a2.72 2.72 0 0 0 2.731 0c.887-.516 1.492-2.331 2.703-5.962Z"
-          strokeWidth="1.5"
-          stroke="currentColor"
-        ></path>
-        <path
-          d="M16.212 8.848a.75.75 0 0 0-1.055-1.066zm-5.55 5.488l5.55-5.488l-1.055-1.066l-5.55 5.488z"
-          fill="currentColor"
-        ></path>
-      </g>
-    </svg>
-    Send Message
-  </span>
-</button>
+          <div className="box">
+  <button className="button">FALL</button>
+  <div className="falling-leaves">
+    <span className="leaf" style="--i: 13; --hue:20"></span>
+    <span className="leaf" style="--i: 16; --hue:10"></span>
+    <span className="leaf" style="--i: 17; --hue:0"></span>
+    <span className="leaf" style="--i: 21; --hue:10"></span>
+    <span className="leaf" style="--i: 13; --hue:90"></span>
+    <span className="leaf" style="--i: 11; --hue:70"></span>
+    <span className="leaf" style="--i: 14; --hue:40"></span>
+    <span className="leaf" style="--i: 17; --hue:60"></span>
+    <span className="leaf" style="--i: 19; --hue:0"></span>
+    <span className="leaf" style="--i: 26; --hue:90"></span>
+    <span className="leaf" style="--i: 17; --hue:60"></span>
+    <span className="leaf" style="--i: 20; --hue:10"></span>
+  </div>
+</div>
         </div>
         );
 

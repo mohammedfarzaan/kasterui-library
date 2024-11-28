@@ -1,0 +1,142 @@
+
+/* From Uiverse.io by Yaya12085  - Tags: animation, gradient, button, input, focus, challenge, input effect , input */
+.wrapper {
+  --color1: #cc279a;
+  --color2: #4d38de;
+  --color3: #010101;
+  --white: #fff;
+  --radius: 10px;
+  --size: 280px;
+  --icon: 35px;
+  --border-color: rgba(255, 255, 255, 0.3);
+  --line: rgba(114, 114, 114, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: var(--radius);
+  background-color: var(--color3);
+  max-width: var(--size);
+  width: 100%;
+  padding: 2px 8px;
+  position: relative;
+  border: 1px solid var(--border-color);
+  transition: 0.2s 0s linear;
+}
+.wrapper:focus-within {
+  box-shadow: -100px 0px 80px -20px var(--color1),
+    100px 0 80px -20px var(--color2), 0px 0px 80px -0px var(--color3);
+}
+.wrapper::after {
+  position: absolute;
+  content: "";
+  inset: -50px;
+  border-radius: var(--radius);
+  z-index: -2;
+  background-color: var(--color3);
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      var(--line) 25%,
+      var(--line) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--line) 75%,
+      var(--line) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      var(--line) 25%,
+      var(--line) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--line) 75%,
+      var(--line) 76%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 30px 30px;
+  border: 10px solid rgba(0, 0, 0, 0.6);
+}
+.input {
+  flex: 1;
+  height: 100%;
+  padding: 16px 6px 16px calc(var(--icon) + 6px);
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.input::placeholder {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.search,
+.filter {
+  width: var(--icon);
+  height: var(--icon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+}
+
+.search svg,
+.filter svg {
+  color: var(--white);
+}
+.search {
+  position: absolute;
+  pointer-events: none;
+}
+.filter {
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.coloredborder {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+.coloredborder::after {
+  position: absolute;
+  content: "";
+  inset: -10px;
+  overflow: hidden;
+  border-radius: inherit;
+  background-size: 100%;
+  background-image: transparent;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.input:focus + .coloredborder::after {
+  background-color: var(--color3);
+  background-repeat: no-repeat;
+  background-image: linear-gradient(60deg, var(--color2), var(--color1));
+  animation: border-animate 3s linear infinite alternate;
+}
+
+@keyframes border-animate {
+  0% {
+    background-position: calc(var(--size) * -1) calc(var(--size) / 6 * -1);
+  }
+
+  100% {
+    background-position: var(--size) calc(var(--size) / 6);
+  }
+}
+

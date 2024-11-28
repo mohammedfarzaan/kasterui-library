@@ -3,13 +3,13 @@ import styles from "./Button_law.module.css";
 
 const Button_law = () => (
   <div>
-    <button>Hover Me</button>
+    <button>Button</button>
   </div>
 );
 
 export default Button_law;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -19,7 +19,7 @@ export default Button_law;
         const Button_law = () => (
          <div>
           <button>
-  Hover Me
+  Button
 </button>
         </div>
         );

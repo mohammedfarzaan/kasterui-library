@@ -1,56 +1,43 @@
 
-/* From Uiverse.io by barisdogansutcu  - Tags: button, checkbox, input, bold, italic, underline */
-.button-options .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: solid 2px #29429b;
-  border-radius: 4px;
-  position: relative;
-}
-.button-options .content .label-layout {
-  min-width: 45px;
-  height: 45px;
-  display: flexa;
-  align-items: center;
-  justify-content: center;
-}
-.button-options .content .label-layout :is(b, i, u) {
-  display: grid;
-  place-content: center;
-  height: 100%;
-  color: #29429b;
-  font-size: 17px;
-  line-height: 1;
+/* From Uiverse.io by LeryLey  - Tags: button, hover, dark */
+.button {
   cursor: pointer;
+  position: relative;
+  width: 125px;
+  height: 40px;
+  border-radius: 60px;
+  background: #222;
+  color: #fff;
+  outline: none;
+  overflow: hidden;
+  border: 2px solid rgb(56, 56, 56);
+  font-weight: 600;
+  z-index: 1;
+  transition: 0.5s;
 }
-.button-options .content .label-layout[for="italicInput"] {
-  border-left: solid 2px #29429b;
-  border-right: solid 2px #29429b;
-  min-width: 49px;
+.button:hover {
+  color: white;
 }
-.button-options .content input[type="checkbox"]:checked + .label-layout {
-  background-color: #29429b34;
-}
-#boldInput:checked ~ .title {
-  font-weight: bold;
-}
-#italicInput:checked ~ .title {
-  font-style: italic;
-}
-#underlineInput:checked ~ .title {
-  text-decoration: underline;
-}
-.button-options .title {
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5px;
+.button::before {
   position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right,
+    rgb(59, 59, 184),
+    rgb(163, 65, 65),
+    rgb(172, 26, 26)
+  );
+  left: -15px;
   bottom: 0;
-  top: 2px;
-  transform: translateY(100%);
-  color: #29429b;
+  transform: translateY(50%);
+  transition: 0.5s;
+  z-index: -1;
+}
+.button:hover:before {
+  width: 170px;
+  height: 170px;
 }
 

@@ -1,66 +1,67 @@
 
-/* From Uiverse.io by Avishek255874 - Tags: loader */
-.loader {
+/* From Uiverse.io by satyamchaudharydev - Tags: loader */
+.spinner {
+ --size: 30px;
+ --first-block-clr: #005bba;
+ --second-block-clr: #fed500;
+ --clr: #111;
+ width: 100px;
+ height: 100px;
+ position: relative;
 }
 
-.loader {
-  width: 48px;
-  height: 48px;
-  position: relative;
+.spinner::after,.spinner::before {
+ box-sizing: border-box;
+ position: absolute;
+ content: "";
+ width: var(--size);
+ height: var(--size);
+ top: 50%;
+ animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+ left: 50%;
+ background: var(--first-block-clr);
 }
 
-.loader::before , .loader::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50% , -50%);
-  width: 48em;
-  height: 48em;
-  background-image: radial-gradient(circle 10px, #FFF 100%, transparent 0),
-    radial-gradient(circle 10px, #FFF 100%, transparent 0),
-    radial-gradient(circle 10px, #FFF 100%, transparent 0),
-    radial-gradient(circle 10px, #FFF 100%, transparent 0),
-    radial-gradient(circle 10px, #FFF 100%, transparent 0),
-    radial-gradient(circle 10px, #FFF 100%, transparent 0),
-    radial-gradient(circle 10px, #FFF 100%, transparent 0),
-    radial-gradient(circle 10px, #FFF 100%, transparent 0);
-  background-position: 0em -18em, 0em 18em, 18em 0em, -18em 0em,
-                       13em -13em, -13em -13em, 13em 13em, -13em 13em;
-  background-repeat: no-repeat;
-  font-size: 0.5px;
-  border-radius: 50%;
-  animation: blast 1s ease-in infinite;
+.spinner::after {
+ background: var(--second-block-clr);
+ top: calc(50% - var(--size));
+ left: calc(50% - var(--size));
+ animation: down 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
 }
 
-.loader::after {
-  font-size: 1px;
-  background: #fff;
-  animation: bounce 1s ease-in infinite;
+@keyframes down {
+ 0%, 100% {
+  transform: none;
+ }
+
+ 25% {
+  transform: translateX(100%);
+ }
+
+ 50% {
+  transform: translateX(100%) translateY(100%);
+ }
+
+ 75% {
+  transform: translateY(100%);
+ }
 }
 
-@keyframes bounce {
-  0% , 100% {
-    font-size: 0.75px
-  }
+@keyframes up {
+ 0%, 100% {
+  transform: none;
+ }
 
-  50% {
-    font-size: 1.5px
-  }
+ 25% {
+  transform: translateX(-100%);
+ }
+
+ 50% {
+  transform: translateX(-100%) translateY(-100%);
+ }
+
+ 75% {
+  transform: translateY(-100%);
+ }
 }
 
-@keyframes blast {
-  0% , 40% {
-    font-size: 0.5px;
-  }
-
-  70% {
-    opacity: 1;
-    font-size: 4px;
-  }
-
-  100% {
-    font-size: 6px;
-    opacity: 0;
-  }
-}

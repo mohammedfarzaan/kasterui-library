@@ -1,40 +1,60 @@
 
-/* From Uiverse.io by isfan4ik - Tags: red, green, pink, loader, effect loader, loading animation */
-.body {
+/* From Uiverse.io by Praashoo7 - Tags: loader, smooth */
+.loader {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.svg {
-  position: absolute;
-  width: 400px;
-  fill: none;
+.heading {
+  color: black;
+  letter-spacing: 0.2em;
+  margin-bottom: 1em;
 }
 
-.svg:nth-child(2) {
-  filter: blur(40px);
+.loading {
+  display: flex;
+  width: 5em;
+  align-items: center;
+  justify-content: center;
 }
 
-.svg path {
-  d: path("M0,25 C150,110 150, -60 300,25");
-  stroke: #ff0092;
-  stroke-width: 50;
-  stroke-linecap: round;
-  transform: translate(50px,50%);
-  animation: animate 2s ease-in-out infinite;
+.load {
+  width: 23px;
+  height: 3px;
+  background-color: limegreen;
+  animation: 1s move_5011 infinite;
+  border-radius: 5px;
+  margin: 0.1em;
 }
 
-@keyframes animate {
+.load:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.load:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.load:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes move_5011 {
   0% {
-    stroke: greenyellow;
-    stroke: #ff0092;
-    d: path("M0,25 C150,110 150, -60 300,25");
+    width: 0.2em;
+  }
+
+  25% {
+    width: 0.7em;
   }
 
   50% {
-    stroke: dodgerblue;
-    stroke: #00ff00;
-    d: path("M0,25 C160,-50 140, 110 300,25");
+    width: 1.5em;
+  }
+
+  100% {
+    width: 0.2em;
   }
 }

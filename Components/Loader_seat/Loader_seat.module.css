@@ -1,29 +1,29 @@
 
-/* From Uiverse.io by Codecite - Tags: animation, loading, loader, animated */
-.spinner-container {
-  width: 150px;
-  height: 150px;
-  position: relative;
-  margin: 30px auto;
-  overflow: hidden;
+/* From Uiverse.io by doniaskima - Tags: simple, neumorphism, success, loader */
+.loader {
+  display: inline-flex;
+  gap: 10px;
 }
 
-.spinner {
-  position: absolute;
-  width: calc(100% - 9.9px);
-  height: calc(100% - 9.9px);
-  border: 5px solid transparent;
+.loader:before,
+.loader:after {
+  content: "";
+  height: 20px;
+  aspect-ratio: 1;
   border-radius: 50%;
-  border-top-color: #fff;
-  animation: spin 5s cubic-bezier(0.17, 0.49, 0.96, 0.79) infinite;
+  background: radial-gradient(farthest-side,#000 95%,#0000) 35% 35%/6px 6px no-repeat
+    #fff;
+  transform: scaleX(var(--s,1)) rotate(0deg);
+  animation: l6 1s infinite linear;
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
+.loader:after {
+  --s: -1;
+  animation-delay: -0.1s;
+}
 
-  to {
-    transform: rotate(360deg);
+@keyframes l6 {
+  100% {
+    transform: scaleX(var(--s,1)) rotate(360deg);
   }
 }

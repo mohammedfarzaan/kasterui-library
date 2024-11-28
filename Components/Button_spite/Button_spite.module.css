@@ -1,35 +1,61 @@
 
-/* From Uiverse.io by SujitAdroja  - Tags: simple, material design, button, hover effect, hoverme, hover button, button hover effect , button hover */
-.btn {
-  position: relative;
-  background: none;
-  border: 2px solid black;
-  font-size: 1.2rem;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  transition: all 0.3s;
-}
-.btn::before {
-  content: "";
-  height: 0%;
-  width: 0%;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  z-index: -1;
-  position: absolute;
-  background-color: #494958;
-  transition: all 0.3s;
-}
-.btn:hover {
-  border: 2px solid #32323c;
-  color: white;
-}
-.btn:hover::before {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 0.3rem;
+/* From Uiverse.io by satyamchaudharydev - Tags: button */
+button {
+  --primary-color: #645bff;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
 }
 
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}

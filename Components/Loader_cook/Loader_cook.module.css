@@ -1,52 +1,23 @@
 
-/* From Uiverse.io by Ali-Tahmazi99 - Tags: loader */
-.loading {
-  width: 60px;
-  height: 60px;
+/* From Uiverse.io by aadium - Tags: loader, glow, neon */
+.loader {
+  width: 100px;
+  height: 100px;
+  background-image: #212121;
+  box-shadow: 0px 5px 10px #7fe8ff, 0px -5px 10px #99ff33, 5px 0px 10px#4cffb4, -5px 0px 10px #4cffb4,
+  inset 0px 5px 10px #99ff33, inset 0px -5px 10px #7fe8ff, inset 5px 0px 10px#4cffb4, inset -5px 0px 10px #4cffb4;
+  border-radius: 7em;
   position: relative;
+  animation: rotate 1s linear infinite;
 }
 
-.d1 ,
-.d2 {
-  border: 5px solid #64dfdf;
-  border-radius: 50px;
-}
-
-.loading .d1 {
-  width: 55px;
-  height: 55px;
-  position: absolute;
-  top: -9px;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  animation: load161 1s linear infinite;
-}
-
-.loading .d2 {
-  width: 40px;
-  height: 40px;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  margin: 7.5px;
-  animation: load2812 2s linear infinite;
-}
-
-@keyframes load161 {
-  0% {
-    transform: rotate(0);
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
 
-  100% {
+  to {
     transform: rotate(360deg);
   }
 }
 
-@keyframes load2812 {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(-360deg);
-  }
-}

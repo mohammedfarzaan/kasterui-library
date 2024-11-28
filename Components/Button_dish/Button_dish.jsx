@@ -1,17 +1,49 @@
 import React from "react";
+import styles from "./Button_dish.module.css";
 
 const Button_dish = () => (
   <div>
-    <button className="group flex h-fit w-fit flex-col items-center justify-center rounded-full bg-[#F1ddcf] px-[2em] py-[0.5em] shadow-[inset_0px_2px_4px_0px_#f9f1eb,inset_0px_-2px_4px_0px_#e8c8b0,0px_-2px_16px_0px_#e8c8b0,0px_2px_16px_0px_#f9f1eb] duration-200 hover:translate-y-[5%] active:translate-y-[7%] active:shadow-[inset_0px_-2px_4px_0px_#f9f1eb,inset_0px_2px_4px_0px_#e8c8b0,0px_2px_16px_0px_#e8c8b0,0px_2px_16px_0px_#f9f1eb]">
-      <p className="font-nunito text-[1.5em] font-semibold text-[#d19466] duration-200 group-active:translate-y-[5%]">
-        Button
-      </p>
-    </button>
+    <a
+      className={styles["schedule-button"]}
+      href="https://www.linkedin.com/in/nkhlrjrs/"
+    >
+      Schedule a Call
+      <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        className="arrow"
+      >
+        <path fill="none" d="M0 0h24v24H0z"></path>
+        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+      </svg>
+    </a>
   </div>
 );
 
 export default Button_dish;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_dish = () => (
+         <div>
+          <a className="schedule-button" href="https://www.linkedin.com/in/nkhlrjrs/">
+   Schedule a Call
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="arrow">
+      <path fill="none" d="M0 0h24v24H0z"></path>
+      <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+    </svg>
+ 
+  </a>
+        </div>
+        );
+
+        export default Button_dish;
+        
+        
+         */
 }

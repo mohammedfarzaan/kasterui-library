@@ -1,25 +1,56 @@
 
-/* From Uiverse.io by elijahgummer  - Tags: simple, login, 3d, button, modern, click effect */
-button {
-  font: inherit;
-  background-color: #f0f0f0;
-  border: 0;
-  color: #242424;
-  border-radius: 0.5em;
-  font-size: 1.35rem;
-  padding: 0.375em 1em;
-  font-weight: 600;
-  text-shadow: 0 0.0625em 0 #fff;
-  box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
-    0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
-    0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
-  transition: 0.15s ease;
+/* From Uiverse.io by SanthoshSJ-Dev - Tags: simple, blue, button, fluid, animated */
+.button {
+  position: relative;
+  padding: 24px 64px;
+  border-radius: 50px;
+  color: #fafafa;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  background-color: #212121;
+  border: solid 1px #fafafa4d;
+  overflow: hidden;
   cursor: pointer;
-}
-button:active {
-  translate: 0 0.225em;
-  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
-    0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
-    0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+.button .button-text {
+  position: relative;
+  z-index: 2;
+}
+
+.button .fill-container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  padding-bottom: 100%;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.button .fill-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  border-radius: 50px;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: translateY(-100%);
+}
+
+.button:hover {
+  border-color: blue;
+  transform: translateY(-4px);
+}
+
+.button:hover .fill-container {
+  transform: translateY(-50%) rotate(0);
+}
+
+.button:hover .fill-container::after {
+  transform: translateY(0);
+}

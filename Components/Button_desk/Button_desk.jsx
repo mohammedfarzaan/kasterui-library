@@ -3,13 +3,16 @@ import styles from "./Button_desk.module.css";
 
 const Button_desk = () => (
   <div>
-    <button>Button</button>
+    <button className={styles["full-rounded"]}>
+      <span>Hover me</span>
+      <div className={styles["border"] + styles["full-rounded"]}></div>
+    </button>
   </div>
 );
 
 export default Button_desk;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -18,9 +21,9 @@ export default Button_desk;
 
         const Button_desk = () => (
          <div>
-          <button>
-  Button
-</button>
+          <button className="full-rounded">
+<span>Hover me</span>
+<div className="border full-rounded"></div></button>
         </div>
         );
 

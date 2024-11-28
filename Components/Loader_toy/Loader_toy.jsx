@@ -3,16 +3,17 @@ import styles from "./Loader_toy.module.css";
 
 const Loader_toy = () => (
   <div>
-    <div className={styles["phone"]}>
-      <span className={styles["loader"]}></span>
-      <span className={styles["text"]}>Loading...</span>
+    <div className={styles["loading-container"]}>
+      <div className={styles["loader"]}>
+        <div className={styles["spinner"]}></div>
+      </div>
     </div>
   </div>
 );
 
 export default Loader_toy;
 {
-  /* Since module.css isn't scoped globally, if the css is not getting applied properly delete the code above and uncomment the code below and paste the css in your global.css file it should work */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
 }
 {
   /*
@@ -21,9 +22,10 @@ export default Loader_toy;
 
         const Loader_toy = () => (
          <div>
-          <div className="phone">
-  <span className="loader"></span>
-  <span className="text">Loading...</span>
+          <div className="loading-container">
+  <div className="loader">
+    <div className="spinner"></div>
+  </div>
 </div>
         </div>
         );

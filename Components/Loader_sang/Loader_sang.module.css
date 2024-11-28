@@ -1,63 +1,35 @@
 
-/* From Uiverse.io by csemszepp - Source: https://codepen.io/megatroncoder/pen/Xqeyva - Tags: loader, animated */
-.centered {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background: rgb(33 33 33 / var(--tw-bg-opacity))!important;
-  ;
-	filter: blur(10px) contrast(20);
-}
-
-.blob-1,.blob-2 {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  background: #fff;
+/* From Uiverse.io by bernethe - Tags: loader */
+.loader {
+  width: 2rem;
+  height: 2rem;
+  clear: both;
+  margin: 1rem auto;
   border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  border-left: 0 #000 solid;
+  border-right: 0 #000 solid;
+  animation: spSphere 1s infinite linear;
 }
 
-.blob-1 {
-  left: 20%;
-  animation: osc-l 2.5s ease infinite;
-}
-
-.blob-2 {
-  left: 80%;
-  animation: osc-r 2.5s ease infinite;
-  background: #0ff;
-}
-
-@keyframes osc-l {
+@keyframes spSphere {
   0% {
-    left: 20%;
+    border-left: 0 #000 solid;
+    border-right: 0 #000 solid;
   }
 
-  50% {
-    left: 50%;
+  33% {
+    border-left: 2rem #000 solid;
+    border-right: 0 #000 solid;
   }
 
-  100% {
-    left: 20%;
+  34% {
+    border-left: 0 #000 solid;
+    border-right: 2rem #000 solid;
+  }
+
+  66% {
+    border-left: 0 #000 solid;
+    border-right: 0 #000 solid;
   }
 }
 
-@keyframes osc-r {
-  0% {
-    left: 80%;
-  }
-
-  50% {
-    left: 50%;
-  }
-
-  100% {
-    left: 80%;
-  }
-}
