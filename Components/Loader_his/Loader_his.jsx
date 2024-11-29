@@ -3,24 +3,7 @@ import styles from "./Loader_his.module.css";
 
 const Loader_his = () => (
   <div>
-    <svg
-      xmlns="://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      height="24"
-      width="24"
-    >
-      <g id="a">
-        <g style="--c1: 120; --c2: 0; --delay: -0.5s">
-          <path id="b"></path>
-          <path id="c"></path>
-        </g>
-        <g style="--c1: 210; --c2: 60" transform="rotate(180 12 12)">
-          <path id="b"></path>
-          <path id="c"></path>
-        </g>
-      </g>
-    </svg>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -35,22 +18,7 @@ export default Loader_his;
 
         const Loader_his = () => (
          <div>
-          <svg xmlns="://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" width="24">
-  <g id="a">
-    <g style="--c1: 120; --c2: 0; --delay: -0.5s">
-      <path id="b">
-      </path>
-      <path id="c">
-      </path>
-    </g>
-    <g style="--c1: 210; --c2: 60" transform="rotate(180 12 12)">
-      <path id="b">
-      </path>
-      <path id="c">
-      </path>
-    </g>
-  </g>
-</svg>
+          <div className="loader"></div>
         </div>
         );
 

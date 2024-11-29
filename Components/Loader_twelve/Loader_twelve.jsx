@@ -3,14 +3,7 @@ import styles from "./Loader_twelve.module.css";
 
 const Loader_twelve = () => (
   <div>
-    <div className={styles["loader-container"]}>
-      <div className={styles["loader"]}>
-        <div className={styles["circle"]}></div>
-        <div className={styles["circle"]}></div>
-        <div className={styles["circle"]}></div>
-        <div className={styles["circle"]}></div>
-      </div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -25,14 +18,7 @@ export default Loader_twelve;
 
         const Loader_twelve = () => (
          <div>
-          <div className="loader-container">
-    <div className="loader">
-      <div className="circle"></div>
-      <div className="circle"></div>
-      <div className="circle"></div>
-      <div className="circle"></div>
-    </div>
-  </div>
+          <div className="loader"></div>
         </div>
         );
 

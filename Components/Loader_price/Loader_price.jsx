@@ -4,9 +4,7 @@ import styles from "./Loader_price.module.css";
 const Loader_price = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["bubble"]}></div>
-      <div className={styles["bubble"]}></div>
-      <div className={styles["bubble"]}></div>
+      <p className={styles["text"]}>loading...</p>
     </div>
   </div>
 );
@@ -23,9 +21,9 @@ export default Loader_price;
         const Loader_price = () => (
          <div>
           <div className="loader">
-  <div className="bubble"></div>
-  <div className="bubble"></div>
-  <div className="bubble"></div>
+  <p className="text">
+    loading...
+  </p>
 </div>
         </div>
         );

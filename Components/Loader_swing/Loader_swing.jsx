@@ -3,9 +3,8 @@ import styles from "./Loader_swing.module.css";
 
 const Loader_swing = () => (
   <div>
-    <div className={styles["loader"]}>
-      Loading
-      <span></span>
+    <div className={styles["container"]}>
+      <div className={styles["loader"]}></div>
     </div>
   </div>
 );
@@ -21,8 +20,8 @@ export default Loader_swing;
 
         const Loader_swing = () => (
          <div>
-          <div className="loader">Loading
-  <span></span>
+          <div className="container">
+  <div className="loader"></div>
 </div>
         </div>
         );

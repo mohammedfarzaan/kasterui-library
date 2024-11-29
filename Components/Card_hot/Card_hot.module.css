@@ -1,0 +1,172 @@
+
+/* From Uiverse.io by Yaya12085  - Tags: animation, social, card, hover, social media, cool card */
+.card {
+  --color1: #af40ff;
+  --color2: #5b42f3;
+  --color3: #00ddeb;
+  max-width: 350px;
+  box-sizing: border-box;
+  height: 270px;
+  width: 450px;
+  border-radius: 12px;
+  padding: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  background: -webkit-radial-gradient(
+      center,
+      circle,
+      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0) 21%
+    ),
+    -webkit-radial-gradient(center, circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)
+          20%, rgba(0, 0, 0, 0) 21%),
+    -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: -moz-radial-gradient(
+      center,
+      circle,
+      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0) 21%
+    ),
+    -webkit-radial-gradient(center, circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)
+          20%, rgba(0, 0, 0, 0) 21%),
+    -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: -ms-radial-gradient(
+      center,
+      circle,
+      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0) 21%
+    ),
+    -webkit-radial-gradient(center, circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)
+          20%, rgba(0, 0, 0, 0) 21%),
+    -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: -o-radial-gradient(
+      center,
+      circle,
+      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0) 21%
+    ),
+    -webkit-radial-gradient(center, circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)
+          20%, rgba(0, 0, 0, 0) 21%),
+    -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: radial-gradient(
+      center,
+      circle,
+      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0) 21%
+    ),
+    -webkit-radial-gradient(center, circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)
+          20%, rgba(0, 0, 0, 0) 21%),
+    -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background-size: 10px 10px, 10px 10px, 100% 100%;
+  background-position: 1px 1px, 0px 0px, center center;
+}
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.card::before {
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+.card::after {
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+
+.card:hover::before,
+.card:hover::after {
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+.image {
+  position: absolute;
+  height: 100px;
+  object-fit: cover;
+  top: -20%;
+  left: 50%;
+
+  transform: translateX(-200%) rotate(45deg);
+  transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+  transition-duration: 1s;
+}
+.heading {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 900;
+
+  background: linear-gradient(
+    144deg,
+    var(--color1),
+    var(--color2),
+    var(--color3)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+}
+.icons a {
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: double 2px transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(144deg, var(--color1), var(--color2), var(--color3));
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.53);
+  transition-duration: 0.3s;
+}
+.icons a:hover {
+  border-radius: 40px;
+}
+.instagram {
+  color: var(--color1);
+}
+.x {
+  color: var(--color2);
+}
+.discord {
+  color: var(--color3);
+}
+
+.card:hover::before,
+.card:hover::after {
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+.card:hover .image {
+  animation: animate 2s linear infinite alternate;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-200%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(-45deg);
+  }
+}
+

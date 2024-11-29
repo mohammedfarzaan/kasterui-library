@@ -3,12 +3,20 @@ import styles from "./Loader_tall.module.css";
 
 const Loader_tall = () => (
   <div>
-    <svg className="svg">
-      <path className="path"></path>
-    </svg>
-    <svg>
-      <path></path>
-    </svg>
+    <div className={styles["lds-spinner"]}>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 );
 
@@ -23,12 +31,20 @@ export default Loader_tall;
 
         const Loader_tall = () => (
          <div>
-          <svg className="svg">
-      <path className="path"></path>
-   </svg>
-   <svg>
-      <path></path>
-   </svg>
+          <div className="lds-spinner">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
         </div>
         );
 

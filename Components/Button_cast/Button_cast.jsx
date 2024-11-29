@@ -3,9 +3,7 @@ import styles from "./Button_cast.module.css";
 
 const Button_cast = () => (
   <div>
-    <button className={styles["btn"]}>
-      <div className={styles["scroll"]}> </div>
-    </button>
+    <button className={styles["button"]}>glitch</button>
   </div>
 );
 
@@ -20,8 +18,8 @@ export default Button_cast;
 
         const Button_cast = () => (
          <div>
-          <button className="btn">
-    <div className="scroll"> </div>
+          <button className="button">
+  glitch
 </button>
         </div>
         );

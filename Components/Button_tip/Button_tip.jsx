@@ -3,10 +3,10 @@ import styles from "./Button_tip.module.css";
 
 const Button_tip = () => (
   <div>
-    <div className={styles["content"]}>
-      <div className={styles["text"]}>LOADING...</div>
-      <div className={styles["text"]}>LOADING...</div>
-    </div>
+    <button>
+      <span>HoverMe</span>
+      <span>HoverMe</span>
+    </button>
   </div>
 );
 
@@ -21,10 +21,10 @@ export default Button_tip;
 
         const Button_tip = () => (
          <div>
-          <div className="content">
-  <div className="text">LOADING...</div>
-  <div className="text">LOADING...</div>
-</div>
+          <button>
+     <span>HoverMe</span>
+     <span>HoverMe</span>
+ </button>
         </div>
         );
 

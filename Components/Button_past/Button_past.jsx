@@ -3,7 +3,12 @@ import styles from "./Button_past.module.css";
 
 const Button_past = () => (
   <div>
-    <button>Button</button>
+    <button className={styles["button"]}>
+      <div className={styles["icon_cont"]}>
+        <span className={styles["icon"]}>🡪</span>
+      </div>
+      <span className={styles["text_button"]}>Hover this button</span>
+    </button>
   </div>
 );
 
@@ -18,7 +23,12 @@ export default Button_past;
 
         const Button_past = () => (
          <div>
-          <button>Button</button>
+          <button className="button">
+  <div className="icon_cont">
+    <span className="icon">🡪</span>
+  </div>
+  <span className="text_button">Hover this button</span>
+</button>
         </div>
         );
 

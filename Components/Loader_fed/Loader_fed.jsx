@@ -3,12 +3,7 @@ import styles from "./Loader_fed.module.css";
 
 const Loader_fed = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["bar"]} id="red"></div>
-      <div className={styles["bar"]} id="mint"></div>
-      <div className={styles["bar"]} id="grey"></div>
-      <div className={styles["bar"]} id="purple"></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -23,12 +18,7 @@ export default Loader_fed;
 
         const Loader_fed = () => (
          <div>
-          <div className="loader">
-<div className="bar" id="red"></div>
-<div className="bar" id="mint"></div>
-<div className="bar" id="grey"></div>
-<div className="bar" id="purple"></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

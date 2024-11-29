@@ -3,7 +3,7 @@ import styles from "./Button_date.module.css";
 
 const Button_date = () => (
   <div>
-    <button className={styles["my-button"]}>Click me!</button>
+    <button className={styles["button"] + styles["font"]}>Hold Me</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_date;
 
         const Button_date = () => (
          <div>
-          <button className="my-button">
-  Click me!
-</button>
+          <button className="button font">Hold Me</button>
         </div>
         );
 

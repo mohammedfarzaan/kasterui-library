@@ -3,7 +3,11 @@ import styles from "./Button_sing.module.css";
 
 const Button_sing = () => (
   <div>
-    <button className={styles["btn"]}>Hover Me</button>
+    <div className={styles["body"]}>
+      <button className={styles["btn"] + styles["btn-hover"]}>
+        <span className={styles["btn-text"]}>Practice now</span>
+      </button>
+    </div>
   </div>
 );
 
@@ -18,7 +22,11 @@ export default Button_sing;
 
         const Button_sing = () => (
          <div>
-          <button className="btn">Hover Me</button>
+          <div className="body">
+<button className="btn btn-hover">
+  <span className="btn-text">Practice now</span>
+</button>
+</div>
         </div>
         );
 

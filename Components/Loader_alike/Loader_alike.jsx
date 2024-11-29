@@ -3,12 +3,7 @@ import styles from "./Loader_alike.module.css";
 
 const Loader_alike = () => (
   <div>
-    <div className={styles["dot-wave"]}>
-      <div className={styles["dot-wave__dot"]}></div>
-      <div className={styles["dot-wave__dot"]}></div>
-      <div className={styles["dot-wave__dot"]}></div>
-      <div className={styles["dot-wave__dot"]}></div>
-    </div>
+    <span className={styles["loader"]}></span>
   </div>
 );
 
@@ -23,12 +18,7 @@ export default Loader_alike;
 
         const Loader_alike = () => (
          <div>
-          <div className="dot-wave">
-    <div className="dot-wave__dot"></div>
-    <div className="dot-wave__dot"></div>
-    <div className="dot-wave__dot"></div>
-    <div className="dot-wave__dot"></div>
-</div>
+          <span className="loader"></span>
         </div>
         );
 

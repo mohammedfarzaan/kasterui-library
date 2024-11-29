@@ -1,65 +1,47 @@
 
-/* From Uiverse.io by 3bdel3ziz-T  - Tags: button, hover, smooth, dark, code, hover button, button hover effect , 2d button */
-.button,
-.button::before {
-  box-sizing: border-box;
-  --col-orange: #d17842;
-  --col-white: #fff;
-  --col-dark: #212121;
-  cursor: pointer;
-  text-transform: capitalize;
-  font-size: 20px;
-  font-weight: 600;
-  fill: var(--col-white);
-  color: var(--col-white);
-
-  color: var(col-dark);
-  font-family: "arial";
-}
-.button {
-  width: 200px;
+/* From Uiverse.io by mobinkakei - Tags: button */
+.btn {
+  width: 140px;
   height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid transparent;
-  background: var(--col-orange);
-  padding: 8px 50px;
+  background: linear-gradient(to top, #00154c, #12376e, #23487f);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
   position: relative;
-  transition: all 200ms;
-  border-radius: 25px;
-  z-index: 99;
-}
-
-.button:hover {
-  border-color: transparent;
-  color: var(--col-dark);
-  background: transparent;
-}
-
-.button::before {
-  height: fit-content;
-  content: "great work🥳";
-  position: absolute;
-  left: 40px;
-  width: 0;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  transition: all 550ms;
-  text-wrap: nowrap;
-  z-index: -1;
 }
 
-.button:hover::before {
-  width: 135px;
-  color: var(--col-white);
+.btn span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
 }
 
-.button::after {
-  content: "hover me";
-  position: relative;
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
-.button:hover::after {
-  display: none;
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one {
+  top: -100%;
+}
+
+.btn:hover .btn-text-two {
+  top: 50%;
 }
 

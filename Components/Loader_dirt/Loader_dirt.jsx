@@ -3,7 +3,9 @@ import styles from "./Loader_dirt.module.css";
 
 const Loader_dirt = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["blue"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +20,9 @@ export default Loader_dirt;
 
         const Loader_dirt = () => (
          <div>
-          <div className="loader"></div>
+          <div className="loader">
+  <div className="blue">
+</div></div>
         </div>
         );
 

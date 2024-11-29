@@ -1,52 +1,46 @@
 
-/* From Uiverse.io by rrr63 - Tags: button, hover, scale */
+/* From Uiverse.io by Gaurav-WebDev  - Tags: black, button, dark, animated, hover effect */
 .button {
-  padding: 10px 35px;
-  background-color: #EBF5EE;
-  font-weight: bolder;
-  border: 0px;
+  height: 50px;
+  width: 200px;
   position: relative;
+  background-color: transparent;
   cursor: pointer;
+  border: 2px solid #252525;
   overflow: hidden;
-  border-radius: 5px;
-  transition: all .2s ease-in-out .1s;
+  border-radius: 30px;
+  color: #333;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #333;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
 }
 
 .button:hover {
-  background-color: #EBF5EE;
-  transform: scale(1.2) rotate(5deg);
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border: none;
 }
 
-.button:before {
-  content: '';
-  position: absolute;
-  background-color: #78A1BB;
-  height: 180%;
-  top: -30%;
-  left: -40%;
-  transform: rotateZ(20deg);
-  width: 40px;
-  transition: left .2s ease-in-out, left 0s;
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
 }
 
-.button:after {
-  content: '';
-  position: absolute;
-  background-color: #283044;
-  height: 180%;
-  top: -30%;
-  left: -40%;
-  transform: translateX(-40px) rotateZ(20deg);
-  width: 40px;
-  transition: left .2s ease-in-out, left 0s;
-}
-
-.button:hover:after {
-  left: 150%;
-  transition: left .3s ease-in-out;
-}
-
-.button:hover:before {
-  left: 150%;
-  transition: left .3s ease-in-out;
-}

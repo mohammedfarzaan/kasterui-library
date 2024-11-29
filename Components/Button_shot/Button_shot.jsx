@@ -3,7 +3,14 @@ import styles from "./Button_shot.module.css";
 
 const Button_shot = () => (
   <div>
-    <button>Button</button>
+    <button>
+      {" "}
+      <span className={styles["text"]}>Button</span>
+      <span className={styles["blob"]}></span>
+      <span className={styles["blob"]}></span>
+      <span className={styles["blob"]}></span>
+      <span className={styles["blob"]}></span>
+    </button>
   </div>
 );
 
@@ -18,8 +25,11 @@ export default Button_shot;
 
         const Button_shot = () => (
          <div>
-          <button>
-    Button
+          <button> <span className="text">Button</span>
+  <span className="blob"></span>
+  <span className="blob"></span>
+  <span className="blob"></span>
+  <span className="blob"></span>
 </button>
         </div>
         );

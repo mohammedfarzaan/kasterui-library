@@ -1,166 +1,131 @@
 
-/* From Uiverse.io by Quezaquo - Tags: button */
-.active {
-  opacity: 0;
+/* From Uiverse.io by Jerome-W-90  - Website: https://codepen.io/pfndesign/pen/KKYPqMz - Name: pfndesign - Tags: 3d, button, realistic, 3d button */
+.box {
   position: absolute;
-}
-
-.btn {
-  all: unset;
-  background: rgb(25,24,37);
-  background: linear-gradient(123deg, rgba(25,24,37,1) 0%, rgba(48,30,103,1) 51%, rgba(134,93,255,1) 82%, rgba(227,132,255,1) 100%);
-  padding: 0.55em 0.15em 0.55em 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 0.5em;
-}
-
-.btn:hover {
-  -webkit-box-shadow: -1px -1px 53px -15px rgba(255,255,255,0.75);
-  box-shadow: -1px -1px 53px -15px rgba(255,255,255,0.75);
-}
-
-.btn:hover > .default {
-  opacity: 0;
-  position: absolute;
-}
-
-.btn:hover > .active {
-  opacity: 1;
-  position: relative;
-  -webkit-transition-delay: .4s;
-  transition-delay: .4s;
-}
-
-.btn:hover .spaceship1 {
-  opacity: 0;
-}
-
-.btn:hover .spaceship2 {
-  opacity: 0;
-}
-
-.btn:hover + .spaceship3 {
-  opacity: 1;
-}
-
-.btn:hover::after {
-  -webkit-animation: none;
-  animation: none;
-  display: none;
-}
-
-.btn::after {
-  content: '';
-  position: absolute;
-  border: 3px solid white;
-  border-radius: 0.5em;
-  top: 43%;
   left: 50%;
-  z-index: -1;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
-  -webkit-animation-name: halo;
-  animation-name: halo;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+  top: 50%;
+  transform: translate(-50%, -50%) skew(15deg);
+  width: 250px;
+  height: 250px;
 }
-
-.btn:active + .spaceship3 {
-  -webkit-animation: lauch 1s ease-in forwards;
-  animation: lauch 1s ease-in forwards;
-}
-
-.btn-text {
-  color: white;
-  font-weight: bold;
-  letter-spacing: 0.6em;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.box .container {
+  width: 250px;
+  height: 250px;
+  background: #2f0000;
+  border-radius: 15px;
+  border: 10px solid #cbcdcd;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  flex-wrap: wrap;
+  gap: 0.5px;
 }
-
-.spaceship1 {
+.box .container .button {
   position: relative;
-  z-index: 2;
-  left: 1em;
-  bottom: 0.8em;
-  -webkit-animation: 10s float infinite;
-  animation: 10s float infinite;
+  flex-basis: calc(50% - 0.5px);
+  background: #ca0a0b;
+  border: 0;
+  font-size: 35px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
-
-.spaceship2 {
-  position: relative;
-  z-index: 2;
-  left: -14em;
-  top: 1.5em;
-  -webkit-animation: 7s float infinite;
-  animation: 7s float infinite;
+.box .container .button::before {
+  content: "";
+  position: absolute;
+  width: 94px;
+  height: 94px;
+  border-radius: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(229, 136, 137);
+  background: linear-gradient(
+    133deg,
+    rgba(229, 136, 137, 1) 0%,
+    rgba(229, 136, 137, 1) 15%,
+    rgba(209, 13, 12, 1) 20%,
+    rgba(209, 13, 12, 1) 65%,
+    rgba(97, 4, 3, 1) 100%
+  );
 }
-
-.spaceship3 {
-  opacity: 0;
-  position: relative;
+.box .container .button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background: rgb(80, 8, 8);
+  background: linear-gradient(
+    90deg,
+    #4c0405 1%,
+    rgb(202, 10, 11) 5%,
+    rgb(199, 39, 39) 45%,
+    #d88180 100%
+  );
+  left: 0;
+  bottom: 0;
+  transform: skewY(0deg) skewX(-40deg);
+  z-index: -4;
+  transition: all 0.5s ease;
+}
+.box .container .button:hover::after {
+  height: 13px;
+  bottom: -12px;
+  left: -7px;
+}
+.box .container .button span {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.box .container .button:hover {
+  transform: translate(12px, -12px);
+  box-shadow: -30px 10px 26px -5px black, -12px 12px 0 0 #ca0a0b,
+    -11px 11px 0 0 #ca0a0b, -10px 10px 0 0 #ca0a0b, -9px 9px 0 0 #ca0a0b,
+    -8px 8px 0 0 #ca0a0b, -7px 7px 0 0 #ca0a0b, -6px 6px 0 0 #ca0a0b,
+    -5px 5px 0 0 #ca0a0b, -4px 4px 0 0 #ca0a0b, -3px 3px 0 0 #ca0a0b,
+    -2px 2px 0 0 #ca0a0b, -1px 1px 0 0 #ca0a0b;
+  z-index: 999;
+}
+.box::before {
+  content: "";
+  width: calc(100% + 25px);
+  height: calc(100% + 10px);
+  position: absolute;
+  left: -25px;
+  top: 35px;
+  background: rgb(100, 104, 106);
+  background: linear-gradient(
+    135deg,
+    rgba(100, 104, 106, 1) 0%,
+    rgba(100, 104, 106, 1) 45%,
+    rgba(222, 221, 221, 1) 55%,
+    rgba(222, 221, 221, 1) 100%
+  );
   z-index: -1;
-  top: -4.7em;
-  left: 5.8em;
+  border-radius: 15px;
+}
+.box::after {
+  content: "";
+  width: 30px;
+  height: 45px;
+  position: absolute;
+  left: -14px;
+  top: 12px;
+  background: rgba(100, 104, 106, 1);
+  z-index: -1;
+  transform: rotate(215deg);
+}
+.box .container::before {
+  content: "";
+  width: 30px;
+  height: 45px;
+  position: absolute;
+  right: -9px;
+  bottom: -39px;
+  background: rgba(222, 221, 221, 1);
+  z-index: -1;
+  transform: rotate(215deg);
 }
 
-@keyframes float {
-  0% {
-    -webkit-transform: translatey(0px);
-    transform: translatey(0px);
-  }
-
-  50% {
-    -webkit-transform: translatey(-10px);
-    transform: translatey(-10px);
-  }
-
-  100% {
-    -webkit-transform: translatey(0px);
-    transform: translatey(0px);
-  }
-}
-
-@keyframes halo {
-  from {
-    opacity: 0.2;
-    width: 0em;
-    height: 0em;
-  }
-
-  to {
-    opacity: 0;
-    width: 23em;
-    height: 3.55em;
-  }
-}
-
-@keyframes lauch {
-  from {
-    -webkit-transform: translatey(0px);
-    transform: translatey(0px);
-    opacity: 1;
-  }
-
-  to {
-    -webkit-transform: translatey(-110px);
-    transform: translatey(-110px);
-    opacity: 0;
-  }
-}

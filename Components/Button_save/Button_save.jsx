@@ -3,7 +3,7 @@ import styles from "./Button_save.module.css";
 
 const Button_save = () => (
   <div>
-    <button className={styles["button"]}>Sign Up</button>
+    <button className={styles["bt"]}>Button</button>
   </div>
 );
 
@@ -18,7 +18,10 @@ export default Button_save;
 
         const Button_save = () => (
          <div>
-          <button className="button">Sign Up</button>
+          <button className="bt">
+  Button
+
+</button>
         </div>
         );
 

@@ -3,13 +3,7 @@ import styles from "./Loader_border.module.css";
 
 const Loader_border = () => (
   <div>
-    <div className={styles["loaderRectangle"]}>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -24,13 +18,7 @@ export default Loader_border;
 
         const Loader_border = () => (
          <div>
-          <div className="loaderRectangle">
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

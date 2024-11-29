@@ -3,13 +3,11 @@ import styles from "./Button_send.module.css";
 
 const Button_send = () => (
   <div>
-    <div className={styles["button-container"]}>
-      <span className={styles["text"]}>
-        <span className={styles["button-lines"]}>
-          <span className={styles["button-line-1"]}></span>
-          <span className={styles["button-line-2"]}></span>
-        </span>
-      </span>
+    <div className={styles["flip-button"]}>
+      <button className={styles["button"] + styles["button-front"]}>
+        <span className={styles["text-front"]}>Label one</span>
+        <span className={styles["text-back"]}>Back can be longer</span>
+      </button>
     </div>
   </div>
 );
@@ -25,13 +23,11 @@ export default Button_send;
 
         const Button_send = () => (
          <div>
-          <div className="button-container">
-  <span className="text">
-    <span className="button-lines">
-      <span className="button-line-1"></span>
-      <span className="button-line-2"></span>
-    </span>
-  </span>
+          <div className="flip-button">
+  <button className="button button-front">
+    <span className="text-front">Label one</span>
+    <span className="text-back">Back can be longer</span>
+  </button>
 </div>
         </div>
         );

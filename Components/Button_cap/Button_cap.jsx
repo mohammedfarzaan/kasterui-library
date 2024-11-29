@@ -3,15 +3,9 @@ import styles from "./Button_cap.module.css";
 
 const Button_cap = () => (
   <div>
-    <button className={styles["button"]}>
-      <div className={styles["container"]}>
-        <div className={styles["folder"] + styles["folder_one"]}></div>
-        <div className={styles["folder"] + styles["folder_two"]}></div>
-        <div className={styles["folder"] + styles["folder_three"]}></div>
-        <div className={styles["folder"] + styles["folder_four"]}></div>
-      </div>
-      <div className={styles["active_line"]}></div>
-      <span className={styles["text"]}>File Explorer</span>
+    <button>
+      {" "}
+      <span>Button</span>
     </button>
   </div>
 );
@@ -27,15 +21,7 @@ export default Button_cap;
 
         const Button_cap = () => (
          <div>
-          <button className="button">
-  <div className="container">
-    <div className="folder folder_one"></div>
-    <div className="folder folder_two"></div>
-    <div className="folder folder_three"></div>
-    <div className="folder folder_four"></div>
-  </div>
-  <div className="active_line"></div>
-  <span className="text">File Explorer</span>
+          <button> <span>Button</span>
 </button>
         </div>
         );

@@ -1,69 +1,65 @@
 
-/* From Uiverse.io by mobinkakei - Tags: neumorphism, switch, on, off, bluetooth */
-.switch-holder {
-  display: flex;
-  padding: 10px 20px;
-  border-radius: 10px;
-  box-shadow: -8px -8px 15px rgba(255, 255, 255, .7),
-        10px 10px 10px rgba(0, 0, 0, .2),
-        inset 8px 8px 15px rgba(255, 255, 255, .7),
-        inset 10px 10px 10px rgba(0, 0, 0, .2);
-  justify-content: space-between;
-  align-items: center;
-}
-
-.switch-label {
-  padding: 0 20px 0 10px
-}
-
-.switch-label i {
-  margin-right: 5px;
-}
-
-.switch-toggle {
-  height: 40px;
-}
-
-.switch-toggle input[type="checkbox"] {
+/* From Uiverse.io by zanina-yassine - Tags: switch, ios */
+/* Remove this container when use*/
+.component-title {
+  width: 100%;
   position: absolute;
-  opacity: 0;
-  z-index: -2;
-}
-
-.switch-toggle input[type="checkbox"]+label {
-  position: relative;
-  display: inline-block;
-  width: 100px;
-  height: 40px;
-  border-radius: 20px;
+  z-index: 999;
+  top: 30px;
+  left: 0;
+  padding: 0;
   margin: 0;
-  cursor: pointer;
-  box-shadow: inset -8px -8px 15px rgba(255, 255, 255, .6),
-        inset 10px 10px 10px rgba(0, 0, 0, .25);
-}
-
-.switch-toggle input[type="checkbox"]+label::before {
-  position: absolute;
-  content: 'OFF';
-  font-size: 13px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #888;
   text-align: center;
-  line-height: 25px;
-  top: 8px;
-  left: 8px;
-  width: 45px;
-  height: 25px;
-  border-radius: 20px;
-  background-color: #eeeeee;
-  box-shadow: -3px -3px 5px rgba(255, 255, 255, .5),
-        3px 3px 5px rgba(0, 0, 0, .25);
-  transition: .3s ease-in-out;
 }
 
-.switch-toggle input[type="checkbox"]:checked+label::before {
-  left: 50%;
-  content: 'ON';
-  color: #fff;
-  background-color: #00b33c;
-  box-shadow: -3px -3px 5px rgba(255, 255, 255, .5),
-        3px 3px 5px #00b33c;
+/* The switch - the box around the slider */
+.container {
+  width: 51px;
+  height: 31px;
+  position: relative;
 }
+
+/* Hide default HTML checkbox */
+.checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.switch {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #e9e9eb;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+/* The slider */
+.slider {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  left: calc(50% - 27px/2 - 10px);
+  top: calc(50% - 27px/2);
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.checkbox:checked + .switch {
+  background-color: #34C759;
+}
+
+.checkbox:checked + .switch .slider {
+  left: calc(50% - 27px/2 + 10px);
+  top: calc(50% - 27px/2);
+}
+

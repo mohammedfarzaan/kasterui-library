@@ -1,40 +1,44 @@
 
-/* From Uiverse.io by Z4drus  - Tags: loader */
-.container {
-  --uib-size: 100px;
-  --uib-color: rgb(51, 172, 241);
-  --uib-speed: 1.4s;
-  --uib-bg-opacity: 0.1;
-  height: var(--uib-size);
-  width: var(--uib-size);
-  transform-origin: center;
-  overflow: visible;
+/* From Uiverse.io by SteveBloX  - Website: https://codepen.io/travishorn/pen/YyGVRG - Name: Google / Travis Horn - Tags: loader, google, color */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
 }
 
-.car {
-  fill: none;
-  stroke: var(--uib-color);
-  stroke-dasharray: 15, 85;
-  stroke-dashoffset: 0;
-  stroke-linecap: round;
-  animation: travel var(--uib-speed) linear infinite;
-  will-change: stroke-dasharray, stroke-dashoffset;
-  transition: stroke 0.5s ease;
+.ball {
+  --size: 16px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 11px;
+  margin: 0 10px;
+
+  animation: 2s bounce ease infinite;
 }
 
-.track {
-  stroke: var(--uib-color);
-  opacity: var(--uib-bg-opacity);
-  transition: stroke 0.5s ease;
+.blue {
+  background-color: #4285f5;
 }
 
-@keyframes travel {
-  0% {
-    stroke-dashoffset: 0;
-  }
+.red {
+  background-color: #ea4436;
+  animation-delay: 0.25s;
+}
 
-  100% {
-    stroke-dashoffset: -100;
+.yellow {
+  background-color: #fbbd06;
+  animation-delay: 0.5s;
+}
+
+.green {
+  background-color: #34a952;
+  animation-delay: 0.75s;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(25px);
   }
 }
 

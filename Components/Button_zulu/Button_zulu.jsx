@@ -3,7 +3,9 @@ import styles from "./Button_zulu.module.css";
 
 const Button_zulu = () => (
   <div>
-    <button>Button</button>
+    <button className={styles["button"]}>
+      <span>Hover</span>
+    </button>
   </div>
 );
 
@@ -18,8 +20,8 @@ export default Button_zulu;
 
         const Button_zulu = () => (
          <div>
-          <button>
-  Button
+          <button className="button">
+  <span>Hover</span>
 </button>
         </div>
         );

@@ -3,9 +3,7 @@ import styles from "./Button_add.module.css";
 
 const Button_add = () => (
   <div>
-    <button className={styles["cti"]}>
-      <div className={styles["CTI"]}>Code to Infinity</div>
-    </button>
+    <button className={styles["comic-button"]}>Click me!</button>
   </div>
 );
 
@@ -20,11 +18,7 @@ export default Button_add;
 
         const Button_add = () => (
          <div>
-          <button className="cti">
-  <div className="CTI">
-    Code to Infinity
-  </div>
-</button>
+          <button className="comic-button">Click me!</button>
         </div>
         );
 

@@ -1,37 +1,18 @@
 import React from "react";
-import styles from "./Loader_soil.module.css";
 
 const Loader_soil = () => (
   <div>
-    <svg className="loader" viewBox="0 0 100 100">
-      <circle className="moon moon-back"></circle>
-      <circle className="planet"></circle>
-      <circle className="moon moon-front"></circle>
-    </svg>
+    <div className="flex flex-row gap-2">
+      <div
+        style="background-image: conic-gradient(from 0deg, violet, indigo 30%, blue 50%, green 60%, yellow 70%, orange 80%, red 100%);"
+        className="w-14 h-14 rounded-full bg-radial bg-gradient-to-tr animate-spin [animation-delay:.7s]"
+      ></div>
+    </div>
   </div>
 );
 
 export default Loader_soil;
-{
-  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Loader_soil = () => (
-         <div>
-          <svg className="loader" viewBox="0 0 100 100">
-    <circle className="moon moon-back"></circle>
-    <circle className="planet"></circle>
-    <circle className="moon moon-front"></circle>
-</svg>
-        </div>
-        );
-
-        export default Loader_soil;
-        
-        
-         */
+{
+  /* */
 }

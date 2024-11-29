@@ -3,7 +3,7 @@ import styles from "./Button_poem.module.css";
 
 const Button_poem = () => (
   <div>
-    <button className={styles["gradient-button"]}>⚡ Join now</button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_poem;
 
         const Button_poem = () => (
          <div>
-          <button className="gradient-button">⚡ Join now</button>
+          <button className="button">
+  Button
+</button>
         </div>
         );
 

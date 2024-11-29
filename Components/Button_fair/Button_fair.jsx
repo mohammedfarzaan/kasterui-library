@@ -3,7 +3,7 @@ import styles from "./Button_fair.module.css";
 
 const Button_fair = () => (
   <div>
-    <button className={styles["btn"]}>Click Me</button>
+    <button className={styles["button"]}>Click here ..</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_fair;
 
         const Button_fair = () => (
          <div>
-          <button className="btn">Click Me</button>
+          <button className="button">
+  Click here ..
+</button>
         </div>
         );
 

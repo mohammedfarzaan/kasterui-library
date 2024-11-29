@@ -3,16 +3,7 @@ import styles from "./Loader_bigger.module.css";
 
 const Loader_bigger = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["cube"]}>
-        <div className={styles["face"] + styles["front"]}></div>
-        <div className={styles["face"] + styles["back"]}></div>
-        <div className={styles["face"] + styles["left"]}></div>
-        <div className={styles["face"] + styles["right"]}></div>
-        <div className={styles["face"] + styles["top"]}></div>
-        <div className={styles["face"] + styles["bottom"]}></div>
-      </div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -27,16 +18,7 @@ export default Loader_bigger;
 
         const Loader_bigger = () => (
          <div>
-          <div className="loader">
-    <div className="cube">
-      <div className="face front"></div>
-      <div className="face back"></div>
-      <div className="face left"></div>
-      <div className="face right"></div>
-      <div className="face top"></div>
-      <div className="face bottom"></div>
-    </div>
-  </div>
+          <div className="loader"></div>
         </div>
         );
 

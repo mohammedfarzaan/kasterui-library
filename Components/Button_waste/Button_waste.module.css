@@ -1,92 +1,62 @@
 
-/* From Uiverse.io by doniaskima - Tags: button, bouncing animation, DoubleTriangle  */
-.btn-5,
-.btn-5 *,
-.btn-5 :after,
-.btn-5 :before,
-.btn-5:after,
-.btn-5:before {
-  border: 0 solid;
-  box-sizing: border-box;
-}
-
-.btn-5 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
-  background-color: #000;
-  background-image: none;
-  color: #fff;
-  cursor: pointer;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-size: 100%;
-  font-weight: 900;
-  line-height: 1.5;
-  margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
-  text-transform: uppercase;
-}
-
-.btn-5:disabled {
-  cursor: default;
-}
-
-.btn-5:-moz-focusring {
-  outline: auto;
-}
-
-.btn-5 svg {
-  display: block;
-  vertical-align: middle;
-}
-
-.btn-5 [hidden] {
-  display: none;
-}
-
-.btn-5 {
-  border-radius: 99rem;
-  border-width: 2px;
-  overflow: hidden;
-  padding: 0.8rem 3rem;
+/* From Uiverse.io by Satwinder04 - Tags: button */
+.complex-animated-button {
+  --primary-color: #ff7f50;
+  --secondary-color: #ffa07a;
+  --border-radius: 8px;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --shadow-offset: 2px;
+  --shadow-blur: 4px;
+  --ripple-color: rgba(255, 255, 255, 0.5);
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  border: none;
+  border-radius: var(--border-radius);
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
   position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-color);
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
-.btn-5 span {
-  mix-blend-mode: difference;
+.complex-animated-button:hover {
+  transform: scale(1);
+  background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
 }
 
-.btn-5:before {
-  --tilt: 1.2rem;
-  background: #fff;
-  -webkit-clip-path: polygon(
-    0 0,
-    calc(100% - var(--tilt)) 0,
-    100% 50%,
-    calc(100% - var(--tilt)) 100%,
-    0 100%
-  );
-  clip-path: polygon(
-    0 0,
-    calc(100% - var(--tilt)) 0,
-    100% 50%,
-    calc(100% - var(--tilt)) 100%,
-    0 100%
-  );
-  content: "";
-  display: block;
-  height: 100%;
-  left: calc(-100% - var(--tilt));
+.complex-animated-button:focus {
+  outline: none;
+}
+
+.complex-animated-button:active {
+  animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.complex-animated-button::after {
+  content: '';
   position: absolute;
-  top: 0;
-  transform: translateX(var(--progress, 0));
-  transition: transform 0.2s ease;
-  width: calc(100% + var(--tilt));
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: var(--ripple-color);
+  border-radius: 50%;
+  opacity: 0.5;
 }
 
-.btn-5:hover:before {
-  --progress: 100%;
+.complex-animated-button:active::after {
+  width: 100%;
+  height: 100%;
+  transition: width 0.3s ease-out, height 0.3s ease-out;
 }
 

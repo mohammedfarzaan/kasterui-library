@@ -1,58 +1,56 @@
 
-/* From Uiverse.io by alexmaracinaru - Tags: button */
-.cta {
- position: relative;
- margin: auto;
- padding: 12px 18px;
- transition: all 0.2s ease;
- border: none;
- background: none;
+/* From Uiverse.io by vinodjangid07 - Tags: instagram, gradient, button, social media */
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
 }
 
-.cta:before {
- content: "";
- position: absolute;
- top: 0;
- left: 0;
- display: block;
- border-radius: 50px;
- background: #b1dae7;
- width: 45px;
- height: 45px;
- transition: all 0.3s ease;
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all .3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
 }
 
-.cta span {
- position: relative;
- font-family: "Ubuntu", sans-serif;
- font-size: 18px;
- font-weight: 700;
- letter-spacing: 0.05em;
- color: #234567;
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  z-index: -1;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: all .3s;
 }
 
-.cta svg {
- position: relative;
- top: 0;
- margin-left: 10px;
- fill: none;
- stroke-linecap: round;
- stroke-linejoin: round;
- stroke: #234567;
- stroke-width: 2;
- transform: translateX(-5px);
- transition: all 0.3s ease;
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
 }
 
-.cta:hover:before {
- width: 100%;
- background: #b1dae7;
+.Btn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
 }
 
-.cta:hover svg {
- transform: translateX(0);
-}
-
-.cta:active {
- transform: scale(0.95);
-}

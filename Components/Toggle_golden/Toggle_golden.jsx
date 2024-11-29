@@ -3,15 +3,13 @@ import styles from "./Toggle_golden.module.css";
 
 const Toggle_golden = () => (
   <div>
-    <div className={styles["switch-holder"]}>
-      <div className={styles["switch-label"]}>
-        <i className={styles["fa"] + styles["fa-bluetooth-b"]}></i>
-        <span>Bluetooth</span>
-      </div>
-      <div className={styles["switch-toggle"]}>
-        <input type="checkbox" id="bluetooth" />
-        <label for="bluetooth"></label>
-      </div>
+    <p className={styles["component-title"]}>iOS Switch</p>
+
+    <div className={styles["container"]}>
+      <input type="checkbox" className={styles["checkbox"]} id="checkbox" />
+      <label className={styles["switch"]} for="checkbox">
+        <span className={styles["slider"]}></span>
+      </label>
     </div>
   </div>
 );
@@ -27,14 +25,13 @@ export default Toggle_golden;
 
         const Toggle_golden = () => (
          <div>
-          <div className="switch-holder">
-    <div className="switch-label">
-        <i className="fa fa-bluetooth-b"></i><span>Bluetooth</span>
-    </div>
-    <div className="switch-toggle">
-        <input type="checkbox" id="bluetooth" />
-        <label for="bluetooth"></label>
-    </div>
+          <p className="component-title">iOS Switch</p>
+
+<div className="container">
+  <input type="checkbox" className="checkbox" id="checkbox" />
+  <label className="switch" for="checkbox">
+    <span className="slider"></span>
+  </label>
 </div>
         </div>
         );

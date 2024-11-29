@@ -4,7 +4,10 @@ import styles from "./Loader_hit.module.css";
 const Loader_hit = () => (
   <div>
     <div className={styles["spinner"]}>
-      <div className={styles["spinner1"]}></div>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </div>
 );
@@ -21,7 +24,10 @@ export default Loader_hit;
         const Loader_hit = () => (
          <div>
           <div className="spinner">
-    <div className="spinner1"></div>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
 </div>
         </div>
         );

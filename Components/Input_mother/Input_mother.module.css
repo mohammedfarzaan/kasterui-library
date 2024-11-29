@@ -1,57 +1,35 @@
 
-/* From Uiverse.io by marcos700x - Tags: input */
-.containerInput {
-  background-color: #000;
+/* From Uiverse.io by Bodyhc - Tags: input, search, input effect , search bar */
+.search {
+  display: inline-block;
   position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0 0 4px 0;
-  z-index: 1;
-  font-size: 15px;
 }
 
-.containerInput::before {
-  content: '';
-  width: 110%;
-  aspect-ratio: 1;
-  position: absolute;
-  inset: 0 0 0 0;
-  margin: auto;
-  animation: rotate6234 2.5s ease-in-out infinite;
-  z-index: -1;
-  background-image: conic-gradient(from 0deg at 50% 50%, #073AFF00 0%, #FF0000FF 25%, #073AFF00 25%);
-}
-
-.containerInput > input {
-  width: 210px;
-  height: 50px;
-  font-size: inherit;
-  color: #fff;
+.search input[type="text"] {
+  width: 200px;
+  padding: 10px;
   border: none;
-  padding: 12px;
-  background-color: #0a0a0a;
-  outline: 5px solid #0a0a0a;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.containerInput > input:focus {
-  outline: none;
+.search button[type="submit"] {
+  background-color: #4e99e9;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: .9s ease;
 }
 
-.containerInput > input:not(:placeholder-shown) {
-  outline: none;
+.search button[type="submit"]:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  background-color: blue;
 }
 
-.containerInput > input:not(:placeholder-shown):valid {
-  outline: 4px solid rgb(0, 255, 183);
-  border-radius: 0;
-}
-
-@keyframes rotate6234 {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}

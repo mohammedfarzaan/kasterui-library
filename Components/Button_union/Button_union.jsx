@@ -3,7 +3,7 @@ import styles from "./Button_union.module.css";
 
 const Button_union = () => (
   <div>
-    <button className={styles["btn"]}>Hover me</button>
+    <button>Button</button>
   </div>
 );
 
@@ -18,9 +18,9 @@ export default Button_union;
 
         const Button_union = () => (
          <div>
-          <button className="btn">
-        Hover me
-    </button>
+          <button>
+    Button
+</button>
         </div>
         );
 

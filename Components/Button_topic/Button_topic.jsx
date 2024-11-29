@@ -3,7 +3,11 @@ import styles from "./Button_topic.module.css";
 
 const Button_topic = () => (
   <div>
-    <button>Button</button>
+    <button className={styles["button"]}>
+      <span className={styles["bracket"] + styles["left"]}>❴</span>
+      <span className={styles["text"]}>Code</span>
+      <span className={styles["bracket"] + styles["right"]}>❵</span>
+    </button>
   </div>
 );
 
@@ -18,8 +22,10 @@ export default Button_topic;
 
         const Button_topic = () => (
          <div>
-          <button>
-  Button
+          <button className="button">
+  <span className="bracket left">❴</span>
+  <span className="text">Code</span>
+  <span className="bracket right">❵</span>
 </button>
         </div>
         );

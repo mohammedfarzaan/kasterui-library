@@ -1,59 +1,62 @@
 
-/* From Uiverse.io by NabeelAhmadK - Tags: button */
-button {
-  width: fit-content;
-  height: 45px;
-  background: #ffffff0d;
+/* From Uiverse.io by vinodjangid07  - Tags: animation, button, hover, hover effect, gift, rewards, bonus */
+.reward-btn {
+  width: 120px;
+  height: 40px;
+  background-color: #101218;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
   border-radius: 8px;
-  border: 2px solid #334b79;
-  font-size: 15px;
-  font-weight: bold;
-  color: #334b79;
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-  position: relative;
-  overflow: hidden;
-  padding: 10px 25px;
-  z-index: 1;
-}
-
-button:before {
-  width: 50%;
-  height: 100%;
-  content: "";
-  margin: auto;
-  position: absolute;
-  top: 0%;
-  left: -50%;
-  background: #334b79;
-  transition: all 0.5s ease;
-  z-index: -1;
-}
-
-button:after {
-  width: 50%;
-  height: 100%;
-  content: "";
-  margin: auto;
-  position: absolute;
-  top: 0%;
-  left: 100%;
-  background: #334b79;
-  transition: all 0.5s ease;
-  z-index: -1;
-}
-
-button:hover {
-  color: white;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.IconContainer {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.IconContainer svg {
+  width: 40%;
+  z-index: 3;
+}
+.box-top {
+  transition: all 0.3s;
+}
+.text {
+  width: 70px;
+  height: 100%;
+  font-size: 13px;
+  color: #6a8ef6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+.reward-btn:hover .IconContainer .box-top {
+  transform: translateY(-5px);
+}
+.reward-btn:hover {
+  background-color: #202531;
+}
+.reward-btn:hover .coin {
+  transform: translateY(-5px);
+  transition-delay: 0.2s;
+}
+.coin {
+  width: 25%;
+  height: 25%;
+  background-color: #e4d61a;
+  position: absolute;
+  border-radius: 50%;
+  transition: all 0.3s;
+  z-index: 1;
+  border: 2px solid #ffe956;
+  margin-top: 4px;
 }
 
-button:hover:before {
-  top: 0;
-  left: 0;
-}
-
-button:hover:after {
-  top: 0;
-  left: 50%;
-}

@@ -3,7 +3,7 @@ import styles from "./Button_ruler.module.css";
 
 const Button_ruler = () => (
   <div>
-    <button className={styles["Btn"]}>Jelly Button</button>
+    <button className={styles["button"]}> Button</button>
   </div>
 );
 
@@ -18,8 +18,7 @@ export default Button_ruler;
 
         const Button_ruler = () => (
          <div>
-          <button className="Btn">
-  Jelly Button
+          <button className="button"> Button
 </button>
         </div>
         );

@@ -3,7 +3,7 @@ import styles from "./Button_party.module.css";
 
 const Button_party = () => (
   <div>
-    <button className={styles["button"]}>Hover Button</button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -19,8 +19,8 @@ export default Button_party;
         const Button_party = () => (
          <div>
           <button className="button">
-       Hover Button
-    </button>
+  Button
+</button>
         </div>
         );
 

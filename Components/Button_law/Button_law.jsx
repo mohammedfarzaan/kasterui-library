@@ -3,7 +3,9 @@ import styles from "./Button_law.module.css";
 
 const Button_law = () => (
   <div>
-    <button>Button</button>
+    <a href="#" className={styles["menu__link"]}>
+      Hover me!
+    </a>
   </div>
 );
 
@@ -18,9 +20,9 @@ export default Button_law;
 
         const Button_law = () => (
          <div>
-          <button>
-  Button
-</button>
+          <a href="#" className="menu__link">
+  Hover me!
+</a>
         </div>
         );
 

@@ -1,59 +1,55 @@
 
-/* From Uiverse.io by Deri-Kurniawan  - Tags: blue, button, hover, smooth, hover effect, hoverme, hover button, button hover effect  */
-.button {
+/* From Uiverse.io by adamgiebl - Tags: button */
+button {
+  border: none;
+  display: block;
   position: relative;
-  display: inline-block;
-  padding: 16px 32px;
-  border-radius: 14px;
-  overflow: hidden;
-  z-index: 1;
-  border: 1px solid rgb(221, 218, 218);
-  background: white;
-  font-weight: bold;
-  font-size: 16px;
-  color: #1993e4;
-  transition: all 1.2s linear;
+  padding: 0.7em 2.4em;
+  font-size: 18px;
+  background: transparent;
   cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: royalblue;
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500;
 }
 
-.button::after {
-  content: "";
+button span {
   position: absolute;
-  background: linear-gradient(to right, #1993e4, #1993e456);
-  border-radius: 30%;
-  height: 96px;
-  width: 96px;
-  animation: spin infinite linear 1.8s;
-  animation-delay: 0;
-  bottom: -38px;
-  right: -112px;
-  transition: all 1.2s linear;
-  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 4px solid royalblue;
 }
 
-.button:hover {
-  color: #fff;
-  transition-duration: 1.2s;
+button span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
 }
 
-.button:hover::after {
-  right: -60px;
-  bottom: -92px;
-  width: 256px;
-  height: 256px;
+button:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: royalblue;
 }
 
-.button > .button-content {
-  position: relative;
-  z-index: 2;
+button:hover {
+  color: white;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+button:active span::before {
+  background: #2751cd;
 }
-

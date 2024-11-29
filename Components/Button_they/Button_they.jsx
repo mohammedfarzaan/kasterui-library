@@ -3,10 +3,15 @@ import styles from "./Button_they.module.css";
 
 const Button_they = () => (
   <div>
-    <button className={styles["btn-class-name"]}>
-      <span className={styles["back"]}></span>
-      <span className={styles["front"]}></span>
-    </button>
+    <input id="c" type="checkbox" />
+    <label id="upload_app" for="c">
+      <div id="app">
+        <div id="arrow"></div>
+        <div id="success">
+          <i className={styles["fas"] + styles["fa-check-circle"]}></i>
+        </div>
+      </div>
+    </label>
   </div>
 );
 
@@ -21,10 +26,15 @@ export default Button_they;
 
         const Button_they = () => (
          <div>
-          <button className="btn-class-name">
-  <span className="back"></span>
-  <span className="front"></span>
-</button>
+          <input id="c" type="checkbox" />
+<label id="upload_app" for="c">
+  <div id="app">
+    <div id="arrow"></div>
+    <div id="success">
+      <i className="fas fa-check-circle"></i>
+    </div>
+  </div>
+</label>
         </div>
         );
 

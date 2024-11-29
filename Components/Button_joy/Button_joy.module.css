@@ -1,98 +1,62 @@
 
-/* From Uiverse.io by Yaya12085 - Tags: button */
-.download {
-  background: none;
-  border: 0;
-  box-sizing: border-box;
-  margin: 1em;
-  padding: 1em 2em;
-  color: #039be5;
-  background-color: #fff;
-  font-size: inherit;
-  font-weight: 700;
-  position: relative;
-  vertical-align: middle;
-  border-radius: 4px;
-  box-shadow: 0px 20px 30px -15px rgba(0, 0, 0, 0.226);
+/* From Uiverse.io by Github-Suriya  - Tags: material design, white, button, smooth, message */
+button {
+  font-family: inherit;
+  font-size: 20px;
+  background: #eef0ee;
+  padding: 0.3em;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.2s;
   cursor: pointer;
+  box-shadow: 0px 0px 6px #c5c5c5;
 }
 
-.download::before, .download::after {
-  box-sizing: inherit;
-  border-radius: inherit;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
+button span {
+  display: block;
+  margin-left: 0.3em;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
 }
 
-.download {
-  transition: color 0.25s;
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
 }
 
-.download::before, .download::after {
-  border: 2px solid transparent;
-  width: 0;
-  height: 0;
+button .svg-name-con {
+  background: #fcfdfc;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0.7em 1em;
 }
 
-.download::before {
-  top: 0;
-  left: 0;
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
 }
 
-.download::after {
-  bottom: 0;
-  right: 0;
+button:hover svg {
+  transform: translateX(4.2em) rotate(45deg) scale(1.1);
 }
 
-.download:focus {
-  color: #039be5;
+button:hover span {
+  transform: translateX(9em);
 }
 
-.download:focus::before, .download:focus::after {
-  width: 100%;
-  height: 100%;
+button:active {
+  transform: scale(0.95);
 }
 
-.download:focus::before {
-  border-top-color: #039be5;
-  border-right-color: #039be5;
-  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
 }
 
-.download:focus::after {
-  border-bottom-color: #039be5;
-  border-left-color: #039be5;
-  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-}
-
-.download .tooltip {
-  visibility: hidden;
-  width: 120px;
-  background-color: #039be5;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 120%;
-  left: 50%;
-  margin-left: -60px;
-}
-
-.download .tooltip::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #039be5 transparent transparent transparent;
-}
-
-.download:hover:not(:focus) .tooltip {
-  visibility: visible;
-}

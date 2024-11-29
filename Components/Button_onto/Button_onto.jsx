@@ -3,7 +3,7 @@ import styles from "./Button_onto.module.css";
 
 const Button_onto = () => (
   <div>
-    <button>Button</button>
+    <button className={styles["delete-button"]}>␡</button>
   </div>
 );
 
@@ -18,8 +18,8 @@ export default Button_onto;
 
         const Button_onto = () => (
          <div>
-          <button>
-  Button
+          <button className="delete-button">
+  ␡
 </button>
         </div>
         );

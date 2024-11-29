@@ -3,18 +3,22 @@ import styles from "./Button_move.module.css";
 
 const Button_move = () => (
   <div>
-    <button className={styles["open-file"]}>
-      <span className={styles["file-wrapper"]}>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
-          <path
-            strokeWidth="5"
-            stroke="black"
-            d="M41.7322 11.7678L42.4645 12.5H43.5H68.5V64.5H2.5V2.5H32.4645L41.7322 11.7678Z"
-          ></path>
-        </svg>
-        <span className={styles["file-front"]}></span>
-      </span>
-      Open file
+    <button className={styles["button"]} type="button">
+      <svg
+        viewBox="0 0 16 16"
+        className={styles["bi"] + styles["bi-arrow-repeat"]}
+        fill="currentColor"
+        height="16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"></path>
+        <path
+          d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"
+          fillRule="evenodd"
+        ></path>
+      </svg>
+      Refresh
     </button>
   </div>
 );
@@ -30,18 +34,12 @@ export default Button_move;
 
         const Button_move = () => (
          <div>
-          <button className="open-file">
-  <span className="file-wrapper">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 71 67">
-      <path
-        strokeWidth="5"
-        stroke="black"
-        d="M41.7322 11.7678L42.4645 12.5H43.5H68.5V64.5H2.5V2.5H32.4645L41.7322 11.7678Z"
-      ></path>
-    </svg>
-    <span className="file-front"></span>
-  </span>
-  Open file
+          <button className="button" type="button">
+  <svg viewBox="0 0 16 16" className="bi bi-arrow-repeat" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+  <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"></path>
+  <path d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" fillRule="evenodd"></path>
+</svg>
+    Refresh 
 </button>
         </div>
         );

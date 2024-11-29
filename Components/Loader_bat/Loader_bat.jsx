@@ -1,17 +1,85 @@
 import React from "react";
+import styles from "./Loader_bat.module.css";
 
 const Loader_bat = () => (
   <div>
-    <div className="flex justify-center items-center h-screen">
-      <div className="animate-spin ease-linear rounded-full w-10 h-10 border-t-2 border-b-2 border-purple-500"></div>
-      <div className="animate-spin ease-linear rounded-full w-10 h-10 border-t-2 border-b-2 border-red-500 ml-3"></div>
-      <div className="animate-spin ease-linear rounded-full w-10 h-10 border-t-2 border-b-2 border-blue-500 ml-3"></div>
-    </div>
+    <svg height="0" width="0">
+      <defs>
+        <filter
+          color-interpolation-filters="sRGB"
+          height="200%"
+          y="-50%"
+          width="200%"
+          x="-50%"
+          id="goo"
+        >
+          <feGaussianBlur
+            result="blur"
+            stdDeviation="8"
+            in="SourceGraphic"
+          ></feGaussianBlur>
+          <feColorMatrix
+            result="cm"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+            mode="matrix"
+            in="blur"
+          ></feColorMatrix>
+        </filter>
+      </defs>
+    </svg>
+
+    <svg height="180" width="320" viewBox="0 0 320 180">
+      <g filter="url(#goo)">
+        <circle
+          cy="90"
+          cx="160"
+          r="24"
+          fill="#275EFE"
+          className={styles["circle"]}
+        ></circle>
+        <circle
+          cy="90"
+          cx="160"
+          r="24"
+          fill="#275EFE"
+          className={styles["circle"] + styles["right"]}
+        ></circle>
+      </g>
+    </svg>
   </div>
 );
 
 export default Loader_bat;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Loader_bat = () => (
+         <div>
+          <svg height="0" width="0">
+    <defs>
+        <filter color-interpolation-filters="sRGB" height="200%" y="-50%" width="200%" x="-50%" id="goo">
+            <feGaussianBlur result="blur" stdDeviation="8" in="SourceGraphic"></feGaussianBlur>
+            <feColorMatrix result="cm" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" mode="matrix" in="blur"></feColorMatrix>
+        </filter>
+    </defs>
+</svg>
+
+<svg height="180" width="320" viewBox="0 0 320 180">
+    <g filter="url(#goo)">
+        <circle cy="90" cx="160" r="24" fill="#275EFE" className="circle"></circle>
+        <circle cy="90" cx="160" r="24" fill="#275EFE" className="circle right"></circle>
+    </g>
+</svg>
+        </div>
+        );
+
+        export default Loader_bat;
+        
+        
+         */
 }

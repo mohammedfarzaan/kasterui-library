@@ -1,40 +1,28 @@
 
-/* From Uiverse.io by Spacious74  - Tags: minimalist, gradient, button, hover, dark, gradients, border, click effect */
-button {
-  font-size: 1.4em;
-  padding: 0.6em 0.8em;
-  border-radius: 0.5em;
-  border: none;
-  background-color: #000;
-  color: #fff;
+/* From Uiverse.io by vishal2231179  - Tags: black, button, game, click animation, hover button, #button, 3d button, button hover effect  */
+.button {
   cursor: pointer;
-  box-shadow: 2px 2px 3px #000000b4;
+  padding: 15px 40px 15px 40px;
+  border-radius: 10px;
+  border-style: double;
+  font-weight: 600;
+  background-image: linear-gradient(
+    rgb(54, 53, 53),
+    rgb(0, 0, 0),
+    rgb(54, 54, 54)
+  );
+  color: rgb(164, 164, 162);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-color: rgb(0, 0, 0);
+  transition: 400ms;
 }
 
-.container {
-  position: relative;
-  padding: 3px;
-  background: linear-gradient(90deg, #03a9f4, #f441a5);
-  border-radius: 0.9em;
-  transition: all 0.4s ease;
-}
-
-.container::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  border-radius: 0.9em;
-  z-index: -10;
-  filter: blur(0);
-  transition: filter 0.4s ease;
-}
-
-.container:hover::before {
-  background: linear-gradient(90deg, #03a9f4, #f441a5);
-  filter: blur(1.2em);
-}
-.container:active::before {
-  filter: blur(0.2em);
+.button:hover {
+  transition: 400ms;
+  border-style: double;
+  border-color: rgb(208, 207, 207);
+  color: rgb(219, 216, 216);
+  font-size: 16px;
+  text-shadow: 1px 10px 5px rgb(61, 61, 61);
 }
 

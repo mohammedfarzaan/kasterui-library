@@ -3,18 +3,7 @@ import styles from "./Button_nice.module.css";
 
 const Button_nice = () => (
   <div>
-    <a className={styles["brutalist-button"]} href="/">
-      <div className={styles["ms-logo"]}>
-        <div className={styles["ms-logo-square"]}></div>
-        <div className={styles["ms-logo-square"]}></div>
-        <div className={styles["ms-logo-square"]}></div>
-        <div className={styles["ms-logo-square"]}></div>
-      </div>
-      <div className={styles["button-text"]}>
-        <span>Get it from</span>
-        <span>Microsoft</span>
-      </div>
-    </a>
+    <button className={styles["custom-button"]}>Click me</button>
   </div>
 );
 
@@ -29,18 +18,7 @@ export default Button_nice;
 
         const Button_nice = () => (
          <div>
-          <a className="brutalist-button" href="/">
-  <div className="ms-logo">
-    <div className="ms-logo-square"></div>
-    <div className="ms-logo-square"></div>
-    <div className="ms-logo-square"></div>
-    <div className="ms-logo-square"></div>
-  </div>
-  <div className="button-text">
-    <span>Get it from</span>
-    <span>Microsoft</span>
-  </div>
-</a>
+          <button className="custom-button">Click me</button>
         </div>
         );
 

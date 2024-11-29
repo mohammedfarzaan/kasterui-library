@@ -3,11 +3,7 @@ import styles from "./Button_whale.module.css";
 
 const Button_whale = () => (
   <div>
-    <button className={styles["pushable"]}>
-      <span className={styles["shadow"]}></span>
-      <span className={styles["edge"]}></span>
-      <span className={styles["front"]}>Push Me</span>
-    </button>
+    <button className={styles["button"]}>hover me !</button>
   </div>
 );
 
@@ -22,13 +18,7 @@ export default Button_whale;
 
         const Button_whale = () => (
          <div>
-          <button className="pushable">
-      <span className="shadow"></span>
-      <span className="edge"></span>
-      <span className="front">
-        Push Me
-      </span>
-    </button>
+          <button className="button">hover me !</button>
         </div>
         );
 

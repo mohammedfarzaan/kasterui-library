@@ -3,7 +3,7 @@ import styles from "./Loader_pay.module.css";
 
 const Loader_pay = () => (
   <div>
-    <span className={styles["loader"]}></span>
+    <div className={styles["spinner"]}></div>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Loader_pay;
 
         const Loader_pay = () => (
          <div>
-          <span className="loader"></span>
+          <div className="spinner"></div>
         </div>
         );
 

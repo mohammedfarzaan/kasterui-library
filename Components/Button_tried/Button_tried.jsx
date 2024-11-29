@@ -3,12 +3,11 @@ import styles from "./Button_tried.module.css";
 
 const Button_tried = () => (
   <div>
-    <a className={styles["fancy"]} href="#">
-      <span className={styles["top-key"]}></span>
-      <span className={styles["text"]}>Buy Tickets</span>
-      <span className={styles["bottom-key-1"]}></span>
-      <span className={styles["bottom-key-2"]}></span>
-    </a>
+    <div className={styles["container"]}>
+      <div className={styles["btn"]}>
+        <a href="#">Read more</a>
+      </div>
+    </div>
   </div>
 );
 
@@ -23,12 +22,10 @@ export default Button_tried;
 
         const Button_tried = () => (
          <div>
-          <a className="fancy" href="#">
-  <span className="top-key"></span>
-  <span className="text">Buy Tickets</span>
-  <span className="bottom-key-1"></span>
-  <span className="bottom-key-2"></span>
-</a>
+          <div className="container">
+		<div className="btn"><a href="#">Read more</a></div>
+	
+	</div>
         </div>
         );
 

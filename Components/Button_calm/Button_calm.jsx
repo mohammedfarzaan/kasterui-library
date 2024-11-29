@@ -3,11 +3,7 @@ import styles from "./Button_calm.module.css";
 
 const Button_calm = () => (
   <div>
-    <button>
-      {" "}
-      Button
-      <span></span>
-    </button>
+    <button className={styles["button"]}>Vite Button</button>
   </div>
 );
 
@@ -22,8 +18,8 @@ export default Button_calm;
 
         const Button_calm = () => (
          <div>
-          <button> Button
-  <span></span>
+          <button className="button">
+  Vite Button
 </button>
         </div>
         );

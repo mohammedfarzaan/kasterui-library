@@ -3,13 +3,10 @@ import styles from "./Loader_trade.module.css";
 
 const Loader_trade = () => (
   <div>
-    <div className={styles["loop"] + styles["cubes"]}>
-      <div className={styles["item"] + styles["cubes"]}></div>
-      <div className={styles["item"] + styles["cubes"]}></div>
-      <div className={styles["item"] + styles["cubes"]}></div>
-      <div className={styles["item"] + styles["cubes"]}></div>
-      <div className={styles["item"] + styles["cubes"]}></div>
-      <div className={styles["item"] + styles["cubes"]}></div>
+    <div className={styles["loader-wrapper"]}>
+      <div className={styles["loader"]}>
+        <div className={styles["loader"] + styles["loader-inner"]}></div>
+      </div>
     </div>
   </div>
 );
@@ -25,13 +22,10 @@ export default Loader_trade;
 
         const Loader_trade = () => (
          <div>
-          <div className="loop cubes">
-    <div className="item cubes"></div>
-    <div className="item cubes"></div>
-    <div className="item cubes"></div>
-    <div className="item cubes"></div>
-    <div className="item cubes"></div>
-    <div className="item cubes"></div>
+          <div className="loader-wrapper">
+<div className="loader">
+  <div className="loader loader-inner"></div>
+  </div>
 </div>
         </div>
         );

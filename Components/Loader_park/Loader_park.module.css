@@ -1,120 +1,50 @@
 
-/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader */
-/* The loader container */
+/* From Uiverse.io by doniaskima - Tags: simple, material design, neumorphism, loader */
+/* HTML: <div class="loader"></div> */
 .loader {
+  height: 60px;
+  aspect-ratio: 1;
+  position: relative;
+}
+
+.loader::before,
+.loader::after {
+  content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  margin-top: -100px;
-  margin-left: -100px;
-  perspective: 1000px;
-  transform-style: preserve-3d;
+  inset: 0;
+  border-radius: 50%;
+  transform-origin: bottom;
 }
 
-
-/* The cubes */
-.cubes {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transform: rotateY(45deg) rotateZ(45deg);
+.loader::after {
+  background: radial-gradient(at 75% 15%,#fffb,#0000 35%),
+    radial-gradient(at 80% 40%,#0000,#0008),
+    radial-gradient(circle  5px,#fff 94%,#0000),
+    radial-gradient(circle 10px,#000 94%,#0000),
+    linear-gradient(#F93318 0 0) top   /100% calc(50% - 5px),
+    linear-gradient(#fff    0 0) bottom/100% calc(50% - 5px)
+    #000;
+  background-repeat: no-repeat;
+  animation: l20 1s infinite cubic-bezier(0.5,120,0.5,-120);
 }
 
-
-/* The cube */
-.cube {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-  transform-origin: 50% 50%;
-  transform-style: preserve-3d;
-  transform: translateZ(-50px);
-  animation: cube 2500ms cubic-bezier(.66,.14,.56,.75) infinite;
+.loader::before {
+  background: #ddd;
+  filter: blur(8px);
+  transform: scaleY(0.4) translate(-13px, 0px);
 }
 
-.cube:nth-child(2) {
-  top: 0;
-  left: 50%;
-  animation-delay: 50ms;
-}
-
-.cube:nth-child(3) {
-  top: 50%;
-  left: 0;
-  animation-delay: 100ms;
-}
-
-.cube:nth-child(4) {
-  top: 50%;
-  left: 50%;
-  animation-delay: 150ms;
-}
-
-@keyframes cube {
-  0%, 75%, 100% {
-    transform: translate3d(0px, 0px, 50px) rotateY(0deg) scale3d(0.9, 0.9, 0.1);
+@keyframes l20 {
+ 
+  30%,70% {
+    transform: rotate(0deg)
   }
 
-  25%, 50% {
-    transform: translate3d(0px, 0px, -50px) rotateY(180deg) scale3d(0.9, 0.9, 0.1);
+  49.99% {
+    transform: rotate(0.2deg)
+  }
+
+  50% {
+    transform: rotate(-0.2deg)
   }
 }
-
-
-
-
-
-/* The side */
-.side {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-}
-
-/* back */
-.side:nth-child(1) {
-  transform: rotateX(-180deg) translateZ(50px);
-  background-color: #1e3f57;
-}
-
-/* left side */
-.side:nth-child(2) {
-  transform: rotateY(-90deg) translateZ(50px);
-  background-color: #6bb2cd;
-}
-
-/* right side */
-.side:nth-child(3) {
-  transform: rotateY(90deg) translateZ(50px);
-  background-color: #6bb2cd;
-}
-
-/* top side */
-.side:nth-child(4) {
-  transform: rotateX(90deg) translateZ(50px);
-  background-color: #3c617d;
-}
-
-/* bottom side */
-.side:nth-child(5) {
-  transform: rotateX(-90deg) translateZ(50px);
-  background-color: #3c617d;
-}
-
-/* top */
-.side:nth-child(6) {
-  transform: translateZ(50px);
-  background-color: #1e3f57;
-}
-

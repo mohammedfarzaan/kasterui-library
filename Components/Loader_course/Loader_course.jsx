@@ -3,21 +3,13 @@ import styles from "./Loader_course.module.css";
 
 const Loader_course = () => (
   <div>
-    <div className={styles["pl"]}>
-      <div className={styles["pl__dot"]}></div>
-      <div className={styles["pl__dot"]}></div>
-      <div className={styles["pl__dot"]}></div>
-      <div className={styles["pl__dot"]}></div>
-      <div className={styles["pl__dot"]}></div>
-      <div className={styles["pl__dot"]}></div>
-      <div className={styles["pl__dot"]}></div>
-      <div className={styles["pl__dot"]}></div>
-      <div className={styles["pl__dot"]}></div>
-      <div className={styles["pl__dot"]}></div>
-      <div className={styles["pl__dot"]}></div>
-      <div className={styles["pl__dot"]}></div>
-      <div className={styles["pl__text"]}>Loading…</div>
-    </div>
+    <section className={styles["dots-container"]}>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+    </section>
   </div>
 );
 
@@ -32,21 +24,13 @@ export default Loader_course;
 
         const Loader_course = () => (
          <div>
-          <div className="pl">
-	<div className="pl__dot"></div>
-	<div className="pl__dot"></div>
-	<div className="pl__dot"></div>
-	<div className="pl__dot"></div>
-	<div className="pl__dot"></div>
-	<div className="pl__dot"></div>
-	<div className="pl__dot"></div>
-	<div className="pl__dot"></div>
-	<div className="pl__dot"></div>
-	<div className="pl__dot"></div>
-	<div className="pl__dot"></div>
-	<div className="pl__dot"></div>
-	<div className="pl__text">Loading…</div>
-</div>
+          <section className="dots-container">
+  <div className="dot"></div>
+  <div className="dot"></div>
+  <div className="dot"></div>
+  <div className="dot"></div>
+  <div className="dot"></div>
+</section>
         </div>
         );
 

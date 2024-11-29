@@ -4,18 +4,24 @@ import styles from "./Loader_threw.module.css";
 const Loader_threw = () => (
   <div>
     <div className={styles["loader"]}>
-      <div style="--i:1" className={styles["loader_item"]}></div>
-      <div style="--i:2" className={styles["loader_item"]}></div>
-      <div style="--i:3" className={styles["loader_item"]}></div>
-      <div style="--i:4" className={styles["loader_item"]}></div>
-      <div style="--i:5" className={styles["loader_item"]}></div>
-      <div style="--i:6" className={styles["loader_item"]}></div>
-      <div style="--i:7" className={styles["loader_item"]}></div>
-      <div style="--i:8" className={styles["loader_item"]}></div>
-      <div style="--i:9" className={styles["loader_item"]}></div>
-      <div style="--i:10" className={styles["loader_item"]}></div>
-      <div style="--i:11" className={styles["loader_item"]}></div>
-      <div style="--i:12" className={styles["loader_item"]}></div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="6"
+              result="blur"
+            ></feGaussianBlur>
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+              result="goo"
+            ></feColorMatrix>
+            <feBlend in="SourceGraphic" in2="goo"></feBlend>
+          </filter>
+        </defs>
+      </svg>
     </div>
   </div>
 );
@@ -31,20 +37,7 @@ export default Loader_threw;
 
         const Loader_threw = () => (
          <div>
-          <div className="loader">
-  <div style="--i:1" className="loader_item"></div>
-  <div style="--i:2" className="loader_item"></div>
-  <div style="--i:3" className="loader_item"></div>
-  <div style="--i:4" className="loader_item"></div>
-  <div style="--i:5" className="loader_item"></div> 
-  <div style="--i:6" className="loader_item"></div>
-  <div style="--i:7" className="loader_item"></div>
-  <div style="--i:8" className="loader_item"></div>
-  <div style="--i:9" className="loader_item"></div>
-  <div style="--i:10" className="loader_item"></div>
-  <div style="--i:11" className="loader_item"></div>
-  <div style="--i:12" className="loader_item"></div>
-</div>
+          <div className="loader"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><defs><filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"></feGaussianBlur><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix><feBlend in="SourceGraphic" in2="goo"></feBlend></filter></defs></svg></div>
         </div>
         );
 

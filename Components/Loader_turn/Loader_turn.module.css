@@ -1,35 +1,21 @@
 
-/* From Uiverse.io by MbaziiraRonald - Tags: loader */
+/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */
+/* HTML: <div class="loader"></div> */
 .loader {
-  height: 50px;
   width: 50px;
-  background: transparent;
-  border: red 3px solid;
-  border-top: transparent;
-  border-radius: 50%;
-  animation: animate81323 0.8s linear infinite;
+  aspect-ratio: 1;
+  --g: #0000 calc(100% - 5px),#000 calc(100% - 3px) 93%,#0000;
+  background: radial-gradient(farthest-side at bottom,var(--g)) top                  /100% 50%,
+    radial-gradient(farthest-side at top   ,var(--g)) bottom 18% right  0  /80%  40%,
+    radial-gradient(farthest-side at bottom,var(--g)) left   50% top    30%/60%  30%,
+    radial-gradient(farthest-side at top   ,var(--g)) right  34% bottom 37%/40%  20%,
+    radial-gradient(farthest-side at bottom,var(--g)) left   52% top    43%/24%  12%;
+  background-repeat: no-repeat;
+  animation: l20 1s infinite linear;
 }
 
-@keyframes animate81323 {
-  0% {
-    border: 3px solid rgb(255, 75, 75);
-    border-top: transparent;
-    border-left: transparent;
-    transform: rotate(0deg);
-  }
-
-  50% {
-    border: 3px dashed rgb(240, 41, 240);
-    border-top: transparent;
-    border-left: transparent;
-    transform: rotate(270deg);
-  }
-
+@keyframes l20 {
   100% {
-    border: 3px dotted rgb(28, 228, 28);
-    border-top: transparent;
-    border-left: transparent;
-    transform: rotate(360deg);
+    transform: rotate(1turn)
   }
 }
-

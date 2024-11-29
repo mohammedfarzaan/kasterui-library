@@ -1,58 +1,59 @@
 
-/* From Uiverse.io by kamehame-ha - Tags: success, error, share, light&dark, clean, badges, working */
-/*
-
-This is actually the most neutral button desing of all time,
-fits everywhere no matter if it is dark or light mode,
-just change colors. 
-I created original using tailwindCSS, here's classes:
-
-text-blue-500 bg-blue-500/10 border border-blue-500 rounded-md px-2 py-[2px] text-sm cursor-pointer flex shrink-0
-text-yellow-500 bg-yellow-500/10 border border-yellow-500 rounded-md px-2 py-[2px] text-sm cursor-pointer flex shrink-0
-text-green-500 bg-green-500/10 border border-green-500 rounded-md px-2 py-[2px] text-sm cursor-pointer flex shrink-0
-text-indigo-500 bg-indigo-500/10 border border-indigo-500 rounded-md px-2 py-[2px] text-sm cursor-pointer flex shrink-0
-
-*/
-
-.badges {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem; /* 16px */
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.badges > button {
-  font-size: 0.875rem; /* 14px */
-  line-height: 1.25rem; /* 20px */
-  padding: 2px .5rem; /* 8px*/
-  cursor: pointer;
+/* From Uiverse.io by ozgeozkaraa01 - Tags: button */
+button {
   border: none;
-  border-radius: 0.375rem; /* 6px */
+  padding: 0.8em 2.5em;
   outline: none;
+  color: white;
+  font-style: 1.2em;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  background: none;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
 }
 
-.badges .blue {
-  background-color: rgba(59, 130, 246, 0.10);
-  color: rgb(59 130 246);
-  border: 1px rgb(59 130 246) solid;
+button::before,
+button::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10em;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 105%;
+  height: 105%;
+  content: "";
+  z-index: -2;
+  background-size: 400% 400%;
+  background: linear-gradient(
+    100deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
 }
 
-.badges .yellow {
-  background-color: rgba(234, 179, 8, 0.10);
-  color: rgb(234 179 8);
-  border: 1px rgb(234 179 8) solid;
+button::before {
+  -webkit-filter: blur(7px);
+  filter: blur(7px);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-animation: pulse 10s infinite ease;
+  animation: pulse 10s infinite ease;
 }
 
-.badges .green {
-  background-color: rgba(34, 197, 94, 0.10);
-  color: rgb(34 197 94);
-  border: 1px rgb(34 197 94) solid;
+button::after {
+  -webkit-filter: blur(0.3px);
+  filter: blur(0.3px);
 }
 
-.badges .red {
-  background-color: rgba(239, 68, 68, 0.10);
-  color: rgb(239 68 68);
-  border: 1px rgb(239 68 68) solid;
+button:hover::before {
+  width: 115%;
+  height: 115%;
 }

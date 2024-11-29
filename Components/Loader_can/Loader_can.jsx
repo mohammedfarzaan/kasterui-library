@@ -3,7 +3,12 @@ import styles from "./Loader_can.module.css";
 
 const Loader_can = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["cercle"]}></div>
+      <div className={styles["cercle"]}></div>
+      <div className={styles["cercle"]}></div>
+      <div className={styles["cercle"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +23,18 @@ export default Loader_can;
 
         const Loader_can = () => (
          <div>
-          <div className="loader"></div>
+          <div className="loader">
+
+  <div className="cercle">
+  </div>
+  <div className="cercle">
+  </div>
+  <div className="cercle">
+  </div>
+  <div className="cercle">
+  </div>
+
+</div>
         </div>
         );
 

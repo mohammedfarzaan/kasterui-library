@@ -1,0 +1,179 @@
+
+/* From Uiverse.io by Lakshay-art - Tags:  */
+.card::before {
+  content: "";
+  background: rgb(202, 26, 114);
+  position: absolute;
+  /* inset: 0; */
+  z-index: -100;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  zoom: .8;
+}
+
+.heading {
+  font-size: 24px;
+  color: white;
+  text-shadow: -1px 2px 0px #fff,
+				  -1px -2px 12px #fff;
+  position: absolute;
+  top: calc(50% - 190px);
+}
+
+.heading span {
+  color: hotpink;
+  text-shadow: -1px 2px 0px #ff69b4,
+				  -1px -2px 12px hotpink;
+}
+
+button {
+  border: 2px #ff69b4 solid;
+  padding: 10px 80px;
+  background-color: #ff69b422;
+  border-radius: 30px;
+  color: #ff69b4;
+  font-weight: 900;
+  font-size: 16px;
+  margin-top: 345px;
+}
+
+button:hover {
+  background-color: #ff69b444;
+}
+
+.item--create::before {
+  content: "";
+  background-color: rgb(69, 1, 37);
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+
+.item--create {
+  width: 120px;
+  height: 125px;
+  position: absolute;
+  top: calc(50% - 115px);
+  left: calc(50% - 65px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 45px;
+  transition: padding-top 0.5s ease-out;
+  -webkit-mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjE0LjYxIDIxLjE4IDE2Ny41NSAxNDkuMzQiPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik00MCwtNjYuMkM0OS4yLC01Ni4zLDUyLjMsLTQwLjgsNTkuOSwtMjYuN0M2Ny40LC0xMi41LDc5LjMsMC4zLDgxLjcsMTQuNkM4NC4xLDI4LjksNzcsNDQuNyw2NC43LDUyLjZDNTIuNSw2MC41LDM1LjEsNjAuNSwxOS43LDYzLjRDNC4yLDY2LjMsLTkuMyw3Mi4xLC0yMS42LDcwLjFDLTMzLjgsNjgsLTQ0LjcsNTguMSwtNTYuMSw0Ny4zQy02Ny40LDM2LjUsLTc5LjMsMjQuOCwtODMuNSwxMC42Qy04Ny44LC0zLjYsLTg0LjYsLTIwLjQsLTc1LjQsLTMyQy02Ni4zLC00My42LC01MS4zLC01MCwtMzcuNywtNThDLTI0LjIsLTY2LC0xMi4xLC03NS41LDEuNiwtNzguMUMxNS40LC04MC43LDMwLjcsLTc2LjIsNDAsLTY2LjJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDAgMTAwKSIvPgo8L3N2Zz4=');
+  z-index: 100;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.item--create svg {
+  height: 50px !important;
+  width: 50px !important;
+  margin-bottom: 10px;
+  transition: height 0.5s ease-out,width 0.5s ease-out,margin-bottom 0.5s ease-out;
+}
+
+.item--create:hover svg {
+  height: 40px !important;
+  width: 40px !important;
+  margin-bottom: 5px;
+}
+
+.item--create:hover {
+  padding-top: 30px;
+}
+
+.item--post::before {
+  content: "";
+  background-color: rgb(114, 7, 79);
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 0px;
+  z-index: -2;
+   /* top:200px;
+   left:calc(50% - 50px); */
+}
+
+.item--post {
+  min-width: 230px;
+  min-height: 230px;
+  position: absolute;
+  top: calc(50% - 130px);
+  left: calc(50% - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 140px;
+  transition: padding-top 0.5s ease-out;
+  z-index: 99;
+  -webkit-mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjE0LjYxIDIxLjE4IDE2Ny41NSAxNDkuMzQiPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik00MCwtNjYuMkM0OS4yLC01Ni4zLDUyLjMsLTQwLjgsNTkuOSwtMjYuN0M2Ny40LC0xMi41LDc5LjMsMC4zLDgxLjcsMTQuNkM4NC4xLDI4LjksNzcsNDQuNyw2NC43LDUyLjZDNTIuNSw2MC41LDM1LjEsNjAuNSwxOS43LDYzLjRDNC4yLDY2LjMsLTkuMyw3Mi4xLC0yMS42LDcwLjFDLTMzLjgsNjgsLTQ0LjcsNTguMSwtNTYuMSw0Ny4zQy02Ny40LDM2LjUsLTc5LjMsMjQuOCwtODMuNSwxMC42Qy04Ny44LC0zLjYsLTg0LjYsLTIwLjQsLTc1LjQsLTMyQy02Ni4zLC00My42LC01MS4zLC01MCwtMzcuNywtNThDLTI0LjIsLTY2LC0xMi4xLC03NS41LDEuNiwtNzguMUMxNS40LC04MC43LDMwLjcsLTc2LjIsNDAsLTY2LjJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDAgMTAwKSIvPgo8L3N2Zz4=');
+  -webkit-mask-repeat: no-repeat;
+}
+
+.item--post svg {
+  height: 50px !important;
+  width: 50px !important;
+  margin-bottom: 15px;
+  transition: height 0.5s ease-out,width 0.5s ease-out,margin-bottom 0.5s ease-out;
+}
+
+.item--post:hover svg {
+  height: 40px !important;
+  width: 40px !important;
+  margin-bottom: 5px;
+}
+
+.item--post:hover {
+  padding-top: 130px;
+}
+
+.item--inspire::before {
+    /* background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjE0LjYxIDIxLjE4IDE2Ny41NSAxNDkuMzQiPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik00MCwtNjYuMkM0OS4yLC01Ni4zLDUyLjMsLTQwLjgsNTkuOSwtMjYuN0M2Ny40LC0xMi41LDc5LjMsMC4zLDgxLjcsMTQuNkM4NC4xLDI4LjksNzcsNDQuNyw2NC43LDUyLjZDNTIuNSw2MC41LDM1LjEsNjAuNSwxOS43LDYzLjRDNC4yLDY2LjMsLTkuMyw3Mi4xLC0yMS42LDcwLjFDLTMzLjgsNjgsLTQ0LjcsNTguMSwtNTYuMSw0Ny4zQy02Ny40LDM2LjUsLTc5LjMsMjQuOCwtODMuNSwxMC42Qy04Ny44LC0zLjYsLTg0LjYsLTIwLjQsLTc1LjQsLTMyQy02Ni4zLC00My42LC01MS4zLC01MCwtMzcuNywtNThDLTI0LjIsLTY2LC0xMi4xLC03NS41LDEuNiwtNzguMUMxNS40LC04MC43LDMwLjcsLTc2LjIsNDAsLTY2LjJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDAgMTAwKSIvPgo8L3N2Zz4='); */
+  content: "";
+  background-color: rgb(179, 4, 100);
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 0px;
+  z-index: -3;
+   /* top:200px;
+   left:calc(50% - 50px); */
+}
+
+.item--inspire {
+  min-width: 350px;
+  min-height: 350px;
+  position: absolute;
+  top: calc(50% - 145px);
+  left: calc(50% - 350px / 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 245px;
+  transition: padding-top 0.5s ease-out;
+  z-index: 98;
+  -webkit-mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjE0LjYxIDIxLjE4IDE2Ny41NSAxNDkuMzQiPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik00MCwtNjYuMkM0OS4yLC01Ni4zLDUyLjMsLTQwLjgsNTkuOSwtMjYuN0M2Ny40LC0xMi41LDc5LjMsMC4zLDgxLjcsMTQuNkM4NC4xLDI4LjksNzcsNDQuNyw2NC43LDUyLjZDNTIuNSw2MC41LDM1LjEsNjAuNSwxOS43LDYzLjRDNC4yLDY2LjMsLTkuMyw3Mi4xLC0yMS42LDcwLjFDLTMzLjgsNjgsLTQ0LjcsNTguMSwtNTYuMSw0Ny4zQy02Ny40LDM2LjUsLTc5LjMsMjQuOCwtODMuNSwxMC42Qy04Ny44LC0zLjYsLTg0LjYsLTIwLjQsLTc1LjQsLTMyQy02Ni4zLC00My42LC01MS4zLC01MCwtMzcuNywtNThDLTI0LjIsLTY2LC0xMi4xLC03NS41LDEuNiwtNzguMUMxNS40LC04MC43LDMwLjcsLTc2LjIsNDAsLTY2LjJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDAgMTAwKSIvPgo8L3N2Zz4=');
+  -webkit-mask-repeat: no-repeat;
+}
+
+.item--inspire svg {
+  height: 50px !important;
+  width: 50px !important;
+  margin-bottom: 15px;
+  transition: height 0.5s ease-out,width 0.5s ease-out,margin-bottom 0.5s ease-out;
+}
+
+.item--inspire:hover svg {
+  height: 40px !important;
+  width: 40px !important;
+  margin-bottom: 5px;
+}
+
+.item--inspire:hover {
+  padding-top: 232px;
+}

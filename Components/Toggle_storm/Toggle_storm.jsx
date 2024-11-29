@@ -3,10 +3,14 @@ import styles from "./Toggle_storm.module.css";
 
 const Toggle_storm = () => (
   <div>
-    <label className={styles["switch"] + styles["modern-switch"]}>
-      <input type="checkbox" />
-      <span className={styles["slider"] + styles["round"]}></span>
-    </label>
+    <fieldset id="switch" className={styles["radio"]}>
+      <input name="switch" id="on" type="radio" />
+      <label for="on">ON</label>
+      <input name="switch" id="off" type="radio" />
+      <label for="off">OFF</label>
+      <input checked="" name="switch" id="auto" type="radio" />
+      <label for="auto">AUTO</label>
+    </fieldset>
   </div>
 );
 
@@ -21,10 +25,14 @@ export default Toggle_storm;
 
         const Toggle_storm = () => (
          <div>
-          <label className="switch modern-switch">
-  <input type="checkbox" />
-  <span className="slider round"></span>
-</label>
+          <fieldset id="switch" className="radio">
+	<input name="switch" id="on" type="radio" />
+	<label for="on">ON</label>
+	<input name="switch" id="off" type="radio" />
+	<label for="off">OFF</label>
+	<input checked="" name="switch" id="auto" type="radio" />
+	<label for="auto">AUTO</label>
+</fieldset>
         </div>
         );
 

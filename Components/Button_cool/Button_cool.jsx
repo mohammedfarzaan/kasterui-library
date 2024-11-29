@@ -3,7 +3,9 @@ import styles from "./Button_cool.module.css";
 
 const Button_cool = () => (
   <div>
-    <button className={styles["testbutton"]}>Click me</button>
+    <button>
+      <span> HOVER</span>
+    </button>
   </div>
 );
 
@@ -18,8 +20,9 @@ export default Button_cool;
 
         const Button_cool = () => (
          <div>
-          <button className="testbutton">
-  Click me
+          <button>
+  <span> HOVER
+  </span>
 </button>
         </div>
         );

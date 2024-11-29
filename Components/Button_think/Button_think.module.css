@@ -1,66 +1,62 @@
 
-/* From Uiverse.io by Wendell47 - Tags: button, blur filter */
+/* From Uiverse.io by Gaurav-WebDev  - Tags: simple, button, hover, smooth, btn, hover effect */
 .button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 30px;
-  border: 0;
+  height: 50px;
+  width: 150px;
+  font-weight: 800;
+  border: none;
+  background-color: #3434;
+  color: #ffff;
+  border-radius: 20px;
+  cursor: pointer;
   position: relative;
   overflow: hidden;
-  border-radius: 10rem;
-  transition: all 0.02s;
-  font-weight: bold;
-  color: rgb(37, 37, 37);
-  z-index: 0;
-  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  transition: all 0.7s;
+}
+
+.button::after {
+  content: "Me";
+  height: 100%;
+  width: 50%;
+  background-color: coral;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 10px;
+  box-sizing: border-box;
+  transition: all 0.7s;
+}
+
+.button::before {
+  content: "Hover";
+  height: 100%;
+  width: 50%;
+  background-color: teal;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 10px;
+  box-sizing: border-box;
+  transition: all 0.7s;
+}
+
+.button:hover::after {
+  right: -100px;
+}
+
+.button:hover::before {
+  left: -100px;
 }
 
 .button:hover {
-  background: rgb(193, 228, 248);
-  color: rgb(33, 0, 85);
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.2);
 }
 
-.button:active {
-  transform: scale(0.97);
-}
-
-.hoverEffect {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-}
-
-.hoverEffect div {
-  background: rgb(222,0,75);
-  background: linear-gradient(90deg, rgba(222,0,75,1) 0%, rgba(191,70,255,1) 49%, rgba(0,212,255,1) 100%);
-  border-radius: 40rem;
-  width: 10rem;
-  height: 10rem;
-  transition: 0.4s;
-  filter: blur(20px);
-  animation: effect infinite 3s linear;
-  opacity: 0.5;
-}
-
-.button:hover .hoverEffect div {
-  width: 8rem;
-  height: 8rem;
-}
-
-@keyframes effect {
-
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}

@@ -3,15 +3,7 @@ import styles from "./Button_key.module.css";
 
 const Button_key = () => (
   <div>
-    <a id="scroll-up" className={styles["scroll-up"]} href="#">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 0h24v24H0z" fill="none"></path>
-        <path
-          fill="rgba(255,255,255,1)"
-          d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z"
-        ></path>
-      </svg>
-    </a>
+    <button> hover me!</button>
   </div>
 );
 
@@ -26,13 +18,8 @@ export default Button_key;
 
         const Button_key = () => (
          <div>
-          <a id="scroll-up" className="scroll-up" href="#">
-	<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-		<path d="M0 0h24v24H0z" fill="none"></path>
-		<path fill="rgba(255,255,255,1)" d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z">
-		</path>
-	</svg>
-</a>
+          <button> hover me!
+</button>
         </div>
         );
 

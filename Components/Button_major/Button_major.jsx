@@ -3,16 +3,8 @@ import styles from "./Button_major.module.css";
 
 const Button_major = () => (
   <div>
-    <button className={styles["btn"]} type="button">
-      <strong>SPACE</strong>
-      <div id="container-stars">
-        <div id="stars"></div>
-      </div>
-
-      <div id="glow">
-        <div className={styles["circle"]}></div>
-        <div className={styles["circle"]}></div>
-      </div>
+    <button className={styles["btn"]}>
+      <span>Hover Me</span>
     </button>
   </div>
 );
@@ -28,17 +20,7 @@ export default Button_major;
 
         const Button_major = () => (
          <div>
-          <button className="btn" type="button">
-  <strong>SPACE</strong>
-  <div id="container-stars">
-    <div id="stars"></div>
-  </div>
-
-  <div id="glow">
-    <div className="circle"></div>
-    <div className="circle"></div>
-  </div>
-</button>
+          <button className="btn"><span>Hover Me</span></button>
         </div>
         );
 

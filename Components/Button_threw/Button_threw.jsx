@@ -3,9 +3,7 @@ import styles from "./Button_threw.module.css";
 
 const Button_threw = () => (
   <div>
-    <button className={styles["btn"]}>
-      <span className={styles["text"]}>Play</span>
-    </button>
+    <button>Button</button>
   </div>
 );
 
@@ -20,8 +18,8 @@ export default Button_threw;
 
         const Button_threw = () => (
          <div>
-          <button className="btn">
-  <span className="text">Play</span>
+          <button>
+  Button
 </button>
         </div>
         );

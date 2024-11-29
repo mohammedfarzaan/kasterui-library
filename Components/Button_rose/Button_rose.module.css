@@ -1,47 +1,65 @@
 
-/* From Uiverse.io by JaydipPrajapati1910 - Tags: gradient, button, gradients, css */
-.button {
-  font-size: 19px;
-  border-radius: 12px;
-  background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);
-  color: rgb(218, 218, 218);
-  border: none;
-  padding: 2px;
-  font-weight: 800;
+/* From Uiverse.io by 3bdel3ziz-T  - Tags: button, hover, smooth, dark, code, hover button, button hover effect , 2d button */
+.button,
+.button::before {
+  box-sizing: border-box;
+  --col-orange: #d17842;
+  --col-white: #fff;
+  --col-dark: #212121;
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+  fill: var(--col-white);
+  color: var(--col-white);
 
-.button span {
-  border-radius: 10px;
-  padding: 0.8em 1.3em;
-  padding-right: 1.2em;
-  text-shadow: 0px 0px 20px #4b4b4b;
-  width: 100%;
+  color: var(col-dark);
+  font-family: "arial";
+}
+.button {
+  width: 200px;
+  height: 50px;
   display: flex;
   align-items: center;
-  gap: 12px;
-  transition: all 0.3s;
-  background-image: linear-gradient(to right, #00F260, #f79dee, #0575E6, #64f38c,#e9e93e);
-  -webkit-background-clip: text;
-  color: transparent;
-  background-size: 300%;
-  background-position: -100%;
-  animation: animatedText 3s infinite alternate-reverse;
+  justify-content: center;
+  border: 2px solid transparent;
+  background: var(--col-orange);
+  padding: 8px 50px;
+  position: relative;
+  transition: all 200ms;
+  border-radius: 25px;
+  z-index: 99;
 }
 
-.button-overlay {
+.button:hover {
+  border-color: transparent;
+  color: var(--col-dark);
+  background: transparent;
+}
+
+.button::before {
+  height: fit-content;
+  content: "great work🥳";
   position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: repeating-conic-gradient(rgb(48, 47, 47) 0.0000001%, rgb(51, 51, 51) 0.000104%) 60% 60%/600% 600%;
-  filter: opacity(10%) contrast(105%);
-  -webkit-filter: opacity(10%) contrast(105%);
+  left: 40px;
+  width: 0;
+  overflow: hidden;
+  transition: all 550ms;
+  text-wrap: nowrap;
+  z-index: -1;
 }
 
-@keyframes animatedText {
-  to {
-    background-position: 100%;
-  }
+.button:hover::before {
+  width: 135px;
+  color: var(--col-white);
 }
+
+.button::after {
+  content: "hover me";
+  position: relative;
+}
+
+.button:hover::after {
+  display: none;
+}
+

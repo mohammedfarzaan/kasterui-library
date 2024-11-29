@@ -3,10 +3,8 @@ import styles from "./Button_fruit.module.css";
 
 const Button_fruit = () => (
   <div>
-    <button className={styles["button"]}>
-      <span>Button</span>
-      <div className={styles["overlay"]}></div>
-      <div className={styles["shine"]}></div>
+    <button type="submit" className={styles["button"]}>
+      <span>Hello</span>
     </button>
   </div>
 );
@@ -22,10 +20,8 @@ export default Button_fruit;
 
         const Button_fruit = () => (
          <div>
-          <button className="button">
-  <span>Button</span>
-  <div className="overlay"></div>
-  <div className="shine"></div>
+          <button type="submit" className="button">
+  <span>Hello</span>
 </button>
         </div>
         );

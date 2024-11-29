@@ -1,47 +1,52 @@
 
-/* From Uiverse.io by pranav0s  - Tags: button */
+/* From Uiverse.io by csozidev  - Tags: simple, button, light, challenge, simple button */
 .button {
-  width: fit-content;
-  display: flex;
-  padding: 1.2em 1rem;
   cursor: pointer;
-  gap: 0.4rem;
-  font-weight: bold;
-  border-radius: 30px;
-  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
-  background: linear-gradient(
-      15deg,
-      #880088,
-      #aa2068,
-      #cc3f47,
-      #de6f3d,
-      #f09f33,
-      #de6f3d,
-      #cc3f47,
-      #aa2068,
-      #880088
-    )
-    no-repeat;
-  background-size: 300%;
-  color: #fff;
+  display: flex;
+  height: 70px;
+  width: 205px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   border: none;
-  background-position: left center;
-  box-shadow: 0 30px 10px -20px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s ease;
+  background: linear-gradient(0deg, #ebedeb, #ffffff);
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.3);
 }
 
-.button:hover {
-  background-size: 320%;
-  background-position: right center;
+.button::before {
+  content: "";
+  position: absolute;
+  width: 96%;
+  background: linear-gradient(180deg, #ebedeb, #ffffff);
+  height: 80%;
+  border-radius: 100px;
+  z-index: 5;
 }
 
-.button:hover svg {
-  fill: #fff;
+button::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 6px);
+  background: linear-gradient(0deg, #7e807e, #e3e6e4);
+  height: calc(100% + 6px);
+  z-index: -1;
+  border-radius: 18px;
+  top: -3px;
+  left: -3px;
 }
 
 .button svg {
-  width: 23px;
-  fill: #f09f33;
-  transition: 0.3s ease;
+  stroke-linecap: round;
+  width: 20px;
+  z-index: 10;
+}
+
+.button p {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 20px;
+  z-index: 10;
 }
 

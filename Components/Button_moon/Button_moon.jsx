@@ -3,19 +3,18 @@ import styles from "./Button_moon.module.css";
 
 const Button_moon = () => (
   <div>
-    <a>
-      <svg
-        viewBox="0 0 256 256"
-        height="32"
-        width="38"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M74.34 85.66a8 8 0 0 1 11.32-11.32L120 108.69V24a8 8 0 0 1 16 0v84.69l34.34-34.35a8 8 0 0 1 11.32 11.32l-48 48a8 8 0 0 1-11.32 0ZM240 136v64a16 16 0 0 1-16 16H32a16 16 0 0 1-16-16v-64a16 16 0 0 1 16-16h52.4a4 4 0 0 1 2.83 1.17L111 145a24 24 0 0 0 34 0l23.8-23.8a4 4 0 0 1 2.8-1.2H224a16 16 0 0 1 16 16m-40 32a12 12 0 1 0-12 12a12 12 0 0 0 12-12"
-          fill="currentColor"
-        ></path>
-      </svg>
-    </a>
+    <button className={styles["cssbuttons-io"]}>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0z"></path>
+          <path
+            fill="currentColor"
+            d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+          ></path>
+        </svg>{" "}
+        Code
+      </span>
+    </button>
   </div>
 );
 
@@ -30,18 +29,9 @@ export default Button_moon;
 
         const Button_moon = () => (
          <div>
-          <a
-  ><svg
-    viewBox="0 0 256 256"
-    height="32"
-    width="38"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M74.34 85.66a8 8 0 0 1 11.32-11.32L120 108.69V24a8 8 0 0 1 16 0v84.69l34.34-34.35a8 8 0 0 1 11.32 11.32l-48 48a8 8 0 0 1-11.32 0ZM240 136v64a16 16 0 0 1-16 16H32a16 16 0 0 1-16-16v-64a16 16 0 0 1 16-16h52.4a4 4 0 0 1 2.83 1.17L111 145a24 24 0 0 0 34 0l23.8-23.8a4 4 0 0 1 2.8-1.2H224a16 16 0 0 1 16 16m-40 32a12 12 0 1 0-12 12a12 12 0 0 0 12-12"
-      fill="currentColor"
-    ></path></svg
-></a>
+          <button className="cssbuttons-io">
+  <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"></path></svg> Code</span>
+</button>
         </div>
         );
 

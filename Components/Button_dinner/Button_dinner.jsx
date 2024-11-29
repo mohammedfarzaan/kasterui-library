@@ -3,8 +3,8 @@ import styles from "./Button_dinner.module.css";
 
 const Button_dinner = () => (
   <div>
-    <button>
-      <span></span>button
+    <button className={styles["button"]}>
+      <span>Button</span>
     </button>
   </div>
 );
@@ -20,7 +20,9 @@ export default Button_dinner;
 
         const Button_dinner = () => (
          <div>
-          <button><span></span>button</button>
+          <button className="button">
+  <span>Button</span>
+</button>
         </div>
         );
 

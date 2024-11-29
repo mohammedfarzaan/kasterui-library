@@ -3,11 +3,7 @@ import styles from "./Button_among.module.css";
 
 const Button_among = () => (
   <div>
-    <button>
-      <a href="#">
-        <span>Button</span>
-      </a>
-    </button>
+    <button> Pick up!</button>
   </div>
 );
 
@@ -22,8 +18,7 @@ export default Button_among;
 
         const Button_among = () => (
          <div>
-          <button>
-<a href="#"><span>Button</span></a> 
+          <button> Pick up!
 </button>
         </div>
         );

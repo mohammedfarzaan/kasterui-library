@@ -1,152 +1,205 @@
 
-/* From Uiverse.io by Tsiangana  - Tags: button, modern, social media, follow, hover effect */
-button {
+/* From Uiverse.io by barisdogansutcu  - Tags: youtube, facebook, instagram, button, social media, linkedin, whatsapp, marquee */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+  width: 300px;
+  height: 100px;
   position: relative;
-  padding: 12px 35px;
-  background: #fec195;
-  font-size: 17px;
-  font-weight: 600;
-  color: #fff;
-  border: 3px solid #fec195;
-  border-radius: 19px;
-  box-shadow: 0 0 0 #fec1958c;
-  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  border-radius: 14px;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: 0;
+  width: 40px;
+  height: 96px;
+  background-image: linear-gradient(90deg, #0000001c, transparent);
+  z-index: 2;
+  border-radius: 10px 0 0 10px;
+}
+.content::after {
+  content: "";
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: 0;
+  width: 40px;
+  height: 96px;
+  background-image: linear-gradient(-90deg, #0000001c, transparent);
+  z-index: 9;
+  border-radius: 0 10px 10px 0;
+}
+.basic-marquee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.basic-marquee .button {
+  transition: all 0.3s ease;
+}
+.basic-marquee .button:hover {
+  transform: scale(1.1);
   cursor: pointer;
 }
-
-.star-1 {
+.basic-marquee-1 {
+  animation: marquee 15s linear infinite;
+}
+.basic-marquee-2 {
+  animation: marquee 21s linear infinite;
+}
+.benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  min-width: 900px;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
   position: absolute;
-  top: 20%;
-  left: 20%;
-  width: 25px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
-  z-index: -5;
-  transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  inset: 0;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-.star-2 {
-  position: absolute;
-  top: 45%;
-  left: 45%;
-  width: 15px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
-  z-index: -5;
-  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+.basic-marquee svg {
+  width: 40px;
+}
+.basic-marquee button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cls-1 {
+  fill: #1ab7ea;
 }
 
-.star-3 {
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  width: 5px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
-  z-index: -5;
-  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+.cls-1,
+.cls-2 {
+  fill-rule: evenodd;
 }
 
-.star-4 {
-  position: absolute;
-  top: 20%;
-  left: 40%;
-  width: 8px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
-  z-index: -5;
-  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+.cls-2 {
+  fill: #fff;
 }
 
-.star-5 {
-  position: absolute;
-  top: 25%;
-  left: 45%;
-  width: 15px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
-  z-index: -5;
-  transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+.cls-3 {
+  fill: #ee8208;
+  fill-rule: evenodd;
 }
 
-.star-6 {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  width: 5px;
-  height: auto;
-  filter: drop-shadow(0 0 0 #fffdef);
-  z-index: -5;
-  transition: all 0.8s ease;
+.cls-4 {
+  fill: #fff;
 }
 
-button:hover {
-  background: transparent;
-  color: #fec195;
-  box-shadow: 0 0 25px #fec1958c;
+.cls-5,
+.cls-6 {
+  fill-rule: evenodd;
 }
 
-button:hover .star-1 {
-  position: absolute;
-  top: -80%;
-  left: -30%;
-  width: 25px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
-  z-index: 2;
+.cls-5 {
+  fill: #48dd55;
 }
 
-button:hover .star-2 {
-  position: absolute;
-  top: -40%;
-  left: 16%;
-  width: 15px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
-  z-index: 2;
+.cls-6 {
+  fill: #fff;
 }
 
-button:hover .star-3 {
-  position: absolute;
-  top: 95%;
-  left: 2%;
-  width: 5px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
-  z-index: 2;
+.cls-7 {
+  fill: #0a66c2;
 }
 
-button:hover .star-4 {
-  position: absolute;
-  top: -70%;
-  left: 75%;
-  width: 8px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
-  z-index: 2;
+.cls-7,
+.cls-8 {
+  fill-rule: evenodd;
 }
 
-button:hover .star-5 {
-  position: absolute;
-  top: 35%;
-  left: 115%;
-  width: 15px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
-  z-index: 2;
+.cls-8 {
+  fill: #fff;
 }
 
-button:hover .star-6 {
-  position: absolute;
-  top: 75%;
-  left: 60%;
-  width: 5px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #fffdef);
-  z-index: 2;
+.cls-9 {
+  fill: #10b7f4;
 }
 
-.fil0 {
-  fill: #fffdef;
+.cls-9,
+.cls-10 {
+  fill-rule: evenodd;
+}
+
+.cls-10 {
+  fill: #fff;
+}
+
+.cls-11 {
+  fill: #1da1f2;
+}
+
+.cls-11,
+.cls-12 {
+  fill-rule: evenodd;
+}
+
+.cls-12 {
+  fill: #fff;
+}
+
+.cls-13 {
+  fill: #ea4c89;
+}
+
+.cls-13,
+.cls-14 {
+  fill-rule: evenodd;
+}
+
+.cls-14 {
+  fill: #fff;
+}
+
+.cls-15 {
+  fill: #1769ff;
+}
+
+.cls-15,
+.cls-16 {
+  fill-rule: evenodd;
+}
+
+.cls-16 {
+  fill: #fff;
+}
+
+.cls-17 {
+  fill: #f26522;
+}
+
+.cls-17,
+.cls-18 {
+  fill-rule: evenodd;
+}
+
+.cls-18 {
+  fill: #fff;
 }
 

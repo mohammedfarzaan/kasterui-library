@@ -3,49 +3,18 @@ import styles from "./Loader_job.module.css";
 
 const Loader_job = () => (
   <div>
-    <div className={styles["main"]}>
-      <div className={styles["up"]}>
-        <div className={styles["loaders"]}>
-          <div className={styles["loader"]}></div>
-          <div className={styles["loader"]}></div>
-          <div className={styles["loader"]}></div>
-          <div className={styles["loader"]}></div>
-          <div className={styles["loader"]}></div>
-          <div className={styles["loader"]}></div>
-          <div className={styles["loader"]}></div>
-          <div className={styles["loader"]}></div>
-          <div className={styles["loader"]}></div>
-          <div className={styles["loader"]}></div>
-        </div>
-        <div className={styles["loadersB"]}>
-          <div className={styles["loaderA"]}>
-            <div className={styles["ball0"]}></div>
-          </div>
-          <div className={styles["loaderA"]}>
-            <div className={styles["ball1"]}></div>
-          </div>
-          <div className={styles["loaderA"]}>
-            <div className={styles["ball2"]}></div>
-          </div>
-          <div className={styles["loaderA"]}>
-            <div className={styles["ball3"]}></div>
-          </div>
-          <div className={styles["loaderA"]}>
-            <div className={styles["ball4"]}></div>
-          </div>
-          <div className={styles["loaderA"]}>
-            <div className={styles["ball5"]}></div>
-          </div>
-          <div className={styles["loaderA"]}>
-            <div className={styles["ball6"]}></div>
-          </div>
-          <div className={styles["loaderA"]}>
-            <div className={styles["ball7"]}></div>
-          </div>
-          <div className={styles["loaderA"]}>
-            <div className={styles["ball8"]}></div>
-          </div>
-        </div>
+    <div className={styles["loader"]}>
+      <div className={styles["clockLoader"]}>
+        <div className={styles["clockHand"] + styles["minuteHand"]}></div>
+        <div className={styles["clockHand"] + styles["hourHand"]}></div>
+      </div>
+      <div className={styles["decorativeElementContainer"]}>
+        <div
+          className={styles["decorativeElement"] + styles["decorativeElement1"]}
+        ></div>
+        <div
+          className={styles["decorativeElement"] + styles["decorativeElement2"]}
+        ></div>
       </div>
     </div>
   </div>
@@ -62,49 +31,14 @@ export default Loader_job;
 
         const Loader_job = () => (
          <div>
-          <div className="main">
-  <div className="up">
-    <div className="loaders">
-      <div className="loader"></div>
-      <div className="loader"></div>
-      <div className="loader"></div>
-      <div className="loader"></div>
-      <div className="loader"></div>
-      <div className="loader"></div>
-      <div className="loader"></div>
-      <div className="loader"></div>
-      <div className="loader"></div>
-      <div className="loader"></div>
-    </div>
-    <div className="loadersB">
-      <div className="loaderA">
-        <div className="ball0"></div>
-      </div>
-      <div className="loaderA">
-        <div className="ball1"></div>
-      </div>
-      <div className="loaderA">
-        <div className="ball2"></div>
-      </div>
-      <div className="loaderA">
-        <div className="ball3"></div>
-      </div>
-      <div className="loaderA">
-        <div className="ball4"></div>
-      </div>
-      <div className="loaderA">
-        <div className="ball5"></div>
-      </div>
-      <div className="loaderA">
-        <div className="ball6"></div>
-      </div>
-      <div className="loaderA">
-        <div className="ball7"></div>
-      </div>
-      <div className="loaderA">
-        <div className="ball8"></div>
-      </div>
-    </div>
+          <div className="loader">
+  <div className="clockLoader">
+    <div className="clockHand minuteHand"></div>
+    <div className="clockHand hourHand"></div>
+  </div>
+  <div className="decorativeElementContainer">
+    <div className="decorativeElement decorativeElement1"></div>
+    <div className="decorativeElement decorativeElement2"></div>
   </div>
 </div>
         </div>

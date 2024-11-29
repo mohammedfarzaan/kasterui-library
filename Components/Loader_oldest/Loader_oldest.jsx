@@ -4,7 +4,7 @@ import styles from "./Loader_oldest.module.css";
 const Loader_oldest = () => (
   <div>
     <div className={styles["loader"]}>
-      <div></div>
+      <span>Loading...</span>
     </div>
   </div>
 );
@@ -21,7 +21,7 @@ export default Loader_oldest;
         const Loader_oldest = () => (
          <div>
           <div className="loader">
-    <div></div>
+    <span>Loading...</span>
 </div>
         </div>
         );

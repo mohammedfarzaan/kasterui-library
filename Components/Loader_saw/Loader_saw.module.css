@@ -1,25 +1,48 @@
 
-/* From Uiverse.io by doniaskima - Tags: neumorphism, skeuomorphism, loader */
-.loader {
-  width: fit-content;
-  font-weight: bold;
-  font-family: monospace;
-  white-space: pre;
-  font-size: 30px;
-  line-height: 1.2em;
-  height: 1.2em;
-  overflow: hidden;
+/* From Uiverse.io by Mike11jr - Tags: loader */
+.spinner {
+ width: 60px;
+ height: 60px;
+ position: relative;
 }
 
-.loader:before {
-  content: "Loading...\A⌰oading...\A⌰⍜ading...\A⌰⍜⏃ding...\A⌰⍜⏃⎅ing...\A⌰⍜⏃⎅⟟ng...\A⌰⍜⏃⎅⟟⋏g...\A⌰⍜⏃⎅⟟⋏☌...\A⌰⍜⏃⎅⟟⋏☌⟒..\A⌰⍜⏃⎅⟟⋏☌⟒⏁.\A⌰⍜⏃⎅⟟⋏☌⟒⏁⋔";
-  white-space: pre;
-  display: inline-block;
-  animation: l39 1s infinite steps(11) alternate;
+.spinner .dot {
+ position: absolute;
+ inset: 0;
+ display: flex;
+ justify-content: center;
 }
 
-@keyframes l39 {
-  100% {
-    transform: translateY(-100%)
-  }
+.spinner .dot::after {
+ content: "";
+ width: 7px;
+ height: 7px;
+ border-radius: 50%;
+ background-color: rgb(12, 180, 231);
+}
+
+@keyframes spin {
+ to {
+  transform: rotate(360deg);
+ }
+}
+
+.spinner .dot {
+ animation: spin 2s infinite;
+}
+
+.spinner .dot:nth-child(2) {
+ animation-delay: 100ms;
+}
+
+.spinner .dot:nth-child(3) {
+ animation-delay: 200ms;
+}
+
+.spinner .dot:nth-child(4) {
+ animation-delay: 300ms;
+}
+
+.spinner .dot:nth-child(5) {
+ animation-delay: 400ms;
 }

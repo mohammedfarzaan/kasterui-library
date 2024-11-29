@@ -3,7 +3,7 @@ import styles from "./Button_pile.module.css";
 
 const Button_pile = () => (
   <div>
-    <button>Join now</button>
+    <button>Button</button>
   </div>
 );
 
@@ -19,7 +19,7 @@ export default Button_pile;
         const Button_pile = () => (
          <div>
           <button>
-    Join now
+  Button
 </button>
         </div>
         );

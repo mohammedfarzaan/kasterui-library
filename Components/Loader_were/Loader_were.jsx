@@ -3,13 +3,10 @@ import styles from "./Loader_were.module.css";
 
 const Loader_were = () => (
   <div>
-    <div className={styles["loader"]}>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+    <div className={styles["wrapper"]}>
+      <div className={styles["hoop"]}></div>
+      <div className={styles["sphere1"]}></div>
+      <div className={styles["sphere2"]}></div>
     </div>
   </div>
 );
@@ -25,14 +22,11 @@ export default Loader_were;
 
         const Loader_were = () => (
          <div>
-          <div className="loader">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
+          <div className="wrapper">
+		<div className="hoop"></div>
+		<div className="sphere1"></div>
+		<div className="sphere2"></div>	
+	</div>
         </div>
         );
 

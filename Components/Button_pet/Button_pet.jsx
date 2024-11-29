@@ -3,9 +3,7 @@ import styles from "./Button_pet.module.css";
 
 const Button_pet = () => (
   <div>
-    <button className={styles["btn-12"]}>
-      <span>Button</span>
-    </button>
+    <button>Button</button>
   </div>
 );
 
@@ -20,7 +18,9 @@ export default Button_pet;
 
         const Button_pet = () => (
          <div>
-          <button className="btn-12"><span>Button</span></button>
+          <button>
+  Button
+</button>
         </div>
         );
 

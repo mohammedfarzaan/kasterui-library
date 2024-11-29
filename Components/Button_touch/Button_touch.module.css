@@ -1,55 +1,51 @@
 
-/* From Uiverse.io by SelfMadeSystem - Tags: animation, button, animated, rainbow, codepen */
-/* Yoinked from CodePen, but improved the animation
-so that it is smooth among other more minor things */
-
-.codepen-button {
-  display: block;
-  cursor: pointer;
-  color: white;
-  margin: 0 auto;
+/* From Uiverse.io by MuhammadHasann - Tags: button */
+button {
   position: relative;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 6px;
-  overflow: hidden;
-  padding: 3px;
-  isolation: isolate;
+  padding: 13px 35px;
+  background: #6d7973;
+  font-size: 17px;
+  font-weight: 900;
+  color: #ffffff;
+  border: 2px solid #6d7973;
+  border-radius: 25px;
+  transition: all .3s ease-in-out;
 }
 
-.codepen-button::before {
+button::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 400%;
-  height: 100%;
-  background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
-  background-size: 25% 100%;
-  animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop .75s linear infinite;
-  animation-play-state: paused;
-  translate: -5% 0%;
-  transition: translate 0.25s ease-out;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 124px;
+  height: 45px;
+  border: 3px solid #6d7973;
+  border-radius: 25px;
+  transition: all .3s ease-in-out;
+  z-index: 2;
 }
 
-.codepen-button:hover::before {
-  animation-play-state: running;
-  transition-duration: 0.75s;
-  translate: 0% 0%;
+button:hover::after {
+  animation: radar_45011 1s ease infinite .3s;
 }
 
-@keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+@keyframes radar_45011 {
+  from {
+    opacity: 1;
+    width: 124px;
+    height: 45px;
+    border-radius: 25px;
+  }
+
   to {
-    transform: translateX(-25%);
+    opacity: 0;
+    width: 470px;
+    height: 220px;
+    border-radius: 150px;
   }
 }
 
-.codepen-button span {
-  position: relative;
-  display: block;
-  padding: 1rem 1.5rem;
-  font-size: 1.1rem;
-  background: #000;
-  border-radius: 3px;
-  height: 100%;
+button:active {
+  transform: scale(.9);
 }

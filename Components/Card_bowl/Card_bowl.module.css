@@ -1,0 +1,91 @@
+
+/* From Uiverse.io by Eclairant69  - Tags: simple, material design, green, card */
+.card {
+  background-color: #6ed371;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+li {
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+.fab {
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fab:hover {
+  transform: rotate(360deg);
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #181a18;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+

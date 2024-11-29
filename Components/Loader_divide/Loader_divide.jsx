@@ -3,7 +3,12 @@ import styles from "./Loader_divide.module.css";
 
 const Loader_divide = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["loader-bar"]}></div>
+      <div className={styles["loader-bar"]}></div>
+      <div className={styles["loader-bar"]}></div>
+      <div className={styles["loader-bar"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +23,12 @@ export default Loader_divide;
 
         const Loader_divide = () => (
          <div>
-          <div className="loader"></div>
+          <div className="loader">
+  <div className="loader-bar"></div>
+  <div className="loader-bar"></div>
+  <div className="loader-bar"></div>
+  <div className="loader-bar"></div>
+</div>
         </div>
         );
 

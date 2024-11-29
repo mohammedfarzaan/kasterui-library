@@ -3,7 +3,9 @@ import styles from "./Button_origin.module.css";
 
 const Button_origin = () => (
   <div>
-    <button className={styles["btn"]}>Hover me</button>
+    <div className={styles["btn-wrapper"]}>
+      <button className={styles["btn"]}> button </button>
+    </div>
   </div>
 );
 
@@ -18,9 +20,9 @@ export default Button_origin;
 
         const Button_origin = () => (
          <div>
-          <button className="btn">
-    Hover me
-</button>
+          <div className="btn-wrapper">
+  <button className="btn"> button </button>
+</div>
         </div>
         );
 

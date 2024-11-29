@@ -1,43 +1,31 @@
 
-/* From Uiverse.io by Yaya12085 - Tags: icon, twitter, button, connect */
-button {
-  max-width: 320px;
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  padding: 0.875rem 72px 0.875rem 1.75rem;
-  background-color: #039be5;
-  background-image: linear-gradient(to top right, #039be5,#29b6f6);
-  color: #ffffff;
-  font-size: 15px;
-  line-height: 1.25rem;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  vertical-align: middle;
-  align-items: center;
-  border-radius: 0.5rem;
-  gap: 0.75rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+/* From Uiverse.io by AndiBumann  - Tags: animation, gradient, button */
+.join-now-button {
+  background-color: #ff69b4; /* Grundfarbe (Pink) */
+  background-image: linear-gradient(
+    to right,
+    #ff69b4 0%,
+    #ffffff 25%,
+    #f00 50%,
+    #ffa500 75%,
+    #ff69b4 100%
+  ); /* Farbverlauf */
+  background-size: 200% 100%; /* Größe des Farbverlaufs */
+  background-position: left; /* Position des Farbverlaufs */
+  transition: background-position 0.3s; /* Animation des Farbverlaufs */
+  padding: 10px 20px;
   border: none;
-  transition: all .6s  ease;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Schatteneffekt */
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
-button span {
-  background-color: rgb(3 155 229);
-  display: grid;
-  position: absolute;
-  right: 0;
-  place-items: center;
-  width: 3rem;
-  height: 100%;
+.join-now-button:hover {
+  background-position: right; /* Animation des Farbverlaufs */
 }
 
-button span svg {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-button:hover {
-  box-shadow: 0 4px 30px  rgba(4, 175, 255, .1), 0 2px 30px rgba(11, 158, 255, 0.06);
-}

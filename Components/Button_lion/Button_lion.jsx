@@ -3,8 +3,10 @@ import styles from "./Button_lion.module.css";
 
 const Button_lion = () => (
   <div>
-    <button className={styles["button"]}>
-      <span className={styles["button-content"]}>Wavy Button</span>
+    <button>
+      {" "}
+      Button
+      <span></span>
     </button>
   </div>
 );
@@ -20,8 +22,8 @@ export default Button_lion;
 
         const Button_lion = () => (
          <div>
-          <button className="button">
-  <span className="button-content">Wavy Button</span>
+          <button> Button
+  <span></span>
 </button>
         </div>
         );

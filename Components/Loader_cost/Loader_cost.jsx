@@ -3,7 +3,9 @@ import styles from "./Loader_cost.module.css";
 
 const Loader_cost = () => (
   <div>
-    <div className={styles["spinner"]}></div>
+    <div className={styles["spinner"]}>
+      <div className={styles["spinnerin"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +20,9 @@ export default Loader_cost;
 
         const Loader_cost = () => (
          <div>
-          <div className="spinner"></div>
+          <div className="spinner">
+    <div className="spinnerin"></div>
+</div>
         </div>
         );
 

@@ -3,7 +3,23 @@ import styles from "./Button_drawn.module.css";
 
 const Button_drawn = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <ul className={styles["ul"]}>
+      <li className={styles["li"]}>
+        <button className={styles["button"]}>
+          <p className={styles["p"]}>Home</p>
+        </button>
+      </li>
+      <li className={styles["li"]}>
+        <button className={styles["button"]}>
+          <p className={styles["p"]}>Store</p>
+        </button>
+      </li>
+      <li className={styles["li"]}>
+        <button className={styles["button"]}>
+          <p className={styles["p"]}>Settings</p>
+        </button>
+      </li>
+    </ul>
   </div>
 );
 
@@ -18,7 +34,17 @@ export default Button_drawn;
 
         const Button_drawn = () => (
          <div>
-          <button className="button">Button</button>
+          <ul className="ul">
+  <li className="li">
+    <button className="button"><p className="p">Home</p></button>
+  </li>
+  <li className="li">
+    <button className="button"><p className="p">Store</p></button>
+  </li>
+  <li className="li">
+    <button className="button"><p className="p">Settings</p></button>
+  </li>
+</ul>
         </div>
         );
 

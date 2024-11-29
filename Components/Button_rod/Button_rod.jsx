@@ -3,10 +3,7 @@ import styles from "./Button_rod.module.css";
 
 const Button_rod = () => (
   <div>
-    <button className={styles["bt"]} id="bt">
-      <span className={styles["msg"]} id="msg"></span>
-      SEND
-    </button>
+    <button className={styles["btn"]}>Hover Me</button>
   </div>
 );
 
@@ -21,10 +18,7 @@ export default Button_rod;
 
         const Button_rod = () => (
          <div>
-          <button className="bt" id="bt">
-    <span className="msg" id="msg"></span>
-    SEND
-</button>
+          <button className="btn">Hover Me</button>
         </div>
         );
 

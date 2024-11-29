@@ -3,16 +3,10 @@ import styles from "./Loader_spell.module.css";
 
 const Loader_spell = () => (
   <div>
-    <div className={styles["loader"]}>
-      <span className={styles["l"]}>L</span>
-      <span className={styles["o"]}>o</span>
-      <span className={styles["a"]}>a</span>
-      <span className={styles["d"]}>d</span>
-      <span className={styles["i"]}>i</span>
-      <span className={styles["n"]}>n</span>
-      <span className={styles["g"]}>g</span>
-      <span className={styles["d1"]}>.</span>
-      <span className={styles["d2"]}>.</span>
+    <div className={styles["loading"]}>
+      <div className={styles["i"]}></div>
+      <div className={styles["a"]}></div>
+      <div className={styles["u"]}></div>
     </div>
   </div>
 );
@@ -28,16 +22,10 @@ export default Loader_spell;
 
         const Loader_spell = () => (
          <div>
-          <div className="loader">
-  <span className="l">L</span>
-  <span className="o">o</span>
-  <span className="a">a</span>
-  <span className="d">d</span>
-  <span className="i">i</span>
-  <span className="n">n</span>
-  <span className="g">g</span>
-  <span className="d1">.</span>
-  <span className="d2">.</span>
+          <div className="loading">
+    <div className="i"></div>
+    <div className="a"></div>
+    <div className="u"></div>
 </div>
         </div>
         );

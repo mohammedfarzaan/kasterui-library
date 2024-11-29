@@ -3,9 +3,11 @@ import styles from "./Button_bend.module.css";
 
 const Button_bend = () => (
   <div>
-    <button className={styles["vlrt"]}>
-      <span className={styles["green"]}></span>Hover effect
-    </button>
+    <div className={styles["notification"]}>
+      <div className={styles["bell-container"]}>
+        <div className={styles["bell"]}></div>
+      </div>
+    </div>
   </div>
 );
 
@@ -20,7 +22,11 @@ export default Button_bend;
 
         const Button_bend = () => (
          <div>
-          <button className="vlrt"><span className="green"></span>Hover effect</button>
+          <div className="notification">
+  <div className="bell-container">
+    <div className="bell"></div>
+  </div>
+</div>
         </div>
         );
 

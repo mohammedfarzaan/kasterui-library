@@ -1,64 +1,43 @@
 
-/* From Uiverse.io by Tsiangana - Tags: animation, button, hover, space, download, futuristic, gradients, hover button */
-.botao {
-  width: 125px;
-  height: 45px;
-  border-radius: 20px;
-  border: none;
-  box-shadow: 1px 1px rgba(107, 221, 215, 0.37);
-  padding: 5px 10px;
-  background: rgb(47,93,197);
-  background: linear-gradient(160deg, rgba(47,93,197,1) 0%, rgba(46,86,194,1) 5%, rgba(47,93,197,1) 11%, rgba(59,190,230,1) 57%, rgba(0,212,255,1) 71%);
-  color: #fff;
-  font-family: Roboto, sans-serif;
-  font-weight: 505;
-  font-size: 16px;
-  line-height: 1;
-  cursor: pointer;
-  filter: drop-shadow(0 0 10px rgba(59, 190, 230, 0.568));
-  transition: .5s linear;
+/* From Uiverse.io by kevkevkevin - Tags: button, hover, creative, css, css effect, hoverme */
+.button {
+  border: 2px solid #246bfd;
+  color: #101a29;
+  line-height: 52px;
+  border-radius: 30px;
+  font-weight: 600;
+  height: 55px;
+  overflow: hidden;
+  padding: 0 30px;
+  position: relative;
+  transition: all .5s ease;
+  z-index: 0;
 }
 
-.botao .mysvg {
-  display: none;
-}
-
-.botao:hover {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  transition: .5s linear;
-}
-
-.botao:hover .texto {
-  display: none;
-}
-
-.botao:hover .mysvg {
-  display: inline;
-}
-
-.botao:hover::before {
-  content: '';
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  width: 100%;
+button:after {
+  content: "";
   height: 100%;
-  border: 3.5px solid transparent;
-  border-top: 3.5px solid #fff;
-  border-right: 3.5px solid #fff;
-  border-radius: 50%;
-  animation: animateC 2s linear infinite;
+  left: -35%;
+  position: absolute;
+  top: 0;
+  background: #246bfd;
+  -webkit-transform: skew(30deg);
+  transform: skew(30deg);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  transition: all .3s ease-in;
+  transition-duration: .6s;
+  width: 0;
+  z-index: -1;
 }
 
-@keyframes animateC {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+button:hover {
+  color: #fff;
+  background-color: #ffffff00;
+  border-color: #ffffff00;
 }
 
+button:hover:after {
+  height: 100%;
+  width: 135%;
+}

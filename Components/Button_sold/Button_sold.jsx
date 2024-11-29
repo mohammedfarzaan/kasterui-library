@@ -3,7 +3,10 @@ import styles from "./Button_sold.module.css";
 
 const Button_sold = () => (
   <div>
-    <button> Hover me</button>
+    <button className={styles["btn"]}>
+      <span className={styles["btn__visible"]}>Buy Now</span>
+      <span className={styles["btn__invisible"]}>Only 2 Left</span>
+    </button>
   </div>
 );
 
@@ -18,7 +21,9 @@ export default Button_sold;
 
         const Button_sold = () => (
          <div>
-          <button> Hover me
+          <button className="btn">
+    <span className="btn__visible">Buy Now</span>
+    <span className="btn__invisible">Only 2 Left</span>
 </button>
         </div>
         );

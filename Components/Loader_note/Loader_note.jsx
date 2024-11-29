@@ -3,10 +3,13 @@ import styles from "./Loader_note.module.css";
 
 const Loader_note = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["box"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["triangle"]}></div>
+    <div id="container">
+      <label className={styles["loading-title"]}>Loading ...</label>
+      <span className={styles["loading-circle"] + styles["sp1"]}>
+        <span className={styles["loading-circle"] + styles["sp2"]}>
+          <span className={styles["loading-circle"] + styles["sp3"]}></span>
+        </span>
+      </span>
     </div>
   </div>
 );
@@ -22,10 +25,13 @@ export default Loader_note;
 
         const Loader_note = () => (
          <div>
-          <div className="loader">
-  <div className="box"></div>
-  <div className="circle"></div>
-  <div className="triangle"></div>
+          <div id="container">
+  <label className="loading-title">Loading ...</label>
+  <span className="loading-circle sp1">
+    <span className="loading-circle sp2">
+      <span className="loading-circle sp3"></span>
+    </span>
+  </span>
 </div>
         </div>
         );

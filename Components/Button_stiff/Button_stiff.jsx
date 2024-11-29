@@ -3,7 +3,7 @@ import styles from "./Button_stiff.module.css";
 
 const Button_stiff = () => (
   <div>
-    <button>Hover</button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_stiff;
 
         const Button_stiff = () => (
          <div>
-          <button>
-    Hover
-</button>
+          <button className="button">Button</button>
         </div>
         );
 

@@ -3,33 +3,8 @@ import styles from "./Loader_tail.module.css";
 
 const Loader_tail = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["loader-inner"]}>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-      </div>
+    <div>
+      <div className={styles["loader"]}></div>
     </div>
   </div>
 );
@@ -45,33 +20,8 @@ export default Loader_tail;
 
         const Loader_tail = () => (
          <div>
-          <div className="loader">
-  <div className="loader-inner"> 
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-  </div>
+          <div>
+<div className="loader"></div>
 </div>
         </div>
         );

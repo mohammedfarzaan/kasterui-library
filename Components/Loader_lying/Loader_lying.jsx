@@ -3,24 +3,13 @@ import styles from "./Loader_lying.module.css";
 
 const Loader_lying = () => (
   <div>
-    <div className={styles["wrapper"]}>
-      <div className={styles["cloud"]}>
-        <div className={styles["cloud_left"]}></div>
-        <div className={styles["cloud_right"]}></div>
-      </div>
-      <div className={styles["rain"]}>
-        <div className={styles["drop"]}></div>
-        <div className={styles["drop"]}></div>
-        <div className={styles["drop"]}></div>
-        <div className={styles["drop"]}></div>
-        <div className={styles["drop"]}></div>
-      </div>
-      <div className={styles["surface"]}>
-        <div className={styles["hit"]}></div>
-        <div className={styles["hit"]}></div>
-        <div className={styles["hit"]}></div>
-        <div className={styles["hit"]}></div>
-        <div className={styles["hit"]}></div>
+    <div className={styles["loader-wrapper"]}>
+      <div className={styles["packman"]}></div>
+      <div className={styles["dots"]}>
+        <div className={styles["dot"]}></div>
+        <div className={styles["dot"]}></div>
+        <div className={styles["dot"]}></div>
+        <div className={styles["dot"]}></div>
       </div>
     </div>
   </div>
@@ -37,24 +26,13 @@ export default Loader_lying;
 
         const Loader_lying = () => (
          <div>
-          <div className="wrapper">
-  <div className="cloud">
-    <div className="cloud_left"></div>
-    <div className="cloud_right"></div>
-  </div>
-  <div className="rain">
-    <div className="drop"></div>
-    <div className="drop"></div>
-    <div className="drop"></div>
-    <div className="drop"></div>
-    <div className="drop"></div>
-  </div>
-  <div className="surface">
-    <div className="hit"></div>
-    <div className="hit"></div>
-    <div className="hit"></div>
-    <div className="hit"></div>
-    <div className="hit"></div>
+          <div className="loader-wrapper">
+  <div className="packman"></div>
+  <div className="dots">
+    <div className="dot"></div>
+    <div className="dot"></div>
+    <div className="dot"></div>
+    <div className="dot"></div>
   </div>
 </div>
         </div>

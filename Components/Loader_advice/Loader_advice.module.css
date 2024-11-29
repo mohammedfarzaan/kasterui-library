@@ -1,87 +1,74 @@
 
-/* From Uiverse.io by abrahamcalsin - Tags: loader */
-.jelly-triangle {
-  --uib-size: 2.8rem;
-  --uib-speed: 1.75s;
-  --uib-color: #183153;
-  position: relative;
-  height: var(--uib-size);
-  width: var(--uib-size);
-  filter: url('#uib-jelly-triangle-ooze');
+/* From Uiverse.io by JkHuger - Tags: loader */
+.triangle {
+  background-color: transparent;
+  height: 0px;
+  width: 0px;
+  border-style: solid;
+  border-width: 50px 50px 50px 50px;
+  border-radius: 2px;
+  border-color: #00ff83 #00e676 #00cc69 #00e676;
+  animation: animtrgl 3s infinite ease;
 }
 
-.jelly-triangle__dot,
-.jelly-triangle::before,
-.jelly-triangle::after {
-  content: '';
+.text {
+  font-family: 'Staatliches', cursive;
+  color: white;
+  font-size: 25px;
+  width: 250px;
+  text-align: center;
+  display: block;
+  height: 50px;
   position: absolute;
-  width: 33%;
-  height: 33%;
-  background: var(--uib-color);
-  border-radius: 100%;
-  box-shadow: 0 0 20px rgba(18, 31, 53, 0.3);
+  animation: textload 3s infinite ease;
+  text-shadow: 0 0 4px black;
 }
 
-.jelly-triangle__dot {
-  top: 6%;
-  left: 30%;
-  animation: grow7132 var(--uib-speed) ease infinite;
-}
+@keyframes textload {
+  0% {
+    top: calc(50% + 100px);
+  }
 
-.jelly-triangle::before {
-  bottom: 6%;
-  right: 0;
-  animation: grow7132 var(--uib-speed) ease calc(var(--uib-speed) * -0.666)
-    infinite;
-}
+  25% {
+    top: calc(50% + 85px);
+  }
 
-.jelly-triangle::after {
-  bottom: 6%;
-  left: 0;
-  animation: grow7132 var(--uib-speed) ease calc(var(--uib-speed) * -0.333)
-    infinite;
-}
+  50% {
+    top: calc(50% + 100px);
+  }
 
-.jelly-triangle__traveler {
-  position: absolute;
-  top: 6%;
-  left: 30%;
-  width: 33%;
-  height: 33%;
-  background: var(--uib-color);
-  border-radius: 100%;
-  animation: triangulate6214 var(--uib-speed) ease infinite;
-}
+  75% {
+    top: calc(50% + 85px);
+  }
 
-.jelly-maker {
-  width: 0;
-  height: 0;
-  position: absolute;
-}
-
-@keyframes triangulate6214 {
-  0%,
   100% {
-    transform: none;
-  }
-
-  33.333% {
-    transform: translate(120%, 175%);
-  }
-
-  66.666% {
-    transform: translate(-95%, 175%);
+    top: calc(50% + 100px);
   }
 }
 
-@keyframes grow7132 {
-  0%,
-  100% {
-    transform: scale(1.5);
+@keyframes animtrgl {
+  0% {
+    border-width: 50px 75px 50px 25px;
+    transform: scale(2);
   }
 
-  20%,
-  70% {
-    transform: none;
+  25% {
+    border-width: 25px 50px 75px 50px;
+    transform: scale(1.75);
+  }
+
+  50% {
+    border-width: 50px 25px 50px 75px;
+    transform: scale(2);
+  }
+
+  75% {
+    border-width: 75px 50px 25px 50px;
+    transform: scale(1.75);
+  }
+
+  100% {
+    border-width: 50px 75px 50px 25px;
+    transform: scale(2);
   }
 }

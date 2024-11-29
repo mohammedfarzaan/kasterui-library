@@ -1,27 +1,45 @@
 
-/* From Uiverse.io by satyamchaudharydev - Tags: loader */
-.ball {
- --size: 20px;
- --timing: 0.7s;
- --displace: 70px;
- border-radius: 50%;
- width: var(--size);
- height: var(--size);
- background: #000;
- margin-right: var(--displace);
- animation: animation321 var(--timing) infinite alternate
-    cubic-bezier(0.68, -0.55, 0.265, 1.55);
+/* From Uiverse.io by vinodjangid07  - Tags: animation, loading, loader, book, flip, loading animation */
+.loader {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --book-color: #f1775b;
+  --book-cover-color: #506c86;
 }
-
-@keyframes animation321 {
- 0% {
-  background: #4284f3;
-  transform: translateX(var(--displace));
- }
-
- 100% {
-  background: #ea4335;
-  transform: translateX(00px);
- }
+.book {
+  width: 150px;
+  height: 13px;
+  background-color: var(--book-color);
+  border-bottom: 2px solid var(--book-cover-color);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+}
+.page {
+  width: 50%;
+  height: 2px;
+  background-color: var(--book-color);
+  animation: paging 0.7s ease-out infinite;
+  transform-origin: left;
+}
+.page2 {
+  width: 50%;
+  height: 2px;
+  background-color: var(--book-color);
+  animation: paging 0.8s ease-out infinite;
+  transform-origin: left;
+  position: absolute;
+}
+@keyframes paging {
+  10% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-180deg);
+  }
 }
 

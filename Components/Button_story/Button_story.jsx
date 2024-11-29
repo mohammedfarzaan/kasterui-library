@@ -3,7 +3,13 @@ import styles from "./Button_story.module.css";
 
 const Button_story = () => (
   <div>
-    <button className={styles["button"]}>Join Today ➞</button>
+    <div className={styles["background"]}>
+      <button className={styles["menu__icon"]}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 );
 
@@ -18,7 +24,13 @@ export default Button_story;
 
         const Button_story = () => (
          <div>
-          <button className="button">Join Today ➞</button>
+          <div className="background">
+  <button className="menu__icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</div>
         </div>
         );
 

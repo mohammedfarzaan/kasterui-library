@@ -3,7 +3,11 @@ import styles from "./Loader_frame.module.css";
 
 const Loader_frame = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["box1"]}></div>
+      <div className={styles["box2"]}></div>
+      <div className={styles["box3"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +22,11 @@ export default Loader_frame;
 
         const Loader_frame = () => (
          <div>
-          <div className="loader"></div>
+          <div className="loader">
+  <div className="box1"></div>
+  <div className="box2"></div>
+  <div className="box3"></div>
+</div>
         </div>
         );
 

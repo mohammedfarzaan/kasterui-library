@@ -3,32 +3,48 @@ import styles from "./Button_size.module.css";
 
 const Button_size = () => (
   <div>
-    <div className={styles["hamburger"]}>
-      <input className={styles["checkbox"]} type="checkbox" />
-      <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
-        <path
-          className="lineTop line"
-          strokeLinecap="round"
-          strokeWidth="4"
-          stroke="black"
-          d="M6 11L44 11"
-        ></path>
-        <path
-          strokeLinecap="round"
-          strokeWidth="4"
-          stroke="black"
-          d="M6 24H43"
-          className="lineMid line"
-        ></path>
-        <path
-          strokeLinecap="round"
-          strokeWidth="4"
-          stroke="black"
-          d="M6 37H43"
-          className="lineBottom line"
-        ></path>
-      </svg>
-    </div>
+    <button className={styles["btn"]}>
+      <div className={styles["wrapper"]}>
+        <p className={styles["text"]}>Flowers </p>
+
+        <div className={styles["flower"] + styles["flower1"]}>
+          <div className={styles["petal"] + styles["one"]}></div>
+          <div className={styles["petal"] + styles["two"]}></div>
+          <div className={styles["petal"] + styles["three"]}></div>
+          <div className={styles["petal"] + styles["four"]}></div>
+        </div>
+        <div className={styles["flower"] + styles["flower2"]}>
+          <div className={styles["petal"] + styles["one"]}></div>
+          <div className={styles["petal"] + styles["two"]}></div>
+          <div className={styles["petal"] + styles["three"]}></div>
+          <div className={styles["petal"] + styles["four"]}></div>
+        </div>
+        <div className={styles["flower"] + styles["flower3"]}>
+          <div className={styles["petal"] + styles["one"]}></div>
+          <div className={styles["petal"] + styles["two"]}></div>
+          <div className={styles["petal"] + styles["three"]}></div>
+          <div className={styles["petal"] + styles["four"]}></div>
+        </div>
+        <div className={styles["flower"] + styles["flower4"]}>
+          <div className={styles["petal"] + styles["one"]}></div>
+          <div className={styles["petal"] + styles["two"]}></div>
+          <div className={styles["petal"] + styles["three"]}></div>
+          <div className={styles["petal"] + styles["four"]}></div>
+        </div>
+        <div className={styles["flower"] + styles["flower5"]}>
+          <div className={styles["petal"] + styles["one"]}></div>
+          <div className={styles["petal"] + styles["two"]}></div>
+          <div className={styles["petal"] + styles["three"]}></div>
+          <div className={styles["petal"] + styles["four"]}></div>
+        </div>
+        <div className={styles["flower"] + styles["flower6"]}>
+          <div className={styles["petal"] + styles["one"]}></div>
+          <div className={styles["petal"] + styles["two"]}></div>
+          <div className={styles["petal"] + styles["three"]}></div>
+          <div className={styles["petal"] + styles["four"]}></div>
+        </div>
+      </div>
+    </button>
   </div>
 );
 
@@ -43,32 +59,48 @@ export default Button_size;
 
         const Button_size = () => (
          <div>
-          <div className="hamburger">
-  <input className="checkbox" type="checkbox" />
-  <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
-    <path
-      className="lineTop line"
-      strokeLinecap="round"
-      strokeWidth="4"
-      stroke="black"
-      d="M6 11L44 11"
-    ></path>
-    <path
-      strokeLinecap="round"
-      strokeWidth="4"
-      stroke="black"
-      d="M6 24H43"
-      className="lineMid line"
-    ></path>
-    <path
-      strokeLinecap="round"
-      strokeWidth="4"
-      stroke="black"
-      d="M6 37H43"
-      className="lineBottom line"
-    ></path>
-  </svg>
-</div>
+          <button className="btn">
+    <div className="wrapper">
+        <p className="text">Flowers </p>
+
+        <div className="flower flower1">
+            <div className="petal one"></div>
+            <div className="petal two"></div>
+            <div className="petal three"></div>
+            <div className="petal four"></div>
+        </div>
+        <div className="flower flower2">
+            <div className="petal one"></div>
+            <div className="petal two"></div>
+            <div className="petal three"></div>
+            <div className="petal four"></div>
+        </div>
+        <div className="flower flower3">
+            <div className="petal one"></div>
+            <div className="petal two"></div>
+            <div className="petal three"></div>
+            <div className="petal four"></div>
+        </div>
+        <div className="flower flower4">
+            <div className="petal one"></div>
+            <div className="petal two"></div>
+            <div className="petal three"></div>
+            <div className="petal four"></div>
+        </div>
+        <div className="flower flower5">
+            <div className="petal one"></div>
+            <div className="petal two"></div>
+            <div className="petal three"></div>
+            <div className="petal four"></div>
+        </div>
+        <div className="flower flower6">
+            <div className="petal one"></div>
+            <div className="petal two"></div>
+            <div className="petal three"></div>
+            <div className="petal four"></div>
+        </div>
+    </div>
+</button>
         </div>
         );
 

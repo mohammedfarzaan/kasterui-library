@@ -3,7 +3,9 @@ import styles from "./Button_speed.module.css";
 
 const Button_speed = () => (
   <div>
-    <button className={styles["button"]}>Click Me</button>
+    <button>
+      <span>Hover</span>
+    </button>
   </div>
 );
 
@@ -18,8 +20,8 @@ export default Button_speed;
 
         const Button_speed = () => (
          <div>
-          <button className="button">
-  Click Me
+          <button>
+  <span>Hover</span>
 </button>
         </div>
         );

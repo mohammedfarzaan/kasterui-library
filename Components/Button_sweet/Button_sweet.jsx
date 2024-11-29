@@ -3,9 +3,7 @@ import styles from "./Button_sweet.module.css";
 
 const Button_sweet = () => (
   <div>
-    <button className={styles["button"]}>
-      <p className={styles["text-inside"]}>HOVER ME</p>
-    </button>
+    <button> Hover me.</button>
   </div>
 );
 
@@ -20,8 +18,7 @@ export default Button_sweet;
 
         const Button_sweet = () => (
          <div>
-          <button className="button">
-  <p className="text-inside">HOVER ME</p>
+          <button> Hover me.
 </button>
         </div>
         );

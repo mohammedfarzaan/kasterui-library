@@ -1,51 +1,61 @@
 
-/* From Uiverse.io by Shashvhat - Tags: simple, animation, button, hover, neon */
-.button {
-  padding: 0.6em 0.9em;
-  font-size: 1em;
-  background-color: transparent;
-  border: 0.2em solid;
-  border-color: #00ffff #04ff00 #0051ff #d400ff;
-  border-radius: 1.5em;
-  color: #fff;
-  cursor: pointer;
-  transition: transform 0.2s ease, border-radius 0.2s ease, color 0.2s ease,
-    border-shadow 0.2s ease, border-style 0.2s ease;
+/* From Uiverse.io by JaydipPrajapati1910 - Tags: blue, button, Discord, join now */
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: white;
+  text-shadow: 2px 2px #000;
+  text-transform: uppercase;
+  border: solid 2px #fff;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: rgba(88, 101, 242, 1);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all .5s ease;
 }
 
-.button:active {
+button:active {
+  transform: scale(.9);
+  transition: all 100ms ease;
 }
 
-.button:hover {
-  transform: scale(1.3);
-  border-radius: 1.5em;
-  animation: btn-animation 0.4s 0.2s linear infinite;
-  color: #00ddff;
+button svg {
+  transition: all .5s ease;
+  z-index: 2;
 }
 
-@keyframes btn-animation {
-  0% {
-    border-color: #00ffff #04ff00 #0051ff #d400ff;
-    transform: rotate(5deg) scale(1.3);
-  }
-
-  25% {
-    border-color: #d400ff #00ffff #04ff00 #0051ff;
-    transform: rotate(-5deg) scale(1.3);
-  }
-
-  50% {
-    border-color: #0051ff #d400ff #00ffff #04ff00;
-    transform: rotate(5deg) scale(1.3);
-  }
-
-  75% {
-    border-color: #04ff00 #0051ff #d400ff #00ffff;
-    transform: rotate(-5deg) scale(1.3);
-  }
-
-  100% {
-    border-color: #00ffff #04ff00 #0051ff #d400ff;
-    transform: rotate(5deg) scale(1.3);
-  }
+.play {
+  transition: all .5s ease;
+  transition-delay: 300ms;
 }
+
+button:hover svg {
+  transform: scale(1.3) translate(-40%);
+}
+
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(290%);
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+button:hover .now {
+  transform: translateX(90%);
+  transition-delay: 300ms;
+}
+
+button:hover .play {
+  transform: translateX(200%);
+  transition-delay: 300ms;
+}
+
+
+

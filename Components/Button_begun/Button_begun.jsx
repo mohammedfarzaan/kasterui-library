@@ -1,36 +1,97 @@
 import React from "react";
+import styles from "./Button_begun.module.css";
 
 const Button_begun = () => (
   <div>
-    <div className="group relative">
-      <button>
-        <svg
-          strokeLinejoin="round"
-          strokeLinecap="round"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-          viewBox="0 0 24 24"
-          className="w-8 hover:scale-125 duration-200 hover:stroke-blue-500"
-        >
-          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-        </svg>
-      </button>
-      <span
-        className="absolute -top-14 left-[50%] -translate-x-[50%] 
-  z-20 origin-left scale-0 px-3 rounded-lg border 
-  border-gray-300 bg-white py-2 text-sm font-bold
-  shadow-md transition-all duration-300 ease-in-out 
-  group-hover:scale-100"
-      >
-        GitHub<span></span>
-      </span>
+    <div className={styles["menu"]}>
+      <div className={styles["item"]}>
+        <a href="#" className={styles["link"]}>
+          <span> Our Services </span>
+          <svg viewBox="0 0 360 360" xml:space="preserve">
+            <g id="SVGRepo_iconCarrier">
+              <path
+                id="XMLID_225_"
+                d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+              ></path>
+            </g>
+          </svg>
+        </a>
+        <div className={styles["submenu"]}>
+          <div className={styles["submenu-item"]}>
+            <a href="#" className={styles["submenu-link"]}>
+              {" "}
+              Development{" "}
+            </a>
+          </div>
+          <div className={styles["submenu-item"]}>
+            <a href="#" className={styles["submenu-link"]}>
+              {" "}
+              Design{" "}
+            </a>
+          </div>
+          <div className={styles["submenu-item"]}>
+            <a href="#" className={styles["submenu-link"]}>
+              {" "}
+              Marketing{" "}
+            </a>
+          </div>
+          <div className={styles["submenu-item"]}>
+            <a href="#" className={styles["submenu-link"]}>
+              {" "}
+              SEO{" "}
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 );
 
 export default Button_begun;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_begun = () => (
+         <div>
+          <div className="menu">
+  <div className="item">
+    <a href="#" className="link">
+      <span> Our Services </span>
+      <svg viewBox="0 0 360 360" xml:space="preserve">
+        <g id="SVGRepo_iconCarrier">
+          <path
+            id="XMLID_225_"
+            d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+          ></path>
+        </g>
+      </svg>
+    </a>
+    <div className="submenu">
+      <div className="submenu-item">
+        <a href="#" className="submenu-link"> Development </a>
+      </div>
+      <div className="submenu-item">
+        <a href="#" className="submenu-link"> Design </a>
+      </div>
+      <div className="submenu-item">
+        <a href="#" className="submenu-link"> Marketing </a>
+      </div>
+      <div className="submenu-item">
+        <a href="#" className="submenu-link"> SEO </a>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        );
+
+        export default Button_begun;
+        
+        
+         */
 }

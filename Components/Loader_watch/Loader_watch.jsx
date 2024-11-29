@@ -3,8 +3,8 @@ import styles from "./Loader_watch.module.css";
 
 const Loader_watch = () => (
   <div>
-    <div className={styles["center-body"]}>
-      <div className={styles["loader-shape-3"]}></div>
+    <div className={styles["progress-loader"]}>
+      <div className={styles["progress"]}></div>
     </div>
   </div>
 );
@@ -20,8 +20,8 @@ export default Loader_watch;
 
         const Loader_watch = () => (
          <div>
-          <div className="center-body">
-  <div className="loader-shape-3"></div>
+          <div className="progress-loader">
+  <div className="progress"></div>
 </div>
         </div>
         );

@@ -3,7 +3,11 @@ import styles from "./Button_bag.module.css";
 
 const Button_bag = () => (
   <div>
-    <button>UIVERSE</button>
+    <button className={styles["pushable"]}>
+      <span className={styles["shadow"]}></span>
+      <span className={styles["edge"]}></span>
+      <span className={styles["front"]}>Push Me</span>
+    </button>
   </div>
 );
 
@@ -18,7 +22,13 @@ export default Button_bag;
 
         const Button_bag = () => (
          <div>
-          <button>UIVERSE</button>
+          <button className="pushable">
+      <span className="shadow"></span>
+      <span className="edge"></span>
+      <span className="front">
+        Push Me
+      </span>
+    </button>
         </div>
         );
 

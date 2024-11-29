@@ -3,19 +3,10 @@ import styles from "./Toggle_line.module.css";
 
 const Toggle_line = () => (
   <div>
-    <div>
-      <div className={styles["switch"]}>
-        <input
-          type="checkbox"
-          id="switch1"
-          className={styles["switch-check"]}
-        />
-        <label for="switch1" className={styles["switch-label"]}>
-          Check
-          <span></span>
-        </label>
-      </div>
-    </div>
+    <label className={styles["switch"]}>
+      <input type="checkbox" />
+      <span className={styles["slider"]}></span>
+    </label>
   </div>
 );
 
@@ -30,15 +21,10 @@ export default Toggle_line;
 
         const Toggle_line = () => (
          <div>
-          <div>
-  <div className="switch">
-    <input type="checkbox" id="switch1" className="switch-check" />
-    <label for="switch1" className="switch-label">
-      Check
-      <span></span>
-    </label>
-  </div>
-</div>
+          <label className="switch">
+  <input type="checkbox" />
+  <span className="slider"></span>
+</label>
         </div>
         );
 

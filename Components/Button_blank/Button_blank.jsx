@@ -1,29 +1,39 @@
 import React from "react";
+import styles from "./Button_blank.module.css";
 
 const Button_blank = () => (
   <div>
-    <button className="cursor-pointer flex justify-between bg-gray-800 px-3 py-2 rounded-full text-white tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-mono w-[150px]">
-      Resume
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="2"
-        stroke="currentColor"
-        className="w-5 h-5 animate-bounce"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
-        ></path>
-      </svg>
+    <button>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span> Hover me
     </button>
   </div>
 );
 
 export default Button_blank;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_blank = () => (
+         <div>
+          <button>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span> Hover me
+</button>
+        </div>
+        );
+
+        export default Button_blank;
+        
+        
+         */
 }

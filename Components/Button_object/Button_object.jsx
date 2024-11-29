@@ -3,7 +3,7 @@ import styles from "./Button_object.module.css";
 
 const Button_object = () => (
   <div>
-    <button> Click me !</button>
+    <button>HOVER ME</button>
   </div>
 );
 
@@ -18,7 +18,8 @@ export default Button_object;
 
         const Button_object = () => (
          <div>
-          <button> Click me !
+          <button>
+  HOVER ME
 </button>
         </div>
         );

@@ -3,7 +3,12 @@ import styles from "./Loader_save.module.css";
 
 const Loader_save = () => (
   <div>
-    <div className={styles["spinner"]}></div>
+    <div className={styles["blocks"]}>
+      <div className={styles["block"]}></div>
+      <div className={styles["block"]}></div>
+      <div className={styles["block"]}></div>
+      <div className={styles["block"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +23,12 @@ export default Loader_save;
 
         const Loader_save = () => (
          <div>
-          <div className="spinner"></div>
+          <div className="blocks">
+  <div className="block"></div>
+  <div className="block"></div>
+  <div className="block"></div>
+  <div className="block"></div>
+</div>
         </div>
         );
 

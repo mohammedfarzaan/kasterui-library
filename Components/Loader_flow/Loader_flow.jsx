@@ -4,10 +4,14 @@ import styles from "./Loader_flow.module.css";
 const Loader_flow = () => (
   <div>
     <div className={styles["loader"]}>
-      <span className={styles["item"]}></span>
-      <span className={styles["item"]}></span>
-      <span className={styles["item"]}></span>
-      <span className={styles["item"]}></span>
+      <div className={styles["panWrapper"]}>
+        <div className={styles["pan"]}>
+          <div className={styles["food"]}></div>
+          <div className={styles["panBase"]}></div>
+          <div className={styles["panHandle"]}></div>
+        </div>
+        <div className={styles["panShadow"]}></div>
+      </div>
     </div>
   </div>
 );
@@ -24,10 +28,14 @@ export default Loader_flow;
         const Loader_flow = () => (
          <div>
           <div className="loader">
-  <span className="item"></span>
-  <span className="item"></span>
-  <span className="item"></span>
-  <span className="item"></span>
+  <div className="panWrapper">
+    <div className="pan">
+      <div className="food"></div>
+      <div className="panBase"></div>
+      <div className="panHandle"></div>
+    </div>
+    <div className="panShadow"></div>
+  </div>
 </div>
         </div>
         );

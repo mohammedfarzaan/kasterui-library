@@ -3,28 +3,55 @@ import styles from "./Button_local.module.css";
 
 const Button_local = () => (
   <div>
-    <button className={styles["pushable"]}>
-      <span className={styles["shadow"]}></span>
-      <span className={styles["front"]}>
-        Join Today
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            <path
-              d="M6 12H18M18 12L13 7M18 12L13 17"
-              stroke="#fff"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-          </g>
-        </svg>
-      </span>
+    <button className={styles["container"]}>
+      <strong>SYNTHWAVE</strong>
+      <div id="glow">
+        <div className={styles["circle"]}></div>
+      </div>
+      <div className={styles["inner-container"]}>
+        <div className={styles["fade"]}></div>
+
+        <div className={styles["up-text"]}>
+          <div className={styles["crawl"]}>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+            <div className={styles["grid-item"]}></div>
+          </div>
+        </div>
+      </div>
     </button>
   </div>
 );
@@ -40,28 +67,55 @@ export default Button_local;
 
         const Button_local = () => (
          <div>
-          <button className="pushable">
-  <span className="shadow"></span>
-  <span className="front"
-    >Join Today
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-      <g
-        id="SVGRepo_tracerCarrier"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      ></g>
-      <g id="SVGRepo_iconCarrier">
-        <path
-          d="M6 12H18M18 12L13 7M18 12L13 17"
-          stroke="#fff"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        ></path>
-      </g>
-    </svg>
-  </span>
+          <button className="container">
+  <strong>SYNTHWAVE</strong>
+  <div id="glow">
+    <div className="circle"></div>
+  </div>
+  <div className="inner-container">
+    <div className="fade"></div>
+
+    <div className="up-text">
+      <div className="crawl">
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+      </div>
+    </div>
+  </div>
 </button>
         </div>
         );

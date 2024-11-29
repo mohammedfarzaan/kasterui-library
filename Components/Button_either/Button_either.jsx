@@ -3,7 +3,7 @@ import styles from "./Button_either.module.css";
 
 const Button_either = () => (
   <div>
-    <button>Button</button>
+    <button className={styles["buttonDownload"]}>Download</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_either;
 
         const Button_either = () => (
          <div>
-          <button>
-  Button
-</button>
+          <button className="buttonDownload">Download</button>
         </div>
         );
 

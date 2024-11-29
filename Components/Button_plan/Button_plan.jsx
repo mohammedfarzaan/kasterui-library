@@ -1,15 +1,31 @@
 import React from "react";
+import styles from "./Button_plan.module.css";
 
 const Button_plan = () => (
   <div>
-    <button className="px-12 py-4 rounded-full bg-[#1ED760] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#21e065] transition-colors duration-200">
-      Spotify
-    </button>
+    <button>Click me</button>
   </div>
 );
 
 export default Button_plan;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_plan = () => (
+         <div>
+          <button>
+    Click me
+</button>
+        </div>
+        );
+
+        export default Button_plan;
+        
+        
+         */
 }

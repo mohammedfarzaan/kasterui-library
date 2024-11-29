@@ -3,7 +3,7 @@ import styles from "./Button_like.module.css";
 
 const Button_like = () => (
   <div>
-    <button className={styles["button"]}></button>
+    <button className={styles["click"]}>Click me</button>
   </div>
 );
 
@@ -18,8 +18,7 @@ export default Button_like;
 
         const Button_like = () => (
          <div>
-          <button className="button">
-</button>
+          <button className="click">Click me</button>
         </div>
         );
 

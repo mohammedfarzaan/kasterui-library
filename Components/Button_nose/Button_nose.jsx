@@ -3,8 +3,9 @@ import styles from "./Button_nose.module.css";
 
 const Button_nose = () => (
   <div>
-    <button className={styles["custom-btn"] + styles["btn-2"]}>
-      Read More
+    <button className={styles["button"]}>
+      Get started
+      <span className={styles["button-span"]}> ─ it's free</span>
     </button>
   </div>
 );
@@ -20,7 +21,10 @@ export default Button_nose;
 
         const Button_nose = () => (
          <div>
-          <button className="custom-btn btn-2">Read More</button>
+          <button className="button">
+  Get started
+  <span className="button-span"> ─ it's free</span>
+</button>
         </div>
         );
 

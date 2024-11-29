@@ -3,7 +3,7 @@ import styles from "./Button_drink.module.css";
 
 const Button_drink = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button>Button</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_drink;
 
         const Button_drink = () => (
          <div>
-          <button className="button">
-  Button
-</button>
+          <button>Button</button>
         </div>
         );
 

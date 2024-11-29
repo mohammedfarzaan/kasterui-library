@@ -4,11 +4,39 @@ import styles from "./Loader_stems.module.css";
 const Loader_stems = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["face"]}>
-        <div className={styles["circle"]}></div>
-      </div>
-      <div className={styles["face"]}>
-        <div className={styles["circle"]}></div>
+      <div className={styles["cubes"]}>
+        <div className={styles["cube"]}>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+        </div>
+        <div className={styles["cube"]}>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+        </div>
+        <div className={styles["cube"]}>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+        </div>
+        <div className={styles["cube"]}>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+          <div className={styles["side"]}></div>
+        </div>
       </div>
     </div>
   </div>
@@ -26,12 +54,40 @@ export default Loader_stems;
         const Loader_stems = () => (
          <div>
           <div className="loader">
-    <div className="face">
-        <div className="circle"></div>
+  <div className="cubes">
+    <div className="cube">
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
     </div>
-    <div className="face">
-        <div className="circle"></div>
+    <div className="cube">
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
     </div>
+    <div className="cube">
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
+    </div>
+    <div className="cube">
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
+      <div className="side"></div>
+    </div>
+  </div>
 </div>
         </div>
         );

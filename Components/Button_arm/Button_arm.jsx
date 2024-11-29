@@ -3,11 +3,7 @@ import styles from "./Button_arm.module.css";
 
 const Button_arm = () => (
   <div>
-    <button className={styles["button"]}>
-      <span></span>
-      Button
-      <span></span>
-    </button>
+    <button>START</button>
   </div>
 );
 
@@ -22,10 +18,8 @@ export default Button_arm;
 
         const Button_arm = () => (
          <div>
-          <button className="button">
-  <span></span>
-  Button
-  <span></span>
+          <button>
+  START
 </button>
         </div>
         );

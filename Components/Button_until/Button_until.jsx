@@ -3,11 +3,7 @@ import styles from "./Button_until.module.css";
 
 const Button_until = () => (
   <div>
-    <button className={styles["button"]}>
-      <div className={styles["similar-line"] + styles["line-1"]}></div>
-      <div className={styles["similar-line"] + styles["line-2"]}></div>
-      <div className={styles["similar-line"] + styles["line-3"]}></div>
-    </button>
+    <button> manage</button>
   </div>
 );
 
@@ -22,10 +18,7 @@ export default Button_until;
 
         const Button_until = () => (
          <div>
-          <button className="button">
-  <div className="similar-line line-1"></div>
-  <div className="similar-line line-2"></div>
-  <div className="similar-line line-3"></div>
+          <button> manage
 </button>
         </div>
         );

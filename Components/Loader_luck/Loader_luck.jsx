@@ -3,12 +3,7 @@ import styles from "./Loader_luck.module.css";
 
 const Loader_luck = () => (
   <div>
-    <div className={styles["loading-wave"]}>
-      <div className={styles["loading-bar"]}></div>
-      <div className={styles["loading-bar"]}></div>
-      <div className={styles["loading-bar"]}></div>
-      <div className={styles["loading-bar"]}></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -23,12 +18,7 @@ export default Loader_luck;
 
         const Loader_luck = () => (
          <div>
-          <div className="loading-wave">
-  <div className="loading-bar"></div>
-  <div className="loading-bar"></div>
-  <div className="loading-bar"></div>
-  <div className="loading-bar"></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

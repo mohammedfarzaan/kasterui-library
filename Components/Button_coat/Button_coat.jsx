@@ -1,31 +1,15 @@
 import React from "react";
-import styles from "./Button_coat.module.css";
 
 const Button_coat = () => (
   <div>
-    <button className={styles["button"]}>ALT</button>
+    <button className="animate-pulse bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-red-500 hover:to-purple-500 text-[#11324D] font-bold py-3 px-6 rounded-full shadow-lg hover:text-white transform transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-xl hover:rotate-12 hover:brightness-110">
+      Awesome Button
+    </button>
   </div>
 );
 
 export default Button_coat;
-{
-  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Button_coat = () => (
-         <div>
-          <button className="button">
-ALT
-</button>
-        </div>
-        );
-
-        export default Button_coat;
-        
-        
-         */
+{
+  /* */
 }

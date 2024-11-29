@@ -3,7 +3,35 @@ import styles from "./Loader_middle.module.css";
 
 const Loader_middle = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["rocket"]}>
+      <div className={styles["rocket-body"]}>
+        <div className={styles["body"]}></div>
+        <div className={styles["fin"] + styles["fin-left"]}></div>
+        <div className={styles["fin"] + styles["fin-right"]}></div>
+        <div className={styles["window"]}></div>
+      </div>
+      <div className={styles["exhaust-flame"]}></div>
+      <ul className={styles["exhaust-fumes"]}>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <ul className={styles["star"]}>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
   </div>
 );
 
@@ -18,7 +46,35 @@ export default Loader_middle;
 
         const Loader_middle = () => (
          <div>
-          <div className="loader"></div>
+          <div className="rocket">
+    <div className="rocket-body">
+      <div className="body"></div>
+      <div className="fin fin-left"></div>
+      <div className="fin fin-right"></div>
+      <div className="window"></div>
+    </div>
+    <div className="exhaust-flame"></div>
+    <ul className="exhaust-fumes">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <ul className="star">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
         </div>
         );
 

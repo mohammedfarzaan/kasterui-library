@@ -3,12 +3,7 @@ import styles from "./Loader_might.module.css";
 
 const Loader_might = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["loader-bar"]}></div>
-      <div className={styles["loader-bar"]}></div>
-      <div className={styles["loader-bar"]}></div>
-      <div className={styles["loader-bar"]}></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -23,12 +18,7 @@ export default Loader_might;
 
         const Loader_might = () => (
          <div>
-          <div className="loader">
-  <div className="loader-bar"></div>
-  <div className="loader-bar"></div>
-  <div className="loader-bar"></div>
-  <div className="loader-bar"></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

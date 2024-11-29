@@ -3,12 +3,10 @@ import styles from "./Button_month.module.css";
 
 const Button_month = () => (
   <div>
-    <div className={styles["buttons"]}>
-      <button className={styles["btn"]}>
-        <span></span>
-        <p data-start="good luck!" data-text="start!" data-title="new game"></p>
-      </button>
-    </div>
+    <button className={styles["menu__icon"]}>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 );
 
@@ -23,9 +21,10 @@ export default Button_month;
 
         const Button_month = () => (
          <div>
-          <div className="buttons">
-   <button className="btn"><span></span><p data-start="good luck!" data-text="start!" data-title="new game"></p></button>
-</div>
+          <button className="menu__icon">
+  <span></span>
+  <span></span>
+</button>
         </div>
         );
 

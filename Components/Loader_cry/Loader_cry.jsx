@@ -4,10 +4,7 @@ import styles from "./Loader_cry.module.css";
 const Loader_cry = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["circle"] + styles["circle-1"]}></div>
-      <div className={styles["circle"] + styles["circle-2"]}></div>
-      <div className={styles["circle"] + styles["circle-3"]}></div>
-      <div className={styles["circle"] + styles["circle-4"]}></div>
+      <i></i>
     </div>
   </div>
 );
@@ -23,12 +20,7 @@ export default Loader_cry;
 
         const Loader_cry = () => (
          <div>
-          <div className="loader">
-  <div className="circle circle-1"></div>
-  <div className="circle circle-2"></div>
-  <div className="circle circle-3"></div>
-  <div className="circle circle-4"></div>
-</div>
+          <div className="loader"><i></i></div>
         </div>
         );
 

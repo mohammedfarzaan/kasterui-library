@@ -1,26 +1,35 @@
 import React from "react";
+import styles from "./Button_red.module.css";
 
 const Button_red = () => (
   <div>
-    <button
-      className="inline-block rounded-full border-2 border-rose-500 text-rose-500 hover:border-rose-600 hover:bg-rose-400 hover:bg-opacity-10 hover:text-rose-600 focus:border-rose-700 focus:text-rose-700 active:border-rose-800 active:text-rose-800 dark:border-rose-300 dark:text-rose-300 dark:hover:hover:bg-rose-300 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0"
-      type="button"
-    >
-      <div
-        role="status"
-        className="inline-block h-3 w-3 mr-2 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-      >
-        <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
-          Loading...
-        </span>
-      </div>
-      Loading
+    <button className={styles["download"]}>
+      Download
+      <span className={styles["tooltip"]}>10Mo</span>
     </button>
   </div>
 );
 
 export default Button_red;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_red = () => (
+         <div>
+          <button className="download">
+  Download
+  <span className="tooltip">10Mo</span>
+</button>
+        </div>
+        );
+
+        export default Button_red;
+        
+        
+         */
 }

@@ -1,67 +1,35 @@
 
-/* From Uiverse.io by MuhammadHasann  - Tags: simple, subscription, purple, button, button hover effect  */
-:root {
-  --primary: rgb(122, 48, 143);
-  --light: rgb(199, 95, 228);
-  --text-color: rgb(184, 132, 199);
-}
-
-.button {
-  overflow: hidden;
-  cursor: pointer;
-  position: relative;
-  padding: 0.5rem 1.5rem;
-  width: fit-content;
-  height: fit-content;
-  background-color: rgb(122, 48, 143);
-  font-size: 0.75rem;
-  color: white;
+/* From Uiverse.io by Voxybuns - Tags: button */
+button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
   border: none;
-  border-radius: 0.5rem;
-  box-shadow: 0px 0px 2px 1px rgb(122, 48, 143);
-  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
 }
 
-.button .text-button {
-  position: relative;
-  z-index: 10;
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
 }
 
-.button::before,
-.button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s ease-in-out;
-}
-.button::before {
-  left: 0;
-  background-image: radial-gradient(
-    circle at 0% 45%,
-    rgba(16, 5, 36, 1) 19%,
-    rgba(16, 5, 36, 0.26) 46%,
-    rgba(16, 5, 36, 0) 100%
-  );
-}
-.button::after {
-  right: 0;
-  background-image: radial-gradient(
-    circle at 100% 45%,
-    rgba(16, 5, 36, 1) 19%,
-    rgba(16, 5, 36, 0.26) 46%,
-    rgba(16, 5, 36, 0) 100%
-  );
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
 }
 
-.button:hover {
-  box-shadow: 0px 0px 20px 0 rgb(122, 48, 143);
+button:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
 }
-
-.button:hover::before,
-.button:hover::after {
-  width: 0;
-  opacity: 0;
-}
-

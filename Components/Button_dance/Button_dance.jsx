@@ -3,7 +3,7 @@ import styles from "./Button_dance.module.css";
 
 const Button_dance = () => (
   <div>
-    <button>click me</button>
+    <button>Button</button>
   </div>
 );
 
@@ -19,7 +19,7 @@ export default Button_dance;
         const Button_dance = () => (
          <div>
           <button>
-  click me
+  Button
 </button>
         </div>
         );

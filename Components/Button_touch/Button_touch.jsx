@@ -3,9 +3,7 @@ import styles from "./Button_touch.module.css";
 
 const Button_touch = () => (
   <div>
-    <a className={styles["codepen-button"]}>
-      <span>Start Coding</span>
-    </a>
+    <button>Button</button>
   </div>
 );
 
@@ -20,7 +18,9 @@ export default Button_touch;
 
         const Button_touch = () => (
          <div>
-          <a className="codepen-button"><span>Start Coding</span></a>
+          <button>
+  Button
+</button>
         </div>
         );
 

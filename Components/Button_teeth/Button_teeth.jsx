@@ -3,7 +3,11 @@ import styles from "./Button_teeth.module.css";
 
 const Button_teeth = () => (
   <div>
-    <button> Button</button>
+    <div className={styles["button"]}>
+      <a href="#">Download</a>
+      <b className={styles["top"]}>click to download</b>
+      <b className={styles["bottom"]}>1.2MB .zip</b>
+    </div>
   </div>
 );
 
@@ -18,8 +22,11 @@ export default Button_teeth;
 
         const Button_teeth = () => (
          <div>
-          <button> Button
-</button>
+          <div className="button">
+  <a href="#">Download</a>
+  <b className="top">click to download</b>
+  <b className="bottom">1.2MB .zip</b>
+</div>
         </div>
         );
 

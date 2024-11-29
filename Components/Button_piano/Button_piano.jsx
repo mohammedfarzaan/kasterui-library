@@ -3,7 +3,10 @@ import styles from "./Button_piano.module.css";
 
 const Button_piano = () => (
   <div>
-    <button>Button</button>
+    <button>
+      {" "}
+      <span>LIKE</span>
+    </button>
   </div>
 );
 
@@ -18,9 +21,7 @@ export default Button_piano;
 
         const Button_piano = () => (
          <div>
-          <button>
-  Button
-</button>
+          <button> <span>LIKE</span></button>
         </div>
         );
 

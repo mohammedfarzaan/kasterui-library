@@ -4,16 +4,8 @@ import styles from "./Loader_cool.module.css";
 const Loader_cool = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["loader-inner"]}>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-        <div className={styles["loader-block"]}></div>
-      </div>
+      <div className={styles["circle"] + styles["outer"]}></div>
+      <div className={styles["circle"] + styles["inner"]}></div>
     </div>
   </div>
 );
@@ -30,16 +22,8 @@ export default Loader_cool;
         const Loader_cool = () => (
          <div>
           <div className="loader">
-  <div className="loader-inner">
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-    <div className="loader-block"></div>
-  </div>
+  <div className="circle outer"></div>
+  <div className="circle inner"></div>
 </div>
         </div>
         );

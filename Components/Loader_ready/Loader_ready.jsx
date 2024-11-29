@@ -3,40 +3,10 @@ import styles from "./Loader_ready.module.css";
 
 const Loader_ready = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["tree"]}>
-        <div className={styles["branch"]} style="--x:0">
-          <span style="--i:0;"></span>
-          <span style="--i:1;"></span>
-          <span style="--i:2;"></span>
-          <span style="--i:3;"></span>
-        </div>
-        <div className={styles["branch"]} style="--x:1">
-          <span style="--i:0;"></span>
-          <span style="--i:1;"></span>
-          <span style="--i:2;"></span>
-          <span style="--i:3;"></span>
-        </div>
-        <div className={styles["branch"]} style="--x:2">
-          <span style="--i:0;"></span>
-          <span style="--i:1;"></span>
-          <span style="--i:2;"></span>
-          <span style="--i:3;"></span>
-        </div>
-        <div className={styles["branch"]} style="--x:3">
-          <span style="--i:0;"></span>
-          <span style="--i:1;"></span>
-          <span style="--i:2;"></span>
-          <span style="--i:3;"></span>
-        </div>
-        <div className={styles["stem"]}>
-          <span style="--i:0;"></span>
-          <span style="--i:1;"></span>
-          <span style="--i:2;"></span>
-          <span style="--i:3;"></span>
-        </div>
-        <span className={styles["shadow"]}></span>
-      </div>
+    <div className={styles["loader"]}>
+      <span>&lt;</span>
+      <span>LOADING</span>
+      <span>/&gt;</span>
     </div>
   </div>
 );
@@ -52,40 +22,10 @@ export default Loader_ready;
 
         const Loader_ready = () => (
          <div>
-          <div className="container">
-  <div className="tree">
-    <div className="branch" style="--x:0">
-      <span style="--i:0;"></span>
-      <span style="--i:1;"></span>
-      <span style="--i:2;"></span>
-      <span style="--i:3;"></span>
-    </div>
-    <div className="branch" style="--x:1">
-      <span style="--i:0;"></span>
-      <span style="--i:1;"></span>
-      <span style="--i:2;"></span>
-      <span style="--i:3;"></span>
-    </div>
-    <div className="branch" style="--x:2">
-      <span style="--i:0;"></span>
-      <span style="--i:1;"></span>
-      <span style="--i:2;"></span>
-      <span style="--i:3;"></span>
-    </div>
-    <div className="branch" style="--x:3">
-      <span style="--i:0;"></span>
-      <span style="--i:1;"></span>
-      <span style="--i:2;"></span>
-      <span style="--i:3;"></span>
-    </div>
-    <div className="stem">
-      <span style="--i:0;"></span>
-      <span style="--i:1;"></span>
-      <span style="--i:2;"></span>
-      <span style="--i:3;"></span>
-    </div>
-    <span className="shadow"></span>
-  </div>
+          <div className="loader">
+  <span>&lt;</span>
+  <span>LOADING</span>
+  <span>/&gt;</span>
 </div>
         </div>
         );

@@ -3,146 +3,83 @@ import styles from "./Button_get.module.css";
 
 const Button_get = () => (
   <div>
-    <button>
-      <span className={styles["night"]}>Night</span>
-      <span className={styles["day"]}>Day</span>
-      <svg
-        className="lightning"
-        style="color: rgb(255, 228, 56);"
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z"
-          fill="#ffe438"
-        ></path>
-      </svg>
-      <svg
-        className="mini-cloud"
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        viewBox="0 0 16 16"
-      >
-        <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"></path>
-      </svg>
-      <svg
-        className="stars star1"
-        id="IconChangeColor"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 512 512"
-        height="20"
-        width="20"
-      >
-        <path
-          d="M208,512,155.62,372.38,16,320l139.62-52.38L208,128l52.38,139.62L400,320,260.38,372.38Z"
-          id="mainIconPathAttribute"
-          fill="yellow"
-        ></path>
-        <path
-          d="M88,176,64.43,111.57,0,88,64.43,64.43,88,0l23.57,64.43L176,88l-64.43,23.57Z"
-          id="mainIconPathAttribute"
-          fill="yellow"
-        ></path>
-        <path
-          d="M400,256l-31.11-80.89L288,144l80.89-31.11L400,32l31.11,80.89L512,144l-80.89,31.11Z"
-          id="mainIconPathAttribute"
-          fill="yellow"
-        ></path>
-      </svg>
-      <svg
-        className="stars star2"
-        id="IconChangeColor"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 512 512"
-        height="20"
-        width="20"
-      >
-        <path
-          d="M208,512,155.62,372.38,16,320l139.62-52.38L208,128l52.38,139.62L400,320,260.38,372.38Z"
-          id="mainIconPathAttribute"
-          fill="yellow"
-        ></path>
-        <path
-          d="M88,176,64.43,111.57,0,88,64.43,64.43,88,0l23.57,64.43L176,88l-64.43,23.57Z"
-          id="mainIconPathAttribute"
-          fill="yellow"
-        ></path>
-        <path
-          d="M400,256l-31.11-80.89L288,144l80.89-31.11L400,32l31.11,80.89L512,144l-80.89,31.11Z"
-          id="mainIconPathAttribute"
-          fill="yellow"
-        ></path>
-      </svg>
-      <span className={styles["cloud"] + styles["left-side"]}></span>
-      <span className={styles["cloud"] + styles["left-side1"]}></span>
-      <span className={styles["cloud"] + styles["middle-side"]}></span>
-      <span className={styles["cloud"] + styles["middle-side1"]}></span>
-      <span className={styles["cloud"] + styles["right-side"]}></span>
-      <span className={styles["cloud"] + styles["right-side1"]}></span>
-      <span className={styles["sun"]}></span>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 256 256"
-        className="sunshine"
-      >
-        <path d="M0 0h256v256H0z" fill="none"></path>
-        <path
-          className="stroke-000000"
-          d="M128 32v32M195.9 60.1l-22.6 22.6M224 128h-32M195.9 195.9l-22.6-22.6M128 224v-32M60.1 195.9l22.6-22.6M32 128h32M60.1 60.1l22.6 22.6"
-          strokeWidth="8"
-          strokeLinejoin="round"
-          strokeLinecap="round"
-          stroke="#fe8a1e"
-          fill="none"
-        ></path>
-      </svg>
-      <svg
-        viewBox="0 0 16 16"
-        fill="currentColor"
-        height="16"
-        width="16"
-        xmlns="http://www.w3.org/2000/svg"
-        style="color: rgb(92, 236, 255);"
-        className="cloudflare cloudflare-one"
-      >
-        <path
-          fill="#5cecff"
-          d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"
-        ></path>
-      </svg>
-      <svg
-        viewBox="0 0 16 16"
-        fill="currentColor"
-        height="16"
-        width="16"
-        xmlns="http://www.w3.org/2000/svg"
-        style="color: rgb(92, 236, 255);"
-        className="cloudflare cloudflare-two"
-      >
-        <path
-          fill="#5cecff"
-          d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"
-        ></path>
-      </svg>
-      <svg
-        viewBox="0 0 16 16"
-        fill="currentColor"
-        height="16"
-        width="16"
-        xmlns="http://www.w3.org/2000/svg"
-        style="color: rgb(92, 236, 255);"
-        className="cloudflare cloudflare-three"
-      >
-        <path
-          fill="#5cecff"
-          d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"
-        ></path>
-      </svg>
+    <button className={styles["button"]}>
+      <div id="main-border">
+        <div id="main">
+          <div id="inner-box">
+            <div id="inner-dent"></div>
+            <div id="send">Send</div>
+            <div id="sent">Sent</div>
+            <div id="tick">
+              <svg
+                strokeWidth="1.5"
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                stroke="#000000"
+                fill="none"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                height="30px"
+                width="30px"
+              >
+                <path d="m1.75 9.75 2.5 2.5m3.5-4 2.5-2.5m-4.5 4 2.5 2.5 6-6.5"></path>
+              </svg>
+            </div>
+            <div tabindex="-1" id="text-container">
+              <div id="planebody">
+                <svg
+                  text-rendering="geometricPrecision"
+                  shape-rendering="geometricPrecision"
+                  viewBox="0 0 24 24"
+                  width="30"
+                  height="30"
+                >
+                  <path
+                    strokeWidth="1"
+                    stroke="#000"
+                    transform="matrix(-.613681 0.628244-.642735-.627837 26.9797 9.305393)"
+                    d="M14.2199,21.63c-1.18,0-2.85-.83-4.17-4.8l-.72002-2.16-2.16-.72c-3.96-1.32-4.79-2.99-4.79-4.16999c0-1.17.83-2.85,4.79-4.18l8.49002-2.83c2.12-.71,3.89-.5,4.98.58s1.3,2.86.59,4.98L18.3999,16.82c-1.33,3.98-3,4.81-4.18,4.81ZM7.63988,7.03001c-2.78.93-3.77,2.03-3.77,2.75s.99,1.81999,3.77,2.73999l2.52002.84c.22.07.4.25.47.47l.84,2.52c.92,2.78,2.03,3.77,2.75,3.77s1.82-.99,2.75-3.77l2.83-8.48999c.51-1.54.42-2.8-.23-3.45s-1.91-.73-3.44-.22l-8.49002,2.84Z"
+                  ></path>
+                  <path
+                    strokeWidth="3"
+                    stroke="#000"
+                    transform="matrix(.16967 0.39318-.400015 0.172619 21.274592 7.311157)"
+                    d="M14.2199,21.63c-1.18,0-11.84002-10.67-11.84002-11.84999c0-1.17.83-2.85,4.79-4.18l8.49002-2.83c2.12-.71,3.89-.5,4.98.58s1.3,2.86.59,4.98L18.3999,16.82c-1.33,3.98-3,4.81-4.18,4.81ZM7.63988,7.03001c-2.78.93-3.77,2.03-3.77,2.75s.99,1.81999,3.77,2.73999l3.83002,3.83c.92,2.78,2.03,3.77,2.75,3.77s1.82-.99,2.75-3.77l2.83-8.48999c.51-1.54.42-2.8-.23-3.45s-1.91-.73-3.44-.22l-8.49002,2.84Z"
+                  ></path>
+                  <path
+                    strokeWidth="3"
+                    stroke="#000"
+                    transform="matrix(-.404334-.141041 0.143493-.411362 8.624859 20.731701)"
+                    d="M14.2199,21.63c-1.18,0-11.84002-10.67-11.84002-11.84999c0-1.17.83-2.85,4.79-4.18l8.49002-2.83c2.12-.71,3.89-.5,4.98.58s1.3,2.86.59,4.98L18.3999,16.82c-1.33,3.98-3,4.81-4.18,4.81ZM7.63988,7.03001c-2.78.93-3.77,2.03-3.77,2.75s.99,1.81999,3.77,2.73999l3.83002,3.83c.92,2.78,2.03,3.77,2.75,3.77s1.82-.99,2.75-3.77l2.83-8.48999c.51-1.54.42-2.8-.23-3.45s-1.91-.73-3.44-.22l-8.49002,2.84Z"
+                  ></path>
+                </svg>
+              </div>
+              <div id="arrow">
+                <svg
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  strokeWidth="0.5px"
+                  stroke="black"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.2199 21.63C13.0399 21.63 11.3699 20.8 10.0499 16.83L9.32988 14.67L7.16988 13.95C3.20988 12.63 2.37988 10.96 2.37988 9.78001C2.37988 8.61001 3.20988 6.93001 7.16988 5.60001L15.6599 2.77001C17.7799 2.06001 19.5499 2.27001 20.6399 3.35001C21.7299 4.43001 21.9399 6.21001 21.2299 8.33001L18.3999 16.82C17.0699 20.8 15.3999 21.63 14.2199 21.63ZM7.63988 7.03001C4.85988 7.96001 3.86988 9.06001 3.86988 9.78001C3.86988 10.5 4.85988 11.6 7.63988 12.52L10.1599 13.36C10.3799 13.43 10.5599 13.61 10.6299 13.83L11.4699 16.35C12.3899 19.13 13.4999 20.12 14.2199 20.12C14.9399 20.12 16.0399 19.13 16.9699 16.35L19.7999 7.86001C20.3099 6.32001 20.2199 5.06001 19.5699 4.41001C18.9199 3.76001 17.6599 3.68001 16.1299 4.19001L7.63988 7.03001Z"
+                    fill="#000000"
+                  ></path>
+                  <path
+                    d="M10.11 14.4C9.92005 14.4 9.73005 14.33 9.58005 14.18C9.29005 13.89 9.29005 13.41 9.58005 13.12L13.16 9.53C13.45 9.24 13.93 9.24 14.22 9.53C14.51 9.82 14.51 10.3 14.22 10.59L10.64 14.18C10.5 14.33 10.3 14.4 10.11 14.4Z"
+                    fill="#000000"
+                  ></path>
+                </svg>
+              </div>
+              <div id="text">Message</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </button>
   </div>
 );
@@ -158,46 +95,85 @@ export default Button_get;
 
         const Button_get = () => (
          <div>
-          <button>
-  <span className="night">Night</span>
-  <span className="day">Day</span>
-    <svg className="lightning" style="color: rgb(255, 228, 56);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-      <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" fill="#ffe438"></path> 
-    </svg>
-    <svg className="mini-cloud" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"> 
-      <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"></path>
-    </svg>
-    <svg className="stars star1" id="IconChangeColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="20" width="20">
-      <path d="M208,512,155.62,372.38,16,320l139.62-52.38L208,128l52.38,139.62L400,320,260.38,372.38Z" id="mainIconPathAttribute" fill="yellow"></path>
-      <path d="M88,176,64.43,111.57,0,88,64.43,64.43,88,0l23.57,64.43L176,88l-64.43,23.57Z" id="mainIconPathAttribute" fill="yellow"></path>
-      <path d="M400,256l-31.11-80.89L288,144l80.89-31.11L400,32l31.11,80.89L512,144l-80.89,31.11Z" id="mainIconPathAttribute" fill="yellow"></path>
-    </svg>
-    <svg className="stars star2" id="IconChangeColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="20" width="20">
-      <path d="M208,512,155.62,372.38,16,320l139.62-52.38L208,128l52.38,139.62L400,320,260.38,372.38Z" id="mainIconPathAttribute" fill="yellow"></path>
-      <path d="M88,176,64.43,111.57,0,88,64.43,64.43,88,0l23.57,64.43L176,88l-64.43,23.57Z" id="mainIconPathAttribute" fill="yellow"></path>
-      <path d="M400,256l-31.11-80.89L288,144l80.89-31.11L400,32l31.11,80.89L512,144l-80.89,31.11Z" id="mainIconPathAttribute" fill="yellow"></path>
-    </svg>
-  <span className="cloud left-side"></span>
-  <span className="cloud left-side1"></span>
-  <span className="cloud middle-side"></span>
-  <span className="cloud middle-side1"></span>
-  <span className="cloud right-side"></span>
-  <span className="cloud right-side1"></span>
-  <span className="sun"></span>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="sunshine">
-    <path d="M0 0h256v256H0z" fill="none"></path>
-    <path className="stroke-000000" d="M128 32v32M195.9 60.1l-22.6 22.6M224 128h-32M195.9 195.9l-22.6-22.6M128 224v-32M60.1 195.9l22.6-22.6M32 128h32M60.1 60.1l22.6 22.6" strokeWidth="8" strokeLinejoin="round" strokeLinecap="round" stroke="#fe8a1e" fill="none">
-    </path>
-  </svg>
-  <svg viewBox="0 0 16 16" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: rgb(92, 236, 255);" className="cloudflare cloudflare-one">
-    <path fill="#5cecff" d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"></path>
-  </svg>
-  <svg viewBox="0 0 16 16" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: rgb(92, 236, 255);" className="cloudflare cloudflare-two">
-    <path fill="#5cecff" d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"></path>
-  </svg>
-  <svg viewBox="0 0 16 16" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: rgb(92, 236, 255);" className="cloudflare cloudflare-three">
-    <path fill="#5cecff" d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"></path>
-  </svg>
+          <button className="button">
+  <div id="main-border">
+    <div id="main">
+      <div id="inner-box">
+        <div id="inner-dent"></div>
+        <div id="send">Send</div>
+        <div id="sent">Sent</div>
+        <div id="tick">
+          <svg
+            strokeWidth="1.5"
+            strokeLinejoin="round"
+            strokeLinecap="round"
+            stroke="#000000"
+            fill="none"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            height="30px"
+            width="30px"
+          >
+            <path
+              d="m1.75 9.75 2.5 2.5m3.5-4 2.5-2.5m-4.5 4 2.5 2.5 6-6.5"
+            ></path>
+          </svg>
+        </div>
+        <div tabindex="-1" id="text-container">
+          <div id="planebody">
+            <svg
+              text-rendering="geometricPrecision"
+              shape-rendering="geometricPrecision"
+              viewBox="0 0 24 24"
+              width="30"
+              height="30"
+            >
+              <path
+                strokeWidth="1"
+                stroke="#000"
+                transform="matrix(-.613681 0.628244-.642735-.627837 26.9797 9.305393)"
+                d="M14.2199,21.63c-1.18,0-2.85-.83-4.17-4.8l-.72002-2.16-2.16-.72c-3.96-1.32-4.79-2.99-4.79-4.16999c0-1.17.83-2.85,4.79-4.18l8.49002-2.83c2.12-.71,3.89-.5,4.98.58s1.3,2.86.59,4.98L18.3999,16.82c-1.33,3.98-3,4.81-4.18,4.81ZM7.63988,7.03001c-2.78.93-3.77,2.03-3.77,2.75s.99,1.81999,3.77,2.73999l2.52002.84c.22.07.4.25.47.47l.84,2.52c.92,2.78,2.03,3.77,2.75,3.77s1.82-.99,2.75-3.77l2.83-8.48999c.51-1.54.42-2.8-.23-3.45s-1.91-.73-3.44-.22l-8.49002,2.84Z"
+              ></path>
+              <path
+                strokeWidth="3"
+                stroke="#000"
+                transform="matrix(.16967 0.39318-.400015 0.172619 21.274592 7.311157)"
+                d="M14.2199,21.63c-1.18,0-11.84002-10.67-11.84002-11.84999c0-1.17.83-2.85,4.79-4.18l8.49002-2.83c2.12-.71,3.89-.5,4.98.58s1.3,2.86.59,4.98L18.3999,16.82c-1.33,3.98-3,4.81-4.18,4.81ZM7.63988,7.03001c-2.78.93-3.77,2.03-3.77,2.75s.99,1.81999,3.77,2.73999l3.83002,3.83c.92,2.78,2.03,3.77,2.75,3.77s1.82-.99,2.75-3.77l2.83-8.48999c.51-1.54.42-2.8-.23-3.45s-1.91-.73-3.44-.22l-8.49002,2.84Z"
+              ></path>
+              <path
+                strokeWidth="3"
+                stroke="#000"
+                transform="matrix(-.404334-.141041 0.143493-.411362 8.624859 20.731701)"
+                d="M14.2199,21.63c-1.18,0-11.84002-10.67-11.84002-11.84999c0-1.17.83-2.85,4.79-4.18l8.49002-2.83c2.12-.71,3.89-.5,4.98.58s1.3,2.86.59,4.98L18.3999,16.82c-1.33,3.98-3,4.81-4.18,4.81ZM7.63988,7.03001c-2.78.93-3.77,2.03-3.77,2.75s.99,1.81999,3.77,2.73999l3.83002,3.83c.92,2.78,2.03,3.77,2.75,3.77s1.82-.99,2.75-3.77l2.83-8.48999c.51-1.54.42-2.8-.23-3.45s-1.91-.73-3.44-.22l-8.49002,2.84Z"
+              ></path>
+            </svg>
+          </div>
+          <div id="arrow">
+            <svg
+              width="30px"
+              height="30px"
+              viewBox="0 0 24 24"
+              fill="none"
+              strokeWidth="0.5px"
+              stroke="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.2199 21.63C13.0399 21.63 11.3699 20.8 10.0499 16.83L9.32988 14.67L7.16988 13.95C3.20988 12.63 2.37988 10.96 2.37988 9.78001C2.37988 8.61001 3.20988 6.93001 7.16988 5.60001L15.6599 2.77001C17.7799 2.06001 19.5499 2.27001 20.6399 3.35001C21.7299 4.43001 21.9399 6.21001 21.2299 8.33001L18.3999 16.82C17.0699 20.8 15.3999 21.63 14.2199 21.63ZM7.63988 7.03001C4.85988 7.96001 3.86988 9.06001 3.86988 9.78001C3.86988 10.5 4.85988 11.6 7.63988 12.52L10.1599 13.36C10.3799 13.43 10.5599 13.61 10.6299 13.83L11.4699 16.35C12.3899 19.13 13.4999 20.12 14.2199 20.12C14.9399 20.12 16.0399 19.13 16.9699 16.35L19.7999 7.86001C20.3099 6.32001 20.2199 5.06001 19.5699 4.41001C18.9199 3.76001 17.6599 3.68001 16.1299 4.19001L7.63988 7.03001Z"
+                fill="#000000"
+              ></path>
+              <path
+                d="M10.11 14.4C9.92005 14.4 9.73005 14.33 9.58005 14.18C9.29005 13.89 9.29005 13.41 9.58005 13.12L13.16 9.53C13.45 9.24 13.93 9.24 14.22 9.53C14.51 9.82 14.51 10.3 14.22 10.59L10.64 14.18C10.5 14.33 10.3 14.4 10.11 14.4Z"
+                fill="#000000"
+              ></path>
+            </svg>
+          </div>
+          <div id="text">Message</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </button>
         </div>
         );

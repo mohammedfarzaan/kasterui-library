@@ -19,7 +19,7 @@ export default Button_thy;
         const Button_thy = () => (
          <div>
           <button>
-    Button
+  Button
 </button>
         </div>
         );

@@ -1,0 +1,86 @@
+
+/* From Uiverse.io by KareemTolan - Tags: card */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 40px 20px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading span {
+  color: #03DAC6;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  color: #03DAC6;
+  text-shadow: 0px 0px 20px #03DAC6;
+}
+
+.item svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.item--create svg path {
+  fill: #03DAC6;
+}
+
+.item--post svg path {
+  fill: #BB86FC;
+}
+
+.item--inspire svg path {
+  fill: #FF9800;
+}
+
+button {
+  background-color: #03DAC6;
+  border: none;
+  border-radius: 5px;
+  color: #212121;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #BB86FC;
+  box-shadow: 0px 0px 20px #BB86FC, 0px 0px 40px #BB86FC, 0px 0px 60px #BB86FC;
+}

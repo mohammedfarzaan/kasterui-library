@@ -3,9 +3,7 @@ import styles from "./Button_earth.module.css";
 
 const Button_earth = () => (
   <div>
-    <button className={styles["button"]}>
-      <span>Hover!</span>
-    </button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -20,9 +18,7 @@ export default Button_earth;
 
         const Button_earth = () => (
          <div>
-          <button className="button">
-  <span>Hover!</span>
-</button>
+          <button className="button">Button</button>
         </div>
         );
 

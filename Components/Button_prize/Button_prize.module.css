@@ -1,59 +1,42 @@
 
-/* From Uiverse.io by Dashrath-Sharma  - Tags: glassmorphism, flashy, button, shadow, glow, border, box-shadow, buttons */
-button {
-  cursor: pointer;
-  padding: 1em 2em;
-  font-weight: bold;
-  font-size: 20px;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  background: rgba(60, 73, 203, 0.35);
-  box-shadow: 0 0px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(14.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  -webkit-backdrop-filter: blur(14.5px);
+/* From Uiverse.io by MINOTAURO18 - Tags: media, social, instagram, button, Discord, github */
+.redes {
+  width: 80px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-button:hover {
-  box-shadow: 0px 0 32px 0 rgba(31, 38, 135, 0.37),
-    0px 0 32px 0 rgba(31, 38, 135, 0.37), 0 0 42px 0px rgba(31, 38, 135, 0.37),
-    0 0 52px 0 rgba(31, 38, 135, 0.37);
-  border: 1px solid rgba(255, 255, 255, 0.58);
+.redes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  transition: all 0.3s ease-in-out;
 }
 
-button,
-button::before {
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  box-shadow: 0 0px 32px 0 rgba(31, 38, 135, 0.37);
+.redes a svg {
+  width: 30px;
+  fill: #ffffff;
 }
 
-button::before {
-  content: "Button";
-  position: absolute;
-  background: blue;
-  width: 90%;
-  height: 80%;
-  background: rgba(26, 18, 241, 0.25);
-  backdrop-filter: blur(18.5px);
-  -webkit-backdrop-filter: blur(18.5px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  transition: 0.4s;
+.redes .discord {
+  background-color: rgb(0, 60, 255);
 }
 
-button:hover::before {
-  background: rgba(51, 57, 236, 0.4);
-  box-shadow: 1px 1px 2px 0 rgba(31, 38, 135, 0.37),
-    2px 2px 2px 0 rgba(31, 38, 135, 0.37), 0 0px 32px 0 rgba(31, 38, 135, 0.37),
-    0 0px 32px 1px rgba(31, 38, 135, 0.37), 0 0px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(5.5px);
-  -webkit-backdrop-filter: blur(5.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-button:active::before {
-  transform: scale(0.67);
+.redes .github {
+  background-color: rgb(24, 22, 22);
 }
 
+.redes .twitter {
+  background-color: #33BBFF;
+}
+
+.redes .instagram {
+  background: linear-gradient(45deg, #833AB4, #FD1D1D, #F56040);
+}
+
+.redes a:hover {
+  width: 90px;
+}

@@ -3,9 +3,7 @@ import styles from "./Button_began.module.css";
 
 const Button_began = () => (
   <div>
-    <button role="button" className={styles["button"]}>
-      Hover Me
-    </button>
+    <button className={styles["btn"]}> Hover Me!</button>
   </div>
 );
 
@@ -20,7 +18,8 @@ export default Button_began;
 
         const Button_began = () => (
          <div>
-          <button role="button" className="button">Hover Me</button>
+          <button className="btn"> Hover Me!
+</button>
         </div>
         );
 

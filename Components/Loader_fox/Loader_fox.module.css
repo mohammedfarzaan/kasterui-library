@@ -1,54 +1,46 @@
 
-/* From Uiverse.io by vikramsinghnegi  - Tags: animation, loader, refresh loading */
-/* HTML: <div class="loader"></div> */
-.loader {
-  font-weight: bold;
-  font-family: monospace;
-  display: inline-grid;
-  font-size: 30px;
-}
-.loader:before,
-.loader:after {
-  content: "Refresh....";
-  grid-area: 1/1;
-  -webkit-mask-size: 1.5ch 100%, 100% 100%;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  animation: l36-1 1s infinite;
-}
-.loader:before {
-  -webkit-mask-image: linear-gradient(#000 0 0), linear-gradient(#000 0 0);
-}
-.loader:after {
-  -webkit-mask-image: linear-gradient(#000 0 0);
-  animation: l36-1 1s infinite,
-    l36-2 0.2s infinite cubic-bezier(0.5, 200, 0.5, -200);
+/* From Uiverse.io by VashonG  - Tags: icon, fintech, credit */
+.virtual-card,
+.physical-card,
+.tokenized-card {
+  margin: 0 50px;
 }
 
-@keyframes l36-1 {
-  0% {
-    -webkit-mask-position: 0 0, 0 0;
-  }
-  20% {
-    -webkit-mask-position: 0.5ch 0, 0 0;
-  }
-  40% {
-    -webkit-mask-position: 100% 0, 0 0;
-  }
-  60% {
-    -webkit-mask-position: 4.5ch 0, 0 0;
-  }
-  80% {
-    -webkit-mask-position: 6.5ch 0, 0 0;
-  }
-  100% {
-    -webkit-mask-position: 2.5ch 0, 0 0;
-  }
+.plus {
+  animation: plus 2s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
 }
-@keyframes l36-2 {
+
+.plus-one {
+  animation: plus 2.5s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+}
+
+.plus-two {
+  animation: plus 3s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+}
+
+.plus-three {
+  animation: plus 3.5s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+}
+
+.plus-four {
+  animation: plus 4s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+}
+
+.plus-five {
+  animation: plus 4.5s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+}
+
+@keyframes plus {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
   100% {
-    transform: translateY(0.2px);
+    opacity: 1;
   }
 }
 

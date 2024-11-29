@@ -1,22 +1,26 @@
 
-/* From Uiverse.io by adamgiebl - Tags: neumorphism, button */
-button {
-  color: #090909;
-  padding: 0.7em 1.7em;
-  font-size: 18px;
-  border-radius: 0.5em;
-  background: #e8e8e8;
-  border: 1px solid #e8e8e8;
-  transition: all .3s;
-  box-shadow: 6px 6px 12px #c5c5c5,
-             -6px -6px 12px #ffffff;
+/* From Uiverse.io by JamesAchiver - Tags: button */
+.button {
+  position: relative;
+  padding: 0.5em 1.2em;
+  font-size: 1.8em;
+  font-family: Calibri;
+  background-color: #5b04bf;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  align-items: center;
+  box-shadow: inset 0px 38px 25px 0 #5b04bf, inset 0 0px 0px 0px #084748a8, inset 0 69px 0px 0px #d74589af;
+  border-radius: 0.6em;
 }
 
-button:hover {
-  border: 1px solid white;
+.button:hover {
+  padding: 0.7em 1.4em;
+  transition: 0.4s ease-in-out;
+  box-shadow: inset 0px 38px 25px 5px #5b04bf, inset 10px 40px 10px 0px #084748a8, inset 0 69px 0px 0px #31b0d7de;
 }
 
-button:active {
-  box-shadow: 4px 4px 12px #c5c5c5,
-             -4px -4px 12px #ffffff;
+.button:active {
+  box-shadow: 0.2em 0.2em 0.3em rgba(0,0,0,0.3);
+  transform: translate(0.1em , 0.1em);
 }

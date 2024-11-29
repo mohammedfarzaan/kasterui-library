@@ -1,0 +1,86 @@
+
+/* From Uiverse.io by alexmaracinaru - Tags: gradient, card, colorful, shoe, illustration */
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 220px;
+  height: 324px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #ffec99;
+  background-image: radial-gradient(
+      at 56% 46%,
+      rgb(203, 151, 252) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 33% 51%, rgb(85, 141, 246) 0px, transparent 50%),
+    radial-gradient(at 95% 81%, rgb(197, 108, 239) 0px, transparent 50%),
+    radial-gradient(at 4% 9%, rgb(231, 136, 72) 0px, transparent 50%),
+    radial-gradient(at 32% 25%, rgb(235, 232, 88) 0px, transparent 50%),
+    radial-gradient(at 25% 8%, rgb(235, 200, 85) 0px, transparent 50%),
+    radial-gradient(at 71% 28%, hsla(23, 62%, 62%, 1) 0px, transparent 50%);
+  box-shadow: rgba(26, 26, 56, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(253, 235, 207);
+}
+.wls {
+  color: rgb(248, 234, 209);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+  font-size: 1.5em;
+  line-height: 1.1;
+}
+.shoe {
+  width: 140px;
+  padding-left: 5px;
+}
+.ftt {
+  color: rgb(68, 18, 68);
+  font-weight: 800;
+}
+.cls-1 {
+  opacity: 0.2;
+}
+.cls-2 {
+  opacity: 0.3;
+}
+.cls-3 {
+  opacity: 0.25;
+}
+.cls-4 {
+  opacity: 0.6;
+}
+.cls-5 {
+  opacity: 0.5;
+}
+.cls-6 {
+  fill: #f46800;
+}
+.cls-6,
+.cls-7,
+.cls-8,
+.cls-9,
+.cls-10,
+.cls-11,
+.cls-12 {
+  stroke-width: 0px;
+}
+.cls-7 {
+  fill: #f2e7ed;
+}
+.cls-8 {
+  fill: #82898e;
+}
+.cls-9 {
+  fill: #371a45;
+}
+.cls-10 {
+  fill: #8e99a0;
+}
+.cls-11 {
+  fill: #fff;
+}
+.cls-12 {
+  fill: #00b9f2;
+}
+

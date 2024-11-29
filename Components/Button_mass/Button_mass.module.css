@@ -1,35 +1,46 @@
 
-/* From Uiverse.io by Yaya12085 - Tags: button */
-button {
-  border: none;
-  display: flex;
-  padding: 0.75rem 1.5rem;
-  background-color: #488aec;
-  color: #ffffff;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  vertical-align: middle;
-  align-items: center;
-  border-radius: 0.5rem;
-  user-select: none;
-  gap: 0.75rem;
-  box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
-  transition: all .6s ease;
+/* From Uiverse.io by Custyyyy - Tags: button */
+#bottone5 {
+ align-items: center;
+ background-color: #FFFFFF;
+ border: 1px solid rgba(0, 0, 0, 0.1);
+ border-radius: .25rem;
+ box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+ box-sizing: border-box;
+ color: rgba(0, 0, 0, 0.85);
+ cursor: pointer;
+ display: inline-flex;
+ font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+ font-size: 16px;
+ font-weight: 600;
+ justify-content: center;
+ line-height: 1.25;
+ min-height: 3rem;
+ padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+ text-decoration: none;
+ transition: all 250ms;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ vertical-align: baseline;
+ width: auto;
 }
 
-button:hover {
-  box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
+#bottone5:hover,
+#bottone5:focus {
+ border-color: rgba(0, 0, 0, 0.15);
+ box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+ color: rgba(0, 0, 0, 0.65);
 }
 
-button:focus,button:active {
-  opacity: .85;
-  box-shadow: none;
+#bottone5:hover {
+ transform: translateY(-1px);
 }
 
-button svg {
-  width: 1.25rem;
-  height: 1.25rem;
+#bottone5:active {
+ background-color: #F0F0F1;
+ border-color: rgba(0, 0, 0, 0.15);
+ box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+ color: rgba(0, 0, 0, 0.65);
+ transform: translateY(0);
 }

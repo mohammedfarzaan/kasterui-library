@@ -3,13 +3,7 @@ import styles from "./Button_term.module.css";
 
 const Button_term = () => (
   <div>
-    <button
-      className={
-        styles["btn"] + styles["btn-1"] + styles["hover-filled-slide-left"]
-      }
-    >
-      <span>hover me</span>
-    </button>
+    <button> Hover me</button>
   </div>
 );
 
@@ -24,8 +18,7 @@ export default Button_term;
 
         const Button_term = () => (
          <div>
-          <button className="btn btn-1 hover-filled-slide-left">
-    <span>hover me</span>
+          <button> Hover me
 </button>
         </div>
         );

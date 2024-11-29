@@ -1,41 +1,64 @@
 
-/* From Uiverse.io by Nayzerftn - Tags: button, hover, active */
-.btn-hover {
+/* From Uiverse.io by Randdose - Tags: button, transition, transform */
+.button {
+  all: unset;
+  display: flex;
+  align-items: center;
   position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #ffffff;
-  background-color: #4b4b4b;
-  border: none;
-  outline: none;
-  overflow: hidden;
+  padding: 0.6em 2em;
+  border: mediumspringgreen solid 0.15em;
+  border-radius: 0.25em;
+  color: mediumspringgreen;
+  font-size: 1.5em;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease-out;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
 }
 
-.btn-hover:hover {
-  background-color: #522ba7;
+.button p {
+  z-index: 1;
 }
 
-.btn-hover::before {
+.button:hover {
+  color: #212121;
+}
+
+.button:active {
+  border-color: teal;
+}
+
+.button::after, .button::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  width: 15px;
-  height: 15px;
+  width: 9em;
+  aspect-ratio: 1;
+  background: mediumspringgreen;
+  opacity: 50%;
   border-radius: 50%;
-  background-color: #ffffff;
-  opacity: 0.8;
-  transition: all 0.5s ease-out;
+  transition: transform 500ms, background 300ms;
 }
 
-.btn-hover:hover::before {
-  transform: translate(-50%, -50%) scale(20);
-  opacity: 0;
+.button::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.button::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.button:hover:before {
+  transform: translateX(-1em);
+}
+
+.button:hover:after {
+  transform: translateX(1em);
+}
+
+.button:active:before,
+.button:active:after {
+  background: teal;
 }

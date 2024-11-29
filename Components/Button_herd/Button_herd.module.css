@@ -1,26 +1,72 @@
 
-/* From Uiverse.io by devestter - Tags: button, click, big, css, accept */
+/* From Uiverse.io by tarantino421 - Tags: button, hover button, snow */
+.box {
+  --clr-shadow__border: #0096fa;
+  --clr-text: #F6F4EB;
+  --clr-snowflake: #F6F4EB;
+  --clr-snowfall: #91C8E4;
+  --size: 3rem;
+  position: relative;
+  outline: 1px solid var(--clr-shadow__border);
+}
+
 .button {
-  padding: 12px 19px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  padding: calc(var(--size) / 3) var(--size);
+  background: transparent;
   border: none;
-  color: rgb(16, 52, 170);
   cursor: pointer;
-  background-color: rgb(190, 219, 253);
-  border-radius: 7px;
-  font-weight: bold;
-  transition: 0.5s;
+  color: var(--clr-text);
+  text-shadow: 2px 0px var(--clr-shadow__border), 0px 2px var(--clr-shadow__border),
+  -2px 0px var(--clr-shadow__border), 0px -2px var(--clr-shadow__border);
+}
+
+.snowfall {
+  width: 100%;
+  height: 100%;
+  bottom: 0%;
+  gap: 0.3rem;
+  transition: 0.5s ease-in-out;
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
   display: flex;
-  gap: 4px;
+  justify-content: center;
   align-items: center;
-  font-size: 13px;
-  box-shadow: rgba(150, 143, 143, 0.2) 0px 2px 8px 0px;
+  overflow: hidden;
+  background: linear-gradient( to bottom, var(--clr-snowfall), #ffffff);
 }
 
-.button:hover {
-  background-color: rgb(164, 206, 253);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+.box:hover .snowfall {
+  opacity: 1;
 }
 
-.saveicon {
-  width: 17px;
+.snowflake {
+  height: 0.3rem;
+  width: 0.3rem;
+  box-shadow: -30px -50px var(--clr-snowflake);
+  background-color: var(--clr-snowflake);
+  animation: snowfall-animation calc(0.1s * var(--i)) linear infinite;
+  opacity: 1;
 }
+
+@keyframes snowfall-animation {
+  0% {
+    transform: translateY(calc(-103% * var(--i)));
+  }
+
+  100% {
+    transform: translateY(calc(100% * var(--i)));
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+

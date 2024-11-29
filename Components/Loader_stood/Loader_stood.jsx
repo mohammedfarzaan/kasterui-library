@@ -3,10 +3,9 @@ import styles from "./Loader_stood.module.css";
 
 const Loader_stood = () => (
   <div>
-    <div className={styles["loading"]}>
-      <div className={styles["i"]}></div>
-      <div className={styles["a"]}></div>
-      <div className={styles["u"]}></div>
+    <div className={styles["loader"]}>
+      <span className={styles["loader-text"]}>loading</span>
+      <span className={styles["load"]}></span>
     </div>
   </div>
 );
@@ -22,11 +21,10 @@ export default Loader_stood;
 
         const Loader_stood = () => (
          <div>
-          <div className="loading">
-    <div className="i"></div>
-    <div className="a"></div>
-    <div className="u"></div>
-</div>
+          <div className="loader">
+    <span className="loader-text">loading</span>
+      <span className="load"></span>
+  </div>
         </div>
         );
 

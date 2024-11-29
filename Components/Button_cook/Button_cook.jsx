@@ -1,15 +1,29 @@
 import React from "react";
+import styles from "./Button_cook.module.css";
 
 const Button_cook = () => (
   <div>
-    <button className="bg-[#292929] border-2 border-[#3e3e3e] rounded-lg text-white px-6 py-3 text-base hover:border-[#fff] cursor-pointer transition">
-      Submit
-    </button>
+    <button className={styles["button"]}>HOVER ME!</button>
   </div>
 );
 
 export default Button_cook;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_cook = () => (
+         <div>
+          <button className="button">HOVER ME!</button>
+        </div>
+        );
+
+        export default Button_cook;
+        
+        
+         */
 }

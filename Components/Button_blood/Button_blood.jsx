@@ -3,7 +3,7 @@ import styles from "./Button_blood.module.css";
 
 const Button_blood = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button> HOVER ME</button>
   </div>
 );
 
@@ -18,8 +18,7 @@ export default Button_blood;
 
         const Button_blood = () => (
          <div>
-          <button className="button">
-  Button
+          <button> HOVER ME
 </button>
         </div>
         );

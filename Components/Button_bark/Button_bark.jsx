@@ -3,8 +3,13 @@ import styles from "./Button_bark.module.css";
 
 const Button_bark = () => (
   <div>
-    <button className={styles["btn-60"]}>
-      <span>Button</span>
+    <button className={styles["button"]}>
+      <div className={styles["display"]}>
+        <div id="msg">Click Me</div>
+      </div>
+
+      <span></span>
+      <span></span>
     </button>
   </div>
 );
@@ -20,7 +25,14 @@ export default Button_bark;
 
         const Button_bark = () => (
          <div>
-          <button className="btn-60"><span>Button</span></button>
+          <button className="button">
+  <div className="display">
+    <div id="msg">Click Me</div>
+  </div>
+  
+  <span></span>
+  <span></span>
+</button>
         </div>
         );
 

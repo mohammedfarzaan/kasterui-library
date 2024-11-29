@@ -3,7 +3,7 @@ import styles from "./Button_tape.module.css";
 
 const Button_tape = () => (
   <div>
-    <button>Hover me</button>
+    <button className={styles["fancy-button"]}>Click Me!</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_tape;
 
         const Button_tape = () => (
          <div>
-          <button>
-    Hover me
-</button>
+          <button className="fancy-button">Click Me!</button>
         </div>
         );
 

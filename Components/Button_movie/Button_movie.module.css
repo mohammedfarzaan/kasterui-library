@@ -1,51 +1,34 @@
 
-/* From Uiverse.io by Pradeepsaranbishnoi - Tags: button, claymorphism, emoji */
-.mybutton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button {
-  all: unset;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: .5em;
-  position: relative;
-  border-radius: 50px;
-  padding: 16px 24px;
-  background-color: #f0f7fa;
-  box-shadow: inset 0 -4px 8px #87bfd8, 0 4px 6px rgba(0, 0, 0, 0.2);
+/* From Uiverse.io by ozgeozkaraa01 - Tags: button, hover button, 3d button */
+.btn {
+  display: grid;
+  place-items: center;
+  background-color: #e2e8f0;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	      -6px -6px 10px -1px rgba(255,255,255,0.7);
+  border: none;
   cursor: pointer;
-  color: #0470e3;
-  transition: transform 0.4s cubic-bezier(0.55, 1, 0.15, 1);
-  will-change: transform;
+  transition: transform 0.5s;
 }
 
-.button:active {
-  transform: scale(0.92);
+.btn:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+	      inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+	      -0.5px -0.5px 0px rgba(255,255,255,1),
+	      0.5px 0.5px 0px rgba(0,0,0,0.15),
+	      0px 12px 10px -10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.1);
+  transform: translateY(0.5em);
 }
 
-.button:active::after {
-  opacity: 1;
-  outline: none;
-  border: 0;
+.btn svg {
+  transition: transform 0.6s;
 }
 
-.button::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-image-slice: 50%;
-  border-image-width: 40px;
-  border-style: solid;
-  transform: scale(1.04, 1.08);
-  opacity: 0;
-  border: 0;
-  transition-property: opacity;
-  transition-duration: .4s;
-  transition-timing-function: cubic-bezier(0.55, 1, 0.15, 1);
-  will-change: transform;
+.btn:hover svg {
+  transform: scale(0.9);
 }
+
 

@@ -3,7 +3,7 @@ import styles from "./Button_plates.module.css";
 
 const Button_plates = () => (
   <div>
-    <button> Squeeze me</button>
+    <button>Button</button>
   </div>
 );
 
@@ -18,7 +18,8 @@ export default Button_plates;
 
         const Button_plates = () => (
          <div>
-          <button> Squeeze me
+          <button>
+  Button
 </button>
         </div>
         );

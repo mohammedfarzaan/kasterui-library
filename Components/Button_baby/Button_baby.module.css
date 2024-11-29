@@ -1,44 +1,57 @@
 
-/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, ease */
-.button {
-  background-color: transparent;
-  color: #ffffff;
-  padding: 15px 30px;
-  border-radius: 5px;
+/* From Uiverse.io by Pradeepsaranbishnoi - Tags: button */
+.social-links,.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn {
   cursor: pointer;
-  position: relative;
+  height: 50px;
+  width: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  background: white;
+  margin: 5px;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.social-btn svg {
+  height: 24px;
+  width: 24px;
+}
+
+.social-btn span {
+  width: 0px;
   overflow: hidden;
-  transition: background-color 0.3s ease-in, transform 0.3s ease;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
 }
 
-.button:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #76a6ca;
-  opacity: 0;
-  transition: width 0.7s ease-in-out, opacity 0.9s ease;
+.social-btn:hover {
+  width: 150px;
+  border-radius: 5px;
 }
 
-.button:hover {
-  transform: scale(1.05);
+.social-btn:hover span {
+  padding: 2px;
+  width: 80px;
 }
 
-.button:hover:before {
-  width: 100%;
-  opacity: 0.6;
+#twitter svg {
+  fill: #1da1f2;
 }
 
-.button:active {
-  background-color: #76a6ca;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
-  transform: scale(0.98);
+#linkedin svg {
+  fill: #0e76a8;
+}
+
+#github {
+  fill: #333;
 }
 

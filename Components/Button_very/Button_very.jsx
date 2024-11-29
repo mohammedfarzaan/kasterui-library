@@ -3,7 +3,9 @@ import styles from "./Button_very.module.css";
 
 const Button_very = () => (
   <div>
-    <button>Button</button>
+    <button>
+      <span>View more</span>
+    </button>
   </div>
 );
 
@@ -19,7 +21,7 @@ export default Button_very;
         const Button_very = () => (
          <div>
           <button>
-  Button
+  <span>View more</span>
 </button>
         </div>
         );

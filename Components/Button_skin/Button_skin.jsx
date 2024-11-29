@@ -3,7 +3,17 @@ import styles from "./Button_skin.module.css";
 
 const Button_skin = () => (
   <div>
-    <button> Click me</button>
+    <button className={styles["btn-1"]}>
+      <div className={styles["original"]}>Signup</div>
+      <div className={styles["letters"]}>
+        <span>S</span>
+        <span>I</span>
+        <span>G</span>
+        <span>N</span>
+        <span>U</span>
+        <span>P</span>
+      </div>
+    </button>
   </div>
 );
 
@@ -18,7 +28,16 @@ export default Button_skin;
 
         const Button_skin = () => (
          <div>
-          <button> Click me
+          <button className="btn-1">
+  <div className="original">Signup</div>
+  <div className="letters">
+    <span>S</span>
+    <span>I</span>
+    <span>G</span>
+    <span>N</span>
+    <span>U</span>
+    <span>P</span>
+  </div>
 </button>
         </div>
         );

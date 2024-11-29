@@ -1,0 +1,92 @@
+
+/* From Uiverse.io by DeepanshuKant - Tags: card */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.card>button {
+  padding: 10px;
+  background-color: #1c1f2b;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.card>button:hover {
+  transition: color 0.2s ease;
+  color: #47b8ff;
+}
+
+.heading {
+  background-color: #1c1f2b;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.heading span {
+  color: #47b8ff;
+  font-weight: normal;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.item {
+  align-items: center;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.item svg {
+  fill: #47b8ff;
+  margin-right: 12px;
+}
+
+.item span {
+  color: #1c1f2b;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item.item--create svg {
+  fill: #5eba7d;
+}
+
+.item.item--create span {
+  color: #5eba7d;
+}
+
+.item.item--post svg {
+  fill: #f44336;
+}
+
+.item.item--post span {
+  color: #f44336;
+}
+
+.item.item--inspire span {
+  color: #fefefe;
+}
+

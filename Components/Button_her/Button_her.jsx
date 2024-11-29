@@ -3,7 +3,7 @@ import styles from "./Button_her.module.css";
 
 const Button_her = () => (
   <div>
-    <button className={styles["button"]}></button>
+    <button> Click me!</button>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Button_her;
 
         const Button_her = () => (
          <div>
-          <button className="button">
+          <button> Click me!
 </button>
         </div>
         );

@@ -3,9 +3,15 @@ import styles from "./Loader_sum.module.css";
 
 const Loader_sum = () => (
   <div>
-    <section className={styles["area"]}>
-      <div className={styles["ball"]}></div>
-    </section>
+    <div className={styles["spinner"]}>
+      <span>L</span>
+      <span>O</span>
+      <span>A</span>
+      <span>D</span>
+      <span>I</span>
+      <span>N</span>
+      <span>G</span>
+    </div>
   </div>
 );
 
@@ -20,9 +26,15 @@ export default Loader_sum;
 
         const Loader_sum = () => (
          <div>
-          <section className="area">
-  <div className="ball"></div>
-</section>
+          <div className="spinner">
+  <span>L</span>
+  <span>O</span>
+  <span>A</span>
+  <span>D</span>
+  <span>I</span>
+  <span>N</span>
+  <span>G</span>
+</div>
         </div>
         );
 

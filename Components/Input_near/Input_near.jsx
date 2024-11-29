@@ -3,9 +3,9 @@ import styles from "./Input_near.module.css";
 
 const Input_near = () => (
   <div>
-    <div className={styles["input-field"]}>
-      <input required="" name="text" type="text" />
-      <label>Enter your email</label>
+    <div className={styles["input-container"]}>
+      <input type="text" name="email" className={styles["text-input"]} />
+      <label for="email">Email</label>
     </div>
   </div>
 );
@@ -21,9 +21,9 @@ export default Input_near;
 
         const Input_near = () => (
          <div>
-          <div className="input-field">
-  <input required="" name="text" type="text" />
-  <label>Enter your email</label>
+          <div className="input-container">
+  <input type="text" name="email" className="text-input" />
+  <label for="email">Email</label>
 </div>
         </div>
         );

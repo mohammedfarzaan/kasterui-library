@@ -3,10 +3,8 @@ import styles from "./Toggle_rest.module.css";
 
 const Toggle_rest = () => (
   <div>
-    <input type="checkbox" name="check-toggle" id="checkbox" hidden="" />
-    <label for="checkbox" className={styles["toggle"]}>
-      <div className={styles["toggle__circle"]}></div>
-    </label>
+    <input id="checkbox" type="checkbox" />
+    <label className={styles["Switch"]} for="checkbox"></label>
   </div>
 );
 
@@ -21,10 +19,9 @@ export default Toggle_rest;
 
         const Toggle_rest = () => (
          <div>
-          <input type="checkbox" name="check-toggle" id="checkbox" hidden="" />
-        <label for="checkbox" className="toggle">
-            <div className="toggle__circle"></div>
-        </label>
+          <input id="checkbox" type="checkbox" />
+    <label className="Switch" for="checkbox">
+    </label>
         </div>
         );
 

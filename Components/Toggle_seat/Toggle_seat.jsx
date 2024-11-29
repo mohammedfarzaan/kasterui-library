@@ -3,14 +3,10 @@ import styles from "./Toggle_seat.module.css";
 
 const Toggle_seat = () => (
   <div>
-    <div className={styles["container"]}>
-      <label className={styles["switch"]}>
-        <input className={styles["togglesw"]} type="checkbox" checked="" />
-        <div className={styles["indicator"] + styles["left"]}></div>
-        <div className={styles["indicator"] + styles["right"]}></div>
-        <div className={styles["button"]}></div>
-      </label>
-    </div>
+    <label className={styles["switch"]}>
+      <input type="checkbox" />
+      <span className={styles["slider"]}></span>
+    </label>
   </div>
 );
 
@@ -25,14 +21,10 @@ export default Toggle_seat;
 
         const Toggle_seat = () => (
          <div>
-          <div className="container">
-<label className="switch">
-  <input className="togglesw" type="checkbox" checked="" />
-  <div className="indicator left"></div>
-  <div className="indicator right"></div>
-  <div className="button"></div>
+          <label className="switch">
+  <input type="checkbox" />
+  <span className="slider"></span>
 </label>
-</div>
         </div>
         );
 

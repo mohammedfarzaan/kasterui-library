@@ -3,7 +3,9 @@ import styles from "./Button_hand.module.css";
 
 const Button_hand = () => (
   <div>
-    <button className={styles["btn-hover"]}>HOVER ME</button>
+    <button className={styles["button"]}>
+      <p>Button</p>
+    </button>
   </div>
 );
 
@@ -18,7 +20,9 @@ export default Button_hand;
 
         const Button_hand = () => (
          <div>
-          <button className="btn-hover">HOVER ME</button>
+          <button className="button">
+  <p>Button</p>
+</button>
         </div>
         );
 

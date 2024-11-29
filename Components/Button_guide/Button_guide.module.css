@@ -1,79 +1,76 @@
 
-/* From Uiverse.io by doniaskima - Tags: button */
-.btn-27,
-.btn-27 *,
-.btn-27 :after,
-.btn-27 :before,
-.btn-27:after,
-.btn-27:before {
-  border: 0 solid;
-  box-sizing: border-box;
-}
-
-.btn-27 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
-  background-color: #000;
-  background-image: none;
-  color: #fff;
-  cursor: pointer;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-size: 100%;
-  font-weight: 900;
-  line-height: 1.5;
-  margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
-  text-transform: uppercase;
-}
-
-.btn-27:disabled {
-  cursor: default;
-}
-
-.btn-27:-moz-focusring {
-  outline: auto;
-}
-
-.btn-27 svg {
-  display: block;
-  vertical-align: middle;
-}
-
-.btn-27 [hidden] {
-  display: none;
-}
-
-.btn-27 {
-  --tilt: 40deg;
+/* From Uiverse.io by kamehame-ha - Tags: button, hover, Discord, dark, light */
+.light-button button.bt {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  outline: none;
   background: none;
-  -webkit-mask-image: none;
-  padding: 2rem 5rem;
-  perspective: 500px;
-  transform-style: preserve-3d;
+  border: none;
 }
 
-.btn-27 .text-container {
-  background: #fff;
-  display: grid;
-  inset: 0;
-  place-items: center;
+.light-button button.bt .button-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background-color: #0a0a0a;
+  border-radius: 5px;
+  color: #0f0f0f;
+  font-weight: 700;
+  transition: 300ms;
+  outline: #0f0f0f 2px solid;
+  outline-offset: 20;
+}
+
+.light-button button.bt .button-holder svg {
+  height: 50px;
+  fill: #0f0f0f;
+  transition: 300ms;
+}
+
+.light-button button.bt .light-holder {
   position: absolute;
-  transform-origin: center center;
-  transition: transform 0.2s;
+  height: 200px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.btn-27 .text {
-  color: #000;
+.light-button button.bt .light-holder .dot {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #0a0a0a;
+  border-radius: 10px;
+  z-index: 2;
 }
 
-.btn-27:hover .text-container:first-child {
-  transform: rotateY(var(--tilt));
+.light-button button.bt .light-holder .light {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+  background: transparent;
 }
 
-.btn-27:hover .text-container:nth-child(2) {
-  transform: rotateY(calc(var(--tilt) * -1));
+.light-button button.bt:hover .button-holder svg {
+  fill: rgba(88, 101, 242, 1);
 }
 
+.light-button button.bt:hover .button-holder {
+  color: rgba(88, 101, 242, 1);
+  outline: rgba(88, 101, 242, 1) 2px solid;
+  outline-offset: 2px;
+}
+
+.light-button button.bt:hover .light-holder .light {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(88, 101, 242, 1) 0%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+}

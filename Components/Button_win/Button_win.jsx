@@ -3,9 +3,9 @@ import styles from "./Button_win.module.css";
 
 const Button_win = () => (
   <div>
-    <button className={styles["btn"]}>
-      <span>鬼滅の刃</span>
-    </button>
+    <a className={styles["codepen-button"]}>
+      <span>Start Coding</span>
+    </a>
   </div>
 );
 
@@ -20,7 +20,7 @@ export default Button_win;
 
         const Button_win = () => (
          <div>
-          <button className="btn"><span>鬼滅の刃</span></button>
+          <a className="codepen-button"><span>Start Coding</span></a>
         </div>
         );
 

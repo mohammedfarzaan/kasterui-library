@@ -1,62 +1,66 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: button, save, hover effect, click effect, bookmark */
-.bookmarkBtn {
-  width: 100px;
-  height: 40px;
-  border-radius: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.349);
-  background-color: rgb(12, 12, 12);
+/* From Uiverse.io by vinodjangid07  - Tags: animation, button, edit, hover effect */
+.editBtn {
+  width: 55px;
+  height: 55px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(93, 93, 116);
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
   cursor: pointer;
-  transition-duration: 0.3s;
+  position: relative;
   overflow: hidden;
+  transition: all 0.3s;
 }
-
-.IconContainer {
-  width: 30px;
-  height: 30px;
-  background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  z-index: 2;
-  transition-duration: 0.3s;
-}
-
-.icon {
-  border-radius: 1px;
-}
-
-.text {
-  height: 100%;
-  width: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+.editBtn::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  background-color: rgb(102, 102, 141);
+  position: absolute;
   z-index: 1;
-  transition-duration: 0.3s;
-  font-size: 1.04em;
+  transform: scale(0);
+  transition: all 0.3s;
+  border-radius: 50%;
+  filter: blur(10px);
+}
+.editBtn:hover::before {
+  transform: scale(1);
+}
+.editBtn:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.336);
 }
 
-.bookmarkBtn:hover .IconContainer {
-  width: 90px;
-  transition-duration: 0.3s;
+.editBtn svg {
+  height: 17px;
+  fill: white;
+  z-index: 3;
+  transition: all 0.2s;
+  transform-origin: bottom;
 }
-
-.bookmarkBtn:hover .text {
-  transform: translate(10px);
-  width: 0;
-  font-size: 0;
-  transition-duration: 0.3s;
+.editBtn:hover svg {
+  transform: rotate(-15deg) translateX(5px);
 }
-
-.bookmarkBtn:active {
-  transform: scale(0.95);
-  transition-duration: 0.3s;
+.editBtn::after {
+  content: "";
+  width: 25px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 19px;
+  left: -5px;
+  background-color: white;
+  border-radius: 2px;
+  z-index: 2;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-out;
+}
+.editBtn:hover::after {
+  transform: scaleX(1);
+  left: 0px;
+  transform-origin: right;
 }
 

@@ -1,58 +1,54 @@
 
-/* From Uiverse.io by SouravBandyopadhyay - Tags: loader, spinner, colorful */
+/* From Uiverse.io by vikramsinghnegi  - Tags: animation, loader, refresh loading */
+/* HTML: <div class="loader"></div> */
 .loader {
-  width: 8em;
-  height: 4em;
-  position: relative;
-  margin: 0 auto;
+  font-weight: bold;
+  font-family: monospace;
+  display: inline-grid;
+  font-size: 30px;
+}
+.loader:before,
+.loader:after {
+  content: "Refresh....";
+  grid-area: 1/1;
+  -webkit-mask-size: 1.5ch 100%, 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: l36-1 1s infinite;
+}
+.loader:before {
+  -webkit-mask-image: linear-gradient(#000 0 0), linear-gradient(#000 0 0);
+}
+.loader:after {
+  -webkit-mask-image: linear-gradient(#000 0 0);
+  animation: l36-1 1s infinite,
+    l36-2 0.2s infinite cubic-bezier(0.5, 200, 0.5, -200);
 }
 
-.circle {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  border: 0.4em solid transparent;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-.outer {
-  border-top-color: #ff0080;
-  border-right-color: #ffbf00;
-  border-bottom-color: #00bfff;
-  border-left-color: #80ff00;
-  animation-name: rotate-outer;
-}
-
-.inner {
-  border-top-color: #80ff00;
-  border-right-color: #00bfff;
-  border-bottom-color: #ffbf00;
-  border-left-color: #ff0080;
-  animation-name: rotate-inner;
-}
-
-@keyframes rotate-outer {
+@keyframes l36-1 {
   0% {
-    transform: rotate(0);
+    -webkit-mask-position: 0 0, 0 0;
   }
-
+  20% {
+    -webkit-mask-position: 0.5ch 0, 0 0;
+  }
+  40% {
+    -webkit-mask-position: 100% 0, 0 0;
+  }
+  60% {
+    -webkit-mask-position: 4.5ch 0, 0 0;
+  }
+  80% {
+    -webkit-mask-position: 6.5ch 0, 0 0;
+  }
   100% {
-    transform: rotate(360deg);
+    -webkit-mask-position: 2.5ch 0, 0 0;
   }
 }
-
-@keyframes rotate-inner {
-  0% {
-    transform: rotate(360deg);
-  }
-
+@keyframes l36-2 {
   100% {
-    transform: rotate(0);
+    transform: translateY(0.2px);
   }
 }
 

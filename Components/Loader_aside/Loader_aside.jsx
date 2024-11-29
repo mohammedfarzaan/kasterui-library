@@ -3,7 +3,16 @@ import styles from "./Loader_aside.module.css";
 
 const Loader_aside = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["cube"]}>
+        <div className={styles["face"]}></div>
+        <div className={styles["face"]}></div>
+        <div className={styles["face"]}></div>
+        <div className={styles["face"]}></div>
+        <div className={styles["face"]}></div>
+        <div className={styles["face"]}></div>
+      </div>
+    </div>
   </div>
 );
 
@@ -18,7 +27,16 @@ export default Loader_aside;
 
         const Loader_aside = () => (
          <div>
-          <div className="loader"></div>
+          <div className="loader">
+    <div className="cube">
+        <div className="face"></div>
+        <div className="face"></div>
+        <div className="face"></div>
+        <div className="face"></div>
+        <div className="face"></div>
+        <div className="face"></div>
+    </div>
+</div>
         </div>
         );
 

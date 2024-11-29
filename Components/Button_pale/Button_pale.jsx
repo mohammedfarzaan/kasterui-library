@@ -3,7 +3,7 @@ import styles from "./Button_pale.module.css";
 
 const Button_pale = () => (
   <div>
-    <button className={styles["btn"]}>Button</button>
+    <button> Shake</button>
   </div>
 );
 
@@ -18,8 +18,7 @@ export default Button_pale;
 
         const Button_pale = () => (
          <div>
-          <button className="btn">
-  Button
+          <button> Shake
 </button>
         </div>
         );

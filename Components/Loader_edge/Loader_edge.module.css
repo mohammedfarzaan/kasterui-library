@@ -1,133 +1,73 @@
 
-/* From Uiverse.io by Subaashbala  - Tags: loader, game, animated, bounce animation */
-.loader {
+/* From Uiverse.io by andrew-demchenk0 - Tags: loader */
+.pyramid-loader {
   position: relative;
-  width: 18rem; /* Reposition the obstacles and the bird if the width is changed */
-  aspect-ratio: 1;
-  overflow: hidden;
-  border-radius: 50%;
-  background: linear-gradient(to bottom, #6ccee7 60%, white);
+  width: 300px;
+  height: 300px;
+  display: block;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg);
 }
-#bird {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-80%, -50%);
-  width: 3rem;
-  height: auto;
-  animation: flap 500ms linear infinite;
-}
-.flappyBirdScene,
-.flappyBirdSceneBottom {
-  display: flex;
-  width: 20rem;
-  top: -23%;
+
+.wrapper {
   position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: spin 4s linear infinite;
 }
-.sceneTop {
-  display: flex;
-  width: fit-content;
-  animation: flow 5s linear infinite;
-}
-.sceneBottom {
-  display: flex;
-  width: fit-content;
-  animation: flowBottom 5s linear infinite;
-}
-#birdObstacle {
-  height: 8rem;
-  width: 2rem;
-  background: linear-gradient(
-    to right,
-    #9de558 0px,
-    #9de558 3px,
-    #e7ff8d 3px,
-    #e7ff8d 5px,
-    #9de858 5px,
-    #9de858 10px,
-    #74c029 10px,
-    #74c029 13px,
-    #9de558 13px,
-    #9de558 15px,
-    #74c029 22px,
-    #74c029 28px,
-    #59811a 28px,
-    #59811a 100%
-  );
-  border: solid;
-  position: relative;
-}
-.flappyBirdSceneBottom {
-  bottom: -25%;
-  left: 0;
-}
-#birdObstacle::after {
-  content: "";
-  position: absolute;
-  width: 135%;
-  height: 1.25rem;
-  top: 100%;
-  left: 50%;
-  border: solid;
-  transform: translate(-50%, 0);
-  background: linear-gradient(
-    to right,
-    #9de558 0px,
-    #9de558 3px,
-    #e7ff8d 3px,
-    #e7ff8d 5px,
-    #9de858 5px,
-    #9de858 10px,
-    #74c029 10px,
-    #74c029 13px,
-    #9de558 13px,
-    #9de558 15px,
-    #74c029 22px,
-    #74c029 28px,
-    #59811a 28px,
-    #59811a 100%
-  );
-}
-.birdObs2 {
-  transform: translate(0%, 15%);
-  left: 15%;
-}
-.birdObs3 {
-  transform: translate(0, 18%);
-  left: 30%;
-}
-.birdObs4 {
-  transform: translate(0, 15%);
-  left: 45%;
-}
-@keyframes flap {
-  from {
-    transform: translate(-80%, -50%);
-  }
-  25% {
-    transform: translate(-80%, -50%) rotate(-15deg);
-  }
-  50% {
-    transform: translate(-80%, -12%) rotate(5deg);
-  }
+
+@keyframes spin {
   100% {
-    transform: translate(-80%, -50%);
-  }
-}
-@keyframes flow {
-  from {
-    transform: translate(0, -43%);
-  }
-  to {
-    transform: translate(-50%, -43%);
-  }
-}
-@keyframes flowBottom {
-  from {
-    transform: translate(0, 75%) rotateX(180deg);
-  }
-  to {
-    transform: translate(-50%, 75%) rotateX(180deg);
+    transform: rotateY(360deg);
   }
 }
 
+.pyramid-loader .wrapper .side {
+  width: 70px;
+  height: 70px;
+/* you can choose any gradient or color you want */
+  /* background: radial-gradient( #2F2585 10%, #F028FD 70%, #2BDEAC 120%); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform-origin: center top;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.pyramid-loader .wrapper .side1 {
+  transform: rotateZ(-30deg) rotateY(90deg);
+  background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);
+}
+
+.pyramid-loader .wrapper .side2 {
+  transform: rotateZ(30deg) rotateY(90deg);
+  background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);
+}
+
+.pyramid-loader .wrapper .side3 {
+  transform: rotateX(30deg);
+  background: conic-gradient( #2F2585, #D8CCE6, #F028FD, #2BDEAC);
+}
+
+.pyramid-loader .wrapper .side4 {
+  transform: rotateX(-30deg);
+  background: conic-gradient( #2BDEAC, #F028FD, #D8CCE6, #2F2585);
+}
+
+.pyramid-loader .wrapper .shadow {
+  width: 60px;
+  height: 60px;
+  background: #8B5AD5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotateX(90deg) translateZ(-40px);
+  filter: blur(12px);
+}

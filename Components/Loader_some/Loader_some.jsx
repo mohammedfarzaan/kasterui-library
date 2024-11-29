@@ -3,8 +3,10 @@ import styles from "./Loader_some.module.css";
 
 const Loader_some = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["blue"]}></div>
+    <div className={styles["div"]}>
+      <p id="h2">
+        Loading....<span id="lol"></span>
+      </p>
     </div>
   </div>
 );
@@ -20,9 +22,9 @@ export default Loader_some;
 
         const Loader_some = () => (
          <div>
-          <div className="loader">
-  <div className="blue">
-</div></div>
+          <div className="div">
+  <p id="h2">Loading....<span id="lol"></span></p>
+</div>
         </div>
         );
 

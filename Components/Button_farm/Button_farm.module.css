@@ -1,77 +1,79 @@
 
-/* From Uiverse.io by VashonG - Tags: flashy, animation, button */
-.code-button {
-  display: inline-block;
-  font-family: "Menlo", "Bitstream Vera Sans Mono", "DejaVu Sans Mono", "Monaco", "Consolas", monospace;
-  margin: 1em;
-  border-radius: 3px;
-  background: #434d5a;
-  border: none;
-  padding: 1em 0;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  width: 9em;
-  transition: all 0.2s ease, background-color 0.2s ease-in 0.15s, box-shadow 0.2s ease-in 0.15s, color 0s ease;
+/* From Uiverse.io by Z4drus  - Tags: simple, 3d, action, minimalist, white, black, button, smooth */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
 }
 
-.code-button__bracket, .code-button__text, .code-button__code {
-  display: inline-block;
-  margin-right: -3px;
-  text-align: center;
-  width: 0.5em;
-  transition: all 0.2s ease, color 0s ease;
+.material-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.code-button__bracket {
-  font-weight: normal;
+.button-text {
+  margin-left: 6px;
+  font-weight: 600;
+  color: black;
 }
 
-.code-button__text {
-  opacity: 0;
+.button-3d {
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  border-width: 0;
+  padding: 0 8px;
+  min-width: 4em;
+  min-height: 4em;
+  box-sizing: border-box;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.button-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding: 10px 10px;
+  transform: translateY(0);
+  background-image: linear-gradient(to bottom, #e7e7e775, #ffffff);
+  border-radius: 20px;
+  transition: transform 0.3s, border-radius 0.3s, background 10s;
+}
+
+.button-3d:active .button-top {
+  border-radius: 10px 10px 8px 8px / 8px;
+  transform: translateY(2px);
+  background-image: linear-gradient(to bottom, #ffffff, #e7e7e7);
+}
+
+.button-bottom {
   position: absolute;
-  transition: all 0s ease;
+  z-index: 1;
+  bottom: 4px;
+  left: 4px;
+  border-radius: 10px;
+  padding-top: 10px;
+  width: calc(100% - 8px);
+  height: calc(100% - 10px);
+  background-image: linear-gradient(to bottom, #ffffff, #e7e7e7);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+  transition: border-radius 0.2s, padding-top 0.2s;
 }
 
-.code-button:hover {
-  padding: 1em 0;
-  transition: all 0.2s ease, background-color 0.2s ease-in 0.05s, box-shadow 0.2s ease-in 0.05s, color 0s ease;
+.button-3d:active .button-bottom {
+  border-radius: 10px 10px 8px 8px / 8px;
+  padding-top: 0;
 }
 
-.code-button:hover .code-button__code, .code-button:hover .code-button__text {
-  width: 2em;
+.button-3d:active .button-base {
+  border-radius: 10px 10px 8px 8px / 8px;
 }
 
-.code-button:hover .code-button__code, .code-button:hover .code-button__text, .code-button:hover .code-button__bracket {
-  transition: all 0.2s ease, color 0s ease;
-}
-
-.code-button:hover .code-button__code {
-  opacity: 0;
-  position: absolute;
-}
-
-.code-button:hover .code-button__text {
-  opacity: 1;
-  position: static;
-}
-
-.code-button--color:hover {
-  color: #434d5a;
-}
-
-.code-button--color:hover.code-button--css {
-  background-color: #aaffa9;
-  box-shadow: inset 15px 5px 70px -10px #aaffa9, inset -15px -5px 70px -10px #11ffbd;
-}
-
-.code-button--color:hover.code-button--html {
-  background-color: #fc8f71;
-  box-shadow: inset 15px 15px 90px -20px #fc8f71, inset -15px -5px 80px -10px #fcdcab;
-}
-
-.code-button--color:hover.code-button--js {
-  background-color: #87e1ed;
-  box-shadow: inset 15px 15px 90px -20px #7996d1, inset -15px -5px 80px -10px #87e1ed;
-}
- 

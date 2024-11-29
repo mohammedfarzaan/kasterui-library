@@ -3,7 +3,7 @@ import styles from "./Loader_object.module.css";
 
 const Loader_object = () => (
   <div>
-    <div className={styles["spinner"]}></div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Loader_object;
 
         const Loader_object = () => (
          <div>
-          <div className="spinner"></div>
+          <div className="loader"></div>
         </div>
         );
 

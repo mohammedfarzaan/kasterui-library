@@ -3,7 +3,7 @@ import styles from "./Button_daily.module.css";
 
 const Button_daily = () => (
   <div>
-    <button className={styles["btn"]}>space</button>
+    <button></button>
   </div>
 );
 
@@ -18,8 +18,7 @@ export default Button_daily;
 
         const Button_daily = () => (
          <div>
-          <button className="btn">
-  space
+          <button>
 </button>
         </div>
         );

@@ -3,7 +3,10 @@ import styles from "./Button_hunter.module.css";
 
 const Button_hunter = () => (
   <div>
-    <button className={styles["btn_center"]}>Click Me</button>
+    <button className={styles["button"]}>
+      Join Today
+      <p>→</p>
+    </button>
   </div>
 );
 
@@ -18,8 +21,9 @@ export default Button_hunter;
 
         const Button_hunter = () => (
          <div>
-          <button className="btn_center">
-    Click Me
+          <button className="button">
+  Join Today
+  <p>→</p>
 </button>
         </div>
         );

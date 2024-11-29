@@ -1,98 +1,218 @@
 
-/* From Uiverse.io by kalp-lathia - Tags: button, bounce, animated */
-.button {
-  --bg-color: rgb(0, 119, 255);
-  --color: white;
-  --border-radius: 1rem;
-  --animation-duaration: 1s;
-  --height: 4rem;
-  --span-width: 1.5rem;
-  --base-pos: 0rem;
-  --final-pos: -2rem
-}
-
-.button, .left, .right {
-  height: var(--height);
-  background-color: var(--bg-color);
-  transition: all var(--animation-duaration) ease-in-out;
-}
+/* From Uiverse.io by csozidev - Tags: simple, flat design, animation, button, hover, animated, colorful */
+/* Fancy Google hover button made by: csozi | Website: www.csozi.hu*/
 
 .button {
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
   position: relative;
-  font-size: 1rem;
-  padding: 0rem 2.5rem;
-  color: var(--color);
-  border: none;
-  border-radius: var(--border-radius);
-  cursor: pointer;
+  overflow: hidden;
+  border-radius: 35px;
+  align-items: center;
+  border: solid black 2px;
+  outline: none;
 }
 
-.left, .right {
-  width: var(--span-width);
+.svg {
+  height: 25px;
+  margin-right: 10px;
+}
+
+.button .text {
+  z-index: 10;
+  font-size: 14px;
+}
+
+.button:hover .text {
+  animation: text forwards 0.3s;
+  /*color: white;*/
+}
+
+@keyframes text {
+  from {
+    color: black;
+  }
+
+  to {
+    color: white;
+  }
+}
+
+.svg {
+  z-index: 6;
+}
+
+.button:hover::before {
+  content: "";
+  display: block;
   position: absolute;
-  top: 0rem;
+  top: 50%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  opacity: 0;
+  border-radius: 300px;
+  animation: wave1 2.5s ease-in-out forwards;
 }
 
-.left {
-  left: var(--base-pos);
-  border-radius: var(--border-radius) 0rem 0rem var(--border-radius);
+.button:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  opacity: 0;
+  border-radius: 300px;
+  animation: wave2 2.5s ease-in-out forwards;
 }
 
-.right {
-  right: var(--base-pos);
-  border-radius: 0rem var(--border-radius) var(--border-radius) 0rem;
-}
-
-.button:hover {
-  animation: button-radius var(--animation-duaration) infinite ease-in-out;
-}
-
-.button:hover .left {
-  animation: left-shake var(--animation-duaration) infinite ease-in-out;
-}
-
-.button:hover .right {
-  animation: right-shake var(--animation-duaration) infinite ease-in-out;
-}
-
-@keyframes button-radius {
+@keyframes wave1 {
   0% {
-    border-radius: var(--border-radius);
+    z-index: 1;
+    background: #EB4335;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  1% {
+    z-index: 1;
+    background: #EB4335;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  25% {
+    z-index: 1;
+    background: #EB4335;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
+  }
+
+  26% {
+    z-index: 3;
+    background: #34A853;
+    width: 0;
+    height: 0;
+    opacity: 1;
   }
 
   50% {
-    border-radius: 0rem;
+    z-index: 3;
+    background: #34A853;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
+  }
+
+  70% {
+    z-index: 3;
+    background: #34A853;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
   }
 
   100% {
-    border-radius: var(--border-radius);
+    z-index: 3;
+    background: #34A853;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
   }
 }
 
-@keyframes left-shake {
+@keyframes wave2 {
   0% {
-    left: var(--base-pos);
+    z-index: 2;
+    background: #FBBC05;
+    width: 0;
+    height: 0;
+    opacity: 1;
   }
 
-  50% {
-    left: var(--final-pos);
+  11% {
+    z-index: 2;
+    background: #FBBC05;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  35% {
+    z-index: 2;
+    background: #FBBC05;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
+  }
+
+  39% {
+    z-index: 2;
+    background: #FBBC05;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
+  }
+
+  40% {
+    z-index: 4;
+    background: #4285F4;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  64% {
+    z-index: 4;
+    background: #4285F4;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
   }
 
   100% {
-    left: var(--base-pos);
+    z-index: 4;
+    background: #4285F4;
+    width: 800px;
+    height: 800px;
+    opacity: 1;
   }
 }
 
-@keyframes right-shake {
-  0% {
-    right: var(--base-pos);
+.button:hover .red {
+  animation: disappear 0.1s forwards;
+  animation-delay: 0.1s;
+}
+
+.button:hover .yellow {
+  animation: disappear 0.1s forwards;
+  animation-delay: 0.3s;
+}
+
+.button:hover .green {
+  animation: disappear 0.1s forwards;
+  animation-delay: 0.7s;
+}
+
+.button:hover .blue {
+  animation: disappear 0.1s forwards;
+  animation-delay: 1.1s;
+}
+
+@keyframes disappear {
+  from {
+    filter: brightness(1);
   }
 
-  50% {
-    right: var(--final-pos);
-  }
-
-  100% {
-    right: var(--base-pos);
+  to {
+    filter: brightness(100);
   }
 }

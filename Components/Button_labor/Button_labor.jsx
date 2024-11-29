@@ -3,9 +3,7 @@ import styles from "./Button_labor.module.css";
 
 const Button_labor = () => (
   <div>
-    <button className={styles["box"]}>
-      <span className={styles["button"]}>How Are you today?</span>
-    </button>
+    <button> Button</button>
   </div>
 );
 
@@ -20,9 +18,8 @@ export default Button_labor;
 
         const Button_labor = () => (
          <div>
-          <button className="box">
-    <span className="button">How Are you today?</span>
-  </button>
+          <button> Button
+</button>
         </div>
         );
 

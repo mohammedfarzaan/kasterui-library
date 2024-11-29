@@ -3,13 +3,7 @@ import styles from "./Loader_plane.module.css";
 
 const Loader_plane = () => (
   <div>
-    <div className={styles["loader2"]}>
-      <div className={styles["load21"]}></div>
-      <div className={styles["load22"]}></div>
-      <div className={styles["load23"]}></div>
-      <div className={styles["load24"]}></div>
-      <div className={styles["load25"]}></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -24,13 +18,7 @@ export default Loader_plane;
 
         const Loader_plane = () => (
          <div>
-          <div className="loader2">
-  <div className="load21"></div>
-  <div className="load22"></div>
-  <div className="load23"></div>
-  <div className="load24"></div>
-  <div className="load25"></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

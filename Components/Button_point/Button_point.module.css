@@ -1,28 +1,38 @@
 
-/* From Uiverse.io by adamgiebl - Tags: button */
+/* From Uiverse.io by bhaveshxrawat - Tags: button */
 button {
-  font-size: 18px;
-  display: inline-block;
-  outline: 0;
-  border: 0;
-  cursor: pointer;
-  will-change: box-shadow,transform;
-  background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
-  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
-  padding: 0 2em;
-  border-radius: 0.3em;
-  color: #fff;
-  height: 2.6em;
-  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
-  transition: box-shadow 0.15s ease, transform 0.15s ease;
+ border: none;
+ padding: 0.7em 2em;
+ font-size: 18px;
+ font-family: inherit;
+ background-blend-mode: multiply;
+ color: rgb(235, 234, 234);
+ border-radius: 9px;
+ background: linear-gradient(225deg, #181818, #2e2e2e);
+ box-shadow: -5px 5px 10px #191919,
+             5px -5px 10px #292929;
 }
 
 button:hover {
-  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
-  transform: translateY(-0.1em);
+ background: #212121;
+ transition: background 1s ease;
+ box-shadow: -5px 5px 10px #191919,
+             5px -5px 10px #292929;
 }
 
 button:active {
-  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
-  transform: translateY(0em);
+ transition: box-shadow .1s ease;
+ border-radius: 9px;
+ background: #212121;
+ box-shadow: inset -5px 5px 10px #191919,
+              inset 5px -5px 10px #292929;
+}
+
+span {
+ opacity: 0.5;
+ transition: opacity 0.2s ease;
+}
+
+button:hover span {
+ opacity: 0.7;
 }

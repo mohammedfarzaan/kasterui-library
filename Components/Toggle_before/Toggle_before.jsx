@@ -4,7 +4,7 @@ import styles from "./Toggle_before.module.css";
 const Toggle_before = () => (
   <div>
     <label className={styles["switch"]}>
-      <input type="checkbox" />
+      <input type="checkbox" className={styles["input"]} />
       <span className={styles["slider"]}></span>
     </label>
   </div>
@@ -22,7 +22,7 @@ export default Toggle_before;
         const Toggle_before = () => (
          <div>
           <label className="switch">
-  <input type="checkbox" />
+  <input type="checkbox" className="input" />
   <span className="slider"></span>
 </label>
         </div>

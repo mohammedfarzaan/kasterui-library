@@ -1,78 +1,51 @@
 
-/* From Uiverse.io by asgardOP  - Tags: simple, animation, white, button, message, modern, btn, click animation */
+/* From Uiverse.io by mucahit312ataman610 - Tags: button, hover */
 .button {
-  width: 170px;
-  height: 55px;
-  border-radius: 10px;
-  border: 1px solid gray;
-  border-bottom: 2px solid rgb(77, 77, 77);
-  display: flex;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.349);
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --border-color: #000;
+  background-color: var(--primary-color);
+  border: 2px solid var(--border-color);
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   position: relative;
-  transition: 0.4s;
-  background: linear-gradient(140deg, white, rgb(214, 214, 214));
-}
-
-.button:hover {
-  box-shadow: none;
-  transform: scaleY(0.6);
-  border-bottom: 2px solid rgb(77, 77, 77);
-  background: linear-gradient(160deg, white, rgb(214, 214, 214));
-}
-
-.button:active {
-  margin-top: 20px;
-  transition: 0.05s;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
 }
 
 .button::before {
   content: "";
+  display: block;
   position: absolute;
-  left: -1px;
-  bottom: 0px;
-  width: 170px;
-  height: 0px;
-  background: rgb(194, 194, 194);
-  border-top: 0px solid black;
-  border-bottom: 0px solid black;
-  transition: height 0.4s, bottom 0.4s, opacity 0s 0.35s;
-  opacity: 0;
-  box-shadow: inset 0px -10px 10px rgba(167, 167, 167, 0.719);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  top: -100%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  transform: translate(-50%, 0) scale(0);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
 
 .button:hover::before {
-  height: 35px;
-  bottom: -27px;
-  opacity: 1;
-  border-bottom: 1px solid black;
-  transition: height 0.4s, bottom 0.4s;
+  transform: translate(-50%, -50%) scale(2);
 }
 
-.button:active::before {
-  height: 18px;
-  bottom: -9px;
-  transition: height 0.05s, bottom 0.05s, opacity 0s 0s;
-}
-
-.button div {
-  width: 150px;
-  height: 40px;
-  background: linear-gradient(180deg, rgba(212, 212, 212, 0.925), white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  font-weight: 900;
-}
-
-.button div svg {
-  width: 20px;
-  transform: rotate(40deg);
-  margin-right: 5px;
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 

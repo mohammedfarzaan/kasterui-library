@@ -3,42 +3,7 @@ import styles from "./Loader_park.module.css";
 
 const Loader_park = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["cubes"]}>
-        <div className={styles["cube"]}>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-        </div>
-        <div className={styles["cube"]}>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-        </div>
-        <div className={styles["cube"]}>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-        </div>
-        <div className={styles["cube"]}>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-          <div className={styles["side"]}></div>
-        </div>
-      </div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -53,42 +18,7 @@ export default Loader_park;
 
         const Loader_park = () => (
          <div>
-          <div className="loader">
-  <div className="cubes">
-    <div className="cube">
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-    </div>
-    <div className="cube">
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-    </div>
-    <div className="cube">
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-    </div>
-    <div className="cube">
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-      <div className="side"></div>
-    </div>
-  </div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

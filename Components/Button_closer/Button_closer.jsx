@@ -3,25 +3,35 @@ import styles from "./Button_closer.module.css";
 
 const Button_closer = () => (
   <div>
-    <button className={styles["button"]}>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        viewBox="0 0 20 20"
-        height="20"
-        fill="none"
-        className="svg-icon"
-      >
-        <g strokeWidth="1.5" strokeLinecap="round" stroke="#5d41de">
-          <circle r="2.5" cy="10" cx="10"></circle>
+    <button
+      className={styles["action_has"] + styles["has_liked"]}
+      aria-label="like"
+      type="button"
+    >
+      <span data-icon="">
+        <svg
+          data-icon="aoeri"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          fill="none"
+        >
           <path
-            fillRule="evenodd"
-            d="m8.39079 2.80235c.53842-1.51424 2.67991-1.51424 3.21831-.00001.3392.95358 1.4284 1.40477 2.3425.97027 1.4514-.68995 2.9657.82427 2.2758 2.27575-.4345.91407.0166 2.00334.9702 2.34248 1.5143.53842 1.5143 2.67996 0 3.21836-.9536.3391-1.4047 1.4284-.9702 2.3425.6899 1.4514-.8244 2.9656-2.2758 2.2757-.9141-.4345-2.0033.0167-2.3425.9703-.5384 1.5142-2.67989 1.5142-3.21831 0-.33914-.9536-1.4284-1.4048-2.34247-.9703-1.45148.6899-2.96571-.8243-2.27575-2.2757.43449-.9141-.01669-2.0034-.97028-2.3425-1.51422-.5384-1.51422-2.67994.00001-3.21836.95358-.33914 1.40476-1.42841.97027-2.34248-.68996-1.45148.82427-2.9657 2.27575-2.27575.91407.4345 2.00333-.01669 2.34247-.97026z"
-            clipRule="evenodd"
+            d="m8.05,11.99c0-.84.28-1.07,1.2-1.25,1.6-.31,2.35-.74,3.14-1.54,1.19-1.21,1.58-1.97,2.18-3.24.66-1.69,1.55-2.82,3.04-2.76.9.03,2.33.8,1.67,2.72-.31.9-1.98,3.61-2.23,4.23-.18.46.4.8.8.8h2.5c1.2,0,2.2,1,2.2,2.2l-1.1,5.6c-.3,1.5-1.02,2.23-2.2,2.2h-7.6c-2,0-3.6-1.6-3.6-3.6v-5.35Z"
+            data-d="thumb"
           ></path>
-        </g>
-      </svg>
-      <span className={styles["lable"]}>Settings</span>
+          <path
+            d="m5.4,19.9c0,.6-.5,1.1-1.1,1.1h-1c-1,0-1.9-.9-1.9-1.9v-6.3c0-1,.9-1.9,1.9-1.9h.9c.7,0,1.2.6,1.2,1.2v7.7Z"
+            data-d="sleeves"
+          ></path>
+        </svg>
+      </span>
     </button>
   </div>
 );
@@ -37,9 +47,30 @@ export default Button_closer;
 
         const Button_closer = () => (
          <div>
-          <button className="button">
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" height="20" fill="none" className="svg-icon"><g strokeWidth="1.5" strokeLinecap="round" stroke="#5d41de"><circle r="2.5" cy="10" cx="10"></circle><path fillRule="evenodd" d="m8.39079 2.80235c.53842-1.51424 2.67991-1.51424 3.21831-.00001.3392.95358 1.4284 1.40477 2.3425.97027 1.4514-.68995 2.9657.82427 2.2758 2.27575-.4345.91407.0166 2.00334.9702 2.34248 1.5143.53842 1.5143 2.67996 0 3.21836-.9536.3391-1.4047 1.4284-.9702 2.3425.6899 1.4514-.8244 2.9656-2.2758 2.2757-.9141-.4345-2.0033.0167-2.3425.9703-.5384 1.5142-2.67989 1.5142-3.21831 0-.33914-.9536-1.4284-1.4048-2.34247-.9703-1.45148.6899-2.96571-.8243-2.27575-2.2757.43449-.9141-.01669-2.0034-.97028-2.3425-1.51422-.5384-1.51422-2.67994.00001-3.21836.95358-.33914 1.40476-1.42841.97027-2.34248-.68996-1.45148.82427-2.9657 2.27575-2.27575.91407.4345 2.00333-.01669 2.34247-.97026z" clipRule="evenodd"></path></g></svg>
-  <span className="lable">Settings</span>
+          <button className="action_has has_liked" aria-label="like" type="button">
+  <span data-icon=""
+    ><svg
+      data-icon="aoeri"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      fill="none"
+    >
+      <path
+        d="m8.05,11.99c0-.84.28-1.07,1.2-1.25,1.6-.31,2.35-.74,3.14-1.54,1.19-1.21,1.58-1.97,2.18-3.24.66-1.69,1.55-2.82,3.04-2.76.9.03,2.33.8,1.67,2.72-.31.9-1.98,3.61-2.23,4.23-.18.46.4.8.8.8h2.5c1.2,0,2.2,1,2.2,2.2l-1.1,5.6c-.3,1.5-1.02,2.23-2.2,2.2h-7.6c-2,0-3.6-1.6-3.6-3.6v-5.35Z"
+        data-d="thumb"
+      ></path>
+      <path
+        d="m5.4,19.9c0,.6-.5,1.1-1.1,1.1h-1c-1,0-1.9-.9-1.9-1.9v-6.3c0-1,.9-1.9,1.9-1.9h.9c.7,0,1.2.6,1.2,1.2v7.7Z"
+        data-d="sleeves"
+      ></path></svg
+  ></span>
 </button>
         </div>
         );

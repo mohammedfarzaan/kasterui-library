@@ -3,15 +3,25 @@ import styles from "./Button_flag.module.css";
 
 const Button_flag = () => (
   <div>
-    <button className={styles["container"]}>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <div className={styles["card"]}>
-        <div className={styles["card-header"]}>HOVER</div>
+    <div className={styles["box"]}>
+      <button className={styles["button"]}>RAIN</button>
+      <div className={styles["rain"]}>
+        <span style="--i: 15" className={styles["raindrop"]}></span>
+        <span style="--i: 8" className={styles["raindrop"]}></span>
+        <span style="--i: 19" className={styles["raindrop"]}></span>
+        <span style="--i: 9" className={styles["raindrop"]}></span>
+        <span style="--i: 12" className={styles["raindrop"]}></span>
+        <span style="--i: 14" className={styles["raindrop"]}></span>
+        <span style="--i: 11" className={styles["raindrop"]}></span>
+        <span style="--i: 18" className={styles["raindrop"]}></span>
+        <span style="--i: 16" className={styles["raindrop"]}></span>
+        <span style="--i: 9" className={styles["raindrop"]}></span>
+        <span style="--i: 19" className={styles["raindrop"]}></span>
+        <span style="--i: 17" className={styles["raindrop"]}></span>
+        <span style="--i: 9" className={styles["raindrop"]}></span>
+        <span style="--i: 20" className={styles["raindrop"]}></span>
       </div>
-    </button>
+    </div>
   </div>
 );
 
@@ -26,17 +36,25 @@ export default Button_flag;
 
         const Button_flag = () => (
          <div>
-          <button className="container">
-  <a href="#"></a>
-  <a href="#"></a>
-  <a href="#"></a>
-  <a href="#"></a>
-  <div className="card">
-    <div className="card-header">
-      HOVER
-    </div>
+          <div className="box">
+  <button className="button">RAIN</button>
+  <div className="rain">
+    <span style="--i: 15" className="raindrop"></span>
+    <span style="--i: 8" className="raindrop"></span>
+    <span style="--i: 19" className="raindrop"></span>
+    <span style="--i: 9" className="raindrop"></span>
+    <span style="--i: 12" className="raindrop"></span>
+    <span style="--i: 14" className="raindrop"></span>
+    <span style="--i: 11" className="raindrop"></span>
+    <span style="--i: 18" className="raindrop"></span>
+    <span style="--i: 16" className="raindrop"></span>
+    <span style="--i: 9" className="raindrop"></span>
+    <span style="--i: 19" className="raindrop"></span>
+    <span style="--i: 17" className="raindrop"></span>
+    <span style="--i: 9" className="raindrop"></span>
+    <span style="--i: 20" className="raindrop"></span>
   </div>
-</button>
+</div>
         </div>
         );
 

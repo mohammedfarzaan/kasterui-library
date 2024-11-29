@@ -3,7 +3,13 @@ import styles from "./Button_learn.module.css";
 
 const Button_learn = () => (
   <div>
-    <button className={styles["btn"]}>Button</button>
+    <div className={styles["button"]}>
+      <div className={styles["box"]}>H</div>
+      <div className={styles["box"]}>O</div>
+      <div className={styles["box"]}>V</div>
+      <div className={styles["box"]}>E</div>
+      <div className={styles["box"]}>R</div>
+    </div>
   </div>
 );
 
@@ -18,9 +24,13 @@ export default Button_learn;
 
         const Button_learn = () => (
          <div>
-          <button className="btn">
-  Button
-</button>
+          <div className="button">
+    <div className="box">H</div>
+    <div className="box">O</div>
+    <div className="box">V</div>
+    <div className="box">E</div>
+    <div className="box">R</div>
+</div>
         </div>
         );
 

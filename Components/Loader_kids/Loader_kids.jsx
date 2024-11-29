@@ -3,9 +3,20 @@ import styles from "./Loader_kids.module.css";
 
 const Loader_kids = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["box-1"]}></div>
-      <span>Loading.....</span>
+    <div className={styles["pl"]}>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__dot"]}></div>
+      <div className={styles["pl__text"]}>Loading…</div>
     </div>
   </div>
 );
@@ -21,13 +32,21 @@ export default Loader_kids;
 
         const Loader_kids = () => (
          <div>
-          <div className="loader">
-     <div className="box-1">
-     </div>
-     <span>
-         Loading.....
-     </span>
- </div>
+          <div className="pl">
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__dot"></div>
+	<div className="pl__text">Loading…</div>
+</div>
         </div>
         );
 

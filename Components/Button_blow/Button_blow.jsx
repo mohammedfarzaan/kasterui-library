@@ -3,7 +3,7 @@ import styles from "./Button_blow.module.css";
 
 const Button_blow = () => (
   <div>
-    <button className={styles["button"]}></button>
+    <button>Button</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_blow;
 
         const Button_blow = () => (
          <div>
-          <button className="button"></button>
+          <button>
+  Button
+</button>
         </div>
         );
 

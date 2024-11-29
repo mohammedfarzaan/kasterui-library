@@ -1,96 +1,87 @@
 
-/* From Uiverse.io by satyamchaudharydev - Tags: loader */
-/* From cssbuttons.io by @satyamchaudharydev */
+/* From Uiverse.io by JaydipPrajapati1910 - Tags: red, loading, loader */
 .loader {
- --loader: rgb(221, 65, 226);
- --loader-size: 3px;
- position: relative;
- width: 40px;
- height: 40px;
- overflow: hidden;
- transition: .5s;
- letter-spacing: 2px
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50px;
+  height: 80px;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  position: relative;
+  background: linear-gradient(#FF3D00 30px, transparent 0) no-repeat;
+  background-size: 2px 40px;
+  background-position: 50% 0px;
+  animation: spinx 5s linear infinite;
 }
 
-.loader span {
- position: absolute;
+.loader:before, .loader:after {
+  content: "";
+  width: 40px;
+  left: 50%;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  transform: translatex(-50%);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 0 0 20px 20px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0 0px;
+  animation: lqt 5s linear infinite;
 }
 
-.loader span:nth-child(1) {
- top: 0;
- left: -100%;
- width: 100%;
- height: var(--loader-size);
- background: linear-gradient(90deg, transparent, var(--loader));
- animation: loader-anim1 1s linear infinite;
+.loader:after {
+  top: auto;
+  bottom: 0;
+  border-radius: 20px 20px 0 0;
+  animation: lqb 5s linear infinite;
 }
 
-@keyframes loader-anim1 {
- 0% {
-  left: -100%;
- }
+@keyframes lqt {
+  0%, 100% {
+    background-image: linear-gradient(#FF3D00 40px, transparent 0);
+    background-position: 0% 0px;
+  }
 
- 50%,100% {
-  left: 100%;
- }
+  50% {
+    background-image: linear-gradient(#FF3D00 40px, transparent 0);
+    background-position: 0% 40px;
+  }
+
+  50.1% {
+    background-image: linear-gradient(#FF3D00 40px, transparent 0);
+    background-position: 0% -40px;
+  }
 }
 
-.loader  span:nth-child(2) {
- top: -100%;
- right: 0;
- width: var(--loader-size);
- height: 100%;
- background: linear-gradient(180deg, transparent, var(--loader));
- animation: loader-anim2 1s linear infinite;
- animation-delay: .25s
+@keyframes lqb {
+  0% {
+    background-image: linear-gradient(#FF3D00 40px, transparent 0);
+    background-position: 0 40px;
+  }
+
+  100% {
+    background-image: linear-gradient(#FF3D00 40px, transparent 0);
+    background-position: 0 -40px;
+  }
 }
 
-@keyframes loader-anim2 {
- 0% {
-  top: -100%;
- }
+@keyframes spinx {
+  0%, 49% {
+    transform: rotate(0deg);
+    background-position: 50% 36px;
+  }
 
- 50%,100% {
-  top: 100%;
- }
+  51%, 98% {
+    transform: rotate(180deg);
+    background-position: 50% 4px;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    background-position: 50% 36px;
+  }
 }
+    
+  
 
-.loader span:nth-child(3) {
- bottom: 0;
- right: -100%;
- width: 100%;
- height: var(--loader-size);
- background: linear-gradient(270deg, transparent, var(--loader));
- animation: loader-anim3 1s linear infinite;
- animation-delay: .5s
-}
-
-@keyframes loader-anim3 {
- 0% {
-  right: -100%;
- }
-
- 50%,100% {
-  right: 100%;
- }
-}
-
-.loader span:nth-child(4) {
- bottom: -100%;
- left: 0;
- width: var(--loader-size);
- height: 100%;
- background: linear-gradient(360deg, transparent, var(--loader));
- animation: loader-anim4 1s linear infinite;
- animation-delay: .75s
-}
-
-@keyframes loader-anim4 {
- 0% {
-  bottom: -100%;
- }
-
- 50%,100% {
-  bottom: 100%;
- }
-}

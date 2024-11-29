@@ -3,22 +3,12 @@ import styles from "./Button_steel.module.css";
 
 const Button_steel = () => (
   <div>
-    <div className={styles["box"]}>
-      <div className={styles["container"]}>
-        <button className={styles["button"]}>
-          <span>A</span>
-        </button>
-        <button className={styles["button"]}>
-          <span>B</span>
-        </button>
-        <button className={styles["button"]}>
-          <span>C</span>
-        </button>
-        <button className={styles["button"]}>
-          <span>D</span>
-        </button>
-      </div>
-    </div>
+    <button className={styles["button"]}>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+        <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+      </svg>
+      Unlock Pro
+    </button>
   </div>
 );
 
@@ -33,14 +23,12 @@ export default Button_steel;
 
         const Button_steel = () => (
          <div>
-          <div className="box">
-  <div className="container">
-    <button className="button"><span>A</span></button>
-    <button className="button"><span>B</span></button>
-    <button className="button"><span>C</span></button>
-    <button className="button"><span>D</span></button>
-  </div>
-</div>
+          <button className="button">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+        <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+    </svg>
+    Unlock Pro
+</button>
         </div>
         );
 

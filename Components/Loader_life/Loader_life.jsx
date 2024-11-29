@@ -3,7 +3,15 @@ import styles from "./Loader_life.module.css";
 
 const Loader_life = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["loading-spinner"]}>
+      <div className={styles["loading-spinner-inner"]}>
+        <div className={styles["loading-spinner-circle"]}></div>
+        <div className={styles["loading-spinner-circle"]}></div>
+        <div className={styles["loading-spinner-circle"]}></div>
+        <div className={styles["loading-spinner-circle"]}></div>
+        <div className={styles["loading-spinner-circle"]}></div>
+      </div>
+    </div>
   </div>
 );
 
@@ -18,7 +26,15 @@ export default Loader_life;
 
         const Loader_life = () => (
          <div>
-          <div className="loader"></div>
+          <div className="loading-spinner">
+  <div className="loading-spinner-inner">
+    <div className="loading-spinner-circle"></div>
+    <div className="loading-spinner-circle"></div>
+    <div className="loading-spinner-circle"></div>
+    <div className="loading-spinner-circle"></div>
+    <div className="loading-spinner-circle"></div>
+  </div>
+</div>
         </div>
         );
 

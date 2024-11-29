@@ -1,158 +1,64 @@
 
-/* From Uiverse.io by wizard503  - Tags: social, button, share */
-.share {
-  width: 150px;
-  height: 150px;
-  margin: 5em auto;
-  background: rgba(10, 237, 189, 1);
-  background: -webkit-radial-gradient(
-    top left,
-    rgba(10, 237, 189, 1),
-    rgba(37, 211, 103, 1)
-  );
-  background: -moz-radial-gradient(
-    top left,
-    rgba(10, 237, 189, 1),
-    rgba(37, 211, 103, 1)
-  );
-  background: radial-gradient(
-    to bottom right,
-    rgba(10, 237, 189, 1),
-    rgba(37, 211, 103, 1)
-  );
-  text-align: center;
-  border-radius: 100%;
+/* From Uiverse.io by vinodjangid07  - Tags: tooltip, button, hover, trash, delete, hover effect, bin */
+.deleteButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
   overflow: hidden;
-  position: relative;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
-
-.share a {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 90px;
-  height: 90px;
-  position: relative;
-  z-index: 1;
+.deleteButton svg {
+  width: 44%;
 }
-
-.share::after {
-  content: "Share";
+.deleteButton:hover {
+  background-color: rgb(237, 56, 56);
+  overflow: visible;
+}
+.bin path {
+  transition: all 0.2s;
+}
+.deleteButton:hover .bin path {
+  fill: #fff;
+}
+.deleteButton:active {
+  transform: scale(0.98);
+}
+.tooltip {
+  --tooltip-color: rgb(41, 41, 41);
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 40%;
-  font-size: 25px;
-  font-weight: bold;
-  font-style: italic;
-  text-transform: uppercase;
-  color: #fff;
+  top: -40px;
+  background-color: var(--tooltip-color);
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 8px 12px;
+  font-weight: 600;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.105);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.5s;
 }
-
-.share:hover::after {
-  color: transparent;
+.tooltip::before {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  content: "";
+  background-color: var(--tooltip-color);
+  bottom: -10%;
 }
-
-.share:hover {
-  background: rgba(242, 41, 92, 1);
-  background: -webkit-radial-gradient(
-    top left,
-    rgba(242, 41, 92, 1),
-    rgba(41, 172, 225, 1)
-  );
-  background: -moz-radial-gradient(
-    top left,
-    rgba(242, 41, 92, 1),
-    rgba(41, 172, 225, 1)
-  );
-  background: radial-gradient(
-    to bottom right,
-    rgba(242, 41, 92, 1),
-    rgba(41, 172, 225, 1)
-  );
-}
-
-.share a.fb {
-  background: #1266f1;
-  top: -5.65em;
-  left: -2.83em;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.share a.tw {
-  background: #28abe1;
-  top: -6.55em;
-  right: -9.39em;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.share a.ins {
-  background: #f2295b;
-  bottom: 6.7em;
-  left: -7.5em;
-  -webkit-tra3nsition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.share a.wh {
-  background: #25d366;
-  right: -2.81em;
-  bottom: 7.5em;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.share:hover a.fb {
-  top: -0.96em;
-}
-
-.share:hover a.tw {
-  right: -2.8em;
-}
-
-.share:hover a.ins {
-  left: -2.84em;
-}
-
-.share:hover a.wh {
-  bottom: 12.3em;
-}
-
-.facebook {
-  padding-top: 45%;
-}
-
-.instagram {
-  padding-left: 30%;
-  padding-top: 15%;
-}
-
-.whatsapp {
-  padding-left: 15%;
-  padding-top: 15%;
-}
-
-.twitter {
-  padding-top: 25%;
-  padding-left: 10%;
-}
-
-.fb:hover {
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5) inset;
-}
-
-.tw:hover {
-  box-shadow: 10px 5px 30px 2px rgba(0, 0, 0, 0.5) inset;
-}
-
-.ins:hover {
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5) inset;
-}
-
-.wh:hover {
-  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5) inset;
+.deleteButton:hover .tooltip {
+  opacity: 1;
 }
 

@@ -3,7 +3,15 @@ import styles from "./Loader_chance.module.css";
 
 const Loader_chance = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["honeycomb"]}>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 );
 
@@ -18,7 +26,15 @@ export default Loader_chance;
 
         const Loader_chance = () => (
          <div>
-          <div className="loader"></div>
+          <div className="honeycomb">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
         </div>
         );
 

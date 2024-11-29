@@ -1,32 +1,53 @@
 
-/* From Uiverse.io by escannord  - Tags: simple, button, btn */
-.button {
+/* From Uiverse.io by vinodjangid07 - Tags: button, arrow, hover effect, back to top, scroll to top */
+.Btn {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(#44ea76, #39fad7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   cursor: pointer;
-  display: inline-block;
-  width: 14rem;
-  height: 4rem;
-  border: solid 2px;
-  background: linear-gradient(to right, #ff00ffb0, #ff9900a1, #ff00ff9f),
-    radial-gradient(rgb(255, 255, 255), rgb(255, 0, 0));
-  border-radius: 20px;
-  font-weight: 800;
   position: relative;
-  border-image: linear-gradient(to right, #5e005e, #804d00, #eb1beb);
-  border-image-slice: 50;
+  border: none;
 }
 
-.button::before {
-  content: "";
-  display: inline-block;
+.arrow path {
+  fill: white;
+}
+
+.text {
+  font-size: 0.7em;
+  width: 100px;
   position: absolute;
-  width: 90%;
-  height: 70%;
-  border: 1px solid rgba(255, 255, 255, 0.384);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 8px;
-  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.575),
-    inset 0px 0px 0px 0px rgba(255, 255, 255, 0.575);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -18px;
+  opacity: 0;
+  transition-duration: .7s;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  transition-duration: .7s;
+}
+
+.Btn:hover .arrow {
+  animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 

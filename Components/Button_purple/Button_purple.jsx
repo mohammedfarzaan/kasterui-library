@@ -3,9 +3,7 @@ import styles from "./Button_purple.module.css";
 
 const Button_purple = () => (
   <div>
-    <button className={styles["button"]}>
-      <span>Hover</span>
-    </button>
+    <button>Button</button>
   </div>
 );
 
@@ -20,8 +18,8 @@ export default Button_purple;
 
         const Button_purple = () => (
          <div>
-          <button className="button">
-  <span>Hover</span>
+          <button>
+  Button
 </button>
         </div>
         );

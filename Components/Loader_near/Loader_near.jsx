@@ -3,7 +3,16 @@ import styles from "./Loader_near.module.css";
 
 const Loader_near = () => (
   <div>
-    <div className={styles["spinner"]}></div>
+    <div className={styles["dot-spinner"]}>
+      <div className={styles["dot-spinner__dot"]}></div>
+      <div className={styles["dot-spinner__dot"]}></div>
+      <div className={styles["dot-spinner__dot"]}></div>
+      <div className={styles["dot-spinner__dot"]}></div>
+      <div className={styles["dot-spinner__dot"]}></div>
+      <div className={styles["dot-spinner__dot"]}></div>
+      <div className={styles["dot-spinner__dot"]}></div>
+      <div className={styles["dot-spinner__dot"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +27,16 @@ export default Loader_near;
 
         const Loader_near = () => (
          <div>
-          <div className="spinner"></div>
+          <div className="dot-spinner">
+    <div className="dot-spinner__dot"></div>
+    <div className="dot-spinner__dot"></div>
+    <div className="dot-spinner__dot"></div>
+    <div className="dot-spinner__dot"></div>
+    <div className="dot-spinner__dot"></div>
+    <div className="dot-spinner__dot"></div>
+    <div className="dot-spinner__dot"></div>
+    <div className="dot-spinner__dot"></div>
+</div>
         </div>
         );
 

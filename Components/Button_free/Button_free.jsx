@@ -3,7 +3,13 @@ import styles from "./Button_free.module.css";
 
 const Button_free = () => (
   <div>
-    <button className={styles["button"]}>Hover Me!</button>
+    <button className={styles["button"]}>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Hover Me
+    </button>
   </div>
 );
 
@@ -18,7 +24,13 @@ export default Button_free;
 
         const Button_free = () => (
          <div>
-          <button className="button">Hover Me!</button>
+          <button className="button">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  Hover Me
+</button>
         </div>
         );
 

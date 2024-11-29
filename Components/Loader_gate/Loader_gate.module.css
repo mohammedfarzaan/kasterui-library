@@ -1,48 +1,91 @@
 
-/* From Uiverse.io by Juanes200122  - Website: https://cssloaders.github.io/ - Name: css-loader - Tags: simple, animation, red, loading, loader */
-.loader {
-  width: 48px;
-  height: 48px;
-  border: 3px dotted #fff;
-  border-style: solid solid dotted dotted;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  box-sizing: border-box;
-  animation: rotation 2s linear infinite;
-}
-.loader::after {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  border: 3px dotted #ff3d00;
-  border-style: solid solid dotted;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  animation: rotationBack 1s linear infinite;
-  transform-origin: center center;
+/* From Uiverse.io by jeremyssocial  - Tags: loader, dark, code */
+/* Terminal Window */
+.terminal {
+  width: 500px;
+  background-color: #000;
+  color: #0f0;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
+/* Terminal Header */
+.terminal-header {
+  background-color: #333;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.buttons {
+  display: flex;
+  margin-right: 15px;
+}
+
+.buttons span {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.close {
+  background-color: #ff605c;
+}
+.minimize {
+  background-color: #ffbd44;
+}
+.maximize {
+  background-color: #00ca4e;
+}
+
+.title {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* Terminal Body */
+.terminal-body {
+  padding: 10px;
+}
+
+.terminal-loader {
+  display: inline-flex;
+  align-items: center;
+}
+
+.loader-text {
+  margin-right: 5px;
+}
+
+.dot {
+  opacity: 0;
+  animation: dotFadeInOut 1.5s infinite;
+}
+
+@keyframes dotFadeInOut {
+  0%,
   100% {
-    transform: rotate(360deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
-@keyframes rotationBack {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
+
+#dot1 {
+  animation-delay: 0.5s;
+}
+
+#dot2 {
+  animation-delay: 0.6s;
+}
+
+#dot3 {
+  animation-delay: 0.7s;
 }
 

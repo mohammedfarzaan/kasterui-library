@@ -3,8 +3,9 @@ import styles from "./Button_hurt.module.css";
 
 const Button_hurt = () => (
   <div>
-    <button className={styles["neo-pop-tilted-button"]}>
-      <span>Play Now</span>
+    <button className={styles["button"]}>
+      <div className={styles["circle"]}></div>
+      <span>Button</span>
     </button>
   </div>
 );
@@ -20,8 +21,9 @@ export default Button_hurt;
 
         const Button_hurt = () => (
          <div>
-          <button className="neo-pop-tilted-button">
-  <span>Play Now</span>
+          <button className="button">
+  <div className="circle"></div>
+  <span>Button</span>
 </button>
         </div>
         );

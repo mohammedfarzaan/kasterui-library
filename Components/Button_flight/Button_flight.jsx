@@ -3,23 +3,17 @@ import styles from "./Button_flight.module.css";
 
 const Button_flight = () => (
   <div>
-    <div className={styles["box"]}>
-      <button className={styles["button"]}>FALL</button>
-      <div className={styles["falling-leaves"]}>
-        <span className={styles["leaf"]} style="--i: 13; --hue:20"></span>
-        <span className={styles["leaf"]} style="--i: 16; --hue:10"></span>
-        <span className={styles["leaf"]} style="--i: 17; --hue:0"></span>
-        <span className={styles["leaf"]} style="--i: 21; --hue:10"></span>
-        <span className={styles["leaf"]} style="--i: 13; --hue:90"></span>
-        <span className={styles["leaf"]} style="--i: 11; --hue:70"></span>
-        <span className={styles["leaf"]} style="--i: 14; --hue:40"></span>
-        <span className={styles["leaf"]} style="--i: 17; --hue:60"></span>
-        <span className={styles["leaf"]} style="--i: 19; --hue:0"></span>
-        <span className={styles["leaf"]} style="--i: 26; --hue:90"></span>
-        <span className={styles["leaf"]} style="--i: 17; --hue:60"></span>
-        <span className={styles["leaf"]} style="--i: 20; --hue:10"></span>
+    <button className={styles["button"]}>
+      <div className={styles["ellipse"]}>
+        <span className={styles["icon"]}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8H224V432c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z"></path>
+          </svg>
+        </span>
+        <span className={styles["text1"]}> Send message </span>
+        <span className={styles["text2"]}> Send </span>
       </div>
-    </div>
+    </button>
   </div>
 );
 
@@ -34,23 +28,18 @@ export default Button_flight;
 
         const Button_flight = () => (
          <div>
-          <div className="box">
-  <button className="button">FALL</button>
-  <div className="falling-leaves">
-    <span className="leaf" style="--i: 13; --hue:20"></span>
-    <span className="leaf" style="--i: 16; --hue:10"></span>
-    <span className="leaf" style="--i: 17; --hue:0"></span>
-    <span className="leaf" style="--i: 21; --hue:10"></span>
-    <span className="leaf" style="--i: 13; --hue:90"></span>
-    <span className="leaf" style="--i: 11; --hue:70"></span>
-    <span className="leaf" style="--i: 14; --hue:40"></span>
-    <span className="leaf" style="--i: 17; --hue:60"></span>
-    <span className="leaf" style="--i: 19; --hue:0"></span>
-    <span className="leaf" style="--i: 26; --hue:90"></span>
-    <span className="leaf" style="--i: 17; --hue:60"></span>
-    <span className="leaf" style="--i: 20; --hue:10"></span>
+          <button className="button">
+  <div className="ellipse">
+    <span className="icon"
+      ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path
+          d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8H224V432c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z"
+        ></path></svg
+    ></span>
+    <span className="text1"> Send message </span>
+    <span className="text2"> Send </span>
   </div>
-</div>
+</button>
         </div>
         );
 

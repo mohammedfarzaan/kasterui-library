@@ -3,41 +3,21 @@ import styles from "./Button_may.module.css";
 
 const Button_may = () => (
   <div>
-    <button className={styles["button"]}>
-      <div className={styles["icon"]}>
-        <span className={styles["text-icon"] + styles["hide"]}>Icon</span>
-        <svg
-          className="css-i6dzq1"
-          strokeLinejoin="round"
-          strokeLinecap="round"
-          fill="none"
-          strokeWidth="2"
-          stroke="currentColor"
-          height="24"
-          width="24"
-          viewBox="0 0 24 24"
-        >
-          <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
-        </svg>
+    <div className={styles["box"]}>
+      <button className={styles["button"]}>LISTEN</button>
+      <div className={styles["music"]}>
+        <span className={styles["soundwave"]} style="--i: 12"></span>
+        <span className={styles["soundwave"]} style="--i: 31"></span>
+        <span className={styles["soundwave"]} style="--i: 25"></span>
+        <span className={styles["soundwave"]} style="--i: 18"></span>
+        <span className={styles["soundwave"]} style="--i: 11"></span>
+        <span className={styles["soundwave"]} style="--i: 23"></span>
+        <span className={styles["soundwave"]} style="--i: 16"></span>
+        <span className={styles["soundwave"]} style="--i: 34"></span>
+        <span className={styles["soundwave"]} style="--i: 19"></span>
+        <span className={styles["soundwave"]} style="--i: 14"></span>
       </div>
-      <span className={styles["title"]}> Anatomy </span>
-      <div className={styles["padding-left"] + styles["hide"]}>
-        <div className={styles["padding-left-line"]}>
-          <span className={styles["padding-left-text"]}>Left Padding</span>
-        </div>
-      </div>
-      <div className={styles["padding-right"] + styles["hide"]}>
-        <div className={styles["padding-right-line"]}>
-          <span className={styles["padding-right-text"]}>Right Padding</span>
-        </div>
-      </div>
-      <div className={styles["background"] + styles["hide"]}>
-        <span className={styles["background-text"]}>Background</span>
-      </div>
-      <div className={styles["border"] + styles["hide"]}>
-        <span className={styles["border-text"]}>Border Radius</span>
-      </div>
-    </button>
+    </div>
   </div>
 );
 
@@ -52,41 +32,21 @@ export default Button_may;
 
         const Button_may = () => (
          <div>
-          <button className="button">
-  <div className="icon">
-    <span className="text-icon hide">Icon</span>
-    <svg
-      className="css-i6dzq1"
-      strokeLinejoin="round"
-      strokeLinecap="round"
-      fill="none"
-      strokeWidth="2"
-      stroke="currentColor"
-      height="24"
-      width="24"
-      viewBox="0 0 24 24"
-    >
-      <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
-    </svg>
+          <div className="box">
+  <button className="button">LISTEN</button>
+  <div className="music">
+    <span className="soundwave" style="--i: 12"></span>
+    <span className="soundwave" style="--i: 31"></span>
+    <span className="soundwave" style="--i: 25"></span>
+    <span className="soundwave" style="--i: 18"></span>
+    <span className="soundwave" style="--i: 11"></span>
+    <span className="soundwave" style="--i: 23"></span>
+    <span className="soundwave" style="--i: 16"></span>
+    <span className="soundwave" style="--i: 34"></span>
+    <span className="soundwave" style="--i: 19"></span>
+    <span className="soundwave" style="--i: 14"></span>
   </div>
-  <span className="title"> Anatomy </span>
-  <div className="padding-left hide">
-    <div className="padding-left-line">
-      <span className="padding-left-text">Left Padding</span>
-    </div>
-  </div>
-  <div className="padding-right hide">
-    <div className="padding-right-line">
-      <span className="padding-right-text">Right Padding</span>
-    </div>
-  </div>
-  <div className="background hide">
-    <span className="background-text">Background</span>
-  </div>
-  <div className="border hide">
-    <span className="border-text">Border Radius</span>
-  </div>
-</button>
+</div>
         </div>
         );
 

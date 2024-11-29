@@ -4,8 +4,12 @@ import styles from "./Loader_damage.module.css";
 const Loader_damage = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["scanner"]}>
-        <span>Loading...</span>
+      <div className={styles["wrapper"]}>
+        <div className={styles["circle"]}></div>
+        <div className={styles["line-1"]}></div>
+        <div className={styles["line-2"]}></div>
+        <div className={styles["line-3"]}></div>
+        <div className={styles["line-4"]}></div>
       </div>
     </div>
   </div>
@@ -23,8 +27,12 @@ export default Loader_damage;
         const Loader_damage = () => (
          <div>
           <div className="loader">
-  <div className="scanner">
-    <span>Loading...</span>
+  <div className="wrapper">
+    <div className="circle"></div>
+    <div className="line-1"></div>
+    <div className="line-2"></div>
+    <div className="line-3"></div>
+    <div className="line-4"></div>
   </div>
 </div>
         </div>

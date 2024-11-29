@@ -1,45 +1,139 @@
 import React from "react";
+import styles from "./Button_loss.module.css";
 
 const Button_loss = () => (
   <div>
-    <button className="flex h-fit w-fit items-center justify-center gap-[0.5em] rounded-full bg-[#c60808] px-[2em] py-[1em] text-white shadow-[inset_0px_-4px_4px_0px_#f05b5b,0px_0px_0px_2px_#f9d1d1,0px_4px_0px_0px_#A60000] duration-[250ms] hover:translate-y-[0.25em] active:translate-y-[0.5em] active:shadow-[inset_0px_-4px_4px_0px_#f05b5b,0px_0px_0px_2px_#f9d1d1]">
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-[1.5em] w-[1.5em]"
-      >
-        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-        <g
-          id="SVGRepo_tracerCarrier"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        ></g>
-        <g id="SVGRepo_iconCarrier">
-          <circle
-            cx="12"
-            cy="12"
-            r="10"
-            stroke="#fff"
-            strokeWidth="1.5"
-          ></circle>
-          <path
-            d="M9 17C9.85038 16.3697 10.8846 16 12 16C13.1154 16 14.1496 16.3697 15 17"
-            stroke="#fff"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          ></path>
-          <ellipse cx="15" cy="10.5" rx="1" ry="1.5" fill="#fff"></ellipse>
-          <ellipse cx="9" cy="10.5" rx="1" ry="1.5" fill="#fff"></ellipse>
-        </g>
-      </svg>
-      <p className="[text-shadow:0px_1px_1px_0px_#950000]">Delete Account</p>
-    </button>
+    <div className={styles["container"]}>
+      <span className={styles["span-text"]}>
+        <svg
+          height="20pt"
+          width="20pt"
+          viewBox="0 0 20 20"
+          style={{ isolation: "isolate" }}
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <clipPath id="_clipPath_bC9TwUVn0M3ipVC8aHmmX7RNkfzJwdgL">
+              <rect height="20" width="20"></rect>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#_clipPath_bC9TwUVn0M3ipVC8aHmmX7RNkfzJwdgL)">
+            <rect
+              fill-opacity="0"
+              style={{ fill: "rgb(1,0,1)" }}
+              height="20"
+              width="20"
+            ></rect>
+            <path
+              stroke-miterlimit="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              stroke="rgb(0,0,0)"
+              strokeWidth="1"
+              fill="rgb(0,0,0)"
+              d="M 10 1 L 10 9 L 15 9 L 10 19 L 10 12 L 5 12 L 10 1 Z"
+            ></path>
+          </g>
+        </svg>
+        Join now
+      </span>
+      <button className={styles["button"]}>
+        <span className={styles["span-outside"]}> </span>
+        <div className={styles["circles"]}>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+          <span className={styles["circle"]}> </span>
+        </div>
+      </button>
+    </div>
   </div>
 );
 
 export default Button_loss;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_loss = () => (
+         <div>
+          <div className="container">
+  <span className="span-text">
+    <svg
+      height="20pt"
+      width="20pt"
+      viewBox="0 0 20 20"
+      style={{isolation:"isolate"}}
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <clipPath id="_clipPath_bC9TwUVn0M3ipVC8aHmmX7RNkfzJwdgL">
+          <rect height="20" width="20"></rect>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#_clipPath_bC9TwUVn0M3ipVC8aHmmX7RNkfzJwdgL)">
+        <rect
+          fill-opacity="0"
+          style={{fill:"rgb(1,0,1)"}}
+          height="20"
+          width="20"
+        ></rect>
+        <path
+          stroke-miterlimit="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          stroke="rgb(0,0,0)"
+          strokeWidth="1"
+          fill="rgb(0,0,0)"
+          d="M 10 1 L 10 9 L 15 9 L 10 19 L 10 12 L 5 12 L 10 1 Z"
+        ></path>
+      </g>
+    </svg>
+    Join now
+  </span>
+  <button className="button">
+    <span className="span-outside"> </span>
+    <div className="circles">
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+      <span className="circle"> </span>
+    </div>
+  </button>
+</div>
+        </div>
+        );
+
+        export default Button_loss;
+        
+        
+         */
 }

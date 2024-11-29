@@ -1,87 +1,39 @@
 
-/* From Uiverse.io by aryansagar2405  - Tags: button */
-.share-wrapper {
-  --gap: 0.5em;
-  --radius: 0.35em;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  --dot-bg: #212121;
-  --dot-color: #313131;
-  --dot-size: 1px;
-  --dot-space: 22px;
-  background:
-    linear-gradient(
-        90deg,
-        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
-        transparent 1%
-      )
-      center / var(--dot-space) var(--dot-space),
-    linear-gradient(
-        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
-        transparent 1%
-      )
-      center / var(--dot-space) var(--dot-space),
-    var(--dot-color);
-  border: 0.1em solid #313131;
-  padding: 0.5em;
-  border-radius: var(--radius);
-  box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.1);
+/* From Uiverse.io by PozDevill - Tags: button */
+button {
+  position: relative;
+  font-family: 'Heebo', sans-serif;
+  padding: 12px 40px;
+  border: 0;
+  background: rgb(148, 1, 1);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1em;
+  border-radius: 8px;
+  overflow: hidden;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
-.check[type="checkbox"] {
-  display: none;
+button:hover {
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.562);
+  transform: scale(1.01);
+  box-shadow: inset 0px 0px 10px rgba(255, 0, 0, 0.575);
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  margin-top: -0.25em;
-  margin-bottom: -0.25em;
+button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 50%;
+  height: 100%;
+  transform: rotate(80deg);
+  background: #ffffff77;
+  filter: blur(10px);
+  transition: 0.6s ease-in-out;
 }
 
-.icon {
-  width: 1.5em;
-  height: 1.5em;
-  margin-left: 0.5em;
-  fill: white;
-  transition: opacity 0.3s ease-in-out;
+button:hover::after {
+  left: 100%;
 }
-
-.icon.active {
-  display: none;
-  fill: #2196f3;
-}
-
-.check[type="checkbox"]:checked + .container .icon.active {
-  display: inline-block;
-  animation: pop 0.5s ease-in-out;
-}
-
-.check[type="checkbox"]:checked + .container .icon.inactive {
-  display: none;
-}
-
-.share-text {
-  margin-left: 0.5em;
-  padding: 0.5em;
-  color: white;
-  font-family: Arial, sans-serif;
-  font-weight: bolder;
-}
-
-@keyframes pop {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-

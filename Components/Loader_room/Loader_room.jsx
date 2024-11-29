@@ -3,13 +3,8 @@ import styles from "./Loader_room.module.css";
 
 const Loader_room = () => (
   <div>
-    <div className={styles["holder"]}>
-      <div className={styles["candle"]}>
-        <div className={styles["blinking-glow"]}></div>
-        <div className={styles["thread"]}></div>
-        <div className={styles["glow"]}></div>
-        <div className={styles["flame"]}></div>
-      </div>
+    <div className={styles["loader"]}>
+      <span></span>
     </div>
   </div>
 );
@@ -25,14 +20,9 @@ export default Loader_room;
 
         const Loader_room = () => (
          <div>
-          <div className="holder">
-        <div className="candle">
-          <div className="blinking-glow"></div>
-          <div className="thread"></div>
-          <div className="glow"></div>
-          <div className="flame"></div>
-        </div>
-    </div>
+          <div className="loader">
+  <span></span>
+</div>
         </div>
         );
 

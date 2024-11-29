@@ -1,44 +1,53 @@
 
-/* From Uiverse.io by Wlidha09  - Tags: button, hover, modern, animated */
-.center {
-  width: 150px;
-  height: 50px;
+/* From Uiverse.io by htwarriors108 - Tags: glassmorphism, facebook, button, hover, share, social media, clean, links, hover effect, buttons */
+button {
   position: relative;
+  border: none;
+  margin: 10px;
+  background-color: transparent;
 }
 
-.btn {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid #91c9ff;
-  outline: none;
-  transition: 1s ease-in-out;
+button a {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  transition: 0.5s;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.svg {
+button a:hover {
+  transform: translateY(-20px);
+}
+
+button a::before {
+  content: '';
   position: absolute;
-  left: 0;
   top: 0;
-  fill: none;
-  stroke: #fff;
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  transition: 1s ease-in-out;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(150px);
+  transition: 0.5s ease;
 }
 
-.btn:hover {
-  transition: 1s ease-in-out;
-  background: #4f95da;
+button a:hover::before {
+  transform: skewX(45deg) translateX(-150px);
 }
 
-.btn:hover .svg {
-  stroke-dashoffset: -480;
+button a svg {
+  width: 3em;
 }
 
-.btn span {
-  color: white;
-  font-size: 17px;
-  font-weight: 100;
+#facebook {
+  color: rgba(10, 128, 236, 0.7);
 }
-

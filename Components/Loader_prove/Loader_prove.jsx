@@ -3,7 +3,17 @@ import styles from "./Loader_prove.module.css";
 
 const Loader_prove = () => (
   <div>
-    <div className={styles["spinner"]}></div>
+    <ul>
+      <li>
+        <div className={styles["loader"]}>
+          <div className={styles["child"]}></div>
+        </div>
+      </li>
+
+      <li>
+        <div className={styles["text"]}></div>
+      </li>
+    </ul>
   </div>
 );
 
@@ -18,7 +28,17 @@ export default Loader_prove;
 
         const Loader_prove = () => (
          <div>
-          <div className="spinner"></div>
+          <ul>
+  <li>
+    <div className="loader">
+      <div className="child"></div>
+    </div>
+  </li>
+
+  <li>
+    <div className="text"></div>
+  </li>
+</ul>
         </div>
         );
 

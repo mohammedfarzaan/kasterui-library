@@ -3,7 +3,7 @@ import styles from "./Button_pine.module.css";
 
 const Button_pine = () => (
   <div>
-    <button className={styles["button"] + styles["type1"]}></button>
+    <button>Don't Click</button>
   </div>
 );
 
@@ -18,8 +18,7 @@ export default Button_pine;
 
         const Button_pine = () => (
          <div>
-          <button className="button type1">
-</button>
+          <button>Don't Click</button>
         </div>
         );
 

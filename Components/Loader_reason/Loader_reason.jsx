@@ -3,13 +3,9 @@ import styles from "./Loader_reason.module.css";
 
 const Loader_reason = () => (
   <div>
-    <div className={styles["spinner"]}>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div className={styles["loading"]}>
+      <div className={styles["d1"]}></div>
+      <div className={styles["d2"]}></div>
     </div>
   </div>
 );
@@ -25,13 +21,9 @@ export default Loader_reason;
 
         const Loader_reason = () => (
          <div>
-          <div className="spinner">
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
+          <div className="loading">
+    <div className="d1"></div>
+    <div className="d2"></div>
 </div>
         </div>
         );

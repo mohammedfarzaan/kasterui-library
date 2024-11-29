@@ -3,8 +3,8 @@ import styles from "./Button_rule.module.css";
 
 const Button_rule = () => (
   <div>
-    <button className={styles["button"]}>
-      <div id="ui">UI</div>VERSE
+    <button>
+      <span> Button</span>
     </button>
   </div>
 );
@@ -20,8 +20,10 @@ export default Button_rule;
 
         const Button_rule = () => (
          <div>
-          <button className="button">
-<div id="ui">UI</div>VERSE</button>
+          <button>
+  <span> Button
+  </span>
+</button>
         </div>
         );
 

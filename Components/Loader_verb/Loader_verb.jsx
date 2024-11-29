@@ -3,9 +3,7 @@ import styles from "./Loader_verb.module.css";
 
 const Loader_verb = () => (
   <div>
-    <div className={styles["item"]}>
-      <div className={styles["loader-pulse"]}></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -20,9 +18,7 @@ export default Loader_verb;
 
         const Loader_verb = () => (
          <div>
-          <div className="item">
-    <div className="loader-pulse"></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

@@ -3,7 +3,15 @@ import styles from "./Button_lady.module.css";
 
 const Button_lady = () => (
   <div>
-    <button className={styles["my-button"]}>Click Me</button>
+    <div className={styles["container"]}>
+      <button className={styles["button"]}>
+        <div className={styles["button__line"]}></div>
+        <div className={styles["button__line"]}></div>
+        <span className={styles["button__text"]}>Hover Me</span>
+        <div className={styles["button__drow1"]}></div>
+        <div className={styles["button__drow2"]}></div>
+      </button>
+    </div>
   </div>
 );
 
@@ -18,7 +26,15 @@ export default Button_lady;
 
         const Button_lady = () => (
          <div>
-          <button className="my-button">Click Me</button>
+          <div className="container">
+  <button className="button">
+    <div className="button__line"></div>
+    <div className="button__line"></div>
+    <span className="button__text">Hover Me</span>
+    <div className="button__drow1"></div>
+    <div className="button__drow2"></div>
+  </button>  
+</div>
         </div>
         );
 

@@ -3,10 +3,7 @@ import styles from "./Button_cat.module.css";
 
 const Button_cat = () => (
   <div>
-    <button className={styles["Btn"]}>
-      <p className={styles["text"]}>Button</p>
-      <span className={styles["BG"]}></span>
-    </button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -21,10 +18,7 @@ export default Button_cat;
 
         const Button_cat = () => (
          <div>
-          <button className="Btn">
-  <p className="text">Button</p>
-  <span className="BG"></span>
-</button>
+          <button className="button">Button</button>
         </div>
         );
 

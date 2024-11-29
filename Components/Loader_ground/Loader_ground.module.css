@@ -1,28 +1,55 @@
 
-/* From Uiverse.io by sabbircoder07 - Tags: loader, animated, css3 */
-.progress {
-  background-color: #ffffff;
-  width: 220px;
-  height: 20px;
-  border-radius: 100px;
-  overflow: hidden;
-  backface-visibility: hidden;
-}
-
-.inner {
-  background-image: linear-gradient(to left, #00cdac, #00c2c9, #00b4e3, #00a2f1, #008cef, #0088eb, #0085e6, #0081e2, #0090de, #009bd2, #00a3c1, #02aab0);
+/* From Uiverse.io by funkyjuice213 - Tags: loader, glow */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  transform-origin: left;
-  animation: progress 2s infinite;
 }
 
-@keyframes progress {
+.loader-bar {
+  height: 25px;
+  width: 6px;
+  margin: 0 3px;
+  border-radius: 20px;
+  animation: loader 2s ease-in-out infinite;
+}
+
+.bar-1 {
+  background: linear-gradient(to right, #00e6e6, #00ccff, #0099ff, #0066ff);
+  animation-delay: 0s;
+  box-shadow: 0px 0px 15px 3px #00e6e6;
+}
+
+.bar-2 {
+  background: linear-gradient(to right, #00ccff, #0099ff, #0066ff, #00e6e6);
+  animation-delay: 0.1s;
+  box-shadow: 0px 0px 15px 3px #00ccff;
+}
+
+.bar-3 {
+  background: linear-gradient(to right, #0099ff, #0066ff, #00e6e6, #00ccff);
+  animation-delay: 0.2s;
+  box-shadow: 0px 0px 15px 3px #0099ff;
+}
+
+.bar-4 {
+  background: linear-gradient(to right, #0066ff, #00e6e6, #00ccff, #0099ff);
+  animation-delay: 0.3s;
+  box-shadow: 0px 0px 15px 3px #0066ff;
+}
+
+@keyframes loader {
   0% {
-    transform: scaleX(10%) translateX(-10%);
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(2);
   }
 
   100% {
-    transform: scaleX(80%) translateX(150%);
+    transform: scaleY(1);
   }
 }
 

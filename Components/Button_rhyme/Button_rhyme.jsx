@@ -3,29 +3,50 @@ import styles from "./Button_rhyme.module.css";
 
 const Button_rhyme = () => (
   <div>
-    <label for="button" className={styles["label"]}>
-      <button id="button" className={styles["button"]} name="button">
-        <div className={styles["roundThing"]}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="33"
-            height="32"
-            fill="none"
-            viewBox="0 0 33 32"
-            className="svg"
-          >
-            <path
-              stroke="#161616"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="m10.367 8.427 11.32-3.774c5.08-1.693 7.84 1.08 6.16 6.16l-3.774 11.32c-2.533 7.614-6.693 7.614-9.226 0l-1.12-3.36-3.36-1.12c-7.614-2.533-7.614-6.68 0-9.226ZM13.98 18.2l4.773-4.786"
-            ></path>
-          </svg>
-          <p>Send Message</p>
+    <div className={styles["click"]}>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <button className={styles["button"] + styles["up"]}>
+        <div className={styles["speak"] + styles["dblink"]}>
+          <div className={styles["wrap"]}>
+            <div className={styles["eye"] + styles["double-blink"]}></div>
+            <div className={styles["eye"] + styles["double-blink"]}></div>
+          </div>
+        </div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <div className={styles["speak"] + styles["doblink"]}>
+          <div className={styles["wrap"]}>
+            <div className={styles["eye"] + styles["down"]}></div>
+            <div className={styles["eye"] + styles["down"]}></div>
+          </div>
+        </div>
+        <div className={styles["speak"] + styles["rblink"]}>
+          <div className={styles["wrap"]}>
+            <div className={styles["eye"] + styles["right-blink"]}></div>
+            <div className={styles["eye"] + styles["right-blink"]}></div>
+          </div>
+        </div>
+        <div className={styles["speak"] + styles["ublink"]}>
+          <div className={styles["wrap"]}>
+            <div className={styles["eye"] + styles["up-blink"]}></div>
+            <div className={styles["eye"] + styles["up-blink"]}></div>
+          </div>
         </div>
       </button>
-    </label>
+      <button
+        disabled=""
+        className={styles["button"] + styles["shadow"]}
+      ></button>
+    </div>
   </div>
 );
 
@@ -40,29 +61,47 @@ export default Button_rhyme;
 
         const Button_rhyme = () => (
          <div>
-          <label for="button" className="label">
-  <button id="button" className="button" name="button">
-    <div className="roundThing">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="33"
-        height="32"
-        fill="none"
-        viewBox="0 0 33 32"
-        className="svg"
-      >
-        <path
-          stroke="#161616"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d="m10.367 8.427 11.32-3.774c5.08-1.693 7.84 1.08 6.16 6.16l-3.774 11.32c-2.533 7.614-6.693 7.614-9.226 0l-1.12-3.36-3.36-1.12c-7.614-2.533-7.614-6.68 0-9.226ZM13.98 18.2l4.773-4.786"
-        ></path>
-      </svg>
-      <p>Send Message</p>
+          <div className="click">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <button className="button up">
+    <div className="speak dblink">
+      <div className="wrap">
+        <div className="eye double-blink"></div>
+        <div className="eye double-blink"></div>
+      </div>
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div className="speak doblink">
+      <div className="wrap">
+        <div className="eye down"></div>
+        <div className="eye down"></div>
+      </div>
+    </div>
+    <div className="speak rblink">
+      <div className="wrap">
+        <div className="eye right-blink"></div>
+        <div className="eye right-blink"></div>
+      </div>
+    </div>
+    <div className="speak ublink">
+      <div className="wrap">
+        <div className="eye up-blink"></div>
+        <div className="eye up-blink"></div>
+      </div>
     </div>
   </button>
-</label>
+  <button disabled="" className="button shadow"></button>
+</div>
         </div>
         );
 

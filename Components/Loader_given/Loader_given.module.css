@@ -1,57 +1,73 @@
 
-/* From Uiverse.io by JaydipPrajapati1910 - Tags: loading, loader, square */
+/* From Uiverse.io by Shoh2008 - Tags: loader */
 .loader {
-  width: 100px;
-  height: 100px;
-  display: grid;
-  color: hsl(204, 86%, 69%);
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  margin: -64px auto 0;
+  background-color: #ccc;
+  background-image: radial-gradient(#fff 4px, #0000  0),
+                    radial-gradient(#fff 4px, #0000  0),
+                    radial-gradient(#fff 4px, #0000  0),
+                    radial-gradient(#fff 4px, #0000  0);
+  background-position: 24px center, 8px center, -8px center, -24px center;
+  position: relative;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15) inset;
+  animation: flash 1s linear infinite;
 }
 
-.loader:before,
-.loader:after {
-  content: "";
-  grid-area: 1/1;
-  --c1: linear-gradient(90deg,rgb(247, 247, 247) calc(100%/3),currentColor 0 calc(2*100%/3),rgb(247, 247, 247) 0);
-  --c2: linear-gradient( 0deg,rgb(247, 247, 247) calc(100%/3),currentColor 0 calc(2*100%/3),rgb(247, 247, 247) 0);
-  background: var(--c1),
-    var(--c2),
-    var(--c1),
-    var(--c2);
-  background-size: 300% 8px,8px 300%;
-  background-repeat: no-repeat;
-  animation: l1 1s infinite linear;
+.loader::before , .loader::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #ccc;
+  border-top-color: #0000;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 18px;
+  background: #fff;
 }
 
-.loader:after {
-  margin: 10px;
-  transform: scaleX(-1);
-  animation-delay: -.25s;
+.loader::before {
+  width: 0px;
+  height: 64px;
+  transform: translate(-50% , 18px);
 }
 
-@keyframes l1 {
+@keyframes flash {
   0% {
-    background-position: 50%  0,100% 100%,0    100%,0 0
+    background-image: radial-gradient(#DDD 4px, #0000  0),
+        radial-gradient(#DDD 4px, #0000  0),
+        radial-gradient(#DDD 4px, #0000  0),
+        radial-gradient(#DDD 4px, #0000  0);
   }
 
   25% {
-    background-position: 0    0,100% 50% ,0    100%,0 0
+    background-image: radial-gradient(#DDD 4px, #0000  0),
+      radial-gradient(#DDD 4px, #0000  0),
+      radial-gradient(#DDD 4px, #0000  0),
+      radial-gradient(#fff 4px, #0000  0);
   }
 
   50% {
-    background-position: 0    0,100% 0   ,50%  100%,0 0
+    background-image: radial-gradient(#DDD 4px, #0000  0),
+      radial-gradient(#DDD 4px, #0000  0),
+      radial-gradient(#fff 4px, #0000  0),
+      radial-gradient(#fff 4px, #0000  0);
   }
 
   75% {
-    background-position: 0    0,100% 0   ,100% 100%,0 50%
-  }
-
-  75.01% {
-    background-position: 100% 0,100% 0   ,100% 100%,0 50%
+    background-image: radial-gradient(#DDD 4px, #0000  0),
+        radial-gradient(#fff 4px, #0000  0),
+        radial-gradient(#fff 4px, #0000  0),
+        radial-gradient(#fff 4px, #0000  0);
   }
 
   100% {
-    background-position: 50%  0,100% 0   ,100% 100%,0 100%
+    background-image: radial-gradient(#fff 4px, #0000  0),
+        radial-gradient(#fff 4px, #0000  0),
+        radial-gradient(#fff 4px, #0000  0),
+        radial-gradient(#fff 4px, #0000  0);
   }
 }
-  
-

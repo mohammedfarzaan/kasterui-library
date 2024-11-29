@@ -1,80 +1,95 @@
 
-/* From Uiverse.io by alexruix - Tags: loader */
+/* From Uiverse.io by Rkyz - Tags: animation, loader, animal */
 .loader {
-  --ballcolor: #f2f2f2;
-  --shadow: 0px 0 #ffffff00;
-  --shadowcolor: #ffffff00;
-  width: 10px;
-  height: 10px;
-  left: -120px;
-  border-radius: 50%;
-  position: relative;
-  color: var(--ballcolor);
-  animation: shadowRolling 2s linear infinite;
+  height: 50px;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
-@keyframes shadowRolling {
-  
-  0% {
-    box-shadow: var(--shadow),
-        var(--shadow),
-        var(--shadow),
-        var(--shadow);
-  }
+.dot-two {
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding: 4px;
+  color: white;
+}
 
-  12% {
-    box-shadow: 100px 0 var(--ballcolor),
-        var(--shadow),
-        var(--shadow), 
-        var(--shadow);
-  }
+.dot-one,
+.dot-three {
+  background-color: black;
+  height: 30px;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  animation: flap-wings 1s infinite ease-in-out;
+}
 
-  25% {
-    box-shadow: 110px 0 var(--ballcolor),
-        100px 0 var(--ballcolor),
-        var(--shadow), 
-        var(--shadow);
-  }
+.dot-two {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: black;
+  animation: flap-wings 1s infinite ease-in-out;
+  animation-delay: 0.1s;
+}
 
-  36% {
-    box-shadow: 120px 0 var(--ballcolor), 
-        110px 0 var(--ballcolor), 
-        100px 0 var(--ballcolor), 
-         var(--shadow);
+.dot-two::before,
+.dot-two::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+}
+
+.dot-two::before {
+  height: 20px;
+  width: 10px;
+  bottom: 20px;
+  left: 1px;
+  border-radius: 50% 50% 0 0;
+  transform: rotate(-20deg);
+}
+
+.dot-two::after {
+  height: 20px;
+  width: 10px;
+  bottom: 20px;
+  left: 19px;
+  transform: rotate(20deg);
+  border-radius: 50% 50% 0 0;
+}
+
+.dot-one::before,
+.dot-one::after,
+.dot-three::before,
+.dot-three::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+}
+
+.dot-one::before,
+.dot-three::before {
+  height: 30px;
+  width: 20px;
+  top: 10px;
+  left: 0;
+  background-color: #e8e8e8;
+ /*chnage this if u need dark mode to #212121 if need light mode #e8e8e8*/
+  border-radius: 50% 50% 0 0;
+}
+
+@keyframes flap-wings {
+  0%,
+  100% {
+    transform: translateY(0);
   }
 
   50% {
-    box-shadow: 130px 0 var(--ballcolor),
-        120px 0 var(--ballcolor),
-        110px 0 var(--ballcolor),
-        100px 0 var(--ballcolor);
-  }
-
-  62% {
-    box-shadow: 200px 0 var(--shadowcolor),
-         130px 0 var(--ballcolor), 
-         120px 0 var(--ballcolor), 
-         110px 0 var(--ballcolor);
-  }
-
-  75% {
-    box-shadow: 200px 0 var(--shadowcolor),
-        200px 0 var(--shadowcolor),
-        130px 0 var(--ballcolor), 
-        120px 0 var(--ballcolor);
-  }
-
-  87% {
-    box-shadow: 200px 0 var(--shadowcolor), 
-        200px 0 var(--shadowcolor), 
-        200px 0 var(--shadowcolor), 
-        130px 0 var(--ballcolor);
-  }
-
-  100% {
-    box-shadow: 200px 0 var(--shadowcolor), 
-        200px 0 var(--shadowcolor),
-        200px 0 var(--shadowcolor),
-        200px 0 var(--shadowcolor);
+    transform: translateY(-20px);
   }
 }

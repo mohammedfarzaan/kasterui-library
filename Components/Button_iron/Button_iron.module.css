@@ -1,53 +1,22 @@
 
-/* From Uiverse.io by JaydipPrajapati1910 - Tags: button, join now, buttton */
+/* From Uiverse.io by Rodrypaladin - Tags: simple, animation, purple, pink, button, click, css, click animation */
 .button {
-  color: white;
-  background-color: #222;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  line-height: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
-  text-align: center;
-  margin-right: 0.5rem;
-  display: inline-flex;
-  align-items: center;
-  border: none;
+  margin: 0 10px;
+  padding: 10px 30px;
+  border: 5px solid #DF34DB;
+  border-radius: 22px;
+  font-size: 20px;
+  color: #DF34DB;
+  transition: transform 0.1s ease-in, all 0.08s ease-in;
+  box-shadow: 0 5px 0 #dd04d9;
 }
 
 .button:hover {
-  background-color: #fff;
-  color: #222;
-  border: 2px solid #222;
+  border-color: #ff00c8;
+  box-shadow: 0 5px 0 #ff00c8;
 }
 
-.button:hover svg {
-  fill: #222;
+.button:active {
+  transform: translateY(5px);
+  box-shadow: 0 0 0 #DF34DB;
 }
-
-.button svg {
-  display: inline;
-  width: 1.3rem;
-  height: 1.3rem;
-  margin-right: 0.75rem;
-  color: white;
-}
-
-.button:hover svg {
-  animation: spin_357 0.5s linear;
-}
-
-@keyframes spin_357 {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotatey(360deg);
-  }
-}
-
-

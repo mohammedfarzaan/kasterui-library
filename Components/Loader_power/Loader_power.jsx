@@ -3,13 +3,11 @@ import styles from "./Loader_power.module.css";
 
 const Loader_power = () => (
   <div>
-    <div className={styles["loading"]}>
-      <div className={styles["side"] + styles["front"]}></div>
-      <div className={styles["side"] + styles["back"]}></div>
-      <div className={styles["side"] + styles["top"]}></div>
-      <div className={styles["side"] + styles["bottom"]}></div>
-      <div className={styles["side"] + styles["left"]}></div>
-      <div className={styles["side"] + styles["right"]}></div>
+    <div className={styles["loader"]}>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </div>
 );
@@ -25,13 +23,11 @@ export default Loader_power;
 
         const Loader_power = () => (
          <div>
-          <div className="loading">
-  <div className="side front"></div>
-  <div className="side back"></div>
-  <div className="side top"></div>
-  <div className="side bottom"></div>
-  <div className="side left"></div>
-  <div className="side right"></div>
+          <div className="loader">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
 </div>
         </div>
         );

@@ -1,24 +1,59 @@
 import React from "react";
+import styles from "./Button_secret.module.css";
 
 const Button_secret = () => (
   <div>
-    <button className="relative flex items-center px-6 py-3 overflow-hidden font-medium transition-all bg-indigo-500 rounded-md group">
-      <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-indigo-700 rounded group-hover:-mr-4 group-hover:-mt-4">
-        <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
+    <button className={styles["button"]}>
+      <span className={styles["btn__icon"]}>
+        <svg
+          strokeLinejoin="round"
+          strokeLinecap="round"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          viewBox="0 0 24 24"
+          height="24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path fill="none" d="M0 0h24v24H0z" stroke="none"></path>
+          <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1"></path>
+          <path d="M9 15l3 -3l3 3"></path>
+          <path d="M12 12l0 9"></path>
+        </svg>
       </span>
-      <span className="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-indigo-700 rounded group-hover:-ml-4 group-hover:-mb-4">
-        <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
-      </span>
-      <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-indigo-600 rounded-md group-hover:translate-x-0"></span>
-      <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white">
-        Get Started
-      </span>
+      <span className={styles["btn__text"]}>Upload</span>
     </button>
   </div>
 );
 
 export default Button_secret;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_secret = () => (
+         <div>
+          <button className="button">
+            <span className="btn__icon">
+                <svg strokeLinejoin="round" strokeLinecap="round" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" d="M0 0h24v24H0z" stroke="none"></path>
+                    <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1"></path>
+                    <path d="M9 15l3 -3l3 3"></path>
+                    <path d="M12 12l0 9"></path>
+                </svg>
+            </span>
+            <span className="btn__text">Upload</span>
+        </button>
+        </div>
+        );
+
+        export default Button_secret;
+        
+        
+         */
 }

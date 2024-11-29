@@ -1,17 +1,41 @@
 import React from "react";
+import styles from "./Loader_failed.module.css";
 
 const Loader_failed = () => (
   <div>
-    <div className="flex flex-row gap-2">
-      <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.7s]"></div>
-      <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.3s]"></div>
-      <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.7s]"></div>
+    <div className={styles["loader"]}>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </div>
 );
 
 export default Loader_failed;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Loader_failed = () => (
+         <div>
+          <div className="loader">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+        </div>
+        );
+
+        export default Loader_failed;
+        
+        
+         */
 }

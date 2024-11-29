@@ -3,24 +3,11 @@ import styles from "./Button_you.module.css";
 
 const Button_you = () => (
   <div>
-    <button>
-      <span className={styles["span-mother"]}>
-        <span>B</span>
-        <span>u</span>
-        <span>t</span>
-        <span>t</span>
-        <span>o</span>
-        <span>n</span>
-      </span>
-      <span className={styles["span-mother2"]}>
-        <span>B</span>
-        <span>u</span>
-        <span>t</span>
-        <span>t</span>
-        <span>o</span>
-        <span>n</span>
-      </span>
-    </button>
+    <div className={styles["container"]}>
+      <div className={styles["btn"]}>
+        <a href="#">Read more</a>
+      </div>
+    </div>
   </div>
 );
 
@@ -35,24 +22,9 @@ export default Button_you;
 
         const Button_you = () => (
          <div>
-          <button>
-  <span className="span-mother">
-      <span>B</span>
-      <span>u</span>
-      <span>t</span>
-      <span>t</span>
-      <span>o</span>
-      <span>n</span>
-  </span>
-  <span className="span-mother2">
-      <span>B</span>
-      <span>u</span>
-      <span>t</span>
-      <span>t</span>
-      <span>o</span>
-      <span>n</span>
-  </span>
-</button>
+          <div className="container">
+		<div className="btn"><a href="#">Read more</a></div>
+	</div>
         </div>
         );
 

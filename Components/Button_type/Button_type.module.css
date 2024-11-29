@@ -1,39 +1,30 @@
 
-/* From Uiverse.io by PozDevill - Tags: button */
+/* From Uiverse.io by laminelawal - Tags: button, 3d button */
 button {
-  position: relative;
-  font-family: 'Heebo', sans-serif;
-  padding: 12px 40px;
-  border: 0;
-  background: rgb(148, 1, 1);
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 1em;
-  border-radius: 8px;
-  overflow: hidden;
+  border-radius: 30px;
+  border: none;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  outline: none;
+  width: 150px;
+  height: 54px;
+  background-image: linear-gradient(to top, #222 0%, #333 80%, #444 100%);
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: monospace;
+  transition: all 0.3s;
+  text-shadow: 0 4px 3px black;
 }
 
 button:hover {
-  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.562);
-  transform: scale(1.01);
-  box-shadow: inset 0px 0px 10px rgba(255, 0, 0, 0.575);
+  box-shadow: 0 4px 3px 1px #333, 0 6px 8px #222, 0 -4px 4px #222, 0 -6px 4px #333, inset 0 0 3px 3px black;
 }
 
-button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100px;
-  width: 50%;
-  height: 100%;
-  transform: rotate(80deg);
-  background: #ffffff77;
-  filter: blur(10px);
-  transition: 0.6s ease-in-out;
+button:active {
+  box-shadow: 0 4px 3px 1px #333, 0 6px 8px #222, 0 -4px 4px #222, 0 -6px 4px #333, inset 0 0 3px 3px black;
 }
 
-button:hover::after {
-  left: 100%;
+button:focus {
+  box-shadow: 0 4px 3px 1px #333, 0 6px 8px #222, 0 -4px 4px #222, 0 -6px 4px #333, inset 0 5px 7px 0   black;
 }
+

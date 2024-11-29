@@ -1,67 +1,51 @@
 
-/* From Uiverse.io by satyamchaudharydev - Tags: loader */
-.spinner {
- --size: 30px;
- --first-block-clr: #005bba;
- --second-block-clr: #fed500;
- --clr: #111;
- width: 100px;
- height: 100px;
- position: relative;
+/* From Uiverse.io by kerolos23 - Tags: loader */
+.loader {
+  width: 53px;
+  height: 53px;
+  border: 5px dotted #000;
+  border-style: solid solid dotted dotted;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
 }
 
-.spinner::after,.spinner::before {
- box-sizing: border-box;
- position: absolute;
- content: "";
- width: var(--size);
- height: var(--size);
- top: 50%;
- animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
- left: 50%;
- background: var(--first-block-clr);
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px dotted #F00;
+  border-style: solid solid dotted;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation: rotationBack 1s linear infinite;
+  transform-origin: center center;
 }
 
-.spinner::after {
- background: var(--second-block-clr);
- top: calc(50% - var(--size));
- left: calc(50% - var(--size));
- animation: down 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-@keyframes down {
- 0%, 100% {
-  transform: none;
- }
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
 
- 25% {
-  transform: translateX(100%);
- }
-
- 50% {
-  transform: translateX(100%) translateY(100%);
- }
-
- 75% {
-  transform: translateY(100%);
- }
-}
-
-@keyframes up {
- 0%, 100% {
-  transform: none;
- }
-
- 25% {
-  transform: translateX(-100%);
- }
-
- 50% {
-  transform: translateX(-100%) translateY(-100%);
- }
-
- 75% {
-  transform: translateY(-100%);
- }
-}
-
+  100% {
+    transform: rotate(-360deg);
+  }
+} 

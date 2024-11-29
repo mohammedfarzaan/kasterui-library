@@ -1,48 +1,97 @@
 
-/* From Uiverse.io by PranabKumarSahoo - Tags: button */
-button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #560af0;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 16px;
-  width: 130px;
-  transition: all 0.2s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-button span {
-  cursor: pointer;
-  display: inline-block;
+/* From Uiverse.io by mrhyddenn - Tags: button */
+.icon-btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #cdcdcd;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
   position: relative;
-  transition: 0.2s;
+  transition: width 0.2s ease-in-out;
+  font-weight: 500;
+  font-family: inherit;
 }
 
-button span:after {
-  content: '»';
+.add-btn:hover {
+  width: 120px;
+}
+
+.add-btn::before,
+.add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
   position: absolute;
+  height: 4px;
+  width: 10px;
+  top: calc(50% - 2px);
+  background: seagreen;
+}
+
+.add-btn::after {
+  right: 14px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.add-btn::before {
+  left: 14px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.icon-btn:focus {
+  outline: none;
+}
+
+.btn-txt {
   opacity: 0;
-  top: 0;
-  right: -15px;
-  transition: 0.2s;
+  transition: opacity 0.2s;
 }
 
-button:hover span {
-  padding-right: 15px;
+.add-btn:hover::before,
+.add-btn:hover::after {
+  width: 4px;
+  border-radius: 2px;
 }
 
-button:hover span:after {
+.add-btn:hover .btn-txt {
   opacity: 1;
-  right: 0;
 }
 
-button:hover {
-  color: #560af0;
-  background-color: #FFFFFF;
-  box-shadow: 4px 5px 17px -4px #560af0;
+.add-icon::after,
+.add-icon::before {
+  transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  top: calc(50% - 10px);
+  background: seagreen;
+  overflow: hidden;
+}
+
+.add-icon::before {
+  left: 22px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.add-icon::after {
+  right: 22px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.add-btn:hover .add-icon::before {
+  left: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+
+.add-btn:hover .add-icon::after {
+  right: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
 }

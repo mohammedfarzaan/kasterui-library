@@ -1,36 +1,43 @@
 
-/* From Uiverse.io by Bodyhc  - Tags: button, buttons, simple button, hover button, #button, tailwindbutton, 3d button, button hover effect  */
+/* From Uiverse.io by Yaya12085 - Tags: icon, twitter, button, connect */
 button {
+  max-width: 320px;
   display: flex;
+  overflow: hidden;
+  position: relative;
+  padding: 0.875rem 72px 0.875rem 1.75rem;
+  background-color: #039be5;
+  background-image: linear-gradient(to top right, #039be5,#29b6f6);
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
   align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  border-radius: 20px;
-  background-image: linear-gradient(
-    90deg,
-    #fa7fe6 0%,
-    #ff8e61 50%,
-    #fa7fe6 100%
-  );
-  border: 2px solid #9d098431;
-  color: #000000;
-  font-weight: 600;
-  padding: 20px 40px; /* increase padding to make button bigger */
-  cursor: pointer;
-}
-button svg {
-  font-size: 24px; /* increase font size to make lightning bolt bigger */
-  margin-right: 10px;
-  width: 30px;
-  height: 20px;
-  color: black;
-}
-button:hover {
-  background-image: linear-gradient(
-    90deg,
-    #ff8e61 0%,
-    #fa7fe6 50%,
-    #fe9b74 100%
-  );
+  border-radius: 0.5rem;
+  gap: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: none;
+  transition: all .6s  ease;
 }
 
+button span {
+  background-color: rgb(3 155 229);
+  display: grid;
+  position: absolute;
+  right: 0;
+  place-items: center;
+  width: 3rem;
+  height: 100%;
+}
+
+button span svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+button:hover {
+  box-shadow: 0 4px 30px  rgba(4, 175, 255, .1), 0 2px 30px rgba(11, 158, 255, 0.06);
+}

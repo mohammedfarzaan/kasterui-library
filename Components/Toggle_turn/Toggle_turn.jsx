@@ -3,8 +3,9 @@ import styles from "./Toggle_turn.module.css";
 
 const Toggle_turn = () => (
   <div>
-    <label className={styles["switch"]}>
-      <input type="checkbox" checked="" />
+    <label className={styles["switch-container"]}>
+      <input type="checkbox" />
+      <span className={styles["slider"]}></span>
     </label>
   </div>
 );
@@ -20,8 +21,9 @@ export default Toggle_turn;
 
         const Toggle_turn = () => (
          <div>
-          <label className="switch">
-  <input type="checkbox" checked="" />
+          <label className="switch-container">
+  <input type="checkbox" />
+  <span className="slider"></span>
 </label>
         </div>
         );

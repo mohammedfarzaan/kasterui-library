@@ -1,63 +1,61 @@
 
-/* From Uiverse.io by Spacious74  - Tags: 3d, button, realistic, code, social media, neo */
-.button {
+/* From Uiverse.io by vinodjangid07 - Tags: twitter, button, social media, hover effect */
+.Btn {
+  width: 45px;
+  height: 45px;
+  /* border: none; */
+  border-radius: 50%;
+  background-color: #00acee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  font-size: 1.6rem;
-  border-radius: 16px;
-  border: none;
-  padding: 2px;
-  background: radial-gradient(circle 80px at 80% -10%, #ffffff, #181b1b);
   position: relative;
+  transition-duration: .5s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+  border: 2px solid #bbecff;
 }
-.button::after {
+
+.logoIcon {
+  fill: white;
+}
+
+.tooltip {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+  background-color: #00acee;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+}
+
+.tooltip::before {
+  position: absolute;
   content: "";
-  position: absolute;
-  width: 65%;
-  height: 60%;
-  border-radius: 120px;
-  top: 0;
-  right: 0;
-  box-shadow: 0 0 20px #ffffff38;
-  z-index: -1;
+  width: 10px;
+  height: 10px;
+  background-color: #00acee;
+  background-size: 1000%;
+  background-position: center;
+  transform: rotate(45deg);
+  bottom: -20%;
+  transition-duration: .3s;
 }
 
-.blob1 {
-  position: absolute;
-  width: 70px;
-  height: 100%;
-  border-radius: 16px;
-  bottom: 0;
-  left: 0;
-  background: radial-gradient(
-    circle 60px at 0% 100%,
-    #3fe9ff,
-    #0000ff80,
-    transparent
-  );
-  box-shadow: -10px 10px 30px #0051ff2d;
+.Btn:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  transition-duration: .3s;
 }
 
-.inner {
-  padding: 14px 25px;
-  border-radius: 14px;
-  color: #fff;
-  z-index: 3;
-  position: relative;
-  background: radial-gradient(circle 80px at 80% -50%, #777777, #0f1111);
+.Btn:hover {
+  background-position: right;
+  transition-duration: .5s;
 }
-.inner::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 14px;
-  background: radial-gradient(
-    circle 60px at 0% 100%,
-    #00e1ff1a,
-    #0000ff11,
-    transparent
-  );
-  position: absolute;
-}
-

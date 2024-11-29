@@ -3,7 +3,18 @@ import styles from "./Button_way.module.css";
 
 const Button_way = () => (
   <div>
-    <button> Hover Me</button>
+    <button>
+      <div className={styles["state"]} id="moon">
+        Send
+      </div>
+      <div className={styles["state"]} id="sun">
+        Send
+      </div>
+      <span className={styles["lightRotation"]}></span>
+      <span className={styles["lightRotation2"]}></span>
+      <span className={styles["lightRotation3"]}></span>
+      <span className={styles["lightRotation4"]}></span>
+    </button>
   </div>
 );
 
@@ -18,7 +29,14 @@ export default Button_way;
 
         const Button_way = () => (
          <div>
-          <button> Hover Me
+          <button>
+
+<div className="state" id="moon">Send</div>
+<div className="state" id="sun">Send</div>
+<span className="lightRotation"></span>
+<span className="lightRotation2"></span>
+<span className="lightRotation3"></span>
+<span className="lightRotation4"></span>
 </button>
         </div>
         );

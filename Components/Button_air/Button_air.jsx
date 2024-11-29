@@ -3,7 +3,7 @@ import styles from "./Button_air.module.css";
 
 const Button_air = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button className={styles["game-button"]}>Play Now!</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_air;
 
         const Button_air = () => (
          <div>
-          <button className="button">
-  Button
-</button>
+          <button className="game-button">Play Now!</button>
         </div>
         );
 

@@ -3,7 +3,9 @@ import styles from "./Button_funny.module.css";
 
 const Button_funny = () => (
   <div>
-    <button className={styles["animated-button"]}>hover me</button>
+    <button className={styles["btn"]}>
+      <span className={styles["text"]}>Play</span>
+    </button>
   </div>
 );
 
@@ -18,7 +20,9 @@ export default Button_funny;
 
         const Button_funny = () => (
          <div>
-          <button className="animated-button">hover me</button>
+          <button className="btn">
+  <span className="text">Play</span>
+</button>
         </div>
         );
 

@@ -3,11 +3,7 @@ import styles from "./Loader_heart.module.css";
 
 const Loader_heart = () => (
   <div>
-    <div className={styles["container"]}>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <div className={styles["loader"]}>Loading</div>
   </div>
 );
 
@@ -22,10 +18,8 @@ export default Loader_heart;
 
         const Loader_heart = () => (
          <div>
-          <div className="container">
-  <span></span>
-  <span></span>
-  <span></span>
+          <div className="loader">
+  Loading
 </div>
         </div>
         );

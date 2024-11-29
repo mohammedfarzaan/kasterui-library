@@ -1,27 +1,75 @@
 
-/* From Uiverse.io by rhino-corey - Tags: button */
-button {
- display: inline-block;
- position: relative;
- color: #fff;
- font-weight: 500;
- font-size: 14px;
- text-decoration: none;
- text-transform: uppercase;
- padding: 15px 30px;
- text-align: center;
- border: none;
- clip-path: polygon(7% 0, 93% 0, 100% 50%, 93% 100%, 7% 100%, 0 50%);
- background-color: #000000;
- background-image: radial-gradient(200% 70% at center 20%, rgba(48,44,45,1) -30%, rgba(50,46,47,1) 49%, rgba(22,18,19,1) 50%, rgba(22,18,19,1) 150%);
- background-repeat: no-repeat;
- transition: background-position-y ease-in-out 250ms;
+/* From Uiverse.io by wang3616359git - Tags: button */
+.bt {
+  border: none;
+  user-select: none;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  background-color: #0873bd;
+  box-shadow: #cacaca 2px 2px 10px 1px;
+  border-radius: 12px;
+  height: 60px;
+  line-height: 60px;
+  width: 155px;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
-button:hover {
- background-position-y: -50px;
+.msg {
+  height: 0;
+  width: 0;
+  border-radius: 2px;
+  position: absolute;
+  left: 15%;
+  top: 25%;
 }
 
-button:active {
- transform: scale(0.99);
+.bt:active {
+  transition: all 0.001s ease;
+  background-color: #5d9fcd;
+  box-shadow: #97989a 0 0 0 0;
+  transform: translateX(1px) translateY(1px);
+}
+
+.bt:hover .msg {
+  animation: msgRun 2s forwards;
+}
+
+@keyframes msgRun {
+  0% {
+    border-top: #d6d6d9 0 solid;
+    border-bottom: #f2f2f5 0 solid;
+    border-left: #f2f2f5 0 solid;
+    border-right: #f2f2f5 0 solid;
+  }
+
+  20% {
+    border-top: #d6d6d9 14px solid;
+    border-bottom: #f2f2f5 14px solid;
+    border-left: #f2f2f5 20px solid;
+    border-right: #f2f2f5 20px solid;
+  }
+
+  25% {
+    border-top: #d6d6d9 12px solid;
+    border-bottom: #f2f2f5 12px solid;
+    border-left: #f2f2f5 18px solid;
+    border-right: #f2f2f5 18px solid;
+  }
+
+  80% {
+    border-top: transparent 12px solid;
+    border-bottom: transparent 12px solid;
+    border-left: transparent 18px solid;
+    border-right: transparent 18px solid;
+  }
+
+  100% {
+    transform: translateX(150px);
+    border-top: transparent 12px solid;
+    border-bottom: transparent 12px solid;
+    border-left: transparent 18px solid;
+    border-right: transparent 18px solid;
+  }
 }

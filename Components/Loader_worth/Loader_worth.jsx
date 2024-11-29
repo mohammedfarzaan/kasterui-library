@@ -3,10 +3,12 @@ import styles from "./Loader_worth.module.css";
 
 const Loader_worth = () => (
   <div>
-    <div className={styles["spinner"]}>
-      <div className={styles["dot1"]}></div>
-      <div className={styles["dot2"]}></div>
-      <div className={styles["dot3"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["pencil"]}>
+        <p>Loading...</p>
+        <div className={styles["top"]}></div>
+      </div>
+      <div className={styles["stroke"]}></div>
     </div>
   </div>
 );
@@ -22,11 +24,14 @@ export default Loader_worth;
 
         const Loader_worth = () => (
          <div>
-          <div className="spinner">
-<div className="dot1"></div>
-<div className="dot2"></div>
-<div className="dot3"></div>
-</div>
+          <div className="loader">
+        <div className="pencil">
+            <p>Loading...</p>
+            <div className="top"></div>
+        </div>
+        <div className="stroke">
+        </div>
+    </div>
         </div>
         );
 

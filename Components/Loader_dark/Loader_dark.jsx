@@ -3,7 +3,31 @@ import styles from "./Loader_dark.module.css";
 
 const Loader_dark = () => (
   <div>
-    <span className={styles["loader"]}></span>
+    <div className={styles["loader"]}>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+    </div>
+
+    <div className={styles["loader"] + styles["loader--reflect"]}>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +42,31 @@ export default Loader_dark;
 
         const Loader_dark = () => (
          <div>
-          <span className="loader"></span>
+          <div className="loader">
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+</div>
+
+<div className="loader loader--reflect">
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+</div>
         </div>
         );
 

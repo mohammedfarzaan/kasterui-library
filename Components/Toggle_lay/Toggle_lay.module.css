@@ -1,63 +1,39 @@
 
-/* From Uiverse.io by JkHuger - Tags: switch */
-#toggle_checkbox {
+/* From Uiverse.io by ForzDz - Tags: switch, starrating, 3d cool effect */
+.rating {
+  display: inline-block;
+  opacity: 1;
+}
+
+.rating input {
   display: none;
+  opacity: 1;
 }
 
-label {
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  left: 0;
-  display: block;
-  width: 70px;
-  height: 35px;
-  margin: 0 auto;
-  transform: translateY(-50%);
+.rating label {
+  float: right;
   cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-label:before {
-  top: 4px;
-  left: 4px;
-  width: 27px;
-  height: 27px;
-  border: 2px solid red;
+.rating label:before {
+  content: '\2605';
+  font-size: 30px;
+  transition: color 0.3s;
 }
 
-label:after {
-  top: 0;
-  right: 0;
-  width: 70px;
-  height: 35px;
-  border: 2px solid #143240;
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #ffc300;
+  transform: scale(1.2);
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+  animation: bounce 0.5s ease-in-out alternate;
 }
 
-label:before,
-label:after {
-  content: "";
-  position: absolute;
-  border-radius: 50px;
-  box-sizing: border-box;
-  transition: 0.5s ease top, 0.5s ease left, 0.5s ease right, 0.5s ease width,
-    0.5s ease height, 0.5s ease border-color;
+@keyframes bounce {
+  to {
+    transform: scale(1.3);
+  }
 }
-
-#toggle_checkbox:checked + label:before {
-  top: 0;
-  left: 0;
-  width: 70px;
-  height: 35px;
-  border-color: #143240;
-  border: 2px solid #143240
-}
-
-#toggle_checkbox:checked + label:after {
-  top: 4px;
-  right: 4px;
-  width: 27px;
-  height: 27px;
-  border-color: red;
-  border: 2px solid red;
-}
-

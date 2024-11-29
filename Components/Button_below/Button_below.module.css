@@ -1,58 +1,30 @@
 
-/* From Uiverse.io by Sergestra - Tags: button */
+/* From Uiverse.io by aasisodiya - Tags: button */
 button {
- outline: 0;
- border: 0;
- display: flex;
- flex-direction: column;
- width: 100%;
- max-width: 140px;
- height: 50px;
- border-radius: 0.5em;
- box-shadow: 0 0.625em 1em 0 rgba(30, 143, 255, 0.35);
- overflow: hidden;
-}
-
-button div {
- transform: translateY(0px);
- width: 100%;
-}
-
-button,
-button div {
- transition: 0.6s cubic-bezier(.16,1,.3,1);
-}
-
-button div span {
- display: flex;
- align-items: center;
- justify-content: space-between;
- height: 50px;
- padding: 0.75em 1.125em;
-}
-
-button div:nth-child(1) {
- background-color: #1e90ff;
-}
-
-button div:nth-child(2) {
- background-color: #21dc62;
-}
-
-button:hover {
- box-shadow: 0 0.625em 1em 0 rgba(33, 220, 98, 0.35);
-}
-
-button:hover div {
- transform: translateY(-50px);
-}
-
-button p {
- font-size: 17px;
- font-weight: bold;
- color: #ffffff;
+ background-color: #eee;
+ border: none;
+ padding: 1rem;
+ font-size: 1rem;
+ width: 10em;
+ border-radius: 1rem;
+ color: lightcoral;
+ box-shadow: 0 0.4rem #dfd9d9;
+ cursor: pointer;
 }
 
 button:active {
- transform: scale(0.95);
+ color: white;
+ box-shadow: 0 0.2rem #dfd9d9;
+ transform: translateY(0.2rem);
+}
+
+button:hover:not(:disabled) {
+ background: lightcoral;
+ color: white;
+ text-shadow: 0 0.1rem #bcb4b4;
+}
+
+button:disabled {
+ cursor: auto;
+ color: grey;
 }

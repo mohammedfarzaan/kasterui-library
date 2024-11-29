@@ -3,24 +3,20 @@ import styles from "./Button_wing.module.css";
 
 const Button_wing = () => (
   <div>
-    <button className={styles["button"]}>
-      <svg
-        id="UploadToCloud"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-        height="16px"
-        width="16px"
-        className="icon"
-      >
-        <path d="M0 0h24v24H0V0z" fill="none"></path>
-        <path
-          className="color000000 svgShape"
-          fill="#000000"
-          d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l4.65-4.65c.2-.2.51-.2.71 0L17 13h-3z"
-        ></path>
-      </svg>
-      Upload CV
-    </button>
+    <a className={styles["codepen-button"]}>
+      <span className={styles["span"]}>
+        <p className={styles["p"]}>Shop</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="1em"
+          viewBox="0 0 576 512"
+          fill="#000"
+          className={styles["cart"]}
+        >
+          <path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path>
+        </svg>
+      </span>
+    </a>
   </div>
 );
 
@@ -35,24 +31,20 @@ export default Button_wing;
 
         const Button_wing = () => (
          <div>
-          <button className="button">
-  <svg
-    id="UploadToCloud"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-    height="16px"
-    width="16px"
-    className="icon"
-  >
-    <path d="M0 0h24v24H0V0z" fill="none"></path>
-    <path
-      className="color000000 svgShape"
-      fill="#000000"
-      d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l4.65-4.65c.2-.2.51-.2.71 0L17 13h-3z"
-    ></path>
-  </svg>
-  Upload CV
-</button>
+          <a className="codepen-button"
+  ><span className="span"
+    ><p className="p">Shop</p>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="1em"
+      viewBox="0 0 576 512"
+      fill="#000"
+      className="cart"
+    >
+      <path
+        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+      ></path></svg></span
+></a>
         </div>
         );
 

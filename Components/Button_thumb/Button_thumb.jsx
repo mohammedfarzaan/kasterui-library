@@ -3,7 +3,11 @@ import styles from "./Button_thumb.module.css";
 
 const Button_thumb = () => (
   <div>
-    <button className={styles["button"]}> Button</button>
+    <button className={styles["btn-17"]}>
+      <span className={styles["text-container"]}>
+        <span className={styles["text"]}>Button</span>
+      </span>
+    </button>
   </div>
 );
 
@@ -18,7 +22,10 @@ export default Button_thumb;
 
         const Button_thumb = () => (
          <div>
-          <button className="button"> Button
+          <button className="btn-17">
+  <span className="text-container">
+    <span className="text">Button</span>
+  </span>
 </button>
         </div>
         );

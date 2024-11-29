@@ -1,30 +1,15 @@
 import React from "react";
-import styles from "./Button_rocky.module.css";
 
 const Button_rocky = () => (
   <div>
-    <button> HOVER ME</button>
+    <button className="px-6 py-2 font-semibold text-white bg-green-500 border-b-4 border-green-800 rounded shadow-lg shadow-green-600/50 hover:border-b-2 active:border-b-2">
+      Button
+    </button>
   </div>
 );
 
 export default Button_rocky;
-{
-  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Button_rocky = () => (
-         <div>
-          <button> HOVER ME
-</button>
-        </div>
-        );
-
-        export default Button_rocky;
-        
-        
-         */
+{
+  /* */
 }

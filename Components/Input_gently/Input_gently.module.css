@@ -1,63 +1,50 @@
 
-/* From Uiverse.io by TechByElijah - Tags: simple, input, animated */
-.input-container {
-  position: relative;
+/* From Uiverse.io by satyamchaudharydev - Tags: input */
+.form {
+ --width-of-input: 200px;
+ --border-height: 1px;
+ --border-before-color: rgba(221, 221, 221, 0.39);
+ --border-after-color: #5891ff;
+ --input-hovered-color: #4985e01f;
+ position: relative;
+ width: var(--width-of-input);
 }
-
+/* styling of Input */
 .input {
-  font-size: 1em;
-  padding: 0.6em 1em;
-  border: none;
-  border-radius: 6px;
-  background-color: #f8f8f8;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  max-width: 200px;
-  color: #333;
+ color: #fff;
+ font-size: 0.9rem;
+ background-color: transparent;
+ width: 100%;
+ box-sizing: border-box;
+ padding-inline: 0.5em;
+ padding-block: 0.7em;
+ border: none;
+ border-bottom: var(--border-height) solid var(--border-before-color);
+}
+/* styling of animated border */
+.input-border {
+ position: absolute;
+ background: var(--border-after-color);
+ width: 0%;
+ height: 2px;
+ bottom: 0;
+ left: 0;
+ transition: 0.3s;
+}
+/* Hover on Input */
+input:hover {
+ background: var(--input-hovered-color);
 }
 
-.input:hover {
-  background-color: #f2f2f2;
+input:focus {
+ outline: none;
 }
-
-.input:focus {
-  outline: none;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* here is code of animated border */
+input:focus ~ .input-border {
+ width: 100%;
 }
-
-.input::placeholder {
-  color: #999;
-}
-
-.highlight {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #6c63ff;
-  transition: width 0.3s ease;
-}
-
-.input:focus + .highlight {
+/* === if you want to do animated border on typing === */
+/* remove input:focus code and uncomment below code */
+/* input:valid ~ .input-border{
   width: 100%;
-}
-
-/* Optional: Animation on focus */
-@keyframes input-focus {
-  from {
-    transform: scale(1);
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
-  }
-
-  to {
-    transform: scale(1.02);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-}
-
-.input:focus {
-  animation: input-focus 0.3s ease;
-}
-
+} */

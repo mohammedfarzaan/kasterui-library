@@ -3,7 +3,7 @@ import styles from "./Button_grain.module.css";
 
 const Button_grain = () => (
   <div>
-    <button>Button</button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Button_grain;
 
         const Button_grain = () => (
          <div>
-          <button>Button</button>
+          <button className="button">Button</button>
         </div>
         );
 

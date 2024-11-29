@@ -3,9 +3,7 @@ import styles from "./Button_duty.module.css";
 
 const Button_duty = () => (
   <div>
-    <button>
-      <span>Hover me</span>
-    </button>
+    <button></button>
   </div>
 );
 
@@ -20,9 +18,7 @@ export default Button_duty;
 
         const Button_duty = () => (
          <div>
-          <button>
-    <span>Hover me</span>
-</button>
+          <button></button>
         </div>
         );
 

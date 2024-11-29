@@ -3,10 +3,13 @@ import styles from "./Loader_lucky.module.css";
 
 const Loader_lucky = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["item1"]}></div>
-      <div className={styles["item2"]}></div>
-      <div className={styles["item3"]}></div>
+    <div className={styles["container"]}>
+      <div className={styles["slice"]}></div>
+      <div className={styles["slice"]}></div>
+      <div className={styles["slice"]}></div>
+      <div className={styles["slice"]}></div>
+      <div className={styles["slice"]}></div>
+      <div className={styles["slice"]}></div>
     </div>
   </div>
 );
@@ -22,10 +25,13 @@ export default Loader_lucky;
 
         const Loader_lucky = () => (
          <div>
-          <div className="loader">
-  <div className="item1"></div>
-  <div className="item2"></div>
-  <div className="item3"></div>
+          <div className="container">
+  <div className="slice"></div>
+  <div className="slice"></div>
+  <div className="slice"></div>
+  <div className="slice"></div>
+  <div className="slice"></div>
+  <div className="slice"></div>
 </div>
         </div>
         );

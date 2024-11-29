@@ -1,42 +1,58 @@
 
-/* From Uiverse.io by SiddhantEngineer  - Tags: simple, button, rounded, smooth, creative, advanced, click effect, 3d button */
-.button {
-  box-sizing: border-box;
-  background: hsl(0, 0%, 91%);
-  padding: 5px 2px;
-  border-radius: 10px;
-  box-shadow: 0px 1px 2px 1px hsl(0, 0%, 50%), 0px 10px 35px 0px hsl(0, 0%, 65%),
-    0px -10px 35px 0px hsl(0, 0%, 100%);
+/* From Uiverse.io by KhelVers - Tags:  */
+.btnContainer {
+  /* Appearance */
+  background: #e0e0e0;
+  -webkit-box-shadow: 6px 6px 16px #bebebe,
+             -6px -6px 16px #ffffff9a;
+  box-shadow: 6px 6px 16px #bebebe,
+             -6px -6px 16px #ffffff9a;
+/* Dimensions */
+  width: 160px;
+  height: 60px;
+/* Border */
   border: none;
-  font-size: 16px;
-  background-clip: padding-box;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.1s;
-}
-
-.button:active {
-  scale: 99%;
-  box-shadow: 0px 1px 2px 1px hsl(0, 0%, 70%), 0px 10px 35px 0px hsl(0, 0%, 75%),
-    0px -10px 35px 0px hsl(0, 0%, 100%);
-}
-
-.button > i {
-  background: linear-gradient(hsl(0, 0%, 80%), hsl(0, 0%, 93%));
-  box-shadow: 0px 5px 20px -10px hsl(0, 0%, 60%);
-  padding: 15px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-style: normal;
+  border-radius: 16px;
+/* Content Aligment */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  pointer-events: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.button > i > svg {
-  width: 15px;
-  margin-right: 5px;
-  fill: none;
-  stroke: black;
-  pointer-events: none;
+.button {
+  /* Appearance */
+  background: #e0e0e0;
+  /* Font-Style */
+  font-size: 20px;
+  font-weight: 600;
+  /* Dimensions */
+  height: 85%;
+  width: 95%;
+  /* Border */
+  border: none;
+  border-radius: 14px;
+  /* Transition */
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
+
+.button:hover {
+  /* Appearance */
+  background: #e0e0e0;
+  -webkit-box-shadow: inset 5px 5px 4px #c0c0c0,
+              inset -5px -5px 4px #dddddd;
+  box-shadow: inset 5px 5px 4px #c0c0c0,
+              inset -5px -5px 4px #dddddd;
+  /* Font-Style */
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+}
+
 

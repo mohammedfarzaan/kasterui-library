@@ -3,14 +3,15 @@ import styles from "./Loader_forgot.module.css";
 
 const Loader_forgot = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["cube"]}>
-        <div className={styles["side"]}></div>
-        <div className={styles["side"]}></div>
-        <div className={styles["side"]}></div>
-        <div className={styles["side"]}></div>
-        <div className={styles["side"]}></div>
-        <div className={styles["side"]}></div>
+    <div className={styles["hourglassBackground"]}>
+      <div className={styles["hourglassContainer"]}>
+        <div className={styles["hourglassCurves"]}></div>
+        <div className={styles["hourglassCapTop"]}></div>
+        <div className={styles["hourglassGlassTop"]}></div>
+        <div className={styles["hourglassSand"]}></div>
+        <div className={styles["hourglassSandStream"]}></div>
+        <div className={styles["hourglassCapBottom"]}></div>
+        <div className={styles["hourglassGlass"]}></div>
       </div>
     </div>
   </div>
@@ -27,16 +28,17 @@ export default Loader_forgot;
 
         const Loader_forgot = () => (
          <div>
-          <div className="loader">
-  <div className="cube">
-    <div className="side"></div>
-    <div className="side"></div>
-    <div className="side"></div>
-    <div className="side"></div>
-    <div className="side"></div>
-    <div className="side"></div>
-  </div>
-</div>
+          <div className="hourglassBackground">
+      <div className="hourglassContainer">
+        <div className="hourglassCurves"></div>
+        <div className="hourglassCapTop"></div>
+        <div className="hourglassGlassTop"></div>
+        <div className="hourglassSand"></div>
+        <div className="hourglassSandStream"></div>
+        <div className="hourglassCapBottom"></div>
+        <div className="hourglassGlass"></div>
+      </div>
+    </div>
         </div>
         );
 

@@ -1,60 +1,63 @@
 
-/* From Uiverse.io by andrew-demchenk0 - Tags: blue, button, refresh */
-.button {
-  position: relative;
-  width: 150px;
-  height: 40px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  border: 1px solid #0078E8;
-  background-color: #0082FC;
-  overflow: hidden;
+/* From Uiverse.io by abrahamcalsin - Tags: button */
+button {
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 5px;
+ background: #183153;
+ font-family: "Montserrat", sans-serif;
+ box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+ overflow: hidden;
+ border: none;
 }
 
-.button, .button__icon, .button__text {
-  transition: all 0.3s;
+button:after {
+ content: " ";
+ width: 0%;
+ height: 100%;
+ background: #FFD401;
+ position: absolute;
+ transition: all 0.4s ease-in-out;
+ right: 0;
 }
 
-.button .button__text {
-  transform: translateX(30px);
-  color: #fff;
-  font-weight: 600;
+button:hover::after {
+ right: auto;
+ left: 0;
+ width: 100%;
 }
 
-.button .button__icon {
-  position: absolute;
-  transform: translateX(109px);
-  height: 100%;
-  width: 39px;
-  background-color: #0078E8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+button span {
+ text-align: center;
+ text-decoration: none;
+ width: 100%;
+ padding: 18px 25px;
+ color: #fff;
+ font-size: 1.125em;
+ font-weight: 700;
+ letter-spacing: 0.3em;
+ z-index: 20;
+ transition: all 0.3s ease-in-out;
 }
 
-.button .svg {
-  width: 20px;
-  fill: #fff;
+button:hover span {
+ color: #183153;
+ animation: scaleUp 0.3s ease-in-out;
 }
 
-.button:hover {
-  background: #0078E8;
+@keyframes scaleUp {
+ 0% {
+  transform: scale(1);
+ }
+
+ 50% {
+  transform: scale(0.95);
+ }
+
+ 100% {
+  transform: scale(1);
+ }
 }
 
-.button:hover .button__text {
-  color: transparent;
-}
-
-.button:hover .button__icon {
-  width: 148px;
-  transform: translateX(0);
-}
-
-.button:active .button__icon {
-  background-color: #006cd0;
-}
-
-.button:active {
-  border: 1px solid #006cd0;
-}

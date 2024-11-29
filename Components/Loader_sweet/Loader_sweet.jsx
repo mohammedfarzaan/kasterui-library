@@ -3,11 +3,30 @@ import styles from "./Loader_sweet.module.css";
 
 const Loader_sweet = () => (
   <div>
-    <div className={styles["neomorph-spinner"]}>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div
+      aria-busy="true"
+      aria-label="Loading"
+      role="progressbar"
+      className={styles["container"]}
+    >
+      <div className={styles["swing"]}>
+        <div className={styles["swing-l"]}></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className={styles["swing-r"]}></div>
+      </div>
+      <div className={styles["shadow"]}>
+        <div className={styles["shadow-l"]}></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className={styles["shadow-r"]}></div>
+      </div>
     </div>
   </div>
 );
@@ -23,11 +42,25 @@ export default Loader_sweet;
 
         const Loader_sweet = () => (
          <div>
-          <div className="neomorph-spinner">
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+          <div aria-busy="true" aria-label="Loading" role="progressbar" className="container">
+    <div className="swing">
+        <div className="swing-l"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className="swing-r"></div>
+    </div>
+    <div className="shadow">
+        <div className="shadow-l"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className="shadow-r"></div>
+    </div>
 </div>
         </div>
         );

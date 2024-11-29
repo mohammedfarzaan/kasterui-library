@@ -1,55 +1,42 @@
 
-/* From Uiverse.io by JkHuger - Tags: loader */
-.spinner {
-  box-shadow: 0 0 0 7px #42a5f5, inset 0 0 0 1px #42a5f5;
-  position: relative;
-  height: 50px;
-  width: 230px;
+/* From Uiverse.io by A-nshuman  - Tags: animation, loading, loader, creative, loading animation */
+.blocks {
+  border: 2px solid #2b83e2;
+  max-width: 158px;
+  padding: 4px;
   border-radius: 8px;
-  overflow: hidden;
-  animation: rotate_5132 6s linear infinite;
+  gap: 4px;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.spinner:before {
-  display: block;
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  background-color: #42a5f5;
-  animation: load_5123 6s linear infinite;
+.blocks .block {
+  display: flex;
+  flex: 1;
+  border-radius: 4px;
+  background: #2b83e2;
+  width: 75px;
+  height: 75px;
+  animation: blockLoading 1s infinite;
 }
-
-@keyframes rotate_5132 {
+.blocks .block:nth-child(1) {
+  animation-delay: 0ms;
+}
+.blocks .block:nth-child(2) {
+  animation-delay: 200ms;
+}
+.blocks .block:nth-child(3) {
+  animation-delay: 400ms;
+}
+.blocks .block:nth-child(4) {
+  animation-delay: 600ms;
+}
+@keyframes blockLoading {
   0%,
-  42% {
-    transform: rotate(0deg);
-  }
-
-  48%,
-  92% {
-    transform: rotate(180deg);
-  }
-
   100% {
-    transform: rotate(360deg);
+    flex: 1;
   }
-}
-
-@keyframes load_5123 {
-  0% {
-    width: 0;
-  }
-
-  40%,
   50% {
-    width: 100%;
-  }
-
-  90%,
-  100% {
-    width: 0;
+    flex: 4;
   }
 }
 

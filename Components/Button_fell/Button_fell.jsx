@@ -3,9 +3,9 @@ import styles from "./Button_fell.module.css";
 
 const Button_fell = () => (
   <div>
-    <a className={styles["btn-shine"]} href="https://check.so">
-      Get early access
-    </a>
+    <button className={styles["mouse"]}>
+      <div className={styles["scroll"]}></div>
+    </button>
   </div>
 );
 
@@ -20,7 +20,10 @@ export default Button_fell;
 
         const Button_fell = () => (
          <div>
-          <a className="btn-shine" href="https://check.so">Get early access</a>
+          <button className="mouse">
+  <div className="scroll"></div>
+
+</button>
         </div>
         );
 

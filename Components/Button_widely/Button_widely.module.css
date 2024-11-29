@@ -1,41 +1,103 @@
 
-/* From Uiverse.io by ahmedyasserdev  - Tags: button */
-.button {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  color: #ffffff;
-  background-color: #9b59b6;
-  border: none;
-  padding: 15px 40px;
-  border-radius: 12px;
-  box-shadow:
-    0px 5px #7d3c98,
-    10px 14px 8px rgba(125, 60, 152, 0.4);
+/* From Uiverse.io by doniaskima - Tags: button, animated bar loader, DoubleTriangle  */
+.btn-9,
+.btn-9 *,
+.btn-9 :after,
+.btn-9 :before,
+.btn-9:after,
+.btn-9:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-9 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
   cursor: pointer;
-  transform: rotate3d(1, 1, 1, -10deg);
-  display: flex;
-  gap: 8px;
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
 }
 
-.button:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    0 4px #7d3c98,
-    0 6px 12px rgba(0, 0, 0, 0.2);
+.btn-9:disabled {
+  cursor: default;
 }
 
-.button:active {
-  transform: translateY(2px);
-  box-shadow:
-    0 2px #7d3c98,
-    0 4px 8px rgba(0, 0, 0, 0.2);
+.btn-9:-moz-focusring {
+  outline: auto;
 }
 
-.button:focus {
-  outline: none;
+.btn-9 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-9 [hidden] {
+  display: none;
+}
+
+.btn-9 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+
+.btn-9 span {
+  mix-blend-mode: difference;
+}
+
+.btn-9:after,
+.btn-9:before {
+  --tilt: 1.2rem;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  content: "";
+  display: block;
+  height: 100%;
+  left: calc(-100% - var(--tilt));
+  position: absolute;
+  top: 0;
+  transform: translateX(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: calc(100% + var(--tilt));
+}
+
+.btn-9:after {
+  left: 100%;
+  transform: translateX(var(--progress, 0)) rotate(180deg);
+  z-index: -1;
+}
+
+.btn-9:hover:before {
+  --progress: 100%;
+}
+
+.btn-9:hover:after {
+  --progress: -100%;
 }
 

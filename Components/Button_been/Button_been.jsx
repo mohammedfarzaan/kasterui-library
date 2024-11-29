@@ -3,7 +3,7 @@ import styles from "./Button_been.module.css";
 
 const Button_been = () => (
   <div>
-    <button>Hover Me</button>
+    <button> I'M READY</button>
   </div>
 );
 
@@ -18,8 +18,7 @@ export default Button_been;
 
         const Button_been = () => (
          <div>
-          <button>
-  Hover Me
+          <button> I'M READY
 </button>
         </div>
         );

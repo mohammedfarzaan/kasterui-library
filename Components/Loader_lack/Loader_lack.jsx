@@ -3,33 +3,20 @@ import styles from "./Loader_lack.module.css";
 
 const Loader_lack = () => (
   <div>
-    <main id="container">
-      <div className={styles["dots"]}>
-        <div className={styles["dot"]}></div>
-        <div className={styles["dot"]}></div>
-        <div className={styles["dot"]}></div>
-        <div className={styles["dot"]}></div>
-        <div className={styles["dot"]}></div>
-        <div className={styles["dot"]}></div>
-        <div className={styles["dot"]}></div>
-        <div className={styles["dot"]}></div>
-        <div className={styles["dot"]}></div>
-        <div className={styles["dot"]}></div>
-      </div>
-      <div className={styles["dots2"]}>
-        <div className={styles["dot2"]}></div>
-        <div className={styles["dot2"]}></div>
-        <div className={styles["dot2"]}></div>
-        <div className={styles["dot2"]}></div>
-        <div className={styles["dot2"]}></div>
-        <div className={styles["dot2"]}></div>
-        <div className={styles["dot2"]}></div>
-        <div className={styles["dot2"]}></div>
-        <div className={styles["dot2"]}></div>
-        <div className={styles["dot2"]}></div>
-      </div>
-      <div className={styles["circle"]}></div>
-    </main>
+    <div className={styles["ui-loader"] + styles["loader-blk"]}>
+      <svg viewBox="22 22 44 44" className={styles["multiColor-loader"]}>
+        <circle
+          cx="44"
+          cy="44"
+          r="20.2"
+          fill="none"
+          strokeWidth="3.6"
+          className={
+            styles["loader-circle"] + styles["loader-circle-animation"]
+          }
+        ></circle>
+      </svg>
+    </div>
   </div>
 );
 
@@ -44,34 +31,11 @@ export default Loader_lack;
 
         const Loader_lack = () => (
          <div>
-          <main id="container">
-        
-        <div className="dots">
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-        </div>
-        <div className="dots2">
-            <div className="dot2"></div>
-            <div className="dot2"></div>
-            <div className="dot2"></div>
-            <div className="dot2"></div>
-            <div className="dot2"></div>
-            <div className="dot2"></div>
-            <div className="dot2"></div>
-            <div className="dot2"></div>
-            <div className="dot2"></div>
-            <div className="dot2"></div>
-        </div>
-        <div className="circle"></div>
-    </main>
+          <div className="ui-loader loader-blk">
+    <svg viewBox="22 22 44 44" className="multiColor-loader">
+        <circle cx="44" cy="44" r="20.2" fill="none" strokeWidth="3.6" className="loader-circle loader-circle-animation"></circle>
+    </svg>
+</div>
         </div>
         );
 

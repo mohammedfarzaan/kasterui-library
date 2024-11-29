@@ -3,18 +3,16 @@ import styles from "./Loader_rush.module.css";
 
 const Loader_rush = () => (
   <div>
-    <div className={styles["cssload-container"]}>
-      <ul className={styles["cssload-flex-container"]}>
-        <li>
-          <span
-            className={styles["cssload-loading"] + styles["cssload-one"]}
-          ></span>
-          <span
-            className={styles["cssload-loading"] + styles["cssload-two"]}
-          ></span>
-          <span className={styles["cssload-loading-center"]}></span>
-        </li>
-      </ul>
+    <div className={styles["banter-loader"]}>
+      <div className={styles["banter-loader__box"]}></div>
+      <div className={styles["banter-loader__box"]}></div>
+      <div className={styles["banter-loader__box"]}></div>
+      <div className={styles["banter-loader__box"]}></div>
+      <div className={styles["banter-loader__box"]}></div>
+      <div className={styles["banter-loader__box"]}></div>
+      <div className={styles["banter-loader__box"]}></div>
+      <div className={styles["banter-loader__box"]}></div>
+      <div className={styles["banter-loader__box"]}></div>
     </div>
   </div>
 );
@@ -30,14 +28,16 @@ export default Loader_rush;
 
         const Loader_rush = () => (
          <div>
-          <div className="cssload-container">
-   <ul className="cssload-flex-container">
-      <li>
-         <span className="cssload-loading cssload-one"></span>
-         <span className="cssload-loading cssload-two"></span>
-         <span className="cssload-loading-center"></span>
-      </li>
-   </ul>
+          <div className="banter-loader">
+  <div className="banter-loader__box"></div>
+  <div className="banter-loader__box"></div>
+  <div className="banter-loader__box"></div>
+  <div className="banter-loader__box"></div>
+  <div className="banter-loader__box"></div>
+  <div className="banter-loader__box"></div>
+  <div className="banter-loader__box"></div>
+  <div className="banter-loader__box"></div>
+  <div className="banter-loader__box"></div>
 </div>
         </div>
         );

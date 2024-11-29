@@ -3,10 +3,7 @@ import styles from "./Button_brain.module.css";
 
 const Button_brain = () => (
   <div>
-    <a>
-      <div className={styles["buuton"]}>HOVER ME</div>
-      <div className={styles["back"]}></div>
-    </a>
+    <button className={styles["btn-56"]}>Button</button>
   </div>
 );
 
@@ -21,10 +18,7 @@ export default Button_brain;
 
         const Button_brain = () => (
          <div>
-          <a>
-  <div className="buuton">HOVER ME</div>
-  <div className="back"></div>
-</a>
+          <button className="btn-56">Button</button>
         </div>
         );
 

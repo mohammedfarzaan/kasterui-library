@@ -3,7 +3,7 @@ import styles from "./Button_area.module.css";
 
 const Button_area = () => (
   <div>
-    <button>This is a button :)</button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_area;
 
         const Button_area = () => (
          <div>
-          <button>This is a button :)</button>
+          <button className="button">
+  Button
+</button>
         </div>
         );
 

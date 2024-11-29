@@ -3,9 +3,14 @@ import styles from "./Button_book.module.css";
 
 const Button_book = () => (
   <div>
-    <a href="#" className={styles["menu__link"]}>
-      Hover me!
-    </a>
+    <button className={styles["btn-slice"]} href="#">
+      <div className={styles["top"]}>
+        <span>Sliced Button</span>
+      </div>
+      <div className={styles["bottom"]}>
+        <span>Sliced Button</span>
+      </div>
+    </button>
   </div>
 );
 
@@ -20,7 +25,10 @@ export default Button_book;
 
         const Button_book = () => (
          <div>
-          <a href="#" className="menu__link">Hover me!</a>
+          <button className="btn-slice" href="#">
+  <div className="top"><span>Sliced Button</span></div>
+  <div className="bottom"><span>Sliced Button</span></div>
+</button>
         </div>
         );
 

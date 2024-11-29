@@ -3,22 +3,9 @@ import styles from "./Button_cup.module.css";
 
 const Button_cup = () => (
   <div>
-    <div className={styles["button-container"]}>
-      <button className={styles["button-3d"]}>
-        <div className={styles["button-top"]}>
-          <span className={styles["material-icons"]}>❮</span>
-        </div>
-        <div className={styles["button-bottom"]}></div>
-        <div className={styles["button-base"]}></div>
-      </button>
-      <button className={styles["button-3d"]}>
-        <div className={styles["button-top"]}>
-          <span className={styles["material-icons"]}>❯</span>
-        </div>
-        <div className={styles["button-bottom"]}></div>
-        <div className={styles["button-base"]}></div>
-      </button>
-    </div>
+    <a className={styles["custom-btn"] + styles["secondary-color"]} href="#">
+      <span>hover me</span>
+    </a>
   </div>
 );
 
@@ -33,22 +20,11 @@ export default Button_cup;
 
         const Button_cup = () => (
          <div>
-          <div className="button-container">
-  <button className="button-3d">
-    <div className="button-top">
-      <span className="material-icons">❮</span>
-    </div>
-    <div className="button-bottom"></div>
-    <div className="button-base"></div>
-  </button>
-  <button className="button-3d">
-    <div className="button-top">
-      <span className="material-icons">❯</span>
-    </div>
-    <div className="button-bottom"></div>
-    <div className="button-base"></div>
-  </button>
-</div>
+          <a className="custom-btn secondary-color" href="#">
+  <span>
+    hover me
+  </span>
+</a>
         </div>
         );
 

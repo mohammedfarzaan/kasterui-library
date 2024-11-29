@@ -4,17 +4,12 @@ import styles from "./Loader_fat.module.css";
 const Loader_fat = () => (
   <div>
     <div className={styles["spinner"]}>
-      <svg viewBox="25 25 50 50" className="circular">
-        <circle
-          stroke-miterlimit="10"
-          strokeWidth="3"
-          fill="none"
-          r="20"
-          cy="50"
-          cx="50"
-          className="path"
-        ></circle>
-      </svg>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </div>
 );
@@ -31,9 +26,12 @@ export default Loader_fat;
         const Loader_fat = () => (
          <div>
           <div className="spinner">
-    <svg viewBox="25 25 50 50" className="circular">
-        <circle stroke-miterlimit="10" strokeWidth="3" fill="none" r="20" cy="50" cx="50" className="path"></circle>
-    </svg>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
 </div>
         </div>
         );

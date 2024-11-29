@@ -3,7 +3,24 @@ import styles from "./Button_such.module.css";
 
 const Button_such = () => (
   <div>
-    <button className={styles["button"]}>3D Button</button>
+    <button>
+      <span>Next</span>
+      <svg
+        width="15"
+        height="15"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+          strokeLinejoin="round"
+          strokeLinecap="round"
+        ></path>
+      </svg>
+    </button>
   </div>
 );
 
@@ -18,7 +35,12 @@ export default Button_such;
 
         const Button_such = () => (
          <div>
-          <button className="button">3D Button</button>
+          <button>
+  <span>Next</span>
+  <svg width="15" height="15" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" strokeLinejoin="round" strokeLinecap="round"></path>
+</svg>
+</button>
         </div>
         );
 

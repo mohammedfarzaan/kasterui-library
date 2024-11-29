@@ -3,13 +3,86 @@ import styles from "./Button_twice.module.css";
 
 const Button_twice = () => (
   <div>
-    <button className={styles["Btn"]}>
-      <span className={styles["svgContainer"]}>
-        <svg fill="white" viewBox="0 0 496 512" height="1.6em">
-          <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+    <button className={styles["Documents-btn"]}>
+      <span className={styles["folderContainer"]}>
+        <svg
+          className={styles["fileBack"]}
+          width="146"
+          height="113"
+          viewBox="0 0 146 113"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 4C0 1.79086 1.79086 0 4 0H50.3802C51.8285 0 53.2056 0.627965 54.1553 1.72142L64.3303 13.4371C65.2799 14.5306 66.657 15.1585 68.1053 15.1585H141.509C143.718 15.1585 145.509 16.9494 145.509 19.1585V109C145.509 111.209 143.718 113 141.509 113H3.99999C1.79085 113 0 111.209 0 109V4Z"
+            fill="url(#paint0_linear_117_4)"
+          ></path>
+          <defs>
+            <linearGradient
+              id="paint0_linear_117_4"
+              x1="0"
+              y1="0"
+              x2="72.93"
+              y2="95.4804"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#8F88C2"></stop>
+              <stop offset="1" stop-color="#5C52A2"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg
+          className={styles["filePage"]}
+          width="88"
+          height="99"
+          viewBox="0 0 88 99"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="88" height="99" fill="url(#paint0_linear_117_6)"></rect>
+          <defs>
+            <linearGradient
+              id="paint0_linear_117_6"
+              x1="0"
+              y1="0"
+              x2="81"
+              y2="160.5"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="white"></stop>
+              <stop offset="1" stop-color="#686868"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <svg
+          className={styles["fileFront"]}
+          width="160"
+          height="79"
+          viewBox="0 0 160 79"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.29306 12.2478C0.133905 9.38186 2.41499 6.97059 5.28537 6.97059H30.419H58.1902C59.5751 6.97059 60.9288 6.55982 62.0802 5.79025L68.977 1.18034C70.1283 0.410771 71.482 0 72.8669 0H77H155.462C157.87 0 159.733 2.1129 159.43 4.50232L150.443 75.5023C150.19 77.5013 148.489 79 146.474 79H7.78403C5.66106 79 3.9079 77.3415 3.79019 75.2218L0.29306 12.2478Z"
+            fill="url(#paint0_linear_117_5)"
+          ></path>
+          <defs>
+            <linearGradient
+              id="paint0_linear_117_5"
+              x1="38.7619"
+              y1="8.71323"
+              x2="66.9106"
+              y2="82.8317"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#C3BBFF"></stop>
+              <stop offset="1" stop-color="#51469A"></stop>
+            </linearGradient>
+          </defs>
         </svg>
       </span>
-      <span className={styles["BG"]}></span>
+      <p className={styles["text"]}>Documents</p>
     </button>
   </div>
 );
@@ -25,11 +98,86 @@ export default Button_twice;
 
         const Button_twice = () => (
          <div>
-          <button className="Btn">
- <span className="svgContainer">
-   <svg fill="white" viewBox="0 0 496 512" height="1.6em"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
- </span>
- <span className="BG"></span>
+          <button className="Documents-btn">
+  <span className="folderContainer">
+    <svg
+      className="fileBack"
+      width="146"
+      height="113"
+      viewBox="0 0 146 113"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 4C0 1.79086 1.79086 0 4 0H50.3802C51.8285 0 53.2056 0.627965 54.1553 1.72142L64.3303 13.4371C65.2799 14.5306 66.657 15.1585 68.1053 15.1585H141.509C143.718 15.1585 145.509 16.9494 145.509 19.1585V109C145.509 111.209 143.718 113 141.509 113H3.99999C1.79085 113 0 111.209 0 109V4Z"
+        fill="url(#paint0_linear_117_4)"
+      ></path>
+      <defs>
+        <linearGradient
+          id="paint0_linear_117_4"
+          x1="0"
+          y1="0"
+          x2="72.93"
+          y2="95.4804"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#8F88C2"></stop>
+          <stop offset="1" stop-color="#5C52A2"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+    <svg
+      className="filePage"
+      width="88"
+      height="99"
+      viewBox="0 0 88 99"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="88" height="99" fill="url(#paint0_linear_117_6)"></rect>
+      <defs>
+        <linearGradient
+          id="paint0_linear_117_6"
+          x1="0"
+          y1="0"
+          x2="81"
+          y2="160.5"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="white"></stop>
+          <stop offset="1" stop-color="#686868"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <svg
+      className="fileFront"
+      width="160"
+      height="79"
+      viewBox="0 0 160 79"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0.29306 12.2478C0.133905 9.38186 2.41499 6.97059 5.28537 6.97059H30.419H58.1902C59.5751 6.97059 60.9288 6.55982 62.0802 5.79025L68.977 1.18034C70.1283 0.410771 71.482 0 72.8669 0H77H155.462C157.87 0 159.733 2.1129 159.43 4.50232L150.443 75.5023C150.19 77.5013 148.489 79 146.474 79H7.78403C5.66106 79 3.9079 77.3415 3.79019 75.2218L0.29306 12.2478Z"
+        fill="url(#paint0_linear_117_5)"
+      ></path>
+      <defs>
+        <linearGradient
+          id="paint0_linear_117_5"
+          x1="38.7619"
+          y1="8.71323"
+          x2="66.9106"
+          y2="82.8317"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#C3BBFF"></stop>
+          <stop offset="1" stop-color="#51469A"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+  </span>
+  <p className="text">Documents</p>
 </button>
         </div>
         );

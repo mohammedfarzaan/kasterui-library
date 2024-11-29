@@ -1,62 +1,86 @@
 
-/* From Uiverse.io by Satwinder04 - Tags: button */
-.complex-animated-button {
-  --primary-color: #ff7f50;
-  --secondary-color: #ffa07a;
-  --border-radius: 8px;
-  --shadow-color: rgba(0, 0, 0, 0.2);
-  --shadow-offset: 2px;
-  --shadow-blur: 4px;
-  --ripple-color: rgba(255, 255, 255, 0.5);
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-  border: none;
-  border-radius: var(--border-radius);
-  color: white;
-  font-size: 1.2rem;
-  padding: 1rem 2rem;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  box-shadow: var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-color);
-  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+/* From Uiverse.io by LilaRest  - Tags: neumorphism, skeuomorphism, social, button, like, heart, realistic, favorite */
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 25px 20px 22px;
+  box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: #e8e8e8;
+  border-color: #ffe2e2;
+  border-style: solid;
+  border-width: 9px;
+  border-radius: 35px;
+  font-size: 25px;
+  font-weight: 900;
+  color: rgb(134, 124, 124);
+  font-family: monospace;
+  transition: transform 400ms cubic-bezier(.68,-0.55,.27,2.5), 
+  border-color 400ms ease-in-out,
+  background-color 400ms ease-in-out;
+  word-spacing: -2px;
 }
 
-.complex-animated-button:hover {
-  transform: scale(1);
-  background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
-}
+@keyframes movingBorders {
+  0% {
+    border-color: #fce4e4;
+  }
 
-.complex-animated-button:focus {
-  outline: none;
-}
+  50% {
+    border-color: #ffd8d8;
+  }
 
-.complex-animated-button:active {
-  animation: ripple 0.6s ease-out;
-}
-
-@keyframes ripple {
-  to {
-    transform: scale(1);
-    opacity: 0;
+  90% {
+    border-color: #fce4e4;
   }
 }
 
-.complex-animated-button::after {
-  content: '';
+button:hover {
+  background-color: #eee;
+  transform: scale(105%);
+  animation: movingBorders 3s infinite;
+}
+
+button svg {
+  margin-right: 11px;
+  fill: rgb(255, 110, 110);
+  transition: opacity 100ms ease-in-out;
+}
+
+.filled {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  background-color: var(--ripple-color);
-  border-radius: 50%;
-  opacity: 0.5;
+  opacity: 0;
+  top: 20px;
+  left: 22px;
 }
 
-.complex-animated-button:active::after {
-  width: 100%;
-  height: 100%;
-  transition: width 0.3s ease-out, height 0.3s ease-out;
+@keyframes beatingHeart {
+  0% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1.15);
+  }
+
+  30% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1.15);
+  }
+
+  60% {
+    transform: scale(1);
+  }
 }
 
+button:hover .empty {
+  opacity: 0;
+}
+
+button:hover .filled {
+  opacity: 1;
+  animation: beatingHeart 1.2s infinite;
+}

@@ -1,116 +1,121 @@
 
-/* From Uiverse.io by Nawsome - Tags: loader, compass */
-.pl {
-  display: block;
-  width: 9.375em;
-  height: 9.375em;
+/* From Uiverse.io by Sourcesketch  - Tags: neumorphism, loader, spinner, circle loader, creative, effect loader, loading animation */
+.container {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  filter: url("#goo");
+  animation: rotate-move 2s ease-in-out infinite;
 }
 
-.pl__arrows,
-.pl__ring-rotate,
-.pl__ring-stroke,
-.pl__tick {
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+.dot {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-.pl__arrows {
-  animation-name: arrows42;
-  transform: rotate(45deg);
-  transform-origin: 16px 52px;
+.dot-3 {
+  background-color: #ff1717;
+  animation: dot-3-move 2s ease infinite, index 6s ease infinite;
 }
 
-.pl__ring-rotate,
-.pl__ring-stroke {
-  transform-origin: 80px 80px;
+.dot-2 {
+  background-color: #0051ff;
+  animation: dot-2-move 2s ease infinite, index 6s -4s ease infinite;
 }
 
-.pl__ring-rotate {
-  animation-name: ringRotate42;
+.dot-1 {
+  background-color: #ffc400;
+  animation: dot-1-move 2s ease infinite, index 6s -2s ease infinite;
 }
 
-.pl__ring-stroke {
-  animation-name: ringStroke42;
-  transform: rotate(-45deg);
-}
-
-.pl__tick {
-  animation-name: tick42;
-}
-
-.pl__tick:nth-child(2) {
-  animation-delay: -1.75s;
-}
-
-.pl__tick:nth-child(3) {
-  animation-delay: -1.5s;
-}
-
-.pl__tick:nth-child(4) {
-  animation-delay: -1.25s;
-}
-
-.pl__tick:nth-child(5) {
-  animation-delay: -1s;
-}
-
-.pl__tick:nth-child(6) {
-  animation-delay: -0.75s;
-}
-
-.pl__tick:nth-child(7) {
-  animation-delay: -0.5s;
-}
-
-.pl__tick:nth-child(8) {
-  animation-delay: -0.25s;
-}
-
-/* Animations */
-@keyframes arrows42 {
-  from {
-    transform: rotate(45deg);
+@keyframes dot-3-move {
+  20% {
+    transform: scale(1);
   }
-
-  to {
-    transform: rotate(405deg);
+  45% {
+    transform: translateY(-18px) scale(0.45);
+  }
+  60% {
+    transform: translateY(-90px) scale(0.45);
+  }
+  80% {
+    transform: translateY(-90px) scale(0.45);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
   }
 }
 
-@keyframes ringRotate42 {
-  from {
-    transform: rotate(0);
+@keyframes dot-2-move {
+  20% {
+    transform: scale(1);
   }
-
-  to {
-    transform: rotate(720deg);
+  45% {
+    transform: translate(-16px, 12px) scale(0.45);
   }
-}
-
-@keyframes ringStroke42 {
-  from,
-	to {
-    stroke-dashoffset: 452;
-    transform: rotate(-45deg);
+  60% {
+    transform: translate(-80px, 60px) scale(0.45);
   }
-
-  50% {
-    stroke-dashoffset: 169.5;
-    transform: rotate(-180deg);
+  80% {
+    transform: translate(-80px, 60px) scale(0.45);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
   }
 }
 
-@keyframes tick42 {
-  from,
-	3%,
-	47%,
-	to {
-    stroke-dashoffset: -12;
+@keyframes dot-1-move {
+  20% {
+    transform: scale(1);
   }
-
-  14%,
-	36% {
-    stroke-dashoffset: 0;
+  45% {
+    transform: translate(16px, 12px) scale(0.45);
+  }
+  60% {
+    transform: translate(80px, 60px) scale(0.45);
+  }
+  80% {
+    transform: translate(80px, 60px) scale(0.45);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
   }
 }
+
+@keyframes rotate-move {
+  55% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  80% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes index {
+  0%,
+  100% {
+    z-index: 3;
+  }
+  33.3% {
+    z-index: 2;
+  }
+  66.6% {
+    z-index: 1;
+  }
+}
+

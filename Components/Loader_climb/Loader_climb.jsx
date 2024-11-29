@@ -3,15 +3,12 @@ import styles from "./Loader_climb.module.css";
 
 const Loader_climb = () => (
   <div>
-    <div className={styles["middle"]}>
-      <div className={styles["bar"] + styles["bar1"]}></div>
-      <div className={styles["bar"] + styles["bar2"]}></div>
-      <div className={styles["bar"] + styles["bar3"]}></div>
-      <div className={styles["bar"] + styles["bar4"]}></div>
-      <div className={styles["bar"] + styles["bar5"]}></div>
-      <div className={styles["bar"] + styles["bar6"]}></div>
-      <div className={styles["bar"] + styles["bar7"]}></div>
-      <div className={styles["bar"] + styles["bar8"]}></div>
+    <div className={styles["loader3"]}>
+      <div className={styles["circle1"]}></div>
+      <div className={styles["circle1"]}></div>
+      <div className={styles["circle1"]}></div>
+      <div className={styles["circle1"]}></div>
+      <div className={styles["circle1"]}></div>
     </div>
   </div>
 );
@@ -27,15 +24,12 @@ export default Loader_climb;
 
         const Loader_climb = () => (
          <div>
-          <div className="middle">
-  <div className="bar bar1"></div>
-  <div className="bar bar2"></div>
-  <div className="bar bar3"></div>
-  <div className="bar bar4"></div>
-  <div className="bar bar5"></div>
-  <div className="bar bar6"></div>
-  <div className="bar bar7"></div>
-  <div className="bar bar8"></div>
+          <div className="loader3">
+  <div className="circle1"></div>
+  <div className="circle1"></div>
+  <div className="circle1"></div>
+  <div className="circle1"></div>
+  <div className="circle1"></div>
 </div>
         </div>
         );

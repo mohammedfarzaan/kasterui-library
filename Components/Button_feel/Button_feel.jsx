@@ -3,7 +3,9 @@ import styles from "./Button_feel.module.css";
 
 const Button_feel = () => (
   <div>
-    <button className={styles["button"]}>hover me!</button>
+    <button className={styles["btn"]}>
+      <span>Modern Button</span>
+    </button>
   </div>
 );
 
@@ -18,8 +20,8 @@ export default Button_feel;
 
         const Button_feel = () => (
          <div>
-          <button className="button">
-  hover me!
+          <button className="btn">
+  <span>Modern Button</span>
 </button>
         </div>
         );

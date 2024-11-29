@@ -3,7 +3,9 @@ import styles from "./Button_light.module.css";
 
 const Button_light = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button className={styles["btn-12"]}>
+      <span>Button</span>
+    </button>
   </div>
 );
 
@@ -18,9 +20,7 @@ export default Button_light;
 
         const Button_light = () => (
          <div>
-          <button className="button">
-  Button
-</button>
+          <button className="btn-12"><span>Button</span></button>
         </div>
         );
 

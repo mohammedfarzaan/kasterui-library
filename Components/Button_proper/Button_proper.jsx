@@ -3,7 +3,7 @@ import styles from "./Button_proper.module.css";
 
 const Button_proper = () => (
   <div>
-    <button>Button</button>
+    <button>Hover me</button>
   </div>
 );
 
@@ -19,7 +19,7 @@ export default Button_proper;
         const Button_proper = () => (
          <div>
           <button>
-    Button
+Hover me
 </button>
         </div>
         );

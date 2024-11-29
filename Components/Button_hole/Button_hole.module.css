@@ -1,29 +1,50 @@
 
-/* From Uiverse.io by Carlos-vargs - Tags: button, animated, video, play */
-.button {
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
-  background: linear-gradient(30deg, rgb(255, 130, 0) 20%, rgb(255, 38, 0) 80%);
-  transition: all 0.3s ease-in-out 0s;
-  box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
-  animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
-  align-items: center;
-  border: 0;
+/* From Uiverse.io by alshahwan - Tags: instagram, button */
+/* From uiverse.io by @alshahwan */
+button {
+  background-color: #fff;
+  border: 1px solid #bc2a8d;
+  padding: 5px;
+  position: relative;
+  width: 7.2em;
+  height: 2em;
+  transition: 0.5s;
+  font-size: 17px;
+  border-radius: 0.4em;
 }
 
-.button:is(:hover, :focus) {
-  transform: scale(1.2);
+button p {
+  position: absolute;
+  top: 0.4em;
+  left: 1.2em;
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+  color: #bc2a8d;
 }
 
-@keyframes pulse {
-  100% {
-    box-shadow: 0 0 0 45px rgba(193,244,246,0);
-  }
+button svg {
+  position: absolute;
+  top: 0.45em;
+  right: 0.5em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+  fill: #fff
 }
 
+button:hover p {
+  left: 0.6em;
+  color: #fff
+}
 
+button:hover svg {
+  opacity: 1;
+}
+
+button:hover {
+  background-color: #bc2a8d;
+}
 

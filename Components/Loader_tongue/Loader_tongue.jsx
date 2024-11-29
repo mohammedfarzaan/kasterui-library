@@ -4,12 +4,9 @@ import styles from "./Loader_tongue.module.css";
 const Loader_tongue = () => (
   <div>
     <div className={styles["loader"]}>
-      <div
-        className={styles["loader_cube"] + styles["loader_cube--color"]}
-      ></div>
-      <div
-        className={styles["loader_cube"] + styles["loader_cube--glowing"]}
-      ></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
     </div>
   </div>
 );
@@ -26,8 +23,9 @@ export default Loader_tongue;
         const Loader_tongue = () => (
          <div>
           <div className="loader">
-  <div className="loader_cube loader_cube--color"></div>
-   <div className="loader_cube loader_cube--glowing"></div>
+  <div className="dot"></div>
+  <div className="dot"></div>
+  <div className="dot"></div>
 </div>
         </div>
         );

@@ -3,9 +3,8 @@ import styles from "./Button_lot.module.css";
 
 const Button_lot = () => (
   <div>
-    <button className={styles["button"]}>
-      <span className={styles["base"]}></span>
-      <span className={styles["red"]}></span>
+    <button className={styles["btn-shape"]}>
+      <span className={styles["title"]}>hover me</span>
     </button>
   </div>
 );
@@ -21,9 +20,10 @@ export default Button_lot;
 
         const Button_lot = () => (
          <div>
-          <button className="button">
-  <span className="base"></span>
-  <span className="red"></span>
+          <button className="btn-shape">
+    <span className="title">
+      hover me
+    </span>
 </button>
         </div>
         );

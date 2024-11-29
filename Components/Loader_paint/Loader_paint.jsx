@@ -3,7 +3,7 @@ import styles from "./Loader_paint.module.css";
 
 const Loader_paint = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <span className={styles["loader"]}></span>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Loader_paint;
 
         const Loader_paint = () => (
          <div>
-          <div className="loader"></div>
+          <span className="loader"></span>
         </div>
         );
 

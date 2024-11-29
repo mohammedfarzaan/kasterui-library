@@ -3,7 +3,7 @@ import styles from "./Button_human.module.css";
 
 const Button_human = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button className={styles["btn"]}> Button</button>
   </div>
 );
 
@@ -18,7 +18,8 @@ export default Button_human;
 
         const Button_human = () => (
          <div>
-          <button className="button">Button</button>
+          <button className="btn"> Button
+</button>
         </div>
         );
 

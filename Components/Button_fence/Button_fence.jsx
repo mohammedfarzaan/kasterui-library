@@ -3,9 +3,7 @@ import styles from "./Button_fence.module.css";
 
 const Button_fence = () => (
   <div>
-    <button className={styles["loading"]}>
-      <p>Loading...</p>
-    </button>
+    <button className={styles["button"]}>Let`s go →</button>
   </div>
 );
 
@@ -20,8 +18,8 @@ export default Button_fence;
 
         const Button_fence = () => (
          <div>
-          <button className="loading">
-  <p>Loading...</p>
+          <button className="button">
+  Let`s go →
 </button>
         </div>
         );

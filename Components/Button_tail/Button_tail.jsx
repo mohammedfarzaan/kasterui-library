@@ -3,9 +3,7 @@ import styles from "./Button_tail.module.css";
 
 const Button_tail = () => (
   <div>
-    <button>
-      <span className={styles["button_top"]}> Button</span>
-    </button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -20,10 +18,7 @@ export default Button_tail;
 
         const Button_tail = () => (
          <div>
-          <button>
-  <span className="button_top"> Button
-  </span>
-</button>
+          <button className="button">Button</button>
         </div>
         );
 

@@ -3,9 +3,11 @@ import styles from "./Button_tie.module.css";
 
 const Button_tie = () => (
   <div>
-    <button className={styles["send-message-button"]}>
-      <span className={styles["icon"]}>✈️</span>{" "}
-      <span className={styles["text"]}>Send Message</span>
+    <button className={styles["learn-more"]}>
+      <span className={styles["circle"]} aria-hidden="true">
+        <span className={styles["icon"] + styles["arrow"]}></span>
+      </span>
+      <span className={styles["button-text"]}>Learn More</span>
     </button>
   </div>
 );
@@ -21,8 +23,11 @@ export default Button_tie;
 
         const Button_tie = () => (
          <div>
-          <button className="send-message-button">
-  <span className="icon">✈️</span> <span className="text">Send Message</span>
+          <button className="learn-more">
+  <span className="circle" aria-hidden="true">
+  <span className="icon arrow"></span>
+  </span>
+  <span className="button-text">Learn More</span>
 </button>
         </div>
         );

@@ -3,8 +3,11 @@ import styles from "./Loader_ground.module.css";
 
 const Loader_ground = () => (
   <div>
-    <div className={styles["progress"]}>
-      <div className={styles["inner"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["loader-bar"] + styles["bar-1"]}></div>
+      <div className={styles["loader-bar"] + styles["bar-2"]}></div>
+      <div className={styles["loader-bar"] + styles["bar-3"]}></div>
+      <div className={styles["loader-bar"] + styles["bar-4"]}></div>
     </div>
   </div>
 );
@@ -20,8 +23,11 @@ export default Loader_ground;
 
         const Loader_ground = () => (
          <div>
-          <div className="progress">
-      <div className="inner"></div>
+          <div className="loader">
+  <div className="loader-bar bar-1"></div>
+  <div className="loader-bar bar-2"></div>
+  <div className="loader-bar bar-3"></div>
+  <div className="loader-bar bar-4"></div>
 </div>
         </div>
         );

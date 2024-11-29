@@ -3,31 +3,12 @@ import styles from "./Loader_honor.module.css";
 
 const Loader_honor = () => (
   <div>
-    <section className={styles["loader"]}>
-      <div>
-        <div>
-          <span className={styles["one"] + styles["h6"]}></span>
-          <span className={styles["two"] + styles["h3"]}></span>
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <span className={styles["one"] + styles["h1"]}></span>
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <span className={styles["two"] + styles["h2"]}></span>
-        </div>
-      </div>
-      <div>
-        <div>
-          <span className={styles["one"] + styles["h4"]}></span>
-        </div>
-      </div>
-    </section>
+    <div className={styles["container"]}>
+      <div className={styles["top-left"]}></div>
+      <div className={styles["top-right"]}></div>
+      <div className={styles["bottom-left"]}></div>
+      <div className={styles["bottom-right"]}></div>
+    </div>
   </div>
 );
 
@@ -42,31 +23,12 @@ export default Loader_honor;
 
         const Loader_honor = () => (
          <div>
-          <section className="loader">
-      <div>
-        <div>
-          <span className="one h6"></span>
-          <span className="two h3"></span>
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <span className="one h1"></span>
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <span className="two h2"></span>
-        </div>
-      </div>
-      <div>
-        <div>
-          <span className="one h4"></span>
-        </div>
-      </div>
-    </section>
+          <div className="container">
+    <div className="top-left"></div>
+    <div className="top-right"></div>
+    <div className="bottom-left"></div>
+    <div className="bottom-right"></div>
+</div>
         </div>
         );
 

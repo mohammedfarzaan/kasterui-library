@@ -3,11 +3,12 @@ import styles from "./Loader_danger.module.css";
 
 const Loader_danger = () => (
   <div>
-    <div className={styles["card"]}>
-      <div className={styles["card__skeleton"] + styles["card__title"]}></div>
-      <div className={styles["card__skeleton"] + styles["card__description"]}>
-        {" "}
-      </div>
+    <div className={styles["loader"]}>
+      <div className={styles["dot"] + styles["dot-1"]}></div>
+      <div className={styles["dot"] + styles["dot-2"]}></div>
+      <div className={styles["dot"] + styles["dot-3"]}></div>
+      <div className={styles["dot"] + styles["dot-4"]}></div>
+      <div className={styles["dot"] + styles["dot-5"]}></div>
     </div>
   </div>
 );
@@ -23,9 +24,12 @@ export default Loader_danger;
 
         const Loader_danger = () => (
          <div>
-          <div className="card">
-  <div className="card__skeleton card__title"></div>
-  <div className="card__skeleton card__description">         </div>
+          <div className="loader">
+  <div className="dot dot-1"></div>
+  <div className="dot dot-2"></div>
+  <div className="dot dot-3"></div>
+  <div className="dot dot-4"></div>
+  <div className="dot dot-5"></div>
 </div>
         </div>
         );

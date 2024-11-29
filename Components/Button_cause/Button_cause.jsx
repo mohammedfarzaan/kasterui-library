@@ -3,7 +3,11 @@ import styles from "./Button_cause.module.css";
 
 const Button_cause = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <div className={styles["box"]}>
+      <div className={styles["btn"]}>
+        <button href="#">HOVER ME</button>
+      </div>
+    </div>
   </div>
 );
 
@@ -18,9 +22,11 @@ export default Button_cause;
 
         const Button_cause = () => (
          <div>
-          <button className="button">
-  Button
-</button>
+          <div className="box">
+  <div className="btn">
+    <button href="#">HOVER ME</button>
+  </div>
+</div>
         </div>
         );
 

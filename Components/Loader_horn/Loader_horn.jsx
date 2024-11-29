@@ -3,10 +3,12 @@ import styles from "./Loader_horn.module.css";
 
 const Loader_horn = () => (
   <div>
-    <div className={styles["three-body"]}>
-      <div className={styles["three-body__dot"]}></div>
-      <div className={styles["three-body__dot"]}></div>
-      <div className={styles["three-body__dot"]}></div>
+    <div className={styles["loader-box"]}>
+      <div className={styles["loading-wrapper"]}>
+        <div className={styles["loader"]}>
+          <div className={styles["loader-inner"]}></div>
+        </div>
+      </div>
     </div>
   </div>
 );
@@ -22,10 +24,13 @@ export default Loader_horn;
 
         const Loader_horn = () => (
          <div>
-          <div className="three-body">
-<div className="three-body__dot"></div>
-<div className="three-body__dot"></div>
-<div className="three-body__dot"></div>
+          <div className="loader-box">
+    <div className="loading-wrapper">
+        <div className="loader">
+            <div className="loader-inner">
+            </div>
+        </div>
+    </div>
 </div>
         </div>
         );

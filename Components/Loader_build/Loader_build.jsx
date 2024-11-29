@@ -3,7 +3,11 @@ import styles from "./Loader_build.module.css";
 
 const Loader_build = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["dot-one"]}></div>
+      <div className={styles["dot-two"]}>- -</div>
+      <div className={styles["dot-three"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +22,11 @@ export default Loader_build;
 
         const Loader_build = () => (
          <div>
-          <div className="loader"></div>
+          <div className="loader">
+ <div className="dot-one"></div> 
+ <div className="dot-two">-  -</div> 
+ <div className="dot-three"></div> 
+</div>
         </div>
         );
 

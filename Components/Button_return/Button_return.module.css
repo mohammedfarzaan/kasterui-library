@@ -1,76 +1,61 @@
 
-/* From Uiverse.io by SoloResearchLab  - Website: https://uiverse.io/emmanuelh-dev/itchy-turtle-88 - Name: emmanuelh-dev - Tags: tooltip, action, button, smooth */
-.button-group {
+/* From Uiverse.io by vinodjangid07  - Tags: simple, icon, button, hover, download, click effect */
+.Download-button {
   display: flex;
-  background-color: white;
-  padding: 15px; /* 1.25rem assuming base font size is 12px */
-  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0px 2px 4px -1px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
-}
-
-.button-container {
-  display: flex;
-  width: 100%;
-  padding: 15px; /* 1.5rem */
-  border-radius: 10px;
-}
-
-.button-container a {
-  color: #3b82f6; /* light-blue-light */
-  border: 2px solid transparent;
-  display: inline-flex;
   align-items: center;
-  margin-right: 20px; /* 4 * 5 (assuming 1 unit = 5px) */
-  padding: 10px; /* 2.5 * 4 */
-  background-color: #f3f4f6; /* light-secondary */
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-  border-radius: 9999px;
-  font-size: 14px;
-  text-align: center;
-  transition: all 0.2s ease;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 12px 20px;
+  color: white;
+  background: rgb(103, 92, 156);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
+  letter-spacing: 0.05em;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
 }
 
-.button-container a:last-child {
-  margin-right: 0;
+.Download-button svg {
+  margin-right: 8px;
+  width: 25px;
 }
 
-.button-container a:hover {
-  color: black;
-  border-color: #3b82f6; /* light-blue-light */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+.Download-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em rgba(88, 71, 116, 0.627);
 }
 
-.button-container a svg {
-  width: 20px; /* 5 * 4 */
-  height: 20px;
-  fill: currentColor;
+.Download-button:active {
+  box-shadow: 0 0.3em 1em -0.5em rgba(88, 71, 116, 0.627);
 }
 
-/* Dark Mode Styles */
-@media (prefers-color-scheme: dark) {
-  .button-group {
-    background-color: #1f2937; /* box-dark */
-    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.5),
-      0px 2px 4px -1px rgba(0, 0, 0, 0.3);
-  }
+.Download-button::before {
+  content: "";
+  width: 4px;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  left: 0;
+  transition: all 0.2s;
+}
 
-  .button-container {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  }
+.Download-button::after {
+  content: "";
+  width: 4px;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  right: 0;
+  transition: all 0.2s;
+}
 
-  .button-container a {
-    color: #9ca3af; /* gray-400 */
-    background-color: #374151; /* button-curved-default-dark */
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
-  }
-
-  .button-container a:hover,
-  .button-container a:focus,
-  .button-container a:active {
-    background-color: #4b5563; /* button-curved-pressed-dark */
-    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0px 2px 4px -1px rgba(0, 0, 0, 0.06);
-  }
+.Download-button:hover::before,
+.Download-button:hover::after {
+  height: 60%;
 }
 

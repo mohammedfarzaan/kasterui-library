@@ -3,13 +3,11 @@ import styles from "./Loader_huge.module.css";
 
 const Loader_huge = () => (
   <div>
-    <div className={styles["wrapper"]}>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["shadow"]}></div>
-      <div className={styles["shadow"]}></div>
-      <div className={styles["shadow"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["loader__circle"]}></div>
+      <div className={styles["loader__circle"]}></div>
+      <div className={styles["loader__circle"]}></div>
+      <div className={styles["loader__circle"]}></div>
     </div>
   </div>
 );
@@ -25,13 +23,11 @@ export default Loader_huge;
 
         const Loader_huge = () => (
          <div>
-          <div className="wrapper">
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="shadow"></div>
-    <div className="shadow"></div>
-    <div className="shadow"></div>
+          <div className="loader">
+  <div className="loader__circle"></div>
+  <div className="loader__circle"></div>
+  <div className="loader__circle"></div>
+  <div className="loader__circle"></div>
 </div>
         </div>
         );

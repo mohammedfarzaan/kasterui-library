@@ -1,24 +1,60 @@
 
-/* From Uiverse.io by sekaiking - Tags: button */
-button {
-  background-color: white;
-  color: black;
-  border-radius: 10em;
-  font-size: 17px;
-  font-weight: 600;
-  padding: 1em 2em;
+/* From Uiverse.io by andrew-demchenk0 - Tags: blue, button, refresh */
+.button {
+  position: relative;
+  width: 150px;
+  height: 40px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid black;
-  box-shadow: 0 0 0 0 black;
+  display: flex;
+  align-items: center;
+  border: 1px solid #0078E8;
+  background-color: #0082FC;
+  overflow: hidden;
 }
 
-button:hover {
-  transform: translateY(-4px) translateX(-2px);
-  box-shadow: 2px 5px 0 0 black;
-};
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
 
-button:active {
-  transform: translateY(2px) translateX(1px);
-  box-shadow: 0 0 0 0 black;
-};
+.button .button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #0078E8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.button:hover {
+  background: #0078E8;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #006cd0;
+}
+
+.button:active {
+  border: 1px solid #006cd0;
+}

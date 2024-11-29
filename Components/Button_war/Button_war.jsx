@@ -3,24 +3,7 @@ import styles from "./Button_war.module.css";
 
 const Button_war = () => (
   <div>
-    <button className={styles["button"]}>
-      <span>Join Today</span>
-
-      <svg
-        className="icon"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        strokeWidth="2"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M17 8l4 4m0 0l-4 4m4-4H3"
-        ></path>
-      </svg>
-    </button>
+    <button className={styles["neu-button"]}>Press me</button>
   </div>
 );
 
@@ -35,24 +18,7 @@ export default Button_war;
 
         const Button_war = () => (
          <div>
-          <button className="button">
-  <span>Join Today</span>
-
-  <svg
-    className="icon"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    strokeWidth="2"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M17 8l4 4m0 0l-4 4m4-4H3"
-    ></path>
-  </svg>
-</button>
+          <button className="neu-button">Press me</button>
         </div>
         );
 

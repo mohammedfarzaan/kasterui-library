@@ -3,7 +3,7 @@ import styles from "./Button_train.module.css";
 
 const Button_train = () => (
   <div>
-    <button className={styles["button"]}>Click me !</button>
+    <button className={styles["button"]}>Hover Me!</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_train;
 
         const Button_train = () => (
          <div>
-          <button className="button">Click me !</button>
+          <button className="button">
+  Hover Me!
+</button>
         </div>
         );
 

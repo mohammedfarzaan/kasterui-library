@@ -1,60 +1,97 @@
 import React from "react";
+import styles from "./Button_load.module.css";
 
 const Button_load = () => (
   <div>
-    <button className="group relative flex flex-row items-center justify-center gap-2 rounded-2xl px-4 py-1.5 text-sm font-medium shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f]">
-      <div className="absolute inset-0 block h-full w-full animate-gradient bg-gradient-to-r from-[#ffaa40]/50 via-[#9c40ff]/50 to-[#ffaa40]/50 bg-[length:var(--bg-size)_100%] [border-radius:inherit] [mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] p-[1px] ![mask-composite:subtract]"></div>
+    <button className={styles["button"]}>
       <svg
-        width="15"
-        height="15"
-        viewBox="0 0 15 15"
-        fill="none"
+        xml:space="preserve"
+        viewBox="0 0 256 256"
+        height="256"
+        width="256"
+        version="1.1"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
         xmlns="http://www.w3.org/2000/svg"
-        className="size-4 text-[#ffaa40]"
       >
-        <path
-          d="M5 4.63601C5 3.76031 5.24219 3.1054 5.64323 2.67357C6.03934 2.24705 6.64582 1.9783 7.5014 1.9783C8.35745 1.9783 8.96306 2.24652 9.35823 2.67208C9.75838 3.10299 10 3.75708 10 4.63325V5.99999H5V4.63601ZM4 5.99999V4.63601C4 3.58148 4.29339 2.65754 4.91049 1.99307C5.53252 1.32329 6.42675 0.978302 7.5014 0.978302C8.57583 0.978302 9.46952 1.32233 10.091 1.99162C10.7076 2.65557 11 3.57896 11 4.63325V5.99999H12C12.5523 5.99999 13 6.44771 13 6.99999V13C13 13.5523 12.5523 14 12 14H3C2.44772 14 2 13.5523 2 13V6.99999C2 6.44771 2.44772 5.99999 3 5.99999H4ZM3 6.99999H12V13H3V6.99999Z"
-          fill="currentColor"
-          fillRule="evenodd"
-          clipRule="evenodd"
-        ></path>
+        <defs></defs>
+        <g
+          transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+          style={{
+            stroke: "none",
+            strokeWidth: "0",
+            strokeDasharray: "none",
+            strokeLinecap: "butt",
+            strokeLinejoin: "miter",
+            strokeMiterlimit: "10",
+            fill: "none",
+            fillRule: "nonzero",
+            opacity: "1",
+          }}
+        >
+          <path
+            strokeLinecap="round"
+            transform="matrix(1 0 0 1 0 0)"
+            style={{
+              stroke: "none",
+              strokeWidth: "1",
+              strokeDasharray: "none",
+              strokeLinecap: "butt",
+              strokeLinejoin: "miter",
+              strokeMiterlimit: "10",
+              fill: "rgb(0,0,0)",
+              fillRule: "nonzero",
+              opacity: "1",
+            }}
+            d="M 71.79 34.614 c -0.334 -0.497 -0.926 -0.745 -1.513 -0.63 l -18.311 3.528 l 3.718 -35.877 c 0.071 -0.682 -0.332 -1.32 -0.979 -1.55 c -0.648 -0.229 -1.362 0.011 -1.738 0.585 L 18.202 53.746 c -0.328 0.5 -0.325 1.144 0.008 1.639 c 0.33 0.493 0.922 0.742 1.513 0.632 l 18.312 -3.529 l -3.718 35.876 c -0.071 0.684 0.332 1.322 0.979 1.551 C 35.455 89.971 35.622 90 35.792 90 c 0.502 0 0.965 -0.251 1.241 -0.67 l 34.765 -53.076 C 72.126 35.754 72.122 35.11 71.79 34.614 z"
+          ></path>
+        </g>
       </svg>
-      <div
-        data-orientation="vertical"
-        role="none"
-        className="shrink-0 bg-border w-[1px] h-4"
-      ></div>
-      <span className="inline animate-gradient whitespace-pre bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent [--bg-size:300%] text-center">
-        Get Access
-      </span>
-      <svg
-        fill="none"
-        stroke="currentColor"
-        width="11"
-        height="11"
-        viewBox="0 0 10 10"
-        aria-hidden="true"
-        strokeWidth="1.5"
-        className="text-[#9c40ff]"
-        strokeLinecap="round"
-      >
-        <path
-          className="opacity-0 transition group-hover:opacity-100"
-          d="M0 5h7"
-          strokeLinecap="round"
-        ></path>
-        <path
-          className="transition group-hover:translate-x-[3px]"
-          d="M1 1l4 4-4 4"
-          strokeLinecap="round"
-        ></path>
-      </svg>
+      Join Now
     </button>
   </div>
 );
 
 export default Button_load;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_load = () => (
+         <div>
+          <button className="button">
+  <svg
+    xml:space="preserve"
+    viewBox="0 0 256 256"
+    height="256"
+    width="256"
+    version="1.1"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs></defs>
+    <g
+      transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+      style={{stroke:"none",strokeWidth:"0",strokeDasharray:"none",strokeLinecap:"butt",strokeLinejoin:"miter",strokeMiterlimit:"10",fill:"none",fillRule:"nonzero",opacity:"1"}}
+    >
+      <path
+        strokeLinecap="round"
+        transform="matrix(1 0 0 1 0 0)"
+        style={{stroke:"none",strokeWidth:"1",strokeDasharray:"none",strokeLinecap:"butt",strokeLinejoin:"miter",strokeMiterlimit:"10",fill:"rgb(0,0,0)",fillRule:"nonzero",opacity:"1"}}
+        d="M 71.79 34.614 c -0.334 -0.497 -0.926 -0.745 -1.513 -0.63 l -18.311 3.528 l 3.718 -35.877 c 0.071 -0.682 -0.332 -1.32 -0.979 -1.55 c -0.648 -0.229 -1.362 0.011 -1.738 0.585 L 18.202 53.746 c -0.328 0.5 -0.325 1.144 0.008 1.639 c 0.33 0.493 0.922 0.742 1.513 0.632 l 18.312 -3.529 l -3.718 35.876 c -0.071 0.684 0.332 1.322 0.979 1.551 C 35.455 89.971 35.622 90 35.792 90 c 0.502 0 0.965 -0.251 1.241 -0.67 l 34.765 -53.076 C 72.126 35.754 72.122 35.11 71.79 34.614 z"
+      ></path>
+    </g>
+  </svg>
+  Join Now
+</button>
+        </div>
+        );
+
+        export default Button_load;
+        
+        
+         */
 }

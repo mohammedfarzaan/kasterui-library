@@ -3,7 +3,7 @@ import styles from "./Button_angry.module.css";
 
 const Button_angry = () => (
   <div>
-    <button>Button</button>
+    <button>Click me</button>
   </div>
 );
 
@@ -19,7 +19,7 @@ export default Button_angry;
         const Button_angry = () => (
          <div>
           <button>
-    Button
+    Click me
 </button>
         </div>
         );

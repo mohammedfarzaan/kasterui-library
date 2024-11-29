@@ -3,9 +3,22 @@ import styles from "./Loader_sit.module.css";
 
 const Loader_sit = () => (
   <div>
-    <div className={styles["loader"]}>
-      <label>Redirecting...</label>
-      <div className={styles["loading"]}></div>
+    <div id="timer">
+      <div id="div1"></div>
+      <div id="div2"></div>
+      <div id="div3"></div>
+      <div id="div4"></div>
+      <div id="div5"></div>
+      <div id="div6"></div>
+      <div id="div7"></div>
+      <div id="div8"></div>
+      <div id="div9"></div>
+      <div id="div10"></div>
+      <div id="div11"></div>
+      <div id="div12"></div>
+      <div id="div13"></div>
+      <div id="div14"></div>
+      <div id="div15"></div>
     </div>
   </div>
 );
@@ -21,9 +34,22 @@ export default Loader_sit;
 
         const Loader_sit = () => (
          <div>
-          <div className="loader">
-  <label>Redirecting...</label>
-  <div className="loading"></div>
+          <div id="timer">
+  <div id="div1"></div>
+  <div id="div2"></div>
+  <div id="div3"></div>
+  <div id="div4"></div>
+  <div id="div5"></div>
+  <div id="div6"></div>
+  <div id="div7"></div>
+  <div id="div8"></div>
+  <div id="div9"></div>
+  <div id="div10"></div>
+  <div id="div11"></div>
+  <div id="div12"></div>
+  <div id="div13"></div>
+  <div id="div14"></div>
+  <div id="div15"></div>
 </div>
         </div>
         );

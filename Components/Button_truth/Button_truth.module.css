@@ -1,31 +1,72 @@
 
-/* From Uiverse.io by ercnersoy - Tags: button */
-button {
-  background: #ce1d1d;
-  padding: 10px 50px 10px 30px;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  border-radius: 80px;
-  text-transform: uppercase;
-  transition: all .5s ease-in-out;
+/* From Uiverse.io by vinodjangid07 - Tags: button, hover effect, click effect */
+.cartBtn {
+  width: 155px;
+  height: 50px;
   border: none;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  background-color: rgb(29, 29, 29);
+  box-shadow: 0 20px 30px -7px rgba(27, 27, 27, 0.219);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-button:hover:before {
-  width: 79px;
-  height: 79px;
-  transform: translate(4.6pc, -1.8pc);
-  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMzc2IDE1MS4wNWMtNTkuNjYgMC0xMTYuODggMjMuNjk5LTE1OS4wNiA2NS44ODdzLTY1Ljg4NyA5OS40MDItNjUuODg3IDE1OS4wNmMwIDU5LjY2NCAyMy42OTkgMTE2Ljg4IDY1Ljg4NyAxNTkuMDdzOTkuNDAyIDY1Ljg4NyAxNTkuMDYgNjUuODg3YzM5LjQ4OCAwIDc4LjI4MS0xMC4zOTUgMTEyLjQ4LTMwLjEzNyAzNC4xOTUtMTkuNzQ2IDYyLjU5NC00OC4xNDUgODIuMzQtODIuMzQgMTkuNzQyLTM0LjE5NSAzMC4xMzctNzIuOTg4IDMwLjEzNy0xMTIuNDggMC01OS42Ni0yMy42OTktMTE2Ljg4LTY1Ljg4Ny0xNTkuMDZzLTk5LjQwMi02NS44ODctMTU5LjA3LTY1Ljg4N3ptLTQyLjYyMSAzNDMuMzUtMzMuMTUyLTMzLjU3OCA4NC41ODItODQuODItODQuNTgyLTg0LjgxNiAzMy4zOTEtMzMuNTc4IDExOC4zOSAxMTguMzl6IiBmaWxsPSIjZmZmIi8+Cjwvc3ZnPgo=");
+.cart {
+  z-index: 2;
 }
 
-button::before {
-  content: "";
-  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMjk1LjQ1IDYwMC45NSAyMjQuOTUtMjI0Ljk1LTIyNC45NS0yMjQuOTUtNjMuODQgNjMuODQgMTYxLjE2IDE2MS4xMS0xNjEuMTYgMTYxLjExeiIgZmlsbD0iI2ZmZiIvPgo8L3N2Zz4K");
-  height: 20px;
-  width: 20px;
+.cartBtn:active {
+  transform: scale(0.96);
+}
+
+.product {
   position: absolute;
-  transition: all .5s ease-in-out;
-  background-size: 100%;
-  transform: translate(6.3pc, 0.2pc);
+  width: 12px;
+  border-radius: 3px;
+  content: "";
+  left: 23px;
+  bottom: 23px;
+  opacity: 0;
+  z-index: 1;
+  fill: rgb(211, 211, 211);
+}
+
+.cartBtn:hover .product {
+  animation: slide-in-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0) rotate(-90deg);
+    opacity: 1;
+  }
+}
+
+.cartBtn:hover .cart {
+  animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

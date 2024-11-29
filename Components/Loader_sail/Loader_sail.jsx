@@ -3,14 +3,14 @@ import styles from "./Loader_sail.module.css";
 
 const Loader_sail = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["loader"]}>
-        <div className={styles["crystal"]}></div>
-        <div className={styles["crystal"]}></div>
-        <div className={styles["crystal"]}></div>
-        <div className={styles["crystal"]}></div>
-        <div className={styles["crystal"]}></div>
-        <div className={styles["crystal"]}></div>
+    <div className={styles["loader-container"]}>
+      <div className={styles["loader-cube"]}>
+        <div className={styles["loader-side"] + styles["front"]}></div>
+        <div className={styles["loader-side"] + styles["back"]}></div>
+        <div className={styles["loader-side"] + styles["left"]}></div>
+        <div className={styles["loader-side"] + styles["right"]}></div>
+        <div className={styles["loader-side"] + styles["top"]}></div>
+        <div className={styles["loader-side"] + styles["bottom"]}></div>
       </div>
     </div>
   </div>
@@ -27,14 +27,14 @@ export default Loader_sail;
 
         const Loader_sail = () => (
          <div>
-          <div className="container">
-  <div className="loader">
-    <div className="crystal"></div>
-    <div className="crystal"></div>
-    <div className="crystal"></div>
-    <div className="crystal"></div>
-    <div className="crystal"></div>
-    <div className="crystal"></div>
+          <div className="loader-container">
+  <div className="loader-cube">
+    <div className="loader-side front"></div>
+    <div className="loader-side back"></div>
+    <div className="loader-side left"></div>
+    <div className="loader-side right"></div>
+    <div className="loader-side top"></div>
+    <div className="loader-side bottom"></div>
   </div>
 </div>
         </div>

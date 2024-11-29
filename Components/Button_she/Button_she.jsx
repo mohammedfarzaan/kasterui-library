@@ -3,7 +3,9 @@ import styles from "./Button_she.module.css";
 
 const Button_she = () => (
   <div>
-    <button></button>
+    <button className={styles["button"]}>
+      <span>Hover!</span>
+    </button>
   </div>
 );
 
@@ -18,7 +20,9 @@ export default Button_she;
 
         const Button_she = () => (
          <div>
-          <button></button>
+          <button className="button">
+  <span>Hover!</span>
+</button>
         </div>
         );
 

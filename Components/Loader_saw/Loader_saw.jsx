@@ -3,7 +3,13 @@ import styles from "./Loader_saw.module.css";
 
 const Loader_saw = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["spinner"]}>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +24,12 @@ export default Loader_saw;
 
         const Loader_saw = () => (
          <div>
-          <div className="loader"></div>
+          <div className="spinner">
+<div className="dot"></div>
+<div className="dot"></div>
+<div className="dot"></div>
+<div className="dot"></div>
+<div className="dot"></div></div>
         </div>
         );
 

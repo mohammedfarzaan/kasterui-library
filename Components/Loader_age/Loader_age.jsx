@@ -3,16 +3,7 @@ import styles from "./Loader_age.module.css";
 
 const Loader_age = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-    </div>
+    <div className={styles["momentum"]}></div>
   </div>
 );
 
@@ -27,16 +18,7 @@ export default Loader_age;
 
         const Loader_age = () => (
          <div>
-          <div className="loader">
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-</div>
+          <div className="momentum"></div>
         </div>
         );
 

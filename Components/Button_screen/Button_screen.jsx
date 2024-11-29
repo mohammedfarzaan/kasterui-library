@@ -3,7 +3,7 @@ import styles from "./Button_screen.module.css";
 
 const Button_screen = () => (
   <div>
-    <button> Hover me.</button>
+    <button> Click me</button>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Button_screen;
 
         const Button_screen = () => (
          <div>
-          <button> Hover me.
+          <button> Click me
 </button>
         </div>
         );

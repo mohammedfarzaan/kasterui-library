@@ -3,30 +3,11 @@ import styles from "./Button_help.module.css";
 
 const Button_help = () => (
   <div>
-    <button type="button" className={styles["btn"]}>
-      <div className={styles["smoke"]}>
-        <div className={styles["cloud"]}></div>
-        <div className={styles["cloud"]}></div>
-        <div className={styles["cloud"]}></div>
-        <div className={styles["cloud"]}></div>
-        <div className={styles["cloud"]}></div>
-        <div className={styles["cloud"]}></div>
-        <div className={styles["cloud"]}></div>
-        <div className={styles["cloud"]}></div>
-        <div className={styles["cloud"]}></div>
-        <div className={styles["cloud"]}></div>
-        <div className={styles["cloud"]}></div>
-        <div className={styles["cloud"]}></div>
-        <div className={styles["cloud"]}></div>
-        <div className={styles["cloud"]}></div>
-      </div>
-      <div className={styles["title"]}>
-        <span className={styles["thunder"]}>⚡</span>
-        <strong className={styles["description"]}>Join now</strong>
-      </div>
-      <div className={styles["glass"]}>
-        <div className={styles["inner-glass"]}></div>
-      </div>
+    <button className={styles["game-button"]}>
+      <svg className={styles["play-icon"]} viewBox="0 0 40 40">
+        <path d="M 10,10 L 30,20 L 10,30 z"></path>
+      </svg>
+      Play Now
     </button>
   </div>
 );
@@ -42,30 +23,11 @@ export default Button_help;
 
         const Button_help = () => (
          <div>
-          <button type="button" className="btn">
-  <div className="smoke">
-    <div className="cloud"></div>
-    <div className="cloud"></div>
-    <div className="cloud"></div>
-    <div className="cloud"></div>
-    <div className="cloud"></div>
-    <div className="cloud"></div>
-    <div className="cloud"></div>
-    <div className="cloud"></div>
-    <div className="cloud"></div>
-    <div className="cloud"></div>
-    <div className="cloud"></div>
-    <div className="cloud"></div>
-    <div className="cloud"></div>
-    <div className="cloud"></div>
-  </div>
-  <div className="title">
-    <span className="thunder">⚡</span>
-    <strong className="description">Join now</strong>
-  </div>
-  <div className="glass">
-    <div className="inner-glass"></div>
-  </div>
+          <button className="game-button">
+    <svg className="play-icon" viewBox="0 0 40 40">
+        <path d="M 10,10 L 30,20 L 10,30 z"></path>
+    </svg>
+    Play Now
 </button>
         </div>
         );

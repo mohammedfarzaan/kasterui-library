@@ -3,7 +3,11 @@ import styles from "./Loader_wheat.module.css";
 
 const Loader_wheat = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["load"]}>
+      <div className={styles["progress"]}></div>
+      <div className={styles["progress"]}></div>
+      <div className={styles["progress"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +22,11 @@ export default Loader_wheat;
 
         const Loader_wheat = () => (
          <div>
-          <div className="loader"></div>
+          <div className="load">
+    <div className="progress"></div>
+    <div className="progress"></div>
+    <div className="progress"></div>
+</div>
         </div>
         );
 

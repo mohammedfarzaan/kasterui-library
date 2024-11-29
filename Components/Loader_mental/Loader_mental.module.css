@@ -1,38 +1,67 @@
 
-/* From Uiverse.io by G27XLEO  - Tags: loader */
-.heart #line {
-  fill: none;
-  stroke: #e00000;
-  stroke-width: 1.5;
-  stroke-linecap: butt;
-  stroke-linejoin: round;
-  stroke-miterlimit: 4;
-  stroke-opacity: 1;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  animation: dash 3s linear infinite;
+/* From Uiverse.io by Praashoo7  - Tags: arrow, transition, cool checkbox, loader, arrow */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 15em;
+  align-items: center;
+  justify-content: center;
 }
-.heart #point {
-  fill: none;
-  stroke: #f00000;
-  stroke-width: 5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 0.1;
-  stroke-opacity: 1;
-  stroke-dasharray: 0.0001, 0.9999;
-  stroke-dashoffset: 1;
-  animation: dash 3s linear infinite;
+
+.card {
+  width: 40px;
+  height: 40px;
+  border-top-left-radius: 10px;
+  background: lightgrey;
+  transition: 0.4s ease-in-out, 0.2s background-color;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  margin: 0.2em;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: 2s loading90 infinite;
 }
-@keyframes dash {
+
+.card:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.card:nth-child(4) {
+  animation-delay: 1s;
+}
+
+.card:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.card:nth-child(8) {
+  animation-delay: 1s;
+}
+
+.card:nth-child(10) {
+  animation-delay: 1s;
+}
+
+.card:nth-child(12) {
+  animation-delay: 1s;
+}
+
+.card:nth-child(14) {
+  animation-delay: 1s;
+}
+
+@keyframes loading90 {
   0% {
-    stroke-dashoffset: 1;
+    background: rgba(255, 255, 255, 0.2);
   }
-  80% {
-    stroke-dashoffset: 0;
+
+  50% {
+    background: limegreen;
   }
+
   100% {
-    stroke-dashoffset: 0;
+    background: rgba(255, 255, 255, 0.2);
   }
 }
 

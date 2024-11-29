@@ -3,7 +3,7 @@ import styles from "./Button_hang.module.css";
 
 const Button_hang = () => (
   <div>
-    <button className={styles["menu__icon"]}></button>
+    <button>GET STARTED</button>
   </div>
 );
 
@@ -18,7 +18,8 @@ export default Button_hang;
 
         const Button_hang = () => (
          <div>
-          <button className="menu__icon">
+          <button>
+    GET STARTED
 </button>
         </div>
         );

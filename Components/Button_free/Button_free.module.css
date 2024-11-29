@@ -1,31 +1,95 @@
 
-/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, transition */
+/* From Uiverse.io by elijahgummer  - Tags: glassmorphism, animation, black, button, hover effect, shimmer */
 .button {
-  display: inline-block;
+  cursor: pointer;
   position: relative;
-  padding: 13px 20px;
+  padding: 15px 20px;
+  text-decoration: none;
   border: none;
-  background: rgba(51, 50, 50, 0.287);
-  color: #ffffff;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+  color: #fff;
+  font-size: 1.2em;
   text-transform: uppercase;
-  cursor: crosshair;
+  font-family: sans-serif;
+  letter-spacing: 4px;
   overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
-
 .button:before {
-  content: '';
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.button::after {
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.14) 50%, transparent 100%);
-  transition: left 0.3s ease;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: 0.5s;
+  transition-delay: 0.5s;
 }
-
-.button:hover:before {
+.button:hover:after {
   left: 100%;
+}
+.button span {
+  position: absolute;
+  display: block;
+  transition: 0.5s ease;
+}
+.button span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+}
+.button:hover span:nth-child(1) {
+  width: 100%;
+  transform: translateX(100%);
+}
+.button span:nth-child(2) {
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 0;
+  background: #fff;
+}
+.button:hover span:nth-child(2) {
+  height: 100%;
+  transform: translateY(100%);
+}
+.button span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+}
+.button:hover span:nth-child(3) {
+  width: 100%;
+  transform: translateX(-100%);
+}
+.button span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 0;
+  background: #fff;
+}
+.button:hover span:nth-child(4) {
+  height: 100%;
+  transform: translateY(-100%);
 }
 

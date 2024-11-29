@@ -3,10 +3,7 @@ import styles from "./Button_easy.module.css";
 
 const Button_easy = () => (
   <div>
-    <button className={styles["button"]}>
-      <span className={styles["inner-circle"]}></span>
-      <span className={styles["text"]}>Button</span>
-    </button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -22,8 +19,7 @@ export default Button_easy;
         const Button_easy = () => (
          <div>
           <button className="button">
-  <span className="inner-circle"></span>
-  <span className="text">Button</span>
+  Button
 </button>
         </div>
         );

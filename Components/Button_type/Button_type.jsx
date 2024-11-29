@@ -3,7 +3,7 @@ import styles from "./Button_type.module.css";
 
 const Button_type = () => (
   <div>
-    <button>Button</button>
+    <button className={styles["button"]}>Click Me</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_type;
 
         const Button_type = () => (
          <div>
-          <button>Button</button>
+          <button className="button">
+  Click Me
+</button>
         </div>
         );
 

@@ -3,9 +3,7 @@ import styles from "./Button_hello.module.css";
 
 const Button_hello = () => (
   <div>
-    <a href="#">
-      <span>UIVERSE</span>
-    </a>
+    <button className={styles["button"]}>Hover</button>
   </div>
 );
 
@@ -20,7 +18,7 @@ export default Button_hello;
 
         const Button_hello = () => (
          <div>
-          <a href="#"><span>UIVERSE</span></a>
+          <button className="button">Hover</button>
         </div>
         );
 

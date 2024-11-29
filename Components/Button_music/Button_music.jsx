@@ -3,12 +3,8 @@ import styles from "./Button_music.module.css";
 
 const Button_music = () => (
   <div>
-    <button className={styles["btn-76"]}>
-      Button
-      <span className={styles["top"]}></span>
-      <span className={styles["right"]}></span>
-      <span className={styles["bottom"]}></span>
-      <span className={styles["left"]}></span>
+    <button className={styles["btn-25"]}>
+      <span>Button</span>
     </button>
   </div>
 );
@@ -24,13 +20,7 @@ export default Button_music;
 
         const Button_music = () => (
          <div>
-          <button className="btn-76">
-  Button
-  <span className="top"></span>
-  <span className="right"></span>
-  <span className="bottom"></span>
-  <span className="left"></span>
-</button>
+          <button className="btn-25"><span>Button</span></button>
         </div>
         );
 

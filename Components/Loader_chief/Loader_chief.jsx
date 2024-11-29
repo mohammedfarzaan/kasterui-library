@@ -3,25 +3,7 @@ import styles from "./Loader_chief.module.css";
 
 const Loader_chief = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["loader-inner"]}>
-        <div className={styles["loader-line-wrap"]}>
-          <div className={styles["loader-line"]}></div>
-        </div>
-        <div className={styles["loader-line-wrap"]}>
-          <div className={styles["loader-line"]}></div>
-        </div>
-        <div className={styles["loader-line-wrap"]}>
-          <div className={styles["loader-line"]}></div>
-        </div>
-        <div className={styles["loader-line-wrap"]}>
-          <div className={styles["loader-line"]}></div>
-        </div>
-        <div className={styles["loader-line-wrap"]}>
-          <div className={styles["loader-line"]}></div>
-        </div>
-      </div>
-    </div>
+    <span className={styles["loader"]}></span>
   </div>
 );
 
@@ -36,25 +18,7 @@ export default Loader_chief;
 
         const Loader_chief = () => (
          <div>
-          <div className="loader">
-  <div className="loader-inner">
-    <div className="loader-line-wrap">
-      <div className="loader-line"></div>
-    </div>
-    <div className="loader-line-wrap">
-      <div className="loader-line"></div>
-    </div>
-    <div className="loader-line-wrap">
-      <div className="loader-line"></div>
-    </div>
-    <div className="loader-line-wrap">
-      <div className="loader-line"></div>
-    </div>
-    <div className="loader-line-wrap">
-      <div className="loader-line"></div>
-    </div>
-  </div>
-</div>
+          <span className="loader"></span>
         </div>
         );
 

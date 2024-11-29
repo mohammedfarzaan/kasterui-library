@@ -1,43 +1,31 @@
 
-/* From Uiverse.io by andrew-demchenk0 - Tags: animation, calendar, button, creditcard, add, add to callendar */
+/* From Uiverse.io by RenouxM  - Tags: simple, 3d, button */
 .button {
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 9px 12px;
-  gap: 8px;
-  height: 40px;
-  width: 201px;
+  margin: 50px auto;
+  background-color: rgb(245, 134, 161);
+  font-family: arial;
+  font-size: 20px;
+  font-weight: bold;
   border: none;
-  background: #FF342B;
-  border-radius: 20px;
-  cursor: pointer;
+  width: 280px;
+  height: 90px;
+  border-radius: 12px;
+}
+.front {
+  display: block;
+  padding: 28px 80px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: rgb(245, 74, 117);
+  transform: translateY(-4px);
+}
+.button:focus:not(:focus-visible) {
+  outline: none;
 }
 
-.lable {
-  line-height: 22px;
-  font-size: 17px;
-  color: #fff;
-  font-family: sans-serif;
-  letter-spacing: 1px;
-}
-
-.button:hover {
-  background: #e52e26;
-}
-
-.button:hover .svg-icon {
-  animation: slope 1s linear infinite;
-}
-
-@keyframes slope {
-  0% {
-  }
-
-  50% {
-    transform: rotate(10deg);
-  }
-
-  100% {
-  }
-}

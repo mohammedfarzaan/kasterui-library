@@ -3,8 +3,17 @@ import styles from "./Button_enough.module.css";
 
 const Button_enough = () => (
   <div>
-    <button className={styles["btn-11"]}>
-      <span>Button</span>
+    <button alt="tony stark">
+      <i>t</i>
+      <i>o</i>
+      <i>n</i>
+      <i>y</i>
+      <i>&nbsp;</i>
+      <i>s</i>
+      <i>t</i>
+      <i>a</i>
+      <i>r</i>
+      <i>k</i>
     </button>
   </div>
 );
@@ -20,7 +29,18 @@ export default Button_enough;
 
         const Button_enough = () => (
          <div>
-          <button className="btn-11"><span>Button</span></button>
+          <button alt="tony stark">
+  <i>t</i>
+  <i>o</i>
+  <i>n</i>
+  <i>y</i>
+  <i>&nbsp;</i>
+  <i>s</i>
+  <i>t</i>
+  <i>a</i>
+  <i>r</i>
+  <i>k</i>
+</button>
         </div>
         );
 

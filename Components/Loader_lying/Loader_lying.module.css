@@ -1,145 +1,115 @@
 
-/* From Uiverse.io by youranonone10  - Tags: animation, minimalist, loader */
-.wrapper {
-  height: 200px;
-}
-
-.cloud {
-  overflow: hidden;
-  padding: 5px;
-  height: 50px;
-}
-
-.cloud_left {
+/* From Uiverse.io by andrew-demchenk0 - Tags: loader, pacman */
+.loader-wrapper {
   position: relative;
-  float: left;
-  background-color: #234;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.75);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 }
 
-.cloud_right {
-  position: relative;
-  float: left;
-  background-color: #203040;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  top: 15px;
-  left: -30px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.75);
+.loader-wrapper .packman::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background-color: #EFF107;
+  border-radius: 100px 100px 0 0;
+  transform: translate(-50%, -50%);
+  animation: pac-top 0.5s linear infinite;
+  transform-origin: center bottom;
 }
 
-.rain {
-  width: 180px;
-  height: 140px;
+.loader-wrapper .packman::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background-color: #EFF107;
+  border-radius: 0 0 100px 100px;
+  transform: translate(-50%, 50%);
+  animation: pac-bot 0.5s linear infinite;
+  transform-origin: center top;
 }
 
-.drop {
-  position: relative;
-  float: left;
-  width: 2px;
-  margin: 10px;
-  left: 20px;
-  background: #789;
-  box-shadow: 1px 0.5px 1px 0.5px rgba(0, 0, 0, 0.75);
-  animation: rain_401 0.8s infinite ease-out;
-}
-
-.drop:nth-child(1) {
-  height: 15px;
-  top: 5px;
-  animation-delay: -1.0s;
-}
-
-.drop:nth-child(2) {
-  height: 20px;
-  animation-delay: -1.4s;
-}
-
-.drop:nth-child(3) {
-  height: 15px;
-  top: 5px;
-  animation-delay: -1.6s;
-}
-
-.drop:nth-child(4) {
-  height: 10px;
-  top: 10px;
-  animation-delay: -1.2s;
-}
-
-.drop:nth-child(5) {
-  height: 5px;
-  top: 15px;
-  animation-delay: -1.6s;
-}
-
-@keyframes rain_401 {
+@keyframes pac-top {
   0% {
-    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0)
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(-30deg)
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(0)
+  }
+}
+
+@keyframes pac-bot {
+  0% {
+    transform: translate(-50%, 50%) rotate(0)
+  }
+
+  50% {
+    transform: translate(-50%, 50%) rotate(30deg)
+  }
+
+  100% {
+    transform: translate(-50%, 50%) rotate(0)
+  }
+}
+
+.dots .dot {
+  position: absolute;
+  z-index: -1;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.dots .dot:nth-child(1) {
+  left: 90px;
+  animation: dot-stage1 0.5s infinite;
+}
+
+.dots .dot:nth-child(2) {
+  left: 60px;
+  animation: dot-stage1 0.5s infinite;
+}
+
+.dots .dot:nth-child(3) {
+  left: 30px;
+  animation: dot-stage1 0.5s infinite;
+}
+
+.dots .dot:nth-child(4) {
+  left: 10px;
+  animation: dot-stage2 0.5s infinite;
+}
+
+@keyframes dot-stage1 {
+  0% {
     transform: translate(0, 0);
   }
 
   100% {
-    opacity: 0.2;
-    transform: translate(0, 100px);
+    transform: translate(-24px, 0);
   }
 }
 
-.surface {
-  position: relative;
-  width: 180px;
-  height: 140px;
-  top: -140px;
-}
-
-.hit {
-  position: absolute;
-  width: 3px;
-  height: 1px;
-  margin: 10px;
-  bottom: -5px;
-  border: 1px solid #456;
-  border-radius: 50%;
-  animation: hit_401 0.8s infinite ease;
-}
-
-.hit:nth-child(1) {
-  left: 19px;
-  animation-delay: -0.3s;
-}
-
-.hit:nth-child(2) {
-  left: 41px;
-  animation-delay: -0.7s;
-}
-
-.hit:nth-child(3) {
-  left: 63px;
-  animation-delay: -0.9s;
-}
-
-.hit:nth-child(4) {
-  left: 85px;
-  animation-delay: -0.5s;
-}
-
-.hit:nth-child(5) {
-  left: 107px;
-  animation-delay: -0.9s;
-}
-
-@keyframes hit_401 {
+@keyframes dot-stage2 {
   0% {
-    opacity: 0.75;
     transform: scale(1);
   }
 
-  100% {
-    opacity: 0;
-    transform: scale(2.5);
+  5%, 100% {
+    transform: scale(0);
   }
 }
+
+
+

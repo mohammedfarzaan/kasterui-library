@@ -1,15 +1,29 @@
 import React from "react";
+import styles from "./Button_poor.module.css";
 
 const Button_poor = () => (
   <div>
-    <button className="hover:brightness-110 hover:animate-pulse font-bold py-3 px-6 rounded-full bg-indigo-500 shadow-lg shadow-indigo-500/50 text-white">
-      Click on me
-    </button>
+    <button>Notification By HTML Data attribute</button>
   </div>
 );
 
 export default Button_poor;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_poor = () => (
+         <div>
+          <button>Notification By HTML Data attribute</button>
+        </div>
+        );
+
+        export default Button_poor;
+        
+        
+         */
 }

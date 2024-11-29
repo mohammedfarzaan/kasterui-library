@@ -3,9 +3,7 @@ import styles from "./Button_floor.module.css";
 
 const Button_floor = () => (
   <div>
-    <button className={styles["button"]}>
-      <span>Subscribe</span>
-    </button>
+    <button> Button</button>
   </div>
 );
 
@@ -20,8 +18,7 @@ export default Button_floor;
 
         const Button_floor = () => (
          <div>
-          <button className="button">
-  <span>Subscribe</span>
+          <button> Button
 </button>
         </div>
         );

@@ -3,7 +3,16 @@ import styles from "./Loader_lower.module.css";
 
 const Loader_lower = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["container"]}>
+      <div className={styles["loader"]}>
+        <div className={styles["crystal"]}></div>
+        <div className={styles["crystal"]}></div>
+        <div className={styles["crystal"]}></div>
+        <div className={styles["crystal"]}></div>
+        <div className={styles["crystal"]}></div>
+        <div className={styles["crystal"]}></div>
+      </div>
+    </div>
   </div>
 );
 
@@ -18,7 +27,16 @@ export default Loader_lower;
 
         const Loader_lower = () => (
          <div>
-          <div className="loader"></div>
+          <div className="container">
+  <div className="loader">
+    <div className="crystal"></div>
+    <div className="crystal"></div>
+    <div className="crystal"></div>
+    <div className="crystal"></div>
+    <div className="crystal"></div>
+    <div className="crystal"></div>
+  </div>
+</div>
         </div>
         );
 

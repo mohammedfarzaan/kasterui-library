@@ -3,7 +3,9 @@ import styles from "./Button_near.module.css";
 
 const Button_near = () => (
   <div>
-    <button> Click here </button>
+    <a className={styles["btn-shine"]} href="https://check.so">
+      Get early access
+    </a>
   </div>
 );
 
@@ -18,7 +20,7 @@ export default Button_near;
 
         const Button_near = () => (
          <div>
-          <button> Click here </button>
+          <a className="btn-shine" href="https://check.so">Get early access</a>
         </div>
         );
 

@@ -3,7 +3,7 @@ import styles from "./Button_name.module.css";
 
 const Button_name = () => (
   <div>
-    <button className={styles["button"]}>Vite Button</button>
+    <button className={styles["button"]}>Send</button>
   </div>
 );
 
@@ -19,7 +19,7 @@ export default Button_name;
         const Button_name = () => (
          <div>
           <button className="button">
-  Vite Button
+  Send
 </button>
         </div>
         );

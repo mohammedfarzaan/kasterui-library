@@ -1,39 +1,80 @@
 
-/* From Uiverse.io by 212004ALJI - Tags: button */
+/* From Uiverse.io by LilaRest - Tags: neumorphism, skeuomorphism, animation, minimalist, social, button, like, heart, realistic, favorite */
 button {
-  /* padding: 5px 10px; */
-  height: 50px;
-  width: 100px;
-  font-size: 20px;
-  position: relative;
-  border: navajowhite;
-  background-color: #222;
-  color: aliceblue;
-  z-index: 1;
-  overflow: hidden;
-  transition: all 0.3s;
-  box-shadow: 2px 2px 2px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 22px 20px 22px;
+  box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: #e8e8e8;
+  border-color: #ffe2e2;
+  border-style: solid;
+  border-width: 9px;
+  border-radius: 35px;
+  transition: transform 400ms cubic-bezier(.68,-0.55,.27,2.5), 
+  border-color 400ms ease-in-out,
+  background-color 400ms ease-in-out;
+  word-spacing: -2px;
 }
 
-button::before {
-  content: '';
-  height: 10px;
-  width: 30px;
-  position: absolute;
-  background-image: linear-gradient(45deg, salmon,red);
-  left: -10px;
-  top: 0;
-  z-index: -1;
-  transition: 0.3s ease-in-out;
-  border-radius: 5px;
-}
+@keyframes movingBorders {
+  0% {
+    border-color: #fce4e4;
+  }
 
-button:hover::before {
-  height: 100px;
-  width: 100px;
+  50% {
+    border-color: #ffd8d8;
+  }
+
+  90% {
+    border-color: #fce4e4;
+  }
 }
 
 button:hover {
-  border-radius: 5px;
+  background-color: #eee;
+  transform: scale(105%);
+  animation: movingBorders 3s infinite;
 }
 
+.filled,
+.empty {
+  fill: rgb(255, 110, 110);
+  transition: opacity 100ms ease-in-out;
+}
+
+.filled {
+  position: absolute;
+  opacity: 0;
+}
+
+@keyframes beatingHeart {
+  0% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1.15);
+  }
+
+  30% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1.15);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+}
+
+button:hover .empty {
+  opacity: 0;
+}
+
+button:hover .filled {
+  opacity: 1;
+  animation: beatingHeart 1.2s infinite;
+}

@@ -3,7 +3,12 @@ import styles from "./Button_cloud.module.css";
 
 const Button_cloud = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button className={styles["btn-23"]}>
+      <span className={styles["text"]}>Button</span>
+      <span aria-hidden="" className={styles["marquee"]}>
+        Button
+      </span>
+    </button>
   </div>
 );
 
@@ -18,8 +23,9 @@ export default Button_cloud;
 
         const Button_cloud = () => (
          <div>
-          <button className="button">
-  Button
+          <button className="btn-23">
+  <span className="text">Button</span>
+  <span aria-hidden="" className="marquee">Button</span>
 </button>
         </div>
         );

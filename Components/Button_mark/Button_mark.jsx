@@ -3,8 +3,8 @@ import styles from "./Button_mark.module.css";
 
 const Button_mark = () => (
   <div>
-    <button className={styles["button"]}>
-      <span className={styles["text-button"]}>Get pro now</span>
+    <button>
+      <span className={styles["button_top"]}> Button</span>
     </button>
   </div>
 );
@@ -20,8 +20,9 @@ export default Button_mark;
 
         const Button_mark = () => (
          <div>
-          <button className="button">
-  <span className="text-button">Get pro now</span>
+          <button>
+  <span className="button_top"> Button
+  </span>
 </button>
         </div>
         );

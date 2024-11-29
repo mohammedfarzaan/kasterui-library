@@ -3,8 +3,12 @@ import styles from "./Button_game.module.css";
 
 const Button_game = () => (
   <div>
-    <button className={styles["btn-55"]}>
-      <span>Button</span>
+    <button>
+      Button
+      <p>Button</p>
+      <p>Button</p>
+      <p>Button</p>
+      <p>Button</p>
     </button>
   </div>
 );
@@ -20,7 +24,12 @@ export default Button_game;
 
         const Button_game = () => (
          <div>
-          <button className="btn-55"><span>Button</span></button>
+          <button>Button
+  <p>Button</p>
+  <p>Button</p>
+  <p>Button</p>
+  <p>Button</p>
+</button>
         </div>
         );
 

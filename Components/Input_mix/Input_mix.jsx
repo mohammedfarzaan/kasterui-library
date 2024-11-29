@@ -3,12 +3,14 @@ import styles from "./Input_mix.module.css";
 
 const Input_mix = () => (
   <div>
-    <input
-      className={styles["input"]}
-      name="text"
-      placeholder="Search..."
-      type="search"
-    />
+    <div id="dateDiv">
+      <input
+        type="text"
+        id="dateInput"
+        className={styles["dateInput"]}
+        placeholder="Date:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MMYYYY"
+      />
+    </div>
   </div>
 );
 
@@ -23,7 +25,14 @@ export default Input_mix;
 
         const Input_mix = () => (
          <div>
-          <input className="input" name="text" placeholder="Search..." type="search" />
+          <div id="dateDiv">
+  <input
+    type="text"
+    id="dateInput"
+    className="dateInput"
+    placeholder="Date:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MMYYYY"
+  />
+</div>
         </div>
         );
 

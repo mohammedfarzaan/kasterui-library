@@ -1,33 +1,77 @@
 
-/* From Uiverse.io by mouadh-n  - Website: https://youtu.be/b_8fHNIHFk4?si=L-0kb3bKz6VlasUc - Name:  Coding Play - Tags: simple, blue, purple, button, hover, btn, hover effect, css */
-a {
-  color: white;
+/* From Uiverse.io by doniaskima - Tags: button, animated */
+.btn-56,
+.btn-56 *,
+.btn-56 :after,
+.btn-56 :before,
+.btn-56:after,
+.btn-56:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-56 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+
+.btn-56:disabled {
+  cursor: default;
+}
+
+.btn-56:-moz-focusring {
+  outline: auto;
+}
+
+.btn-56 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-56 [hidden] {
+  display: none;
+}
+
+.btn-56 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
   position: relative;
+  text-transform: uppercase;
 }
-.buuton {
-  font-weight: 600;
-  border-radius: 2em;
-  padding: 0.75rem 1.5rem;
-  background-color: rgba(255, 255, 255, 0.253);
-  backdrop-filter: blur(10px);
-  transform: scale(1.1);
-  transition: 0.2s ease-in-out;
+
+.btn-56:hover {
+  -webkit-animation: pulse 0.5s;
+  animation: pulse 0.5s;
+  box-shadow: 0 0 0 2em transparent;
 }
-.back {
-  position: absolute;
-  background: linear-gradient(20deg, rgb(174, 6, 216) 0%, rgb(85, 31, 200));
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  border-radius: 2em;
-  box-shadow: -5px 0 10px rgb(140, 12, 147), 5px 0 10px rgb(85, 31, 200);
-  transform: translateY(10px);
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
 }
-.buuton:hover {
-  transform: translateY(10px);
-  box-shadow: -10px 0 50px rgba(241, 0, 108, 0.352),
-    10px 0 50px rgb(85, 31, 200);
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
 }
 

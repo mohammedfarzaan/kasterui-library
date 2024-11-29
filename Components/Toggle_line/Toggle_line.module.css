@@ -1,127 +1,85 @@
 
-/* From Uiverse.io by vikramsinghnegi  - Tags: simple, neumorphism, glassmorphism */
+/* From Uiverse.io by Subaashbala  - Tags: switch */
+/* The switch - the box around the slider */
 .switch {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 50px;
-  border: 4px solid rgba(209, 92, 92, 0.1);
-  box-shadow: 8 0 6px rgba(44, 26, 26, 0.5) inset;
-  height: 42px;
-  margin: 8px;
+  --INITIAL-SWITCH-TRACK-COLOR: #ffdd95;
+  --INITIAL-THUMB-COLOR: #ff9843;
+  --OVERALL-TRANSITION-DURATION: 500ms; /* Overall transition speed */
+  font-size: 17px;
   position: relative;
-  width: 115px;
   display: inline-block;
+  width: 3.75em;
+  height: 2em;
 }
-.switch-check {
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
   position: absolute;
-  visibility: hidden;
-}
-.switch-label {
   cursor: pointer;
-  display: block;
-  height: 42px;
-  text-indent: -9999px;
-  width: 115px;
-}
-.switch-label:before {
-  background: #fff;
-  background: -webkit-radial-gradient(
-    45%,
-    circle,
-    rgb(116, 78, 78) 0%,
-    rgb(255, 113, 113) 100%
-  );
-  border-radius: 10px;
-  border: 1px solid #742323;
-  box-shadow: 0 2px 5px rgba(255, 67, 48, 0.6),
-    0 0 5px rgba(255, 159, 109, 0.5) inset;
-  content: "";
-  display: block;
-  height: 10px;
-  left: -20%;
-  position: absolute;
-  top: 16px;
-  transition: all 0.2s;
-  width: 10px;
-  z-index: 12;
-}
-.switch-label:after {
-  background: #fff;
-  background: -moz-radial-gradient(
-    45%,
-    circle,
-    rgba(60, 60, 60, 0.6) 0%,
-    rgba(151, 151, 151, 0.6) 100%
-  );
-  border-radius: 10px;
-  border: 1px solid #111;
-  box-shadow: 0 2px 5px rgba(20, 20, 20, 0.5);
-  content: "";
-  display: block;
-  height: 10px;
-  right: -20%;
-  position: absolute;
-  top: 16px;
-  transition: all 0.2s;
-  width: 10px;
-  z-index: 12;
-}
-.switch-label span {
-  background: linear-gradient(#4f4f4f, #2b2b2b);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--INITIAL-SWITCH-TRACK-COLOR);
+  transition: var(--OVERALL-TRANSITION-DURATION);
   border-radius: 30px;
-  border: 1px solid #1a1a1a;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5),
-    0 1px 1px rgba(255, 255, 255, 0.1) inset, 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
-  display: block;
-  height: 38px;
-  left: 1px;
-  position: absolute;
-  top: 1px;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  width: 53px;
+  overflow: hidden;
 }
-.switch-label span:before {
-  background: #fff;
-  background: -webkit-linear-gradient(
-    left,
-    rgba(48, 48, 48, 0.4),
-    rgba(34, 34, 34, 0.4)
-  );
-  background: linear-gradient(
-    left,
-    rgba(48, 48, 48, 0.4),
-    rgba(34, 34, 34, 0.4)
-  );
-  border-radius: 30px 10px 10px 30px;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2) inset;
+
+/* Thumb */
+.slider:before {
+  position: absolute;
   content: "";
-  display: block;
-  height: 33px;
-  left: 2px;
-  position: absolute;
-  top: 2px;
-  width: 21px;
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--INITIAL-THUMB-COLOR);
+  transition: var(--OVERALL-TRANSITION-DURATION);
 }
-.switch-label span:after {
-  background: #fff;
-  background: -webkit-linear-gradient(
-    right,
-    rgba(48, 48, 48, 0.4),
-    rgba(34, 34, 34, 0.4)
-  );
-  border-radius: 10px 30px 30px 10px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2) inset;
-  content: "";
-  display: block;
-  height: 33px;
-  position: absolute;
-  right: 2px;
-  top: 2px;
-  width: 21px;
+
+/* Actions to be performed when the switch is TOGGLED ON */
+.switch input:checked + .slider::before {
+  transform-origin: left;
+  animation: wobble var(--OVERALL-TRANSITION-DURATION);
+  transform: scale(1, 1) translateX(2rem);
 }
-.switch-check:checked + .switch-label span {
-  left: 59px;
+
+/* Actions to be performed when the switch is TOGGLED OFF */
+.switch input:not(:checked) + .slider::before {
+  transform-origin: right;
+  animation: reverse-wobble var(--OVERALL-TRANSITION-DURATION);
+}
+
+@keyframes wobble {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(3, 1);
+  }
+  100% {
+    transform: scale(1, 1) translateX(2rem);
+  }
+}
+
+@keyframes reverse-wobble {
+  0% {
+    transform: scale(1, 1) translateX(2rem);
+  }
+  50% {
+    transform: scale(3, 1);
+  }
+  100% {
+    transform: scale(1, 1) translateX(0);
+  }
 }
 

@@ -3,12 +3,10 @@ import styles from "./Loader_snake.module.css";
 
 const Loader_snake = () => (
   <div>
-    <div className={styles["eye-lid"]}>
-      <div className={styles["eye"]}>
-        <div className={styles["cornea"]}>
-          <div className={styles["white-pupil"]}></div>
-        </div>
-      </div>
+    <div className={styles["spinner"]}>
+      <div className={styles["dot1"]}></div>
+      <div className={styles["dot2"]}></div>
+      <div className={styles["dot3"]}></div>
     </div>
   </div>
 );
@@ -24,13 +22,11 @@ export default Loader_snake;
 
         const Loader_snake = () => (
          <div>
-          <div className="eye-lid">
-    <div className="eye">
-      <div className="cornea">
-        <div className="white-pupil"></div>
-      </div>
-    </div>
-  </div>
+          <div className="spinner">
+<div className="dot1"></div>
+<div className="dot2"></div>
+<div className="dot3"></div>
+</div>
         </div>
         );
 

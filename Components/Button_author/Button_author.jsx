@@ -3,15 +3,12 @@ import styles from "./Button_author.module.css";
 
 const Button_author = () => (
   <div>
-    <div className={styles["container-button"]}>
-      <div className={styles["hover"] + styles["bt-1"]}></div>
-      <div className={styles["hover"] + styles["bt-2"]}></div>
-      <div className={styles["hover"] + styles["bt-3"]}></div>
-      <div className={styles["hover"] + styles["bt-4"]}></div>
-      <div className={styles["hover"] + styles["bt-5"]}></div>
-      <div className={styles["hover"] + styles["bt-6"]}></div>
-      <button></button>
-    </div>
+    <ul>
+      <li style="--i:#a955ff;--j:#ea51ff;">
+        <span className={styles["icon"]}>🏠</span>
+        <span className={styles["title"]}>Home</span>
+      </li>
+    </ul>
   </div>
 );
 
@@ -26,15 +23,12 @@ export default Button_author;
 
         const Button_author = () => (
          <div>
-          <div className="container-button">
-  <div className="hover bt-1"></div>
-  <div className="hover bt-2"></div>
-  <div className="hover bt-3"></div>
-  <div className="hover bt-4"></div>
-  <div className="hover bt-5"></div>
-  <div className="hover bt-6"></div>
-  <button></button>
-</div>
+          <ul>
+  <li style="--i:#a955ff;--j:#ea51ff;">
+    <span className="icon">🏠</span>
+    <span className="title">Home</span>
+  </li>
+</ul>
         </div>
         );
 

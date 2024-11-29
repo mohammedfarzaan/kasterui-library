@@ -3,8 +3,22 @@ import styles from "./Loader_thrown.module.css";
 
 const Loader_thrown = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["loader"]}></div>
+    <div className={styles["loader"]}>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </div>
 );
@@ -20,9 +34,23 @@ export default Loader_thrown;
 
         const Loader_thrown = () => (
          <div>
-          <div className="container">
-  <div className="loader"></div>
-</div>
+          <div className="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
         </div>
         );
 

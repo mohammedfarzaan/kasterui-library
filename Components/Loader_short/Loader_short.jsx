@@ -3,15 +3,7 @@ import styles from "./Loader_short.module.css";
 
 const Loader_short = () => (
   <div>
-    <div className={styles["loader-wrapper"]}>
-      <div className={styles["packman"]}></div>
-      <div className={styles["dots"]}>
-        <div className={styles["dot"]}></div>
-        <div className={styles["dot"]}></div>
-        <div className={styles["dot"]}></div>
-        <div className={styles["dot"]}></div>
-      </div>
-    </div>
+    <div className={styles["animation"]}>Text writing!</div>
   </div>
 );
 
@@ -26,15 +18,7 @@ export default Loader_short;
 
         const Loader_short = () => (
          <div>
-          <div className="loader-wrapper">
-  <div className="packman"></div>
-  <div className="dots">
-    <div className="dot"></div>
-    <div className="dot"></div>
-    <div className="dot"></div>
-    <div className="dot"></div>
-  </div>
-</div>
+          <div className="animation">Text writing!</div>
         </div>
         );
 

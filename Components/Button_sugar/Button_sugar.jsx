@@ -3,14 +3,11 @@ import styles from "./Button_sugar.module.css";
 
 const Button_sugar = () => (
   <div>
-    <div className={styles["btn"] + styles["btn--huge"]}>
-      <div className={styles["btn--huge__text"]}>
-        <div>
-          Explore More
-          <span>Explore More</span>
-        </div>
-      </div>
-    </div>
+    <button>
+      <span className={styles["txt"]}>click me</span>
+      <span className={styles["txt2"]}>You did it</span>
+      <span className={styles["gradient"]}></span>
+    </button>
   </div>
 );
 
@@ -25,14 +22,11 @@ export default Button_sugar;
 
         const Button_sugar = () => (
          <div>
-          <div className="btn btn--huge">
-  <div className="btn--huge__text">
-    <div>
-      Explore More
-      <span>Explore More</span>
-    </div>
-  </div>
-</div>
+          <button>
+  <span className="txt">click me</span>
+  <span className="txt2">You did it</span>
+  <span className="gradient"></span>
+</button>
         </div>
         );
 

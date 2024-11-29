@@ -1,39 +1,50 @@
 
-/* From Uiverse.io by eslam-hany - Tags: button */
-.btn {
-  position: relative;
-  padding: 10px 50px;
-  font-size: 20px;
-  border: 1px solid #002B5B;
-  text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 15px;
-  transition: all 0.5s;
-  z-index: 1;
+/* From Uiverse.io by Botwe-Felix5820 - Tags: button, shake */
+button {
+ height: 3em;
+ width: 8em;
+ border: none;
+ border-radius: 10em;
+ background: #016DD9;
+ font-size: 17px;
+ color: #ffffff;
+ font-family: inherit;
+ font-weight: 500;
 }
 
-.btn:hover {
-  transform: scale(1.1);
-  color: #fff;
-  transition: all 0.5s;
+button:hover {
+ animation: shake3856 0.3s linear infinite both;
 }
 
-.btn::after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  width: 0%;
-  height: 100%;
-  border-radius: 15px;
-  background: linear-gradient(#002B5b,#EA5455);
-  transition: all 0.5s;
-  z-index: -1;
+@keyframes shake3856 {
+ 0% {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+ }
+
+ 20% {
+  -webkit-transform: translate(-2px, 2px);
+  transform: translate(-2px, 2px);
+ }
+
+ 40% {
+  -webkit-transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px);
+ }
+
+ 60% {
+  -webkit-transform: translate(2px, 2px);
+  transform: translate(2px, 2px);
+ }
+
+ 80% {
+  -webkit-transform: translate(2px, -2px);
+  transform: translate(2px, -2px);
+ }
+
+ 100% {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+ }
 }
 
-.btn:hover::after {
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  transition: all 0.5s;
-}

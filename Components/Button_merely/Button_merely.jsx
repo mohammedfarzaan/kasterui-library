@@ -3,7 +3,7 @@ import styles from "./Button_merely.module.css";
 
 const Button_merely = () => (
   <div>
-    <button>BUTTON</button>
+    <button>Button</button>
   </div>
 );
 
@@ -19,7 +19,7 @@ export default Button_merely;
         const Button_merely = () => (
          <div>
           <button>
-  BUTTON
+    Button
 </button>
         </div>
         );

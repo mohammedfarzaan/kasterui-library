@@ -1,0 +1,57 @@
+
+/* From Uiverse.io by alexroumi  - Tags: minimalist, social, card, social media, light&dark */
+.card {
+  background-color: #ffd093;
+  background: radial-gradient(
+    circle,
+    rgba(147, 119, 91, 1) 0%,
+    rgba(255, 208, 147, 1) 50%
+  );
+  aspect-ratio: 4/5;
+  height: 27rem;
+  border-radius: 25px;
+  padding: 10px;
+  outline: 5px solid #56300b;
+  outline-offset: -15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image {
+  align-self: center;
+}
+
+.card::before {
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.image {
+  filter: sepia(70%) saturate(100%) brightness(70%) hue-rotate(100deg)
+    brightness(1.1);
+  width: 230px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+
+.discord,
+.x,
+.instagram {
+  color: #56300b;
+}
+

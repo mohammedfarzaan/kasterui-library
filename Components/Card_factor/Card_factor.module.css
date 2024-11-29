@@ -1,0 +1,161 @@
+
+/* From Uiverse.io by Admin12121 - Tags: card, business card, card template, card design */
+.price-section {
+  color: #fff;
+}
+/* End basic CSS override */
+.price-table {
+  background-color: #152148;
+  border-radius: 16px;
+  max-width: 355px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+  background-image: linear-gradient(135deg, rgba(74, 222, 128, 0.15), rgba(29, 123, 219, 0.1) 20%, #152148 40%, #152148 100%);
+}
+
+.price-table:after {
+  content: "";
+  display: block;
+  top: -3px;
+  left: -3px;
+  bottom: -3px;
+  right: -3px;
+  z-index: -1;
+  position: absolute;
+  border-radius: 16px;
+  background-image: linear-gradient(135deg, #4ade80, #1d7bdb 40%, #293359 60%, #152148 100%);
+}
+
+.price-table .price {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  display: inline-flex;
+  align-self: center;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  color: #fff;
+}
+
+.price-table .price small {
+  font-size: 1.25rem;
+  font-weight: 400;
+  position: absolute;
+  left: -1.5ch;
+}
+
+.price-table .title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.price-table .description {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.features {
+  margin-top: 22px;
+}
+
+.feature {
+  position: relative;
+}
+
+.feature + .feature {
+  margin-top: 16px;
+}
+
+.feature summary {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+}
+
+.feature summary::-webkit-details-marker {
+  display: none;
+}
+
+.feature[open] summary:after {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 50;
+}
+
+.feature[open] div {
+  -webkit-animation: scale 0.15s ease;
+  animation: scale 0.15s ease;
+}
+
+.feature .checkmark {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #4ade80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.feature .checkmark svg {
+  width: 18px;
+  height: 18px;
+  color: #fff;
+}
+
+.feature .question-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.feature .answer {
+  padding: 12px;
+  background-color: #111b40;
+  border-radius: 6px;
+  position: absolute;
+  top: -12px;
+  z-index: 100;
+  transform: translatey(-100%) translatex(-50%);
+  transform-origin: bottom center;
+  width: 80%;
+  left: 50%;
+  border: 1px solid #293359;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+@-webkit-keyframes scale {
+  0% {
+    transform: translatey(-100%) translatex(-50%) scale(0);
+  }
+
+  100% {
+    transform: translatey(-100%) translatex(-50%) scale(1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: translatey(-100%) translatex(-50%) scale(0);
+  }
+
+  100% {
+    transform: translatey(-100%) translatex(-50%) scale(1);
+  }
+}

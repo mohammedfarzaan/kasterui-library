@@ -1,40 +1,38 @@
 
-/* From Uiverse.io by barisdogansutcu - Tags: loader, spinner */
-svg {
- width: 3.25em;
- transform-origin: center;
- animation: rotate4 2s linear infinite;
+/* From Uiverse.io by SelfMadeSystem - Tags: animation, loader, svg, mona lisa, painting */
+.loader {
+  width: 12em;
+  height: 12em;
 }
 
-circle {
- fill: none;
- stroke: hsl(214, 97%, 59%);
- stroke-width: 2;
- stroke-dasharray: 1, 200;
- stroke-dashoffset: 0;
- stroke-linecap: round;
- animation: dash4 1.5s ease-in-out infinite;
+.loader path {
+  stroke: #000;
+  stroke-width: 0.6px;
+  animation: dashArray 4s ease-in-out infinite,
+    dashOffset 4s linear infinite;
 }
 
-@keyframes rotate4 {
- 100% {
-  transform: rotate(360deg);
- }
+@keyframes dashArray {
+  0% {
+    stroke-dasharray: 0 1 359 0;
+  }
+
+  50% {
+    stroke-dasharray: 0 359 1 0;
+  }
+
+  100% {
+    stroke-dasharray: 359 1 0 0;
+  }
 }
 
-@keyframes dash4 {
- 0% {
-  stroke-dasharray: 1, 200;
-  stroke-dashoffset: 0;
- }
+@keyframes dashOffset {
+  0% {
+    stroke-dashoffset: 365;
+  }
 
- 50% {
-  stroke-dasharray: 90, 200;
-  stroke-dashoffset: -35px;
- }
-
- 100% {
-  stroke-dashoffset: -125px;
- }
+  100% {
+    stroke-dashoffset: 5;
+  }
 }
 

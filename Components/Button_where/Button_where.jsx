@@ -3,14 +3,8 @@ import styles from "./Button_where.module.css";
 
 const Button_where = () => (
   <div>
-    <button>
-      <div className={styles["progress"]}>
-        <div className={styles["progress-bar"]}> </div>
-      </div>
-
-      <p className={styles["before-scan"]}>Find aliens</p>
-      <p className={styles["scaning"]}>Scanning</p>
-      <p className={styles["complete"]}>No aliens found</p>
+    <button type="button" className={styles["glow-on-hover"]}>
+      HOVER AND CLICK ME!
     </button>
   </div>
 );
@@ -26,14 +20,8 @@ export default Button_where;
 
         const Button_where = () => (
          <div>
-          <button>
-  <div className="progress">
-     <div className="progress-bar"> </div>
-  </div>
-  
-  <p className="before-scan">Find aliens</p>
-  <p className="scaning">Scanning</p>
-  <p className="complete">No aliens found</p>
+          <button type="button" className="glow-on-hover">
+  HOVER AND CLICK ME!
 </button>
         </div>
         );

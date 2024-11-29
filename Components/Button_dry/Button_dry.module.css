@@ -1,73 +1,22 @@
 
-/* From Uiverse.io by sashadubovyi  - Tags: simple, animation, success, button */
-.btn {
+/* From Uiverse.io by AKAspidey01  - Tags: neumorphism, flashy, button */
+.button {
   cursor: pointer;
-  position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 20px;
-  font-weight: 400;
-  border: none;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 5px 5px 21px #bababa, -5px -5px 21px #ffffff;
+  padding: 5px 5px;
+  border-radius: 12px;
+  border: 1px solid #000000bc;
+}
+.button-inner-curve {
+  border-radius: 50px;
+  background: #e0e0e0;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: inset 5px 5px 15px #bababa, inset -5px -5px 15px #ffffff;
   display: flex;
+  padding: 12px 15px 10px 15px;
   align-items: center;
-  background: transparent;
-  color: #f93d21;
-  transition: all 100ms;
-  overflow: hidden;
-  height: 50px;
-  width: 170px;
-}
-
-.left-span {
-  position: absolute;
-  left: 0;
-  height: 50px;
-  width: 15px;
-  border-top: 1px solid #f93d21;
-  border-bottom: 1px solid #f93d21;
-  border-left: 1px solid #f93d21;
-  transition: all 500ms;
-}
-
-.right-span {
-  position: absolute;
-  right: 0;
-  height: 50px;
-  width: 15px;
-  border-top: 1px solid #f93d21;
-  border-bottom: 1px solid #f93d21;
-  border-right: 1px solid #f93d21;
-  transition: all 500ms;
-}
-
-.text-btn {
-  position: absolute;
-  transform: translateX(0px);
-  width: 110px;
-  transition: all 200ms;
-}
-
-.hidden-text-btn {
-  position: absolute;
-  transform: translateX(150px);
-  opacity: 0;
-  transition: all 200ms;
-}
-
-.btn:hover .text-btn {
-  transform: translateX(-150px);
-  opacity: 0;
-}
-
-.btn:hover .hidden-text-btn {
-  transform: translateX(0px);
-  opacity: 1;
-}
-
-.btn:hover .right-span,
-.btn:hover .left-span {
-  width: 100%;
+  justify-content: center;
+  gap: 5px;
 }
 

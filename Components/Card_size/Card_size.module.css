@@ -1,0 +1,51 @@
+
+/* From Uiverse.io by Spacious74  - Tags: flashy, animation, card, box-shadow */
+.card {
+  border: solid 1px #dcfffc;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #000;
+  color: #f0f8ff;
+  box-shadow: 0 10px 40px -15px #000;
+  background-image: radial-gradient(
+      circle 200px at 10% 80%,
+      #9f06ec46,
+      #00000000
+    ),
+    radial-gradient(circle 200px at 100% 10%, #41fff263, #00000000);
+}
+.image {
+  filter: drop-shadow(0 0 10px #242025);
+  margin: auto;
+  display: block;
+  max-width: 190px;
+  animation: social_image 1.5s ease-in-out infinite alternate;
+}
+@keyframes social_image {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateY(15px);
+    filter: drop-shadow(0 0 10px #f6d7ffb4) drop-shadow(0 0 30px #41fff288);
+  }
+}
+.heading {
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  font-size: 1.22rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+.icons a {
+  text-decoration: none;
+  color: #fff;
+}
+

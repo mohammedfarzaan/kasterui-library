@@ -3,11 +3,9 @@ import styles from "./Button_sail.module.css";
 
 const Button_sail = () => (
   <div>
-    <div className={styles["container"]}>
-      <button className={styles["button"]}>
-        <p>PREMIUM</p>
-      </button>
-    </div>
+    <button className={styles["animated-button"]}>
+      <span>Hover me</span>
+    </button>
   </div>
 );
 
@@ -22,11 +20,9 @@ export default Button_sail;
 
         const Button_sail = () => (
          <div>
-          <div className="container">
-  <button className="button">
-    <p>PREMIUM</p>
-  </button>
-</div>
+          <button className="animated-button">
+  <span>Hover me</span>
+</button>
         </div>
         );
 

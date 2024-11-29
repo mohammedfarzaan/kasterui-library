@@ -3,8 +3,11 @@ import styles from "./Loader_recall.module.css";
 
 const Loader_recall = () => (
   <div>
-    <div className={styles["ball"]}></div>
-    <div className={styles["shadow"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["scanner"]}>
+        <span>Loading...</span>
+      </div>
+    </div>
   </div>
 );
 
@@ -19,8 +22,11 @@ export default Loader_recall;
 
         const Loader_recall = () => (
          <div>
-          <div className="ball"></div>
-<div className="shadow"></div>
+          <div className="loader">
+  <div className="scanner">
+    <span>Loading...</span>
+  </div>
+</div>
         </div>
         );
 

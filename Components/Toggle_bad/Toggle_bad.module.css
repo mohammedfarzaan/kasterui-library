@@ -1,64 +1,191 @@
 
-/* From Uiverse.io by vk-uiux - Tags: animation, switch, hamburger, bars, toggle, css, toggle switch, css effect, interactive, tornado */
-#checkbox {
+/* From Uiverse.io by MuhammadHasann  - Tags: animation, minimalist, switch */
+.toggle-cont {
+  --primary: #54a8fc;
+  --light: #d9d9d9;
+  --dark: #121212;
+  --gray: #414344;
+
+  position: relative;
+  z-index: 10;
+
+  width: fit-content;
+  height: 50px;
+
+  border-radius: 9999px;
+}
+
+.toggle-cont .toggle-input {
   display: none;
 }
 
-.toggle {
-  position: relative;
-  width: 40px;
+.toggle-cont .toggle-label {
+  --gap: 5px;
+  --width: 50px;
+
   cursor: pointer;
-  margin: auto;
-  display: block;
-  height: calc(4px * 3 + 11px * 2);
-}
 
-.bar {
+  position: relative;
+  display: inline-block;
+
+  padding: 0.5rem;
+  width: calc((var(--width) + var(--gap)) * 2);
+  height: 100%;
+  background-color: var(--dark);
+
+  border: 1px solid #777777;
+  border-bottom: 0;
+
+  border-radius: 9999px;
+  box-sizing: content-box;
+  transition: all 0.3s ease-in-out;
+}
+.toggle-label::before {
+  content: "";
+
   position: absolute;
-  left: 0;
-  right: 0;
-  height: 4px;
-  border-radius: calc(4px / 2);
-  background: #7b52b9;
-  color: inherit;
-  opacity: 1;
-  transition: none 0.35s cubic-bezier(.5,-0.35,.35,1.5) 0s;
+  z-index: -10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: calc(100% + 1.5rem);
+  height: calc(100% + 1.5rem);
+  background-color: var(--gray);
+
+  border: 1px solid #777777;
+  border-bottom: 0;
+  border-radius: 9999px;
+
+  transition: all 0.3s ease-in-out;
+}
+.toggle-label::after {
+  content: "";
+
+  position: absolute;
+  z-index: -10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+    circle at 50% -100%,
+    rgb(58, 155, 252) 0%,
+    rgba(12, 12, 12, 1) 80%
+  );
+
+  border-radius: 9999px;
 }
 
-/***** Tornado Animation *****/
+.toggle-cont .toggle-label .cont-icon {
+  position: relative;
 
-.bar--top {
-  bottom: calc(50% + 11px + 4px/ 2);
-  transition-property: bottom,transform;
-  transition-delay: calc(0s + 0.35s) * .6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  width: var(--width);
+  height: 50px;
+  background-image: radial-gradient(
+    circle at 50% 0%,
+    #666666 0%,
+    var(--gray) 100%
+  );
+
+  border: 1px solid #aaaaaa;
+  border-bottom: 0;
+  border-radius: 9999px;
+  box-shadow: inset 0 -0.15rem 0.15rem var(--primary),
+    inset 0 0 0.5rem 0.75rem var(--second);
+
+  transition: transform 0.3s ease-in-out;
 }
 
-.bar--middle {
-  top: calc(50% - 4px/ 2);
-  transition-property: opacity,transform;
-  transition-delay: calc(0s + 0.35s * .3);
+.cont-icon {
+  overflow: clip;
+  position: relative;
 }
 
-.bar--bottom {
-  top: calc(50% + 11px + 4px/ 2);
-  transition-property: top,transform;
-  transition-delay: 0s;
+.cont-icon .sparkle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+
+  width: calc(var(--width) * 1px);
+  aspect-ratio: 1;
+  background-color: var(--light);
+
+  border-radius: 50%;
+  transform-origin: 50% 50%;
+  rotate: calc(1deg * var(--deg));
+  transform: translate(-50%, -50%);
+  animation: sparkle calc(100s / var(--duration)) linear
+    calc(0s / var(--duration)) infinite;
 }
 
-#checkbox:checked + .toggle .bar--top {
-  transform: rotate(-135deg);
-  transition-delay: 0s;
-  bottom: calc(50% - 4px/ 2);
+@keyframes sparkle {
+  to {
+    width: calc(var(--width) * 0.5px);
+    transform: translate(2000%, -50%);
+  }
 }
 
-#checkbox:checked + .toggle .bar--middle {
-  opacity: 0;
-  transform: rotate(-135deg);
-  transition-delay: calc(0s + 0.35s * .3);
+.cont-icon .icon {
+  width: 1.1rem;
+  fill: var(--light);
 }
 
-#checkbox:checked + .toggle .bar--bottom {
-  top: calc(50% - 4px/ 2);
-  transform: rotate(-225deg);
-  transition-delay: calc(0s + 0.35s * .6);
+.toggle-cont:has(.toggle-input:checked) {
+  --checked: true;
 }
+
+@container style(--checked: true) {
+  .toggle-cont .toggle-label {
+    background-color: #41434400;
+
+    border: 1px solid #3d6970;
+    border-bottom: 0;
+  }
+
+  .toggle-cont .toggle-label::before {
+    box-shadow: 0 1rem 2.5rem -2rem #0080ff;
+  }
+
+  .toggle-cont .toggle-label .cont-icon {
+    overflow: visible;
+
+    background-image: radial-gradient(
+      circle at 50% 0%,
+      #045ab1 0%,
+      var(--primary) 100%
+    );
+
+    border: 1px solid var(--primary);
+    border-bottom: 0;
+
+    transform: translateX(calc((var(--gap) * 2) + 100%)) rotate(-225deg);
+  }
+
+  .toggle-cont .toggle-label .cont-icon .sparkle {
+    z-index: -10;
+
+    width: calc(var(--width) * 1.5px);
+    background-color: #acacac;
+
+    animation: sparkle calc(100s / var(--duration)) linear
+      calc(10s / var(--duration)) infinite;
+  }
+
+  @keyframes sparkle {
+    to {
+      width: calc(var(--width) * 1px);
+      transform: translate(5000%, -50%);
+    }
+  }
+}
+

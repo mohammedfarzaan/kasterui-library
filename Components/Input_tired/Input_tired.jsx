@@ -1,16 +1,42 @@
 import React from "react";
+import styles from "./Input_tired.module.css";
 
 const Input_tired = () => (
   <div>
-    <input
-      className="rounded-full bg-violet-100 text-xl border-2 border-purple-500 p-4 placeholder-purple-400 focus:text-violet-950 focus:border-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
-      placeholder="Enter anything..."
-    />
+    <div className={styles["coolinput"]}>
+      <label for="input" className={styles["text"]}>
+        Name:
+      </label>
+      <input
+        type="text"
+        placeholder="Write here..."
+        name="input"
+        className={styles["input"]}
+      />
+    </div>
   </div>
 );
 
 export default Input_tired;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Input_tired = () => (
+         <div>
+          <div className="coolinput">
+    <label for="input" className="text">Name:</label>
+    <input type="text" placeholder="Write here..." name="input" className="input" />
+</div>
+        </div>
+        );
+
+        export default Input_tired;
+        
+        
+         */
 }

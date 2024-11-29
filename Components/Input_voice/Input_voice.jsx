@@ -3,15 +3,13 @@ import styles from "./Input_voice.module.css";
 
 const Input_voice = () => (
   <div>
-    <label className={styles["wrapper"]}>
-      <input
-        type="text"
-        placeholder="Input label"
-        name="text"
-        className={styles["input"]}
-      />
-      <span className={styles["placeholder"]}>Input label</span>
-    </label>
+    <input
+      type="text"
+      autocomplete="off"
+      placeholder="Type your text"
+      name="text"
+      className={styles["input"]}
+    />
   </div>
 );
 
@@ -26,10 +24,7 @@ export default Input_voice;
 
         const Input_voice = () => (
          <div>
-          <label className="wrapper">
-  <input type="text" placeholder="Input label" name="text" className="input" />
-  <span className="placeholder">Input label</span>
-</label>
+          <input type="text" autocomplete="off" placeholder="Type your text" name="text" className="input" />
         </div>
         );
 

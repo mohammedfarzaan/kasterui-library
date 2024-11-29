@@ -3,7 +3,9 @@ import styles from "./Button_three.module.css";
 
 const Button_three = () => (
   <div>
-    <div className={styles["button"]}>EXPLORE GALAXY</div>
+    <div className={styles["main_div"]}>
+      <button>Sign up</button>
+    </div>
   </div>
 );
 
@@ -18,7 +20,9 @@ export default Button_three;
 
         const Button_three = () => (
          <div>
-          <div className="button">EXPLORE GALAXY</div>
+          <div className="main_div">
+  <button>Sign up</button>
+</div>
         </div>
         );
 

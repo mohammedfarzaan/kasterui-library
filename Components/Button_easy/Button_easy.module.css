@@ -1,66 +1,54 @@
 
-/* From Uiverse.io by shadowmurphy - Tags: button, active, animated */
-.button * {
+/* From Uiverse.io by Remon125 - Tags: button, smooth button */
+button {
+  padding: 15px 60px;
+  background: transparent;
+  border: 2px solid #6528F7;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 6px;
   cursor: pointer;
-}
-
-.button {
   position: relative;
-  width: 160px;
-  height: 50px;
-  background: none;
-  border-radius: 8px;
-  outline: none;
-  font-size: 19px;
-  font-family: "Montserrat", sans-serif;
-  overflow: hidden;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  text-decoration: none;
-  border: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.4s;
+  overflow: hidden;
+  transition: all 0.5s;
+  text-transform: uppercase;
 }
 
-.button::before {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 100%;
-  background-image: linear-gradient(to right, #AF40FF, #5B42F3, #006eeb, #42a0f3, #AF40FF);
-  background-size: 200% 100%;
-  background-position: 100% 0;
-  animation: moveGradient 3s linear infinite;
+button span {
+  transition: all 0.5s;
   z-index: -1;
 }
 
-.inner-circle {
+button::after,
+button::before {
+  content: "";
   position: absolute;
-  width: 94%;
-  height: 84%;
-  background-color: rgb(2, 3, 20);
-  border-radius: 6px;
-  opacity: 1;
-  transition: opacity 0.2s;
+  width: 0;
+  height: 100%;
+  background: #6528F7;
+  top: 0;
+  transform: skewX(35deg);
+  transition: all 0.5s;
+  z-index: -1;
 }
 
-.text {
-  z-index: 3;
-  color: white;
-  cursor: pointer;
+button::after {
+  left: -20px;
 }
 
-@keyframes moveGradient {
-  0% {
-    background-position: 100% 0;
-  }
-
-  100% {
-    background-position: -100% 0;
-  }
+button::before {
+  right: -20px;
 }
 
-.button:active {
-  transform: scale(0.9);
+button:hover::after {
+  width: 50%;
+  left: 0;
 }
+
+button:hover::before {
+  width: 50%;
+  right: 0;
+}
+

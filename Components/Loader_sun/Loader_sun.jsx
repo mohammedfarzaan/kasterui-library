@@ -3,11 +3,7 @@ import styles from "./Loader_sun.module.css";
 
 const Loader_sun = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["loader"]}>
-        <div className={styles["shadow"]}></div>
-      </div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -22,11 +18,7 @@ export default Loader_sun;
 
         const Loader_sun = () => (
          <div>
-          <div className="container">
-<div className="loader">
-<div className="shadow"></div>
-</div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

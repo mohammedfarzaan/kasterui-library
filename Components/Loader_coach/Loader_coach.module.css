@@ -1,69 +1,86 @@
 
-/* From Uiverse.io by Shoh2008 - Tags: loader, bear */
-.loader {
-  width: 160px;
-  height: 185px;
+/* From Uiverse.io by dimasptrautmaa - Tags: 3d, loader, colorful */
+#page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  background: #fff;
-  border-radius: 100px 100px 0 0;
 }
 
-.loader:after {
-  content: "";
+#h3 {
+  color: white;
+}
+
+#ring {
+  width: 190px;
+  height: 190px;
+  border: 1px solid transparent;
+  border-radius: 50%;
   position: absolute;
-  width: 100px;
-  height: 125px;
-  left: 50%;
-  top: 25px;
-  transform: translateX(-50%);
-  background-image: radial-gradient(circle, #000 48%, transparent 55%),
-    radial-gradient(circle, #000 48%, transparent 55%),
-    radial-gradient(circle, #fff 30%, transparent 45%),
-    radial-gradient(circle, #000 48%, transparent 51%),
-    linear-gradient(#000 20px, transparent 0),
-    linear-gradient(#cfecf9 60px, transparent 0),
-    radial-gradient(circle, #cfecf9 50%, transparent 51%),
-    radial-gradient(circle, #cfecf9 50%, transparent 51%);
-  background-repeat: no-repeat;
-  background-size: 16px 16px, 16px 16px, 10px 10px, 42px 42px, 12px 3px,
-    50px 25px, 70px 70px, 70px 70px;
-  background-position: 25px 10px, 55px 10px, 36px 44px, 50% 30px, 50% 85px,
-    50% 50px, 50% 22px, 50% 45px;
-  animation: faceLift 3s linear infinite alternate;
 }
 
-.loader:before {
-  content: "";
-  position: absolute;
-  width: 140%;
-  height: 125px;
-  left: -20%;
-  top: 0;
-  background-image: radial-gradient(circle, #fff 48%, transparent 50%),
-    radial-gradient(circle, #fff 48%, transparent 50%);
-  background-repeat: no-repeat;
-  background-size: 65px 65px;
-  background-position: 0px 12px, 145px 12px;
-  animation: earLift 3s linear infinite alternate;
+#ring:nth-child(1) {
+  border-bottom: 8px solid rgb(255, 141, 249);
+  animation: rotate1 2s linear infinite;
 }
 
-@keyframes faceLift {
-  0% {
-    transform: translateX(-60%);
+@keyframes rotate1 {
+  from {
+    transform: rotateX(50deg) rotateZ(110deg);
   }
 
-  100% {
-    transform: translateX(-30%);
+  to {
+    transform: rotateX(50deg) rotateZ(470deg);
   }
 }
 
-@keyframes earLift {
-  0% {
-    transform: translateX(10px);
+#ring:nth-child(2) {
+  border-bottom: 8px solid rgb(255,65,106);
+  animation: rotate2 2s linear infinite;
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
   }
 
-  100% {
-    transform: translateX(0px);
+  to {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
   }
 }
-  
+
+#ring:nth-child(3) {
+  border-bottom: 8px solid rgb(0,255,255);
+  animation: rotate3 2s linear infinite;
+}
+
+@keyframes rotate3 {
+  from {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+  }
+
+  to {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+  }
+}
+
+#ring:nth-child(4) {
+  border-bottom: 8px solid rgb(252, 183, 55);
+  animation: rotate4 2s linear infinite;
+}
+
+@keyframes rotate4 {
+  from {
+    transform: rotateX(70deg) rotateZ(270deg);
+  }
+
+  to {
+    transform: rotateX(70deg) rotateZ(630deg);
+  }
+}

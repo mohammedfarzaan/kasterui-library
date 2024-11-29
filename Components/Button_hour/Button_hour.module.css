@@ -1,24 +1,53 @@
 
-/* From Uiverse.io by Uzmakh  - Website: https://uiverse.io/ - Name: Shubhajit - Tags: simple, button, click, light&dark */
+/* From Uiverse.io by JaydipPrajapati1910 - Tags: button, join now, buttton */
 .button {
-  padding: 8px;
-  border-radius: 17px;
-  border: none;
-  border-bottom: 1px solid black;
-  outline: none;
-  cursor: pointer;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-.wrapper {
-  padding: 0 15px;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow: inset 5px 5px 15px #bababa, inset -5px -5px 15px #ffffff;
-  display: flex;
+  color: white;
+  background-color: #222;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  text-align: center;
+  margin-right: 0.5rem;
+  display: inline-flex;
   align-items: center;
-  column-gap: 8px;
-  font-weight: bold;
-  text-transform: capitalize;
-  border-radius: 20px;
+  border: none;
 }
+
+.button:hover {
+  background-color: #fff;
+  color: #222;
+  border: 2px solid #222;
+}
+
+.button:hover svg {
+  fill: #222;
+}
+
+.button svg {
+  display: inline;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 0.75rem;
+  color: white;
+}
+
+.button:hover svg {
+  animation: spin_357 0.5s linear;
+}
+
+@keyframes spin_357 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotatey(360deg);
+  }
+}
+
 

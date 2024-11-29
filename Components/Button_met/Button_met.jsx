@@ -3,10 +3,7 @@ import styles from "./Button_met.module.css";
 
 const Button_met = () => (
   <div>
-    <button className={styles["button"]}>
-      <div className={styles["circle"]}></div>
-      <span>Button</span>
-    </button>
+    <button className={styles["button"]}>NEON</button>
   </div>
 );
 
@@ -22,8 +19,7 @@ export default Button_met;
         const Button_met = () => (
          <div>
           <button className="button">
-  <div className="circle"></div>
-  <span>Button</span>
+  NEON
 </button>
         </div>
         );

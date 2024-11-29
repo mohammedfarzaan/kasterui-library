@@ -1,103 +1,46 @@
 
-/* From Uiverse.io by DGtalsam - Tags: button */
-.custom-btn {
- width: 130px;
- height: 40px;
- color: #fff;
- border-radius: 5px;
- padding: 10px 25px;
- font-family: 'Lato', sans-serif;
- font-weight: 500;
- background: transparent;
- cursor: pointer;
- transition: all 0.3s ease;
- position: relative;
- display: inline-block;
- box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-        7px 7px 20px 0px rgba(0, 0, 0, .1),
-        4px 4px 5px 0px rgba(0, 0, 0, .1);
- outline: none;
+/* From Uiverse.io by gagan-gv - Tags: hover, share, social, button */
+button {
+  height: 4em;
+  width: 15em;
+  border: none;
+  border-radius: 40px;
+  background-color: #fff;
 }
 
-.btn {
- background: linear-gradient(0deg, rgba(255, 151, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
- line-height: 42px;
- padding: 0;
- border: none;
+button span {
+  z-index: 1;
+  display: inline-block;
+  background-color: black;
+  height: 3em;
+  width: 11.5em;
+  border-radius: 25px;
+  color: #fff;
+  line-height: 55px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  transition: all 0.5s;
 }
 
-.btn span {
- position: relative;
- display: block;
- width: 100%;
- height: 100%;
+button .container {
+  z-index: -1;
+  width: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-50px);
+  transition: all 0.4s;
 }
 
-.btn:before,
-.btn:after {
- position: absolute;
- content: "";
- right: 0;
- bottom: 0;
- background: rgba(251, 75, 2, 1);
- box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, .9),
-        -4px -4px 5px 0px rgba(255, 255, 255, .9),
-        7px 7px 20px 0px rgba(0, 0, 0, .2),
-        4px 4px 5px 0px rgba(0, 0, 0, .3);
- transition: all 0.3s ease;
+button .container svg {
+  padding: 0 10px;
 }
 
-.btn:before {
- height: 0%;
- width: 2px;
+button:hover span {
+  width: 0;
 }
 
-.btn:after {
- width: 0%;
- height: 2px;
-}
-
-.btn:hover {
- color: rgba(251, 75, 2, 1);
- background: transparent;
-}
-
-.btn:hover:before {
- height: 100%;
-}
-
-.btn:hover:after {
- width: 100%;
-}
-
-.btn span:before,
-.btn span:after {
- position: absolute;
- content: "";
- left: 0;
- top: 0;
- background: rgba(251, 75, 2, 1);
- box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, .9),
-        -4px -4px 5px 0px rgba(255, 255, 255, .9),
-        7px 7px 20px 0px rgba(0, 0, 0, .2),
-        4px 4px 5px 0px rgba(0, 0, 0, .3);
- transition: all 0.3s ease;
-}
-
-.btn span:before {
- width: 2px;
- height: 0%;
-}
-
-.btn span:after {
- height: 2px;
- width: 0%;
-}
-
-.btn span:hover:before {
- height: 100%;
-}
-
-.btn span:hover:after {
- width: 100%;
+button:hover .container {
+  z-index: 2;
+  width: 100%;
 }

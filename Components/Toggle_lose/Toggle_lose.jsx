@@ -3,9 +3,11 @@ import styles from "./Toggle_lose.module.css";
 
 const Toggle_lose = () => (
   <div>
-    <label className={styles["switch"]}>
-      <input type="checkbox" className={styles["input"]} />
-      <span className={styles["slider"]}></span>
+    <input type="checkbox" id="checkbox" />
+    <label for="checkbox" className={styles["toggle"]}>
+      <div className={styles["bars"]} id="bar1"></div>
+      <div className={styles["bars"]} id="bar2"></div>
+      <div className={styles["bars"]} id="bar3"></div>
     </label>
   </div>
 );
@@ -21,10 +23,12 @@ export default Toggle_lose;
 
         const Toggle_lose = () => (
          <div>
-          <label className="switch">
-  <input type="checkbox" className="input" />
-  <span className="slider"></span>
-</label>
+          <input type="checkbox" id="checkbox" />
+    <label for="checkbox" className="toggle">
+        <div className="bars" id="bar1"></div>
+        <div className="bars" id="bar2"></div>
+        <div className="bars" id="bar3"></div>
+    </label>
         </div>
         );
 

@@ -1,33 +1,18 @@
 
-/* From Uiverse.io by xueyuantan - Tags: button */
+/* From Uiverse.io by barisdogansutcu - Tags: button, active, retro */
 button {
- width: 9em;
- height: 3em;
- border-radius: 30em;
- font-size: 15px;
- font-family: inherit;
- border: none;
- position: relative;
- overflow: hidden;
- z-index: 1;
- box-shadow: 6px 6px 12px #c5c5c5,
-             -6px -6px 12px #ffffff;
+  font-family: inherit;
+  border: none;
+  outline: 1px dotted rgb(37, 37, 37);
+  outline-offset: -4px;
+  background: hsl(0deg 0% 75%);
+  box-shadow: inset -1px -1px #292929, inset 1px 1px #fff, inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 30px;
 }
 
-button::before {
- content: '';
- width: 0;
- height: 3em;
- border-radius: 30em;
- position: absolute;
- top: 0;
- left: 0;
- background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
- transition: .5s ease;
- display: block;
- z-index: -1;
-}
-
-button:hover::before {
- width: 9em;
+button:active {
+  box-shadow: inset -1px -1px #fff, inset 1px 1px #292929, inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
 }

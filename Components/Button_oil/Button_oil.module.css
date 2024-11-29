@@ -1,53 +1,65 @@
 
-/* From Uiverse.io by Web-Potato - Tags: button */
-button {
-  position: relative;
-  height: 50px;
-  width: 150px;
-  color: #FFF;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  background-color: #212121;
-  transition: all 0.5s;
+/* From Uiverse.io by vinodjangid07  - Tags: tooltip, button, hover, hover effect, bug, report */
+.BugButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  background-color: transparent;
   border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
 }
-
-button::before {
+.BugButton svg {
+  width: 44%;
+}
+.BugButton:hover {
+  background-color: rgb(61, 41, 71);
+  overflow: visible;
+}
+.bugsvg path {
+  transition: all 0.2s;
+}
+.BugButton:hover .bugsvg path {
+  stroke: #fff;
+}
+.BugButton:active {
+  transform: scale(0.98);
+}
+.tooltip {
+  --tooltip-color: rgb(41, 41, 41);
   position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(29, 255, 86, 0.281);
+  top: -40px;
+  background-color: var(--tooltip-color);
+  color: white;
   border-radius: 5px;
-  transition: all 0.3s;
-  z-index: 1;
-}
-
-button:hover::before {
+  font-size: 12px;
+  padding: 8px 12px;
+  font-weight: 600;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.105);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
-  transform: scale(0.7,0.7);
+  transition: all 0.5s;
+  min-width: 100px;
 }
-
-button::after {
-  content: '';
+.tooltip::before {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: all 0.4s;
-  border: 1px solid rgba(29, 255, 86, 0.281);
-  border-radius: 5px;
-  transform: scale(1.5,1.5);
-  opacity: 0;
-  z-index: 1;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  content: "";
+  background-color: var(--tooltip-color);
+  bottom: -10%;
 }
-
-button:hover::after {
+.BugButton:hover .tooltip {
   opacity: 1;
-  transform: scale(1,1);
 }
 

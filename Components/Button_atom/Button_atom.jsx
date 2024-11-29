@@ -3,7 +3,9 @@ import styles from "./Button_atom.module.css";
 
 const Button_atom = () => (
   <div>
-    <button className={styles["button"]}>Click here ..</button>
+    <button className={styles["button"] + styles["type1"]}>
+      <span className={styles["btn-txt"]}>Hello</span>
+    </button>
   </div>
 );
 
@@ -18,8 +20,8 @@ export default Button_atom;
 
         const Button_atom = () => (
          <div>
-          <button className="button">
-  Click here ..
+          <button className="button type1">
+  <span className="btn-txt">Hello</span>
 </button>
         </div>
         );

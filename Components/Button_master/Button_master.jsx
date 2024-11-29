@@ -3,11 +3,12 @@ import styles from "./Button_master.module.css";
 
 const Button_master = () => (
   <div>
-    <button className={styles["learn-more"]}>
-      <span className={styles["circle"]} aria-hidden="true">
-        <span className={styles["icon"] + styles["arrow"]}></span>
-      </span>
-      <span className={styles["button-text"]}>Learn More</span>
+    <button>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span>Button</span>
     </button>
   </div>
 );
@@ -23,11 +24,12 @@ export default Button_master;
 
         const Button_master = () => (
          <div>
-          <button className="learn-more">
-  <span className="circle" aria-hidden="true">
-  <span className="icon arrow"></span>
-  </span>
-  <span className="button-text">Learn More</span>
+          <button>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span>Button</span>
 </button>
         </div>
         );

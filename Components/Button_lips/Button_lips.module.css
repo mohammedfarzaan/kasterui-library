@@ -1,75 +1,61 @@
 
-/* From Uiverse.io by arshshaikh06 - Source: https://www.behance.net/gallery/117113957/Social-Share-Animation-Daily-UI-010 - Tags: button, hover, hover button, css button, css animation, cool button, button hover effect  */
-#button-container {
-  position: relative;
-}
-
+/* From Uiverse.io by MuhammadHasann  - Tags: simple, minimalist, button */
 .button {
+  cursor: pointer;
+  --c: #0ea5e9;
+  padding: 12px 28px;
+  margin: 1em;
+  position: relative;
+  min-width: 12em;
+  background: transparent;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--c);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  border: 2px solid var(--c);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.button span {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  translate: -50% 50%;
-  background: #F4F7F5;
-  border: none;
-  border-radius: 25px;
-  height: 50px;
-  width: 50px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s ease-in;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
 }
 
-#share {
-  color: #DC0654;
-  background: #fbe6ed;
+.button:hover {
+  color: black;
 }
 
-#facebook {
-  background: linear-gradient(-160deg, #00D2FF, #3A7BD5);
+.button:hover span {
+  transform: translateY(0) scale(2);
 }
 
-#instagram {
-  background: linear-gradient(135deg, #833AB4, #FD1D1D, #FCB045);
+.button span:nth-child(1) {
+  --n: 1;
 }
 
-#dribbble {
-  background: linear-gradient(-70deg, #D70652, #FF025E);
+.button span:nth-child(2) {
+  --n: 2;
 }
 
-#github {
-  background: linear-gradient(-70deg, #171515, #FF025E);
+.button span:nth-child(3) {
+  --n: 3;
 }
 
-#youtube {
-  background: #FF0000;
+.button span:nth-child(4) {
+  --n: 4;
 }
 
-#button-container:hover button {
-  rotate: 360deg;
-}
-
-#button-container:hover #share {
-  rotate: 270deg;
-}
-
-#button-container:hover > #facebook {
-  translate: -300% 50%;
-}
-
-#button-container:hover > #instagram {
-  translate: -226.78% -126.78%;
-}
-
-#button-container:hover > #dribbble {
-  translate: -50% -200%;
-}
-
-#button-container:hover > #github {
-  translate: 126.78% -126.78%;
-}
-
-#button-container:hover > #youtube {
-  translate: 200% 50%;
-}

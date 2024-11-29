@@ -3,7 +3,21 @@ import styles from "./Button_class.module.css";
 
 const Button_class = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button className={styles["button"]}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 97 162"
+        height="162"
+        width="97"
+        className={styles["svg"]}
+      >
+        <path
+          fill="#262626"
+          d="M47.2124 0H54.0796V151.644L86.6991 128.712H97L50.646 162L0 128.712H10.3009L47.2124 151.644V0Z"
+        ></path>
+      </svg>
+    </button>
   </div>
 );
 
@@ -18,7 +32,12 @@ export default Button_class;
 
         const Button_class = () => (
          <div>
-          <button className="button">Button</button>
+          <button className="button">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 97 162" height="162" width="97" className="svg">
+<path fill="#262626" d="M47.2124 0H54.0796V151.644L86.6991 128.712H97L50.646 162L0 128.712H10.3009L47.2124 151.644V0Z"></path>
+</svg>
+
+</button>
         </div>
         );
 

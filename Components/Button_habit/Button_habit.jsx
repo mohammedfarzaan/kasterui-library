@@ -3,7 +3,7 @@ import styles from "./Button_habit.module.css";
 
 const Button_habit = () => (
   <div>
-    <button className={styles["like-button"]}></button>
+    <button>Button</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_habit;
 
         const Button_habit = () => (
          <div>
-          <button className="like-button"></button>
+          <button>
+    Button
+</button>
         </div>
         );
 

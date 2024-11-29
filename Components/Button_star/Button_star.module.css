@@ -1,101 +1,46 @@
 
-/* From Uiverse.io by tarantino421 - Tags: button, music, hover button */
-.box {
-  --clr-shadow__border: #3effff;
-  --clr-text: #F6F4EB;
-  --clr-soundwave: #83e4ac;
-  --clr-music: #30858d;
-  --size: 3rem;
-  position: relative;
-  outline: 1px solid var(--clr-shadow__border);
-}
-
-.button {
-  background: transparent;
-  padding: calc(var(--size) / 3) var(--size);
-  font-weight: 600;
-  font-size: 1.5rem;
+/* From Uiverse.io by PriyanshuGupta28 - Tags: button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
   border: none;
+  background-color: #f44336;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   cursor: pointer;
-  color: var(--clr-text);
-  letter-spacing: 0.2rem;
-  text-shadow: 2px 0px var(--clr-shadow__border), 0px 2px var(--clr-shadow__border),-2px 0px var(--clr-shadow__border), 0px -2px var(--clr-shadow__border);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
-.music {
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  bottom: 0%;
-  transition: 0.5s ease-in-out;
+  opacity: 0.2;
   z-index: -1;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  background: var(--clr-music);
 }
 
-.box:hover .music {
-  opacity: 1;
+.btn:hover {
+  background-color: #fff;
+  color: #f44336;
+  text-shadow: 0 0 5px #f44336;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-.soundwave {
-  width: 100%;
-  border: 1px solid var(--clr-music);
-  border-bottom: none;
-  background: linear-gradient(to top, var(--clr-soundwave) 70%, var(--clr-music));
-  animation: music-animation calc(0.03s * var(--i)) linear infinite;
-  opacity: 1;
+.btn span {
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
 }
 
-@keyframes music-animation {
-  0%, 100% {
-    height: calc(0.06rem * var(--i));
-  }
-
-  10% {
-    height: calc(0.04rem * var(--i));
-  }
-
-  20% {
-    height: calc(0.05rem * var(--i));
-  }
-
-  30% {
-    height: calc(0.01rem * var(--i));
-  }
-
-  40% {
-    height: calc(0.07rem * var(--i));
-  }
-
-  50% {
-    height: calc(0.04rem * var(--i));
-  }
-
-  60% {
-    height: calc(0.08rem * var(--i));
-  }
-
-  70% {
-    height: calc(0.06rem * var(--i));
-  }
-
-  80% {
-    height: calc(0.09rem * var(--i));
-  }
-
-  90% {
-    height: calc(0.05rem * var(--i));
-  }
+.btn:hover span {
+  transform: rotate(-10deg) scale(1.1);
 }
-
-
-
-
-
-
-
 

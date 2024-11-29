@@ -3,8 +3,11 @@ import styles from "./Button_knew.module.css";
 
 const Button_knew = () => (
   <div>
-    <button className={styles["btn-9"]}>
-      <span>Button</span>
+    <button className={styles["button"]}>
+      <span className={styles["button_lg"]}>
+        <span className={styles["button_sl"]}></span>
+        <span className={styles["button_text"]}>Download Now</span>
+      </span>
     </button>
   </div>
 );
@@ -20,7 +23,12 @@ export default Button_knew;
 
         const Button_knew = () => (
          <div>
-          <button className="btn-9"><span>Button</span></button>
+          <button className="button">
+    <span className="button_lg">
+        <span className="button_sl"></span>
+        <span className="button_text">Download Now</span>
+    </span>
+</button>
         </div>
         );
 

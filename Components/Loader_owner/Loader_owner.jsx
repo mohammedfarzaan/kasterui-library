@@ -4,29 +4,15 @@ import styles from "./Loader_owner.module.css";
 const Loader_owner = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-    </div>
-
-    <div className={styles["loader"] + styles["loader--reflect"]}>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
-      <div className={styles["bar"]}></div>
+      <li className={styles["orb"]}></li>
+      <li className={styles["orb"]}></li>
+      <li className={styles["orb"]}></li>
+      <li className={styles["orb"]}></li>
+      <li className={styles["orb"]}></li>
+      <li className={styles["orb"]}></li>
+      <li className={styles["orb"]}></li>
+      <li className={styles["orb"]}></li>
+      <li className={styles["orb"]}></li>
     </div>
   </div>
 );
@@ -43,29 +29,15 @@ export default Loader_owner;
         const Loader_owner = () => (
          <div>
           <div className="loader">
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
-</div>
-
-<div className="loader loader--reflect">
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
-  <div className="bar"></div>
+  <li className="orb"></li>
+  <li className="orb"></li>
+  <li className="orb"></li>
+  <li className="orb"></li>
+  <li className="orb"></li>
+  <li className="orb"></li>
+  <li className="orb"></li>
+  <li className="orb"></li>
+  <li className="orb"></li>
 </div>
         </div>
         );

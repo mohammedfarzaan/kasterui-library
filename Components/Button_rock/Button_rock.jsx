@@ -3,7 +3,7 @@ import styles from "./Button_rock.module.css";
 
 const Button_rock = () => (
   <div>
-    <button>Login</button>
+    <button>Hover me</button>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Button_rock;
 
         const Button_rock = () => (
          <div>
-          <button>Login</button>
+          <button>Hover me</button>
         </div>
         );
 

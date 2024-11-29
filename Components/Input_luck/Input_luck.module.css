@@ -1,24 +1,23 @@
 
-/* From Uiverse.io by LightAndy1 - Source: Cohen - https://uiverse.io/cohencoo/proud-husky-84 - Tags: simple, animation, login, email, input, dark */
+/* From Uiverse.io by JaydipPrajapati1910 - Tags: neumorphism, input */
 .input {
-  margin-top: 1rem;
-  border-radius: 10px;
-  outline: 2px solid #00a6fb;
-  border: 0;
-  font-family: "Montserrat", sans-serif;
-  background-color: #d6f1ff;
-  outline-offset: 3px;
-  padding: 10px 12.5px;
-  transition: all 0.2s ease;
-  width: 250px;
+  max-width: 190px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 15px 5px 10px 20px;
+  box-shadow: inset 8px 8px 8px #cbced1,
+              inset -8px -8px 8px #ffffff;
+  border-radius: 25px;
 }
 
-.input:hover {
-  background-color: #fff;
+.input::placeholder {
+  color: #555;
+  transition: all 0.3s ease;
 }
 
-.input:focus {
-  outline-offset: -6px;
-  background-color: #d6f1ff;
+.input:focus::placeholder {
+  color: #999;
 }
-

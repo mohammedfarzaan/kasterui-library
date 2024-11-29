@@ -1,61 +1,31 @@
 
-/* From Uiverse.io by fanishah - Tags: button, share, social media */
-.button {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 400;
-  background: #f2295b;
+/* From Uiverse.io by ercnersoy - Tags: button */
+button {
+  background: #ce1d1d;
+  padding: 10px 50px 10px 30px;
   color: white;
-  padding: 0.35em 0;
-  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  border-radius: 80px;
+  text-transform: uppercase;
+  transition: all .5s ease-in-out;
   border: none;
-  border-radius: 0.7em;
-  letter-spacing: 0.08em;
-  position: relative;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  overflow: hidden;
-  height: 2.7em;
-  padding-left: 3em;
-  padding-right: 0.5em;
 }
 
-.button .icon {
-  background: #fff;
-  margin-right: 1em;
-  height: 2.2em;
-  width: 2.2em;
-  border-radius: 0.5em;
+button:hover:before {
+  width: 79px;
+  height: 79px;
+  transform: translate(4.6pc, -1.8pc);
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMzc2IDE1MS4wNWMtNTkuNjYgMC0xMTYuODggMjMuNjk5LTE1OS4wNiA2NS44ODdzLTY1Ljg4NyA5OS40MDItNjUuODg3IDE1OS4wNmMwIDU5LjY2NCAyMy42OTkgMTE2Ljg4IDY1Ljg4NyAxNTkuMDdzOTkuNDAyIDY1Ljg4NyAxNTkuMDYgNjUuODg3YzM5LjQ4OCAwIDc4LjI4MS0xMC4zOTUgMTEyLjQ4LTMwLjEzNyAzNC4xOTUtMTkuNzQ2IDYyLjU5NC00OC4xNDUgODIuMzQtODIuMzQgMTkuNzQyLTM0LjE5NSAzMC4xMzctNzIuOTg4IDMwLjEzNy0xMTIuNDggMC01OS42Ni0yMy42OTktMTE2Ljg4LTY1Ljg4Ny0xNTkuMDZzLTk5LjQwMi02NS44ODctMTU5LjA3LTY1Ljg4N3ptLTQyLjYyMSAzNDMuMzUtMzMuMTUyLTMzLjU3OCA4NC41ODItODQuODItODQuNTgyLTg0LjgxNiAzMy4zOTEtMzMuNTc4IDExOC4zOSAxMTguMzl6IiBmaWxsPSIjZmZmIi8+Cjwvc3ZnPgo=");
+}
+
+button::before {
+  content: "";
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMjk1LjQ1IDYwMC45NSAyMjQuOTUtMjI0Ljk1LTIyNC45NS0yMjQuOTUtNjMuODQgNjMuODQgMTYxLjE2IDE2MS4xMS0xNjEuMTYgMTYxLjExeiIgZmlsbD0iI2ZmZiIvPgo8L3N2Zz4K");
+  height: 20px;
+  width: 20px;
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 0.2em;
-  transition: all .7s;
-  gap: 10px;
-}
-
-.shere {
-  width: 1.3rem;
-  height: 1.3rem;
-}
-
-.button:hover .icon {
-  width: calc(100% - 0.6rem);
-}
-
-.button:hover .shere {
-  width: calc(100% - 0.6rem);
-  display: none;
-}
-
-.button .icon-shere {
-  color: #f2295b;
-  width: 1.5rem;
-  height: 1.5rem;
-  display: none;
-}
-
-.button:hover .icon .icon-shere {
-  display: flex;
+  transition: all .5s ease-in-out;
+  background-size: 100%;
+  transform: translate(6.3pc, 0.2pc);
 }

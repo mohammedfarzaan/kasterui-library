@@ -3,13 +3,7 @@ import styles from "./Loader_extra.module.css";
 
 const Loader_extra = () => (
   <div>
-    <div className={styles["spinner"]}>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -24,13 +18,7 @@ export default Loader_extra;
 
         const Loader_extra = () => (
          <div>
-          <div className="spinner">
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

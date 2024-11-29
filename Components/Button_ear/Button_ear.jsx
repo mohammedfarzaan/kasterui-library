@@ -3,8 +3,11 @@ import styles from "./Button_ear.module.css";
 
 const Button_ear = () => (
   <div>
-    <div className={styles["container"]}>
-      <button>Button</button>
+    <div className={styles["scene"]}>
+      <div className={styles["cube"]}>
+        <span className={styles["side"] + styles["top"]}>Easter</span>
+        <span className={styles["side"] + styles["front"]}>Happy</span>
+      </div>
     </div>
   </div>
 );
@@ -20,10 +23,11 @@ export default Button_ear;
 
         const Button_ear = () => (
          <div>
-          <div className="container">
-  <button>
-  Button
-  </button>
+          <div className="scene">
+  <div className="cube">
+    <span className="side top">Easter</span>
+    <span className="side front">Happy</span>
+  </div>
 </div>
         </div>
         );

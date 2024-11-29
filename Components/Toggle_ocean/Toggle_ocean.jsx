@@ -3,9 +3,7 @@ import styles from "./Toggle_ocean.module.css";
 
 const Toggle_ocean = () => (
   <div>
-    <div className={styles["checkbox-wrapper-41"]}>
-      <input type="checkbox" />
-    </div>
+    <input type="checkbox" className={styles["theme-checkbox"]} />
   </div>
 );
 
@@ -20,9 +18,7 @@ export default Toggle_ocean;
 
         const Toggle_ocean = () => (
          <div>
-          <div className="checkbox-wrapper-41">
-  <input type="checkbox" />
-</div>
+          <input type="checkbox" className="theme-checkbox" />
         </div>
         );
 

@@ -3,7 +3,32 @@ import styles from "./Loader_plate.module.css";
 
 const Loader_plate = () => (
   <div>
-    <div className={styles["spinner"]}></div>
+    <div className={styles["boxes"]}>
+      <div className={styles["box"]}>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div className={styles["box"]}>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div className={styles["box"]}>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div className={styles["box"]}>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
   </div>
 );
 
@@ -18,7 +43,32 @@ export default Loader_plate;
 
         const Loader_plate = () => (
          <div>
-          <div className="spinner"></div>
+          <div className="boxes">
+    <div className="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div className="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div className="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div className="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
         </div>
         );
 

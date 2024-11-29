@@ -3,9 +3,7 @@ import styles from "./Loader_writer.module.css";
 
 const Loader_writer = () => (
   <div>
-    <div className={styles["spinner"]}>
-      <div className={styles["spinnerin"]}></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -20,9 +18,7 @@ export default Loader_writer;
 
         const Loader_writer = () => (
          <div>
-          <div className="spinner">
-    <div className="spinnerin"></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

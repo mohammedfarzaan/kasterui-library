@@ -3,10 +3,7 @@ import styles from "./Loader_wash.module.css";
 
 const Loader_wash = () => (
   <div>
-    <div className={styles["spinner"]}>
-      <div className={styles["loader"] + styles["l1"]}></div>
-      <div className={styles["loader"] + styles["l2"]}></div>
-    </div>
+    <div className={styles["spinner"]}></div>
   </div>
 );
 
@@ -21,10 +18,7 @@ export default Loader_wash;
 
         const Loader_wash = () => (
          <div>
-          <div className="spinner">
-<div className="loader l1"></div>
-<div className="loader l2"></div>
-</div>
+          <div className="spinner"></div>
         </div>
         );
 

@@ -3,9 +3,7 @@ import styles from "./Button_tight.module.css";
 
 const Button_tight = () => (
   <div>
-    <div className={styles["button-cont"]}>
-      <button className={styles["button"]}>Light Button</button>
-    </div>
+    <button className={styles["btn1"]}>&gt; Send Message</button>
   </div>
 );
 
@@ -20,9 +18,7 @@ export default Button_tight;
 
         const Button_tight = () => (
          <div>
-          <div className="button-cont">
-  <button className="button">Light Button</button>
-</div>
+          <button className="btn1">&gt; Send Message</button>
         </div>
         );
 

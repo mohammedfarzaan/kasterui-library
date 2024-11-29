@@ -1,92 +1,19 @@
 
-/* From Uiverse.io by Ahemtan - Tags: button */
+/* From Uiverse.io by ke1221 - Tags: neumorphism, button */
 button {
-  position: relative;
-  background: #6a92ef;
-  color: white;
-  padding: .9rem 2.20rem;
-  border-radius: 2rem;
-  transition: .5s;
-  border: none;
-}
-
-button::after {
-  content: '';
-  width: 80%;
-  height: 40%;
-  background: linear-gradient(80deg, hsl(217, 77%, 71%) 10%, hsl(218, 76%, 84%) 48%);
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -5px;
-  margin: 0 auto;
-  border-radius: 2rem;
-  filter: blur(8px);
-  z-index: -9;
-  opacity: 0;
-  transition: opacity .4s;
-}
-
-.text {
-  position: relative;
-  z-index: 10;
-}
-
-button svg {
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  pointer-events: none;
-  transition: .6s;
-  opacity: 0;
-}
-
-svg.star {
-  width: 18px;
-  transform: translate(-25px, -6px) rotate(55deg);
-  filter: blur(.4px);
-  color: hsl(210, 40%, 47%);
-}
-
-svg.moon {
-  width: 18px;
-  transform: translate(7px, -14) rotate(80deg);
-  filter: blur(.5px);
-  color: hsl(210, 40%, 47%);
-}
-
-svg.meteor {
-  width: 16px;
-  transform: translate(34px, -4px) rotate(-45deg);
-  filter: blur(.4px);
-  color: hsl(210, 40%, 47%);
+ color: #090909;
+ padding: 0.7em 1.7em;
+ font-size: 18px;
+ border-radius: 0.5em;
+ background: #e8e8e8;
+ border: 1px solid #e8e8e8;
+ transition: all .3s;
+ box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
 }
 
 button:active {
-  color: #ffffff;
-  transform: scale(1.2);
-}
-
-button:hover::after {
-  opacity: 1;
-}
-
-button:hover {
-  transform: scale(1.3);
-}
-
-button:hover svg {
-  opacity: 1;
-}
-
-button:hover svg.star {
-  transform: translate(-55px, -20px) rotate(55deg) scale(1.8);
-}
-
-button:hover svg.moon {
-  transform: translate(50px, -32px) rotate(0deg) scale(1.4);
-}
-
-button:hover svg.meteor {
-  transform: translate(28px, 30px) rotate(260deg) scale(2);
+ color: #666;
+ box-shadow: inset 4px 4px 12px #c5c5c5,
+             inset -4px -4px 12px #ffffff;
 }

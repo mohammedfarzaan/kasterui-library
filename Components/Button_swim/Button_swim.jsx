@@ -3,40 +3,16 @@ import styles from "./Button_swim.module.css";
 
 const Button_swim = () => (
   <div>
-    <button
-      className={styles["action_has"] + styles["has_saved"]}
-      aria-label="save"
-      type="button"
-    >
+    <button className={styles["space-button"]}>
+      <span className={styles["space-button-text"]}>Explore Space</span>
       <svg
-        aria-hidden="true"
+        className={styles["space-button-icon"]}
         xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="20"
-        strokeLinejoin="round"
-        strokeLinecap="round"
-        strokeWidth="2"
         viewBox="0 0 24 24"
-        stroke="currentColor"
-        fill="none"
       >
         <path
-          d="m19,21H5c-1.1,0-2-.9-2-2V5c0-1.1.9-2,2-2h11l5,5v11c0,1.1-.9,2-2,2Z"
-          strokeLinejoin="round"
-          strokeLinecap="round"
-          data-path="box"
-        ></path>
-        <path
-          d="M7 3L7 8L15 8"
-          strokeLinejoin="round"
-          strokeLinecap="round"
-          data-path="line-top"
-        ></path>
-        <path
-          d="M17 20L17 13L7 13L7 20"
-          strokeLinejoin="round"
-          strokeLinecap="round"
-          data-path="line-bottom"
+          fill="currentColor"
+          d="M12 0C8.411 0 5.418 2.993 5.418 6.582c0 3.153 2.443 5.792 5.595 6.473v2.526c0 .748.603 1.352 1.352 1.352s1.352-.604 1.352-1.352V13.05c3.152-.68 5.595-3.32 5.595-6.473C18.582 2.993 15.589 0 12 0zm0 9.288a3.706 3.706 0 1 1 0-7.412 3.706 3.706 0 0 1 0 7.412zM7.292 6.582c0-2.129 1.733-3.862 3.862-3.862s3.862 1.733 3.862 3.862c0 2.129-1.733 3.862-3.862 3.862s-3.862-1.733-3.862-3.862z"
         ></path>
       </svg>
     </button>
@@ -54,37 +30,10 @@ export default Button_swim;
 
         const Button_swim = () => (
          <div>
-          <button className="action_has has_saved" aria-label="save" type="button">
-  <svg
-    aria-hidden="true"
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="20"
-    strokeLinejoin="round"
-    strokeLinecap="round"
-    strokeWidth="2"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-    fill="none"
-  >
-    <path
-      d="m19,21H5c-1.1,0-2-.9-2-2V5c0-1.1.9-2,2-2h11l5,5v11c0,1.1-.9,2-2,2Z"
-      strokeLinejoin="round"
-      strokeLinecap="round"
-      data-path="box"
-    ></path>
-    <path
-      d="M7 3L7 8L15 8"
-      strokeLinejoin="round"
-      strokeLinecap="round"
-      data-path="line-top"
-    ></path>
-    <path
-      d="M17 20L17 13L7 13L7 20"
-      strokeLinejoin="round"
-      strokeLinecap="round"
-      data-path="line-bottom"
-    ></path>
+          <button className="space-button">
+  <span className="space-button-text">Explore Space</span>
+  <svg className="space-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 0C8.411 0 5.418 2.993 5.418 6.582c0 3.153 2.443 5.792 5.595 6.473v2.526c0 .748.603 1.352 1.352 1.352s1.352-.604 1.352-1.352V13.05c3.152-.68 5.595-3.32 5.595-6.473C18.582 2.993 15.589 0 12 0zm0 9.288a3.706 3.706 0 1 1 0-7.412 3.706 3.706 0 0 1 0 7.412zM7.292 6.582c0-2.129 1.733-3.862 3.862-3.862s3.862 1.733 3.862 3.862c0 2.129-1.733 3.862-3.862 3.862s-3.862-1.733-3.862-3.862z"></path>
   </svg>
 </button>
         </div>

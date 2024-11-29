@@ -3,9 +3,9 @@ import styles from "./Button_frog.module.css";
 
 const Button_frog = () => (
   <div>
-    <div className={styles["button"]}>
-      Button<span className={styles["button-border"]}></span>
-    </div>
+    <button className={styles["button"]}>
+      <span>➢</span> Button
+    </button>
   </div>
 );
 
@@ -20,9 +20,7 @@ export default Button_frog;
 
         const Button_frog = () => (
          <div>
-          <div className="button">
-  Button<span className="button-border"></span>
-</div>
+          <button className="button"><span>➢</span> Button</button>
         </div>
         );
 

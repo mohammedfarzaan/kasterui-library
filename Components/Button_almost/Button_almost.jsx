@@ -3,9 +3,7 @@ import styles from "./Button_almost.module.css";
 
 const Button_almost = () => (
   <div>
-    <button className={styles["button"]}>
-      <span className={styles["span"]}>Button</span>
-    </button>
+    <button> Button</button>
   </div>
 );
 
@@ -20,8 +18,7 @@ export default Button_almost;
 
         const Button_almost = () => (
          <div>
-          <button className="button">
-  <span className="span">Button</span>
+          <button> Button
 </button>
         </div>
         );

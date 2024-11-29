@@ -3,7 +3,9 @@ import styles from "./Button_chose.module.css";
 
 const Button_chose = () => (
   <div>
-    <button className={styles["button"]}>Click me</button>
+    <button>
+      <p>Crush!</p>
+    </button>
   </div>
 );
 
@@ -18,7 +20,9 @@ export default Button_chose;
 
         const Button_chose = () => (
          <div>
-          <button className="button">Click me</button>
+          <button>
+  <p>Crush!</p>
+</button>
         </div>
         );
 

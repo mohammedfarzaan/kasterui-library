@@ -3,36 +3,18 @@ import styles from "./Button_use.module.css";
 
 const Button_use = () => (
   <div>
-    <a style="--clr: #7808d0" className={styles["button"]} href="#">
-      <span className={styles["button__icon-wrapper"]}>
-        <svg
-          width="10"
-          className="button__icon-svg"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 14 15"
-        >
-          <path
-            fill="currentColor"
-            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-          ></path>
-        </svg>
-
-        <svg
-          className="button__icon-svg  button__icon-svg--copy"
-          xmlns="http://www.w3.org/2000/svg"
-          width="10"
-          fill="none"
-          viewBox="0 0 14 15"
-        >
-          <path
-            fill="currentColor"
-            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-          ></path>
-        </svg>
-      </span>
-      Explore All
-    </a>
+    <button>
+      Support us
+      <svg
+        height="32"
+        width="32"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0 0H24V24H0z" fill="none"></path>
+        <path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z"></path>
+      </svg>
+    </button>
   </div>
 );
 
@@ -47,18 +29,10 @@ export default Button_use;
 
         const Button_use = () => (
          <div>
-          <a style="--clr: #7808d0" className="button" href="#">
-            <span className="button__icon-wrapper">
-                <svg width="10" className="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15">
-                    <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
-                </svg>
-                
-                <svg className="button__icon-svg  button__icon-svg--copy" xmlns="http://www.w3.org/2000/svg" width="10" fill="none" viewBox="0 0 14 15">
-                    <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
-                </svg>
-            </span>
-            Explore All
-        </a>
+          <button>
+  Support us
+  <svg height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H24V24H0z" fill="none"></path><path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z"></path></svg>
+</button>
         </div>
         );
 

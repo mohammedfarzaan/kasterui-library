@@ -3,7 +3,13 @@ import styles from "./Button_bottom.module.css";
 
 const Button_bottom = () => (
   <div>
-    <button className={styles["button"]}> Button</button>
+    <div className={styles["background"]}>
+      <button className={styles["menu__icon"]}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 );
 
@@ -18,8 +24,13 @@ export default Button_bottom;
 
         const Button_bottom = () => (
          <div>
-          <button className="button"> Button
-</button>
+          <div className="background">
+  <button className="menu__icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</div>
         </div>
         );
 

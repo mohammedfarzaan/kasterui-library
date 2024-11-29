@@ -1,0 +1,45 @@
+
+/* From Uiverse.io by ChristosMourgelas - Tags: radio */
+.radio-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.value-radio {
+  display: none;
+}
+
+.value-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 2px solid #4d4d4d;
+  border-radius: 20px;
+  color: #ccc;
+  background-color: #333;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.value-radio:checked + .value-radio-label {
+  border-color: #00b4ff;
+  background-color: #00b4ff;
+  color: #fff;
+}
+
+.value-radio-label::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #4d4d4d;
+  transition: all 1s;
+}
+
+.value-radio:checked + .value-radio-label::before {
+  border-color: #0175a6;
+  background-color: #ffffff;
+}

@@ -3,10 +3,13 @@ import styles from "./Button_second.module.css";
 
 const Button_second = () => (
   <div>
-    <div className={styles["uiverse"]}>
-      <span className={styles["tooltip"]}>uiverse.io</span>
-      <span>Tooltip</span>
-    </div>
+    <button className={styles["button"]}>
+      <span className={styles["top"]}>
+        <p>Explore More</p>
+        <p className={styles["before"]}>&nbsp;</p>
+      </span>
+      <span className={styles["bottom"]}> &nbsp; </span>
+    </button>
   </div>
 );
 
@@ -21,12 +24,13 @@ export default Button_second;
 
         const Button_second = () => (
          <div>
-          <div className="uiverse">
-    <span className="tooltip">uiverse.io</span>
-    <span>
-        Tooltip
-    </span>
-</div>
+          <button className="button">
+      <span className="top">
+        <p>Explore More</p>
+        <p className="before">&nbsp;</p>
+      </span>
+      <span className="bottom"> &nbsp; </span>
+    </button>
         </div>
         );
 

@@ -3,7 +3,7 @@ import styles from "./Button_dig.module.css";
 
 const Button_dig = () => (
   <div>
-    <button> manage</button>
+    <button>↑</button>
   </div>
 );
 
@@ -18,7 +18,8 @@ export default Button_dig;
 
         const Button_dig = () => (
          <div>
-          <button> manage
+          <button>
+  ↑
 </button>
         </div>
         );

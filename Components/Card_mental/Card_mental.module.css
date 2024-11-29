@@ -1,0 +1,89 @@
+
+/* From Uiverse.io by devkennyy - Tags: card */
+.card {
+  color: #fff;
+  margin: 40px auto;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  width: 100%;
+  border-radius: 15px;
+  padding: 32px;
+  backdrop-filter: blur(10px);
+}
+
+.heading {
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.heading span {
+  display: inline-block;
+  background-clip: text;
+  color: #3498db;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px
+}
+
+.item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.item svg {
+  height: 48px;
+  margin-bottom: 5px;
+  width: 48px;
+}
+
+.item--create,
+.item--post,
+.item--inspire {
+  color: #5a5aeb !important;
+}
+
+.content .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: 700
+}
+
+.content .item span {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #f1f1f1;
+  font-weight: 400;
+  cursor: pointer
+}
+
+button {
+  display: inline-block;
+  padding: 24px 32px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(30px);
+  color: rgba(255,255,255,0.8);
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: rgba(255,255,255,0.2);
+}

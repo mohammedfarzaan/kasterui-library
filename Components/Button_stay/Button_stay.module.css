@@ -1,87 +1,44 @@
 
-/* From Uiverse.io by KingHendrie  - Tags: simple, icon, animation, action, button, rounded, social media, button hover effect  */
-.send-checkbox {
-  display: none;
-}
-
-.send-button {
-  display: inline-flex;
-  align-items: center;
+/* From Uiverse.io by Df12345677 - Tags: button, animated, add */
+.button {
+  height: 60px;
+  width: 200px;
+  background-color: #132233;
+  border: 2px solid rgb(182, 128, 128);
+  color: #eee;
+  transition: .6s;
+  font-size: 15px;
+  border-radius: 50px;
+  display: flex;
   justify-content: center;
-  padding: 10px 20px;
-  border: 2px solid #ddd;
-  border-radius: 15px;
-  background-color: #f9f9f9;
-  color: #2c2c2c;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1),
-    2px 2px 5px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
-  position: relative;
+  align-items: center;
+  /* padding: 20px; */
   overflow: hidden;
-  white-space: nowrap;
 }
 
-.send-checkbox:checked + .send-button .message {
-  opacity: 0;
+.button span {
+  transform: translateX(10px);
+  transition: .5s;
 }
 
-.send-checkbox:checked + .send-button .message-sent {
-  animation: fadeIn 3s forwards;
+.button svg {
+  transform: translateX(-300px);
+  transition: .6s;
+  z-index: 3;
+  height: 20px;
 }
 
-.send-checkbox:checked + .send-button svg {
-  animation: send 1s forwards;
+.button:hover {
+  width: 60px;
+  background-color: rgba(51, 34, 51, 0.815);
+  box-shadow: 20px 20px 96px #bebebe,-20px -20px 96px #ffffff;
 }
 
-@keyframes rotate-hover {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(40deg);
-  }
+.button:hover svg {
+  transform: translateX(-5px);
 }
 
-@keyframes send {
-  0% {
-    transform: translateX(0) rotate(40deg);
-  }
-  100% {
-    transform: translateX(150px) rotate(40deg);
-  }
+.button:hover span {
+  transform: translateY(70px);
+  font-size: .1rem;
 }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.send-button .message-sent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  color: #125b96;
-}
-
-.send-button:hover {
-  background-color: #e0e0e0;
-  box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.1),
-    3px 3px 7px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-}
-
-.send-button:hover svg {
-  animation: rotate-hover 0.2s;
-  transform: rotate(40deg);
-}
-

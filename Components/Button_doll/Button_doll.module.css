@@ -1,22 +1,43 @@
 
-/* From Uiverse.io by felipesntr - Tags: icon, button */
-button {
- border: 2px solid #24b4fb;
- background-color: #24b4fb;
- border-radius: 0.9em;
- padding: 0.8em 1.2em 0.8em 1em;
- transition: all ease-in-out 0.2s;
- font-size: 16px;
+/* From Uiverse.io by PriyanshuGupta28 - Tags: button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #4a5568;
+  background-color: #4a5568;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
-button span {
- display: flex;
- justify-content: center;
- align-items: center;
- color: #fff;
- font-weight: 600;
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #fff;
+  opacity: 0.2;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
 }
 
-button:hover {
- background-color: #0071e2;
+.btn:hover {
+  background-color: #fff;
+  color: #4a5568;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
+.btn:hover::before {
+  width: 200%;
+  height: 200%;
+}
+

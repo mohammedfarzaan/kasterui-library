@@ -1,42 +1,50 @@
 import React from "react";
-import styles from "./Input_green.module.css";
 
 const Input_green = () => (
   <div>
-    <div className={styles["coolinput"]}>
-      <label for="input" className={styles["text"]}>
-        Name:
-      </label>
+    <div className="flex shadow-sm">
       <input
+        value="Copy Me"
+        readonly=""
+        className="py-1 indent-2 rounded-s-lg focus:outline-none"
+        name="text"
         type="text"
-        placeholder="Write here..."
-        name="input"
-        className={styles["input"]}
       />
+      <button className="py-1 rounded-e-lg text-white bg-green-300 flex justify-center items-center w-10 h-10">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          className="pointer-events-none"
+        >
+          <rect width="24" height="24"></rect>
+          <rect
+            x="4"
+            y="8"
+            width="12"
+            height="12"
+            rx="1"
+            stroke="#000000"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          ></rect>
+          <path
+            d="M8 6V5C8 4.44772 8.44772 4 9 4H19C19.5523 4 20 4.44772 20 5V15C20 15.5523 19.5523 16 19 16H18"
+            stroke="#000000"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            stroke-dasharray="2 2"
+          ></path>
+        </svg>
+      </button>
     </div>
   </div>
 );
 
 export default Input_green;
-{
-  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Input_green = () => (
-         <div>
-          <div className="coolinput">
-    <label for="input" className="text">Name:</label>
-    <input type="text" placeholder="Write here..." name="input" className="input" />
-</div>
-        </div>
-        );
-
-        export default Input_green;
-        
-        
-         */
+{
+  /* */
 }

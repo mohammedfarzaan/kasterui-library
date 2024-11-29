@@ -3,10 +3,10 @@ import styles from "./Toggle_neck.module.css";
 
 const Toggle_neck = () => (
   <div>
-    <label className={styles["switch"]}>
-      <input type="checkbox" />
-      <span className={styles["toggle"]}></span>
-    </label>
+    <div className={styles["toggle"]}>
+      <input id="toggle-switch" type="checkbox" />
+      <label for="toggle-switch"></label>
+    </div>
   </div>
 );
 
@@ -21,11 +21,10 @@ export default Toggle_neck;
 
         const Toggle_neck = () => (
          <div>
-          <label className="switch">
-  <input type="checkbox" />
-  <span className="toggle">
-  </span>
-</label>
+          <div className="toggle">
+  <input id="toggle-switch" type="checkbox" />
+  <label for="toggle-switch"></label>
+</div>
         </div>
         );
 

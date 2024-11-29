@@ -4,10 +4,23 @@ import styles from "./Loader_kept.module.css";
 const Loader_kept = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["loader__circle"]}></div>
-      <div className={styles["loader__circle"]}></div>
-      <div className={styles["loader__circle"]}></div>
-      <div className={styles["loader__circle"]}></div>
+      <figure className={styles["iconLoaderProgress"]}>
+        <svg
+          className={styles["iconLoaderProgressFirst"]}
+          width="240"
+          height="240"
+        >
+          <circle cx="120" cy="120" r="100"></circle>
+        </svg>
+
+        <svg
+          className={styles["iconLoaderProgressSecond"]}
+          width="240"
+          height="240"
+        >
+          <circle cx="120" cy="120" r="100"></circle>
+        </svg>
+      </figure>
     </div>
   </div>
 );
@@ -24,10 +37,15 @@ export default Loader_kept;
         const Loader_kept = () => (
          <div>
           <div className="loader">
-  <div className="loader__circle"></div>
-  <div className="loader__circle"></div>
-  <div className="loader__circle"></div>
-  <div className="loader__circle"></div>
+  <figure className="iconLoaderProgress">
+    <svg className="iconLoaderProgressFirst" width="240" height="240">
+      <circle cx="120" cy="120" r="100"></circle>
+    </svg>
+
+    <svg className="iconLoaderProgressSecond" width="240" height="240">
+      <circle cx="120" cy="120" r="100"></circle>
+    </svg>
+  </figure>
 </div>
         </div>
         );

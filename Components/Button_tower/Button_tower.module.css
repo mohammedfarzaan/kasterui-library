@@ -1,16 +1,54 @@
 
-/* From Uiverse.io by ercnersoy - Tags: button */
-button {
-  padding: 1em 2em;
-  border-radius: 1em;
-  border: 5px solid #ffc107;
-  box-shadow: 0px 0px 0 rgb(227,165,0), 1px 1px 0 rgb(198,136,0), 2px 2px 0 rgb(170,108,0), 3px 3px 0 rgb(142,80,0), 4px 4px 3px rgba(0,0,0,0.63), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2);
+/* From Uiverse.io by Rodrypaladin - Tags: animation, pink, button, dark, shadow, border, color, box-shadow */
+.button {
+  background-image: linear-gradient(to right bottom, #e300ff, #ff00aa, #ff5956, #ffb900, #fffe00);
+  border: none;
+  font-size: 1.2em;
+  border-radius: 0;
+  padding: 4px;
+  transition: border-top-left-radius 0.2s ease-in, 
+  border-top-right-radius 0.2s ease-in 0.15s, 
+  border-bottom-right-radius 0.2s ease-in 0.3s,
+  border-bottom-left-radius 0.2s ease-in 0.45s, 
+  padding 0.2s ease-in;
+  position: relative;
 }
 
-.TxtEffect {
-  letter-spacing: .2rem;
-  font-size: 17px;
-  color: #ffc107;
-  font-family: "Arial Black", Gadget, sans-serif;
-  text-shadow: 0px 0px 0 rgb(227,165,0), 1px 1px 0 rgb(198,136,0), 2px 2px 0 rgb(170,108,0), 3px 3px 0 rgb(142,80,0), 4px 4px 3px rgba(0,0,0,0.63), 4px 4px 1px rgba(0,0,0,0.5), 0px 0px 3px rgba(0,0,0,.2);
+.button__int {
+  background-color: #212121;
+  color: white;
+  border-radius: 0;
+  padding: 10px 40px;
+  transition: all 0.2s ease-in,
+  border-top-left-radius 0.2s ease-in, 
+  border-top-right-radius 0.2s ease-in 0.15s, 
+  border-bottom-right-radius 0.2s ease-in 0.3s,
+  border-bottom-left-radius 0.2s ease-in 0.45s,
+  padding 0.2s ease-in;
+  font-weight: 600;
+  z-index: -1;
+  box-shadow: -25px -10px 30px -5px rgba(225, 0, 255, 0.7),
+    25px -10px 30px -5px rgba(255, 0, 212, 0.7),
+    25px 10px 30px -5px rgba(255, 174, 0, 0.7),
+    -25px 10px 30px -5px rgba(255, 230, 0, 0.7);
 }
+
+.button:active .button__int {
+  padding: 10px 30px;
+}
+
+.button:hover {
+  border-radius: 1.5em;
+}
+
+.button:hover .button__int {
+  border-radius: 1.3em;
+}
+
+.button:hover .button__int {
+  box-shadow: -15px -10px 30px -5px rgba(225, 0, 255, 0.8),
+    15px -10px 30px -5px rgba(255, 0, 212, 0.8),
+    15px 10px 30px -5px rgba(255, 174, 0, 0.8),
+    -15px 10px 30px -5px rgba(255, 230, 0.8);
+}
+

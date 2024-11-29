@@ -3,8 +3,8 @@ import styles from "./Button_grew.module.css";
 
 const Button_grew = () => (
   <div>
-    <button className={styles["button"]}>
-      <span className={styles["span"]}>🔎</span>
+    <button>
+      <span className={styles["box"]}>Hover!</span>
     </button>
   </div>
 );
@@ -20,8 +20,10 @@ export default Button_grew;
 
         const Button_grew = () => (
          <div>
-          <button className="button">
-  <span className="span">🔎</span>
+          <button>
+    <span className="box">
+        Hover!
+    </span>
 </button>
         </div>
         );

@@ -4,9 +4,9 @@ import styles from "./Loader_key.module.css";
 const Loader_key = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["box1"]}></div>
-      <div className={styles["box2"]}></div>
-      <div className={styles["box3"]}></div>
+      <li className={styles["dots"]} id="dot-1"></li>
+      <li className={styles["dots"]} id="dot-2"></li>
+      <li className={styles["dots"]} id="dot-3"></li>
     </div>
   </div>
 );
@@ -23,10 +23,10 @@ export default Loader_key;
         const Loader_key = () => (
          <div>
           <div className="loader">
-  <div className="box1"></div>
-  <div className="box2"></div>
-  <div className="box3"></div>
-</div>
+        <li className="dots" id="dot-1"></li>
+        <li className="dots" id="dot-2"></li>
+        <li className="dots" id="dot-3"></li>
+    </div>
         </div>
         );
 

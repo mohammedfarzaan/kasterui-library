@@ -3,19 +3,10 @@ import styles from "./Toggle_dust.module.css";
 
 const Toggle_dust = () => (
   <div>
-    <div className={styles["checkbox-wrapper-8"]}>
-      <input
-        type="checkbox"
-        id="cb3-8"
-        className={styles["tgl"] + styles["tgl-skewed"]}
-      />
-      <label
-        for="cb3-8"
-        data-tg-on="ON"
-        data-tg-off="OFF"
-        className={styles["tgl-btn"]}
-      ></label>
-    </div>
+    <label>
+      <input type="checkbox" className={styles["toggle-checkbox"]} />
+      <div className={styles["toggle-switch"]}></div>
+    </label>
   </div>
 );
 
@@ -30,10 +21,10 @@ export default Toggle_dust;
 
         const Toggle_dust = () => (
          <div>
-          <div className="checkbox-wrapper-8">
-  <input type="checkbox" id="cb3-8" className="tgl tgl-skewed" />
-  <label for="cb3-8" data-tg-on="ON" data-tg-off="OFF" className="tgl-btn"></label>
-</div>
+          <label>
+  <input type="checkbox" className="toggle-checkbox" />
+  <div className="toggle-switch"></div>
+</label>
         </div>
         );
 

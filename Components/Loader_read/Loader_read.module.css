@@ -1,49 +1,79 @@
 
-/* From Uiverse.io by Ali-Tahmazi99 - Tags: loader */
+/* From Uiverse.io by TemRevil  - Tags:  */
 .loading {
-  width: 60px;
-  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-box {
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   position: relative;
 }
-
-.d1 , .d2 {
-  border: 5px solid #6c757d;
-  border-radius: 50px;
+.color {
+  background-color: #eee;
+  border-radius: 5px;
+}
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 120px 120px 120px;
+  grid-template-areas:
+    "l1 l2 l3"
+    "l1 l2 l4"
+    "l6 l6 l5";
+  gap: 10px;
 }
 
-.loading .d1 {
-  width: 55px;
-  height: 55px;
-  position: absolute;
-  border-left-color: transparent;
-  animation: load161 1s linear infinite;
+.l1 {
+  grid-area: l1;
+  animation: Loading 6s 0s infinite linear;
+}
+.l2 {
+  grid-area: l2;
+  animation: Loading 5s 1s infinite linear;
+}
+.l3 {
+  grid-area: l3;
+  animation: Loading 4s 2s infinite linear;
+}
+.l4 {
+  grid-area: l4;
+  animation: Loading 3s 3s infinite linear;
+}
+.l5 {
+  grid-area: l5;
+  animation: Loading 2s 4s infinite linear;
+}
+.l6 {
+  grid-area: l6;
+  animation: Loading 1s 5s infinite linear;
 }
 
-.loading .d2 {
-  width: 40px;
-  height: 40px;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  margin: 7.5px;
-  animation: load2812 1.5s linear infinite;
-}
-
-@keyframes load161 {
+@keyframes Loading {
   0% {
-    transform: rotate(0);
+    background-color: #eee;
   }
-
+  50% {
+    background-color: #333;
+  }
   100% {
-    transform: rotate(360deg);
+    background-color: #eee;
   }
 }
 
-@keyframes load2812 {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(-360deg);
+@media (max-width: 500px) {
+  .loading-box {
+    width: 90%;
   }
 }
+@media (max-width: 400px) {
+  .grid {
+    grid-template-rows: 80px 80px 80px;
+  }
+}
+

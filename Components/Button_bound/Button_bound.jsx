@@ -3,7 +3,7 @@ import styles from "./Button_bound.module.css";
 
 const Button_bound = () => (
   <div>
-    <button id="bottone5">Copy</button>
+    <button className={styles["button"]}>Winter</button>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Button_bound;
 
         const Button_bound = () => (
          <div>
-          <button id="bottone5">Copy</button>
+          <button className="button">Winter</button>
         </div>
         );
 

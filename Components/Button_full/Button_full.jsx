@@ -3,11 +3,7 @@ import styles from "./Button_full.module.css";
 
 const Button_full = () => (
   <div>
-    <button type="button" className={styles["button"]}>
-      <div className={styles["button-top"]}>3D Button</div>
-      <div className={styles["button-bottom"]}></div>
-      <div className={styles["button-base"]}></div>
-    </button>
+    <button className={styles["btn"]}>Diagonal Swipe</button>
   </div>
 );
 
@@ -22,10 +18,8 @@ export default Button_full;
 
         const Button_full = () => (
          <div>
-          <button type="button" className="button">
-  <div className="button-top">3D Button</div>
-  <div className="button-bottom"></div>
-  <div className="button-base"></div>
+          <button className="btn">
+  Diagonal Swipe
 </button>
         </div>
         );

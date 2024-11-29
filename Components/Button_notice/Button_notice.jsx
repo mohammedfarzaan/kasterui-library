@@ -3,7 +3,7 @@ import styles from "./Button_notice.module.css";
 
 const Button_notice = () => (
   <div>
-    <button className={styles["btn"]}>Hover Me!</button>
+    <button>This is a button :)</button>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Button_notice;
 
         const Button_notice = () => (
          <div>
-          <button className="btn">Hover Me!</button>
+          <button>This is a button :)</button>
         </div>
         );
 

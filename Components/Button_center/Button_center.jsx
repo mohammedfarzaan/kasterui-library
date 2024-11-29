@@ -3,9 +3,7 @@ import styles from "./Button_center.module.css";
 
 const Button_center = () => (
   <div>
-    <button>
-      <span>BUTTON</span>
-    </button>
+    <button className={styles["btn"]}>3D button</button>
   </div>
 );
 
@@ -20,9 +18,7 @@ export default Button_center;
 
         const Button_center = () => (
          <div>
-          <button>
-  <span>BUTTON</span>
-</button>
+          <button className="btn">3D button</button>
         </div>
         );
 

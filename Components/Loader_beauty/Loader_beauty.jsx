@@ -3,7 +3,14 @@ import styles from "./Loader_beauty.module.css";
 
 const Loader_beauty = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["loop"] + styles["cubes"]}>
+      <div className={styles["item"] + styles["cubes"]}></div>
+      <div className={styles["item"] + styles["cubes"]}></div>
+      <div className={styles["item"] + styles["cubes"]}></div>
+      <div className={styles["item"] + styles["cubes"]}></div>
+      <div className={styles["item"] + styles["cubes"]}></div>
+      <div className={styles["item"] + styles["cubes"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +25,14 @@ export default Loader_beauty;
 
         const Loader_beauty = () => (
          <div>
-          <div className="loader"></div>
+          <div className="loop cubes">
+    <div className="item cubes"></div>
+    <div className="item cubes"></div>
+    <div className="item cubes"></div>
+    <div className="item cubes"></div>
+    <div className="item cubes"></div>
+    <div className="item cubes"></div>
+</div>
         </div>
         );
 

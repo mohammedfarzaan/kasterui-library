@@ -1,64 +1,169 @@
 
-/* From Uiverse.io by MetaBlue2000  - Tags: button */
-.button {
-  cursor: pointer;
-  border-radius: 15px;
-  border: solid 3px #a86bdd;
-  width: 210px;
-  height: 75px;
-  transform: rotate3d(1, 1, 1, 335deg);
-  padding-left: 20px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #ffffff;
-  background: linear-gradient(#bf76f9, #9a48dd);
-  backdrop-filter: blur(2px, black);
-  box-shadow: -8px 7px 1px #865ba9;
-  transition: all 0.4s ease-in-out;
+/* From Uiverse.io by albertofanini-prog - Tags: button */
+.pulsa {
+  animation: pulsa 1.4s infinite;
+  min-width: 200px;
+  width: fit-content;
+  border-radius: 9999px;
+  /* overflow: hidden; */
 }
 
-.arrow {
-  padding: 5px;
-  width: 55px;
-  transition: all 0.4s ease-in-out;
+.cta {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: none;
+  border-radius: 9999px;
+  padding: 8px 16px;
+  color: white;
+  font-size: 15px;
+  background: linear-gradient(109.6deg, #090979 11.2%, #9006A1 53.7%, #090979 100.2%);
+  letter-spacing: 0.08em;
+  font-weight: 800;
+  position: relative;
 }
 
-.msg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.cta:active {
+  animation: pulsa-active .4s infinite;
 }
 
-.button:hover .arrow {
-  transform: translateX(5px);
+.star {
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  animation: pulsa-stella 1.8s infinite;
+  transition: all .8s ease-in-out;
 }
 
-.button:hover {
-  transform: translateX(10px);
+.star.a {
+  top: 8px;
+  left: 6px;
 }
 
-.button p span {
-  display: inline-block;
-  opacity: 1;
-  animation: slideDown 0.8s ease forwards calc(var(--i) * 0.03s);
+.star.b {
+  top: 2px;
+  left: 16px;
 }
-.button:hover p span {
-  opacity: 1;
-  animation: wave 0.5s ease forwards calc(var(--i) * 0.02s);
+
+.star.c {
+  top: 18px;
+  left: 8px;
 }
-@keyframes wave {
-  30% {
-    opacity: 1;
-    transform: translateY(12px) translateX(0) rotate(0);
+
+.star.d {
+  top: 14px;
+  left: 20px;
+}
+
+.star.e {
+  top: 30px;
+  left: 8px;
+}
+
+.star.f {
+  top: 24px;
+  left: 24px;
+}
+
+.star.g {
+  top: 10px;
+  left: 32px;
+}
+
+.pulsa:hover .star.a {
+  transform: translate3d(0px, 8px, 0);
+}
+
+.pulsa:hover .star.b {
+  transform: translate3d(-4px, 6px, 0);
+}
+
+.pulsa:hover .star.c {
+  transform: translate3d(14px, -8px, 0);
+}
+
+.pulsa:hover .star.d {
+  transform: translate3d(16px, -2px, 0);
+}
+
+.pulsa:hover .star.e {
+  transform: translate3d(58px, -20px, 0);
+}
+
+.pulsa:hover .star.f {
+  transform: translate3d(34px, 2px, 0);
+}
+
+.pulsa:hover .star.g {
+  transform: translate3d(10px, 16px, 0);
+}
+
+.rocket {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  z-index: -1;
+  transform: rotate(180deg);
+  transition: all .3s ease-in-out;
+}
+
+.pulsa:hover .rocket {
+  z-index: auto;
+  animation: muovi-razzo 1.8s linear;
+  transform: rotate(0deg);
+}
+
+@keyframes pulsa {
+  0% {
+    box-shadow: 0 0 0 0 #9006A1;
   }
-  50% {
-    opacity: 1;
-    transform: translateY(-3px) translateX(0) rotate(0);
-    color: var(--primary);
-  }
+
   100% {
-    opacity: 1;
-    transform: translateY(0) translateX(0) rotate(0);
+    box-shadow: 0 0 0 8px #fbb32f01;
   }
 }
 
+@keyframes pulsa-stella {
+  0% {
+    box-shadow: 0 0 0 0 #ffffff;
+  }
+
+  100% {
+    box-shadow: 0 0 0 4px #fbb32f01;
+  }
+}
+
+@keyframes muovi-razzo {
+  from {
+    transform: rotate(180deg);
+  }
+
+  25% {
+    transform: translate3d(40px, 32px, 0);
+  }
+
+  50% {
+    transform: translate3d(32px, -60px, 0);
+  }
+
+  75% {
+    transform: translate3d(0px, -60px, 0) rotate(0);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulsa-active {
+  0% {
+    box-shadow: 0 0 0 0 #9006A1;
+  }
+
+  100% {
+    box-shadow: 0 0 0 16px #fbb32f01;
+  }
+}

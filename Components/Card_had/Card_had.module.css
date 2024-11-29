@@ -1,0 +1,107 @@
+
+/* From Uiverse.io by Manishtmang - Tags: card */
+/* Style for the entire card */
+.card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 16px;
+  padding: 16px;
+  width: 300px;
+}
+
+/* Style for the card heading */
+.heading {
+  color: #444444;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Style for the card heading span */
+.heading span {
+  color: #7eb0ff;
+}
+
+/* Style for the card content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Style for the card items */
+.item {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* Style for the create item */
+.item--create {
+  background-color: #7eb0ff;
+  color: #ffffff;
+}
+
+/* Style for the create item svg */
+.item--create svg {
+  fill: #ffffff;
+}
+
+/* Style for the post item */
+.item--post {
+  background-color: #ffffff;
+  color: #444444;
+}
+
+/* Style for the post item svg */
+.item--post svg {
+  fill: #444444;
+}
+
+.item--inspire {
+  background-color: #ffffff;
+  color: #444444;
+}
+
+/* Style for the post item svg */
+.item--inspire svg {
+  fill: #444444;
+}
+
+/* Style for the item span */
+.item span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 16px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 0.5em;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #7eb0ff;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #5f9cff;
+}
+
+

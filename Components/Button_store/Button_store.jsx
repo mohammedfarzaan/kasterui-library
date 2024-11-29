@@ -3,9 +3,11 @@ import styles from "./Button_store.module.css";
 
 const Button_store = () => (
   <div>
-    <button className={styles["button"]} role="button">
-      Hover Me
-    </button>
+    <div className={styles["frame"]}>
+      <div className={styles["center"]}>
+        <button>Hover me</button>
+      </div>
+    </div>
   </div>
 );
 
@@ -20,7 +22,11 @@ export default Button_store;
 
         const Button_store = () => (
          <div>
-          <button className="button" role="button">Hover Me</button>
+          <div className="frame">
+  <div className="center">
+		<button>Hover me</button>
+  </div>
+</div>
         </div>
         );
 

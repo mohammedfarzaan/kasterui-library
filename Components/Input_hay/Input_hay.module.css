@@ -1,41 +1,56 @@
 
-/* From Uiverse.io by Maximinodotpy - Tags: input */
-.inputGroup {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 1em 0 1em 0;
-  max-width: 190px;
-  position: relative;
+/* From Uiverse.io by AmruthLP12  - Tags: icon, purple, black, input, dark, theme, html, css */
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.inputGroup input {
-  font-size: 100%;
-  padding: 0.8em;
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    #333,
+    #111
+  ); /* Dark gradient background */
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), 0 0 20px #8839ff; /* Glowing effect */
+  padding: 10px 15px;
+}
+
+.search-icon {
+  color: #fff; /* White color for the search icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
   outline: none;
-  border: 2px solid rgb(200, 200, 200);
-  background-color: transparent;
-  border-radius: 20px;
-  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
+  flex: 1;
+  min-width: 200px;
 }
 
-.inputGroup label {
-  font-size: 100%;
-  position: absolute;
-  left: 0;
-  padding: 0.8em;
-  margin-left: 0.5em;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  color: rgb(100, 100, 100);
+.search-bar input::placeholder {
+  color: #bbb; /* Lighter placeholder text color */
 }
 
-.inputGroup :is(input:focus, input:valid)~label {
-  transform: translateY(-50%) scale(.9);
-  margin: 0em;
-  margin-left: 1.3em;
-  padding: 0.4em;
-  background-color: #e8e8e8;
+.filter-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  cursor: pointer;
+  color: #fff; /* White color for the filter icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.inputGroup :is(input:focus, input:valid) {
-  border-color: rgb(150, 150, 200);
-}

@@ -3,7 +3,9 @@ import styles from "./Button_shade.module.css";
 
 const Button_shade = () => (
   <div>
-    <button>Button</button>
+    <button>
+      <div className={styles["arrow-up"]}></div>
+    </button>
   </div>
 );
 
@@ -19,7 +21,7 @@ export default Button_shade;
         const Button_shade = () => (
          <div>
           <button>
-    Button
+    <div className="arrow-up"></div>
 </button>
         </div>
         );

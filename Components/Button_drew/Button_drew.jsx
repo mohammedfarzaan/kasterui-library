@@ -3,9 +3,7 @@ import styles from "./Button_drew.module.css";
 
 const Button_drew = () => (
   <div>
-    <button className={styles["space-adventure-button"]}>
-      Join the Adventure
-    </button>
+    <button className={styles["btn"] + styles["draw-border"]}>Button</button>
   </div>
 );
 
@@ -20,7 +18,7 @@ export default Button_drew;
 
         const Button_drew = () => (
          <div>
-          <button className="space-adventure-button">Join the Adventure</button>
+          <button className="btn draw-border">Button</button>
         </div>
         );
 

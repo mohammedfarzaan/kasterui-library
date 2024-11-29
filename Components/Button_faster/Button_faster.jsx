@@ -3,9 +3,7 @@ import styles from "./Button_faster.module.css";
 
 const Button_faster = () => (
   <div>
-    <span>
-      <a href="#"></a>
-    </span>
+    <button className={styles["btn"]}>Hover Me!</button>
   </div>
 );
 
@@ -20,7 +18,8 @@ export default Button_faster;
 
         const Button_faster = () => (
          <div>
-          <span><a href="#"></a></span>
+          <button className="btn">Hover Me!
+</button>
         </div>
         );
 

@@ -3,16 +3,8 @@ import styles from "./Loader_loose.module.css";
 
 const Loader_loose = () => (
   <div>
-    <div className={styles["loader-1"]}>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
+    <div className={styles["spinner"]}>
+      <div className={styles["spinner1"]}></div>
     </div>
   </div>
 );
@@ -28,16 +20,9 @@ export default Loader_loose;
 
         const Loader_loose = () => (
          <div>
-          <div className="loader-1">
-<div className="dot"></div>
-<div className="dot"></div>
-<div className="dot"></div>
-<div className="dot"></div>
-<div className="dot"></div>
-<div className="dot"></div>
-<div className="dot"></div>
-<div className="dot"></div>
-<div className="dot"></div></div>
+          <div className="spinner">
+    <div className="spinner1"></div>
+</div>
         </div>
         );
 

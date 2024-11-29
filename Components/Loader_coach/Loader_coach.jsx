@@ -3,7 +3,15 @@ import styles from "./Loader_coach.module.css";
 
 const Loader_coach = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div id="page">
+      <div id="container">
+        <div id="ring"></div>
+        <div id="ring"></div>
+        <div id="ring"></div>
+        <div id="ring"></div>
+        <div id="h3">loading</div>
+      </div>
+    </div>
   </div>
 );
 
@@ -18,7 +26,15 @@ export default Loader_coach;
 
         const Loader_coach = () => (
          <div>
-          <div className="loader"></div>
+          <div id="page">
+        <div id="container">
+            <div id="ring"></div>
+            <div id="ring"></div>
+            <div id="ring"></div>
+            <div id="ring"></div>
+            <div id="h3">loading</div>
+        </div>
+</div>
         </div>
         );
 

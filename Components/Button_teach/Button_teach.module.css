@@ -1,47 +1,47 @@
 
-/* From Uiverse.io by mobinkakei - Tags: button */
-.btn {
-  width: 140px;
-  height: 50px;
-  background: linear-gradient(to top, #00154c, #12376e, #23487f);
-  color: #fff;
-  border-radius: 50px;
+/* From Uiverse.io by vinodjangid07 - Tags: button, search, neon, hover effect, explore */
+.button {
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: rgb(161, 255, 20);
+  border-radius: 30px;
+  color: rgb(19, 19, 19);
+  font-weight: 600;
   border: none;
-  outline: none;
-  cursor: pointer;
   position: relative;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
+  cursor: pointer;
+  transition-duration: .2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 8px;
+  transition-duration: .5s;
 }
 
-.btn span {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: top 0.5s;
+.svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
 }
 
-.btn-text-one {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+.bell path {
+  fill: rgb(19, 19, 19);
 }
 
-.btn-text-two {
-  position: absolute;
-  width: 100%;
-  top: 150%;
-  left: 0;
-  transform: translateY(-50%);
+.button:hover {
+  background-color: rgb(192, 255, 20);
+  transition-duration: .5s;
 }
 
-.btn:hover .btn-text-one {
-  top: -100%;
+.button:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
 }
 
-.btn:hover .btn-text-two {
-  top: 50%;
+.button:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
 }
+
 

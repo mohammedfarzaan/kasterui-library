@@ -3,13 +3,7 @@ import styles from "./Button_bean.module.css";
 
 const Button_bean = () => (
   <div>
-    <button className={styles["button"]}>
-      <span className={styles["top"]}>
-        <p>Explore More</p>
-        <p className={styles["before"]}>&nbsp;</p>
-      </span>
-      <span className={styles["bottom"]}> &nbsp; </span>
-    </button>
+    <button className={styles["box"]}>Button</button>
   </div>
 );
 
@@ -24,13 +18,9 @@ export default Button_bean;
 
         const Button_bean = () => (
          <div>
-          <button className="button">
-      <span className="top">
-        <p>Explore More</p>
-        <p className="before">&nbsp;</p>
-      </span>
-      <span className="bottom"> &nbsp; </span>
-    </button>
+          <button className="box">
+  Button
+</button>
         </div>
         );
 

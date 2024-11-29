@@ -3,11 +3,9 @@ import styles from "./Button_gave.module.css";
 
 const Button_gave = () => (
   <div>
-    <button className={styles["btn-31"]}>
-      <span className={styles["text-container"]}>
-        <span className={styles["text"]}>Button</span>
-      </span>
-    </button>
+    <span>
+      <a href="#"></a>
+    </span>
   </div>
 );
 
@@ -22,11 +20,7 @@ export default Button_gave;
 
         const Button_gave = () => (
          <div>
-          <button className="btn-31">
-  <span className="text-container">
-    <span className="text">Button</span>
-  </span>
-</button>
+          <span><a href="#"></a></span>
         </div>
         );
 

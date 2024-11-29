@@ -3,11 +3,7 @@ import styles from "./Loader_young.module.css";
 
 const Loader_young = () => (
   <div>
-    <div className={styles["div"]}>
-      <p id="h2">
-        Loading....<span id="lol"></span>
-      </p>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -22,9 +18,7 @@ export default Loader_young;
 
         const Loader_young = () => (
          <div>
-          <div className="div">
-  <p id="h2">Loading....<span id="lol"></span></p>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

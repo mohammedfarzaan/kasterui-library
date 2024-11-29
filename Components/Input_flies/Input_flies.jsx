@@ -3,49 +3,34 @@ import styles from "./Input_flies.module.css";
 
 const Input_flies = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["shadow-container"]}></div>
-      <label className={styles["search-bar"]} for="text">
-        <i className={styles["icon"]}>
-          <svg viewBox="0 0 512 512">
-            <path
-              d="M221.09 64a157.09 157.09 0 1 0 157.09 157.09A157.1 157.1 0 0 0 221.09 64Z"
-              strokeWidth="32"
-              stroke-miterlimit="10"
-              stroke="currentColor"
-              fill="none"
-            ></path>
-            <path
-              d="M338.29 338.29L448 448"
-              strokeWidth="32"
-              stroke-miterlimit="10"
-              strokeLinecap="round"
-              stroke="currentColor"
-              fill="none"
-            ></path>
-          </svg>
-        </i>
-        <input
-          placeholder="Search..."
-          className={styles["input"]}
-          name="text"
-          type="text"
-          id="text"
-        />
-        <button className={styles["icon"] + styles["filter"]} type="button">
-          <svg viewBox="0 0 24 24">
-            <path
-              color="currentColor"
-              d="M8.857 12.506C6.37 10.646 4.596 8.6 3.627 7.45c-.3-.356-.398-.617-.457-1.076c-.202-1.572-.303-2.358.158-2.866S4.604 3 6.234 3h11.532c1.63 0 2.445 0 2.906.507c.461.508.36 1.294.158 2.866c-.06.459-.158.72-.457 1.076c-.97 1.152-2.747 3.202-5.24 5.065a1.05 1.05 0 0 0-.402.747c-.247 2.731-.475 4.227-.617 4.983c-.229 1.222-1.96 1.957-2.888 2.612c-.552.39-1.222-.074-1.293-.678a196 196 0 0 1-.674-6.917a1.05 1.05 0 0 0-.402-.755"
-              strokeWidth="1.5"
-              strokeLinejoin="round"
-              strokeLinecap="round"
-              stroke="currentColor"
-              fill="none"
-            ></path>
-          </svg>
-        </button>
-      </label>
+    <div className={styles["input-container"]}>
+      <input
+        placeholder="Search something..."
+        className={styles["input"]}
+        name="text"
+        type="text"
+      />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        className={styles["icon"]}
+      >
+        <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
+        <g
+          strokeLinejoin="round"
+          strokeLinecap="round"
+          id="SVGRepo_tracerCarrier"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          {" "}
+          <rect fill="white"></rect>{" "}
+          <path
+            d="M7.25007 2.38782C8.54878 2.0992 10.1243 2 12 2C13.8757 2 15.4512 2.0992 16.7499 2.38782C18.06 2.67897 19.1488 3.176 19.9864 4.01358C20.824 4.85116 21.321 5.94002 21.6122 7.25007C21.9008 8.54878 22 10.1243 22 12C22 13.8757 21.9008 15.4512 21.6122 16.7499C21.321 18.06 20.824 19.1488 19.9864 19.9864C19.1488 20.824 18.06 21.321 16.7499 21.6122C15.4512 21.9008 13.8757 22 12 22C10.1243 22 8.54878 21.9008 7.25007 21.6122C5.94002 21.321 4.85116 20.824 4.01358 19.9864C3.176 19.1488 2.67897 18.06 2.38782 16.7499C2.0992 15.4512 2 13.8757 2 12C2 10.1243 2.0992 8.54878 2.38782 7.25007C2.67897 5.94002 3.176 4.85116 4.01358 4.01358C4.85116 3.176 5.94002 2.67897 7.25007 2.38782ZM9 11.5C9 10.1193 10.1193 9 11.5 9C12.8807 9 14 10.1193 14 11.5C14 12.8807 12.8807 14 11.5 14C10.1193 14 9 12.8807 9 11.5ZM11.5 7C9.01472 7 7 9.01472 7 11.5C7 13.9853 9.01472 16 11.5 16C12.3805 16 13.202 15.7471 13.8957 15.31L15.2929 16.7071C15.6834 17.0976 16.3166 17.0976 16.7071 16.7071C17.0976 16.3166 17.0976 15.6834 16.7071 15.2929L15.31 13.8957C15.7471 13.202 16 12.3805 16 11.5C16 9.01472 13.9853 7 11.5 7Z"
+            clipRule="evenodd"
+            fillRule="evenodd"
+          ></path>{" "}
+        </g>
+      </svg>
     </div>
   </div>
 );
@@ -61,50 +46,10 @@ export default Input_flies;
 
         const Input_flies = () => (
          <div>
-          <div className="container">
-  <div className="shadow-container"></div>
-  <label className="search-bar" for="text">
-    <i className="icon">
-      <svg viewBox="0 0 512 512">
-        <path
-          d="M221.09 64a157.09 157.09 0 1 0 157.09 157.09A157.1 157.1 0 0 0 221.09 64Z"
-          strokeWidth="32"
-          stroke-miterlimit="10"
-          stroke="currentColor"
-          fill="none"
-        ></path>
-        <path
-          d="M338.29 338.29L448 448"
-          strokeWidth="32"
-          stroke-miterlimit="10"
-          strokeLinecap="round"
-          stroke="currentColor"
-          fill="none"
-        ></path>
-      </svg>
-    </i>
-    <input
-      placeholder="Search..."
-      className="input"
-      name="text"
-      type="text"
-      id="text"
-    />
-    <button className="icon filter" type="button">
-      <svg viewBox="0 0 24 24">
-        <path
-          color="currentColor"
-          d="M8.857 12.506C6.37 10.646 4.596 8.6 3.627 7.45c-.3-.356-.398-.617-.457-1.076c-.202-1.572-.303-2.358.158-2.866S4.604 3 6.234 3h11.532c1.63 0 2.445 0 2.906.507c.461.508.36 1.294.158 2.866c-.06.459-.158.72-.457 1.076c-.97 1.152-2.747 3.202-5.24 5.065a1.05 1.05 0 0 0-.402.747c-.247 2.731-.475 4.227-.617 4.983c-.229 1.222-1.96 1.957-2.888 2.612c-.552.39-1.222-.074-1.293-.678a196 196 0 0 1-.674-6.917a1.05 1.05 0 0 0-.402-.755"
-          strokeWidth="1.5"
-          strokeLinejoin="round"
-          strokeLinecap="round"
-          stroke="currentColor"
-          fill="none"
-        ></path>
-      </svg>
-    </button>
-  </label>
-</div>
+          <div className="input-container">
+    <input placeholder="Search something..." className="input" name="text" type="text" />
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="icon"><g strokeWidth="0" id="SVGRepo_bgCarrier"></g><g strokeLinejoin="round" strokeLinecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <rect fill="white"></rect> <path d="M7.25007 2.38782C8.54878 2.0992 10.1243 2 12 2C13.8757 2 15.4512 2.0992 16.7499 2.38782C18.06 2.67897 19.1488 3.176 19.9864 4.01358C20.824 4.85116 21.321 5.94002 21.6122 7.25007C21.9008 8.54878 22 10.1243 22 12C22 13.8757 21.9008 15.4512 21.6122 16.7499C21.321 18.06 20.824 19.1488 19.9864 19.9864C19.1488 20.824 18.06 21.321 16.7499 21.6122C15.4512 21.9008 13.8757 22 12 22C10.1243 22 8.54878 21.9008 7.25007 21.6122C5.94002 21.321 4.85116 20.824 4.01358 19.9864C3.176 19.1488 2.67897 18.06 2.38782 16.7499C2.0992 15.4512 2 13.8757 2 12C2 10.1243 2.0992 8.54878 2.38782 7.25007C2.67897 5.94002 3.176 4.85116 4.01358 4.01358C4.85116 3.176 5.94002 2.67897 7.25007 2.38782ZM9 11.5C9 10.1193 10.1193 9 11.5 9C12.8807 9 14 10.1193 14 11.5C14 12.8807 12.8807 14 11.5 14C10.1193 14 9 12.8807 9 11.5ZM11.5 7C9.01472 7 7 9.01472 7 11.5C7 13.9853 9.01472 16 11.5 16C12.3805 16 13.202 15.7471 13.8957 15.31L15.2929 16.7071C15.6834 17.0976 16.3166 17.0976 16.7071 16.7071C17.0976 16.3166 17.0976 15.6834 16.7071 15.2929L15.31 13.8957C15.7471 13.202 16 12.3805 16 11.5C16 9.01472 13.9853 7 11.5 7Z" clipRule="evenodd" fillRule="evenodd"></path> </g></svg>
+  </div>
         </div>
         );
 

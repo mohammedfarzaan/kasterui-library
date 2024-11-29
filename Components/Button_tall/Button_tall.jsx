@@ -3,11 +3,7 @@ import styles from "./Button_tall.module.css";
 
 const Button_tall = () => (
   <div>
-    <button className={styles["button"]}>
-      <span className={styles["bracket"] + styles["left"]}>❴</span>
-      <span className={styles["text"]}>Code</span>
-      <span className={styles["bracket"] + styles["right"]}>❵</span>
-    </button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -23,9 +19,7 @@ export default Button_tall;
         const Button_tall = () => (
          <div>
           <button className="button">
-  <span className="bracket left">❴</span>
-  <span className="text">Code</span>
-  <span className="bracket right">❵</span>
+  Button
 </button>
         </div>
         );

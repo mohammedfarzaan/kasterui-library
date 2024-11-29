@@ -3,7 +3,9 @@ import styles from "./Button_snake.module.css";
 
 const Button_snake = () => (
   <div>
-    <button> Button</button>
+    <button className={styles["glow-on-hover"]} type="button">
+      HOVER ME, THEN CLICK ME!
+    </button>
   </div>
 );
 
@@ -18,8 +20,7 @@ export default Button_snake;
 
         const Button_snake = () => (
          <div>
-          <button> Button
-</button>
+          <button className="glow-on-hover" type="button">HOVER ME, THEN CLICK ME!</button>
         </div>
         );
 

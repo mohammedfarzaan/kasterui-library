@@ -3,12 +3,11 @@ import styles from "./Toggle_kept.module.css";
 
 const Toggle_kept = () => (
   <div>
-    <label className={styles["switch"]}>
-      <input type="checkbox" className={styles["cb"]} />
-      <span className={styles["toggle"]}>
-        <span className={styles["left"]}>OFF</span>
-        <span className={styles["right"]}>ON</span>
-      </span>
+    <input type="checkbox" id="checkbox" />
+    <label for="checkbox" className={styles["toggle"]}>
+      <div className={styles["bars"]} id="bar1"></div>
+      <div className={styles["bars"]} id="bar2"></div>
+      <div className={styles["bars"]} id="bar3"></div>
     </label>
   </div>
 );
@@ -24,13 +23,12 @@ export default Toggle_kept;
 
         const Toggle_kept = () => (
          <div>
-          <label className="switch">
-  <input type="checkbox" className="cb" />
-  <span className="toggle">
-    <span className="left">OFF</span>  
-    <span className="right">ON</span>  
-  </span>
-</label>
+          <input type="checkbox" id="checkbox" />
+    <label for="checkbox" className="toggle">
+        <div className="bars" id="bar1"></div>
+        <div className="bars" id="bar2"></div>
+        <div className="bars" id="bar3"></div>
+    </label>
         </div>
         );
 

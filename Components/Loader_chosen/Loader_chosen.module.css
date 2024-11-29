@@ -1,132 +1,30 @@
 
-/* From Uiverse.io by JkHuger - Tags: loader */
-#b0 {
-  animation: b0 4s infinite ease;
-  transform-origin: 250px 250px;
+/* From Uiverse.io by escannord  - Tags: animation, loader, spinner */
+.loader {
+  position: relative;
+}
+.load {
+  display: inline-block;
+  height: calc(var(--i) * 15);
+  width: calc(var(--i) * 15);
+  background-color: transparent;
+  position: absolute;
+  border: 5px rgb(47, 0, 255) solid;
+  border-top: none;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: turn 2s infinite linear;
 }
 
-#b1 {
-  animation: b1 4s infinite ease;
+.load:nth-child(odd) {
+  animation: turn 2s infinite linear reverse;
 }
 
-#b2 {
-  animation: b2 4s infinite ease;
-}
-
-#b3 {
-  animation: b3 4s infinite ease;
-}
-
-#b4 {
-  animation: b4 4s infinite ease;
-}
-
-@keyframes b0 {
-  0% {
-    transform: rotate(0);
-  }
-
-  25% {
-    transform: rotate(-90deg);
-  }
-
-  50% {
-    transform: rotate(-180deg);
-  }
-
-  75% {
-    transform: rotate(-270deg);
-  }
-
+@keyframes turn {
   100% {
-    transform: rotate(-360deg);
+    transform: translate(-50%, -50%) rotateZ(360deg);
   }
 }
 
-@keyframes b1 {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  25% {
-    transform: translate(0, 355px);
-  }
-
-  50% {
-    transform: translate(355px, 355px);
-  }
-
-  75% {
-    transform: translate(355px, 0);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes b2 {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  25% {
-    transform: translate(-355px, 0);
-  }
-
-  50% {
-    transform: translate(-355px, 355px);
-  }
-
-  75% {
-    transform: translate(0, 355px);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes b3 {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  25% {
-    transform: translate(0, -355px);
-  }
-
-  50% {
-    transform: translate(-355px, -355px);
-  }
-
-  75% {
-    transform: translate(-355px, 0);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes b4 {
-  0% {
-    transform: translate(0, 0);
-  }
-
-  25% {
-    transform: translate(355px, 0);
-  }
-
-  50% {
-    transform: translate(355px, -355px);
-  }
-
-  75% {
-    transform: translate(0, -355px);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}

@@ -3,7 +3,7 @@ import styles from "./Button_gather.module.css";
 
 const Button_gather = () => (
   <div>
-    <button>Button</button>
+    <button className={styles["button"]}>Click Here</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_gather;
 
         const Button_gather = () => (
          <div>
-          <button>
-  Button
-</button>
+          <button className="button">Click Here</button>
         </div>
         );
 

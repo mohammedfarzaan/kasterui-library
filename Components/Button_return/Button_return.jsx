@@ -3,29 +3,20 @@ import styles from "./Button_return.module.css";
 
 const Button_return = () => (
   <div>
-    <div className={styles["button-group"]}>
-      <div className={styles["button-container"]}>
-        <a title="Go to the home page" href="#">
-          <svg>
-            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-          </svg>
-        </a>
-        <a title="Go to post list page" href="#">
-          <svg>
-            <path d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z"></path>
-            <path d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z"></path>
-          </svg>
-        </a>
-        <a title="Go to about me page" href="#">
-          <svg>
-            <path
-              fillRule="evenodd"
-              d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-            ></path>
-          </svg>
-        </a>
-      </div>
-    </div>
+    <button className={styles["Download-button"]}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="16"
+        width="20"
+        viewBox="0 0 640 512"
+      >
+        <path
+          d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"
+          fill="white"
+        ></path>
+      </svg>
+      <span>Download</span>
+    </button>
   </div>
 );
 
@@ -40,35 +31,20 @@ export default Button_return;
 
         const Button_return = () => (
          <div>
-          <div className="button-group">
-  <div className="button-container">
-    <a title="Go to the home page" href="#">
-      <svg>
-        <path
-          d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
-        ></path>
-      </svg>
-    </a>
-    <a title="Go to post list page" href="#">
-      <svg>
-        <path
-          d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z"
-        ></path>
-        <path
-          d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z"
-        ></path>
-      </svg>
-    </a>
-    <a title="Go to about me page" href="#">
-      <svg>
-        <path
-          fillRule="evenodd"
-          d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-        ></path>
-      </svg>
-    </a>
-  </div>
-</div>
+          <button className="Download-button">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="16"
+    width="20"
+    viewBox="0 0 640 512"
+  >
+    <path
+      d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"
+      fill="white"
+    ></path>
+  </svg>
+  <span>Download</span>
+</button>
         </div>
         );
 

@@ -3,10 +3,7 @@ import styles from "./Button_over.module.css";
 
 const Button_over = () => (
   <div>
-    <button className={styles["btn"] + styles["spacex-btn"]}>
-      <span>Launch Rocket</span>
-      <div className={styles["btn-bg"]}></div>
-    </button>
+    <button className={styles["Btn"]}>Jelly Button</button>
   </div>
 );
 
@@ -21,9 +18,8 @@ export default Button_over;
 
         const Button_over = () => (
          <div>
-          <button className="btn spacex-btn">
-  <span>Launch Rocket</span>
-  <div className="btn-bg"></div>
+          <button className="Btn">
+  Jelly Button
 </button>
         </div>
         );

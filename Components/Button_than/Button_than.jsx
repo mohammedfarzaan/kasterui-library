@@ -3,10 +3,7 @@ import styles from "./Button_than.module.css";
 
 const Button_than = () => (
   <div>
-    <button className={styles["icon-btn"] + styles["add-btn"]}>
-      <div className={styles["add-icon"]}></div>
-      <div className={styles["btn-txt"]}>Add Photo</div>
-    </button>
+    <button>Hover Me</button>
   </div>
 );
 
@@ -21,9 +18,8 @@ export default Button_than;
 
         const Button_than = () => (
          <div>
-          <button className="icon-btn add-btn">
-    <div className="add-icon"></div>
-    <div className="btn-txt">Add Photo</div>
+          <button>
+    Hover Me
 </button>
         </div>
         );

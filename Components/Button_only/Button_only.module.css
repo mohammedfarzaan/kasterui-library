@@ -1,53 +1,29 @@
 
-/* From Uiverse.io by Cobp  - Tags: button */
+/* From Uiverse.io by andrew-demchenk0 - Tags: animation, login, button, google, round */
 .button {
-  position: relative;
-  color: white;
-  background-image: linear-gradient(0deg, #8a38cd 0%, #f3b0ff 100%);
-  padding: 0.1rem;
-  border: none;
-  border-radius: 0.75rem;
+  --bg-color: #fff;
+  --main-color: #323232;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 25px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  transform: rotate(-15deg);
+  align-items: center;
+  transition: all 0.2s;
   cursor: pointer;
-  box-shadow:
-    -3px 3px 0px 1px rgb(76, 6, 123),
-    -4px 4px 4px 1px rgb(76, 6, 123),
-    -12px 12px 12px 4px rgb(63, 19, 92, 0.5),
-    -18px 18px 16px 8px rgb(63, 19, 92, 0.1);
-  gap: 0.4rem;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  transform-origin: left;
-}
-.bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: larger;
-  padding: 1rem;
-  gap: 0.4rem;
-  border-radius: 0.65rem;
-  background-color: #bd76f6;
-  box-shadow:
-    inset 3px -4px 8px rgb(119, 36, 185, 0.5),
-    inset 0px -2px 2px rgb(119, 36, 185, 0.5);
-  transition: all 0.3s ease;
-}
-.button:hover {
-  transform: rotate(0deg);
-  box-shadow:
-    0px 6px 0px rgb(76, 6, 123),
-    0px 8px 4px rgb(76, 6, 123);
-}
-.button:active {
-  transform: translateY(4px);
-  box-shadow: 0px 4px 4px rgb(76, 6, 123);
-}
-.button:active .bg {
-  background-color: #9c5fce;
 }
 
+.button:active {
+  box-shadow: 0px 0px var(--main-color);
+  transform: translate(3px, 3px);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--main-color);
+}

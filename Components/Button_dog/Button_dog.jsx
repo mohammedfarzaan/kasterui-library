@@ -3,7 +3,9 @@ import styles from "./Button_dog.module.css";
 
 const Button_dog = () => (
   <div>
-    <button> MacOS Button</button>
+    <button data-label="Register" className={styles["rainbow-hover"]}>
+      <span className={styles["sp"]}>Register</span>
+    </button>
   </div>
 );
 
@@ -18,7 +20,8 @@ export default Button_dog;
 
         const Button_dog = () => (
          <div>
-          <button> MacOS Button
+          <button data-label="Register" className="rainbow-hover">
+  <span className="sp">Register</span>
 </button>
         </div>
         );

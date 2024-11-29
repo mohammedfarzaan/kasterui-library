@@ -3,9 +3,9 @@ import styles from "./Button_place.module.css";
 
 const Button_place = () => (
   <div>
-    <button>
-      {" "}
-      <span>LIKE</span>
+    <button className={styles["btn"] + styles["btn-primary"]}>
+      <span className={styles["btn-txt"]}>Get started</span>
+      <kbd className={styles["btn-kbd"]}>G</kbd>
     </button>
   </div>
 );
@@ -21,7 +21,10 @@ export default Button_place;
 
         const Button_place = () => (
          <div>
-          <button> <span>LIKE</span></button>
+          <button className="btn btn-primary">
+  <span className="btn-txt">Get started</span>
+  <kbd className="btn-kbd">G</kbd>
+</button>
         </div>
         );
 

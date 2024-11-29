@@ -3,7 +3,7 @@ import styles from "./Button_fifth.module.css";
 
 const Button_fifth = () => (
   <div>
-    <button className={styles["moves-button"]}>Hover me</button>
+    <button className={styles["button"]}>Click me</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_fifth;
 
         const Button_fifth = () => (
          <div>
-          <button className="moves-button">Hover me</button>
+          <button className="button">
+  Click me
+</button>
         </div>
         );
 

@@ -3,8 +3,8 @@ import styles from "./Button_peace.module.css";
 
 const Button_peace = () => (
   <div>
-    <button className={styles["btn"]}>
-      <span className={styles["text"]}>Button</span>
+    <button className={styles["button"]}>
+      <span></span>Bouton
     </button>
   </div>
 );
@@ -20,9 +20,7 @@ export default Button_peace;
 
         const Button_peace = () => (
          <div>
-          <button className="btn">
-  <span className="text">Button</span>
-</button>
+          <button className="button"><span></span>Bouton</button>
         </div>
         );
 

@@ -3,10 +3,7 @@ import styles from "./Loader_porch.module.css";
 
 const Loader_porch = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["circle"] + styles["outer"]}></div>
-      <div className={styles["circle"] + styles["inner"]}></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -21,10 +18,7 @@ export default Loader_porch;
 
         const Loader_porch = () => (
          <div>
-          <div className="loader">
-  <div className="circle outer"></div>
-  <div className="circle inner"></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

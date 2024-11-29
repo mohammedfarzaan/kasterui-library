@@ -1,42 +1,62 @@
 
-/* From Uiverse.io by omar-alghaish - Tags: button */
-button {
+/* From Uiverse.io by Sameer2244 - Tags: button */
+.btn-container {
+  width: fit-content;
+  height: fit-content;
   position: relative;
-  width: 150px;
-  height: 50px;
-  box-shadow: 0 5px 25px rgba(0, 0,0, .25);
-  border: none;
 }
 
-button span {
+.svg {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  background: #002faf;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 17px;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%,-50%);
+  transition: 0.5s;
 }
 
-button span:nth-child(2) {
-  background: #fff;
-  color: #002ba0;
-  overflow: hidden;
-  z-index: 2;
-  transition: .5s;
-  clip-path: polygon(50% 0%, 100% 0%,100% 100%,50% 100%,50% 53%);
+.btn {
+  background-color: rgb(66, 125, 194);
+  z-index: 10;
+  color: white;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
-button span:nth-child(2):hover {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%, 0 50%);
+.btn-container:hover {
+  box-shadow: rgba(66, 125, 194, 0.8) 0px 0px 54px;
 }
 
-button span:nth-child(1):hover ~ span:nth-child(2) {
-  clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%, 100%50%);
+.btn:hover {
+  outline: rgb(66, 125, 194) solid 2px;
+  background-color: #212121;
 }
+
+.btn-container:hover > .svg-1 {
+  transform: translate(130%,50%);
+}
+
+.btn-container:hover > .svg-2 {
+  transform: translate(-120%,-150%) rotate(30deg);
+}
+
+.btn-container:hover > .svg-3 {
+  transform: translate(60%,-150%) rotate(-45deg);
+}
+
+.btn-container:hover > .svg-4 {
+  transform: translate(-280%,0%) rotate(30deg);
+}
+
+.btn-container:hover > .svg-5 {
+  transform: translate(-80%,60%) rotate(-45deg);
+}
+
+.btn:active {
+  transform: scale(1.05);
+}
+

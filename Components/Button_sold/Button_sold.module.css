@@ -1,39 +1,50 @@
 
-/* From Uiverse.io by nikk7007 - Tags: button */
-button {
- padding: 0.8em 1.8em;
- border: 2px solid #17C3B2;
- position: relative;
- overflow: hidden;
- background-color: transparent;
- text-align: center;
- text-transform: uppercase;
- font-size: 16px;
- transition: .3s;
- z-index: 1;
- font-family: inherit;
- color: #17C3B2;
+/* From Uiverse.io by joe-watson-sbf - Tags: gradient, button, hover, shop */
+.btn {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 8px;
+  border-radius: 30px;
+  border: none;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-button::before {
- content: '';
- width: 0;
- height: 300%;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%) rotate(45deg);
- background: #17C3B2;
- transition: .5s ease;
- display: block;
- z-index: -1;
+.btn > * {
+  display: inline-block;
+  transition: all ease-in-out .5s;
 }
 
-button:hover::before {
- width: 105%;
+.btn__visible {
+  padding: 1.2rem 3rem;
+  text-align: center;
 }
 
-button:hover {
- color: #111;
+.btn__invisible {
+  width: 100%;
+  position: absolute;
+  padding: 1.2rem 0;
+  left: 0;
+  top: -100%;
+}
+
+.btn:hover {
+  background-image: linear-gradient(160deg, #f093fb 0%, #f5576c 100%);
+}
+
+.btn:hover .btn__visible {
+  transform: translateY(100%);
+}
+
+.btn:hover .btn__invisible {
+  top: 0;
+}
+
+.btn:focus {
+  outline: none;
 }
 

@@ -1,40 +1,125 @@
 
-/* From Uiverse.io by omar-alghaish - Tags: loader */
-.loading {
-  background-color: rgba(255, 0, 0, 0);
-  align-items: center;
-  justify-content: center;
-  display: flex;
+/* From Uiverse.io by alexruix - Tags: loader */
+.loader {
+  width: 80px;
+  height: 50px;
+  position: relative;
 }
 
-.loading div {
-  background-color: rgb(255, 217, 0);
-  width: 20px;
-  height: 20px;
-  margin: 20px;
+.loader-text {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  color: #C8B6FF;
+  animation: text_713 3.5s ease both infinite;
+  font-size: .8rem;
+  letter-spacing: 1px;
+}
+
+.load {
+  background-color: #9A79FF;
   border-radius: 50px;
-  animation-name: load912355;
-  animation-duration: .9s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  text-align: center;
-  justify-content: center;
+  display: block;
+  height: 16px;
+  width: 16px;
+  bottom: 0;
+  position: absolute;
+  transform: translateX(64px);
+  animation: loading_713 3.5s ease both infinite;
 }
 
-.loading .a {
-  animation-delay: .3s;
+.load::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #D1C2FF;
+  border-radius: inherit;
+  animation: loading2_713 3.5s ease both infinite;
 }
 
-.loading .u {
-  animation-delay: .6s;
-}
-
-@keyframes load912355 {
+@keyframes text_713 {
   0% {
-    transform: translateY(50px) scale(1);
+    letter-spacing: 1px;
+    transform: translateX(0px);
+  }
+
+  40% {
+    letter-spacing: 2px;
+    transform: translateX(26px);
+  }
+
+  80% {
+    letter-spacing: 1px;
+    transform: translateX(32px);
+  }
+
+  90% {
+    letter-spacing: 2px;
+    transform: translateX(0px);
   }
 
   100% {
-    transform: translateY(10px) scale(1.8) rotate(360deg);
+    letter-spacing: 1px;
+    transform: translateX(0px);
   }
 }
+
+@keyframes loading_713 {
+  0% {
+    width: 16px;
+    transform: translateX(0px);
+  }
+
+  40% {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  80% {
+    width: 16px;
+    transform: translateX(64px);
+  }
+
+  90% {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  100% {
+    width: 16px;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes loading2_713 {
+  0% {
+    transform: translateX(0px);
+    width: 16px;
+  }
+
+  40% {
+    transform: translateX(0%);
+    width: 80%;
+  }
+
+  80% {
+    width: 100%;
+    transform: translateX(0px);
+  }
+
+  90% {
+    width: 80%;
+    transform: translateX(15px);
+  }
+
+  100% {
+    transform: translateX(0px);
+    width: 16px;
+  }
+}
+ 
+ 
+
+

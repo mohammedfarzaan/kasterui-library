@@ -3,10 +3,10 @@ import styles from "./Toggle_below.module.css";
 
 const Toggle_below = () => (
   <div>
-    <div className={styles["checkbox"]}>
-      <input id="cbx" type="checkbox" />
-      <label className={styles["toggle"]} for="cbx">
-        <span></span>
+    <div className={styles["toggle-switch"]}>
+      <label className={styles["switch-label"]}>
+        <input type="checkbox" className={styles["checkbox"]} />
+        <span className={styles["slider"]}></span>
       </label>
     </div>
   </div>
@@ -23,9 +23,11 @@ export default Toggle_below;
 
         const Toggle_below = () => (
          <div>
-          <div className="checkbox">
-  <input id="cbx" type="checkbox" />
-  <label className="toggle" for="cbx"><span></span></label>
+          <div className="toggle-switch">
+  <label className="switch-label">
+    <input type="checkbox" className="checkbox" />
+    <span className="slider"></span>
+  </label>
 </div>
         </div>
         );

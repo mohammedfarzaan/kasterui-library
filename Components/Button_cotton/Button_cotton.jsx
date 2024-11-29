@@ -3,7 +3,7 @@ import styles from "./Button_cotton.module.css";
 
 const Button_cotton = () => (
   <div>
-    <button>BUTTON</button>
+    <button>All products</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_cotton;
 
         const Button_cotton = () => (
          <div>
-          <button>BUTTON</button>
+          <button>
+    All products
+</button>
         </div>
         );
 

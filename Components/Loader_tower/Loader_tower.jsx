@@ -3,7 +3,7 @@ import styles from "./Loader_tower.module.css";
 
 const Loader_tower = () => (
   <div>
-    <div className={styles["blob"]}></div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Loader_tower;
 
         const Loader_tower = () => (
          <div>
-          <div className="blob"></div>
+          <div className="loader"></div>
         </div>
         );
 

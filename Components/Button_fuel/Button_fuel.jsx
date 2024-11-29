@@ -3,23 +3,9 @@ import styles from "./Button_fuel.module.css";
 
 const Button_fuel = () => (
   <div>
-    <button alt="BECOME A MEMBER">
-      <i>B</i>
-      <i>E</i>
-      <i>C</i>
-      <i>O</i>
-      <i>M</i>
-      <i>E</i>
-      <i>&nbsp;</i>
-      <i>A</i>
-      <i>&nbsp;</i>
-      <i>M</i>
-      <i>E</i>
-      <i>M</i>
-      <i>B</i>
-      <i>E</i>
-      <i>R</i>
-    </button>
+    <div className={styles["button"]}>
+      Button<span className={styles["button-border"]}></span>
+    </div>
   </div>
 );
 
@@ -34,23 +20,9 @@ export default Button_fuel;
 
         const Button_fuel = () => (
          <div>
-          <button alt="BECOME A MEMBER">
-  <i>B</i>
-  <i>E</i>
-  <i>C</i>
-  <i>O</i>
-  <i>M</i>
-  <i>E</i>
-  <i>&nbsp;</i>
-  <i>A</i>
-  <i>&nbsp;</i>
-  <i>M</i>
-  <i>E</i>
-  <i>M</i>
-  <i>B</i>
-  <i>E</i>
-  <i>R</i>
-</button>
+          <div className="button">
+  Button<span className="button-border"></span>
+</div>
         </div>
         );
 

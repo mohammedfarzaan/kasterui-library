@@ -3,7 +3,15 @@ import styles from "./Loader_brush.module.css";
 
 const Loader_brush = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["container"]}>
+      <div className={styles["ball"]}></div>
+      <div className={styles["ball"]}></div>
+      <div className={styles["ball"]}></div>
+      <div className={styles["ball"]}></div>
+      <div className={styles["ball"]}></div>
+      <div className={styles["ball"]}></div>
+      <div className={styles["ball"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +26,15 @@ export default Loader_brush;
 
         const Loader_brush = () => (
          <div>
-          <div className="loader"></div>
+          <div className="container">
+  <div className="ball"></div>
+  <div className="ball"></div>
+  <div className="ball"></div>
+  <div className="ball"></div>
+  <div className="ball"></div>
+  <div className="ball"></div>
+  <div className="ball"></div>
+</div>
         </div>
         );
 

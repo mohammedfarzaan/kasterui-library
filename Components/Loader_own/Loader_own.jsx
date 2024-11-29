@@ -3,12 +3,13 @@ import styles from "./Loader_own.module.css";
 
 const Loader_own = () => (
   <div>
-    <div className={styles["loading"]}>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+    <div className={styles["container"]}>
+      <div className={styles["preloader"]}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div className={styles["shadow"]}></div>
     </div>
   </div>
 );
@@ -24,12 +25,13 @@ export default Loader_own;
 
         const Loader_own = () => (
          <div>
-          <div className="loading">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
+          <div className="container">
+  <div className="preloader">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div className="shadow"></div>
 </div>
         </div>
         );

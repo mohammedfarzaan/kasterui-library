@@ -3,19 +3,22 @@ import styles from "./Loader_whose.module.css";
 
 const Loader_whose = () => (
   <div>
-    <div className={styles["loader"]}>
-      <p className={styles["text"]}>
-        <span className={styles["letter"] + styles["letter1"]}>L</span>
-        <span className={styles["letter"] + styles["letter2"]}>o</span>
-        <span className={styles["letter"] + styles["letter3"]}>a</span>
-        <span className={styles["letter"] + styles["letter4"]}>d</span>
-        <span className={styles["letter"] + styles["letter5"]}>i</span>
-        <span className={styles["letter"] + styles["letter6"]}>n</span>
-        <span className={styles["letter"] + styles["letter7"]}>g</span>
-        <span className={styles["letter"] + styles["letter8"]}>.</span>
-        <span className={styles["letter"] + styles["letter9"]}>.</span>
-        <span className={styles["letter"] + styles["letter10"]}>.</span>
-      </p>
+    <div className={styles["loading"]}>
+      <span className={styles["l"]}>L</span>
+      <span className={styles["o"]}>o</span>
+      <span className={styles["a"]}>a</span>
+      <span className={styles["d"]}>d</span>
+      <span className={styles["i"]}>i</span>
+      <span className={styles["n"]}>n</span>
+      <span className={styles["g"]}>g</span>
+      <span className={styles["d1"]}>.</span>
+      <span className={styles["d2"]}>.</span>
+      <div className={styles["load"]}>
+        <div className={styles["progress"]}></div>
+        <div className={styles["progress"]}></div>
+        <div className={styles["progress"]}></div>
+        <div className={styles["progress"]}></div>
+      </div>
     </div>
   </div>
 );
@@ -31,19 +34,22 @@ export default Loader_whose;
 
         const Loader_whose = () => (
          <div>
-          <div className="loader">
-  <p className="text">
-  <span className="letter letter1">L</span>
-  <span className="letter letter2">o</span>
-  <span className="letter letter3">a</span>
-  <span className="letter letter4">d</span>
-  <span className="letter letter5">i</span>
-  <span className="letter letter6">n</span>
-  <span className="letter letter7">g</span>
-  <span className="letter letter8">.</span>
-  <span className="letter letter9">.</span>
-  <span className="letter letter10">.</span>
-  </p>
+          <div className="loading">
+<span className="l">L</span>
+<span className="o">o</span>
+<span className="a">a</span>
+<span className="d">d</span>
+<span className="i">i</span>
+<span className="n">n</span>
+<span className="g">g</span>
+<span className="d1">.</span>
+<span className="d2">.</span>
+<div className="load">
+    <div className="progress"></div>
+    <div className="progress"></div>
+    <div className="progress"></div>
+    <div className="progress"></div>
+</div>
 </div>
         </div>
         );

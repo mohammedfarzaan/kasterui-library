@@ -3,10 +3,12 @@ import styles from "./Toggle_hello.module.css";
 
 const Toggle_hello = () => (
   <div>
-    <label className={styles["switch"]}>
-      <input type="checkbox" />
-      <span className={styles["slider"]}></span>
-    </label>
+    <input
+      value="is_hot"
+      name="temperature"
+      type="checkbox"
+      className={styles["ch"]}
+    />
   </div>
 );
 
@@ -21,10 +23,7 @@ export default Toggle_hello;
 
         const Toggle_hello = () => (
          <div>
-          <label className="switch">
-  <input type="checkbox" />
-  <span className="slider"></span>
-</label>
+          <input value="is_hot" name="temperature" type="checkbox" className="ch" />
         </div>
         );
 

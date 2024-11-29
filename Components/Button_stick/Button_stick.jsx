@@ -3,12 +3,13 @@ import styles from "./Button_stick.module.css";
 
 const Button_stick = () => (
   <div>
-    <button className={styles["bin"]}>🗑</button>
-    <div className={styles["div"]}>
-      <small>
-        <i></i>
-      </small>
-    </div>
+    <a href="#" className={styles["button"]}>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Button
+    </a>
   </div>
 );
 
@@ -23,12 +24,13 @@ export default Button_stick;
 
         const Button_stick = () => (
          <div>
-          <button className="bin">🗑</button>
-<div className="div">
-  <small>
-    <i></i>
-  </small>
-</div>
+          <a href="#" className="button">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  Button
+</a>
         </div>
         );
 

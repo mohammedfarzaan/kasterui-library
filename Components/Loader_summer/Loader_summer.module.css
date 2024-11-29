@@ -1,65 +1,84 @@
 
-/* From Uiverse.io by JaydipPrajapati1910 - Tags: animation, loading, loader, animated, circle loader, loader circle */
-.spinner {
-  position: absolute;
-  width: 128px;
-  height: 128px;
-  top: calc(50% - 64px);
-  left: calc(50% - 64px);
-  transform: perspective(206px) rotateX(45deg);
+/* From Uiverse.io by mobinkakei - Tags: loader */
+.loader-3 {
+  width: 10em;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.outer {
-  box-sizing: border-box;
-  animation: spin 3s linear infinite;
+.circle {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle:nth-child(1) {
+  background-color: #90be6d;
+}
+
+.circle:nth-child(2) {
+  background-color: #f9c74f;
+}
+
+.circle:nth-child(3) {
+  background-color: #f8961e;
+}
+
+.circle:nth-child(4) {
+  background-color: #f3722c;
+}
+
+.circle:nth-child(5) {
+  background-color: #f94346;
+}
+
+.circle::before {
+  content: "";
+  width: 100%;
   height: 100%;
-}
-
-.inner {
   position: absolute;
   border-radius: 50%;
-  width: 64px;
-  height: 64px;
+  opacity: 0.5;
+  animation: animateLoader38 2s ease-out infinite;
 }
 
-.tl {
-  top: 0;
-  left: 0;
-  border-top: 8px solid red;
-  border-left: 10px solid red;
-  animation: spin 1s ease-in-out infinite;
+.circle:nth-child(1)::before {
+  background-color: #90be6d;
 }
 
-.tr {
-  top: 0;
-  right: 0;
-  border-top: 8px solid #0575E6;
-  border-right: 10px solid #0575E6;
-  animation: spin 1s ease-in-out infinite;
+.circle:nth-child(2)::before {
+  background-color: #f9c74f;
+  animation-delay: 0.2s;
 }
 
-.br {
-  bottom: 0;
-  right: 0;
-  border-bottom: 8px solid  #00F260;
-  border-right: 10px solid  #00F260;
-  animation: spin 1s ease-in-out infinite;
+.circle:nth-child(3)::before {
+  background-color: #f8961e;
+  animation-delay: 0.4s;
 }
 
-.bl {
-  bottom: 0;
-  left: 0;
-  border-bottom: 8px solid  #e9e93e;
-  border-left: 10x solid #e9e93e;
-  animation: spin 1s ease-in-out infinite;
+.circle:nth-child(4)::before {
+  background-color: #f3722c;
+  animation-delay: 0.6s;
 }
 
-@keyframes spin {
+.circle:nth-child(5)::before {
+  background-color: #f94346;
+  animation-delay: 0.8s;
+}
+
+@keyframes animateLoader38 {
   0% {
-    transform: rotate(0deg);
+    transform: scale(1);
   }
 
+  50%,
+  75% {
+    transform: scale(2.5);
+  }
+
+  80%,
   100% {
-    transform: rotate(360deg);
+    opacity: 0;
   }
 }

@@ -3,7 +3,9 @@ import styles from "./Button_horn.module.css";
 
 const Button_horn = () => (
   <div>
-    <button className={styles["btn-space"] + styles["space"]}>Button</button>
+    <button>
+      <span>Uiverse</span>
+    </button>
   </div>
 );
 
@@ -18,8 +20,8 @@ export default Button_horn;
 
         const Button_horn = () => (
          <div>
-          <button className="btn-space space">
-  Button
+          <button>
+  <span>Uiverse</span>
 </button>
         </div>
         );

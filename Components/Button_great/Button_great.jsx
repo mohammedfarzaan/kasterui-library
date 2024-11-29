@@ -1,39 +1,24 @@
 import React from "react";
-import styles from "./Button_great.module.css";
 
 const Button_great = () => (
   <div>
-    <label className={styles["menuButton"]} for="check">
-      <input type="checkbox" id="check" />
-      <span className={styles["top"]}></span>
-      <span className={styles["mid"]}></span>
-      <span className={styles["bot"]}></span>
-    </label>
+    <button
+      className="relative border-2 border-black group hover:border-green-500 w-12 h-12 duration-500 overflow-hidden"
+      type="button"
+    >
+      <p className="font-Manrope text-3xl h-full w-full flex items-center justify-center text-black duration-500 relative z-10 group-hover:scale-0">
+        ×
+      </p>
+      <span className="absolute w-full h-full bg-green-500 rotate-45 group-hover:top-9 duration-500 top-12 left-0"></span>
+      <span className="absolute w-full h-full bg-green-500 rotate-45 top-0 group-hover:left-9 duration-500 left-12"></span>
+      <span className="absolute w-full h-full bg-green-500 rotate-45 top-0 group-hover:right-9 duration-500 right-12"></span>
+      <span className="absolute w-full h-full bg-green-500 rotate-45 group-hover:bottom-9 duration-500 bottom-12 right-0"></span>
+    </button>
   </div>
 );
 
 export default Button_great;
-{
-  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Button_great = () => (
-         <div>
-          <label className="menuButton" for="check">
-    <input type="checkbox" id="check" />
-    <span className="top"></span>
-    <span className="mid"></span>
-    <span className="bot"></span>
-</label>
-        </div>
-        );
-
-        export default Button_great;
-        
-        
-         */
+{
+  /* */
 }

@@ -1,61 +1,54 @@
 
-/* From Uiverse.io by ChaudaryHammad - Tags: neumorphism, loader, spinner, circle loader, spin, css, cool loader, 3d loader */
+/* From Uiverse.io by mrhyddenn - Tags: loader */
 .loader {
-  perspective: 800px;
-}
-
-.cube {
-  width: 40px;
-  height: 40px;
   position: relative;
-  transform-style: preserve-3d;
-  animation: spin 3s linear infinite;
+  transform: scale(2);
+  border-radius: 50%;
+  border: 1px solid;
+  width: 30px;
+  height: 30px;
+  color: white;
 }
 
-.face {
-  width: 40px;
-  height: 40px;
+.loader::after {
   position: absolute;
-  opacity: 0.8;
+  width: 0px;
+  height: 10px;
+  display: block;
+  border-left: 1px solid #fff;
+  content: '';
+  left: 14px;
+  border-radius: 1px;
+  top: 4px;
+  animation-duration: 1s;
 }
 
-.front {
-  transform: translateZ(20px);
-  background-color: #3498db;
+.loader::before {
+  position: absolute;
+  width: 0px;
+  height: 10px;
+  display: block;
+  border-left: 1px solid #fff;
+  content: '';
+  left: 14px;
+  border-radius: 1px;
+  top: 4px;
+  animation-duration: 40s;
 }
 
-.back {
-  transform: translateZ(-20px);
-  background-color: #e74c3c;
+.loader::before,.loader::after {
+  transform-origin: bottom;
+  animation-name: dial;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-.left {
-  transform: rotateY(90deg) translateZ(20px);
-  background-color: #2ecc71;
-}
-
-.right {
-  transform: rotateY(-90deg) translateZ(20px);
-  background-color: #f39c12;
-}
-
-.top {
-  transform: rotateX(90deg) translateZ(20px);
-  background-color: #9b59b6;
-}
-
-.bottom {
-  transform: rotateX(-90deg) translateZ(20px);
-  background-color: #e67e22;
-}
-
-@keyframes spin {
+@keyframes dial {
   0% {
-    transform: rotateX(0) rotateY(0) rotateZ(0);
+    transform: rotate(0deg);
   }
 
   100% {
-    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    transform: rotate(360deg);
   }
 }
-

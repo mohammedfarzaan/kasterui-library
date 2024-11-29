@@ -3,43 +3,8 @@ import styles from "./Button_stream.module.css";
 
 const Button_stream = () => (
   <div>
-    <button className={styles["join-button"]}>
-      Join Today
-      <span className={styles["arrow"]}>
-        <svg
-          fill="#000000"
-          xml:space="preserve"
-          viewBox="0 0 32.00 32.00"
-          id="Layer_1"
-          version="1.1"
-        >
-          <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
-          <g
-            strokeLinejoin="round"
-            strokeLinecap="round"
-            id="SVGRepo_tracerCarrier"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            <line
-              y2="16"
-              x2="4"
-              y1="16"
-              x1="26"
-              stroke-miterlimit="10"
-              strokeWidth="2.848"
-              stroke="#f3bff3"
-              fill="none"
-            ></line>
-            <polyline
-              points="18,7.5 26.5,16 18,24.5"
-              stroke-miterlimit="10"
-              strokeWidth="2.848"
-              stroke="#f3bff3"
-              fill="none"
-            ></polyline>
-          </g>
-        </svg>
-      </span>
+    <button role="button" className={styles["golden-button"]}>
+      <span className={styles["golden-text"]}>Golden Button</span>
     </button>
   </div>
 );
@@ -55,43 +20,8 @@ export default Button_stream;
 
         const Button_stream = () => (
          <div>
-          <button className="join-button">
-  Join Today
-  <span className="arrow">
-    <svg
-      fill="#000000"
-      xml:space="preserve"
-      viewBox="0 0 32.00 32.00"
-      id="Layer_1"
-      version="1.1"
-    >
-      <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
-      <g
-        strokeLinejoin="round"
-        strokeLinecap="round"
-        id="SVGRepo_tracerCarrier"
-      ></g>
-      <g id="SVGRepo_iconCarrier">
-        <line
-          y2="16"
-          x2="4"
-          y1="16"
-          x1="26"
-          stroke-miterlimit="10"
-          strokeWidth="2.848"
-          stroke="#f3bff3"
-          fill="none"
-        ></line>
-        <polyline
-          points="18,7.5 26.5,16 18,24.5"
-          stroke-miterlimit="10"
-          strokeWidth="2.848"
-          stroke="#f3bff3"
-          fill="none"
-        ></polyline>
-      </g>
-    </svg>
-  </span>
+          <button role="button" className="golden-button">
+  <span className="golden-text">Golden Button</span>
 </button>
         </div>
         );

@@ -1,0 +1,92 @@
+
+/* From Uiverse.io by DellBee - Tags: card */
+.card {
+  border: 3px solid rgb(20, 228, 255);
+  height: 250px;
+  width: 300px;
+  border-radius: 20px;
+  color: white;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+
+.card:hover {
+  opacity: 2;
+  filter: drop-shadow( 0 0 10px rgb(20, 228, 255)) drop-shadow(0 0 60px rgb(20, 228, 255));
+}
+
+.card:hover ~ .heading {
+  filter: drop-shadow( 0 0 10px rgb(248, 125, 146)) drop-shadow(0 0 60px rgb(248, 125, 146));
+}
+
+.card:hover ~ button {
+  filter: drop-shadow( 0 0 10px rgb(248, 125, 146)) drop-shadow(0 0 60px rgb(248, 125, 146));
+  box-shadow: inset 0 0 0 0 rgb(248, 125, 146);
+}
+
+.heading {
+  color: rgb(248, 125, 146);
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  position: relative;
+  top: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20px;
+}
+
+.item {
+  display: flex;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.item svg {
+  display: flex;
+  position: relative;
+  right: 5px;
+}
+
+.item:hover {
+  color: rgb(248, 125, 146);
+  filter: drop-shadow( 0 0 10px rgb(248, 125, 146)) drop-shadow(0 0 60px rgb(248, 125, 146));
+}
+
+.item:hover svg {
+  right: 15px;
+  transition: all 0.3s;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgb(248, 125, 146);
+  position: relative;
+  height: 30px;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 5px;
+  transition: ease-out 0.3s;
+}
+
+button:hover {
+  color: white;
+  box-shadow: inset -110px 0 0 0 rgb(248, 125, 146);
+  filter: drop-shadow( 0 0 10px rgb(248, 125, 146)) drop-shadow(0 0 60px rgb(248, 125, 146));
+}
+
+button:active {
+  transform: scale(0.8) translate(-50%)
+}
+
+
+
+

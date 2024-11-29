@@ -1,68 +1,39 @@
 
-/* From Uiverse.io by cssbuttons-io - Tags: button */
-.c-button {
-  color: #000;
-  font-weight: 700;
-  font-size: 16px;
-  text-decoration: none;
-  padding: 0.9em 1.6em;
+/* From Uiverse.io by Deri-Kurniawan  - Tags: button, colorful, btn, hover effect */
+.button {
+  position: relative;
   cursor: pointer;
-  display: inline-block;
-  vertical-align: middle;
+  padding: 6px 6px;
   position: relative;
-  z-index: 1;
+  background: linear-gradient(
+    75deg,
+    rgba(192, 97, 237, 0.8),
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.4),
+    rgba(252, 144, 98, 0.8),
+    rgba(252, 144, 98, 0.8),
+    rgba(255, 255, 255, 0.4),
+    rgba(228, 89, 199, 0.8),
+    rgba(255, 255, 255, 0.4),
+    rgba(228, 89, 199, 0.8)
+  );
+  border: 1.5px solid transparent;
+  border-radius: 12px;
+  inset: 0;
 }
 
-.c-button--gooey {
-  color: #06c8d9;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border: 4px solid #06c8d9;
-  border-radius: 0;
-  position: relative;
-  transition: all 700ms ease;
+.button .light-border {
+  padding: 8px 24px;
+  border: 0.1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
-.c-button--gooey .c-button__blobs {
-  height: 100%;
-  filter: url(#goo);
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: -3px;
-  right: -1px;
-  z-index: -1;
+.button:hover {
+  filter: contrast(1.2) brightness(1.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease-in-out;
 }
 
-.c-button--gooey .c-button__blobs div {
-  background-color: #06c8d9;
-  width: 34%;
-  height: 100%;
-  border-radius: 100%;
-  position: absolute;
-  transform: scale(1.4) translateY(125%) translateZ(0);
-  transition: all 700ms ease;
-}
-
-.c-button--gooey .c-button__blobs div:nth-child(1) {
-  left: -5%;
-}
-
-.c-button--gooey .c-button__blobs div:nth-child(2) {
-  left: 30%;
-  transition-delay: 60ms;
-}
-
-.c-button--gooey .c-button__blobs div:nth-child(3) {
-  left: 66%;
-  transition-delay: 25ms;
-}
-
-.c-button--gooey:hover {
-  color: #fff;
-}
-
-.c-button--gooey:hover .c-button__blobs div {
-  transform: scale(1.4) translateY(0) translateZ(0);
-}

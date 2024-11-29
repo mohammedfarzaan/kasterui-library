@@ -3,8 +3,21 @@ import styles from "./Button_built.module.css";
 
 const Button_built = () => (
   <div>
-    <button className={styles["btn-white"]} href="#">
-      Discover
+    <button>
+      <svg
+        className={styles["css-i6dzq1"]}
+        strokeLinejoin="round"
+        strokeLinecap="round"
+        fill="none"
+        strokeWidth="2"
+        stroke="#FFFFFF"
+        height="24"
+        width="24"
+        viewBox="0 0 24 24"
+      >
+        <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+      </svg>
+      Edit
     </button>
   </div>
 );
@@ -20,8 +33,11 @@ export default Button_built;
 
         const Button_built = () => (
          <div>
-          <button className="btn-white" href="#">
-  Discover
+          <button>
+    <svg className="css-i6dzq1" strokeLinejoin="round" strokeLinecap="round" fill="none" strokeWidth="2" stroke="#FFFFFF" height="24" width="24" viewBox="0 0 24 24">
+        <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+    </svg>
+    Edit
 </button>
         </div>
         );

@@ -3,11 +3,10 @@ import styles from "./Button_anyway.module.css";
 
 const Button_anyway = () => (
   <div>
-    <div className={styles["button"]}>
-      <a href="#" className={styles["anchor"]}>
-        <span>Download CV</span>
-      </a>
-    </div>
+    <button className={styles["button-3d"] + styles["button-3d-red"]}>
+      {" "}
+      Button
+    </button>
   </div>
 );
 
@@ -22,11 +21,8 @@ export default Button_anyway;
 
         const Button_anyway = () => (
          <div>
-          <div className="button">
-  <a href="#" className="anchor">
-    <span>Download CV</span>
-  </a>
-</div>
+          <button className="button-3d button-3d-red"> Button
+</button>
         </div>
         );
 

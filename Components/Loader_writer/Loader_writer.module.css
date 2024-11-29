@@ -1,29 +1,44 @@
 
-/* From Uiverse.io by mrhyddenn - Tags: gradient, loader */
-.spinner {
-  width: 3em;
-  height: 3em;
-  cursor: not-allowed;
-  border-radius: 50%;
-  border: 2px solid #444;
-  box-shadow: -10px -10px 10px #6359f8, 0px -10px 10px 0px #9c32e2, 10px -10px 10px #f36896, 10px 0 10px #ff0b0b, 10px 10px 10px 0px#ff5500, 0 10px 10px 0px #ff9500, -10px 10px 10px 0px #ffb700;
-  animation: rot55 0.7s linear infinite;
+/* From Uiverse.io by Shoh2008 - Tags: loader */
+.loader {
+  width: 84px;
+  height: 84px;
+  position: relative;
+  overflow: hidden;
 }
 
-.spinnerin {
-  border: 2px solid #444;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 50%;
+.loader:before , .loader:after {
+  content: "";
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: yellow;
+  transform: translate(-50% , 100%)  scale(0);
+  animation: push_4051 2s infinite ease-in;
 }
 
-@keyframes rot55 {
-  to {
-    transform: rotate(360deg);
+.loader:after {
+  animation-delay: 1s;
+}
+
+@keyframes push_4051 {
+  0% {
+    transform: translate(-50% , 100%)  scale(1);
+  }
+
+  15% , 25% {
+    transform: translate(-50% , 50%)  scale(1);
+  }
+
+  50% , 75% {
+    transform: translate(-50%, -30%) scale(0.5);
+  }
+
+  80%,  100% {
+    transform: translate(-50%, -50%) scale(0);
   }
 }
-
+  

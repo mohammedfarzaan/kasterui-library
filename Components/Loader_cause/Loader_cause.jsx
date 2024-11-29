@@ -3,10 +3,17 @@ import styles from "./Loader_cause.module.css";
 
 const Loader_cause = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["leaf"]}></div>
-      <div className={styles["leaf"]}></div>
-      <div className={styles["leaf"]}></div>
+    <div className={styles["spinner"]}>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </div>
 );
@@ -22,10 +29,17 @@ export default Loader_cause;
 
         const Loader_cause = () => (
          <div>
-          <div className="loader">
-  <div className="leaf"></div>
-  <div className="leaf"></div>
-  <div className="leaf"></div>
+          <div className="spinner">
+  <div></div>   
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
 </div>
         </div>
         );

@@ -1,30 +1,40 @@
 
-/* From Uiverse.io by Yashwanthnaini - Tags: button */
-button {
- border: none;
- border-radius: 20px;
- background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
- transition: all 1.5s ease;
- font-family: 'Ropa Sans', sans-serif;
- font-weight: bold;
- letter-spacing: 0.05rem;
- padding: 0;
+/* From Uiverse.io by Codecite - Tags: button */
+.anchor {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid #ed553b;
+  padding: 14px 40px 13px;
+  overflow: hidden;
+  position: relative;
 }
 
-button span {
- display: inline-block;
- padding: 15px 35px;
- font-size: 17px;
- border-radius: 20px;
- background: #ffffff10;
- backdrop-filter: blur(20px);
- transition: 0.4s ease-in-out;
- transition-property: color;
- height: 100%;
- width: 100%;
+.anchor:hover {
+  color: #4e484a;
 }
 
-button span:hover {
- backdrop-filter: blur(0px);
- color: #ffffff;
+.button a::before {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  background-color: #ed553b;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  height: 111%;
+  transition: all .3s ease;
+}
+
+.button a:hover::before {
+  height: 11%;
+}
+
+.button span {
+  position: relative;
+  z-index: 2;
+  transition: all .3s ease;
 }

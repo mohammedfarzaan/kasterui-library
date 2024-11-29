@@ -3,9 +3,9 @@ import styles from "./Button_brush.module.css";
 
 const Button_brush = () => (
   <div>
-    <button className={styles["menu__icon"]}>
-      <span></span>
-      <span></span>
+    <button>
+      <span className={styles["text"]}>FIRE !!!</span>
+      <span className={styles["bullet"]}></span>
     </button>
   </div>
 );
@@ -21,9 +21,9 @@ export default Button_brush;
 
         const Button_brush = () => (
          <div>
-          <button className="menu__icon">
-  <span></span>
-  <span></span>
+          <button>
+  <span className="text">FIRE !!!</span>
+  <span className="bullet"></span>
 </button>
         </div>
         );

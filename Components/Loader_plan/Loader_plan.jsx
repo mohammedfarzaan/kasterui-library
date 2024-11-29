@@ -3,7 +3,7 @@ import styles from "./Loader_plan.module.css";
 
 const Loader_plan = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["spinner"]}></div>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Loader_plan;
 
         const Loader_plan = () => (
          <div>
-          <div className="loader"></div>
+          <div className="spinner"></div>
         </div>
         );
 

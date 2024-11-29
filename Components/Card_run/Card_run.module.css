@@ -1,0 +1,39 @@
+
+/* From Uiverse.io by Spektruml  - Tags: black, social, card */
+.card {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.image {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icons a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.icons a:hover {
+  color: #ddd;
+}
+

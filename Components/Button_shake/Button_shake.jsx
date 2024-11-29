@@ -3,9 +3,7 @@ import styles from "./Button_shake.module.css";
 
 const Button_shake = () => (
   <div>
-    <button>
-      <span className={styles["inner"]}>Button</span>
-    </button>
+    <button> Button</button>
   </div>
 );
 
@@ -20,8 +18,7 @@ export default Button_shake;
 
         const Button_shake = () => (
          <div>
-          <button>
-    <span className="inner">Button</span>
+          <button> Button
 </button>
         </div>
         );

@@ -1,67 +1,116 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: animation, purple, gradient, button, hover, svg, hover effect, projects */
-.Projects-Button {
-  width: fit-content;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 20px;
-  gap: 10px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  background: linear-gradient(120deg, rgb(150, 86, 199), rgb(98, 47, 138));
-  transition: all 0.3s;
-  box-shadow: 0px 10px 10px rgba(144, 0, 255, 0.166);
-}
-.IconContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25px;
-  height: 25px;
+/* From Uiverse.io by ShrinilDhorda - Tags: gradient, button, active, modern, blur filter, svg, crush */
+.crushbtn {
+  font-size: 2rem;
+  padding: 0.7rem 2.4rem;
+  letter-spacing: .3rem;
+  border-radius: 1.5rem;
   position: relative;
-}
-.svgBG {
-  width: 25px;
-  height: auto;
-}
-.svgFG {
-  width: 9px;
-  height: auto;
+  background-color: #e8e8e8;
+  color: red;
+  border: none;
+  text-shadow: 0 0 3px #ff6e6e;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.7s;
   z-index: 2;
+}
+
+.heart1 svg {
   position: absolute;
-}
-.text {
-  color: rgb(240, 240, 240);
-  font-weight: 500;
-  font-size: 16px;
-}
-.Projects-Button:hover .svgFG {
-  animation: clockwise 2s linear infinite;
-}
-
-.Projects-Button:hover .svgBG {
-  animation: anti-clockwise 2s linear infinite;
-}
-@keyframes clockwise {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes anti-clockwise {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-.Projects-Button:hover {
-  background-color: rgb(119, 57, 166);
+  left: 4.5rem;
+  top: 1.8rem;
+  opacity: 0;
+  fill: red;
+  stroke: none;
+  transition: 0.7s;
+  width: 2rem;
+  height: 2rem;
+  animation: move1 5s ease-in-out infinite alternate-reverse;
 }
 
+.heart2 svg {
+  position: absolute;
+  left: 0.8rem;
+  opacity: 0;
+  top: 0.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: red;
+  stroke: none;
+  transform: rotate(-20deg );
+  animation: move2 5s ease infinite alternate-reverse;
+}
+
+.heart3 svg {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  opacity: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  transform: rotate(20deg);
+  fill: red;
+  stroke: none;
+  z-index: -1;
+  animation: move3 5s ease infinite alternate-reverse;
+}
+
+@keyframes move1 {
+  0% {
+    top: 2rem;
+  }
+
+  50% {
+    top: 4rem;
+  }
+
+  100% {
+    top: 2rem;
+  }
+}
+
+@keyframes move2 {
+  0% {
+    top: 0.3rem;
+  }
+
+  50% {
+    top: 1.5rem;
+  }
+
+  100% {
+    top: 0.3rem;
+  }
+}
+
+@keyframes move3 {
+  0% {
+    top: 1.5rem;
+  }
+
+  50% {
+    top: .6rem;
+  }
+
+  100% {
+    top: 1.5rem;
+  }
+}
+
+.crushbtn:hover .heart1 svg,
+.crushbtn:hover .heart2 svg,
+.crushbtn:hover .heart3 svg {
+  opacity: 1;
+  filter: drop-shadow(0 0 10px #ff6e6e)
+}
+
+.crushbtn:hover {
+  color: red;
+  box-shadow: 0 0 10px inset #ff6e6e;
+  scale: 105%;
+}
+
+.crushbtn:active {
+  scale: 100%;
+}

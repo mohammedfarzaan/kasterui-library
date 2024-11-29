@@ -4,8 +4,12 @@ import styles from "./Loader_parent.module.css";
 const Loader_parent = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["quater"] + styles["i"]}></div>
-      <div className={styles["quater"] + styles["ii"]}></div>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </div>
 );
@@ -22,8 +26,12 @@ export default Loader_parent;
         const Loader_parent = () => (
          <div>
           <div className="loader">
-    <div className="quater i"></div>
-    <div className="quater ii"></div>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
 </div>
         </div>
         );

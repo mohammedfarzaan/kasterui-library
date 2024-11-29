@@ -3,7 +3,9 @@ import styles from "./Button_aloud.module.css";
 
 const Button_aloud = () => (
   <div>
-    <button className={styles["button-3d"]}>button</button>
+    <button className={styles["button"]}>
+      <span className={styles["button__span"]}>Button</span>
+    </button>
   </div>
 );
 
@@ -18,7 +20,10 @@ export default Button_aloud;
 
         const Button_aloud = () => (
          <div>
-          <button className="button-3d">button</button>
+          <button className="button">
+  <span className="button__span">Button</span>
+  
+</button>
         </div>
         );
 

@@ -1,23 +1,45 @@
 
-/* From Uiverse.io by alexruix - Tags: input, search */
-.input {
-  max-width: 190px;
-  background-color: #f5f5f5;
-  color: #242424;
-  padding: .15rem .5rem;
-  min-height: 40px;
-  border-radius: 4px;
-  outline: none;
+/* From Uiverse.io by BlackisPlay  - Tags: simple, animation, 3d, minimalist, white, active, input, shadow */
+.dateInput {
+  margin-left: auto;
+  margin-right: auto;
+  height: 2.5em;
+  width: 12.5em;
+  border-radius: 2.5em;
   border: none;
-  line-height: 1.15;
-  box-shadow: 0px 10px 20px -18px;
+  background-color: rgb(255, 255, 255);
+  -webkit-filter: drop-shadow(1px 1px 10px #000);
+  filter: drop-shadow(7px 7px 10px #00000059);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(77, 77, 77);
+  text-align: center;
+  font-size: 14px;
+  outline: 2px solid rgba(0, 0, 0, 0);
+  transition: outline-offset 0.5s ease, outline-color 0.5s ease,
+    height 0.5s ease, width 0.5s ease, filter 0.5s ease;
 }
 
-input:focus {
-  border-bottom: 2px solid #5b5fc7;
-  border-radius: 4px 4px 2px 2px;
+.dateInput:focus {
+  outline-offset: 0.5em;
+  outline-color: rgba(0, 0, 0, 0.228);
+  transition: 0.2s;
+  height: 3em;
+  width: 13em;
+  -webkit-filter: drop-shadow(1px 1px 10px #000);
+  filter: drop-shadow(-7px 7px 10px #00000059);
 }
 
-input:hover {
-  outline: 1px solid lightgrey;
+.dateInput::placeholder {
+  padding-left: 0.8em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transform: translateX(-6px);
+  transition: transform 0.5s ease;
 }
+
+.dateInput:focus::placeholder {
+  transform: translateX(-85px);
+  transition: 0.5s;
+}
+

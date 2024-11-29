@@ -1,86 +1,77 @@
 
-/* From Uiverse.io by vikramsinghnegi  - Tags: loading, loader, effect loader */
-.center-body {
+/* From Uiverse.io by aadil-01 - Tags: loader */
+#box-outer {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  animation: rotate_29 5s infinite;
+  background-color: #5ACEF2;
+}
+
+#box-inner {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  background: #262626;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  rotate: 45deg;
+  animation: revolve_29 5s infinite;
+  background-color: #FF8062;
 }
 
-.loader-circle-9 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70px;
-  height: 70px;
-  background: transparent;
-  border: 3px solid #3c3c3c;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 70px;
-  font-family: sans-serif;
-  font-size: 12px;
-  color: #00eaff;
-  text-transform: uppercase;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+#box {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  animation: rotate_29 5s infinite;
+  background-color: #FEFEFE;
 }
 
-.loader-circle-9:before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  width: 100%;
-  height: 100%;
-  border: 3px solid transparent;
-  border-top: 3px solid #00eaff;
-  border-right: 3px solid #00eaff;
-  border-radius: 50%;
-  animation: animateC 2s linear infinite;
+@keyframes revolve_29 {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateY(100%);
+  }
+
+  50% {
+    transform: translateX(100%) translateY(100%);
+  }
+
+  75% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
-.loader-circle-9 span {
-  display: block;
-  position: absolute;
-  top: calc(50% - 2px);
-  left: 50%;
-  width: 50%;
-  height: 4px;
-  background: transparent;
-  transform-origin: left;
-  animation: animate 2s linear infinite;
-}
-
-.loader-circle-9 span:before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #00eaff;
-  top: -6px;
-  right: -8px;
-  box-shadow: 0 0 20px #00eaff;
-}
-
-@keyframes animateC {
+@keyframes rotate_29 {
   0% {
     transform: rotate(0deg);
   }
-  100% {
+
+  20% {
+    transform: rotate(90deg);
+  }
+
+  40% {
+    transform: rotate(180deg);
+  }
+
+  60% {
+    transform: rotate(270deg);
+  }
+
+  80% {
     transform: rotate(360deg);
   }
-}
 
-@keyframes animate {
-  0% {
-    transform: rotate(45deg);
-  }
   100% {
-    transform: rotate(405deg);
+    transform: rotate(0deg);
   }
 }
-

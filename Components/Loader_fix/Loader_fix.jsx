@@ -3,7 +3,9 @@ import styles from "./Loader_fix.module.css";
 
 const Loader_fix = () => (
   <div>
-    <div className={styles["spinner"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["shape"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +20,9 @@ export default Loader_fix;
 
         const Loader_fix = () => (
          <div>
-          <div className="spinner"></div>
+          <div className="loader">
+  <div className="shape"></div>
+</div>
         </div>
         );
 

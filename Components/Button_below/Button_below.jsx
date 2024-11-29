@@ -3,20 +3,7 @@ import styles from "./Button_below.module.css";
 
 const Button_below = () => (
   <div>
-    <button>
-      <div>
-        <span>
-          <p>Hover Me</p>
-          <p>:)</p>
-        </span>
-      </div>
-      <div>
-        <span>
-          <p>Thanks</p>
-          <p>:D</p>
-        </span>
-      </div>
-    </button>
+    <button> Button</button>
   </div>
 );
 
@@ -31,17 +18,7 @@ export default Button_below;
 
         const Button_below = () => (
          <div>
-          <button>
-  <div>
-    <span>
-      <p>Hover Me</p><p>:)</p>
-    </span>
-  </div>
-  <div>
-    <span>
-      <p>Thanks</p><p>:D</p>
-    </span>
-  </div>
+          <button> Button
 </button>
         </div>
         );

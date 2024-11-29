@@ -3,7 +3,20 @@ import styles from "./Button_mail.module.css";
 
 const Button_mail = () => (
   <div>
-    <button className={styles["btn"] + styles["btn-1"]}>Hover Me!</button>
+    <button>
+      <div>
+        <span>
+          <p>Hover Me</p>
+          <p>:)</p>
+        </span>
+      </div>
+      <div>
+        <span>
+          <p>Thanks</p>
+          <p>:D</p>
+        </span>
+      </div>
+    </button>
   </div>
 );
 
@@ -18,7 +31,18 @@ export default Button_mail;
 
         const Button_mail = () => (
          <div>
-          <button className="btn btn-1">Hover Me!</button>
+          <button>
+  <div>
+    <span>
+      <p>Hover Me</p><p>:)</p>
+    </span>
+  </div>
+  <div>
+    <span>
+      <p>Thanks</p><p>:D</p>
+    </span>
+  </div>
+</button>
         </div>
         );
 

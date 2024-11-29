@@ -3,9 +3,7 @@ import styles from "./Loader_field.module.css";
 
 const Loader_field = () => (
   <div>
-    <div className={styles["loadingtext"]}>
-      <p>Loading</p>
-    </div>
+    <div aria-live="assertive" role="alert" className={styles["loader"]}></div>
   </div>
 );
 
@@ -20,9 +18,7 @@ export default Loader_field;
 
         const Loader_field = () => (
          <div>
-          <div className="loadingtext">
-  <p>Loading</p>
-</div>
+          <div aria-live="assertive" role="alert" className="loader"></div>
         </div>
         );
 

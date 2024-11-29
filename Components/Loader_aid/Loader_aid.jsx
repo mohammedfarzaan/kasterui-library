@@ -3,16 +3,7 @@ import styles from "./Loader_aid.module.css";
 
 const Loader_aid = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-    </div>
+    <div className={styles["spinner"]}></div>
   </div>
 );
 
@@ -27,16 +18,7 @@ export default Loader_aid;
 
         const Loader_aid = () => (
          <div>
-          <div className="loader">
-  <div className="circle"></div>
-  <div className="circle"></div>
-  <div className="circle"></div>
-  <div className="circle"></div>
-  <div className="circle"></div>
-  <div className="circle"></div>
-  <div className="circle"></div>
-  <div className="circle"></div>
-</div>
+          <div className="spinner"></div>
         </div>
         );
 

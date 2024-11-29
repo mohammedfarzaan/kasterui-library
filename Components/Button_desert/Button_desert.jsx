@@ -3,7 +3,7 @@ import styles from "./Button_desert.module.css";
 
 const Button_desert = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button className={styles["btn"]}>Button</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_desert;
 
         const Button_desert = () => (
          <div>
-          <button className="button">Button</button>
+          <button className="btn">
+   Button
+</button>
         </div>
         );
 

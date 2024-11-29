@@ -3,7 +3,9 @@ import styles from "./Loader_lady.module.css";
 
 const Loader_lady = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["loader"]}>
+      <span></span>
+    </div>
   </div>
 );
 
@@ -18,7 +20,9 @@ export default Loader_lady;
 
         const Loader_lady = () => (
          <div>
-          <div className="loader"></div>
+          <div className="loader">
+    <span></span>
+</div>
         </div>
         );
 

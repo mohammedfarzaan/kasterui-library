@@ -3,7 +3,7 @@ import styles from "./Button_also.module.css";
 
 const Button_also = () => (
   <div>
-    <button className={styles["button"]}>Hover Me</button>
+    <button className={styles["gradient-button"]}>⚡ Join now</button>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Button_also;
 
         const Button_also = () => (
          <div>
-          <button className="button">Hover Me</button>
+          <button className="gradient-button">⚡ Join now</button>
         </div>
         );
 

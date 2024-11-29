@@ -1,39 +1,57 @@
 
-/* From Uiverse.io by Web-Potato - Tags: button */
-button {
-  padding: 0.1em 0.25em;
-  width: 13em;
-  height: 4.2em;
-  background-color: #212121;
-  border: 0.08em solid #fff;
-  border-radius: 0.3em;
-  font-size: 12px;
-}
-
-button span {
-  position: relative;
+/* From Uiverse.io by vikas7754  - Tags: button, 3d button, mac button */
+.container {
+  background: #ff6f6f;
+  border-radius: 15px;
+  padding: 15px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 0.4em;
-  width: 8.25em;
-  height: 2.5em;
-  background-color: #212121;
-  border-radius: 0.2em;
-  font-size: 1.5em;
+  gap: 15px;
+  box-shadow: 3px 5px 10px #ff7a7a, inset 3px 0 0 #ff5751d6,
+    inset -3px 0 0 #ff5751d6, inset 0 3px 0 #ffffff23, inset 0 -3px 0 #00000023;
+}
+.btn {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background: #ff6f6f;
+  padding: 10px;
+  box-shadow: 0 0 5px #0000005a, 2px 2px 3px #00000078,
+    inset 1px 1px 2px #ffffff9d;
+  border-radius: 10px;
   color: #fff;
-  border: 0.08em solid #fff;
-  box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-button span:hover {
-  transition: all 0.5s;
-  transform: translate(0, 0.4em);
-  box-shadow: 0 0 0 0 #fff;
+.btn:focus {
+  animation: 0.3s clicked linear;
 }
-
-button span:not(hover) {
-  transition: all 1s;
+.cmd {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
-
+.c {
+  width: 75px;
+  font-size: 1.5rem;
+}
+@keyframes clicked {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px #00000067, inset 0 0 3px #ffffff78;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 

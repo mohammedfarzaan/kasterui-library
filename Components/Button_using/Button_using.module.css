@@ -1,48 +1,66 @@
 
-/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, animated */
-@keyframes glowing-pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-  }
-
-  70% {
-    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
-  }
-
-  100% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-  }
-}
-
-.button {
+/* From Uiverse.io by Codecite - Tags: icon, button, copy */
+.icon-conatiner {
   position: relative;
-  display: inline-block;
-  background: linear-gradient(to right, #FFB900, #FF7730);
-  border: none;
-  border-radius: 25px;
-  color: white;
-  padding: 10px 20px;
-  font-size: 18px;
-  text-transform: uppercase;
-  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-  animation: glowing-pulse 2s infinite;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 20px 20px 15px 0 #ababab4d;
+  cursor: pointer;
 }
 
-.button::before {
-  content: "";
+.icon-conatiner svg {
+  width: 50px;
+  height: auto;
+}
+
+.icon-conatiner svg:last-child {
   position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  border-radius: 30px;
-  box-shadow: 0 0 20px #FF7730;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
 }
 
-.button:hover::before {
-  opacity: 1;
+.icon-conatiner:active {
+  animation: press 0.2s 1 linear;
+}
+
+.icon-conatiner:active svg:last-child {
+  animation: bounce 0.2s 1 linear;
+}
+
+.text {
+  color: #666;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  user-select: none;
+}
+
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.92);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    transform: rotate(5deg) translate(20px, -50px);
+  }
+
+  to {
+    transform: scale(0.9) rotate(10deg) translate(50px, -80px);
+    opacity: 0;
+  }
 }
 

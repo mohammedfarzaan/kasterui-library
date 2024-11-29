@@ -3,12 +3,8 @@ import styles from "./Toggle_force.module.css";
 
 const Toggle_force = () => (
   <div>
-    <div className={styles["switch"] + styles["demo3"]}>
-      <input type="checkbox" />
-      <label>
-        <i></i>
-      </label>
-    </div>
+    <input id="checkboxInput" type="checkbox" />
+    <label className={styles["toggleSwitch"]} for="checkboxInput"></label>
   </div>
 );
 
@@ -23,10 +19,9 @@ export default Toggle_force;
 
         const Toggle_force = () => (
          <div>
-          <div className="switch demo3">
-  <input type="checkbox" />
-  <label><i></i></label>
-</div>
+          <input id="checkboxInput" type="checkbox" />
+    <label className="toggleSwitch" for="checkboxInput">
+    </label>
         </div>
         );
 

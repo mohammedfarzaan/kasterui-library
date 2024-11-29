@@ -3,15 +3,22 @@ import styles from "./Button_eleven.module.css";
 
 const Button_eleven = () => (
   <div>
-    <button className={styles["btn"]}>
-      <span className={styles["icon"]}>
-        <svg viewBox="0 0 175 80" width="40" height="40">
-          <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-          <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-          <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-        </svg>
+    <button>
+      <span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+        >
+          <path fill="none" d="M0 0h24v24H0z"></path>
+          <path
+            fill="currentColor"
+            d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"
+          ></path>
+        </svg>{" "}
+        Create
       </span>
-      <span className={styles["text"]}>MENU</span>
     </button>
   </div>
 );
@@ -27,15 +34,10 @@ export default Button_eleven;
 
         const Button_eleven = () => (
          <div>
-          <button className="btn">
-    <span className="icon">
-        <svg viewBox="0 0 175 80" width="40" height="40">
-            <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-            <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-            <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-        </svg>
-    </span>
-    <span className="text">MENU</span>
+          <button>
+  <span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg> Create
+  </span>
 </button>
         </div>
         );

@@ -1,38 +1,37 @@
 
-/* From Uiverse.io by SelfMadeSystem - Tags: animation, loader, svg, mona lisa, painting */
+/* From Uiverse.io by satyamchaudharydev - Tags: loader */
 .loader {
-  width: 12em;
-  height: 12em;
+  display: block;
+  --height-of-loader: 4px;
+  --loader-color: #0071e2;
+  width: 130px;
+  height: var(--height-of-loader);
+  border-radius: 30px;
+  background-color: rgba(0,0,0,0.2);
+  position: relative;
 }
 
-.loader path {
-  stroke: #000;
-  stroke-width: 0.6px;
-  animation: dashArray 4s ease-in-out infinite,
-    dashOffset 4s linear infinite;
+.loader::before {
+  content: "";
+  position: absolute;
+  background: var(--loader-color);
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 30px;
+  animation: moving 1s ease-in-out infinite;
+  ;
 }
 
-@keyframes dashArray {
-  0% {
-    stroke-dasharray: 0 1 359 0;
-  }
-
+@keyframes moving {
   50% {
-    stroke-dasharray: 0 359 1 0;
+    width: 100%;
   }
 
   100% {
-    stroke-dasharray: 359 1 0 0;
+    width: 0;
+    right: 0;
+    left: unset;
   }
 }
-
-@keyframes dashOffset {
-  0% {
-    stroke-dashoffset: 365;
-  }
-
-  100% {
-    stroke-dashoffset: 5;
-  }
-}
-

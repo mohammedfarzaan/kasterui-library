@@ -3,8 +3,9 @@ import styles from "./Button_lost.module.css";
 
 const Button_lost = () => (
   <div>
-    <button>
-      <span>Button</span>
+    <button className={styles["icon-btn"] + styles["add-btn"]}>
+      <div className={styles["add-icon"]}></div>
+      <div className={styles["btn-txt"]}>Add Photo</div>
     </button>
   </div>
 );
@@ -20,8 +21,9 @@ export default Button_lost;
 
         const Button_lost = () => (
          <div>
-          <button>
-  <span>Button</span>
+          <button className="icon-btn add-btn">
+    <div className="add-icon"></div>
+    <div className="btn-txt">Add Photo</div>
 </button>
         </div>
         );

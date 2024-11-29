@@ -1,52 +1,57 @@
 
-/* From Uiverse.io by newrocker2468 - Tags: simple, green, button, hover, simple button, #button */
-.button1 {
-  background-color: white;
-  font-weight: bold;
-  font-size: 1em;
-  border: none;
-  border-radius: 5px;
-  padding: 1.2em;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: all 500ms;
-  z-index: 99;
-}
-
-.button1::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border-radius: 20px;
-  bottom: -30px;
-  left: 45px;
-  background-color: #5affc0;
-  z-index: -99;
-  transition: all 500ms;
-}
-
-.button1:hover::after {
-  width: 120px;
-  height: 60px;
+/* From Uiverse.io by Julian956 - Tags: button, buy now, cart */
+.btn-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
-  transition: all 500ms;
-  bottom: -1px;
-  left: -1px;
+  border: none;
+  background-color: transparent;
+  position: relative;
 }
 
-.button1:hover {
-  border-radius: 20px;
-  box-shadow: 0 0 100px 20px #5affc0;
+.btn-cart::after {
+  content: attr(data-quantity);
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  font-size: 15px;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s linear;
+  top: 115%;
 }
 
-.button1:active {
-  transform: translateY(10px);
+.icon-cart {
+  width: 24.38px;
+  height: 30.52px;
+  transition: .2s linear;
 }
 
-.button1:focus {
-  border: 5px solid #a0fad8;
+.icon-cart path {
+  fill: rgb(240, 8, 8);
+  transition: .2s linear;
+}
+
+.btn-cart:hover > .icon-cart {
+  transform: scale(1.2);
+}
+
+.btn-cart:hover > .icon-cart path {
+  fill: rgb(186, 34, 233);
+}
+
+.btn-cart:hover::after {
+  visibility: visible;
+  opacity: 1;
+  top: 105%;
+}
+
+.quantity {
+  display: none;
 }
 

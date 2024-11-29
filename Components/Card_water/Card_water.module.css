@@ -1,0 +1,72 @@
+
+/* From Uiverse.io by LeonKohli  - Tags: simple, animation, minimalist, black, card, card animation, card hover */
+.card {
+  width: 20em;
+  background: linear-gradient(135deg, #141313, #282727);
+  border-radius: 1em;
+  padding: 1.5em;
+  text-align: center;
+  box-shadow: 0 0.5em 0.75em rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0.75em 1.5em rgba(0, 0, 0, 0.25);
+}
+
+.card .image {
+  width: 100%;
+  max-width: 12em;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card .image:hover {
+  transform: scale(1.1);
+}
+
+.card .heading {
+  font-size: 1.5em;
+  font-weight: 900;
+  background: -webkit-linear-gradient(left, #ffffff, #cccccc);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 1em 0;
+  text-shadow: 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.5);
+}
+
+.card .icons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card .icons a {
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.card .icons .instagram:hover {
+  color: #e1306c;
+  transform: scale(1.2);
+}
+
+.card .icons .x:hover {
+  color: #8f8f8f;
+  transform: scale(1.2);
+}
+
+.card .icons .discord:hover {
+  color: #7289da;
+  transform: scale(1.2);
+}
+
+.card .icons svg {
+  width: 2em;
+  height: 2em;
+  transition: fill 0.3s ease;
+}
+

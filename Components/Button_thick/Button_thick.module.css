@@ -1,46 +1,51 @@
 
-/* From Uiverse.io by louloudev59 - Tags: button, hover, hover effect, snapchat */
-.snapchat-link {
-  display: inline-block;
-}
-
-.snapchat-btn {
+/* From Uiverse.io by catraco - Tags: button, ring, next, hover effect, startbutton , variables */
+.btn-class-name {
+  --color: 180,255, 100;
+  border-radius: .5em;
+  transition: .3s;
+  background-color: rgba(var(--color), .2);
+  color: rgb(var(--color));
+  fill: rgb(var(--color));
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: x-large;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  border: 2px solid rgb(var(--color));
+  box-shadow: 0 0 10px rgba(var(--color), .4);
+  outline: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 10px;
-  background-color: yellow;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
+  padding: .5em 1em;
 }
 
-.snapchat-btn svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.btn-class-name:hover {
+  box-shadow: 0 0 0 5px rgba(var(--color), .5);
 }
 
-.snapchat-btn:hover {
-  padding: 10px 20px;
+.btn-class-name span {
+  transform: scale(.8);
+  transition: .3s;
 }
 
-.snapchat-btn:hover svg {
-  display: none;
+.btn-class-name:hover span {
+  transform: scale(1);
 }
 
-.snapchat-text {
-  opacity: 0;
-  transition: opacity 0.3s;
+.btn-class-name svg {
+  font-size: 0;
+  transform: scale(0.5) translateX(0%) rotate(-180deg);
+  transition: .3s;
 }
 
-.snapchat-btn:hover .snapchat-text {
-  opacity: 1;
+.btn-class-name:hover svg {
+  font-size: 20px;
+  transform: scale(1) translateX(20%) rotate(0deg);
 }
 
+.btn-class-name:active {
+  transition: 0s;
+  box-shadow: 0 0 0 5px rgb(var(--color));
+}

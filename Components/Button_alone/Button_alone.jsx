@@ -3,7 +3,10 @@ import styles from "./Button_alone.module.css";
 
 const Button_alone = () => (
   <div>
-    <button className={styles["btn"]}> Shop now</button>
+    <button className={styles["button"]}>
+      <span className={styles["button-text"]}>Button</span>
+      <span className={styles["tooltip"]}>Tooltip</span>
+    </button>
   </div>
 );
 
@@ -18,7 +21,9 @@ export default Button_alone;
 
         const Button_alone = () => (
          <div>
-          <button className="btn"> Shop now
+          <button className="button">
+  <span className="button-text">Button</span>
+  <span className="tooltip">Tooltip</span>
 </button>
         </div>
         );

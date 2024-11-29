@@ -3,9 +3,11 @@ import styles from "./Toggle_silk.module.css";
 
 const Toggle_silk = () => (
   <div>
-    <div className={styles["check"]}>
-      <input id="check" type="checkbox" />
-      <label for="check"></label>
+    <div className={styles["switch"]}>
+      <input id="toggle" type="checkbox" />
+      <label className={styles["toggle"]} for="toggle">
+        <i></i>
+      </label>
     </div>
   </div>
 );
@@ -21,9 +23,11 @@ export default Toggle_silk;
 
         const Toggle_silk = () => (
          <div>
-          <div className="check">
-  <input id="check" type="checkbox" />
-  <label for="check"></label>
+          <div className="switch">
+  <input id="toggle" type="checkbox" />
+  <label className="toggle" for="toggle">
+    <i></i>
+  </label>
 </div>
         </div>
         );

@@ -1,0 +1,188 @@
+
+/* From Uiverse.io by xantha01 - Tags: card, animated, card hover */
+.container {
+  position: relative;
+  width: 225px;
+  height: 325px;
+  cursor: pointer;
+}
+
+.card {
+  position: absolute;
+  inset: 2.5px;
+  border-radius: 10px;
+  transform-origin: bottom left;
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f1f4f7;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.container:hover .card:nth-child(1) {
+  animation: cardAnimation1 4s 0.5s infinite ease;
+}
+
+.container:hover .card:nth-child(2) {
+  animation: cardAnimation2 4s 1s infinite ease;
+}
+
+.container:hover .card:nth-child(3) {
+  animation: cardAnimation3 4s 1.5s infinite ease;
+}
+
+.container:hover .card:nth-child(4) {
+  animation: cardAnimation4 4s 2s infinite ease;
+}
+
+.card:nth-child(1) {
+  background: linear-gradient(0deg, #4776e6 0%, #8e54e9 100%);
+}
+
+.card:nth-child(2) {
+  background: linear-gradient(0deg, #b3ffab 0%, #12fff7 100%);
+  opacity: 0;
+}
+
+.card:nth-child(3) {
+  background: linear-gradient(178deg, #ffb99a 0%, #ffdbc5 100%);
+  opacity: 0;
+}
+
+.card:nth-child(4) {
+  background: linear-gradient(178deg, #606c88 0%, #3f4c6b 100%);
+  opacity: 0;
+}
+
+@keyframes cardAnimation1 {
+  0% {
+    transform: rotateZ(0deg);
+    opacity: 0;
+    z-index: -1;
+  }
+
+  25% {
+    transform: rotateZ(-20deg);
+    opacity: 1;
+    z-index: 0;
+  }
+
+  50% {
+    transform: rotateZ(0deg);
+    z-index: 1;
+    opacity: 1;
+  }
+
+  75% {
+    transform: rotateZ(20deg);
+    z-index: 0;
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+@keyframes cardAnimation2 {
+  0% {
+    transform: rotateZ(0deg);
+    z-index: -1;
+    opacity: 0;
+  }
+
+  45% {
+    transform: rotateZ(-15deg);
+    z-index: 0;
+    opacity: 1;
+  }
+
+  60% {
+    transform: rotateZ(0deg);
+    z-index: 1;
+    opacity: 1;
+  }
+
+  75% {
+    transform: rotateZ(15deg);
+    z-index: 0;
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+@keyframes cardAnimation3 {
+  0% {
+    transform: rotateZ(0deg);
+    z-index: -1;
+    opacity: 0;
+  }
+
+  45% {
+    transform: rotateZ(-20deg);
+    z-index: 0;
+    opacity: 0;
+  }
+
+  60% {
+    transform: rotateZ(0deg);
+    z-index: 1;
+    opacity: 1;
+  }
+
+  75% {
+    transform: rotateZ(20deg);
+    z-index: 0;
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+@keyframes cardAnimation4 {
+  0% {
+    transform: rotateZ(0deg);
+    z-index: 0;
+    opacity: 0;
+  }
+
+  35% {
+    transform: rotateZ(-25deg);
+    z-index: 0;
+    opacity: 0.0;
+  }
+
+  75% {
+    transform: rotateZ(0deg);
+    z-index: 1;
+    opacity: 1;
+  }
+
+  90% {
+    transform: rotateZ(25deg);
+    z-index: 0;
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+    z-index: 0;
+    opacity: 0;
+  }
+}
+
+

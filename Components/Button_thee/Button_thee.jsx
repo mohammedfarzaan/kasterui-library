@@ -3,9 +3,9 @@ import styles from "./Button_thee.module.css";
 
 const Button_thee = () => (
   <div>
-    <button>
-      <span className={styles["text"]}>Hover me</span>
-      <span>Thanks!</span>
+    <button className={styles["btn-class-name"]}>
+      <span className={styles["back"]}></span>
+      <span className={styles["front"]}></span>
     </button>
   </div>
 );
@@ -21,7 +21,10 @@ export default Button_thee;
 
         const Button_thee = () => (
          <div>
-          <button><span className="text">Hover me</span><span>Thanks!</span></button>
+          <button className="btn-class-name">
+  <span className="back"></span>
+  <span className="front"></span>
+</button>
         </div>
         );
 

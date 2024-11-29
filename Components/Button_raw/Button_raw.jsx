@@ -1,18 +1,31 @@
 import React from "react";
+import styles from "./Button_raw.module.css";
 
 const Button_raw = () => (
   <div>
-    <button
-      className="cursor-pointer inline-flex items-center rounded-full 
-px-9 py-3 text-xl font-mono font-semibold text-rose-600 hover:text-white border-2 border-rose-600 hover:bg-rose-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-75 duration-300 focus:bg-transparent focus:text-rose-600"
-    >
-      Button
-    </button>
+    <button>Hover Me</button>
   </div>
 );
 
 export default Button_raw;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_raw = () => (
+         <div>
+          <button>
+  Hover Me
+</button>
+        </div>
+        );
+
+        export default Button_raw;
+        
+        
+         */
 }

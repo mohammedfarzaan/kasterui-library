@@ -3,13 +3,12 @@ import styles from "./Loader_model.module.css";
 
 const Loader_model = () => (
   <div>
-    <div className={styles["🤚"]}>
-      <div className={styles["👉"]}></div>
-      <div className={styles["👉"]}></div>
-      <div className={styles["👉"]}></div>
-      <div className={styles["👉"]}></div>
-      <div className={styles["🌴"]}></div>
-      <div className={styles["👍"]}></div>
+    <div className={styles["container"]}>
+      <div className={styles["loader"]}></div>
+      <div className={styles["loader"]}></div>
+      <div className={styles["loader"]}></div>
+      <div className={styles["loader"]}></div>
+      <div className={styles["loader"]}></div>
     </div>
   </div>
 );
@@ -25,13 +24,12 @@ export default Loader_model;
 
         const Loader_model = () => (
          <div>
-          <div className="🤚">
-	<div className="👉"></div>
-	<div className="👉"></div>
-	<div className="👉"></div>
-	<div className="👉"></div>
-	<div className="🌴"></div>		
-	<div className="👍"></div>
+          <div className="container">
+<div className="loader"></div>
+<div className="loader"></div>
+<div className="loader"></div>
+<div className="loader"></div>
+<div className="loader"></div>
 </div>
         </div>
         );

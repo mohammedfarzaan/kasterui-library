@@ -3,9 +3,7 @@ import styles from "./Button_rough.module.css";
 
 const Button_rough = () => (
   <div>
-    <button className={styles["btn"]}>
-      <span>Hover Me</span>
-    </button>
+    <button> Button</button>
   </div>
 );
 
@@ -20,7 +18,8 @@ export default Button_rough;
 
         const Button_rough = () => (
          <div>
-          <button className="btn"><span>Hover Me</span></button>
+          <button> Button
+</button>
         </div>
         );
 

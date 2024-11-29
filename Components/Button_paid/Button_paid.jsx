@@ -3,7 +3,17 @@ import styles from "./Button_paid.module.css";
 
 const Button_paid = () => (
   <div>
-    <button className={styles["click"]}>Click me</button>
+    <button>
+      P L A Y
+      <div id="clip">
+        <div id="leftTop" className={styles["corner"]}></div>
+        <div id="rightBottom" className={styles["corner"]}></div>
+        <div id="rightTop" className={styles["corner"]}></div>
+        <div id="leftBottom" className={styles["corner"]}></div>
+      </div>
+      <span id="rightArrow" className={styles["arrow"]}></span>
+      <span id="leftArrow" className={styles["arrow"]}></span>
+    </button>
   </div>
 );
 
@@ -18,7 +28,17 @@ export default Button_paid;
 
         const Button_paid = () => (
          <div>
-          <button className="click">Click me</button>
+          <button>
+    P L A Y
+    <div id="clip">
+        <div id="leftTop" className="corner"></div>
+        <div id="rightBottom" className="corner"></div>
+        <div id="rightTop" className="corner"></div>
+        <div id="leftBottom" className="corner"></div>
+    </div>
+    <span id="rightArrow" className="arrow"></span>
+    <span id="leftArrow" className="arrow"></span>
+</button>
         </div>
         );
 

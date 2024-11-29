@@ -1,0 +1,355 @@
+
+/* From Uiverse.io by Peary74 - Tags: card */
+.card {
+  width: 190px;
+  height: 254px;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+  color: black;
+  text-shadow: -2px -2px 0px #fff, 2px 2px 0px #fff;
+}
+
+.heading {
+  width: inherit;
+  height: inherit;
+  background: rgba(255,255,255,.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  color: white;
+  text-shadow: -1px -1px 0px #b0e633, 1px 1px 0px #53ef7d;
+}
+
+.heading span {
+  transform: translateX(10px) translateY(10px);
+  width: 100px;
+  padding: 2px;
+  margin-top: -5px;
+  margin-left: -6.3px;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  animation-timing-function: steps(2, end);
+  text-shadow: -2px -2px 0px #b0e633, 2px 2px 0px #53ef7d;
+}
+
+.card:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#b0e633, #53ef7d);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.item:nth-child(1) {
+  top: -55px;
+  left: -40px;
+  z-index: -1;
+}
+
+.item:nth-child(2) {
+  top: -55px;
+  left: 130px;
+  z-index: -1;
+  animation-name: move-down1;
+}
+
+.item:nth-child(3) {
+  top: 210px;
+  left: 130px;
+  z-index: -1;
+  animation-name: move-updown1;
+}
+
+.item--create {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#b0e633, #53ef7d);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.item--create svg {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.item--post svg {
+  margin-top: 10px;
+  margin-left: 13px;
+}
+
+.item--inspire svg {
+  margin-top: 55px;
+  margin-left: 4px;
+}
+
+.item--create:nth-child(2) {
+  top: 210px;
+  left: 130px;
+  animation-name: move-updown1;
+}
+
+.item--create:nth-child(3) {
+  top: 210px;
+  left: 130px;
+  animation-name: move-updown1;
+}
+
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes move-updown1 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+button {
+  display: inline-block;
+  width: 160px;
+  height: 50px;
+  margin-left: -40px;
+  border-radius: 10px;
+  background: radial-gradient(#b0e633, #53ef7d);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: 2s linear infinite;
+  border: none;
+}
+
+button:hover {
+  background: radial-gradient(#53ef7d, #b0e633);
+  transform: translate(-0.3rem,-0.3rem);
+  box-shadow: 6px 6px #a7fabd;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translate(0);
+  box-shadow: none;
+  color: #000;
+}
+
+.card span::before {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: 176px;
+  transform: rotate(90deg);
+  bottom: -5px;
+  width: 30px;
+  height: 10px;
+  background: #53ef7d;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0.5;
+}
+
+.card span:nth-child(2)::before {
+  left: -5px;
+}
+
+.card span:nth-child(2)::after {
+  top: 2px;
+  left: 75px;
+}
+
+.card:hover span:nth-child(2)::before {
+  animation-delay: .1s;
+  animation: drop 1s linear infinite;
+}
+
+.card:hover .content:hover span:nth-child(2)::before {
+  display: none;
+}
+
+.card:hover span:nth-child(2)::after {
+  animation-delay: .2s;
+  animation: drop 0.5s linear infinite;
+}
+
+.card:hover .content:hover span:nth-child(2)::after {
+  display: none;
+}
+
+@keyframes drop {
+  0% {
+    top: -10px;
+    transform: translateY(0);
+  }
+
+  100% {
+    top: -10px;
+    transform: translateY(500px);
+  }
+}
+
+.card :hover span::before {
+  left: 90px;
+  top: 60px;
+  height: 50%;
+  width: 10%;
+  border-radius: 30px;
+  transform: rotate(945deg);
+}
+
+.card span::after {
+  content: "";
+  position: absolute;
+  margin-top: 120px;
+  left: -15px;
+  transform: rotate(90deg);
+  top: -5px;
+  width: 30px;
+  height: 10px;
+  background: #53ef7d;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0.5;
+}
+
+.card :hover span::after {
+  left: 90px;
+  top: -60px;
+  height: 50%;
+  width: 10%;
+  border-radius: 30px;
+  transform: rotate(-945deg);
+}
+
+.item--create svg {
+  animation: spin 2s linear infinite;
+}
+
+.item--post svg {
+  animation: upDown 2s ease-in-out infinite alternate;
+}
+
+.item--inspire svg {
+  animation: flash 1.2s linear infinite;
+}
+
+@keyframes spin {
+  
+  0% {
+    transform: rotate(360deg);
+    color: #000;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    color: #fff;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    color: #000;
+  }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(5px);
+    color: #fff;
+    text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+  }
+
+  100% {
+    transform: translateY(-5px);
+    color: #000;
+  }
+}
+
+@keyframes flash {
+  0% {
+    color: white;
+    text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+  }
+
+  50% {
+    color: #000;
+  }
+
+  100% {
+    color: white;
+  }
+}
+
+.card:hover .item--create {
+  filter: blur(2px);
+  opacity: .5;
+  transform: scale(.90);
+  box-shadow: none;
+}
+
+.card:hover .item--post {
+  filter: blur(2px);
+  opacity: .5;
+  transform: scale(.90);
+  box-shadow: none;
+}
+
+.card:hover .item--inspire {
+  filter: blur(2px);
+  opacity: .5;
+  transform: scale(.90);
+  box-shadow: none;
+}
+
+.card:hover .item--create:hover {
+  transition: transform .35s ease-in-out;
+  filter: blur(0px);
+  opacity: 1;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(#53ef7d, #b0e633);
+  transform: translate(-0.3rem,-0.3rem);
+}
+
+.card:hover .item--post:hover {
+  transition: transform .35s ease-in-out;
+  filter: blur(0px);
+  opacity: 1;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(#53ef7d, #b0e633);
+  transform: translate(-0.3rem,-0.3rem);
+}
+
+.card:hover .item--inspire:hover {
+  transition: transform .35s ease-in-out;
+  filter: blur(0px);
+  opacity: 1;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(#53ef7d, #b0e633);
+  transform: translate(-0.3rem,-0.3rem);
+}
+

@@ -3,28 +3,18 @@ import styles from "./Loader_felt.module.css";
 
 const Loader_felt = () => (
   <div>
-    <section className={styles["container"]}>
-      <div>
-        <div>
-          <span className={styles["one"] + styles["h6"]}></span>
-          <span className={styles["two"] + styles["h3"]}></span>
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <span className={styles["one"] + styles["h1"]}></span>
-          <span className={styles["two"] + styles["h4"]}></span>
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <span className={styles["one"] + styles["h5"]}></span>
-          <span className={styles["two"] + styles["h2"]}></span>
-        </div>
-      </div>
-    </section>
+    <div className={styles["loading"]}>
+      <svg width="64px" height="48px">
+        <polyline
+          points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"
+          id="back"
+        ></polyline>
+        <polyline
+          points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"
+          id="front"
+        ></polyline>
+      </svg>
+    </div>
   </div>
 );
 
@@ -39,30 +29,12 @@ export default Loader_felt;
 
         const Loader_felt = () => (
          <div>
-          <section className="container">
-  <div>
-  <div>
-    <span className="one h6"></span>
-    <span className="two h3"></span>
-  </div>
+          <div className="loading">
+  <svg width="64px" height="48px">
+      <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
+    <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
+  </svg>
 </div>
-
-
-<div>
-  <div>
-    <span className="one h1"></span>
-    <span className="two h4"></span>
-  </div>
-</div>
-
-
-<div>
-  <div>
-    <span className="one h5"></span>
-    <span className="two h2"></span>
-  </div>
-</div>
-</section>
         </div>
         );
 

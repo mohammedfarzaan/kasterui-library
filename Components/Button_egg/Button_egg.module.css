@@ -1,50 +1,63 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: icon, button, dark, download, hover effect, play-store */
-.appstore-button {
+/* From Uiverse.io by UNDERMAKEING  - Tags: button */
+/* From Uiverse.io by vinodjangid07 */
+.reward-btn {
+  width: 120px;
+  height: 40px;
+  background-color: #101218;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 12px;
-  border: 3px solid rgb(189, 189, 189);
-  background-color: rgb(15, 15, 15);
-  border-radius: 15px;
-  gap: 5px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s;
-  box-shadow: 0px 0px 100px -30px rgb(255, 255, 255);
 }
-.appstore-button svg {
-  width: 45px;
-}
-.appstore-button svg path {
-  fill: white;
-  transition: all 0.3s;
-}
-.button-text {
+.IconContainer {
+  width: 40px;
+  height: 40px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  color: white;
+  position: relative;
+}
+.IconContainer svg {
+  width: 40%;
+  z-index: 3;
+}
+.box-top {
   transition: all 0.3s;
 }
-.top-text {
+.text {
+  width: 70px;
+  height: 100%;
   font-size: 13px;
+  color: #6a8ef6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   font-weight: 600;
 }
-.bottom-text {
-  font-size: 24px;
-  font-weight: 600;
+.reward-btn:hover .IconContainer .box-top {
+  transform: translateY(-5px);
 }
-
-.appstore-button:hover {
-  background-color: rgb(236, 236, 236);
-  border: 3px solid rgb(138, 138, 138);
+.reward-btn:hover {
+  background-color: #202531;
 }
-.appstore-button:hover .button-text {
-  color: black;
+.reward-btn:hover .coin {
+  transform: translateY(-5px);
+  transition-delay: 0.2s;
 }
-.appstore-button:hover svg path {
-  fill: black;
+.coin {
+  width: 25%;
+  height: 25%;
+  background-color: #e4d61a;
+  position: absolute;
+  border-radius: 50%;
+  transition: all 0.3s;
+  z-index: 1;
+  border: 2px solid #ffe956;
+  margin-top: 4px;
 }
 

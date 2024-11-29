@@ -3,7 +3,9 @@ import styles from "./Loader_glass.module.css";
 
 const Loader_glass = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <svg className={styles["container"]}>
+      <rect className={styles["boxes"]}></rect>
+    </svg>
   </div>
 );
 
@@ -18,7 +20,7 @@ export default Loader_glass;
 
         const Loader_glass = () => (
          <div>
-          <div className="loader"></div>
+          <svg className="container"><rect className="boxes"></rect></svg>
         </div>
         );
 

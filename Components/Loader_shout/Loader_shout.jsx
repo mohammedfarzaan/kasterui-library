@@ -3,7 +3,11 @@ import styles from "./Loader_shout.module.css";
 
 const Loader_shout = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["loader"]}>
+      <li className={styles["ball"]}></li>
+      <li className={styles["ball"]}></li>
+      <li className={styles["ball"]}></li>
+    </div>
   </div>
 );
 
@@ -18,7 +22,11 @@ export default Loader_shout;
 
         const Loader_shout = () => (
          <div>
-          <div className="loader"></div>
+          <div className="loader">
+  <li className="ball"></li>
+  <li className="ball"></li>
+  <li className="ball"></li>
+</div>
         </div>
         );
 

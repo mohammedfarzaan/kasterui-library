@@ -3,18 +3,7 @@ import styles from "./Button_myself.module.css";
 
 const Button_myself = () => (
   <div>
-    <button alt="tony stark">
-      <i>t</i>
-      <i>o</i>
-      <i>n</i>
-      <i>y</i>
-      <i>&nbsp;</i>
-      <i>s</i>
-      <i>t</i>
-      <i>a</i>
-      <i>r</i>
-      <i>k</i>
-    </button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -29,17 +18,8 @@ export default Button_myself;
 
         const Button_myself = () => (
          <div>
-          <button alt="tony stark">
-  <i>t</i>
-  <i>o</i>
-  <i>n</i>
-  <i>y</i>
-  <i>&nbsp;</i>
-  <i>s</i>
-  <i>t</i>
-  <i>a</i>
-  <i>r</i>
-  <i>k</i>
+          <button className="button">
+  Button
 </button>
         </div>
         );

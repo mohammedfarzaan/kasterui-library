@@ -1,49 +1,29 @@
 
-/* From Uiverse.io by Manish-Tamang  - Tags: button, hover effect, html, css, 3d button, button hover effect  */
-a {
-  position: relative;
-  display: inline-flex;
-  width: 180px;
-  height: 55px;
-  margin: 0 15px;
-  perspective: 1000px;
-  text-decoration: none;
+/* From Uiverse.io by Mike11jr - Tags: button */
+.btn {
+ width: 130px;
+ height: 40px;
+ font-size: 1.1em;
+ cursor: pointer;
+ background-color: #171717;
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+ transition: all .4s;
 }
 
-a:before,
-a:after {
-  position: absolute;
-  content: "3D HOVER";
-  height: 55px;
-  width: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 5px solid black;
-  box-sizing: border-box;
-  font-size: 19px;
-  letter-spacing: 1px;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  transition: transform 0.25s;
+.btn:hover {
+ border-radius: 5px;
+ transform: translateY(-10px);
+ box-shadow: 0 7px 0 -2px #f85959,
+  0 15px 0 -4px #39a2db,
+  0 16px 10px -3px #39a2db;
 }
 
-a:before {
-  color: #fff;
-  background: #000;
-  transform: rotateY(0deg) translateZ(25px);
+.btn:active {
+ transition: all 0.2s;
+ transform: translateY(-5px);
+ box-shadow: 0 2px 0 -2px #f85959,
+  0 8px 0 -4px #39a2db,
+  0 12px 10px -3px #39a2db;
 }
-
-a:after {
-  color: #000;
-  transform: rotateX(90deg) translateZ(25px);
-}
-
-a:hover:before {
-  transform: translateZ(-25px) rotateX(-90deg);
-}
-
-a:hover:after {
-  transform: rotateY(0deg) translateZ(25px);
-}
-

@@ -3,13 +3,8 @@ import styles from "./Loader_folks.module.css";
 
 const Loader_folks = () => (
   <div>
-    <div className={styles["cube"]}>
-      <div className={styles["face"] + styles["front"]}></div>
-      <div className={styles["face"] + styles["back"]}></div>
-      <div className={styles["face"] + styles["right"]}></div>
-      <div className={styles["face"] + styles["left"]}></div>
-      <div className={styles["face"] + styles["top"]}></div>
-      <div className={styles["face"] + styles["bottom"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["cover"]}></div>
     </div>
   </div>
 );
@@ -25,13 +20,8 @@ export default Loader_folks;
 
         const Loader_folks = () => (
          <div>
-          <div className="cube">
-    <div className="face front"></div>
-    <div className="face back"></div>
-    <div className="face right"></div>
-    <div className="face left"></div>
-    <div className="face top"></div>
-    <div className="face bottom"></div>
+          <div className="loader">
+  <div className="cover"></div>
 </div>
         </div>
         );

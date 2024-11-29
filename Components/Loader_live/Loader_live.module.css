@@ -1,48 +1,72 @@
 
-/* From Uiverse.io by JulioCodesSM - Tags: loader */
-/* From uiverse.io by @JulioCodesSM */
-.loader {
- width: 50px;
- height: 50px;
- position: relative;
- transform: translateX(-25px);
- /* Compensating for the left of 50px in the keyframe. */
+/* From Uiverse.io by BlackisPlay  - Tags: material design, animation, 3d, minimalist, black, loading, loader */
+#wholeThing {
+  height: 700px;
+  width: 500px;
+  scale: 0.8;
 }
 
-.loader::before,
-.loader::after {
- content: '';
- position: absolute;
- width: inherit;
- height: inherit;
- border-radius: 50%;
- mix-blend-mode: multiply;
- animation: rotate9 1s infinite cubic-bezier(0.77, 0, 0.175, 1);
+#newtonsCradle,
+#newtonsCradleLeft,
+#newtonsCradleRight {
+  position: absolute;
 }
 
-.loader::before {
- background-color: #fc3f9e;
+#newtonsCradle {
+  top: 90px;
+  left: -115px; /*Use top and left to change the position of the newton's cradle*/
 }
 
-.loader::after {
- background-color: #50e8f3;
- animation-delay: .5s;
+#newtonsCradleRight {
+  animation: swingRight 2s infinite both;
+  animation-delay: 1s;
+  rotate: -90deg;
+  grid-area: right;
+  top: -24px;
+  left: -37px; /*Use top and left to change the position of the right swinging ball*/
 }
 
-@keyframes rotate9 {
- 0%,100% {
-  left: 50px;
- }
+@keyframes swingRight {
+  0% {
+    rotate: -90deg;
+  }
 
- 25% {
-  transform: scale(.3);
- }
+  30% {
+    rotate: 0deg;
+  }
 
- 50% {
-  left: 0;
- }
+  75% {
+    rotate: 0deg;
+  }
 
- 75% {
-  transform: scale(1);
- }
+  100% {
+    rotate: -90deg;
+  }
 }
+
+#newtonsCradleLeft {
+  animation: swingLeft 2s infinite both ease-out;
+  rotate: 90deg;
+  grid-area: left;
+  top: -24px;
+  left: -173px; /*Use top and left to change the position of the left swinging ball*/
+}
+
+@keyframes swingLeft {
+  0% {
+    rotate: 90deg;
+  }
+
+  30% {
+    rotate: 0deg;
+  }
+
+  75% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 90deg;
+  }
+}
+

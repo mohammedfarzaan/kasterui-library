@@ -1,63 +1,56 @@
 
-/* From Uiverse.io by csemszepp - Source: https://codepen.io/megatroncoder/pen/Xqeyva - Tags: loader, animated */
-.centered {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background: rgb(33 33 33 / var(--tw-bg-opacity))!important;
-  ;
-	filter: blur(10px) contrast(20);
+/* From Uiverse.io by felipesntr - Tags: loader */
+.loader {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
 }
 
-.blob-1,.blob-2 {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  background: #fff;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+.out-1 {
+ position: absolute;
+ width: 4em;
+ height: 4em;
+ border-radius: 100%;
+ border: 0.2em solid transparent;
+ border-top-color: rgb(43, 226, 83);
+ animation: rec 2s infinite;
+ transition: all ease-in-out 0.3s;
 }
 
-.blob-1 {
-  left: 20%;
-  animation: osc-l 2.5s ease infinite;
+.out-2 {
+ position: absolute;
+ width: 4em;
+ height: 4em;
+ border-radius: 100%;
+ border: 0.2em solid transparent;
+ border-left-color: rgb(226, 223, 43);
+ animation: rec 2s infinite;
+ transition: all ease-in-out 0.3s;
 }
 
-.blob-2 {
-  left: 80%;
-  animation: osc-r 2.5s ease infinite;
-  background: #0ff;
+.out-3 {
+ position: absolute;
+ width: 4em;
+ height: 4em;
+ border-radius: 100%;
+ border: 0.2em solid transparent;
+ border-bottom-color: rgb(51, 105, 252);
+ animation: rec 2s infinite;
+ transition: all ease-in-out 0.3s;
 }
 
-@keyframes osc-l {
-  0% {
-    left: 20%;
-  }
-
-  50% {
-    left: 50%;
-  }
-
-  100% {
-    left: 20%;
-  }
+.in {
+ position: absolute;
+ border-radius: 100%;
+ border: 0.2em solid rgba(43, 226, 83, 0.11);
+ width: 4em;
+ height: 4em;
+ transition: all ease-in-out 0.3s;
 }
 
-@keyframes osc-r {
-  0% {
-    left: 80%;
-  }
-
-  50% {
-    left: 50%;
-  }
-
-  100% {
-    left: 80%;
-  }
+@keyframes rec {
+ 0% {
+  transform: rotate(360deg);
+ }
 }

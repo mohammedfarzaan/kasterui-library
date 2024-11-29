@@ -3,12 +3,7 @@ import styles from "./Button_laugh.module.css";
 
 const Button_laugh = () => (
   <div>
-    <div className={styles["nav_bar"]}>
-      <div className={styles["bar1"]}></div>
-      <div className={styles["bar2"]}></div>
-      <div className={styles["bar3_h"]}></div>
-      <div className={styles["bar4"]}></div>
-    </div>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -23,12 +18,7 @@ export default Button_laugh;
 
         const Button_laugh = () => (
          <div>
-          <div className="nav_bar">
-  <div className="bar1"></div>
-  <div className="bar2"></div>
-  <div className="bar3_h"></div>
-  <div className="bar4"></div>
-</div>
+          <button className="button">Button</button>
         </div>
         );
 

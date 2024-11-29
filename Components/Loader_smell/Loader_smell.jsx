@@ -3,9 +3,11 @@ import styles from "./Loader_smell.module.css";
 
 const Loader_smell = () => (
   <div>
-    <div className={styles["centered"]}>
-      <div className={styles["blob-1"]}></div>
-      <div className={styles["blob-2"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["in"]}></div>
+      <div className={styles["out-1"]}></div>
+      <div className={styles["out-2"]}></div>
+      <div className={styles["out-3"]}></div>
     </div>
   </div>
 );
@@ -21,9 +23,11 @@ export default Loader_smell;
 
         const Loader_smell = () => (
          <div>
-          <div className="centered">
-	<div className="blob-1"></div>
-	<div className="blob-2"></div>
+          <div className="loader">
+<div className="in"></div>
+<div className="out-1"></div>
+<div className="out-2"></div>
+<div className="out-3"></div>
 </div>
         </div>
         );

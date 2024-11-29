@@ -3,9 +3,7 @@ import styles from "./Loader_ship.module.css";
 
 const Loader_ship = () => (
   <div>
-    <svg className="container">
-      <rect className="boxes"></rect>
-    </svg>
+    <div className={styles["spinner"]}></div>
   </div>
 );
 
@@ -20,7 +18,7 @@ export default Loader_ship;
 
         const Loader_ship = () => (
          <div>
-          <svg className="container"><rect className="boxes"></rect></svg>
+          <div className="spinner"></div>
         </div>
         );
 

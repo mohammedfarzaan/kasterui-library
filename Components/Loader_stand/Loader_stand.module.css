@@ -1,23 +1,80 @@
 
-/* From Uiverse.io by AHMED-MIT - Tags: loader, about me, accept call */
-.spinner {
-  --d: 24.6px;
-  width: 4.5px;
-  height: 4.5px;
+/* From Uiverse.io by alexruix - Tags: loader */
+.loader {
+  --ballcolor: #f2f2f2;
+  --shadow: 0px 0 #ffffff00;
+  --shadowcolor: #ffffff00;
+  width: 10px;
+  height: 10px;
+  left: -120px;
   border-radius: 50%;
-  color: #474bff;
-  box-shadow: calc(1*var(--d))      calc(0*var(--d))     0 0,
-          calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1.1px,
-          calc(0*var(--d))      calc(1*var(--d))     0 2.2px,
-          calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3.4px,
-          calc(-1*var(--d))     calc(0*var(--d))     0 4.5px,
-          calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5.6px,
-          calc(0*var(--d))      calc(-1*var(--d))    0 6.7px;
-  animation: spinner-a90wxe 1s infinite steps(8);
+  position: relative;
+  color: var(--ballcolor);
+  animation: shadowRolling 2s linear infinite;
 }
 
-@keyframes spinner-a90wxe {
+@keyframes shadowRolling {
+  
+  0% {
+    box-shadow: var(--shadow),
+        var(--shadow),
+        var(--shadow),
+        var(--shadow);
+  }
+
+  12% {
+    box-shadow: 100px 0 var(--ballcolor),
+        var(--shadow),
+        var(--shadow), 
+        var(--shadow);
+  }
+
+  25% {
+    box-shadow: 110px 0 var(--ballcolor),
+        100px 0 var(--ballcolor),
+        var(--shadow), 
+        var(--shadow);
+  }
+
+  36% {
+    box-shadow: 120px 0 var(--ballcolor), 
+        110px 0 var(--ballcolor), 
+        100px 0 var(--ballcolor), 
+         var(--shadow);
+  }
+
+  50% {
+    box-shadow: 130px 0 var(--ballcolor),
+        120px 0 var(--ballcolor),
+        110px 0 var(--ballcolor),
+        100px 0 var(--ballcolor);
+  }
+
+  62% {
+    box-shadow: 200px 0 var(--shadowcolor),
+         130px 0 var(--ballcolor), 
+         120px 0 var(--ballcolor), 
+         110px 0 var(--ballcolor);
+  }
+
+  75% {
+    box-shadow: 200px 0 var(--shadowcolor),
+        200px 0 var(--shadowcolor),
+        130px 0 var(--ballcolor), 
+        120px 0 var(--ballcolor);
+  }
+
+  87% {
+    box-shadow: 200px 0 var(--shadowcolor), 
+        200px 0 var(--shadowcolor), 
+        200px 0 var(--shadowcolor), 
+        130px 0 var(--ballcolor);
+  }
+
   100% {
-    transform: rotate(1turn);
+    box-shadow: 200px 0 var(--shadowcolor), 
+        200px 0 var(--shadowcolor),
+        200px 0 var(--shadowcolor),
+        200px 0 var(--shadowcolor);
   }
 }

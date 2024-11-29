@@ -3,7 +3,17 @@ import styles from "./Button_eight.module.css";
 
 const Button_eight = () => (
   <div>
-    <button>Button</button>
+    <button className={styles["button"]}>
+      <div className={styles["b-hover"]}>
+        <div className={styles["cir-1"] + styles["filter"]}></div>
+        <div className={styles["cir-2"] + styles["filter"]}></div>
+        <div className={styles["cir-3"] + styles["filter"]}></div>
+        <div className={styles["cir-4"] + styles["filter"]}></div>
+        <div className={styles["cir-5"] + styles["filter"]}></div>
+        <div className={styles["cir-6"] + styles["filter"]}></div>
+      </div>
+      Charge &amp; Go
+    </button>
   </div>
 );
 
@@ -18,8 +28,16 @@ export default Button_eight;
 
         const Button_eight = () => (
          <div>
-          <button>
-  Button
+          <button className="button">
+  <div className="b-hover">
+    <div className="cir-1 filter"></div>
+    <div className="cir-2 filter"></div>
+    <div className="cir-3 filter"></div>
+    <div className="cir-4 filter"></div>
+    <div className="cir-5 filter"></div>
+    <div className="cir-6 filter"></div>
+  </div>
+  Charge &amp; Go
 </button>
         </div>
         );

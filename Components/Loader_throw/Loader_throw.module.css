@@ -1,39 +1,65 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: animation, loading, loader, book, loading animation */
-.loader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.book-wrapper {
-  width: 150px;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+/* From Uiverse.io by vikramsinghnegi  - Tags: loading, loader, html, css */
+.loader-spanne-20 {
   position: relative;
+  width: 100px;
+  height: 30px;
+  padding: 0;
 }
-.book {
-  width: 100%;
-  height: auto;
-  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.137));
-}
-.book-wrapper .book-page {
-  width: 50%;
-  height: auto;
+.loader-spanne-20 > span {
   position: absolute;
-  animation: paging 0.15s linear infinite;
-  transform-origin: left;
+  right: 0;
+  width: 3px;
+  height: 30px;
+  background-color: rgb(116, 204, 197);
+  display: block;
+  border-radius: 3px;
+  transform-origin: 50% 100%;
+  animation: move 2.8s linear infinite;
 }
-@keyframes paging {
+.loader-spanne-20 > span:nth-child(1) {
+  animation-delay: -0.4s;
+}
+.loader-spanne-20 > span:nth-child(2) {
+  animation-delay: -0.8s;
+}
+.loader-spanne-20 > span:nth-child(3) {
+  animation-delay: -1.2s;
+}
+.loader-spanne-20 > span:nth-child(4) {
+  animation-delay: -1.6s;
+}
+.loader-spanne-20 > span:nth-child(5) {
+  animation-delay: -2s;
+}
+.loader-spanne-20 > span:nth-child(6) {
+  animation-delay: -2.4s;
+}
+.loader-spanne-20 > span:nth-child(7) {
+  animation-delay: -2.8s;
+}
+@keyframes move {
   0% {
-    transform: rotateY(0deg) skewY(0deg);
+    opacity: 0;
+    transform: translateX(0px) rotate(0deg);
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(-40px) rotate(0deg);
   }
   50% {
-    transform: rotateY(90deg) skewY(-20deg);
+    opacity: 1;
+    transform: translateX(-50px) rotate(22deg);
+  }
+  85% {
+    opacity: 1;
+    transform: translateX(-85px) rotate(60deg);
   }
   100% {
-    transform: rotateY(180deg) skewY(0deg);
+    opacity: 0;
+    transform: translateX(-100px) rotate(65deg);
   }
 }
 

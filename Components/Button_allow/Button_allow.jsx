@@ -3,9 +3,7 @@ import styles from "./Button_allow.module.css";
 
 const Button_allow = () => (
   <div>
-    <button>
-      <p>Submit</p>
-    </button>
+    <button className={styles["Btn"]}></button>
   </div>
 );
 
@@ -20,8 +18,7 @@ export default Button_allow;
 
         const Button_allow = () => (
          <div>
-          <button>
-  <p>Submit</p>
+          <button className="Btn">
 </button>
         </div>
         );

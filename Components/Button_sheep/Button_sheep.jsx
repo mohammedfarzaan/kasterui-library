@@ -3,7 +3,7 @@ import styles from "./Button_sheep.module.css";
 
 const Button_sheep = () => (
   <div>
-    <button>Hover me</button>
+    <button className={styles["btn"]}>DOWNLOAD</button>
   </div>
 );
 
@@ -18,8 +18,8 @@ export default Button_sheep;
 
         const Button_sheep = () => (
          <div>
-          <button>
-Hover me
+          <button className="btn">
+  DOWNLOAD
 </button>
         </div>
         );

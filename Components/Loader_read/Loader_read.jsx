@@ -4,8 +4,16 @@ import styles from "./Loader_read.module.css";
 const Loader_read = () => (
   <div>
     <div className={styles["loading"]}>
-      <div className={styles["d1"]}></div>
-      <div className={styles["d2"]}></div>
+      <div className={styles["loading-box"]}>
+        <div className={styles["grid"]}>
+          <div className={styles["color"] + styles["l1"]}></div>
+          <div className={styles["color"] + styles["l2"]}></div>
+          <div className={styles["color"] + styles["l3"]}></div>
+          <div className={styles["color"] + styles["l4"]}></div>
+          <div className={styles["color"] + styles["l5"]}></div>
+          <div className={styles["color"] + styles["l6"]}></div>
+        </div>
+      </div>
     </div>
   </div>
 );
@@ -22,8 +30,16 @@ export default Loader_read;
         const Loader_read = () => (
          <div>
           <div className="loading">
-    <div className="d1"></div>
-    <div className="d2"></div>
+  <div className="loading-box">
+    <div className="grid">
+      <div className="color l1"></div>
+      <div className="color l2"></div>
+      <div className="color l3"></div>
+      <div className="color l4"></div>
+      <div className="color l5"></div>
+      <div className="color l6"></div>
+    </div>
+  </div>
 </div>
         </div>
         );

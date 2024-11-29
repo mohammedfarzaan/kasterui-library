@@ -3,13 +3,7 @@ import styles from "./Button_wire.module.css";
 
 const Button_wire = () => (
   <div>
-    <button className={styles["button"]}>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      Hover Me
-    </button>
+    <button> Hover me</button>
   </div>
 );
 
@@ -24,12 +18,7 @@ export default Button_wire;
 
         const Button_wire = () => (
          <div>
-          <button className="button">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  Hover Me
+          <button> Hover me
 </button>
         </div>
         );

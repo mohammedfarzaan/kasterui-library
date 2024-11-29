@@ -3,15 +3,17 @@ import styles from "./Loader_slow.module.css";
 
 const Loader_slow = () => (
   <div>
-    <div className={styles["loading"]}>
-      <div className={styles["cube"]}>
-        <div className={styles["side"] + styles["front"]}></div>
-        <div className={styles["side"] + styles["back"]}></div>
-        <div className={styles["side"] + styles["top"]}></div>
-        <div className={styles["side"] + styles["bottom"]}></div>
-        <div className={styles["side"] + styles["left"]}></div>
-        <div className={styles["side"] + styles["right"]}></div>
-      </div>
+    <div className={styles["center"]}>
+      <div className={styles["wave"]}></div>
+      <div className={styles["wave"]}></div>
+      <div className={styles["wave"]}></div>
+      <div className={styles["wave"]}></div>
+      <div className={styles["wave"]}></div>
+      <div className={styles["wave"]}></div>
+      <div className={styles["wave"]}></div>
+      <div className={styles["wave"]}></div>
+      <div className={styles["wave"]}></div>
+      <div className={styles["wave"]}></div>
     </div>
   </div>
 );
@@ -27,15 +29,17 @@ export default Loader_slow;
 
         const Loader_slow = () => (
          <div>
-          <div className="loading">
-  <div className="cube">
-    <div className="side front"></div>
-    <div className="side back"></div>
-    <div className="side top"></div>
-    <div className="side bottom"></div>
-    <div className="side left"></div>
-    <div className="side right"></div>
-  </div>
+          <div className="center">
+    <div className="wave"></div>
+    <div className="wave"></div>
+    <div className="wave"></div>
+    <div className="wave"></div>
+    <div className="wave"></div>
+    <div className="wave"></div>
+    <div className="wave"></div>
+    <div className="wave"></div>
+    <div className="wave"></div>
+    <div className="wave"></div>
 </div>
         </div>
         );

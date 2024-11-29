@@ -3,7 +3,7 @@ import styles from "./Button_town.module.css";
 
 const Button_town = () => (
   <div>
-    <button className={styles["button"]}>BUTTON</button>
+    <button> Squeeze me</button>
   </div>
 );
 
@@ -18,8 +18,7 @@ export default Button_town;
 
         const Button_town = () => (
          <div>
-          <button className="button">
-  BUTTON
+          <button> Squeeze me
 </button>
         </div>
         );

@@ -1,55 +1,65 @@
 
-/* From Uiverse.io by Z4drus  - Tags: simple, glassmorphism, minimalist, white, black, loading, loader, loading animation */
-@keyframes spin {
-  0% {
-    transform: rotateY(0deg) translateZ(0);
-  }
-  100% {
-    transform: rotateY(360deg) translateZ(0);
-  }
-}
-
-body,
-html {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.meteor {
-  width: 150px;
-  height: 150px;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.6) 0%,
-    rgba(0, 0, 0, 0.6) 100%
-  );
-  border-radius: 50%;
-  position: relative;
-  animation: spin 3s linear infinite;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-  transform-style: preserve-3d;
-}
-
-.meteor::before,
-.meteor::after {
-  content: "";
+/* From Uiverse.io by Markoslc - Tags: loader */
+.item1, .item2, .item3 {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  background-color: transparent;
+  left: calc(50% - (var(--size) / 2));
+  top: calc(50% - (var(--size) / 2));
+  height: var(--size);
+  width: var(--size);
   border-radius: 50%;
-  background: inherit;
 }
 
-.meteor::before {
-  transform: translateZ(-15px);
+.loader .item1 {
+  --size: 90px;
+  animation: size1_1 2.5s infinite alternate;
+  z-index: 1;
 }
 
-.meteor::after {
-  transform: translateZ(15px);
+.loader .item2 {
+  --size: 60px;
+  animation: size1_2 2.5s infinite alternate;
+  z-index: 2;
 }
 
+.loader .item3 {
+  --size: 30px;
+  animation: size1_3 2.5s infinite alternate;
+  z-index: 3;
+}
+
+@keyframes size1_1 {
+  0%,
+  10% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 8px 8px 14px #c5c5c5, -8px -8px 14px #ffffff;
+  }
+}
+
+@keyframes size1_2 {
+  0%,
+  40% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 8px 8px 14px #c5c5c5, -8px -8px 14px #ffffff;
+  }
+}
+
+@keyframes size1_3 {
+  0%,
+  70% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 8px 8px 14px #c5c5c5, -8px -8px 14px #ffffff;
+  }
+}

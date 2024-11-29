@@ -3,8 +3,9 @@ import styles from "./Loader_breeze.module.css";
 
 const Loader_breeze = () => (
   <div>
-    <div className={styles["shake"]}>
-      <div className={styles["loader"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["loader-in"]}></div>
+      <div className={styles["loader-dot"]}></div>
     </div>
   </div>
 );
@@ -20,8 +21,9 @@ export default Loader_breeze;
 
         const Loader_breeze = () => (
          <div>
-          <div className="shake">
-<div className="loader"></div>
+          <div className="loader">
+    <div className="loader-in"></div>
+    <div className="loader-dot"></div>
 </div>
         </div>
         );

@@ -3,7 +3,7 @@ import styles from "./Button_young.module.css";
 
 const Button_young = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button className={styles["button"]}>BUTTON</button>
   </div>
 );
 
@@ -19,7 +19,7 @@ export default Button_young;
         const Button_young = () => (
          <div>
           <button className="button">
-  Button
+  BUTTON
 </button>
         </div>
         );

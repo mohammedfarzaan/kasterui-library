@@ -3,13 +3,7 @@ import styles from "./Loader_ill.module.css";
 
 const Loader_ill = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["folder"]}>
-        <div className={styles["top"]}></div>
-        <div className={styles["bottom"]}></div>
-      </div>
-      <div className={styles["title"]}>getting files ready...</div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -24,13 +18,7 @@ export default Loader_ill;
 
         const Loader_ill = () => (
          <div>
-          <div className="container">
-  <div className="folder">
-    <div className="top"></div>
-    <div className="bottom"></div>
-  </div>
-  <div className="title">getting files ready...</div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

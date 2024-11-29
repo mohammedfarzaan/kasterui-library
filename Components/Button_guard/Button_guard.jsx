@@ -3,7 +3,7 @@ import styles from "./Button_guard.module.css";
 
 const Button_guard = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button className={styles["primary-button"]}>Primary button</button>
   </div>
 );
 
@@ -18,8 +18,8 @@ export default Button_guard;
 
         const Button_guard = () => (
          <div>
-          <button className="button">
-  Button
+          <button className="primary-button">
+  Primary button
 </button>
         </div>
         );

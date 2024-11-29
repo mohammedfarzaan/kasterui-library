@@ -1,100 +1,152 @@
 
-/* From Uiverse.io by linkb15 - Tags: button */
+/* From Uiverse.io by Yatsu68 - Tags: button */
 button {
-  --min-width: 180px;
-  --min-height: 42px;
-  --ring-min-size: 20px;
-  --ring-max-size: 150px;
-  --ring-width: 3px;
-  --main-bg-color: #814fd1;
-  --gradient-bg-color-1: rgb(222, 203, 226);
-  --gradient-bg-color-2: rgb(79, 131, 209);
-  --ring-color: #6f00ff;
-  --shadow-color: rgba(79, 99, 209, 0.64);
-  --hover-shadow-color: rgba(79, 99, 209, 0.64);
-  --main-fg-color: #313133;
-  --hover-fg-color: rgb(38, 11, 53);
-  min-width: var(--min-width);
-  min-height: var(--min-height);
-  font-size: 17px;
-  text-transform: uppercase;
+  all: unset;
+  background-color: #1b2164;
+  color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+button span {
+  letter-spacing: 1.2px;
+  padding-left: 0.8rem;
+  padding-right: 0.6rem;
   font-weight: 600;
-  color: var(--main-fg-color);
-  background: var(--main-bg-color);
-  background: linear-gradient(66deg, var(--gradient-bg-color-1) 0%, var(--gradient-bg-color-2) 100%);
-  border: none;
-  border-radius: 999px;
-  box-shadow: 12px 2px 24px var(--shadow-color);
-  transition: all 0.3s ease-in-out 0s;
-  cursor: pointer;
-  outline: none;
-  position: relative;
-  padding: 10px;
 }
 
-button::before {
-  content: '';
-  border-radius: 999px;
-  min-width: calc(var(--min-width) + 12px);
-  min-height: calc(var(--min-height) + 12px);
-  border: var(--ring-width) solid var(--ring-color);
-  box-shadow: 0 0 60px var(--hover-shadow-color);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: all .3s ease-in-out 0s;
+button:hover {
+  background: linear-gradient(-45deg, #1b2164, #6a33a8, #1b2164, #2ba6f5);
+  background-size: 400% 400%;
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+  -webkit-animation: scaling-and-gradient 10s ease infinite;
+  animation: scaling-and-gradient 10s ease infinite;
 }
 
-button:hover, .button:focus {
-  color: var(--hover-fg-color);
-  transform: translateY(-6px);
+button svg {
+  text-shadow: 0px 7px rgba(81,67,21,0.8), 
+	  -3px 0px 7px rgba(81,67,21,0.8), 
+	  0px 4px 7px rgba(81,67,21,0.8);
+  -webkit-animation: slide-in 1.6s ease-out both;
+  animation: slide-in 1.6s ease-out both;
 }
 
-button:active {
-  color: var(--main-fg-color);
-  transform: scale(0.95);
+button:active svg {
+  -webkit-animation: slide-out 0.4s ease-in forwards;
+  animation: slide-out 0.4s ease-in forwards;
 }
 
-button:active::before {
-  border: 0px solid var(--ring-color);
-}
-
-button:hover::before, button:focus::before {
-  opacity: 1;
-}
-
-/* ring */
-button::after {
-  content: '';
-  width: var(--ring-min-size);
-  height: var(--ring-min-size);
-  border-radius: 100%;
-  border: var(--ring-width) solid var(--ring-color);
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: ring 1.5s infinite;
-}
-
-button:hover::after, button:focus::after {
-  animation: none;
-  display: none;
-}
-
-@keyframes ring {
+@-webkit-keyframes slide-out {
   0% {
-    width: var(--ring-min-size);
-    height: var(--ring-min-size);
-    opacity: 0.5;
+    -webkit-transform: translateY(0) translateX(0) rotate(-35);
+    transform: translateY(0) translateX(0) rotate(-35);
+    opacity: 1;
   }
 
   100% {
-    width: var(--ring-max-size);
-    height: var(--ring-max-size);
+    -webkit-transform: translateY(-300px) translateX(-300px);
+    transform: translateY(-300px) translateX(-300px);
     opacity: 0;
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    -webkit-transform: translateY(0) translateX(0) rotate(-35);
+    transform: translateY(0) translateX(0) rotate(-35);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(-300px) translateX(-300px);
+    transform: translateY(-300px) translateX(-300px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    -webkit-transform: translateY(300px) translateX(300px);
+    transform: translateY(300px) translateX(300px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0) translateX(0) rotate(-35);
+    transform: translateY(0) translateX(0) rotate(-35);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    -webkit-transform: translateY(300px) translateX(300px);
+    transform: translateY(300px) translateX(300px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0) translateX(0) rotate(-35);
+    transform: translateY(0) translateX(0) rotate(-35);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scaling-and-gradient {
+  0% {
+    background-position: 0% 50%;
+    scale: 1;
+  }
+
+  25% {
+    scale: 1.04;
+  }
+
+  50% {
+    background-position: 100% 50%;
+    scale: 1.06;
+  }
+
+  50% {
+    scale: 1.04;
+  }
+
+  100% {
+    background-position: 0% 50%;
+    scale: 1;
+  }
+}
+
+@keyframes scaling-and-gradient {
+  0% {
+    background-position: 0% 50%;
+    scale: 1;
+  }
+
+  25% {
+    scale: 1.04;
+  }
+
+  50% {
+    background-position: 100% 50%;
+    scale: 1.06;
+  }
+
+  50% {
+    scale: 1.04;
+  }
+
+  100% {
+    background-position: 0% 50%;
+    scale: 1;
   }
 }

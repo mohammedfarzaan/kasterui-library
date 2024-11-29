@@ -1,68 +1,27 @@
 
-/* From Uiverse.io by G4b413l - Tags: loader */
-.momentum {
- --uib-size: 40px;
- --uib-speed: 1s;
- --uib-color: rgb(221, 255, 242);
- position: relative;
- display: flex;
- align-items: center;
- justify-content: center;
- height: var(--uib-size);
- width: var(--uib-size);
- animation: rotate01561 var(--uib-speed) linear infinite;
-}
-
-.momentum::before,
-.momentum::after {
- content: '';
- height: 25%;
- width: 25%;
+/* From Uiverse.io by satyamchaudharydev - Tags: loader */
+.ball {
+ --size: 20px;
+ --timing: 0.7s;
+ --displace: 70px;
  border-radius: 50%;
- background-color: var(--uib-color);
+ width: var(--size);
+ height: var(--size);
+ background: #000;
+ margin-right: var(--displace);
+ animation: animation321 var(--timing) infinite alternate
+    cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.momentum::before {
- animation: wobble290123 calc(var(--uib-speed) * 1.25) ease-in-out infinite;
-}
-
-.momentum::after {
- animation: wobble9123 calc(var(--uib-speed) * 1.25) ease-in-out infinite;
-}
-
-.momentum::before {
- margin-right: 10%;
-}
-
-@keyframes wobble9123 {
- 0%,
-  100% {
-  transform: translateX(0);
- }
-
- 50% {
-  transform: translateX(calc(var(--uib-size) * 0.2)) scale(1.1);
- }
-}
-
-@keyframes wobble290123 {
- 0%,
-  100% {
-  transform: translateX(0);
- }
-
- 50% {
-  transform: translateX(calc(var(--uib-size) * -0.2)) scale(1.1);
- }
-}
-
-@keyframes rotate01561 {
+@keyframes animation321 {
  0% {
-  transform: rotate(0deg);
+  background: #4284f3;
+  transform: translateX(var(--displace));
  }
 
  100% {
-  transform: rotate(360deg);
+  background: #ea4335;
+  transform: translateX(00px);
  }
 }
 

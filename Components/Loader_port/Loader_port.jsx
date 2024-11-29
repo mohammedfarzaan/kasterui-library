@@ -3,7 +3,20 @@ import styles from "./Loader_port.module.css";
 
 const Loader_port = () => (
   <div>
-    <div className={styles["planet"]}></div>
+    <div className={styles["lds-spinner"]}>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 );
 
@@ -18,8 +31,7 @@ export default Loader_port;
 
         const Loader_port = () => (
          <div>
-          <div className="planet">
-</div>
+          <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         </div>
         );
 

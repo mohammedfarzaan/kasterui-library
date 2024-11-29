@@ -3,7 +3,7 @@ import styles from "./Button_clear.module.css";
 
 const Button_clear = () => (
   <div>
-    <button>Click me</button>
+    <button> Button</button>
   </div>
 );
 
@@ -18,8 +18,7 @@ export default Button_clear;
 
         const Button_clear = () => (
          <div>
-          <button>
-    Click me
+          <button> Button
 </button>
         </div>
         );

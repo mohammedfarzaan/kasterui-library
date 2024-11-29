@@ -1,66 +1,33 @@
 
-/* From Uiverse.io by Shoh2008 - Tags: loader, image */
+/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */
+/* HTML: <div class="loader"></div> */
 .loader {
-  width: 64px;
-  height: 64px;
-  position: relative;
-  background: #FFF;
-  border-radius: 4px;
-  overflow: hidden;
+  width: 60px;
+  height: 30px;
+  display: grid;
+  --c: #0000 calc(100% - 5px),#000 calc(100% - 4px) 96%,#0000;
+  background: radial-gradient(farthest-side at bottom,var(--c)) 0 0,
+    radial-gradient(farthest-side at top   ,var(--c)) 100% 100%;
+  background-size: calc(50% + 2px) 50%;
+  background-repeat: no-repeat;
+  animation: l14 1.5s infinite linear;
 }
 
-.loader:before {
+.loader:before,
+.loader:after {
   content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 40px;
-  height: 40px;
-  transform: rotate(45deg) translate(30%, 40%);
-  background: #ff9371;
-  box-shadow: 32px -34px 0 5px #ff3d00;
-  animation: slide 2s infinite ease-in-out alternate;
+  grid-area: 1/1;
+  background: inherit;
+  animation: inherit;
+  animation-duration: 2s;
 }
 
 .loader:after {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #ff3d00;
-  transform: rotate(0deg);
-  transform-origin: 35px 145px;
-  animation: rotate 2s infinite ease-in-out;
+  --s: -1;
 }
 
-@keyframes slide {
-  0% , 100% {
-    bottom: -35px
-  }
-
-  25% , 75% {
-    bottom: -2px
-  }
-
-  20% , 80% {
-    bottom: 2px
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(-15deg)
-  }
-
-  25% , 75% {
-    transform: rotate(0deg)
-  }
-
+@keyframes l14 {
   100% {
-    transform: rotate(25deg)
+    transform: rotate(calc(var(--s,1)*1turn))
   }
 }
-  

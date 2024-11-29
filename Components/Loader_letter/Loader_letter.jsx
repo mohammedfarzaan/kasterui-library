@@ -3,7 +3,10 @@ import styles from "./Loader_letter.module.css";
 
 const Loader_letter = () => (
   <div>
-    <div className={styles["chaotic-orbit"]}></div>
+    <div className={styles["loading"]}>
+      <div className={styles["d1"]}></div>
+      <div className={styles["d2"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +21,10 @@ export default Loader_letter;
 
         const Loader_letter = () => (
          <div>
-          <div className="chaotic-orbit"></div>
+          <div className="loading">
+    <div className="d1"></div>
+    <div className="d2"></div>
+</div>
         </div>
         );
 

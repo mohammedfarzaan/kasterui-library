@@ -3,7 +3,7 @@ import styles from "./Button_melted.module.css";
 
 const Button_melted = () => (
   <div>
-    <button className={styles["button2"]}>Hover me</button>
+    <button>UIVERSE</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_melted;
 
         const Button_melted = () => (
          <div>
-          <button className="button2">
-    Hover me
-</button>
+          <button>UIVERSE</button>
         </div>
         );
 

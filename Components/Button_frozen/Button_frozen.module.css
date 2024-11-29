@@ -1,0 +1,16 @@
+
+/* From Uiverse.io by andrew-demchenk0 - Tags: red, button, phone, circle, reject, call reject */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: none;
+  background-color: #FF2849;
+}
+
+.button:hover {
+  background-color: #e52441;
+}

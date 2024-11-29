@@ -1,219 +1,244 @@
 
-/* From Uiverse.io by RafaM-dev - Source: Jaydip Prajapati - https://uiverse.io/JaydipPrajapati1910/stale-pug-89 - Tags: loader, mxb, house */
-.loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Add these properties to position the loader properly */
-  position: relative;
-  width: 90px;
-  height: 103px;
- /* Adjust the height to accommodate the "h4" span */
+/* From Uiverse.io by fanishah - Tags: loader */
+.container {
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
 }
 
-.loader div {
+.container div {
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  left: 50px;
+  display: block;
   position: absolute;
+}
+
+.top-left {
+  animation: tl 7.5s ease infinite
+}
+
+.top-right {
+  animation: tr 7.5s ease infinite
+}
+
+.bottom-left {
+  animation: bl 7.5s ease infinite
+}
+
+.bottom-right {
+  animation: br 7.5s ease infinite
+}
+
+.container div:before,
+.container div:after {
+  display: block;
+  position: absolute;
+  content: ""
+}
+
+.container div:before {
   width: 50px;
-  height: 31px;
+  height: 50px
 }
 
-.rot {
-  transform: rotate(150deg);
-}
-
-.rot2 {
-  transform: rotate(20deg);
-}
-
-.loader div:nth-of-type(2) {
-  transform: rotate(60deg);
-}
-
-.loader div:nth-of-type(3) {
-  transform: rotate(-60deg);
-}
-
-.loader div div {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.loader div div span {
-  position: absolute;
-  width: 4px;
-  height: 0%;
-  background: #053146;
-  z-index: 999999;
-}
-
-.h1 {
+.top-left:before {
+  background: rgb(251, 189, 4);
+  top: 0;
   left: 0;
-  animation: load1 3.2s ease infinite;
+  border-radius: 100% 0 0 0
 }
 
-.h2 {
+.top-right:before {
+  background: rgb(234, 67, 52);
+  top: 0;
   right: 0;
-  animation: load2 3.2s ease 0.4s infinite;
+  border-radius: 0 100% 0 0
 }
 
-.h3 {
-  right: 0;
-  animation: load3 3.2s ease 0.8s infinite;
-}
-
-.h4 {
-  top: 10px;
-  left: 23px;
-  animation: load4 3.2s ease 1s infinite;
-  transform: rotate(90deg);
-}
-
-.h5 {
+.bottom-left:before {
+  background: rgb(52, 168, 83);
   bottom: 0;
-  animation: load5 3.2s ease 1.2s infinite;
-}
-
-.h6 {
   left: 0;
-  animation: load6 3.2s ease 1.3s infinite;
+  border-radius: 0 0 0 100%
 }
 
-@keyframes load1 {
-  0% {
-    bottom: 0;
-    height: 0;
-  }
-
-  6.944444444% {
-    bottom: 0;
-    height: 100%;
-  }
-
-  50% {
-    top: 0;
-    height: 100%;
-  }
-
-  59.944444433% {
-    top: 0;
-    height: 0;
-  }
-  /*   91.6666667%{top:0;height:0%;} */
+.bottom-right:before {
+  background: rgb(67, 135, 244);
+  bottom: 0;
+  right: 0;
+  border-radius: 0 0 100% 0
 }
 
-@keyframes load2 {
-  0% {
-    top: 0;
-    height: 0;
-  }
-
-  6.944444444% {
-    top: 0;
-    height: 100%;
-  }
-
-  50% {
-    bottom: 0;
-    height: 100%;
-  }
-
-  59.944444433% {
-    bottom: 0;
-    height: 0;
-  }
-  /*   91.6666667%{bottom:0;height:0%} */
+.container div:after {
+  background: rgb(33, 33, 33);
+  width: 25px;
+  height: 25px;
+  z-index: 1
 }
 
-@keyframes load3 {
-  0% {
-    top: 0;
-    height: 0;
-  }
-
-  6.944444444% {
-    top: 0;
-    height: 100%;
-  }
-
-  50% {
-    bottom: 0;
-    height: 100%;
-  }
-
-  59.94444443% {
-    bottom: 0;
-    height: 0;
-  }
-  /*   91.6666667%{bottom:0;height:0%;} */
+.top-left:after {
+  top: 25px;
+  left: 25px;
+  border-radius: 100% 0 0 0
 }
 
-@keyframes load4 {
-  0% {
-    top: 37px;
-    left: 23px;
-    height: 134%;
-  }
-
-  6.944444444% {
-    top: 10px;
-    height: 134%;
-  }
-
-  50% {
-    bottom: 10px;
-    height: 134%;
-  }
-
-  59.94444443% {
-    bottom: 0;
-    height: 0;
-  }
-  /*   91.6666667%{bottom:0;height:0%;} */
+.top-right:after {
+  top: 25px;
+  right: 25px;
+  border-radius: 0 100% 0 0
 }
 
-@keyframes load5 {
-  0% {
-    bottom: 0;
-    height: 0;
-  }
-
-  6.944444444% {
-    bottom: 0;
-    height: 100%;
-  }
-
-  50% {
-    top: 0;
-    height: 100%;
-  }
-
-  59.94444443% {
-    top: 0;
-    height: 0;
-  }
-  /*   91.6666667%{top:0;height:0%;} */
+.bottom-left:after {
+  bottom: 25px;
+  left: 25px;
+  border-radius: 0 0 0 100%
 }
 
-@keyframes load6 {
+.bottom-right:after {
+  bottom: 25px;
+  right: 25px;
+  border-radius: 0 0 100% 0
+}
+
+@keyframes tl {
+  0%,96%,100% {
+    transform: rotate(0deg)
+  }
+
+  12% {
+    transform: rotate(-45deg)
+  }
+
+  24% {
+    transform: rotate(-90deg)
+  }
+
+  36% {
+    transform: rotate(-135deg)
+  }
+
+  48% {
+    left: 50px;
+    transform: rotate(-180deg)
+  }
+
+  60% {
+    left: 125px;
+    opacity: 1;
+    transform: rotate(-135deg)
+  }
+
+  61%,95% {
+    opacity: 0
+  }
+}
+
+@keyframes tr {
   0% {
-    bottom: 0;
-    height: 0;
+    transform: rotate(0deg)
   }
 
-  6.944444444% {
-    bottom: 0;
-    height: 100%;
+  12% {
+    transform: rotate(-45deg)
   }
 
-  50% {
-    top: 0;
-    height: 100%;
+  24% {
+    transform: rotate(-90deg)
   }
 
-  59.94444443% {
-    top: 0;
-    height: 0;
+  36% {
+    transform: rotate(-135deg)
   }
-  /*   91.6666667%{top:0;height:0%;} */
+
+  48% {
+    transform: rotate(-180deg)
+  }
+
+  60% {
+    transform: rotate(-225deg)
+  }
+
+  72% {
+    transform: rotate(-270deg)
+  }
+
+  84% {
+    transform: rotate(-315deg)
+  }
+
+  96%,100% {
+    transform: rotate(-360deg)
+  }
+}
+
+@keyframes bl {
+  0%,100% {
+    transform: rotate(0deg)
+  }
+
+  12% {
+    transform: rotate(-45deg)
+  }
+
+  24% {
+    left: 50px;
+    transform: rotate(-90deg)
+  }
+
+  36% {
+    left: 125px;
+    opacity: 1;
+    transform: rotate(-45deg)
+  }
+
+  37%,83% {
+    opacity: 0
+  }
+
+  84% {
+    left: -25px;
+    opacity: 1;
+    transform: rotate(-45deg)
+  }
+
+  96% {
+    left: 50px;
+    transform: rotate(0deg)
+  }
+}
+
+@keyframes br {
+  0%,96%,100% {
+    transform: rotate(0deg)
+  }
+
+  12% {
+    left: 125px;
+    opacity: 1;
+    transform: rotate(45deg)
+  }
+
+  13%,59% {
+    opacity: 0
+  }
+
+  60% {
+    left: -25px;
+    opacity: 1;
+    transform: rotate(45deg)
+  }
+
+  72% {
+    left: 50px;
+    transform: rotate(90deg)
+  }
+
+  84% {
+    transform: rotate(45deg)
+  }
 }

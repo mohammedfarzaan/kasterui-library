@@ -3,7 +3,7 @@ import styles from "./Button_trick.module.css";
 
 const Button_trick = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button className={styles["button"]}>button</button>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Button_trick;
 
         const Button_trick = () => (
          <div>
-          <button className="button">Button</button>
+          <button className="button">button</button>
         </div>
         );
 

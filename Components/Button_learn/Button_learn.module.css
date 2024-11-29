@@ -1,52 +1,57 @@
 
-/* From Uiverse.io by LeHuyHieu - Tags: button, box */
-.btn {
-  outline: none;
-  display: inline-block;
-  border: 1px solid #fff;
-  padding: .8rem 2rem;
-  border-radius: 5px;
-  background: transparent;
+/* From Uiverse.io by mrhyddenn - Tags: button, hover */
+.button {
+  display: flex;
+}
+
+.box {
+  width: 35px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 700;
   color: #fff;
-  font-size: 1rem;
-  transition: .3s;
+  transition: all .8s;
   cursor: pointer;
   position: relative;
+  background: rgb(58, 165, 253);
+  overflow: hidden;
 }
 
-.btn::before {
-  content: '';
+.box:before {
+  content: "W";
   position: absolute;
-  left: 5px;
-  top: 5px;
-  border-top: 2px solid #fff;
-  border-left: 2px solid #fff;
-  width: 0px;
-  height: 0px;
-  opacity: 0;
-  transition: .3s;
+  top: 0;
+  background: #0f0f0f;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+  transition: transform .4s;
 }
 
-.btn::after {
-  content: '';
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #fff;
-  width: 0px;
-  height: 0px;
-  opacity: 0;
-  transition: .3s;
+.box:nth-child(2)::before {
+  transform: translateY(-100%);
+  content: 'O';
 }
 
-.btn:hover {
-  box-shadow: 4px 4px 10px rgb(184, 184, 184);
-  transform: translateY(-5px);
+.box:nth-child(3)::before {
+  content: 'R';
 }
 
-.btn:hover::after, .btn:hover::before {
-  height: 20px;
-  width: 20px;
-  opacity: 1;
+.box:nth-child(4)::before {
+  transform: translateY(-100%);
+  content: 'L';
+}
+
+.box:nth-child(5)::before {
+  content: 'D';
+}
+
+.button:hover .box:before {
+  transform: translateY(0);
 }

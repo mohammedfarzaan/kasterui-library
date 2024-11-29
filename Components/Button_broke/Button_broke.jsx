@@ -3,9 +3,7 @@ import styles from "./Button_broke.module.css";
 
 const Button_broke = () => (
   <div>
-    <button className={styles["animated-button"]}>
-      <span>Hover me</span>
-    </button>
+    <button>Button</button>
   </div>
 );
 
@@ -20,8 +18,8 @@ export default Button_broke;
 
         const Button_broke = () => (
          <div>
-          <button className="animated-button">
-  <span>Hover me</span>
+          <button>
+  Button
 </button>
         </div>
         );

@@ -3,13 +3,7 @@ import styles from "./Button_shoot.module.css";
 
 const Button_shoot = () => (
   <div>
-    <a href="#" className={styles["button"]}>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      Button
-    </a>
+    <button className={styles["button"]}>ALT</button>
   </div>
 );
 
@@ -24,13 +18,9 @@ export default Button_shoot;
 
         const Button_shoot = () => (
          <div>
-          <a href="#" className="button">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  Button
-</a>
+          <button className="button">
+ALT
+</button>
         </div>
         );
 

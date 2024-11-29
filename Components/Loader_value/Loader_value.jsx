@@ -3,8 +3,8 @@ import styles from "./Loader_value.module.css";
 
 const Loader_value = () => (
   <div>
-    <div className={styles["bg"]}>
-      <div className={styles["loader"]}></div>
+    <div className={styles["loader"]}>
+      <span></span>
     </div>
   </div>
 );
@@ -20,8 +20,8 @@ export default Loader_value;
 
         const Loader_value = () => (
          <div>
-          <div className="bg">
-  <div className="loader"></div>
+          <div className="loader">
+  <span></span>
 </div>
         </div>
         );

@@ -3,14 +3,21 @@ import styles from "./Button_those.module.css";
 
 const Button_those = () => (
   <div>
-    <div className={styles["galaxy-button"]}>
-      <button className={styles["space-button"]}>
-        <span className={styles["backdrop"]}></span>
-        <span className={styles["galaxy"]}></span>
-        <label className={styles["text"]}>Space</label>
-      </button>
-      <div className={styles["bodydrop"]}></div>
-    </div>
+    <button
+      type="button"
+      className={styles["btn"] + styles["cube"] + styles["cube-hover"]}
+    >
+      <div className={styles["bg-top"]}>
+        <div className={styles["bg-inner"]}></div>
+      </div>
+      <div className={styles["bg-right"]}>
+        <div className={styles["bg-inner"]}></div>
+      </div>
+      <div className={styles["bg"]}>
+        <div className={styles["bg-inner"]}></div>
+      </div>
+      <div className={styles["text"]}>Hover Me</div>
+    </button>
   </div>
 );
 
@@ -25,14 +32,18 @@ export default Button_those;
 
         const Button_those = () => (
          <div>
-          <div className="galaxy-button">
-  <button className="space-button">
-    <span className="backdrop"></span>
-    <span className="galaxy"></span>
-    <label className="text">Space</label>
-  </button>
-  <div className="bodydrop"></div>
-</div>
+          <button type="button" className="btn cube cube-hover">
+  <div className="bg-top">
+  <div className="bg-inner"></div>
+  </div>
+  <div className="bg-right">
+  <div className="bg-inner"></div>
+  </div>
+  <div className="bg">
+  <div className="bg-inner"></div>
+  </div>
+  <div className="text">Hover Me</div>
+</button>
         </div>
         );
 

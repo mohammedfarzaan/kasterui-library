@@ -3,11 +3,13 @@ import styles from "./Loader_swim.module.css";
 
 const Loader_swim = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["cercle"]}></div>
-      <div className={styles["cercle"]}></div>
-      <div className={styles["cercle"]}></div>
-      <div className={styles["cercle"]}></div>
+    <div className={styles["spinner"]}>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </div>
 );
@@ -23,17 +25,13 @@ export default Loader_swim;
 
         const Loader_swim = () => (
          <div>
-          <div className="loader">
-
-  <div className="cercle">
-  </div>
-  <div className="cercle">
-  </div>
-  <div className="cercle">
-  </div>
-  <div className="cercle">
-  </div>
-
+          <div className="spinner">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
 </div>
         </div>
         );

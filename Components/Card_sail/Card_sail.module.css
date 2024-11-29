@@ -1,0 +1,183 @@
+
+/* From Uiverse.io by jeremyssocial  - Tags: simple, card, light */
+/* General styles */
+.card {
+  width: 22em;
+  padding: 1.5em;
+  background: #fff;
+  transform: rotate(-1deg);
+  font-family: "Shadows Into Light", cursive;
+  box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #f9f9f9, #e0e0e0 100%);
+  border-radius: 2em;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  background: conic-gradient(from 0deg, #ffeb3b, #ff9100, #e040fb, #ff1493);
+  transform-origin: center;
+  animation: rotate 8s linear infinite;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(20px);
+}
+
+.card::after {
+  animation-direction: reverse;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0.2em 0.2em 0.4em rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0.4em 0.4em 0.8em rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+  font-size: 2em;
+  color: #000;
+  text-align: center;
+  margin-bottom: 1.2em;
+  text-shadow: 2px 2px 4px #888;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(45deg, #f39c12, #e74c3c, #9b59b6, #3498db);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: hueShift 2s linear infinite;
+}
+
+@keyframes hueShift {
+  0% {
+    filter: hue-rotate(0);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 0.2em;
+  background: linear-gradient(90deg, #ff1493 0%, #ffe600 100%);
+  bottom: -0.4em;
+  left: -5%;
+  transform: rotate(-2deg);
+  box-shadow: 0 0 10px #ffe600;
+}
+
+.icons {
+  display: flex;
+  gap: 1em;
+  padding: 0.75em;
+  border-radius: 0.75em;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0.125em 0.125em 0 #ccc, 0 0 1em rgba(255, 255, 255, 0.5);
+  border: 2px solid #e040fb;
+  transform: skew(-3deg);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) skew(-3deg);
+  }
+  50% {
+    transform: translateY(-0.5em) skew(-3deg);
+  }
+}
+
+.icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+  border: 2px dashed #000;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0.125em 0.125em 0 #ccc, 0.125em 0.125em 0.5em rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.icons a:hover {
+  background: linear-gradient(45deg, #ff1493, #e040fb);
+  color: #fff;
+  transform: scale(1.2) rotate(-5deg);
+  box-shadow: 0 0 1em rgba(255, 105, 180, 0.5);
+}
+
+.icons a::before,
+.icons a::after {
+  content: "";
+  position: absolute;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #ff1493;
+  border-radius: 50%;
+  animation: bounce 2s infinite alternate;
+}
+
+.icons a::before {
+  top: -0.5em;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.icons a::after {
+  bottom: -0.5em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-0.3em);
+  }
+}
+
+/* Additional styles for SVG icons */
+.icons a svg {
+  filter: drop-shadow(0 0 0.5em #e040fb);
+}
+

@@ -3,7 +3,17 @@ import styles from "./Button_catch.module.css";
 
 const Button_catch = () => (
   <div>
-    <button> Click me</button>
+    <button className={styles["btn"]} type="button">
+      <strong>SPACE</strong>
+      <div id="container-stars">
+        <div id="stars"></div>
+      </div>
+
+      <div id="glow">
+        <div className={styles["circle"]}></div>
+        <div className={styles["circle"]}></div>
+      </div>
+    </button>
   </div>
 );
 
@@ -18,7 +28,16 @@ export default Button_catch;
 
         const Button_catch = () => (
          <div>
-          <button> Click me
+          <button className="btn" type="button">
+  <strong>SPACE</strong>
+  <div id="container-stars">
+    <div id="stars"></div>
+  </div>
+
+  <div id="glow">
+    <div className="circle"></div>
+    <div className="circle"></div>
+  </div>
 </button>
         </div>
         );

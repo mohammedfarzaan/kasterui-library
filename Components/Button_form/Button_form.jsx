@@ -4,8 +4,14 @@ import styles from "./Button_form.module.css";
 const Button_form = () => (
   <div>
     <button className={styles["button"]}>
-      Get started
-      <span className={styles["button-span"]}> ─ it's free</span>
+      <span>Bubble Button</span>
+      <svg
+        aria-hidden="true"
+        preserveAspectRatio="none"
+        viewBox="-5 -5 110 110"
+      >
+        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0"></path>
+      </svg>
     </button>
   </div>
 );
@@ -22,8 +28,10 @@ export default Button_form;
         const Button_form = () => (
          <div>
           <button className="button">
-  Get started
-  <span className="button-span"> ─ it's free</span>
+  <span>Bubble Button</span>
+  <svg aria-hidden="true" preserveAspectRatio="none" viewBox="-5 -5 110 110">
+    <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0"></path>
+  </svg>
 </button>
         </div>
         );

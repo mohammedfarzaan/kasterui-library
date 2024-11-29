@@ -1,72 +1,29 @@
 
-/* From Uiverse.io by vladaxnt  - Tags: button, hover, active, message, shadow, rotate, click effect */
-.icon,
+/* From Uiverse.io by Na3ar-17  - Tags: simple, icon, animation, button */
 .button {
-  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
-    transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.button {
-  background: none;
-  border: none;
-  border-radius: 56px;
-  cursor: pointer;
-  color: #171717;
-  box-shadow: 0px 127px 36px 0px rgba(23, 23, 23, 0),
-    0px 81px 33px 0px rgba(23, 23, 23, 0.01),
-    0px 46px 27px 0px rgba(23, 23, 23, 0.05),
-    0px 20px 20px 0px rgba(23, 23, 23, 0.09),
-    0px 5px 11px 0px rgba(23, 23, 23, 0.1);
-}
-
-.button span {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  line-height: 36px;
-  font-weight: 500;
-  text-shadow: 0px 1px 1px rgba(23, 23, 23, 0.25);
-}
-
-.button .inner {
-  background: linear-gradient(0deg, #fff 0%, #edeeee 100%);
-  padding: 16px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
   display: flex;
   align-items: center;
-  gap: 12px;
-  border-radius: 56px;
+  font-weight: 500;
+  background-color: #268bff;
+  color: white;
+  border: none;
+  gap: 2px;
+  border-radius: 8px;
+  padding: 4px 8px;
 }
 
-.button .outer {
-  padding: 6px;
-  border-radius: 16px;
-  background: linear-gradient(180deg, #fff 25.56%, #ebebeb 115.56%);
-}
-
-.button .border {
-  padding: 3px;
-  border-radius: 20px;
-  border: 1px solid #f0f0f0;
-  background: linear-gradient(180deg, #e3e3e3 0%, #7d7d7d 100%);
-}
-
-.button:hover .icon {
-  transform: rotate(45deg);
+.button .icon {
+  width: 20px;
 }
 
 .button:hover {
-  transform: scale(1.03);
-  box-shadow: 0px 185px 52px 0px rgba(23, 23, 23, 0),
-    0px 119px 47px 0px rgba(23, 23, 23, 0.01),
-    0px 67px 40px 0px rgba(23, 23, 23, 0.05),
-    0px 30px 30px 0px rgba(23, 23, 23, 0.09),
-    0px 7px 16px 0px rgba(23, 23, 23, 0.1);
+  background-color: #268bffaf;
 }
-
 .button:active {
-  transform: scale(0.94);
-  box-shadow: 0px 43px 12px 0px rgba(23, 23, 23, 0),
-    0px 28px 11px 0px rgba(23, 23, 23, 0.01),
-    0px 16px 9px 0px rgba(23, 23, 23, 0.05),
-    0px 7px 7px 0px rgba(23, 23, 23, 0.09),
-    0px 2px 4px 0px rgba(23, 23, 23, 0.1);
+  transform: translateY(2px);
 }
 

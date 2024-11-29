@@ -3,10 +3,7 @@ import styles from "./Button_rose.module.css";
 
 const Button_rose = () => (
   <div>
-    <button className={styles["button"]}>
-      <div className={styles["button-overlay"]}></div>
-      <span>Gradient Button</span>
-    </button>
+    <button className={styles["button"]}></button>
   </div>
 );
 
@@ -21,10 +18,7 @@ export default Button_rose;
 
         const Button_rose = () => (
          <div>
-          <button className="button">
-  <div className="button-overlay"></div>
-  <span>Gradient Button</span>  
-</button>
+          <button className="button"></button>
         </div>
         );
 

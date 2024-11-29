@@ -3,23 +3,28 @@ import styles from "./Button_herd.module.css";
 
 const Button_herd = () => (
   <div>
-    <button className={styles["button"]}>
-      <svg
-        className="saveicon"
-        stroke="currentColor"
-        strokeWidth="1.7"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0l-3-3m3 3l3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
-          strokeLinejoin="round"
-          strokeLinecap="round"
-        ></path>
-      </svg>
-      download
-    </button>
+    <div className={styles["box"]}>
+      <button className={styles["button"]}>SNOW</button>
+      <div className={styles["snowfall"]}>
+        <span style="--i: 12" className={styles["snowflake"]}></span>
+        <span style="--i: 31" className={styles["snowflake"]}></span>
+        <span style="--i: 18" className={styles["snowflake"]}></span>
+        <span style="--i: 9" className={styles["snowflake"]}></span>
+        <span style="--i: 41" className={styles["snowflake"]}></span>
+        <span style="--i: 22" className={styles["snowflake"]}></span>
+        <span style="--i: 16" className={styles["snowflake"]}></span>
+        <span style="--i: 35" className={styles["snowflake"]}></span>
+        <span style="--i: 9" className={styles["snowflake"]}></span>
+        <span style="--i: 14" className={styles["snowflake"]}></span>
+        <span style="--i: 19" className={styles["snowflake"]}></span>
+        <span style="--i: 6" className={styles["snowflake"]}></span>
+        <span style="--i: 53" className={styles["snowflake"]}></span>
+        <span style="--i: 26" className={styles["snowflake"]}></span>
+        <span style="--i: 34" className={styles["snowflake"]}></span>
+        <span style="--i: 18" className={styles["snowflake"]}></span>
+        <span style="--i: 8" className={styles["snowflake"]}></span>
+      </div>
+    </div>
   </div>
 );
 
@@ -34,14 +39,28 @@ export default Button_herd;
 
         const Button_herd = () => (
          <div>
-          <button className="button">
-   <svg className="saveicon" stroke="currentColor" strokeWidth="1.7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-   <path d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0l-3-3m3 3l3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" strokeLinejoin="round" strokeLinecap="round"></path>
-</svg>
-   download 
-  
-
-</button>
+          <div className="box">
+  <button className="button">SNOW</button>
+  <div className="snowfall">
+    <span style="--i: 12" className="snowflake"></span>
+    <span style="--i: 31" className="snowflake"></span>
+    <span style="--i: 18" className="snowflake"></span>
+    <span style="--i: 9" className="snowflake"></span>
+    <span style="--i: 41" className="snowflake"></span>
+    <span style="--i: 22" className="snowflake"></span>
+    <span style="--i: 16" className="snowflake"></span>
+    <span style="--i: 35" className="snowflake"></span>
+    <span style="--i: 9" className="snowflake"></span>
+    <span style="--i: 14" className="snowflake"></span>
+    <span style="--i: 19" className="snowflake"></span>
+    <span style="--i: 6" className="snowflake"></span>
+    <span style="--i: 53" className="snowflake"></span>
+    <span style="--i: 26" className="snowflake"></span>
+    <span style="--i: 34" className="snowflake"></span>
+    <span style="--i: 18" className="snowflake"></span>
+    <span style="--i: 8" className="snowflake"></span>
+  </div>
+</div>
         </div>
         );
 

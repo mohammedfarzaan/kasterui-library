@@ -1,15 +1,31 @@
 import React from "react";
+import styles from "./Button_cent.module.css";
 
 const Button_cent = () => (
   <div>
-    <button className="text-zinc-700 hover:text-green-600 backdrop-blur-lg bg-gradient-to-tr from-transparent via-[rgba(121,121,121,0.16)] to-transparent rounded-md py-2 px-6 shadow hover:shadow-green-600 duration-700">
-      Button
-    </button>
+    <button>Button</button>
   </div>
 );
 
 export default Button_cent;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_cent = () => (
+         <div>
+          <button>
+  Button
+</button>
+        </div>
+        );
+
+        export default Button_cent;
+        
+        
+         */
 }

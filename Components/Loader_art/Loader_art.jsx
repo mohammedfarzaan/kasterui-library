@@ -3,36 +3,16 @@ import styles from "./Loader_art.module.css";
 
 const Loader_art = () => (
   <div>
-    <div className={styles["lamp"]}>
-      <div className={styles["glass"]}>
-        <div className={styles["lava"]}>
-          <div className={styles["blob"]}></div>
-          <div className={styles["blob"]}></div>
-          <div className={styles["blob"]}></div>
-          <div className={styles["blob"] + styles["top"]}></div>
-          <div className={styles["blob"] + styles["bottom"]}></div>
-        </div>
+    <div className={styles["wrapper"]}>
+      <div className={styles["cube"]}>
+        <div className={styles["side"] + styles["front"]}></div>
+        <div className={styles["side"] + styles["back"]}></div>
+        <div className={styles["side"] + styles["top"]}></div>
+        <div className={styles["side"] + styles["bottom"]}></div>
+        <div className={styles["side"] + styles["left"]}></div>
+        <div className={styles["side"] + styles["right"]}></div>
       </div>
     </div>
-
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-      <defs>
-        <filter id="goo">
-          <feGaussianBlur
-            in="SourceGraphic"
-            stdDeviation="10"
-            result="blur"
-          ></feGaussianBlur>
-          <feColorMatrix
-            in="blur"
-            mode="matrix"
-            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-            result="goo"
-          ></feColorMatrix>
-          <feBlend in="SourceGraphic" in2="goo"></feBlend>
-        </filter>
-      </defs>
-    </svg>
   </div>
 );
 
@@ -47,27 +27,16 @@ export default Loader_art;
 
         const Loader_art = () => (
          <div>
-          <div className="lamp">
-  <div className="glass">
-    <div className="lava">
-      <div className="blob"></div>
-      <div className="blob"></div>
-      <div className="blob"></div>
-      <div className="blob top"></div>
-      <div className="blob bottom"></div>
-    </div>
+          <div className="wrapper">
+  <div className="cube">
+    <div className="side front"></div>
+    <div className="side back"></div>
+    <div className="side top"></div>
+    <div className="side bottom"></div>
+    <div className="side left"></div>
+    <div className="side right"></div>
   </div>
 </div>
-
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <defs>
-    <filter id="goo">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
-      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
-      <feBlend in="SourceGraphic" in2="goo"></feBlend>
-    </filter>
-  </defs>
-</svg>
         </div>
         );
 

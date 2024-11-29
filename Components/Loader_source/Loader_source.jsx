@@ -3,26 +3,9 @@ import styles from "./Loader_source.module.css";
 
 const Loader_source = () => (
   <div>
-    <div className={styles["cube"] + styles["div"]}>
-      <div className={styles["top"] + styles["div"]}></div>
-      <div className={styles["div"]}>
-        <span className={styles["span"]} style="--i: 0">
-          <p>loading..</p>
-          <p>loading..</p>
-        </span>
-        <span className={styles["span"]} style="--i: 1">
-          <p>loading..</p>
-          <p>loading..</p>
-        </span>
-        <span className={styles["span"]} style="--i: 2">
-          <p>loading..</p>
-          <p>loading..</p>
-        </span>
-        <span className={styles["span"]} style="--i: 3">
-          <p>loading..</p>
-          <p>loading..</p>
-        </span>
-      </div>
+    <div className={styles["textWrapper"]}>
+      <p className={styles["text"]}>Loading...</p>
+      <div className={styles["invertbox"]}></div>
     </div>
   </div>
 );
@@ -38,26 +21,9 @@ export default Loader_source;
 
         const Loader_source = () => (
          <div>
-          <div className="cube div">
-    <div className="top div"></div>
-    <div className="div">
-      <span className="span" style="--i: 0">
-        <p>loading..</p>
-        <p>loading..</p>
-      </span>
-      <span className="span" style="--i: 1">
-        <p>loading..</p>
-        <p>loading..</p>
-      </span>
-      <span className="span" style="--i: 2">
-        <p>loading..</p>
-        <p>loading..</p>
-      </span>
-      <span className="span" style="--i: 3">
-        <p>loading..</p>
-        <p>loading..</p>
-      </span>
-    </div>
+          <div className="textWrapper">
+  <p className="text">Loading...</p>
+  <div className="invertbox"></div>
 </div>
         </div>
         );

@@ -3,7 +3,7 @@ import styles from "./Button_pink.module.css";
 
 const Button_pink = () => (
   <div>
-    <button className={styles["button"]}>Fondle ME!</button>
+    <button>Button</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_pink;
 
         const Button_pink = () => (
          <div>
-          <button className="button">
-    Fondle ME!
-</button>
+          <button>Button</button>
         </div>
         );
 

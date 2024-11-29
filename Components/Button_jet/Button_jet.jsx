@@ -3,11 +3,7 @@ import styles from "./Button_jet.module.css";
 
 const Button_jet = () => (
   <div>
-    <button>
-      <a href="#" className={styles["btn2"]}>
-        <span className={styles["spn2"]}>HELLO !</span>
-      </a>
-    </button>
+    <button className={styles["button"]}>Click me !</button>
   </div>
 );
 
@@ -22,9 +18,7 @@ export default Button_jet;
 
         const Button_jet = () => (
          <div>
-          <button>
-  <a href="#" className="btn2"><span className="spn2">HELLO !</span></a>
-</button>
+          <button className="button">Click me !</button>
         </div>
         );
 

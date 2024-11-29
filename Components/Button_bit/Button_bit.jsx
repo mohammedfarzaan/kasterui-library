@@ -3,7 +3,9 @@ import styles from "./Button_bit.module.css";
 
 const Button_bit = () => (
   <div>
-    <button className={styles["comic-button"]}>Click me!</button>
+    <div className={styles["wrapper"]}>
+      <button> Button</button>
+    </div>
   </div>
 );
 
@@ -18,7 +20,10 @@ export default Button_bit;
 
         const Button_bit = () => (
          <div>
-          <button className="comic-button">Click me!</button>
+          <div className="wrapper">
+  <button> Button
+  </button>
+</div>
         </div>
         );
 

@@ -3,7 +3,7 @@ import styles from "./Button_frame.module.css";
 
 const Button_frame = () => (
   <div>
-    <button className={styles["elegant-button"]}>Click Me</button>
+    <button>Hover</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_frame;
 
         const Button_frame = () => (
          <div>
-          <button className="elegant-button">Click Me</button>
+          <button>
+    Hover
+</button>
         </div>
         );
 

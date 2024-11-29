@@ -3,7 +3,14 @@ import styles from "./Button_within.module.css";
 
 const Button_within = () => (
   <div>
-    <button> Button</button>
+    <div className={styles["btn"] + styles["btn--huge"]}>
+      <div className={styles["btn--huge__text"]}>
+        <div>
+          Explore More
+          <span>Explore More</span>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
@@ -18,8 +25,14 @@ export default Button_within;
 
         const Button_within = () => (
          <div>
-          <button> Button
-</button>
+          <div className="btn btn--huge">
+  <div className="btn--huge__text">
+    <div>
+      Explore More
+      <span>Explore More</span>
+    </div>
+  </div>
+</div>
         </div>
         );
 

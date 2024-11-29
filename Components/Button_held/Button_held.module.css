@@ -1,218 +1,58 @@
 
-/* From Uiverse.io by csozidev - Tags: simple, flat design, animation, button, hover, animated, colorful */
-/* Fancy Google hover button made by: csozi | Website: www.csozi.hu*/
-
-.button {
-  padding: 10px;
-  font-weight: bold;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  border-radius: 35px;
-  align-items: center;
-  border: solid black 2px;
-  outline: none;
+/* From Uiverse.io by e-coders - Tags: button, github */
+button {
+ appearance: none;
+ background-color: #FAFBFC;
+ border: 1px solid rgba(27, 31, 35, 0.15);
+ border-radius: 6px;
+ box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+ box-sizing: border-box;
+ color: #24292E;
+ cursor: pointer;
+ display: inline-block;
+ font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+ font-size: 14px;
+ font-weight: 500;
+ line-height: 20px;
+ list-style: none;
+ padding: 6px 16px;
+ position: relative;
+ transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ vertical-align: middle;
+ white-space: nowrap;
+ word-wrap: break-word;
 }
 
-.svg {
-  height: 25px;
-  margin-right: 10px;
+button:hover {
+ background-color: #F3F4F6;
+ text-decoration: none;
+ transition-duration: 0.1s;
 }
 
-.button .text {
-  z-index: 10;
-  font-size: 14px;
+button:disabled {
+ background-color: #FAFBFC;
+ border-color: rgba(27, 31, 35, 0.15);
+ color: #959DA5;
+ cursor: default;
 }
 
-.button:hover .text {
-  animation: text forwards 0.3s;
-  /*color: white;*/
+button:active {
+ background-color: #EDEFF2;
+ box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+ transition: none 0s;
 }
 
-@keyframes text {
-  from {
-    color: black;
-  }
-
-  to {
-    color: white;
-  }
+button:focus {
+ outline: 1px transparent;
 }
 
-.svg {
-  z-index: 6;
+button:before {
+ display: none;
 }
 
-.button:hover::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 9%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  opacity: 0;
-  border-radius: 300px;
-  animation: wave1 2.5s ease-in-out forwards;
-}
-
-.button:hover::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 9%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  opacity: 0;
-  border-radius: 300px;
-  animation: wave2 2.5s ease-in-out forwards;
-}
-
-@keyframes wave1 {
-  0% {
-    z-index: 1;
-    background: #EB4335;
-    width: 0;
-    height: 0;
-    opacity: 1;
-  }
-
-  1% {
-    z-index: 1;
-    background: #EB4335;
-    width: 0;
-    height: 0;
-    opacity: 1;
-  }
-
-  25% {
-    z-index: 1;
-    background: #EB4335;
-    width: 800px;
-    height: 800px;
-    opacity: 1;
-  }
-
-  26% {
-    z-index: 3;
-    background: #34A853;
-    width: 0;
-    height: 0;
-    opacity: 1;
-  }
-
-  50% {
-    z-index: 3;
-    background: #34A853;
-    width: 800px;
-    height: 800px;
-    opacity: 1;
-  }
-
-  70% {
-    z-index: 3;
-    background: #34A853;
-    width: 800px;
-    height: 800px;
-    opacity: 1;
-  }
-
-  100% {
-    z-index: 3;
-    background: #34A853;
-    width: 800px;
-    height: 800px;
-    opacity: 1;
-  }
-}
-
-@keyframes wave2 {
-  0% {
-    z-index: 2;
-    background: #FBBC05;
-    width: 0;
-    height: 0;
-    opacity: 1;
-  }
-
-  11% {
-    z-index: 2;
-    background: #FBBC05;
-    width: 0;
-    height: 0;
-    opacity: 1;
-  }
-
-  35% {
-    z-index: 2;
-    background: #FBBC05;
-    width: 800px;
-    height: 800px;
-    opacity: 1;
-  }
-
-  39% {
-    z-index: 2;
-    background: #FBBC05;
-    width: 800px;
-    height: 800px;
-    opacity: 1;
-  }
-
-  40% {
-    z-index: 4;
-    background: #4285F4;
-    width: 0;
-    height: 0;
-    opacity: 1;
-  }
-
-  64% {
-    z-index: 4;
-    background: #4285F4;
-    width: 800px;
-    height: 800px;
-    opacity: 1;
-  }
-
-  100% {
-    z-index: 4;
-    background: #4285F4;
-    width: 800px;
-    height: 800px;
-    opacity: 1;
-  }
-}
-
-.button:hover .red {
-  animation: disappear 0.1s forwards;
-  animation-delay: 0.1s;
-}
-
-.button:hover .yellow {
-  animation: disappear 0.1s forwards;
-  animation-delay: 0.3s;
-}
-
-.button:hover .green {
-  animation: disappear 0.1s forwards;
-  animation-delay: 0.7s;
-}
-
-.button:hover .blue {
-  animation: disappear 0.1s forwards;
-  animation-delay: 1.1s;
-}
-
-@keyframes disappear {
-  from {
-    filter: brightness(1);
-  }
-
-  to {
-    filter: brightness(100);
-  }
+button:-webkit-details-marker {
+ display: none;
 }

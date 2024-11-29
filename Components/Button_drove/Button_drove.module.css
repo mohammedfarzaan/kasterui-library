@@ -1,70 +1,52 @@
 
-/* From Uiverse.io by vinodjangid07 - Tags: button, neon, copy, hover effect */
-.Btn {
-  width: 120px;
-  height: 45px;
-  background-color: rgb(65, 64, 64);
-  border: none;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.342);
-  border-radius: 5px;
+/* From Uiverse.io by snguem  - Tags: icon, animation, button, hover */
+.button {
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  width: 230px;
+  height: 80px;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
   position: relative;
-  overflow: hidden;
-  transition-duration: .5s;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 0px 5px;
+  transition: width 0.5s 0.2s ease;
 }
-
-.text {
-  color: rgb(184, 236, 104);
-  font-weight: 800;
-  letter-spacing: 1.1px;
-  z-index: 2;
-}
-
-.svgIcon {
-  z-index: 2;
-}
-
-.svgIcon path {
-  fill: rgb(184, 236, 104);
-}
-
-.Btn:hover {
-  color: rgb(230, 255, 193);
-}
-
-.effect {
+.button::after {
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: rgb(184, 236, 104);
-  border-radius: 50%;
-  z-index: 1;
-  opacity: 0;
-  transition-duration: .5s;
+  content: "";
+  width: 95%;
+  height: 87%;
+  border-radius: 40px;
+  box-shadow: inset 5px 5px 25px #00000018, 1px 1px 10px #00000013;
+  transition: all 0.5s ease;
 }
-
-.Btn:hover .effect {
-  transform: scale(15);
+.button:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.button svg {
+  width: 20px;
+  rotate: -45deg;
+  transform-origin: top;
+  transition: all 0.3s 0.2s ease-out;
+}
+.button:hover svg {
   transform-origin: center;
-  opacity: 1;
-  transition-duration: .5s;
+  width: 40px;
+}
+.button:hover span {
+  display: none;
+  margin: 0 auto;
 }
 
-.Btn:hover {
-  box-shadow: 0px 0px 5px rgb(184, 236, 104),
-  0px 0px 10px rgb(184, 236, 104),
-  0px 0px 30px rgb(184, 236, 104);
-  transition-duration: .7s;
+.button:hover {
+  width: 100px;
+  gap: 0px;
 }
 
-.Btn:hover .text {
-  color: rgb(65, 64, 64);
-}
-
-.Btn:hover .svgIcon path {
-  fill: rgb(65, 64, 64);
-}

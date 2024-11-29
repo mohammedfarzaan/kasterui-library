@@ -3,12 +3,7 @@ import styles from "./Loader_kill.module.css";
 
 const Loader_kill = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["circle"] + styles["circle-1"]}></div>
-      <div className={styles["circle"] + styles["circle-2"]}></div>
-      <div className={styles["circle"] + styles["circle-3"]}></div>
-      <div className={styles["circle"] + styles["circle-4"]}></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -23,12 +18,7 @@ export default Loader_kill;
 
         const Loader_kill = () => (
          <div>
-          <div className="loader">
-  <div className="circle circle-1"></div>
-  <div className="circle circle-2"></div>
-  <div className="circle circle-3"></div>
-  <div className="circle circle-4"></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

@@ -3,7 +3,10 @@ import styles from "./Button_worth.module.css";
 
 const Button_worth = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button className={styles["animated-button"]}>
+      <span>Hover me</span>
+      <span></span>
+    </button>
   </div>
 );
 
@@ -18,8 +21,9 @@ export default Button_worth;
 
         const Button_worth = () => (
          <div>
-          <button className="button">
-  Button
+          <button className="animated-button">
+  <span>Hover me</span>
+  <span></span>
 </button>
         </div>
         );

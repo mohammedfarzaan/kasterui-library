@@ -3,12 +3,7 @@ import styles from "./Loader_club.module.css";
 
 const Loader_club = () => (
   <div>
-    <div className={styles["loader"]}>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -23,12 +18,7 @@ export default Loader_club;
 
         const Loader_club = () => (
          <div>
-          <div className="loader">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

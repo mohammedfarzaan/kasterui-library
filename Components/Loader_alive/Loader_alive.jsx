@@ -3,20 +3,15 @@ import styles from "./Loader_alive.module.css";
 
 const Loader_alive = () => (
   <div>
-    <figure>
-      <div style="--i: 1"></div>
-      <div style="--i: 2"></div>
-      <div style="--i: 3"></div>
-      <div style="--i: 4"></div>
-      <div style="--i: 5"></div>
-      <div style="--i: 6"></div>
-      <div style="--i: 7"></div>
-      <div style="--i: 8"></div>
-      <div style="--i: 9"></div>
-      <div style="--i: 10"></div>
-      <div style="--i: 11"></div>
-      <div style="--i: 12"></div>
-    </figure>
+    <div className={styles["anim-box"]}>
+      <div className={styles["anim-interieur"]}>
+        <div className={styles["rect"] + styles["rect1"]}></div>
+        <div className={styles["rect"] + styles["rect2"]}></div>
+        <div className={styles["rect"] + styles["rect3"]}></div>
+        <div className={styles["rect"] + styles["rect4"]}></div>
+        <div className={styles["rect"] + styles["rect5"]}></div>
+      </div>
+    </div>
   </div>
 );
 
@@ -31,20 +26,15 @@ export default Loader_alive;
 
         const Loader_alive = () => (
          <div>
-          <figure>
-  <div style="--i: 1"></div>
-  <div style="--i: 2"></div>
-  <div style="--i: 3"></div>
-  <div style="--i: 4"></div>
-  <div style="--i: 5"></div>
-  <div style="--i: 6"></div>
-  <div style="--i: 7"></div>
-  <div style="--i: 8"></div>
-  <div style="--i: 9"></div>
-  <div style="--i: 10"></div>
-  <div style="--i: 11"></div>
-  <div style="--i: 12"></div>
-</figure>
+          <div className="anim-box">
+        <div className="anim-interieur">
+            <div className="rect rect1"></div>
+            <div className="rect rect2"></div>
+            <div className="rect rect3"></div>
+            <div className="rect rect4"></div>
+            <div className="rect rect5"></div>
+        </div>
+    </div>
         </div>
         );
 

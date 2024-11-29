@@ -1,51 +1,76 @@
 
-/* From Uiverse.io by SelfMadeSystem  - Tags: 3d, button, game, border, 3d button, illustrated */
-.button-container {
-  --background: #fefbff;
-  --inner-shadow: #9faef9;
-  --inner-outline: #34217d;
-  --inner-outline-bottom: #fafcfe;
-  --inner-outline-middle: #8880d5;
-  --inner-outline-outer-top: #fefcff;
-  --inner-outline-outer-bottom-1: #29107b;
-  --line-1: #8676c9;
-  --line-2: #5c69ca;
+/* From Uiverse.io by roroland - Tags: flat design, button, flip, animated, two side */
+.flip-button {
+  --col1: #4CAF50;
+  --col2: #4f16ac;
+  --col3: #d8d1e4;
   position: relative;
-  background: var(--background);
+  min-width: 10rem;
+  min-height: 3rem;
+  perspective: 500px;
+}
+
+.flip-button .button {
+  appearance: none;
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  border-radius: 30px;
+  font-size: .75em;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: var(--col1);
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 1s ease-out .5s;
+  transform-style: preserve-3d;
+  width: 100%;
+}
+
+.flip-button:hover .button {
+  background-color: var(--col2);
   cursor: pointer;
-  transition: all 0.2s;
-  font-size: 17px;
-  padding: 0.7em 1.8em;
-  border-radius: 5px;
-  box-shadow: inset 0px 1px 8px 1px var(--inner-shadow),
-    0px 2px 0px 0px var(--inner-outline-bottom),
-    0px -2px 0px 0px var(--inner-outline),
-    -2px -2px 0px 0px var(--inner-outline),
-    2px -2px 0px 0px var(--inner-outline),
-    0px 0px 0px 6px var(--inner-outline-middle),
-    0px -2px 0px 7px var(--inner-outline-outer-top),
-    0px 4px 0px 7px var(--inner-outline-outer-bottom-1);
+  transform: rotateY(180deg) scale(1.5);
+  transition: all .3s ease-out;
 }
 
-.button-lines {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4em;
+.flip-button:hover .button:active {
+  background-color: rgba(81, 23, 173, 0.75);
+  transform: rotateY(180deg) scale(1.45);
+  outline: 10px solid var(--col3);
+  transition: all .1s ease-out;
 }
 
-.button-line-1 {
-  height: 0.2em;
-  width: 4em;
-  border-radius: 10em;
-  display: inline-block;
-  background: var(--line-1);
+.flip-button .button::after {
+  content: '';
+  box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.25);
+  display: block;
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+  transition: all .3s ease-out .95s;
 }
 
-.button-line-2 {
-  height: 0.2em;
-  width: 3em;
-  border-radius: 10em;
-  display: inline-block;
-  background: var(--line-2);
+.flip-button:hover .button::after {
+  box-shadow: 0px 0px 1px 10px rgba(160, 29, 149, 0.15);
+  transition: all .3s ease-out;
 }
+
+.flip-button .text-front,
+.flip-button .text-back {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0 1.5em;
+  transform: translate(-50%, -50%);
+  backface-visibility: hidden;
+  width: 100%;
+}
+
+.flip-button .text-back {
+  transform: translate(-50%, -50%) rotateY(180deg);
+}
+
 

@@ -1,0 +1,26 @@
+
+/* From Uiverse.io by saidbl1 - Tags: card, hover, scale */
+.frame {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 300px;
+  background-color: #f2b67b;
+  border-radius: 5px;
+}
+
+.frame svg {
+  border: 2px solid black;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 3px;
+  scale: 0.87;
+  transition: transform 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 1.55, 0.74, 0.55);
+}
+
+.frame:hover svg {
+  transform: scale(1.11);
+}

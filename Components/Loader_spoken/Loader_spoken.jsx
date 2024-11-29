@@ -3,7 +3,7 @@ import styles from "./Loader_spoken.module.css";
 
 const Loader_spoken = () => (
   <div>
-    <div className={styles["momentum"]}></div>
+    <div className={styles["ball"]}></div>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Loader_spoken;
 
         const Loader_spoken = () => (
          <div>
-          <div className="momentum"></div>
+          <div className="ball"></div>
         </div>
         );
 

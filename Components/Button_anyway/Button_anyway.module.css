@@ -1,40 +1,26 @@
 
-/* From Uiverse.io by Codecite - Tags: button */
-.anchor {
-  text-decoration: none;
-  color: #fff;
-  display: inline-block;
-  font-family: sans-serif;
-  font-weight: 600;
-  border-radius: 50px;
-  border: 2px solid #ed553b;
-  padding: 14px 40px 13px;
-  overflow: hidden;
-  position: relative;
+/* From Uiverse.io by e-coders - Tags: button */
+button.button-3d {
+ margin: 10px;
+ border-right: 0;
+ border-left: 0;
+ border-top: 0;
+ font-family: inherit;
+ font-size: 24px;
+ padding: 8px;
+ color: rgba(255, 255, 255, 0.788);
 }
 
-.anchor:hover {
-  color: #4e484a;
+button.button-3d:active {
+ border-bottom: 0;
 }
 
-.button a::before {
-  position: absolute;
-  content: "";
-  z-index: 0;
-  background-color: #ed553b;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  height: 111%;
-  transition: all .3s ease;
+button.button-3d {
+ cursor: pointer;
 }
 
-.button a:hover::before {
-  height: 11%;
-}
-
-.button span {
-  position: relative;
-  z-index: 2;
-  transition: all .3s ease;
+/* RED */
+.button-3d-red {
+ border-bottom: 3px solid rgb(117, 28, 28);
+ background-color: rgb(248, 91, 91);
 }

@@ -3,12 +3,7 @@ import styles from "./Button_tent.module.css";
 
 const Button_tent = () => (
   <div>
-    <button data-text="Awesome" className={styles["button"]}>
-      <span className={styles["actual-text"]}>&nbsp;uiverse&nbsp;</span>
-      <span className={styles["hover-text"]} aria-hidden="true">
-        &nbsp;uiverse&nbsp;
-      </span>
-    </button>
+    <button className={styles["btn"]}>Watch</button>
   </div>
 );
 
@@ -23,9 +18,8 @@ export default Button_tent;
 
         const Button_tent = () => (
          <div>
-          <button data-text="Awesome" className="button">
-    <span className="actual-text">&nbsp;uiverse&nbsp;</span>
-    <span className="hover-text" aria-hidden="true">&nbsp;uiverse&nbsp;</span>
+          <button className="btn">
+  Watch
 </button>
         </div>
         );

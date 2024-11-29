@@ -3,21 +3,10 @@ import styles from "./Button_too.module.css";
 
 const Button_too = () => (
   <div>
-    <div className={styles["background"]}>
-      <button className={styles["change-theme__icon"]}>
-        <span className={styles["icon-sun-moon"]}></span>
-        <span className={styles["sun-rays"]}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </button>
-    </div>
+    <button className={styles["send-message-button"]}>
+      <span className={styles["icon"]}>✈️</span>{" "}
+      <span className={styles["text"]}>Send Message</span>
+    </button>
   </div>
 );
 
@@ -32,21 +21,9 @@ export default Button_too;
 
         const Button_too = () => (
          <div>
-          <div className="background">
-  <button className="change-theme__icon">
-    <span className="icon-sun-moon"></span>
-    <span className="sun-rays">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </span>
-  </button>
-</div>
+          <button className="send-message-button">
+  <span className="icon">✈️</span> <span className="text">Send Message</span>
+</button>
         </div>
         );
 

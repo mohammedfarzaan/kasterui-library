@@ -3,9 +3,7 @@ import styles from "./Loader_tree.module.css";
 
 const Loader_tree = () => (
   <div>
-    <div className={styles["bar"]}>
-      <div className={styles["ball"]}></div>
-    </div>
+    <div className={styles["spinner"]}></div>
   </div>
 );
 
@@ -20,9 +18,7 @@ export default Loader_tree;
 
         const Loader_tree = () => (
          <div>
-          <div className="bar">
-    <div className="ball"></div>
-</div>
+          <div className="spinner"></div>
         </div>
         );
 

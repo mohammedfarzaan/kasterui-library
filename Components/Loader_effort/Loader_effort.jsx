@@ -3,14 +3,8 @@ import styles from "./Loader_effort.module.css";
 
 const Loader_effort = () => (
   <div>
-    <div className={styles["spinner"]}>
-      <span>L</span>
-      <span>O</span>
-      <span>A</span>
-      <span>D</span>
-      <span>I</span>
-      <span>N</span>
-      <span>G</span>
+    <div className={styles["loader"]}>
+      <div className={styles["loader-inner"]}></div>
     </div>
   </div>
 );
@@ -26,14 +20,8 @@ export default Loader_effort;
 
         const Loader_effort = () => (
          <div>
-          <div className="spinner">
-  <span>L</span>
-  <span>O</span>
-  <span>A</span>
-  <span>D</span>
-  <span>I</span>
-  <span>N</span>
-  <span>G</span>
+          <div className="loader">
+  <div className="loader-inner"></div>
 </div>
         </div>
         );

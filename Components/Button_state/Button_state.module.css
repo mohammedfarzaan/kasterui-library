@@ -1,42 +1,74 @@
 
-/* From Uiverse.io by mrhyddenn - Tags: gradient, button, circle */
-button {
-  display: flex;
+/* From Uiverse.io by ChanduOffl  - Tags: icon, animation, white, button, message, btn, buttons, hover button */
+.button {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 100px;
-  position: relative;
+  padding: 10px 20px;
+  background-color: #fefefe;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
   cursor: pointer;
-  height: 100px;
-  border-radius: 100px;
-  border: none;
-  background: #333;
-  color: #e5e5e5;
-  font-weight: 600;
-  box-shadow: inset 20px 20px 39px #080a10,
-  inset -20px -20px 39px #1b263e;
-  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  outline: 2px solid #fafafa;
+  box-shadow: 9px 9px 44px #cecece3a, -9px -9px 44px #d3d3d33d,
+    inset 0 0 0 2px rgba(192, 192, 192, 0.25);
 }
 
-button::after {
-  content: '';
+.button::before {
+  content: "";
   position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border-radius: 30px;
+  background: linear-gradient(
+    0deg,
+    #fbfbfb 0%,
+    #fafafa 5%,
+    #f7f7f7 72%,
+    #f2f2f2 86%,
+    #f0f0f0 100%
+  );
+  box-shadow: inset 0 2px 7px rgba(143, 143, 143, 0.16);
+  transition: all 0.3s ease;
   z-index: -1;
-  left: -10px;
-  top: -10px;
-  border-radius: 50%;
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
-  background: linear-gradient(35deg, rgb(47, 190, 238), rgb(218, 57, 143), rgb(139, 255, 23));
-  filter: blur(10px);
+  margin: 2px;
 }
 
-button:hover::after {
-  animation: rotcirclegr 1s linear infinite;
+.button:hover::before {
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  margin: 5px;
 }
 
-@keyframes rotcirclegr {
-  to {
-    transform: rotate(360deg);
-  }
+.button:focus {
+  outline: 2px solid #fefefe;
+  box-shadow: 9px 9px 44px #cecece3a, -9px -9px 44px #d3d3d33d,
+    inset 0 0 0 2px rgba(192, 192, 192, 0.5);
 }
+
+.send-icon {
+  margin-right: 5px;
+  transition: transform 0.3s ease;
+}
+
+.button:hover .send-icon {
+  transform: translateX(7px);
+}
+
+.button:focus .send-icon {
+  transform: rotate(-40deg);
+}
+

@@ -1,0 +1,167 @@
+
+/* From Uiverse.io by Jamshibkl - Tags: card */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 280px;
+  height: 350px;
+  padding: 30px;
+  border-radius: 18px;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #0a76b5 0%, #3bf8a0 100%);
+  animation: gradient 8s ease-in-out infinite;
+  background-size: 500% 500%;
+  transition: all 0.5s;
+  box-shadow: 0px 15px 20px rgba(32, 64, 194, 0.4);
+}
+
+.heading {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(15, 17, 36);
+  margin-top: 20px;
+  text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.3);
+  ;
+}
+
+.heading span {
+  color: #ffffffeb;
+  text-shadow: 0px 0px 16px #CECECE;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background-color: #17181c;
+  border-radius: 1em;
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.3);
+  transform-origin: 50% 133%;
+  text-shadow: 0px 0px 16px #CECECE;
+}
+
+.content:hover {
+  box-shadow: 0px 15px 20px rgba(32, 64, 194, 0.4);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 5rem;
+  height: 4rem;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+  color: #ffffff;
+  text-shadow: 0px 0px 16px #CECECE;
+}
+
+.item:hover {
+  color: dodgerblue;
+  transform: translateY(-10px);
+}
+
+.item:focus {
+  outline: transparent;
+}
+
+.item item--create svg {
+  display: block;
+  margin: 0 auto;
+  overflow: visible;
+  width: 1.5em;
+  height: 1.5em;
+  transition: transform 0.3s cubic-bezier(0.7,0,0.3,1);
+}
+
+.item span {
+  display: block;
+  font-size: 10px;
+  line-height: 1.25;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+.item--create svg {
+  animation: spin 2s linear infinite;
+}
+
+.item--post svg {
+  animation: upDown 2s ease-in-out infinite alternate;
+}
+
+.item--inspire svg {
+  animation: flash 1.2s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(1.8px);
+  }
+
+  100% {
+    transform: translateY(-1.8px);
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.content span:hover {
+  color: dodgerblue;
+  text-shadow: 0px 0px 16px #CECECE;
+}
+
+.item:focus span {
+  opacity: 0;
+}
+
+button {
+  padding: 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 16px #CECECE;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgb(12, 17, 80);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #251ab6;
+  box-shadow: 0px 15px 20px rgba(32, 64, 194, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}

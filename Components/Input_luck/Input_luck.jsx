@@ -3,7 +3,12 @@ import styles from "./Input_luck.module.css";
 
 const Input_luck = () => (
   <div>
-    <input className={styles["input"]} placeholder="Email" type="email" />
+    <input
+      placeholder="Username"
+      type="text"
+      name="text"
+      className={styles["input"]}
+    />
   </div>
 );
 
@@ -18,7 +23,7 @@ export default Input_luck;
 
         const Input_luck = () => (
          <div>
-          <input className="input" placeholder="Email" type="email" />
+          <input placeholder="Username" type="text" name="text" className="input" />
         </div>
         );
 

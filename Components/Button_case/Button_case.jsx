@@ -3,16 +3,13 @@ import styles from "./Button_case.module.css";
 
 const Button_case = () => (
   <div>
-    <button className={styles["button"]}>
-      <span>Bubble Button</span>
-      <svg
-        aria-hidden="true"
-        preserveAspectRatio="none"
-        viewBox="-5 -5 110 110"
-      >
-        <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0"></path>
-      </svg>
-    </button>
+    <a className={styles["button"] + styles["type--A"]} href="#">
+      <div className={styles["button__line"]}></div>
+      <div className={styles["button__line"]}></div>
+      <span className={styles["button__text"]}>ENTRY</span>
+      <div className={styles["button__drow1"]}></div>
+      <div className={styles["button__drow2"]}></div>
+    </a>
   </div>
 );
 
@@ -27,12 +24,13 @@ export default Button_case;
 
         const Button_case = () => (
          <div>
-          <button className="button">
-  <span>Bubble Button</span>
-  <svg aria-hidden="true" preserveAspectRatio="none" viewBox="-5 -5 110 110">
-    <path d="M0,0 C0,0 100,0 100,0 C100,0 100,100 100,100 C100,100 0,100 0,100 C0,100 0,0 0,0"></path>
-  </svg>
-</button>
+          <a className="button type--A" href="#">
+  <div className="button__line"></div>
+  <div className="button__line"></div>
+  <span className="button__text">ENTRY</span>
+  <div className="button__drow1"></div>
+  <div className="button__drow2"></div>
+</a>
         </div>
         );
 

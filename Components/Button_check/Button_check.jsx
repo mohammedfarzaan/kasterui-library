@@ -3,11 +3,12 @@ import styles from "./Button_check.module.css";
 
 const Button_check = () => (
   <div>
-    <div className={styles["body"]}>
-      <button className={styles["btn"] + styles["btn-hover"]}>
-        <span className={styles["btn-text"]}>Practice now</span>
-      </button>
-    </div>
+    <button className={styles["button"]}>
+      <svg viewBox="0 0 36 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+      </svg>
+      Unlock Pro
+    </button>
   </div>
 );
 
@@ -22,11 +23,12 @@ export default Button_check;
 
         const Button_check = () => (
          <div>
-          <div className="body">
-<button className="btn btn-hover">
-  <span className="btn-text">Practice now</span>
+          <button className="button">
+    <svg viewBox="0 0 36 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+    </svg>
+    Unlock Pro
 </button>
-</div>
         </div>
         );
 

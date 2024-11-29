@@ -3,9 +3,12 @@ import styles from "./Button_radio.module.css";
 
 const Button_radio = () => (
   <div>
-    <button className={styles["button"]}>
-      <p className={styles["btn-txt"]}>Hello !</p>
-    </button>
+    <span
+      data-active-content="🤨"
+      data-hover-content="😑"
+      data-content="😐"
+      className={styles["💀"]}
+    ></span>
   </div>
 );
 
@@ -20,9 +23,12 @@ export default Button_radio;
 
         const Button_radio = () => (
          <div>
-          <button className="button">
-  <p className="btn-txt">Hello !</p>
-</button>
+          <span
+  data-active-content="🤨"
+  data-hover-content="😑"
+  data-content="😐"
+  className="💀"
+></span>
         </div>
         );
 

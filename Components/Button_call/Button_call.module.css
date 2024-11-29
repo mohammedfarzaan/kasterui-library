@@ -1,43 +1,25 @@
 
-/* From Uiverse.io by yaasiinaxmed - Tags: button */
-button {
-  --color: #0077ff;
-  font-family: inherit;
-  display: inline-block;
-  width: 6em;
-  height: 2.6em;
-  line-height: 2.5em;
-  overflow: hidden;
-  margin: 20px;
-  font-size: 17px;
-  z-index: 1;
-  color: var(--color);
-  border: 2px solid var(--color);
-  border-radius: 6px;
-  position: relative;
+/* From Uiverse.io by guilhermeyohan - Tags: button */
+.beach-button {
+  background-color: #fbc02d;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
 }
 
-button::before {
-  position: absolute;
-  content: "";
-  background: var(--color);
-  width: 150px;
-  height: 200px;
-  z-index: -1;
-  border-radius: 50%;
+.beach-button:hover {
+  background-color: #ffe082;
 }
 
-button:hover {
-  color: white;
-}
-
-button:before {
-  top: 100%;
-  left: 100%;
-  transition: .3s all;
-}
-
-button:hover::before {
-  top: -30px;
-  left: -30px;
+.beach-button svg {
+  height: 20px;
+  margin-right: 10px;
+  width: 20px;
 }

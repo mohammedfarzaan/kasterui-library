@@ -3,7 +3,7 @@ import styles from "./Button_aware.module.css";
 
 const Button_aware = () => (
   <div>
-    <button>Button</button>
+    <button> Button</button>
   </div>
 );
 
@@ -18,8 +18,7 @@ export default Button_aware;
 
         const Button_aware = () => (
          <div>
-          <button>
-    Button
+          <button> Button
 </button>
         </div>
         );

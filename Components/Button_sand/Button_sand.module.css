@@ -1,58 +1,41 @@
 
-/* From Uiverse.io by KhelVers - Tags:  */
-.btnContainer {
-  /* Appearance */
-  background: #e0e0e0;
-  -webkit-box-shadow: 6px 6px 16px #bebebe,
-             -6px -6px 16px #ffffff9a;
-  box-shadow: 6px 6px 16px #bebebe,
-             -6px -6px 16px #ffffff9a;
-/* Dimensions */
-  width: 160px;
-  height: 60px;
-/* Border */
-  border: none;
-  border-radius: 16px;
-/* Content Aligment */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+/* From Uiverse.io by NorthFishHasNa - Tags: button */
+button {
+ display: inline-block;
+ border-radius: 4px;
+ background-color: #3d405b;
+ border: none;
+ color: #FFFFFF;
+ text-align: center;
+ font-size: 17px;
+ padding: 16px;
+ width: 130px;
+ transition: all 0.5s;
+ cursor: pointer;
+ margin: 5px;
 }
 
-.button {
-  /* Appearance */
-  background: #e0e0e0;
-  /* Font-Style */
-  font-size: 20px;
-  font-weight: 600;
-  /* Dimensions */
-  height: 85%;
-  width: 95%;
-  /* Border */
-  border: none;
-  border-radius: 14px;
-  /* Transition */
-  -webkit-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
+button span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
 }
 
-.button:hover {
-  /* Appearance */
-  background: #e0e0e0;
-  -webkit-box-shadow: inset 5px 5px 4px #c0c0c0,
-              inset -5px -5px 4px #dddddd;
-  box-shadow: inset 5px 5px 4px #c0c0c0,
-              inset -5px -5px 4px #dddddd;
-  /* Font-Style */
-  font-size: 20px;
-  font-weight: 400;
-  color: #333333;
+button span:after {
+ content: '»';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -15px;
+ transition: 0.5s;
 }
 
+button:hover span {
+ padding-right: 15px;
+}
 
+button:hover span:after {
+ opacity: 1;
+ right: 0;
+}

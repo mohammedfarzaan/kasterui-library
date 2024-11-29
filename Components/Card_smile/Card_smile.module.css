@@ -1,0 +1,70 @@
+
+/* From Uiverse.io by catraco - Tags: icon, 3d, gradient, card, card template, cool card, card animation, card hover */
+.card {
+  width: 280px;
+  height: 200px;
+  background-image: linear-gradient(45deg, #ffcdb2, #ffb4a2);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 1em;
+  padding: 1em;
+  position: relative;
+  border-left: none;
+  border-right: solid 6px #6d6875;
+  border-bottom: solid 1px #6d6875;
+  box-shadow: 5px 0px 10px #00000030;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+  border-right: none;
+  border-left: solid 6px #6d6875;
+  box-shadow: -5px 0px 10px #00000030;
+}
+
+.card .card-title {
+  font-size: 1em;
+  font-weight: 600;
+  color: #6d6875;
+  stroke: #6d6875;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.card .card-block {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #6d6875;
+  fill: #6d6875;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.4em 0;
+}
+
+.card .card-options {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(0%) rotate(5deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  fill: #ffcdb2;
+  height: 80%;
+  background-color: #6d6875;
+  border-radius: 0 1em 1em 0;
+  padding: 1em;
+  gap: 1em;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.card:hover .card-options {
+  opacity: 1;
+  transform: translate(50%) rotate(0deg);
+}
+

@@ -1,80 +1,58 @@
 
-/* From Uiverse.io by satyamchaudharydev - Tags: loader */
+/* From Uiverse.io by ShYnGySYes - Tags: loader */
 .spinner {
-  --red: #d62d20;
-  --blue: #0057e7;
-  --green: #008744;
-  --yellow: #ffa700;
-  position: relative;
-  width: 60px;
+  width: 44px;
+  height: 44px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
 }
 
-.spinner:before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-}
-
-.circular {
-  animation: rotate73451 2s linear infinite;
+.spinner > div {
+  background-color: rgb(255, 254, 254);
   height: 100%;
-  transform-origin: center center;
-  width: 100%;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  width: 100%;
+  border: 2px solid #ff0000;
 }
 
-.path {
-  stroke-dasharray: 1, 200;
-  stroke-dashoffset: 0;
-  animation: dash0175 1.5s ease-in-out infinite, color7123 6s ease-in-out infinite;
-  stroke-linecap: round;
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-22px) rotateY(180deg);
 }
 
-@keyframes rotate73451 {
-  100% {
-    transform: rotate(360deg);
-  }
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
 }
 
-@keyframes dash0175 {
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(22px);
+}
+
+@keyframes spinner-y0fdc1 {
   0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0;
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
   }
 
   50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35px;
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
   }
 
   100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -124px;
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
   }
 }
-
-@keyframes color7123 {
-  100%, 0% {
-    stroke: var(--red);
-  }
-
-  40% {
-    stroke: var(--blue);
-  }
-
-  66% {
-    stroke: var(--green);
-  }
-
-  80%, 90% {
-    stroke: var(--yellow);
-  }
-}
-
-
-

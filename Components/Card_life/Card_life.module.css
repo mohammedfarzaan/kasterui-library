@@ -1,0 +1,131 @@
+
+/* From Uiverse.io by PINKYSEE - Tags: card */
+.card {
+  position: relative;
+  box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+  background: linear-gradient(320.62deg, #21CFDC 0%, rgba(183, 53, 162, 0.522696) 47.73%, rgba(44, 70, 206, 0) 100%);
+  border-radius: 50px;
+  width: 300px;
+  height: 300px;
+  padding: 25px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.item {
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  animation: infinite 9s createanim;
+  animation-delay: 0s;
+}
+
+.item--create {
+  overflow: hidden;
+  position: relative;
+}
+
+.item--post {
+  overflow: hidden;
+  position: relative;
+}
+
+.item--inspire {
+  overflow: hidden;
+  position: relative;
+}
+
+.item--create svg {
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  left: 25%;
+}
+
+.item--post span {
+  position: absolute;
+  top: 80%;
+  left: 38%;
+  font-size: 24px;
+}
+
+.item--post svg {
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  left: 25%;
+}
+
+.item--create span {
+  position: absolute;
+  top: 80%;
+  left: 32%;
+  font-size: 24px;
+}
+
+.item--inspire svg {
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  left: 25%;
+}
+
+.item--inspire span {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  font-size: 24px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+}
+
+.heading span {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 20px;
+}
+
+button {
+  border: 1px solid white;
+  color: white;
+  background-color: #001eff00;
+  height: 50px;
+  width: 250px;
+  font-size: 20px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 15px;
+  transition: all 0.3s;
+  left: 25px;
+}
+
+button:hover {
+  width: 260px;
+  left: 20px;
+  bottom: 20px;
+}
+
+.content:hover .item {
+  animation-play-state: paused;
+}
+
+@keyframes createanim {
+  0% {
+    left: 70%;
+  }
+
+  100% {
+    left: -280%;
+  }
+}

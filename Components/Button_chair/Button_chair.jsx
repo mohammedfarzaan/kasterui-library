@@ -3,7 +3,7 @@ import styles from "./Button_chair.module.css";
 
 const Button_chair = () => (
   <div>
-    <button className={styles["complex-button"]}>HOVER ME</button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_chair;
 
         const Button_chair = () => (
          <div>
-          <button className="complex-button">HOVER ME</button>
+          <button className="button">
+  Button
+</button>
         </div>
         );
 

@@ -1,62 +1,33 @@
 
-/* From Uiverse.io by Sameer2244 - Tags: button */
-.btn-container {
-  width: fit-content;
-  height: fit-content;
-  position: relative;
+/* From Uiverse.io by reshades - Tags: button, clean, hover button */
+.button {
+  background-color: #ffffff00;
+  color: #fff;
+  width: 8.5em;
+  height: 2.9em;
+  border: #3654ff 0.2em solid;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
 }
 
-.svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: -1;
-  transform: translate(-50%,-50%);
-  transition: 0.5s;
-}
-
-.btn {
-  background-color: rgb(66, 125, 194);
-  z-index: 10;
-  color: white;
-  padding: 0.5rem 2rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border-radius: 0.5rem;
-  transition: 0.2s;
+.button:hover {
+  background-color: #3654ff;
   cursor: pointer;
 }
 
-.btn-container:hover {
-  box-shadow: rgba(66, 125, 194, 0.8) 0px 0px 54px;
+.button svg {
+  width: 1.6em;
+  margin: -0.2em 0.8em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
 }
 
-.btn:hover {
-  outline: rgb(66, 125, 194) solid 2px;
-  background-color: #212121;
+.button:hover svg {
+  transform: translateX(5px);
 }
 
-.btn-container:hover > .svg-1 {
-  transform: translate(130%,50%);
+.text {
+  margin: 0 1.5em
 }
-
-.btn-container:hover > .svg-2 {
-  transform: translate(-120%,-150%) rotate(30deg);
-}
-
-.btn-container:hover > .svg-3 {
-  transform: translate(60%,-150%) rotate(-45deg);
-}
-
-.btn-container:hover > .svg-4 {
-  transform: translate(-280%,0%) rotate(30deg);
-}
-
-.btn-container:hover > .svg-5 {
-  transform: translate(-80%,60%) rotate(-45deg);
-}
-
-.btn:active {
-  transform: scale(1.05);
-}
-

@@ -1,29 +1,55 @@
 
-/* From Uiverse.io by zjssun - Tags: button, neon */
-button {
-  padding: 10px 20px;
+/* From Uiverse.io by mininaim - Tags: button */
+.space-button {
+  font-size: 1.2rem;
+  font-weight: bold;
   text-transform: uppercase;
-  border-radius: 8px;
-  font-size: 17px;
-  font-weight: 500;
-  color: #ffffff80;
-  text-shadow: none;
-  background: transparent;
-  box-shadow: transparent;
-  border: 1px solid #ffffff80;
-  transition: 0.5s ease;
-  user-select: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
-#btn:hover,:focus {
-  color: #ffffff;
-  background: #008cff;
-  border: 1px solid #008cff;
-  text-shadow: 0 0 5px #ffffff,
-              0 0 10px #ffffff,
-              0 0 20px #ffffff;
-  box-shadow: 0 0 5px #008cff,
-              0 0 20px #008cff,
-              0 0 50px #008cff,
-              0 0 100px #008cff;
+.space-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
+
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+  .space-button {
+    background-color: #0074D9;
+    color: #fff;
+    box-shadow: 0px 0px 10px 0px #0074D9;
+  }
+
+  .space-button:hover {
+    box-shadow: 0px 0px 20px 0px #fff;
+  }
+
+  .space-button:active {
+    box-shadow: none;
+    background-color: #001f3f;
+  }
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  .space-button {
+    background-color: #f0f0f0;
+    color: #000;
+    box-shadow: 0px 0px 10px 0px #000;
+  }
+
+  .space-button:hover {
+    box-shadow: 0px 0px 20px 0px #fff;
+  }
+
+  .space-button:active {
+    box-shadow: none;
+    background-color: #bbb;
+  }
+}
+

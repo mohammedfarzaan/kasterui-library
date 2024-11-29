@@ -3,8 +3,9 @@ import styles from "./Input_mother.module.css";
 
 const Input_mother = () => (
   <div>
-    <div className={styles["containerInput"]}>
-      <input placeholder="Type for validate" type="text" />
+    <div className={styles["search"]}>
+      <input placeholder="Search..." type="text" />
+      <button type="submit">Go</button>
     </div>
   </div>
 );
@@ -20,9 +21,10 @@ export default Input_mother;
 
         const Input_mother = () => (
          <div>
-          <div className="containerInput">
-    <input placeholder="Type for validate" type="text" />
-</div>
+          <div className="search">
+        <input placeholder="Search..." type="text" />
+        <button type="submit">Go</button>
+      </div>
         </div>
         );
 

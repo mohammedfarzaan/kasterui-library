@@ -22,8 +22,8 @@ export default Toggle_river;
         const Toggle_river = () => (
          <div>
           <label className="switch">
-  <input type="checkbox" />
-  <span className="slider"></span>
+    <input type="checkbox" />
+    <span className="slider"></span>
 </label>
         </div>
         );

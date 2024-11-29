@@ -3,25 +3,12 @@ import styles from "./Button_tool.module.css";
 
 const Button_tool = () => (
   <div>
-    <button className={styles["button"]}>
-      <div className={styles["lid"]}>
-        <span className={styles["side"] + styles["top"]}></span>
-        <span className={styles["side"] + styles["front"]}></span>
-        <span className={styles["side"] + styles["back"]}> </span>
-        <span className={styles["side"] + styles["left"]}></span>
-        <span className={styles["side"] + styles["right"]}></span>
-      </div>
-      <div className={styles["panels"]}>
-        <div className={styles["panel-1"]}>
-          <div className={styles["panel-2"]}>
-            <div className={styles["btn-trigger"]}>
-              <span className={styles["btn-trigger-1"]}></span>
-              <span className={styles["btn-trigger-2"]}></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </button>
+    <div className={styles["installer"]}>
+      <label for="progressLinux">
+        <input id="progressLinux" type="radio" />
+        <span></span>
+      </label>
+    </div>
   </div>
 );
 
@@ -36,25 +23,9 @@ export default Button_tool;
 
         const Button_tool = () => (
          <div>
-          <button className="button">
-  <div className="lid">
-    <span className="side top"></span>
-    <span className="side front"></span>
-    <span className="side back"> </span>
-    <span className="side left"></span>
-    <span className="side right"></span>
-  </div>
-  <div className="panels">
-    <div className="panel-1">
-      <div className="panel-2">
-        <div className="btn-trigger">
-          <span className="btn-trigger-1"></span>
-          <span className="btn-trigger-2"></span>
-        </div>
-      </div>
-    </div>
-  </div>
-</button>
+          <div className="installer">
+	<label for="progressLinux"><input id="progressLinux" type="radio" /><span></span></label>
+</div>
         </div>
         );
 

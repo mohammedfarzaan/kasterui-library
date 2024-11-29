@@ -1,51 +1,57 @@
 
-/* From Uiverse.io by Akshdeep74644 - Tags: input */
-.input-group {
+/* From Uiverse.io by marcos700x - Tags: input */
+.containerInput {
+  background-color: #000;
   position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 0 4px 0;
+  z-index: 1;
+  font-size: 15px;
 }
 
-.input {
-  border: 3px solid #000;
-  background: none;
-  padding: 1rem;
-  font-size: 1rem;
-  color: black;
-}
-
-.user-label {
+.containerInput::before {
+  content: '';
+  width: 110%;
+  aspect-ratio: 1;
   position: absolute;
-  left: 15px;
-  color: #000;
-  pointer-events: none;
-  transform: translateY(1rem);
-  transition: 350ms;
+  inset: 0 0 0 0;
+  margin: auto;
+  animation: rotate6234 2.5s ease-in-out infinite;
+  z-index: -1;
+  background-image: conic-gradient(from 0deg at 50% 50%, #073AFF00 0%, #FF0000FF 25%, #073AFF00 25%);
 }
 
-.input:focus,
-input:valid {
+.containerInput > input {
+  width: 210px;
+  height: 50px;
+  font-size: inherit;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  background-color: #0a0a0a;
+  outline: 5px solid #0a0a0a;
+}
+
+.containerInput > input:focus {
   outline: none;
-  --angle: 0deg;
-  border-bottom: 3px solid;
-  border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
-  animation: 3s rotate9234 linear infinite;
 }
 
-@keyframes rotate9234 {
-  to {
-    --angle: 360deg;
+.containerInput > input:not(:placeholder-shown) {
+  outline: none;
+}
+
+.containerInput > input:not(:placeholder-shown):valid {
+  outline: 4px solid rgb(0, 255, 183);
+  border-radius: 0;
+}
+
+@keyframes rotate6234 {
+  from {
+    transform: rotate(0deg);
   }
-}
 
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
-
-.input:focus~label,
-input:valid~label {
-  transform: translateY(235%) scale(1);
-  background-color: #e8e8e8;
-  padding: 0 .2em;
-  color: #2196f3;
+  to {
+    transform: rotate(360deg);
+  }
 }

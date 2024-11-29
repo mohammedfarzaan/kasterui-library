@@ -3,7 +3,13 @@ import styles from "./Button_friend.module.css";
 
 const Button_friend = () => (
   <div>
-    <button className={styles["button"]}>Buton</button>
+    <button className={styles["btn-76"]}>
+      Button
+      <span className={styles["top"]}></span>
+      <span className={styles["right"]}></span>
+      <span className={styles["bottom"]}></span>
+      <span className={styles["left"]}></span>
+    </button>
   </div>
 );
 
@@ -18,7 +24,13 @@ export default Button_friend;
 
         const Button_friend = () => (
          <div>
-          <button className="button">Buton</button>
+          <button className="btn-76">
+  Button
+  <span className="top"></span>
+  <span className="right"></span>
+  <span className="bottom"></span>
+  <span className="left"></span>
+</button>
         </div>
         );
 

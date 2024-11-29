@@ -1,0 +1,178 @@
+
+/* From Uiverse.io by escannord  - Tags: tooltip, twitter, instagram, card, social media, discord */
+.card {
+  /* background-color: #171717; */
+  perspective: 1000px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+.heading {
+  color: white;
+  background-color: black;
+  border-radius: 3px;
+  padding: 5px;
+  font-weight: bolder;
+  animation: beat 1s infinite linear;
+  position: absolute;
+  top: 1px;
+}
+.icons {
+  background-color: rgba(204, 0, 255, 0.185);
+  transform: rotate(3deg);
+  padding: 5px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 16%;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  transition: all 0.3s;
+}
+.icons:hover {
+  transform: rotate(3deg) rotateX(45deg);
+  height: 90px;
+}
+.icons a {
+  background-color: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.icons .instagram:hover {
+  box-shadow: 0 5px 0px 5px #e41d6dc4, 0 10px 0px 10px #e41d6d8c,
+    0 15px 0px 15px #e41d6d49;
+}
+
+.icons .x:hover {
+  box-shadow: 0 5px 0px 5px #000000c4, 0 10px 0px 10px #0000008c,
+    0 15px 0px 15px #00000049;
+}
+
+.icons .discord:hover {
+  box-shadow: 0 5px 0px 5px #5661eac4, 0 10px 0px 10px #5661ea8c,
+    0 15px 0px 15px #5661ea49;
+}
+
+.icons a svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: transparent;
+  border-color: rgb(176, 7, 255);
+  color: rgb(209, 30, 99);
+}
+
+.icons a::before {
+  display: none;
+  position: absolute;
+  content: "";
+  border: solid 10px transparent;
+  border-right-color: aliceblue;
+  top: -120px;
+  right: -200px;
+  transition: all 0.3s;
+}
+
+.icons a::after {
+  display: none;
+  width: auto;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: -130px;
+  right: -243px;
+  transition: all 0.3s;
+}
+.icons .instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #e41d6d,
+    #f80bad
+  );
+}
+
+.icons .instagram svg {
+  color: white;
+}
+.icons .x {
+  background: black;
+}
+
+.icons .x svg {
+  color: white;
+}
+.icons .discord {
+  background: #5661ea;
+}
+
+.icons .discord svg {
+  color: white;
+}
+
+.instagram::before {
+  border-right-color: #e6683c !important;
+  right: -142px !important;
+}
+.x::before {
+  border-right-color: #000 !important;
+  right: -87px !important;
+}
+.discord::before {
+  border-right-color: #5661ea !important;
+  right: -30px !important;
+}
+.instagram::after {
+  content: "instagram";
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #e41d6d,
+    #f80bad
+  );
+}
+.x::after {
+  content: "twitter";
+  background-color: black !important;
+  right: -160px !important;
+}
+
+.discord::after {
+  content: "Discord";
+  background-color: #5661ea !important;
+  right: -110px !important;
+}
+
+.icons a:hover:after,
+.icons a:hover:before {
+  display: inline-block;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 0px 0px 0px black;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.247),
+      0px 0px 0px 5px rgba(0, 0, 0, 0.404),
+      0px 0px 0px 10px rgba(0, 0, 0, 0.534);
+  }
+}
+

@@ -3,8 +3,7 @@ import styles from "./Loader_solve.module.css";
 
 const Loader_solve = () => (
   <div>
-    <div className={styles["loader"]}></div>
-    <div className={styles["loader2"]}></div>
+    <div className={styles["box"]}></div>
   </div>
 );
 
@@ -19,8 +18,7 @@ export default Loader_solve;
 
         const Loader_solve = () => (
          <div>
-          <div className="loader"></div>
-<div className="loader2"></div>
+          <div className="box"></div>
         </div>
         );
 

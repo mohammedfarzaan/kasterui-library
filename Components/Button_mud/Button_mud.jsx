@@ -3,7 +3,9 @@ import styles from "./Button_mud.module.css";
 
 const Button_mud = () => (
   <div>
-    <button>ok</button>
+    <button>
+      <span>Hover</span>
+    </button>
   </div>
 );
 
@@ -18,9 +20,7 @@ export default Button_mud;
 
         const Button_mud = () => (
          <div>
-          <button>
-    ok
-</button>
+          <button><span>Hover</span></button>
         </div>
         );
 

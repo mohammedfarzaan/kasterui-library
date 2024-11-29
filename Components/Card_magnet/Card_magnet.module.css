@@ -1,0 +1,64 @@
+
+/* From Uiverse.io by aboalsim114 - Tags: card */
+.card {
+  position: relative;
+  padding: 10px;
+  font: 500 15px / 15px Almohtarif;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 8px;
+  width: 200px;
+  height: 250px;
+  z-index: 1;
+  transition: all 500ms ease-in-out;
+}
+
+.card::after {
+  content: '2022';
+  width: 200px;
+  height: 35%;
+  background-color: blue;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.card::before {
+  content: 'france';
+  color: #fff;
+  text-transform: uppercase;
+  width: 200px;
+  height: 35%;
+  background-color: red;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card svg {
+  width: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+

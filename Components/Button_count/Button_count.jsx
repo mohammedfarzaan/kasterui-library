@@ -3,7 +3,7 @@ import styles from "./Button_count.module.css";
 
 const Button_count = () => (
   <div>
-    <button>GLITCH</button>
+    <button> Button</button>
   </div>
 );
 
@@ -18,8 +18,7 @@ export default Button_count;
 
         const Button_count = () => (
          <div>
-          <button>
-  GLITCH
+          <button> Button
 </button>
         </div>
         );

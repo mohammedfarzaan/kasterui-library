@@ -1,26 +1,55 @@
 
-/* From Uiverse.io by Cornerstone-04 - Tags: loader */
+/* From Uiverse.io by mobinkakei - Tags: loader */
 .loader {
-  width: 50px;
-  height: 50px;
-  border: 7px double;
-  border-color: #43cec7 transparent;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: spin13213 2s linear infinite;
+  border-top: 5px solid #e74c3c;
+  position: relative;
+  animation: load 2s linear infinite;
 }
 
-.loader div {
-  width: 50%;
-  height: 50%;
-  background-color: #43cec7;
+.loader::before,.loader::after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
   border-radius: 50%;
 }
 
-@keyframes spin13213 {
+.loader::before {
+  border-top: 5px solid #e67e22;
+  transform: rotate(120deg);
+}
+
+.loader::after {
+  border-top: 5px solid #3498db;
+  transform: rotate(240deg);
+}
+
+.loader span {
+  position: absolute;
+  font-size: small;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  animation: a2 2s linear infinite;
+}
+
+@keyframes load {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes a2 {
+  to {
+    transform: rotate(-360deg);
   }
 }

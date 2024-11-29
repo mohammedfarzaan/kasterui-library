@@ -1,45 +1,54 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: animation, purple, gradient, button, hover, search, hover effect, explore */
-.Explore-Button {
-  width: fit-content;
-  height: 45px;
+/* From Uiverse.io by andrew-demchenk0 - Tags: icon, button, archive */
+.button {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 5px 15px;
-  gap: 10px;
+  align-items: center;
+  padding: 8px 12px 8px 16px;
+  gap: 8px;
+  height: 40px;
+  width: 128px;
   border: none;
-  border-radius: 5px;
+  background: #056bfa27;
+  border-radius: 20px;
   cursor: pointer;
+}
 
-  background: linear-gradient(120deg, rgb(65, 43, 95), rgb(96, 51, 154));
-}
-.IconContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 25px;
-  height: 25px;
-}
-.telescope {
-  width: 100%;
-  height: auto;
-  transform-origin: center;
-  transition: all 1s;
-  transform: rotate(20deg);
-}
-.tripod {
-  width: 60%;
-  height: auto;
-}
-.text {
-  color: rgb(240, 240, 240);
-  font-weight: 500;
-  font-size: 16px;
+.lable {
+  margin-top: 1px;
+  font-size: 19px;
+  line-height: 22px;
+  color: #056DFA;
+  font-family: sans-serif;
   letter-spacing: 1px;
 }
-.Explore-Button:hover .telescope {
-  transform: rotate(-35deg);
+
+.button:hover {
+  background: #056bfa49;
 }
 
+.button:hover .svg-icon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-8deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(8deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

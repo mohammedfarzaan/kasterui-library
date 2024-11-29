@@ -3,12 +3,7 @@ import styles from "./Button_public.module.css";
 
 const Button_public = () => (
   <div>
-    <button className={styles["btn-23"]}>
-      <span className={styles["text"]}>Button</span>
-      <span aria-hidden="" className={styles["marquee"]}>
-        Button
-      </span>
-    </button>
+    <button className={styles["button"]}>Fondle ME!</button>
   </div>
 );
 
@@ -23,9 +18,8 @@ export default Button_public;
 
         const Button_public = () => (
          <div>
-          <button className="btn-23">
-  <span className="text">Button</span>
-  <span aria-hidden="" className="marquee">Button</span>
+          <button className="button">
+    Fondle ME!
 </button>
         </div>
         );

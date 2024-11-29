@@ -3,9 +3,7 @@ import styles from "./Button_wind.module.css";
 
 const Button_wind = () => (
   <div>
-    <button id="bottone1">
-      <strong>Discover features</strong>
-    </button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -20,7 +18,7 @@ export default Button_wind;
 
         const Button_wind = () => (
          <div>
-          <button id="bottone1"><strong>Discover features</strong></button>
+          <button className="button">Button</button>
         </div>
         );
 

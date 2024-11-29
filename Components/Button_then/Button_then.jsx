@@ -3,7 +3,7 @@ import styles from "./Button_then.module.css";
 
 const Button_then = () => (
   <div>
-    <button className={styles["comic-btn"]}>Click me!</button>
+    <button className={styles["button"]}>Enter</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_then;
 
         const Button_then = () => (
          <div>
-          <button className="comic-btn">Click me!</button>
+          <button className="button">
+  Enter
+</button>
         </div>
         );
 

@@ -3,30 +3,27 @@ import styles from "./Toggle_bread.module.css";
 
 const Toggle_bread = () => (
   <div>
-    <label for="theme" className={styles["theme"]}>
-      <span className={styles["theme__toggle-wrap"]}>
-        <input
-          id="theme"
-          className={styles["theme__toggle"]}
-          type="checkbox"
-          role="switch"
-          name="theme"
-          value="dark"
-        />
-        <span className={styles["theme__fill"]}></span>
-        <span className={styles["theme__icon"]}>
-          <span className={styles["theme__icon-part"]}></span>
-          <span className={styles["theme__icon-part"]}></span>
-          <span className={styles["theme__icon-part"]}></span>
-          <span className={styles["theme__icon-part"]}></span>
-          <span className={styles["theme__icon-part"]}></span>
-          <span className={styles["theme__icon-part"]}></span>
-          <span className={styles["theme__icon-part"]}></span>
-          <span className={styles["theme__icon-part"]}></span>
-          <span className={styles["theme__icon-part"]}></span>
+    <div className={styles["checkbox-wrapper-35"]}>
+      <input
+        value="private"
+        name="switch"
+        id="switch"
+        type="checkbox"
+        className={styles["switch"]}
+      />
+      <label for="switch">
+        <span className={styles["switch-x-text"]}>This is </span>
+        <span className={styles["switch-x-toggletext"]}>
+          <span className={styles["switch-x-unchecked"]}>
+            <span className={styles["switch-x-hiddenlabel"]}>Unchecked: </span>
+            Off
+          </span>
+          <span className={styles["switch-x-checked"]}>
+            <span className={styles["switch-x-hiddenlabel"]}>Checked: </span>On
+          </span>
         </span>
-      </span>
-    </label>
+      </label>
+    </div>
   </div>
 );
 
@@ -41,23 +38,16 @@ export default Toggle_bread;
 
         const Toggle_bread = () => (
          <div>
-          <label for="theme" className="theme">
-	<span className="theme__toggle-wrap">
-		<input id="theme" className="theme__toggle" type="checkbox" role="switch" name="theme" value="dark" />
-		<span className="theme__fill"></span>
-		<span className="theme__icon">
-			<span className="theme__icon-part"></span>
-			<span className="theme__icon-part"></span>
-			<span className="theme__icon-part"></span>
-			<span className="theme__icon-part"></span>
-			<span className="theme__icon-part"></span>
-			<span className="theme__icon-part"></span>
-			<span className="theme__icon-part"></span>
-			<span className="theme__icon-part"></span>
-			<span className="theme__icon-part"></span>
-		</span>
-	</span>
-</label>
+          <div className="checkbox-wrapper-35">
+  <input value="private" name="switch" id="switch" type="checkbox" className="switch" />
+  <label for="switch">
+    <span className="switch-x-text">This is </span>
+    <span className="switch-x-toggletext">
+      <span className="switch-x-unchecked"><span className="switch-x-hiddenlabel">Unchecked: </span>Off</span>
+      <span className="switch-x-checked"><span className="switch-x-hiddenlabel">Checked: </span>On</span>
+    </span>
+  </label>
+</div>
         </div>
         );
 

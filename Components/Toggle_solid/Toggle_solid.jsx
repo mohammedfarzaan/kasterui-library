@@ -3,11 +3,9 @@ import styles from "./Toggle_solid.module.css";
 
 const Toggle_solid = () => (
   <div>
-    <label className={styles["toggle-switch"]}>
+    <label className={styles["switch"]}>
       <input type="checkbox" />
-      <div className={styles["toggle-switch-background"]}>
-        <div className={styles["toggle-switch-handle"]}></div>
-      </div>
+      <span className={styles["slider"]}></span>
     </label>
   </div>
 );
@@ -23,11 +21,9 @@ export default Toggle_solid;
 
         const Toggle_solid = () => (
          <div>
-          <label className="toggle-switch">
+          <label className="switch">
   <input type="checkbox" />
-  <div className="toggle-switch-background">
-    <div className="toggle-switch-handle"></div>
-  </div>
+  <span className="slider"></span>
 </label>
         </div>
         );

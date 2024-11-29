@@ -1,46 +1,108 @@
 
-/* From Uiverse.io by VashonG  - Tags: icon, fintech, credit */
-.virtual-card,
-.physical-card,
-.tokenized-card {
-  margin: 0 50px;
+/* From Uiverse.io by Cybercom682 - Tags: loader, rotate, scale, eye */
+.loader {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: relative;
 }
 
-.plus {
-  animation: plus 2s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+.loader::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  animation: doitreverse 4s infinite;
 }
 
-.plus-one {
-  animation: plus 2.5s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+.loader::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  animation: doit 4s infinite;
 }
 
-.plus-two {
-  animation: plus 3s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
-}
-
-.plus-three {
-  animation: plus 3.5s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
-}
-
-.plus-four {
-  animation: plus 4s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
-}
-
-.plus-five {
-  animation: plus 4.5s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
-}
-
-@keyframes plus {
+@keyframes doit {
   0% {
-    opacity: 1;
+    transform: scale(1);
   }
 
   50% {
-    opacity: 0;
+    border-radius: 20% 50%;
+    transform: scale(1.25);
   }
 
   100% {
-    opacity: 1;
+    transform: scale(1);
   }
 }
 
+@keyframes doitreverse {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  50% {
+    border-radius: 50% 20%;
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.eye {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: rgb(85, 0, 128);
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  animation: showme 4s infinite;
+}
+
+.eye::before {
+  content: "";
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  animation: showme 4s infinite;
+}
+
+.eye::after {
+  content: "";
+  height: 10%;
+  width: 10%;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  animation: showme 4s infinite;
+}
+
+@keyframes showme {
+  0% {
+    transform: scale(0.3);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.3);
+  }
+}

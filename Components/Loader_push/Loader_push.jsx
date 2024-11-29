@@ -3,17 +3,9 @@ import styles from "./Loader_push.module.css";
 
 const Loader_push = () => (
   <div>
-    <div className={styles["wrapper"]}>
-      <span className={styles["letter"] + styles["letter1"]}>L</span>
-      <span className={styles["letter"] + styles["letter2"]}>o</span>
-      <span className={styles["letter"] + styles["letter3"]}>a</span>
-      <span className={styles["letter"] + styles["letter4"]}>d</span>
-      <span className={styles["letter"] + styles["letter5"]}>i</span>
-      <span className={styles["letter"] + styles["letter6"]}>n</span>
-      <span className={styles["letter"] + styles["letter7"]}>g</span>
-      <span className={styles["letter"] + styles["letter8"]}>.</span>
-      <span className={styles["letter"] + styles["letter9"]}>.</span>
-      <span className={styles["letter"] + styles["letter10"]}>.</span>
+    <div className={styles["spinner"]}>
+      <div className={styles["loader"] + styles["l1"]}></div>
+      <div className={styles["loader"] + styles["l2"]}></div>
     </div>
   </div>
 );
@@ -29,17 +21,9 @@ export default Loader_push;
 
         const Loader_push = () => (
          <div>
-          <div className="wrapper">
-  <span className="letter letter1">L</span>
-  <span className="letter letter2">o</span>
-  <span className="letter letter3">a</span>
-  <span className="letter letter4">d</span>
-  <span className="letter letter5">i</span>
-  <span className="letter letter6">n</span>
-  <span className="letter letter7">g</span>
-  <span className="letter letter8">.</span>
-  <span className="letter letter9">.</span>
-  <span className="letter letter10">.</span>
+          <div className="spinner">
+<div className="loader l1"></div>
+<div className="loader l2"></div>
 </div>
         </div>
         );

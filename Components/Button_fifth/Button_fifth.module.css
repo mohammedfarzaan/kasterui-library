@@ -1,46 +1,24 @@
 
-/* From Uiverse.io by abbos97 - Tags: gradient, button */
-.moves-button {
-  padding: 10px 20px;
-  color: #000;
-  font-weight: 900;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  background-color: #fff;
-  border: 3px solid transparent;
-  border-image: linear-gradient(90deg, #f3f 20%, rgb(49, 18, 187) 60%);
-  border-image-slice: 1;
-}
-
-.moves-button::after {
-  content: 'Button';
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, rgb(245, 108, 245) 20%, rgb(119, 91, 245) 60%);
-  transition: transform 0.3s ease-out;
-  pointer-events: none;
+/* From Uiverse.io by Amikas - Tags: button */
+.button {
+  background-color: #333;
   color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 17px;
 }
 
-.moves-button:hover::after {
-  transform: translateX(-100%);
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgb(128, 95, 247);
 }
 
-.moves-button:focus {
-  outline: none;
+.button:active {
+  transform: translateY(0.5em);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
-
-/* Optional styling for the button on click */
-.moves-button:active {
-  transform: translateY(2px);
-}
-

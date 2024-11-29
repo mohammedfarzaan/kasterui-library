@@ -1,61 +1,58 @@
 
-/* From Uiverse.io by elijahgummer  - Tags: simple, animation, switch, modern, toggle, stretch, squish */
-/* Switch container styling */
-.switch {
+/* From Uiverse.io by MuhammadHasann  - Tags: neumorphism, switch, checkbox, smooth, on, off, toggle */
+.toggle-cont {
+  width: 100px;
+  height: 50px;
+  border-radius: 9999px;
+}
+
+.toggle-cont .toggle-input {
+  display: none;
+}
+
+.toggle-cont .toggle-label {
+  cursor: pointer;
   position: relative;
   display: inline-block;
-  width: 3.5em; /* Width of the toggle switch */
-  height: 1.5em; /* Height of the toggle switch */
+  padding: 6px;
+  width: 100%;
+  height: 100%;
+  background: #272727;
+  border-radius: 9999px;
+  box-sizing: content-box;
+  box-shadow: 0px 0px 16px -8px #fefefe;
 }
 
-/* Hide default checkbox appearance */
-.switch .input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+.toggle-cont .toggle-label .cont-label-play {
+  position: relative;
+  width: 50px;
+  aspect-ratio: 1 / 1;
+  background: #5e5e5e;
+  border-radius: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
-/* Slider styling */
-.slider {
+.toggle-cont .toggle-input:checked + .toggle-label .cont-label-play {
+  background: #f43f5e;
+  transform: translateX(50px);
+}
+
+.toggle-cont .toggle-label .label-play {
   position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #f0f0f0;
-  border-radius: 0.5em; /* Rounded corners for the slider */
-  box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
-    0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
-    0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
-  transition: 0.23s ease;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 24px;
+  aspect-ratio: 1 / 1;
+  background: #fefefe;
+  border-radius: 4px;
+  clip-path: polygon(25% 0, 75% 50%, 25% 100%, 25% 51%);
+  transition: all 0.5s cubic-bezier(1, 0, 0, 1);
 }
 
-/* Slider knob styling */
-.slider:before {
-  content: "";
-  position: absolute;
-  height: 1.1em;
-  width: 1.1em;
-  border-radius: 50%;
-  background-color: #d3d3d3;
-  left: 0.2em;
-  bottom: 0.2em;
-  transition: 0.23s ease;
-}
-
-/* Change slider background color when checked */
-.input:checked + .slider {
-  translate: 0 0.225em;
-  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
-    0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
-    0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
-  transform: scale(1.2);
-}
-
-/* Move the knob when checked */
-.input:checked + .slider:before {
-  transform: translateX(2em); /* Move knob to the right */
-  background-color: #87ceeb;
+.toggle-cont .toggle-input:checked + .toggle-label .label-play {
+  width: 20px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 

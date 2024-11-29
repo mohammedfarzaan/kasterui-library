@@ -3,9 +3,7 @@ import styles from "./Loader_shake.module.css";
 
 const Loader_shake = () => (
   <div>
-    <div className={styles["coin"]}>
-      <span className={styles["engraving"]}>$</span>
-    </div>
+    <div className={styles["spinner"]}></div>
   </div>
 );
 
@@ -20,9 +18,7 @@ export default Loader_shake;
 
         const Loader_shake = () => (
          <div>
-          <div className="coin">
-  <span className="engraving">$</span>
-</div>
+          <div className="spinner"></div>
         </div>
         );
 

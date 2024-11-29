@@ -3,7 +3,10 @@ import styles from "./Button_pain.module.css";
 
 const Button_pain = () => (
   <div>
-    <button className={styles["game-button"]}>Play Now!</button>
+    <a>
+      <div className={styles["buuton"]}>HOVER ME</div>
+      <div className={styles["back"]}></div>
+    </a>
   </div>
 );
 
@@ -18,7 +21,10 @@ export default Button_pain;
 
         const Button_pain = () => (
          <div>
-          <button className="game-button">Play Now!</button>
+          <a>
+  <div className="buuton">HOVER ME</div>
+  <div className="back"></div>
+</a>
         </div>
         );
 

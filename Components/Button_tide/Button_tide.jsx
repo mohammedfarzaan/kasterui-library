@@ -3,7 +3,7 @@ import styles from "./Button_tide.module.css";
 
 const Button_tide = () => (
   <div>
-    <button className={styles["button"]}>Hover me</button>
+    <button>Button</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_tide;
 
         const Button_tide = () => (
          <div>
-          <button className="button">
-    Hover me
-</button>
+          <button>Button</button>
         </div>
         );
 

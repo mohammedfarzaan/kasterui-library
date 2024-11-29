@@ -3,7 +3,7 @@ import styles from "./Button_tribe.module.css";
 
 const Button_tribe = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button className={styles["button"]}>Hover Over Me</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_tribe;
 
         const Button_tribe = () => (
          <div>
-          <button className="button">
-  Button
-</button>
+          <button className="button">Hover Over Me</button>
         </div>
         );
 

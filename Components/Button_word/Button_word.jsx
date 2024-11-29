@@ -3,7 +3,13 @@ import styles from "./Button_word.module.css";
 
 const Button_word = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <div className={styles["container"]}>
+      <input name="power" id="power" type="checkbox" />
+      <label className={styles["power"]} for="power">
+        <span className={styles["icon-off"]}></span>
+        <span className={styles["light"]}></span>
+      </label>
+    </div>
   </div>
 );
 
@@ -18,9 +24,13 @@ export default Button_word;
 
         const Button_word = () => (
          <div>
-          <button className="button">
-  Button
-</button>
+          <div className="container">
+  <input name="power" id="power" type="checkbox" />
+  <label className="power" for="power">
+    <span className="icon-off"></span>
+    <span className="light"></span>
+  </label>
+</div>
         </div>
         );
 

@@ -3,7 +3,9 @@ import styles from "./Button_pitch.module.css";
 
 const Button_pitch = () => (
   <div>
-    <button> Button</button>
+    <button className={styles["button"]}>Button</button>
+
+    <footer></footer>
   </div>
 );
 
@@ -18,8 +20,9 @@ export default Button_pitch;
 
         const Button_pitch = () => (
          <div>
-          <button> Button
-</button>
+          <button className="button">Button</button>
+
+<footer></footer>
         </div>
         );
 

@@ -3,7 +3,9 @@ import styles from "./Loader_this.module.css";
 
 const Loader_this = () => (
   <div>
-    <div className={styles["loaderBar"]}></div>
+    <div className={styles["glitch"]} data-text="Loading ...">
+      Loading ...
+    </div>
   </div>
 );
 
@@ -18,7 +20,7 @@ export default Loader_this;
 
         const Loader_this = () => (
          <div>
-          <div className="loaderBar"></div>
+          <div className="glitch" data-text="Loading ...">Loading ...</div>
         </div>
         );
 

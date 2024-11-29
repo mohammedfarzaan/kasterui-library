@@ -1,43 +1,132 @@
 import React from "react";
+import styles from "./Input_seven.module.css";
 
 const Input_seven = () => (
   <div>
-    <div className="flex items-center justify-center bg-gray-800 overflow-hidden p-1 border border-white border-opacity-30 rounded-lg shadow-md h-9">
+    <div className={styles["messageBox"]}>
+      <div className={styles["fileUploadWrapper"]}>
+        <label for="file">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 337 337"
+          >
+            <circle
+              strokeWidth="20"
+              stroke="#6c6c6c"
+              fill="none"
+              r="158.5"
+              cy="168.5"
+              cx="168.5"
+            ></circle>
+            <path
+              strokeLinecap="round"
+              strokeWidth="25"
+              stroke="#6c6c6c"
+              d="M167.759 79V259"
+            ></path>
+            <path
+              strokeLinecap="round"
+              strokeWidth="25"
+              stroke="#6c6c6c"
+              d="M79 167.138H259"
+            ></path>
+          </svg>
+          <span className={styles["tooltip"]}>Add an image</span>
+        </label>
+        <input type="file" id="file" name="file" />
+      </div>
       <input
-        className="w-42 h-full border-none outline-none text-sm bg-gray-800 text-white font-semibold caret-orange-500 pl-2"
+        required=""
+        placeholder="Message..."
         type="text"
-        name="text"
-        id="input"
-        placeholder="0000 0000 0000 0000"
+        id="messageInput"
       />
-      <div className="flex items-center justify-center relative w-10 h-6 bg-gray-800 border border-white border-opacity-20 rounded-md">
+      <button id="sendButton">
         <svg
-          className="text-white fill-current"
           xmlns="http://www.w3.org/2000/svg"
-          width="23"
-          height="23"
-          viewBox="0 0 48 48"
+          fill="none"
+          viewBox="0 0 664 663"
         >
           <path
-            fill="#ff9800"
-            d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"
+            fill="none"
+            d="M646.293 331.888L17.7538 17.6187L155.245 331.888M646.293 331.888L17.753 646.157L155.245 331.888M646.293 331.888L318.735 330.228L155.245 331.888"
           ></path>
           <path
-            fill="#d50000"
-            d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"
-          ></path>
-          <path
-            fill="#ff3d00"
-            d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z"
+            strokeLinejoin="round"
+            strokeLinecap="round"
+            strokeWidth="33.67"
+            stroke="#6c6c6c"
+            d="M646.293 331.888L17.7538 17.6187L155.245 331.888M646.293 331.888L17.753 646.157L155.245 331.888M646.293 331.888L318.735 330.228L155.245 331.888"
           ></path>
         </svg>
-      </div>
+      </button>
     </div>
   </div>
 );
 
 export default Input_seven;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Input_seven = () => (
+         <div>
+          <div className="messageBox">
+  <div className="fileUploadWrapper">
+    <label for="file">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 337 337">
+        <circle
+          strokeWidth="20"
+          stroke="#6c6c6c"
+          fill="none"
+          r="158.5"
+          cy="168.5"
+          cx="168.5"
+        ></circle>
+        <path
+          strokeLinecap="round"
+          strokeWidth="25"
+          stroke="#6c6c6c"
+          d="M167.759 79V259"
+        ></path>
+        <path
+          strokeLinecap="round"
+          strokeWidth="25"
+          stroke="#6c6c6c"
+          d="M79 167.138H259"
+        ></path>
+      </svg>
+      <span className="tooltip">Add an image</span>
+    </label>
+    <input type="file" id="file" name="file" />
+  </div>
+  <input required="" placeholder="Message..." type="text" id="messageInput" />
+  <button id="sendButton">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 664 663">
+      <path
+        fill="none"
+        d="M646.293 331.888L17.7538 17.6187L155.245 331.888M646.293 331.888L17.753 646.157L155.245 331.888M646.293 331.888L318.735 330.228L155.245 331.888"
+      ></path>
+      <path
+        strokeLinejoin="round"
+        strokeLinecap="round"
+        strokeWidth="33.67"
+        stroke="#6c6c6c"
+        d="M646.293 331.888L17.7538 17.6187L155.245 331.888M646.293 331.888L17.753 646.157L155.245 331.888M646.293 331.888L318.735 330.228L155.245 331.888"
+      ></path>
+    </svg>
+  </button>
+</div>
+        </div>
+        );
+
+        export default Input_seven;
+        
+        
+         */
 }

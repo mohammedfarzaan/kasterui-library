@@ -3,7 +3,11 @@ import styles from "./Loader_sure.module.css";
 
 const Loader_sure = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["cell"]}>
+      <div className={styles["card"]}>
+        <span className={styles["flower-loader"]}>Loading…</span>
+      </div>
+    </div>
   </div>
 );
 
@@ -18,7 +22,11 @@ export default Loader_sure;
 
         const Loader_sure = () => (
          <div>
-          <div className="loader"></div>
+          <div className="cell">
+  <div className="card">
+    <span className="flower-loader">Loading…</span>
+  </div>
+</div>
         </div>
         );
 

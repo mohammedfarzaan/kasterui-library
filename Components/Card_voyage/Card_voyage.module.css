@@ -1,0 +1,135 @@
+
+/* From Uiverse.io by JkHuger - Tags: card */
+.card {
+  background-color: #191c27;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  height: 210px;
+  width: 350px;
+}
+
+.heading {
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  margin: 20px;
+  text-shadow: 0 0 5px #ffffff;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.item {
+  align-items: center;
+  background-color: #343a4b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: center;
+  width: 100px;
+  transition: transform 0.2s ease-in-out;
+  margin: 10px;
+}
+
+.item:hover {
+  transform: translateY(-10px);
+}
+
+.item svg {
+  fill: #ffffff;
+  height: 40px;
+  margin-bottom: 10px;
+  width: 40px;
+}
+
+.item--create svg {
+  animation: spin 2s linear infinite;
+}
+
+.item--post svg {
+  animation: upDown 2s ease-in-out infinite alternate;
+}
+
+.item--inspire svg {
+  animation: flash 1.2s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(1.8px);
+  }
+
+  100% {
+    transform: translateY(-1.8px);
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.item span {
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  text-shadow: 0 0 5px #ffffff;
+}
+
+.item--create:hover {
+  background-color: #6d9eeb;
+  transition: transform .35s ease-in-out;
+}
+
+.item--post:hover {
+  background-color: #f4b41a;
+  transition: transform .35s ease-in-out;
+}
+
+.item--inspire:hover {
+  background-color: #eb6d6d;
+  transition: transform .35s ease-in-out;
+}
+
+button {
+  background-color: #2E4057;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #3E5368;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+

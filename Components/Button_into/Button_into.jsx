@@ -3,11 +3,7 @@ import styles from "./Button_into.module.css";
 
 const Button_into = () => (
   <div>
-    <button className={styles["button"]}>
-      <div className={styles["button__int"]}>
-        <span className={styles["button__span"]}>Button</span>
-      </div>
-    </button>
+    <button className={styles["button"]}>Click Me</button>
   </div>
 );
 
@@ -22,11 +18,7 @@ export default Button_into;
 
         const Button_into = () => (
          <div>
-          <button className="button">
-  <div className="button__int">
-    <span className="button__span">Button</span>
-  </div>
-</button>
+          <button className="button">Click Me</button>
         </div>
         );
 

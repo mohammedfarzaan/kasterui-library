@@ -3,11 +3,7 @@ import styles from "./Button_basic.module.css";
 
 const Button_basic = () => (
   <div>
-    <div className={styles["div"]}>
-      <button className={styles["button"]}>
-        <span className={styles["span"]}> HOVER ME </span>
-      </button>
-    </div>
+    <button className={styles["realistic-button"]}>Button</button>
   </div>
 );
 
@@ -22,11 +18,9 @@ export default Button_basic;
 
         const Button_basic = () => (
          <div>
-          <div className="div">
-  <button className="button">
-    <span className="span"> HOVER ME </span>
-  </button>
-</div>
+          <button className="realistic-button">
+  Button
+</button>
         </div>
         );
 

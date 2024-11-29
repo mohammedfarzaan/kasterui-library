@@ -3,7 +3,11 @@ import styles from "./Button_maybe.module.css";
 
 const Button_maybe = () => (
   <div>
-    <button className={styles["realistic-button"]}>Button</button>
+    <button className={styles["button"]}>
+      <div className={styles["circle"]}></div>
+      <div className={styles["circle"]}></div>
+      <div className={styles["button-inner"]}>Button</div>
+    </button>
   </div>
 );
 
@@ -18,8 +22,10 @@ export default Button_maybe;
 
         const Button_maybe = () => (
          <div>
-          <button className="realistic-button">
-  Button
+          <button className="button">
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="button-inner">Button</div>
 </button>
         </div>
         );

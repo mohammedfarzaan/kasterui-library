@@ -1,63 +1,126 @@
 
-/* From Uiverse.io by KINGFRESS - Tags: gradient, button */
-button {
-  background-color: transparent;
-  color: white;
-  font-weight: bold;
-  height: 3.3em;
-  width: 12em;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: .4s ease;
-  position: relative;
-  overflow: hidden;
-  text-transform: uppercase;
+/* From Uiverse.io by Praashoo7 - Tags: social, twitter, instagram, button, Discord, rounded, github, share, social media */
+.main {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
 }
 
-button .gradient {
-  height: 100%;
-  width: 350%;
-  background: linear-gradient(to right, #156aa3 25%, #64EAE7 65%, #16a085 90%);
-  position: absolute;
-  top: 0;
-  left: 60%;
-  transform: translateX(-50%);
-  z-index: -1;
-  transition: .4s ease;
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
 }
 
-button .txt {
-  transition: .4s ease .5s;
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
 }
 
-button .txt2 {
-  position: absolute;
-  opacity: 0;
-  transition: .4s;
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
 }
 
-button:hover .gradient {
-  transition: .4s ease;
-  transform: translateX(-40%);
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
 }
 
-button:focus .gradient {
-  background-size: 200%;
-  background-position: right;
-  transform: translateX(-88%);
-  transition: 1s ease;
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
 }
 
-button:focus .txt {
-  opacity: 0;
-  transition: .4s ease;
+.twitter {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #03A9F4;
 }
 
-button:focus .txt2 {
-  opacity: 1;
-  transition: 1s ease .5s;
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.github {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.discord {
+  margin-top: -.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
 }

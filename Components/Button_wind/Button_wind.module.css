@@ -1,24 +1,20 @@
 
-/* From Uiverse.io by Custyyyy - Tags: button */
-#bottone1 {
- padding-left: 33px;
- padding-right: 33px;
- padding-bottom: 16px;
- padding-top: 16px;
- border-radius: 9px;
- background: #d5f365;
- border: none;
- font-family: inherit;
- text-align: center;
- cursor: pointer;
- transition: 0.4s;
+/* From Uiverse.io by faxriddin20  - Tags: 3d, button, hover, active, hover effect, hover button */
+.button {
+  cursor: pointer;
+  width: 160px;
+  height: 50px;
+  border-radius: 20px;
+  color: violet;
+  border: 2px solid violet;
+  transition: all 0.6s ease;
+}
+.button:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
+    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
+    rgba(240, 46, 170, 0.05) 0px 25px;
+}
+.button:active {
+  box-shadow: none;
 }
 
-#bottone1:hover {
- box-shadow: 7px 5px 56px -14px #C3D900;
-}
-
-#bottone1:active {
- transform: scale(0.97);
- box-shadow: 7px 5px 56px -10px #C3D900;
-}

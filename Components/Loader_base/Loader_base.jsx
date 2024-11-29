@@ -3,10 +3,15 @@ import styles from "./Loader_base.module.css";
 
 const Loader_base = () => (
   <div>
-    <div className={styles["wrapper"]}>
-      <div className={styles["hoop"]}></div>
-      <div className={styles["sphere1"]}></div>
-      <div className={styles["sphere2"]}></div>
+    <div className={styles["loader"]}>
+      <span style="--delay:1" className={styles["ball"]}></span>
+      <span style="--delay:2" className={styles["ball"]}></span>
+      <span style="--delay:3" className={styles["ball"]}></span>
+      <span style="--delay:4" className={styles["ball"]}></span>
+      <span style="--delay:5" className={styles["ball"]}></span>
+      <span style="--delay:6" className={styles["ball"]}></span>
+      <span style="--delay:7" className={styles["ball"]}></span>
+      <span style="--delay:8" className={styles["ball"]}></span>
     </div>
   </div>
 );
@@ -22,11 +27,16 @@ export default Loader_base;
 
         const Loader_base = () => (
          <div>
-          <div className="wrapper">
-		<div className="hoop"></div>
-		<div className="sphere1"></div>
-		<div className="sphere2"></div>	
-	</div>
+          <div className="loader">
+  <span style="--delay:1" className="ball"></span>
+  <span style="--delay:2" className="ball"></span>
+  <span style="--delay:3" className="ball"></span>
+  <span style="--delay:4" className="ball"></span>
+  <span style="--delay:5" className="ball"></span>
+  <span style="--delay:6" className="ball"></span>
+  <span style="--delay:7" className="ball"></span>
+  <span style="--delay:8" className="ball"></span>
+</div>
         </div>
         );
 

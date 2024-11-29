@@ -3,7 +3,9 @@ import styles from "./Button_round.module.css";
 
 const Button_round = () => (
   <div>
-    <button> Button</button>
+    <button className={styles["ui-btn"]}>
+      <span>Button</span>
+    </button>
   </div>
 );
 
@@ -18,7 +20,10 @@ export default Button_round;
 
         const Button_round = () => (
          <div>
-          <button> Button
+          <button className="ui-btn">
+  <span>
+    Button 
+  </span>
 </button>
         </div>
         );

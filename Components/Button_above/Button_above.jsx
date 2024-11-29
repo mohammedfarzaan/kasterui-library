@@ -3,8 +3,8 @@ import styles from "./Button_above.module.css";
 
 const Button_above = () => (
   <div>
-    <button>
-      <span> GAME ON</span>
+    <button className={styles["btn-shine"]}>
+      <span>Shine</span>
     </button>
   </div>
 );
@@ -20,9 +20,8 @@ export default Button_above;
 
         const Button_above = () => (
          <div>
-          <button>
-  <span> GAME ON
-  </span>
+          <button className="btn-shine">
+    <span>Shine</span>
 </button>
         </div>
         );

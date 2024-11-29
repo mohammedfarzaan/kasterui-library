@@ -3,9 +3,12 @@ import styles from "./Loader_enough.module.css";
 
 const Loader_enough = () => (
   <div>
-    <div className={styles["spinner-box"]}>
-      <div className={styles["circle-border"]}>
-        <div className={styles["circle-core"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["face"]}>
+        <div className={styles["circle"]}></div>
+      </div>
+      <div className={styles["face"]}>
+        <div className={styles["circle"]}></div>
       </div>
     </div>
   </div>
@@ -22,10 +25,13 @@ export default Loader_enough;
 
         const Loader_enough = () => (
          <div>
-          <div className="spinner-box">
-  <div className="circle-border">
-    <div className="circle-core"></div>
-  </div>  
+          <div className="loader">
+    <div className="face">
+        <div className="circle"></div>
+    </div>
+    <div className="face">
+        <div className="circle"></div>
+    </div>
 </div>
         </div>
         );

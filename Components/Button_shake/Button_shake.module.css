@@ -1,47 +1,25 @@
 
-/* From Uiverse.io by WhiteNervosa - Tags: button */
+/* From Uiverse.io by adamgiebl - Tags: button */
 button {
-  background-color: #2d7f2f;
-  font-family: "Verdana", sans-serif;
-  padding: 5px 10px;
-  font-size: 18px;
-  color: #ececec;
-  cursor: pointer;
-  width: fit-content;
-  user-select: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-  border-radius: 5px;
-  touch-action: none;
-  position: relative;
-  border: none;
-  transition-property: box-shadow;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0), inset 0px 0px 0px 0px rgba(230, 230, 230, 0);
+ position: relative;
+ padding: 10px 40px;
+ margin: 0px 10px 10px 0px;
+ float: left;
+ border-radius: 3px;
+ font-size: 20px;
+ color: #FFF;
+ text-decoration: none;
+ background-color: #2ecc71;
+ border: none;
+ border-bottom: 5px solid #27ae60;
+ text-shadow: 0px -2px #27ae60;
+ -webkit-transition: all 0.1s;
+ transition: all 0.1s;
 }
 
-button:focus,
-button:hover {
-  box-shadow: inset 0px -4px 0px 0px rgb(0 0 0 / 35%), inset 0px 2px 0px 0px rgb(230 230 230 / 7%);
+button:hover, button:active {
+ -webkit-transform: translate(0px,5px);
+ -ms-transform: translate(0px,5px);
+ transform: translate(0px,5px);
+ border-bottom: 1px solid #2ecc71;
 }
-
-button:active {
-  box-shadow: inset 0px 2px 0px 1px rgb(0 0 0 / 29%), inset 0px -1px 0px 0px rgb(230 230 230 / 7%);
-}
-
-button .inner {
-  user-select: none;
-  pointer-events: none;
-  transform: translateY(0px) scale(1) translate3d(0, 0, 0);
-  transition-property: transform;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-button:active .inner {
-  transform: translateY(1px) scale(0.98) translate3d(0, 0, 0);
-}
-

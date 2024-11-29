@@ -3,10 +3,7 @@ import styles from "./Button_wear.module.css";
 
 const Button_wear = () => (
   <div>
-    <button>
-      {" "}
-      <span>Button</span>
-    </button>
+    <button className={styles["button"]}>Hover me</button>
   </div>
 );
 
@@ -21,7 +18,8 @@ export default Button_wear;
 
         const Button_wear = () => (
          <div>
-          <button> <span>Button</span>
+          <button className="button">
+    Hover me
 </button>
         </div>
         );

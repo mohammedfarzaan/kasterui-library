@@ -3,31 +3,22 @@ import styles from "./Loader_shoe.module.css";
 
 const Loader_shoe = () => (
   <div>
-    <div className={styles["loader"]}>
-      <span>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-          <path
-            fill="#470BA9"
-            d="M158 77c6 23-8 48-28 63-21 16-49 21-68 8-19-12-28-43-20-68s33-45 58-45c26 0 52 20 58 42z"
-          ></path>
-        </svg>
-      </span>
-      <span>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-          <path
-            fill="#470BA9"
-            d="M158 77c6 23-8 48-28 63-21 16-49 21-68 8-19-12-28-43-20-68s33-45 58-45c26 0 52 20 58 42z"
-          ></path>
-        </svg>
-      </span>
-      <span>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-          <path
-            fill="#470BA9"
-            d="M158 77c6 23-8 48-28 63-21 16-49 21-68 8-19-12-28-43-20-68s33-45 58-45c26 0 52 20 58 42z"
-          ></path>
-        </svg>
-      </span>
+    <div className={styles["fire"]}>
+      <div className={styles["fire-left"]}>
+        <div className={styles["main-fire"]}></div>
+        <div className={styles["particle-fire"]}></div>
+      </div>
+      <div className={styles["fire-center"]}>
+        <div className={styles["main-fire"]}></div>
+        <div className={styles["particle-fire"]}></div>
+      </div>
+      <div className={styles["fire-right"]}>
+        <div className={styles["main-fire"]}></div>
+        <div className={styles["particle-fire"]}></div>
+      </div>
+      <div className={styles["fire-bottom"]}>
+        <div className={styles["main-fire"]}></div>
+      </div>
     </div>
   </div>
 );
@@ -43,16 +34,22 @@ export default Loader_shoe;
 
         const Loader_shoe = () => (
          <div>
-          <div className="loader">
-    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-            <path fill="#470BA9" d="M158 77c6 23-8 48-28 63-21 16-49 21-68 8-19-12-28-43-20-68s33-45 58-45c26 0 52 20 58 42z"></path>
-        </svg></span>
-    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-            <path fill="#470BA9" d="M158 77c6 23-8 48-28 63-21 16-49 21-68 8-19-12-28-43-20-68s33-45 58-45c26 0 52 20 58 42z"></path>
-        </svg></span>
-    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-            <path fill="#470BA9" d="M158 77c6 23-8 48-28 63-21 16-49 21-68 8-19-12-28-43-20-68s33-45 58-45c26 0 52 20 58 42z"></path>
-        </svg></span>
+          <div className="fire">
+  <div className="fire-left">
+    <div className="main-fire"></div>
+    <div className="particle-fire"></div>
+  </div>
+  <div className="fire-center">
+    <div className="main-fire"></div>
+    <div className="particle-fire"></div>
+  </div>
+  <div className="fire-right">
+    <div className="main-fire"></div>
+    <div className="particle-fire"></div>
+  </div>
+  <div className="fire-bottom">
+    <div className="main-fire"></div>
+  </div>
 </div>
         </div>
         );

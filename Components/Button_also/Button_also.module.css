@@ -1,64 +1,23 @@
 
-/* From Uiverse.io by seyed-mohsen-mousavi  - Tags: button, hover, shadow, hover effect */
-.button {
-  cursor: pointer;
-  padding: 10px;
-  border: outset;
-  width: 100px;
-  height: 40px;
-  transition: ease-in-out 0.3s;
-}
-
-.button:hover {
-  padding: 10px;
-  width: 105px;
-  height: 45px;
-  background-color: #3e3e3e;
-  font-size: 13px;
-  font-weight: bold;
+/* From Uiverse.io by sujithg444  - Tags: simple, button, hover effect, hoverme, buttons, multicolor */
+.gradient-button {
+  background: linear-gradient(
+    to right,
+    #ff5370,
+    #ff869a
+  ); /* Gradient from pink to orange */
+  border: none;
   color: white;
-  -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-  animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
-
-@-webkit-keyframes shadow-pop-tr {
-  0% {
-    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
-      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
-      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-    -webkit-transform: translateX(0) translateY(0);
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e,
-      4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e,
-      8px -8px #3e3e3e;
-    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e,
-      4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e,
-      8px -8px #3e3e3e;
-    -webkit-transform: translateX(-8px) translateY(8px);
-    transform: translateX(-8px) translateY(8px);
-  }
-}
-@keyframes shadow-pop-tr {
-  0% {
-    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
-      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
-      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-    -webkit-transform: translateX(0) translateY(0);
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e,
-      4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e,
-      8px -8px #3e3e3e;
-    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e,
-      4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e,
-      8px -8px #3e3e3e;
-    -webkit-transform: translateX(-8px) translateY(8px);
-    transform: translateX(-8px) translateY(8px);
-  }
+.gradient-button:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 

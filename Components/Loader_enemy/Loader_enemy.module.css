@@ -1,24 +1,81 @@
 
-/* From Uiverse.io by JaydipPrajapati1910 - Tags: animation, loader, ninja loader */
-.loader {
-  width: 160px;
-  height: 160px;
-  color: #0000F4;
-  background: conic-gradient(from  165deg at top   ,#0000, currentColor 1deg 30deg,#0000 31deg) top,
-    conic-gradient(from   75deg at left  ,#0000, currentColor 1deg 30deg,#0000 31deg) left,
-    conic-gradient(from  -15deg at bottom,#0000, currentColor 1deg 30deg,#0000 31deg) bottom, 
-    conic-gradient(from -105deg at right ,#0000, currentColor 1deg 30deg,#0000 31deg) right;
-  background-size: 100% 50%,50% 100%;
-  -webkit-mask: radial-gradient(circle 10px,#0000 90%,#000);
-  background-repeat: no-repeat;
-  animation: sh1 1.5s infinite linear;
+/* From Uiverse.io by shadowfax29 - Source: shadowfax29 - Tags: circle loader, aesthetic, sharingon  */
+.sharingon {
+  width: 6em;
+  height: 6em;
+  background-color: red;
+  border: 6px solid black;
+  animation: rot 1s ease-in-out infinite;
 }
 
-@keyframes sh1 {
- 
+.ring {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  border: 4px solid rgb(110, 13 ,13 ,0.5);
+  transform: translate(-50%,-50%);
+}
+
+.sharingon, .ring, .to,.circle {
+  border-radius: 50%;
+}
+
+.to,.circle {
+  position: absolute;
+  content: "";
+  width: 0.9em;
+  height: 0.9em;
+  background-color: black;
+}
+
+.to:nth-child(1) {
+  top: -0.5em;
+  left: 50%;
+  transform: translate(-40%);
+}
+
+.to::before {
+  content: "";
+  position: absolute;
+  top: -0.5em;
+  right: -0.2em;
+  width: 1.1em;
+  height: 0.9em;
+  box-sizing: border-box;
+  border-left: 16px solid black;
+  border-radius: 100% 0 0;
+}
+
+.to:nth-child(2) {
+  bottom: 0.5em;
+  left: -0.35em;
+  transform: rotate(-120deg);
+}
+
+.to:nth-child(3) {
+  bottom: 0.5em;
+  right: -0.35em;
+  transform: rotate(120deg);
+}
+
+.circle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 0 20px 1px;
+  width: 1em;
+  height: 1em;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+
   100% {
-    transform: rotate(1turn)
+    transform: rotate(360deg);
   }
 }
-  
-

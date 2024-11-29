@@ -3,28 +3,7 @@ import styles from "./Button_row.module.css";
 
 const Button_row = () => (
   <div>
-    <button className={styles["button"]}>
-      <div>
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          height="24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          className="w-6 h-6 text-gray-800 dark:text-white"
-        >
-          <path
-            d="m12 18-7 3 7-18 7 18-7-3Zm0 0v-5"
-            strokeWidth="2"
-            strokeLinejoin="round"
-            strokeLinecap="round"
-            stroke="currentColor"
-          ></path>
-        </svg>
-        Send Message
-      </div>
-    </button>
+    <button className={styles["button"]}>Buton</button>
   </div>
 );
 
@@ -39,28 +18,7 @@ export default Button_row;
 
         const Button_row = () => (
          <div>
-          <button className="button">
-  <div>
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      height="24"
-      width="24"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-      className="w-6 h-6 text-gray-800 dark:text-white"
-    >
-      <path
-        d="m12 18-7 3 7-18 7 18-7-3Zm0 0v-5"
-        strokeWidth="2"
-        strokeLinejoin="round"
-        strokeLinecap="round"
-        stroke="currentColor"
-      ></path>
-    </svg>
-    Send Message
-  </div>
-</button>
+          <button className="button">Buton</button>
         </div>
         );
 

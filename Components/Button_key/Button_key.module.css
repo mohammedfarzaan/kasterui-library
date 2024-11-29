@@ -1,39 +1,39 @@
 
-/* From Uiverse.io by ArturCodeCraft - Tags: button, scroll to top, scroll */
-/* <reset-style> ============================ */
-a {
-  text-decoration: none;
-}
-/* <main-style> ============================ */
-.scroll-up {
-	/* position: fixed; */
-  right: 3rem;
-  bottom: -50%;
-  z-index: 10;
-  width: 32px;
-  height: 32px;
-  border-radius: 4px;
-  background-color: rgba(29, 29, 31, 0.7);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition: bottom .4s, transform .4s;
+/* From Uiverse.io by ercnersoy - Tags: button */
+button {
+ padding: 1rem 2rem;
+ border: 0;
+ box-shadow: 0px 0px 40px 0px red;
+ font-weight: bolder;
+ color: white;
+ border-radius: 0.3rem;
+ background-color: red;
+ letter-spacing: .2rem;
 }
 
-.scroll-up:hover {
-  transform: translateY(-.25rem);
+button:hover {
+ animation: changeBg 1s infinite;
+ -webkit-animation-duration: 10s;
 }
 
-/* Show scroll-up */
-._show-scroll {
-  bottom: 3rem;
-}
+@keyframes changeBg {
+ 0%,
+	100% {
+  box-shadow: 0px 0px 40px 0px red;
+ }
 
-@media (max-width: 1199.98px) {
-  .scroll-up {
-    right: 1rem;
-  }
+ 25% {
+  box-shadow: 0px 0px 40px 0px turquoise;
+  background-color: turquoise;
+ }
+
+ 50% {
+  box-shadow: 0px 0px 40px 0px purple;
+  background-color: purple;
+ }
+
+ 75% {
+  box-shadow: 0px 0px 40px 0px rgb(191, 204, 11);
+  background-color: rgb(191, 204, 11);
+ }
 }

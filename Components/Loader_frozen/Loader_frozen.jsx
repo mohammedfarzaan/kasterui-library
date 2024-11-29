@@ -3,7 +3,7 @@ import styles from "./Loader_frozen.module.css";
 
 const Loader_frozen = () => (
   <div>
-    <div className={styles["pulsar"]}></div>
+    <div className={styles["loader"] + styles["loader_bubble"]}></div>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Loader_frozen;
 
         const Loader_frozen = () => (
          <div>
-          <div className="pulsar"></div>
+          <div className="loader loader_bubble"></div>
         </div>
         );
 

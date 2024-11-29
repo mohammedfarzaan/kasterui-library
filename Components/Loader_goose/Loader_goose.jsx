@@ -3,13 +3,7 @@ import styles from "./Loader_goose.module.css";
 
 const Loader_goose = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["dot"] + styles["dot-1"]}></div>
-      <div className={styles["dot"] + styles["dot-2"]}></div>
-      <div className={styles["dot"] + styles["dot-3"]}></div>
-      <div className={styles["dot"] + styles["dot-4"]}></div>
-      <div className={styles["dot"] + styles["dot-5"]}></div>
-    </div>
+    <div className={styles["planet"]}></div>
   </div>
 );
 
@@ -24,12 +18,7 @@ export default Loader_goose;
 
         const Loader_goose = () => (
          <div>
-          <div className="loader">
-  <div className="dot dot-1"></div>
-  <div className="dot dot-2"></div>
-  <div className="dot dot-3"></div>
-  <div className="dot dot-4"></div>
-  <div className="dot dot-5"></div>
+          <div className="planet">
 </div>
         </div>
         );

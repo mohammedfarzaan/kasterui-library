@@ -1,0 +1,59 @@
+
+/* From Uiverse.io by floki1250  - Tags: animation, 3d, gradient, card, hover, image, html, css */
+.card {
+  background-color: blue;
+  background: radial-gradient(
+    ellipse at bottom,
+    rgb(9, 76, 114) 0%,
+    rgb(1, 41, 63) 100%
+  );
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid white;
+}
+.image {
+  animation: myAnim 50s linear 0s infinite normal forwards;
+}
+.heading {
+  color: white;
+  font-weight: 500;
+}
+.icons a {
+  color: aliceblue;
+}
+.icons a svg {
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.icons a svg:hover {
+  color: #bf3dd2;
+  scale: 1.25;
+}
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateY(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateY(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateY(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateY(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
+

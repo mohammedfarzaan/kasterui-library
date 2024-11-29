@@ -3,18 +3,9 @@ import styles from "./Input_saw.module.css";
 
 const Input_saw = () => (
   <div>
-    <section>
-      <div className={styles["input-group"]}>
-        <input
-          className={styles["input"]}
-          autocomplete="off"
-          name="text"
-          type="text"
-          required=""
-        />
-        <label className={styles["user-label"]}>Full Name</label>
-      </div>
-    </section>
+    <div className={styles["containerInput"]}>
+      <input placeholder="Type for validate" type="text" />
+    </div>
   </div>
 );
 
@@ -29,12 +20,9 @@ export default Input_saw;
 
         const Input_saw = () => (
          <div>
-          <section>
-    <div className="input-group">
-        <input className="input" autocomplete="off" name="text" type="text" required="" />
-        <label className="user-label">Full Name</label>
-    </div>
-</section>
+          <div className="containerInput">
+    <input placeholder="Type for validate" type="text" />
+</div>
         </div>
         );
 

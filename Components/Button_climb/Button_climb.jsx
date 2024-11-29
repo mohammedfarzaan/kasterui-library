@@ -3,8 +3,8 @@ import styles from "./Button_climb.module.css";
 
 const Button_climb = () => (
   <div>
-    <button className={styles["button"]}>
-      <p className={styles["submit"]}>submit</p>
+    <button className={styles["btn-55"]}>
+      <span>Button</span>
     </button>
   </div>
 );
@@ -20,10 +20,7 @@ export default Button_climb;
 
         const Button_climb = () => (
          <div>
-          <button className="button">
-<p className="submit">submit</p>
-
-</button>
+          <button className="btn-55"><span>Button</span></button>
         </div>
         );
 

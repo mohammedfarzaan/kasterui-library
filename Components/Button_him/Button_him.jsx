@@ -3,20 +3,54 @@ import styles from "./Button_him.module.css";
 
 const Button_him = () => (
   <div>
-    <button className={styles["Btn"]}>
-      <span className={styles["leftContainer"]}>
+    <div className={styles["container"]}>
+      <input
+        type="checkbox"
+        id="send-checkbox"
+        className={styles["send-checkbox"]}
+      />
+      <label for="send-checkbox" className={styles["button"]}>
+        <div className={styles["send-message-icon"]}>
+          <svg
+            className={styles["icon-send"]}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 128 128"
+            id="send"
+          >
+            <path
+              stroke="#000000"
+              strokeWidth="7"
+              d="M32.523 55.8837C25.7086 41.9768 22.3014 35.0233 23.9101 30.9241C24.8875 28.4336 26.8223 26.4385 29.2817 25.3851C33.3295 23.6514 40.3843 26.8436 54.4939 33.228L82.2307 45.7786C99.5721 53.6254 108.243 57.5488 108.243 64C108.243 70.4512 99.5721 74.3746 82.2307 82.2214L54.4938 94.772C40.3843 101.156 33.3295 104.349 29.2817 102.615C26.8223 101.561 24.8875 99.5664 23.9101 97.0759C22.3014 92.9767 25.7086 86.0232 32.523 72.1163V72.1163C34.0948 68.9087 34.8806 67.3049 35.1314 65.6137C35.2901 64.5437 35.2901 63.4563 35.1314 62.3863C34.8806 60.6951 34.0948 59.0913 32.523 55.8837V55.8837Z"
+              className={styles["colorStroke000000"] + styles["svgStroke"]}
+            ></path>
+            <path
+              stroke="#1c1c1c"
+              strokeLinecap="round"
+              strokeWidth="7"
+              d="M60 64H36"
+              className={styles["colorStroke000000"] + styles["svgStroke"]}
+            ></path>
+          </svg>
+        </div>
         <svg
-          fill="white"
-          viewBox="0 0 512 512"
-          height="1em"
+          className={styles["icon-check"]}
           xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          id="check"
         >
-          <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"></path>
+          <path fill="none" d="M0 0h24v24H0V0z"></path>
+          <path
+            d="M9 16.17L5.53 12.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0L9 16.17z"
+            fill="#000000"
+            className={styles["color000000"] + styles["svgShape"]}
+          ></path>
         </svg>
-        <span className={styles["like"]}>Like</span>
-      </span>
-      <span className={styles["likeCount"]}>2,050</span>
-    </button>
+        <span className={styles["button-text"]}>Send Message</span>
+        <span className={styles["button-text"] + styles["sending"]}></span>
+        <span className={styles["button-text"] + styles["sent"]}>Sent</span>
+      </label>
+    </div>
   </div>
 );
 
@@ -31,15 +65,50 @@ export default Button_him;
 
         const Button_him = () => (
          <div>
-          <button className="Btn">
-  <span className="leftContainer">
-    <svg fill="white" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"></path></svg>
-    <span className="like">Like</span>
-  </span>
-  <span className="likeCount">
-    2,050
-  </span>
-</button>
+          <div className="container">
+  <input type="checkbox" id="send-checkbox" className="send-checkbox" />
+  <label for="send-checkbox" className="button">
+    <div className="send-message-icon">
+      <svg
+        className="icon-send"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 128 128"
+        id="send"
+      >
+        <path
+          stroke="#000000"
+          strokeWidth="7"
+          d="M32.523 55.8837C25.7086 41.9768 22.3014 35.0233 23.9101 30.9241C24.8875 28.4336 26.8223 26.4385 29.2817 25.3851C33.3295 23.6514 40.3843 26.8436 54.4939 33.228L82.2307 45.7786C99.5721 53.6254 108.243 57.5488 108.243 64C108.243 70.4512 99.5721 74.3746 82.2307 82.2214L54.4938 94.772C40.3843 101.156 33.3295 104.349 29.2817 102.615C26.8223 101.561 24.8875 99.5664 23.9101 97.0759C22.3014 92.9767 25.7086 86.0232 32.523 72.1163V72.1163C34.0948 68.9087 34.8806 67.3049 35.1314 65.6137C35.2901 64.5437 35.2901 63.4563 35.1314 62.3863C34.8806 60.6951 34.0948 59.0913 32.523 55.8837V55.8837Z"
+          className="colorStroke000000 svgStroke"
+        ></path>
+        <path
+          stroke="#1c1c1c"
+          strokeLinecap="round"
+          strokeWidth="7"
+          d="M60 64H36"
+          className="colorStroke000000 svgStroke"
+        ></path>
+      </svg>
+    </div>
+    <svg
+      className="icon-check"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      id="check"
+    >
+      <path fill="none" d="M0 0h24v24H0V0z"></path>
+      <path
+        d="M9 16.17L5.53 12.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0L9 16.17z"
+        fill="#000000"
+        className="color000000 svgShape"
+      ></path>
+    </svg>
+    <span className="button-text">Send Message</span>
+    <span className="button-text sending"></span>
+    <span className="button-text sent">Sent</span>
+  </label>
+</div>
         </div>
         );
 

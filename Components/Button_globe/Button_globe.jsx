@@ -3,18 +3,11 @@ import styles from "./Button_globe.module.css";
 
 const Button_globe = () => (
   <div>
-    <div className={styles["box"]}>
-      <button className={styles["button"]}>SPACE</button>
-      <div className={styles["space"]}>
-        <span style="--i: 31" className={styles["star"]}></span>
-        <span style="--i: 12" className={styles["star"]}></span>
-        <span style="--i: 57" className={styles["star"]}></span>
-        <span style="--i: 93" className={styles["star"]}></span>
-        <span style="--i: 23" className={styles["star"]}></span>
-        <span style="--i: 70" className={styles["star"]}></span>
-        <span style="--i: 6" className={styles["star"]}></span>
-      </div>
-    </div>
+    <button>
+      <span className={styles["shadow"]}></span>
+      <span className={styles["edge"]}></span>
+      <span className={styles["front"] + styles["text"]}> Click me</span>
+    </button>
   </div>
 );
 
@@ -29,18 +22,12 @@ export default Button_globe;
 
         const Button_globe = () => (
          <div>
-          <div className="box">
-  <button className="button">SPACE</button>
-  <div className="space">
-    <span style="--i: 31" className="star"></span>
-    <span style="--i: 12" className="star"></span>
-    <span style="--i: 57" className="star"></span>
-    <span style="--i: 93" className="star"></span>
-    <span style="--i: 23" className="star"></span>
-    <span style="--i: 70" className="star"></span>
-    <span style="--i: 6" className="star"></span>
-  </div>
-</div>
+          <button>
+  <span className="shadow"></span>
+  <span className="edge"></span>
+  <span className="front text"> Click me
+  </span>
+</button>
         </div>
         );
 

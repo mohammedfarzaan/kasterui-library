@@ -3,7 +3,10 @@ import styles from "./Button_accept.module.css";
 
 const Button_accept = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button>
+      <span className={styles["text"]}>Hover me</span>
+      <span>Thanks!</span>
+    </button>
   </div>
 );
 
@@ -18,9 +21,7 @@ export default Button_accept;
 
         const Button_accept = () => (
          <div>
-          <button className="button">
-  Button
-</button>
+          <button><span className="text">Hover me</span><span>Thanks!</span></button>
         </div>
         );
 

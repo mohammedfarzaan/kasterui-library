@@ -3,7 +3,9 @@ import styles from "./Button_cry.module.css";
 
 const Button_cry = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button className={styles["button"]}>
+      <span className={styles["span"]}>Button</span>
+    </button>
   </div>
 );
 
@@ -19,7 +21,7 @@ export default Button_cry;
         const Button_cry = () => (
          <div>
           <button className="button">
-  Button
+  <span className="span">Button</span>
 </button>
         </div>
         );

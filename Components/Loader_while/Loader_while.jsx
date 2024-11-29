@@ -3,7 +3,17 @@ import styles from "./Loader_while.module.css";
 
 const Loader_while = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["sun"]}>
+      <div className={styles["center"]}></div>
+      <div className={styles["ray"] + styles["r-1"]}></div>
+      <div className={styles["ray"] + styles["r-2"]}></div>
+      <div className={styles["ray"] + styles["r-3"]}></div>
+      <div className={styles["ray"] + styles["r-4"]}></div>
+      <div className={styles["ray"] + styles["r-5"]}></div>
+      <div className={styles["ray"] + styles["r-6"]}></div>
+      <div className={styles["ray"] + styles["r-7"]}></div>
+      <div className={styles["ray"] + styles["r-8"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +28,17 @@ export default Loader_while;
 
         const Loader_while = () => (
          <div>
-          <div className="loader"></div>
+          <div className="sun">
+  <div className="center"></div>
+  <div className="ray r-1"></div>
+  <div className="ray r-2"></div>
+  <div className="ray r-3"></div>
+  <div className="ray r-4"></div>
+  <div className="ray r-5"></div>
+  <div className="ray r-6"></div>
+  <div className="ray r-7"></div>
+  <div className="ray r-8"></div>
+</div>
         </div>
         );
 

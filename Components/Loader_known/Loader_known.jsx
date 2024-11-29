@@ -3,7 +3,16 @@ import styles from "./Loader_known.module.css";
 
 const Loader_known = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["form1"]}>
+        <div className={styles["square"]}></div>
+        <div className={styles["square"]}></div>
+      </div>
+      <div className={styles["form2"]}>
+        <div className={styles["square"]}></div>
+        <div className={styles["square"]}></div>
+      </div>
+    </div>
   </div>
 );
 
@@ -18,7 +27,16 @@ export default Loader_known;
 
         const Loader_known = () => (
          <div>
-          <div className="loader"></div>
+          <div className="loader">
+  <div className="form1">
+    <div className="square"></div>
+    <div className="square"></div>
+  </div>
+  <div className="form2">
+    <div className="square"></div>
+    <div className="square"></div>
+  </div>
+</div>
         </div>
         );
 

@@ -1,0 +1,167 @@
+
+/* From Uiverse.io by estefaniarizzo  - Tags: material design, green, card, hover, modern, html, css, cool card */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: relative;
+  transition: transform 0.3s ease;
+  padding: 10px 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.heading {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+}
+
+.sub-heading {
+  font-size: 1.2em;
+  color: #666;
+  margin-top: 10px;
+}
+
+.icons {
+  margin-top: 20px;
+}
+
+.icons a {
+  display: inline-block;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.icons a:last-child {
+  margin-right: 0;
+}
+
+.icons a:hover {
+  transform: translateY(-3px);
+}
+
+.icons a svg {
+  width: 40px;
+  height: 40px;
+  fill: #555;
+  transition: fill 0.3s ease;
+}
+
+.icons a:hover svg {
+  fill: #4078c0;
+}
+
+@keyframes borderAnimationTop {
+  0%,
+  100% {
+    border-color: #ff3300;
+  }
+  20% {
+    border-color: #c8ff00;
+  }
+  40% {
+    border-color: #48ff00;
+  }
+  50% {
+    border-color: #33ccff;
+  }
+  70% {
+    border-color: #0004ff;
+  }
+  90% {
+    border-color: #8400ff;
+  }
+}
+
+@keyframes borderAnimationRight {
+  0%,
+  100% {
+    border-color: #ff3300;
+  }
+  20% {
+    border-color: #c8ff00;
+  }
+  40% {
+    border-color: #48ff00;
+  }
+  50% {
+    border-color: #33ccff;
+  }
+  70% {
+    border-color: #0004ff;
+  }
+  90% {
+    border-color: #8400ff;
+  }
+}
+
+@keyframes borderAnimationBottom {
+  0%,
+  100% {
+    border-color: #ff3300;
+  }
+  20% {
+    border-color: #c8ff00;
+  }
+  40% {
+    border-color: #48ff00;
+  }
+  50% {
+    border-color: #33ccff;
+  }
+  70% {
+    border-color: #0004ff;
+  }
+  90% {
+    border-color: #8400ff;
+  }
+}
+
+@keyframes borderAnimationLeft {
+  0%,
+  100% {
+    border-color: #ff3300;
+  }
+  20% {
+    border-color: #c8ff00;
+  }
+  40% {
+    border-color: #48ff00;
+  }
+  50% {
+    border-color: #33ccff;
+  }
+  70% {
+    border-color: #0004ff;
+  }
+  90% {
+    border-color: #8400ff;
+  }
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  border: 3px solid transparent;
+  border-radius: 10px;
+  animation: borderAnimationTop 3s infinite, borderAnimationRight 3s infinite,
+    borderAnimationBottom 3s infinite, borderAnimationLeft 3s infinite;
+}
+

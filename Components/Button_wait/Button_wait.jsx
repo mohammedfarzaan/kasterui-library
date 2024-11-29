@@ -3,10 +3,7 @@ import styles from "./Button_wait.module.css";
 
 const Button_wait = () => (
   <div>
-    <button>
-      <span>Button</span>
-      <i></i>
-    </button>
+    <button></button>
   </div>
 );
 
@@ -21,9 +18,7 @@ export default Button_wait;
 
         const Button_wait = () => (
          <div>
-          <button>
-    <span>Button</span><i></i>
-</button>
+          <button></button>
         </div>
         );
 

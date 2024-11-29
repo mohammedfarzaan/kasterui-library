@@ -1,36 +1,34 @@
 
-/* From Uiverse.io by vikramsinghnegi  - Tags: loading, loader, bar */
-.bars {
-  width: 50.5px;
-  height: 60.599999999999994px;
-  --c: repeating-linear-gradient(90deg, #474bff 0 10.1px, #0000 0 20.2px);
-  background: var(--c), var(--c), var(--c), var(--c);
-  background-size: 100% 21%;
+/* From Uiverse.io by Bodyhc - Tags: loading, loader, circle loader */
+.custom-loader {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  border-radius: 50%;
+  -webkit-mask: radial-gradient(farthest-side,#0000 40%,#000 41%);
+  background: linear-gradient(0deg ,#766DF480 50%,#766DF4FF 0) center/4px 100%,
+    linear-gradient(90deg,#766DF440 50%,#766DF4BF 0) center/100% 4px;
   background-repeat: no-repeat;
-  animation: bars-yrfh98 0.75s infinite alternate;
+  animation: s3 1s infinite steps(12);
 }
 
-@keyframes bars-yrfh98 {
-  0%,
-  10% {
-    background-position: 0 0, 0 25%, 0 50%, 0 75%;
-  }
+.custom-loader::before,
+.custom-loader::after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.915;
+  transform: rotate(30deg);
+}
 
-  25% {
-    background-position: 0 0, 0 25%, 0 50%, 0 100%;
-  }
+.custom-loader::after {
+  opacity: 0.83;
+  transform: rotate(60deg);
+}
 
-  50% {
-    background-position: 0 0, 0 25%, 0 75%, 0 100%;
-  }
-
-  75% {
-    background-position: 0 0, 0 50%, 0 75%, 0 100%;
-  }
-
-  90%,
+@keyframes s3 {
   100% {
-    background-position: 0 25%, 0 50%, 0 75%, 0 100%;
+    transform: rotate(1turn)
   }
 }
-

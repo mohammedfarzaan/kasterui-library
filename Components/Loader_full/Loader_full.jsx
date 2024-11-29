@@ -3,23 +3,16 @@ import styles from "./Loader_full.module.css";
 
 const Loader_full = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["modelViewPort"]}>
-        <div className={styles["eva"]}>
-          <div className={styles["head"]}>
-            <div className={styles["eyeChamber"]}>
-              <div className={styles["eye"]}></div>
-              <div className={styles["eye"]}></div>
-            </div>
-          </div>
-          <div className={styles["body"]}>
-            <div className={styles["hand"]}></div>
-            <div className={styles["hand"]}></div>
-            <div className={styles["scannerThing"]}></div>
-            <div className={styles["scannerOrigin"]}></div>
-          </div>
-        </div>
-      </div>
+    <div className={styles["loading-box"]}>
+      <div
+        className={styles["WH"] + styles["animation"] + styles["color"]}
+      ></div>
+      <div
+        className={styles["WH"] + styles["animation"] + styles["color"]}
+      ></div>
+      <div
+        className={styles["WH"] + styles["animation"] + styles["color"]}
+      ></div>
     </div>
   </div>
 );
@@ -35,23 +28,10 @@ export default Loader_full;
 
         const Loader_full = () => (
          <div>
-          <div className="loader">
-  <div className="modelViewPort">
-    <div className="eva">
-      <div className="head">
-        <div className="eyeChamber">
-          <div className="eye"></div>
-          <div className="eye"></div>
-        </div>
-      </div>
-      <div className="body">
-        <div className="hand"></div>
-        <div className="hand"></div>
-        <div className="scannerThing"></div>
-        <div className="scannerOrigin"></div>
-      </div>
-    </div>
-  </div>
+          <div className="loading-box">
+  <div className="WH animation color"></div>
+  <div className="WH animation color"></div>
+  <div className="WH animation color"></div>
 </div>
         </div>
         );

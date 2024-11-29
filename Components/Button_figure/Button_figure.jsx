@@ -3,7 +3,7 @@ import styles from "./Button_figure.module.css";
 
 const Button_figure = () => (
   <div>
-    <button className={styles["button"]}>Winter</button>
+    <button>GLITCH</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_figure;
 
         const Button_figure = () => (
          <div>
-          <button className="button">Winter</button>
+          <button>
+  GLITCH
+</button>
         </div>
         );
 

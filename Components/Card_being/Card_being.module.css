@@ -1,0 +1,46 @@
+
+/* From Uiverse.io by Adrwaan  - Tags: icon, animation, card, hover, glow, svg, border, color */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background: #434343;
+  border-radius: 10px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 254px;
+  background-color: tomato;
+  border-radius: 10px;
+  z-index: -1;
+  transition: all 0.4s;
+  animation: animate 5s linear infinite;
+}
+
+.card:hover::before {
+  width: 197px;
+  height: 259px;
+}
+
+.card:hover .paperplane {
+  transform: scale(1.07) translateY(-10%) rotate(18deg);
+}
+
+.paperplane {
+  fill: #888;
+  width: 70px;
+  transition: 0.4s all;
+}
+
+@keyframes animate {
+  50% {
+    filter: hue-rotate(350deg);
+  }
+}
+

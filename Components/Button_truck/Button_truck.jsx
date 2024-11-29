@@ -3,7 +3,7 @@ import styles from "./Button_truck.module.css";
 
 const Button_truck = () => (
   <div>
-    <button className={styles["btn"]}>Hover Me!</button>
+    <button>Button</button>
   </div>
 );
 
@@ -18,7 +18,8 @@ export default Button_truck;
 
         const Button_truck = () => (
          <div>
-          <button className="btn">Hover Me!
+          <button>
+    Button
 </button>
         </div>
         );

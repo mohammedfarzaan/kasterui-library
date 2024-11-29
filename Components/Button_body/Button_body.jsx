@@ -1,27 +1,43 @@
 import React from "react";
+import styles from "./Button_body.module.css";
 
 const Button_body = () => (
   <div>
-    <div className="relative group">
-      <div className="relative w-64 h-14 opacity-90 overflow-hidden rounded-xl bg-black z-10">
-        <div className="absolute z-10 -translate-x-44 group-hover:translate-x-[30rem] ease-in transistion-all duration-700 h-full w-44 bg-gradient-to-r from-gray-500 to-white/10 opacity-30 -skew-x-12"></div>
-
-        <div className="absolute flex items-center justify-center text-white z-[1] opacity-90 rounded-2xl inset-0.5 bg-black">
-          <button
-            name="text"
-            className="input font-semibold text-lg h-full opacity-90 w-full px-16 py-3 rounded-xl bg-black"
-          >
-            Get Started
-          </button>
-        </div>
-        <div className="absolute duration-1000 group-hover:animate-spin w-full h-[100px] bg-gradient-to-r from-green-500 to-yellow-500 blur-[30px]"></div>
-      </div>
-    </div>
+    <button>
+      <svg
+        height="32"
+        width="32"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0 0H24V24H0z" fill="none"></path>
+        <path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z"></path>
+      </svg>
+      Like
+    </button>
   </div>
 );
 
 export default Button_body;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_body = () => (
+         <div>
+          <button>
+  <svg height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H24V24H0z" fill="none"></path><path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z"></path></svg>
+  Like
+</button>
+        </div>
+        );
+
+        export default Button_body;
+        
+        
+         */
 }

@@ -3,11 +3,10 @@ import styles from "./Button_short.module.css";
 
 const Button_short = () => (
   <div>
-    <button className={styles["game-button"]}>
-      <svg className="play-icon" viewBox="0 0 40 40">
-        <path d="M 10,10 L 30,20 L 10,30 z"></path>
-      </svg>
-      Play Now
+    <button>
+      <a href="#" className={styles["btn2"]}>
+        <span className={styles["spn2"]}>HELLO !</span>
+      </a>
     </button>
   </div>
 );
@@ -23,11 +22,8 @@ export default Button_short;
 
         const Button_short = () => (
          <div>
-          <button className="game-button">
-    <svg className="play-icon" viewBox="0 0 40 40">
-        <path d="M 10,10 L 30,20 L 10,30 z"></path>
-    </svg>
-    Play Now
+          <button>
+  <a href="#" className="btn2"><span className="spn2">HELLO !</span></a>
 </button>
         </div>
         );

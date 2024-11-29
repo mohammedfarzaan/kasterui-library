@@ -1,0 +1,120 @@
+
+/* From Uiverse.io by ahmed150up - Tags: card */
+.card {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.heading {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(22, 21, 21);
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.heading span {
+  color: rgba(157,71,255,1);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: calc(78% - 80px);
+  padding: 40px 20px;
+  background-color: #000000;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+  transform: translateY(-10px);
+}
+
+.item svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  fill: #333;
+  transition: all 0.3s;
+  color: #333;
+}
+
+.item span {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.card .item:hover {
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.card .item--create:hover span {
+  color: rgb(51, 255, 0);
+}
+
+.card .item--create:hover svg {
+  color: rgb(94, 255, 0);
+}
+
+.card .item--create:hover svg {
+  transform: rotate(45deg);
+}
+
+.card .item--post:hover span {
+  color: rgba(157,71,255,1);
+}
+
+.card .item--post:hover svg {
+  color: rgba(157,71,255,1);
+  transform: scale(1.2);
+}
+
+.card .item--inspire:hover svg {
+  color: yellow;
+  transform: scale(1.2);
+}
+
+.card .item--inspire:hover span {
+  color: yellow;
+  transform: scale(1.2);
+}
+
+button {
+  background: rgba(157,71,255,1);
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 0px 200px 0px 200px;
+  -moz-border-radius: 0px 200px 0px 200px;
+  -webkit-border-radius: 0px 200px 0px 200px;
+  font-size: 18px;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+button:hover {
+  background: rgba(145,71,255,1);
+  color: #fff;
+  transform: scale(1.01);
+}

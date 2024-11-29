@@ -3,7 +3,15 @@ import styles from "./Button_heavy.module.css";
 
 const Button_heavy = () => (
   <div>
-    <button>Button</button>
+    <button>
+      <span className={styles["main-text"]}>
+        Next Step
+        <span>
+          {" "}
+          <span>→</span>{" "}
+        </span>
+      </span>
+    </button>
   </div>
 );
 
@@ -18,9 +26,7 @@ export default Button_heavy;
 
         const Button_heavy = () => (
          <div>
-          <button>
-  Button
-</button>
+          <button><span className="main-text">Next Step<span> <span>→</span> </span></span></button>
         </div>
         );
 

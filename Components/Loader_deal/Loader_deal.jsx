@@ -3,14 +3,18 @@ import styles from "./Loader_deal.module.css";
 
 const Loader_deal = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["cube"]}>
-        <div className={styles["face1"]}></div>
-        <div className={styles["face2"]}></div>
-        <div className={styles["face3"]}></div>
-        <div className={styles["face4"]}></div>
-        <div className={styles["face5"]}></div>
-        <div className={styles["face6"]}></div>
+    <div className={styles["window"]}>
+      <div className={styles["logo"]}>
+        <p className={styles["top"]}>Microsoft</p>
+        <p className={styles["mid"]}>
+          Windows<span>XP</span>
+        </p>
+        <p className={styles["bottom"]}>Professional</p>
+      </div>
+      <div className={styles["container"]}>
+        <div className={styles["box"]}></div>
+        <div className={styles["box"]}></div>
+        <div className={styles["box"]}></div>
       </div>
     </div>
   </div>
@@ -27,14 +31,16 @@ export default Loader_deal;
 
         const Loader_deal = () => (
          <div>
-          <div className="loader">
-  <div className="cube">
-    <div className="face1"></div>
-    <div className="face2"></div>
-    <div className="face3"></div>
-    <div className="face4"></div>
-    <div className="face5"></div>
-    <div className="face6"></div>
+          <div className="window">
+  <div className="logo">
+    <p className="top">Microsoft</p>
+    <p className="mid">Windows<span>XP</span></p>
+    <p className="bottom">Professional</p>
+  </div>
+  <div className="container">
+    <div className="box"></div>
+    <div className="box"></div>
+    <div className="box"></div>
   </div>
 </div>
         </div>

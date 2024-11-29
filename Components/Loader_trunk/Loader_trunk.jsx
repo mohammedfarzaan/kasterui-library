@@ -3,7 +3,7 @@ import styles from "./Loader_trunk.module.css";
 
 const Loader_trunk = () => (
   <div>
-    <div className={styles["custom-loader"]}></div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Loader_trunk;
 
         const Loader_trunk = () => (
          <div>
-          <div className="custom-loader"></div>
+          <div className="loader"></div>
         </div>
         );
 

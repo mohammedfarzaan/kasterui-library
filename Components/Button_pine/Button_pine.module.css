@@ -1,55 +1,40 @@
 
-/* From Uiverse.io by cosnametv - Tags: button, infinite, subscribe */
-.button {
-  height: 50px;
-  width: 150px;
+/* From Uiverse.io by Bastimans - Tags: button */
+button {
+  background-color: #ffc600;
+ /* sets the background color of the button to yellow */
+  color: #000000;
+ /* sets the text color of the button to black */
+  padding: 12px 24px;
+ /* adds some padding to the button */
   border: none;
-  border-radius: 10px;
+ /* remove the default border */
+  border-radius: 30px;
+ /* rounds the corners of the button */
+  font-size: 18px;
+ /* sets the font size of the button text */
+  font-weight: bold;
+ /* sets the font weight of the button text to bold */
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
+ /* changes the cursor to a pointer when hovering over the button */
+  text-shadow: 2px 2px 3px #ffc600;
+ /* adds a subtle shadow to the button text */
+  box-shadow: 2px 2px 3px #ffc600;
+ /* adds a subtle shadow to the button */
+  transition: all 0.2s ease-in-out;
+ /* adds transition effect when hovering over the button */
 }
 
-.button:hover {
-  box-shadow: .5px .5px 150px #252525;
+button:hover {
+  background-color: #000000;
+ /* changes the background color of the button to black when hovered */
+  color: #ffc600;
+ /* changes the text color of the button to yellow when hovered */
+  transform: scale(1.1);
+ /* increases the size of the button slightly when hovered */
 }
 
-.type1::after {
-  content: "THANK YOU";
-  height: 50px;
-  width: 150px;
-  background-color: #4617ec;
-  color: #fff;
-  transform: translateY(100px);
-  font-size: 1.2rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s;
+button:active {
+  transform: scale(0.97);
 }
 
-.type1::before {
-  content: "SUBSCRIBE";
-  height: 50px;
-  width: 150px;
-  background-color: rgb(240, 9, 9);
-  color: #f5f8f8;
-  position: absolute;
-  transform: translateY(0px) scale(1.1);
-  font-size: 1.2rem;
-  font-weight: 900;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s;
-}
-
-.type1:hover::after {
-  transform: translateY(-2px) scale(1.2) rotate(0deg);
-}
-
-.type1:hover::before {
-  transform: translateY(-50px)  rotate(290deg);
-}

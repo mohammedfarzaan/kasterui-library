@@ -3,7 +3,10 @@ import styles from "./Button_pride.module.css";
 
 const Button_pride = () => (
   <div>
-    <button className={styles["button"]}></button>
+    <button className={styles["btn"]}>
+      <span className={styles["btn-text-one"]}>Hover me</span>
+      <span className={styles["btn-text-two"]}>Great!</span>
+    </button>
   </div>
 );
 
@@ -18,7 +21,10 @@ export default Button_pride;
 
         const Button_pride = () => (
          <div>
-          <button className="button"></button>
+          <button className="btn">
+    <span className="btn-text-one">Hover me</span>
+    <span className="btn-text-two">Great!</span>
+</button>
         </div>
         );
 

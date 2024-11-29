@@ -3,7 +3,28 @@ import styles from "./Button_ranch.module.css";
 
 const Button_ranch = () => (
   <div>
-    <button className={styles["delete-button"]}>␡</button>
+    <button className={styles["button"]}>
+      <div>
+        <span>
+          <i>W</i>
+        </span>
+      </div>
+      <div>
+        <span>
+          <i>A</i>
+        </span>
+      </div>
+      <div>
+        <span>
+          <i>S</i>
+        </span>
+      </div>
+      <div>
+        <span>
+          <i>D</i>
+        </span>
+      </div>
+    </button>
   </div>
 );
 
@@ -18,8 +39,27 @@ export default Button_ranch;
 
         const Button_ranch = () => (
          <div>
-          <button className="delete-button">
-  ␡
+          <button className="button">
+  <div>
+    <span>
+      <i>W</i>
+    </span>
+  </div>
+  <div>
+    <span>
+      <i>A</i>
+    </span>
+  </div>
+  <div>
+    <span>
+      <i>S</i>
+    </span>
+  </div>
+  <div>
+    <span>
+      <i>D</i>
+    </span>
+  </div>
 </button>
         </div>
         );

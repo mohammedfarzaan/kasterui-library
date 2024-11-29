@@ -1,0 +1,180 @@
+
+/* From Uiverse.io by yaroslavas2001 - Tags: radio */
+.radio-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio_item {
+  display: flex;
+  align-items: center;
+  margin: 3px;
+}
+
+.radio {
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+  margin: 0px;
+  margin-right: 1.5em;
+  cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.sphere {
+  position: absolute;
+  max-height: 50px;
+  max-width: 50px;
+  border-radius: 50%;
+  z-index: -1;
+}
+/* hand */
+.top_hand {
+  animation: hand 6.66s linear infinite;
+}
+
+.bottom_hand {
+  animation: hand 6.66s linear infinite;
+}
+
+@keyframes hand {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  90% {
+    transform: rotate3d(0, 0, 1, -3deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+/* pick option - change image */
+.radio:checked ~ .earth_input {
+  display: none;
+}
+
+.earth_input_planet {
+  display: none;
+}
+
+.radio:checked ~ .earth_input_planet {
+  display: block;
+  transform: rotateZ(23.4deg);
+  fill: rgba(56, 192, 56, 0.148);
+  stroke: rgba(0, 104, 241, 0.788);
+}
+
+.radio:checked ~ .moon_input {
+  display: none;
+}
+
+.moon_input_planet {
+  display: none;
+}
+
+.radio:checked ~ .moon_input_planet {
+  display: block;
+  fill: rgba(237, 234, 234, 0.224);
+  stroke: rgba(174, 171, 171, 0.1);
+  margin-left: 13px;
+  transform: rotateZ(-23.4deg);
+}
+
+.radio:checked ~ .mars_input {
+  display: none;
+}
+
+.mars_input_planet {
+  display: none;
+}
+
+.radio:checked ~ .mars_input_planet {
+  display: block;
+  fill: rgba(192, 54, 0, 0.114);
+  stroke: rgba(255, 254, 254, 0.162);
+  margin-left: 8px;
+  transform: rotateZ(43.9deg);
+}
+
+.radio:checked ~ label {
+  font-weight: bold;
+}
+/* sphere_lines */
+.sphere_lines, .sphere_lines_back {
+  border: 1px dotted #fff;
+  border-radius: 50%;
+  height: 50px;
+  transform-style: preserve-3d;
+  width: 50px;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+}
+
+.sphere_lines {
+  animation: spin 6.66s linear infinite;
+}
+
+.sphere_lines_back {
+  animation: spin_back 6.66s linear infinite;
+}
+
+.sphere_lines_back::before,
+ .sphere_lines_back::after,.sphere_lines::before,
+ .sphere_lines::after {
+  border: 1px dotted #fff;
+  border-radius: 50%;
+  content: '';
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.sphere_lines_back::before , .sphere_lines::before {
+  transform: rotateX(-66.6deg);
+}
+
+.sphere_lines_back::after,.sphere_lines::after {
+  transform: rotateX(66.6deg);
+}
+
+.radio:hover ~ .sphere_lines,
+ .radio:hover ~.sphere_lines_back,
+ .radio:hover ~ .sphere_lines_back::before,
+ .radio:hover ~ .sphere_lines_back::after,
+ .radio:hover ~ .sphere_lines::before,
+ .radio:hover ~ .sphere_lines::after {
+  border: 1.6px dotted #fff;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg) rotateX(10deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg) rotateX(10deg) rotateZ(0deg);
+  }
+}
+
+@keyframes spin_back {
+  0% {
+    transform: rotateY(70deg) rotateX(0deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateY(70deg) rotateX(0deg) rotateZ(360deg);
+  }
+}
+
+
+

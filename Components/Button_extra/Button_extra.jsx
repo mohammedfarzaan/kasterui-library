@@ -3,7 +3,10 @@ import styles from "./Button_extra.module.css";
 
 const Button_extra = () => (
   <div>
-    <button className={styles["arc-btn-retro"]}>Submit</button>
+    <div className={styles["box"]}>
+      <div className={styles["arrow"] + styles["right"]}></div>
+      <div className={styles["text"]}>Learn More</div>
+    </div>
   </div>
 );
 
@@ -18,9 +21,10 @@ export default Button_extra;
 
         const Button_extra = () => (
          <div>
-          <button className="arc-btn-retro">
-  Submit
-</button>
+          <div className="box">
+  <div className="arrow right"></div>
+  <div className="text">Learn More</div>
+</div>
         </div>
         );
 

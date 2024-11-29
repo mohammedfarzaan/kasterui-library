@@ -4,9 +4,22 @@ import styles from "./Loader_vast.module.css";
 const Loader_vast = () => (
   <div>
     <div className={styles["loader"]}>
-      <span>&lt;</span>
-      <span>LOADING</span>
-      <span>/&gt;</span>
+      <div className={styles["modelViewPort"]}>
+        <div className={styles["eva"]}>
+          <div className={styles["head"]}>
+            <div className={styles["eyeChamber"]}>
+              <div className={styles["eye"]}></div>
+              <div className={styles["eye"]}></div>
+            </div>
+          </div>
+          <div className={styles["body"]}>
+            <div className={styles["hand"]}></div>
+            <div className={styles["hand"]}></div>
+            <div className={styles["scannerThing"]}></div>
+            <div className={styles["scannerOrigin"]}></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 );
@@ -23,9 +36,22 @@ export default Loader_vast;
         const Loader_vast = () => (
          <div>
           <div className="loader">
-  <span>&lt;</span>
-  <span>LOADING</span>
-  <span>/&gt;</span>
+  <div className="modelViewPort">
+    <div className="eva">
+      <div className="head">
+        <div className="eyeChamber">
+          <div className="eye"></div>
+          <div className="eye"></div>
+        </div>
+      </div>
+      <div className="body">
+        <div className="hand"></div>
+        <div className="hand"></div>
+        <div className="scannerThing"></div>
+        <div className="scannerOrigin"></div>
+      </div>
+    </div>
+  </div>
 </div>
         </div>
         );

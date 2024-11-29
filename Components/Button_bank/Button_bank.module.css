@@ -1,81 +1,87 @@
 
-/* From Uiverse.io by AkashKobal - Tags: button */
-.buttonDownload {
-  display: inline-block;
+/* From Uiverse.io by guilhermeyohan - Tags: button */
+.moon-container {
+  width: 170px;
+  height: 50px;
+  background: linear-gradient(0, #120c56, #000000);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px;
+  border-radius: 20px;
+  border-color: transparent;
+}
+
+.moon-container:hover {
+  transform: scale(1.2);
+  border-radius: 62px;
+  box-shadow: 1px 0px 100px #ece1bd60;
+  transition: all 1.4s;
+}
+
+.moon-text {
   position: relative;
-  padding: 10px 25px;
-  background-color: #4CC713;
-  color: white;
-  font-family: sans-serif;
-  text-decoration: none;
-  font-size: 0.9em;
-  text-align: center;
-  text-indent: 15px;
-  border: none;
-  border-radius: 2em;
+  font-size: 15px;
   font-weight: bold;
+  color: #fff;
 }
 
-.buttonDownload:hover {
-  background-color: #1a60a2;
-  color: white;
+.moon {
+  position: relative;
+  border-color: transparent;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #F0EAD6;
+  box-shadow: 0px 0px 10px #F0EAD6;
 }
 
-.buttonDownload:before, .buttonDownload:after {
-  content: ' ';
+.moon::before {
+  content: "";
   display: block;
   position: absolute;
-  left: 15px;
-  top: 52%;
+  top: 22%;
+  left: 45%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: 0.4;
 }
 
-.buttonDownload:before {
+.moon::after {
+  content: "";
+  position: absolute;
+  top: 67%;
+  left: 30%;
+  transform: translateX(-50%);
   width: 10px;
-  height: 2px;
-  border-style: solid;
-  border-width: 0 2px 2px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: 0.3;
 }
 
-.buttonDownload:after {
-  width: 0;
-  height: 0;
-  margin-left: 3px;
-  margin-top: -7px;
-  border-style: solid;
-  border-width: 4px 4px 0 4px;
-  border-color: transparent;
-  border-top-color: inherit;
-  animation: downloadArrow 1s linear infinite;
-  animation-play-state: paused;
+.mancha2 {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgba(51, 51, 51, 0.583);
+  border-radius: 50%;
+  position: absolute;
+  top: 47%;
+  left: 75%;
+  transform: translate(-50%, -50%);
 }
 
-.buttonDownload:hover:before {
-  border-color: #bdd3ef;
+.moon:hover {
+  box-shadow: 0px 0px 100px #F0EAD6;
+  transition: all 1.4s;
 }
 
-.buttonDownload:hover:after {
-  border-top-color: #eff1f7;
-  animation-play-state: running;
-}
-
-@keyframes downloadArrow {
-  0% {
-    margin-top: -7px;
-    opacity: 1;
-  }
-
-  0.001% {
-    margin-top: -15px;
-    opacity: 0.4;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    margin-top: 0;
-    opacity: 0.4;
-  }
+.moon:active {
+  transform: scale(1.5);
+  transition: all 1.4s;
 }
 

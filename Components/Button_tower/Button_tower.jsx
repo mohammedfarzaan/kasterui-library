@@ -3,8 +3,10 @@ import styles from "./Button_tower.module.css";
 
 const Button_tower = () => (
   <div>
-    <button>
-      <span className={styles["TxtEffect"]}>BUTTON</span>
+    <button className={styles["button"]}>
+      <div className={styles["button__int"]}>
+        <span className={styles["button__span"]}>Button</span>
+      </div>
     </button>
   </div>
 );
@@ -20,8 +22,10 @@ export default Button_tower;
 
         const Button_tower = () => (
          <div>
-          <button>
-    <span className="TxtEffect">BUTTON</span>
+          <button className="button">
+  <div className="button__int">
+    <span className="button__span">Button</span>
+  </div>
 </button>
         </div>
         );

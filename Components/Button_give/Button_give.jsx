@@ -3,7 +3,12 @@ import styles from "./Button_give.module.css";
 
 const Button_give = () => (
   <div>
-    <button className={styles["button"]}>I'm a Button</button>
+    <button className={styles["button"]}>
+      Get in touch
+      <div className={styles["hoverEffect"]}>
+        <div></div>
+      </div>
+    </button>
   </div>
 );
 
@@ -19,8 +24,11 @@ export default Button_give;
         const Button_give = () => (
          <div>
           <button className="button">
-      I'm a Button
-    </button>
+Get in touch
+<div className="hoverEffect">
+<div>
+</div>
+</div></button>
         </div>
         );
 

@@ -3,18 +3,9 @@ import styles from "./Toggle_yellow.module.css";
 
 const Toggle_yellow = () => (
   <div>
-    <div className={styles["flipswitch"]}>
-      <input
-        checked=""
-        id="fs"
-        className={styles["flipswitch-cb"]}
-        name="flipswitch"
-        type="checkbox"
-      />
-      <label for="fs" className={styles["flipswitch-label"]}>
-        <div className={styles["flipswitch-inner"]}></div>
-        <div className={styles["flipswitch-switch"]}></div>
-      </label>
+    <div className={styles["toggle-switch"]}>
+      <input className={styles["toggle-input"]} id="toggle" type="checkbox" />
+      <label className={styles["toggle-label"]} for="toggle"></label>
     </div>
   </div>
 );
@@ -30,12 +21,9 @@ export default Toggle_yellow;
 
         const Toggle_yellow = () => (
          <div>
-          <div className="flipswitch">
-    <input checked="" id="fs" className="flipswitch-cb" name="flipswitch" type="checkbox" />
-    <label for="fs" className="flipswitch-label">
-        <div className="flipswitch-inner"></div>
-        <div className="flipswitch-switch"></div>
-    </label>
+          <div className="toggle-switch">
+  <input className="toggle-input" id="toggle" type="checkbox" />
+  <label className="toggle-label" for="toggle"></label>
 </div>
         </div>
         );

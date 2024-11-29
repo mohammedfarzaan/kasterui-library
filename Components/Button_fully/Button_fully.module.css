@@ -1,67 +1,64 @@
 
-/* From Uiverse.io by barisdogansutcu - Tags: icon, button, download */
-.download-button {
- position: relative;
- border-width: 0;
- color: white;
- font-size: 15px;
- font-weight: 600;
- border-radius: 4px;
- z-index: 1;
+/* From Uiverse.io by seyed-mohsen-mousavi  - Tags: button, hover, shadow, hover effect */
+.button {
+  cursor: pointer;
+  padding: 10px;
+  border: outset;
+  width: 100px;
+  height: 40px;
+  transition: ease-in-out 0.3s;
 }
 
-.download-button .docs {
- display: flex;
- align-items: center;
- justify-content: space-between;
- gap: 10px;
- min-height: 40px;
- padding: 0 10px;
- border-radius: 4px;
- z-index: 1;
- background-color: #242a35;
- border: solid 1px #e8e8e82d;
- transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+.button:hover {
+  padding: 10px;
+  width: 105px;
+  height: 45px;
+  background-color: #3e3e3e;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: shadow-pop-tr 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
-.download-button:hover {
- box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+@-webkit-keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
+      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
+      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e,
+      4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e,
+      8px -8px #3e3e3e;
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e,
+      4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e,
+      8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+@keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
+      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
+      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e,
+      4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e,
+      8px -8px #3e3e3e;
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e,
+      4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e,
+      8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+    transform: translateX(-8px) translateY(8px);
+  }
 }
 
-.download {
- position: absolute;
- inset: 0;
- display: flex;
- align-items: center;
- justify-content: center;
- max-width: 90%;
- margin: 0 auto;
- z-index: -1;
- border-radius: 4px;
- transform: translateY(0%);
- background-color: #01e056;
- border: solid 1px #01e0572d;
- transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.download-button:hover .download {
- transform: translateY(100%)
-}
-
-.download svg polyline,.download svg line {
- animation: docs 1s infinite;
-}
-
-@keyframes docs {
- 0% {
-  transform: translateY(0%);
- }
-
- 50% {
-  transform: translateY(-15%);
- }
-
- 100% {
-  transform: translateY(0%);
- }
-}

@@ -3,7 +3,7 @@ import styles from "./Button_refer.module.css";
 
 const Button_refer = () => (
   <div>
-    <button className={styles["button"]}>Hover me !</button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_refer;
 
         const Button_refer = () => (
          <div>
-          <button className="button">
-  Hover me !
-</button>
+          <button className="button">Button</button>
         </div>
         );
 

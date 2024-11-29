@@ -1,40 +1,55 @@
 
-/* From Uiverse.io by n-jaisabai - Tags: button */
-.button {
-  background: radial-gradient(ellipse at top, white, blue, black, black);
-  color: white;
-  position: relative;
-  background-size: 130% 130%;
-  background-position: center center;
-  padding: 15px 30px;
+/* From Uiverse.io by SanketSuryawanshi - Tags: button */
+.main_div {
+ --color: #3992e6;
+ position: relative;
+ z-index: 1;
 }
 
-.button:hover {
-  background: radial-gradient(ellipse at top, white, blue, black, black);
-  animation: gradient 4s;
-  animation-fill-mode: forwards;
-  /* background-position: center center; */
+.main_div::before {
+ content: '';
+ position: absolute;
+ width: 30px;
+ height: 30px;
+ background: transparent;
+ top: -7px;
+ left: -7px;
+ z-index: -5;
+ border-top: 3px solid var(--color);
+ border-left: 3px solid var(--color);
+ transition: 0.5s;
 }
 
-.button:hover:after {
-  content: "";
-  position: absolute;
-  inset: -.625em;
-  background: radial-gradient(ellipse at top, white, blue, black, black);
-  /* background-position: center center; */
-  filter: blur(1.5em);
-  z-index: -1;
-  animation: gradient 4s;
-  animation-fill-mode: forwards;
+.main_div::after {
+ content: '';
+ position: absolute;
+ width: 30px;
+ height: 30px;
+ background: transparent;
+ bottom: -7px;
+ right: -7px;
+ z-index: -5;
+ border-right: 3px solid var(--color);
+ border-bottom: 3px solid var(--color);
+ transition: 0.5s;
 }
 
-@keyframes gradient {
-  0% {
-    background-size: 130% 130%;
-  }
-
-  100% {
-    background-size: 200% 200%;
-  }
+.main_div:hover::before {
+ width: 100%;
+ height: 100%;
 }
 
+.main_div:hover::after {
+ width: 100%;
+ height: 100%;
+}
+
+.main_div button {
+ padding: 0.7em 2em;
+ font-size: 16px;
+ background: #222222;
+ color: #fff;
+ border: none;
+ cursor: pointer;
+ font-family: inherit;
+}

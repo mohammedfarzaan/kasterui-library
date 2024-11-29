@@ -1,42 +1,51 @@
 
-/* From Uiverse.io by bociKond - Tags: minimalist, loading, loader, animated, color, minimal */
+/* From Uiverse.io by Shoh2008 - Tags: loader */
 .loader {
-  /* color of choise */
-  --clr: #05A8AA;
-  /* loading time of choice */
-  --load-time: 2s;
-  outline: 5px solid var(--clr);
-  outline-offset: 5px;
-  position: relative;
+  margin: auto;
+  width: 100px;
+  height: 30px;
   overflow: hidden;
-  border-radius: 5rem;
-  /* width: 10rem; */
-  /* height: 2rem; */
-  padding: 1rem 5rem;
-  /* use either padding or width + height*/
-  /* I prefer the padding one */
-  /* rotate: -90deg; */
-  /* rotate if you want/need vertical loader */
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  box-shadow: 0px 35px 0 -5px #aaa, 0 -5px 0 0px #ddd, 0 -25px 0 -5px #fff,
+    -25px -30px 0 0px #ddd, -25px 30px 0 0px #ddd, 25px -30px 0 0px #ddd,
+    25px 30px 0 0px #ddd, 20px 10px 0 5px #ddd, 20px -10px 0 5px #ddd,
+    -20px -10px 0 5px #ddd, -20px 10px 0 5px #ddd;
 }
 
-.loader::after {
-  content: '';
+.loader:after,
+.loader:before {
+  content: "";
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  display: block;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--clr);
-  z-index: 2;
-  animation: loading var(--load-time) ease-in-out infinite;
+  border: 4px dashed #fff;
+  bottom: -4px;
+  transform: rotate(0deg);
+  box-sizing: border-box;
+  animation: tape 4s linear infinite;
 }
 
-@keyframes loading {
+.loader:before {
+  right: 0;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 34px #000;
+}
+
+.loader:after {
+  left: 0;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 65px #000;
+}
+
+@keyframes tape {
   0% {
-    width: 0%;
+    transform: rotate(0deg) scale(0.4);
   }
 
   100% {
-    width: 100%;
+    transform: rotate(-360deg) scale(0.4);
   }
 }
+      

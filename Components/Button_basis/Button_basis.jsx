@@ -3,7 +3,7 @@ import styles from "./Button_basis.module.css";
 
 const Button_basis = () => (
   <div>
-    <button className={styles["bt"]}>Button</button>
+    <button className={styles["button1"]}> Button</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_basis;
 
         const Button_basis = () => (
          <div>
-          <button className="bt">
-  Button
-
+          <button className="button1"> Button
 </button>
         </div>
         );

@@ -1,45 +1,49 @@
 
-/* From Uiverse.io by Shoh2008 - Tags: switch */
-.checkbox-wrapper-41 {
-  --size: 100px;
-}
-
-.checkbox-wrapper-41 input[type="checkbox"] {
+/* From Uiverse.io by cuzpq - Tags: switch, theme, light&dark */
+.theme-checkbox {
+  --toggle-size: 16px;
   -webkit-appearance: none;
-  width: var(--size);
-  height: calc(var(--size) / 2);
-  background-color: #fff;
-  border: 3px solid #222;
-  border-radius: 30px 100px 100px 100px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  outline: none;
-  cursor: pointer;
+  -moz-appearance: none;
+  appearance: none;
+  width: 6.25em;
+  height: 3.125em;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+  background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+  background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+  background-size: 205%;
+  background-position: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 99em;
   position: relative;
-  transition: all 0.5s;
+  cursor: pointer;
+  font-size: var(--toggle-size);
 }
 
-.checkbox-wrapper-41 input[type="checkbox"]::before {
+.theme-checkbox::before {
   content: "";
+  width: 2.25em;
+  height: 2.25em;
   position: absolute;
-  width: calc(var(--size) / 2);
-  height: calc(var(--size) / 2);
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%) scale(0.7);
-  border: 3px solid #222;
-  border-radius: 30px 100px 100px 100px;
-  background-color: #fde881;
-  box-sizing: border-box;
-  transition: all 0.5s;
+  top: 0.438em;
+  left: 0.438em;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+  background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+  background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+  background-size: 205%;
+  background-position: 100%;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.checkbox-wrapper-41 input[type="checkbox"]:checked {
-  background-color: #fde881;
-  border-radius: 100px 100px 30px 100px;
+.theme-checkbox:checked::before {
+  left: calc(100% - 2.25em - 0.438em);
+  background-position: 0;
 }
 
-.checkbox-wrapper-41 input[type="checkbox"]:checked::before {
-  left: 50%;
-  background-color: #fff;
-  border-radius: 100px 100px 30px 100px;
+.theme-checkbox:checked {
+  background-position: 100%;
 }

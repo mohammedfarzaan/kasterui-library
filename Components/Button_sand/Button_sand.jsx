@@ -3,9 +3,9 @@ import styles from "./Button_sand.module.css";
 
 const Button_sand = () => (
   <div>
-    <div className={styles["btnContainer"]}>
-      <button className={styles["button"]}>Hover Me</button>
-    </div>
+    <button>
+      <span>Button</span>
+    </button>
   </div>
 );
 
@@ -20,11 +20,9 @@ export default Button_sand;
 
         const Button_sand = () => (
          <div>
-          <div className="btnContainer">
-  <button className="button">
-  Hover Me
+          <button>
+  <span>Button</span>
 </button>
-</div>
         </div>
         );
 

@@ -1,86 +1,68 @@
 
-/* From Uiverse.io by Abrar-Hussain1  - Tags: animation, loading, loader, spinner, modern, circle, animated, circle loader */
-.loader-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
+/* From Uiverse.io by fanishah - Tags: loader */
 .loader {
-  width: 70px;
-  height: 70px;
-  position: relative;
-}
-
-.loader:before {
-  content: "";
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: 6px solid #007bff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: absolute;
-  top: 0;
-  left: 0;
-  animation: pulse 1s ease-in-out infinite;
 }
 
-.loader:after {
-  content: "";
-  width: 70px;
+.bar {
+  width: 10px;
   height: 70px;
-  border-radius: 50%;
-  border: 6px solid transparent;
-  border-top-color: #007bff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: spin 2s linear infinite;
+  background: hsl(0, 100%, 50%);
+  display: inline-block;
+  transform-origin: bottom center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  animation: loader8913 1.2s linear infinite;
 }
 
-.loader-text {
-  font-size: 24px;
-  margin-top: 20px;
-  color: #007bff;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  text-transform: uppercase;
+.bar1 {
+  animation-delay: 0.1s;
 }
 
-@keyframes pulse {
+.bar2 {
+  animation-delay: 0.2s;
+}
+
+.bar3 {
+  animation-delay: 0.3s;
+}
+
+.bar4 {
+  animation-delay: 0.4s;
+}
+
+.bar5 {
+  animation-delay: 0.5s;
+}
+
+.bar6 {
+  animation-delay: 0.6s;
+}
+
+.bar7 {
+  animation-delay: 0.7s;
+}
+
+.bar8 {
+  animation-delay: 0.8s;
+}
+
+@keyframes loader8913 {
   0% {
-    transform: scale(0.6);
-    opacity: 1;
+    transform: scaleY(0.1);
   }
+
   50% {
-    transform: scale(1.2);
-    opacity: 0;
+    transform: scaleY(1);
+    background: yellowgreen;
   }
+
   100% {
-    transform: scale(0.6);
-    opacity: 1;
+    transform: scaleY(0.1);
+    background: transparent;
   }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.content {
-  display: none;
-}
-
-.loaded .loader-container {
-  display: none;
-}
-
-.loaded .content {
-  display: block;
 }
 

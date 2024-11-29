@@ -3,11 +3,30 @@ import styles from "./Loader_order.module.css";
 
 const Loader_order = () => (
   <div>
-    <div className={styles["loader"]}>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path d="M64 32C28.7 32 0 60.7 0 96v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V352c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"></path>
-      </svg>
-      <span></span>
+    <div className={styles["container"] + styles["center"]}>
+      <div className={styles["rope"] + styles["center"]}>
+        <div className={styles["legs"] + styles["center"]}>
+          <div className={styles["boot-l"]}></div>
+          <div className={styles["boot-r"]}></div>
+        </div>
+        <div className={styles["costume"] + styles["center"]}>
+          <div className={styles["spider"]}>
+            <div className={styles["s1"] + styles["center"]}></div>
+            <div className={styles["s2"] + styles["center"]}></div>
+            <div className={styles["s3"]}></div>
+            <div className={styles["s4"]}></div>
+          </div>
+          <div className={styles["belt"] + styles["center"]}></div>
+          <div className={styles["hand-r"]}></div>
+          <div className={styles["hand-l"]}></div>
+          <div className={styles["neck"] + styles["center"]}></div>
+          <div className={styles["mask"] + styles["center"]}>
+            <div className={styles["eye-l"]}></div>
+            <div className={styles["eye-r"]}></div>
+          </div>
+          <div className={styles["cover"] + styles["center"]}></div>
+        </div>
+      </div>
     </div>
   </div>
 );
@@ -23,10 +42,30 @@ export default Loader_order;
 
         const Loader_order = () => (
          <div>
-          <div className="loader">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 32C28.7 32 0 60.7 0 96v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V352c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"></path></svg>
-  <span></span>
-</div>
+          <div className="container center">
+  <div className="rope center">
+    <div className="legs center">
+      <div className="boot-l"></div>
+      <div className="boot-r"></div>
+    </div>
+    <div className="costume center">
+      <div className="spider">
+        <div className="s1 center"></div>
+        <div className="s2 center"></div>
+        <div className="s3"></div>
+        <div className="s4"></div>
+      </div>
+      <div className="belt center"></div>
+      <div className="hand-r"></div>
+      <div className="hand-l"></div>
+      <div className="neck center"></div>
+      <div className="mask center">
+        <div className="eye-l"></div>
+        <div className="eye-r"></div>
+      </div>
+      <div className="cover center"></div>
+    </div>
+</div></div>
         </div>
         );
 

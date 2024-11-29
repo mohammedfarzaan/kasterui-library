@@ -3,8 +3,8 @@ import styles from "./Button_bowl.module.css";
 
 const Button_bowl = () => (
   <div>
-    <button className={styles["btn-25"]}>
-      <span>Button</span>
+    <button className={styles["button"]}>
+      <span>Submit</span>
     </button>
   </div>
 );
@@ -20,7 +20,9 @@ export default Button_bowl;
 
         const Button_bowl = () => (
          <div>
-          <button className="btn-25"><span>Button</span></button>
+          <button className="button">
+  <span>Submit</span>
+</button>
         </div>
         );
 

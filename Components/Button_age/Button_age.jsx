@@ -3,9 +3,7 @@ import styles from "./Button_age.module.css";
 
 const Button_age = () => (
   <div>
-    <a className={styles["btn"]} href="#">
-      I am a button
-    </a>
+    <button> Button</button>
   </div>
 );
 
@@ -20,7 +18,8 @@ export default Button_age;
 
         const Button_age = () => (
          <div>
-          <a className="btn" href="#">I am a button</a>
+          <button> Button
+</button>
         </div>
         );
 

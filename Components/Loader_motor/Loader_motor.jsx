@@ -3,7 +3,11 @@ import styles from "./Loader_motor.module.css";
 
 const Loader_motor = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["loader"]}>
+      <span className={styles["hour"]}></span>
+      <span className={styles["min"]}></span>
+      <span className={styles["circel"]}></span>
+    </div>
   </div>
 );
 
@@ -18,7 +22,11 @@ export default Loader_motor;
 
         const Loader_motor = () => (
          <div>
-          <div className="loader"></div>
+          <div className="loader">
+  <span className="hour"></span>
+  <span className="min"></span>
+  <span className="circel"></span>
+</div>
         </div>
         );
 

@@ -3,26 +3,12 @@ import styles from "./Button_lose.module.css";
 
 const Button_lose = () => (
   <div>
-    <ul>
-      <li>
-        <a className={styles["facebook"]} href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="29"
-            height="29"
-            fill="currentColor"
-            className="bi bi-facebook"
-            viewBox="0 0 16 16"
-          >
-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
-          </svg>
-        </a>
-      </li>
-    </ul>
+    <button className={styles["Btn"]}>
+      Pay
+      <svg className={styles["svgIcon"]} viewBox="0 0 576 512">
+        <path d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"></path>
+      </svg>
+    </button>
   </div>
 );
 
@@ -37,28 +23,10 @@ export default Button_lose;
 
         const Button_lose = () => (
          <div>
-          <ul>
-  <li>
-    <a className="facebook" href="#">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="29"
-        height="29"
-        fill="currentColor"
-        className="bi bi-facebook"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
-        ></path>
-      </svg>
-    </a>
-  </li>
-</ul>
+          <button className="Btn">
+  Pay
+  <svg className="svgIcon" viewBox="0 0 576 512"><path d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"></path></svg>
+</button>
         </div>
         );
 

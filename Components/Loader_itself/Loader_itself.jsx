@@ -3,12 +3,7 @@ import styles from "./Loader_itself.module.css";
 
 const Loader_itself = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["dash"] + styles["first"]}></div>
-      <div className={styles["dash"] + styles["seconde"]}></div>
-      <div className={styles["dash"] + styles["third"]}></div>
-      <div className={styles["dash"] + styles["fourth"]}></div>
-    </div>
+    <div className={styles["lds-hourglass"]}></div>
   </div>
 );
 
@@ -23,12 +18,7 @@ export default Loader_itself;
 
         const Loader_itself = () => (
          <div>
-          <div className="container">
-  <div className="dash first"></div>
-  <div className="dash seconde"></div>
-  <div className="dash third"></div>
-  <div className="dash fourth"></div>
-</div>
+          <div className="lds-hourglass"></div>
         </div>
         );
 

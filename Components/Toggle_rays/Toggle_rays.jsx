@@ -3,8 +3,10 @@ import styles from "./Toggle_rays.module.css";
 
 const Toggle_rays = () => (
   <div>
-    <input id="checkbox" type="checkbox" />
-    <label className={styles["Switch"]} for="checkbox"></label>
+    <button className={styles["toggle-btn"]}>
+      <div className={styles["sun-rays"]}></div>
+      <div className={styles["main-circle"]}></div>
+    </button>
   </div>
 );
 
@@ -19,9 +21,10 @@ export default Toggle_rays;
 
         const Toggle_rays = () => (
          <div>
-          <input id="checkbox" type="checkbox" />
-    <label className="Switch" for="checkbox">
-    </label>
+          <button className="toggle-btn">
+  <div className="sun-rays"></div>
+  <div className="main-circle"></div>
+</button>
         </div>
         );
 

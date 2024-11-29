@@ -3,9 +3,10 @@ import styles from "./Button_kids.module.css";
 
 const Button_kids = () => (
   <div>
-    <button>
-      <span> Grab it!</span>
-    </button>
+    <div className={styles["button"]}>
+      <div className={styles["button__front"]}>rocket</div>
+      <div className={styles["button__back"]}>roll</div>
+    </div>
   </div>
 );
 
@@ -20,8 +21,10 @@ export default Button_kids;
 
         const Button_kids = () => (
          <div>
-          <button><span> Grab it!</span>
-</button>
+          <div className="button">
+    <div className="button__front">rocket</div>
+    <div className="button__back">roll</div>
+  </div>
         </div>
         );
 

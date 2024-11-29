@@ -3,13 +3,7 @@ import styles from "./Button_child.module.css";
 
 const Button_child = () => (
   <div>
-    <button>
-      Button
-      <p>Button</p>
-      <p>Button</p>
-      <p>Button</p>
-      <p>Button</p>
-    </button>
+    <button className={styles["button"]}> Button</button>
   </div>
 );
 
@@ -24,11 +18,7 @@ export default Button_child;
 
         const Button_child = () => (
          <div>
-          <button>Button
-  <p>Button</p>
-  <p>Button</p>
-  <p>Button</p>
-  <p>Button</p>
+          <button className="button"> Button
 </button>
         </div>
         );

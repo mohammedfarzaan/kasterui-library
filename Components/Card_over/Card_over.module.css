@@ -1,0 +1,95 @@
+
+/* From Uiverse.io by Bastiennnn  - Tags: animation, card, futuristic, colorful, transition */
+.card {
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    #9b00ff,
+    #8515ff,
+    #6c20ff,
+    #4b27ff,
+    #002dff
+  );
+  border: 5px solid rgb(20, 7, 82);
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  height: 310px;
+  transition: 1s;
+  overflow: hidden;
+  animation: rainbowBorder 1.5s linear infinite;
+}
+
+@keyframes rainbowBorder {
+  0%,
+  100% {
+    box-shadow: 0px 5px 5px #0011ff;
+  }
+  25% {
+    box-shadow: 5px 0px 5px #511ccc;
+  }
+  50% {
+    box-shadow: 0px -5px 5px #5500ff;
+  }
+  75% {
+    box-shadow: -5px 5px 5px #8b0eff;
+  }
+}
+
+.card:hover {
+  transform: scale(1.04) rotate(-1deg);
+}
+
+a {
+  text-decoration: none;
+}
+
+.icons {
+  background: rgba(0, 0, 0, 0.5);
+  border: 3px solid rgb(20, 7, 82);
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+svg {
+  background-color: rgb(36, 45, 134);
+  color: rgb(255, 255, 255);
+  border: 3px solid rgb(20, 7, 82);
+  border-radius: 9px;
+  width: 30px;
+  height: 30px;
+  margin: 7px;
+  margin-top: 2.5px;
+  transition: 1s;
+}
+
+svg:hover {
+  background-color: #8515ff;
+}
+
+.heading {
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+}
+
+img {
+  width: 150px;
+  animation: img 3s infinite;
+  margin-top: 20px;
+}
+
+@keyframes img {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+

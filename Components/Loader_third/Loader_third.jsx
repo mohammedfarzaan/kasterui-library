@@ -3,10 +3,8 @@ import styles from "./Loader_third.module.css";
 
 const Loader_third = () => (
   <div>
-    <div className={styles["loader"]}>
-      <li className={styles["dots"]} id="dot-1"></li>
-      <li className={styles["dots"]} id="dot-2"></li>
-      <li className={styles["dots"]} id="dot-3"></li>
+    <div className={styles["coin"]}>
+      <span className={styles["engraving"]}>$</span>
     </div>
   </div>
 );
@@ -22,11 +20,9 @@ export default Loader_third;
 
         const Loader_third = () => (
          <div>
-          <div className="loader">
-        <li className="dots" id="dot-1"></li>
-        <li className="dots" id="dot-2"></li>
-        <li className="dots" id="dot-3"></li>
-    </div>
+          <div className="coin">
+  <span className="engraving">$</span>
+</div>
         </div>
         );
 

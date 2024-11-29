@@ -3,7 +3,17 @@ import styles from "./Loader_doll.module.css";
 
 const Loader_doll = () => (
   <div>
-    <div className={styles["mover"]}></div>
+    <div className={styles["loader-1"]}>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +28,16 @@ export default Loader_doll;
 
         const Loader_doll = () => (
          <div>
-          <div className="mover"></div>
+          <div className="loader-1">
+<div className="dot"></div>
+<div className="dot"></div>
+<div className="dot"></div>
+<div className="dot"></div>
+<div className="dot"></div>
+<div className="dot"></div>
+<div className="dot"></div>
+<div className="dot"></div>
+<div className="dot"></div></div>
         </div>
         );
 

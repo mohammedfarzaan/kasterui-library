@@ -3,7 +3,7 @@ import styles from "./Loader_tune.module.css";
 
 const Loader_tune = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["loader"]}>Loading...</div>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Loader_tune;
 
         const Loader_tune = () => (
          <div>
-          <div className="loader"></div>
+          <div className="loader">Loading...</div>
         </div>
         );
 

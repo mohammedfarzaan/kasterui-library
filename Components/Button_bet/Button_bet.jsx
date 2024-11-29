@@ -3,7 +3,9 @@ import styles from "./Button_bet.module.css";
 
 const Button_bet = () => (
   <div>
-    <button>Button</button>
+    <div className={styles["container"]}>
+      <button className={styles["button"]}>Hover me</button>
+    </div>
   </div>
 );
 
@@ -18,9 +20,9 @@ export default Button_bet;
 
         const Button_bet = () => (
          <div>
-          <button>
-  Button
-</button>
+          <div className="container">
+  <button className="button">Hover me</button>
+</div>
         </div>
         );
 

@@ -1,65 +1,66 @@
 
-/* From Uiverse.io by vinodjangid07 - Tags: button, add, hover effect, add to cart */
-.CartBtn {
-  width: 140px;
-  height: 40px;
-  border-radius: 12px;
+/* From Uiverse.io by vinodjangid07  - Website: https://dribbble.com/shots/18149466-Upgrade-to-Pro-Button/attachments/13347110?mode=media - Name: Mobin Madadi - Tags: link, button, hover, active, hover effect, pro, upgrade, redirect */
+.Btn-container {
+  width: fit-content;
+  height: fit-content;
   border: none;
-  background-color: rgb(255, 208, 0);
+  background-color: #ebebeb;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px #e1e1e1;
+  transition: 0.2s;
+}
+.inner-wrapper {
+  width: fit-content;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  transition-duration: .5s;
-  overflow: hidden;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
-  position: relative;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 8px 15px;
+  box-shadow: 0px 4px 10px #d3d3d3;
+  gap: 50px;
+  transition: 0.2s;
 }
-
-.IconContainer {
-  position: absolute;
-  left: -50px;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.text p {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: rgb(140, 140, 140);
+}
+.text .pro {
+  background-color: black;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  z-index: 2;
-  transition-duration: .5s;
+  transform: rotate(45deg);
+  transition: 0.2s;
+}
+.icon svg {
+  width: 15px;
+}
+.Btn-container:active {
+  transform: scale(1);
+}
+.Btn-container:active .inner-wrapper {
+  transform: scale(0.97);
+}
+.Btn-container:hover .icon {
+  transform: rotate(0deg);
 }
 
-.icon {
-  border-radius: 1px;
-}
-
-.text {
-  height: 100%;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(17, 17, 17);
-  z-index: 1;
-  transition-duration: .5s;
-  font-size: 1.04em;
-  font-weight: 600;
-}
-
-.CartBtn:hover .IconContainer {
-  transform: translateX(58px);
-  border-radius: 40px;
-  transition-duration: .5s;
-}
-
-.CartBtn:hover .text {
-  transform: translate(10px,0px);
-  transition-duration: .5s;
-}
-
-.CartBtn:active {
-  transform: scale(0.95);
-  transition-duration: .5s;
-}

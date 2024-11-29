@@ -3,7 +3,7 @@ import styles from "./Button_snow.module.css";
 
 const Button_snow = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button className={styles["btn-1"]}>Hover me!</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_snow;
 
         const Button_snow = () => (
          <div>
-          <button className="button">
-  Button
-</button>
+          <button className="btn-1">Hover me!</button>
         </div>
         );
 

@@ -3,9 +3,12 @@ import styles from "./Button_good.module.css";
 
 const Button_good = () => (
   <div>
-    <button>
-      <div>Space</div>
-      <div className={styles["liquid"]}></div>
+    <button className={styles["btn-1"]}>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Button
     </button>
   </div>
 );
@@ -21,10 +24,13 @@ export default Button_good;
 
         const Button_good = () => (
          <div>
-          <button>
-    <div>Space</div>
-    <div className="liquid"></div>
-</button>
+          <button className="btn-1">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Button
+    </button>
         </div>
         );
 

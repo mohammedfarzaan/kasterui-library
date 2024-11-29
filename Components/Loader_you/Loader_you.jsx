@@ -3,11 +3,11 @@ import styles from "./Loader_you.module.css";
 
 const Loader_you = () => (
   <div>
-    <div className={styles["wrapper"]}>
-      <div className={styles["blue"] + styles["ball"]}></div>
-      <div className={styles["red"] + styles["ball"]}></div>
-      <div className={styles["yellow"] + styles["ball"]}></div>
-      <div className={styles["green"] + styles["ball"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
+      <div className={styles["bar"]}></div>
     </div>
   </div>
 );
@@ -23,11 +23,11 @@ export default Loader_you;
 
         const Loader_you = () => (
          <div>
-          <div className="wrapper">
-  <div className="blue ball"></div>
-  <div className="red ball"></div>
-  <div className="yellow ball"></div>
-  <div className="green ball"></div>
+          <div className="loader">
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
+  <div className="bar"></div>
 </div>
         </div>
         );

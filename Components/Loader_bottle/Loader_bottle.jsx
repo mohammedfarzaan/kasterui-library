@@ -4,16 +4,8 @@ import styles from "./Loader_bottle.module.css";
 const Loader_bottle = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
+      <div className={styles["loader-small"]}></div>
+      <div className={styles["loader-large"]}></div>
     </div>
   </div>
 );
@@ -30,17 +22,9 @@ export default Loader_bottle;
         const Loader_bottle = () => (
          <div>
           <div className="loader">
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-  </div>
+  <div className="loader-small"></div>
+  <div className="loader-large"></div>
+</div>
         </div>
         );
 

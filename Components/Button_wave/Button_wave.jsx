@@ -3,9 +3,7 @@ import styles from "./Button_wave.module.css";
 
 const Button_wave = () => (
   <div>
-    <button>
-      <p>Crush!</p>
-    </button>
+    <button> Grab it!</button>
   </div>
 );
 
@@ -20,8 +18,7 @@ export default Button_wave;
 
         const Button_wave = () => (
          <div>
-          <button>
-  <p>Crush!</p>
+          <button> Grab it!
 </button>
         </div>
         );

@@ -3,13 +3,7 @@ import styles from "./Button_stage.module.css";
 
 const Button_stage = () => (
   <div>
-    <button>
-      <span>Button</span>
-      <div className={styles["top"]}></div>
-      <div className={styles["left"]}></div>
-      <div className={styles["bottom"]}></div>
-      <div className={styles["right"]}></div>
-    </button>
+    <button className={styles["button"]}></button>
   </div>
 );
 
@@ -24,13 +18,7 @@ export default Button_stage;
 
         const Button_stage = () => (
          <div>
-          <button>
-    <span>Button</span>
-    <div className="top"></div>
-    <div className="left"></div>
-    <div className="bottom"></div>
-    <div className="right"></div>
-</button>
+          <button className="button"></button>
         </div>
         );
 

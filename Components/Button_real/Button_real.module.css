@@ -1,39 +1,68 @@
 
-/* From Uiverse.io by Deri-Kurniawan  - Tags: button, colorful, btn, hover effect */
-.button {
+/* From Uiverse.io by MuhammadHasann - Tags: button */
+button {
   position: relative;
-  cursor: pointer;
-  padding: 6px 6px;
-  position: relative;
-  background: linear-gradient(
-    75deg,
-    rgba(192, 97, 237, 0.8),
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.4),
-    rgba(252, 144, 98, 0.8),
-    rgba(252, 144, 98, 0.8),
-    rgba(255, 255, 255, 0.4),
-    rgba(228, 89, 199, 0.8),
-    rgba(255, 255, 255, 0.4),
-    rgba(228, 89, 199, 0.8)
-  );
-  border: 1.5px solid transparent;
-  border-radius: 12px;
-  inset: 0;
-}
-
-.button .light-border {
-  padding: 8px 24px;
-  border: 0.1px solid rgba(255, 255, 255, 0.4);
+  padding: 15px 35px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #2F5C2F;
+  background-color: transparent;
+  border: 3px solid #2F5C2F;
   border-radius: 8px;
-  pointer-events: none;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
-.button:hover {
-  filter: contrast(1.2) brightness(1.2);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-  transition: all 0.3s ease-in-out;
+button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  background-color: #D5A084;
+  border-radius: 8px;
+  z-index: -1;
+  transition: all 0.5s;
 }
 
+button:hover::after {
+  top: 0;
+  left: 0;
+}
+
+.icon-1 {
+  position: absolute;
+  width: 15%;
+  top: 10px;
+  right: 15px;
+  color: #2F5C2F;
+  transform-origin: 100% 100%;
+  transform: rotate(-25deg) translateX(120%) translateY(20%);
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+button:hover .icon-1 {
+  width: 25%;
+  transform: rotate(10deg) translateX(110%) translateY(-40%);
+}
+
+.icon-2 {
+  position: absolute;
+  width: 15%;
+  top: 20px;
+  left: 10px;
+  color: #2F5C2F;
+  transform-origin: 100% 100%;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+button:hover .icon-2 {
+  width: 50%;
+  top: -40px;
+  left: -80px;
+  transform: rotate(90deg);
+  z-index: 1;
+}

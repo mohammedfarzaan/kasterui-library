@@ -3,7 +3,7 @@ import styles from "./Button_tube.module.css";
 
 const Button_tube = () => (
   <div>
-    <button> Pick up!</button>
+    <button>ok</button>
   </div>
 );
 
@@ -18,7 +18,8 @@ export default Button_tube;
 
         const Button_tube = () => (
          <div>
-          <button> Pick up!
+          <button>
+    ok
 </button>
         </div>
         );

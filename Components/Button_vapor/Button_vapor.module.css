@@ -1,58 +1,59 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: animation, button, hover, download */
-.Btn {
-  width: 50px;
-  height: 50px;
-  border: 2px solid rgb(214, 214, 214);
-  border-radius: 15px;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+/* From Uiverse.io by Deri-Kurniawan  - Tags: blue, button, hover, smooth, hover effect, hoverme, hover button, button hover effect  */
+.button {
   position: relative;
-  transition-duration: 0.3s;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 14px;
+  overflow: hidden;
+  z-index: 1;
+  border: 1px solid rgb(221, 218, 218);
+  background: white;
+  font-weight: bold;
+  font-size: 16px;
+  color: #1993e4;
+  transition: all 1.2s linear;
+  cursor: pointer;
 }
 
-.svgIcon {
-  fill: rgb(70, 70, 70);
+.button::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to right, #1993e4, #1993e456);
+  border-radius: 30%;
+  height: 96px;
+  width: 96px;
+  animation: spin infinite linear 1.8s;
+  animation-delay: 0;
+  bottom: -38px;
+  right: -112px;
+  transition: all 1.2s linear;
+  z-index: 0;
 }
 
-.icon2 {
-  width: 18px;
-  height: 5px;
-  border-bottom: 2px solid rgb(70, 70, 70);
-  border-left: 2px solid rgb(70, 70, 70);
-  border-right: 2px solid rgb(70, 70, 70);
+.button:hover {
+  color: #fff;
+  transition-duration: 1.2s;
 }
 
-.Btn:hover {
-  background-color: rgb(51, 51, 51);
-  transition-duration: 0.3s;
+.button:hover::after {
+  right: -60px;
+  bottom: -92px;
+  width: 256px;
+  height: 256px;
 }
 
-.Btn:hover .icon2 {
-  border-bottom: 2px solid rgb(235, 235, 235);
-  border-left: 2px solid rgb(235, 235, 235);
-  border-right: 2px solid rgb(235, 235, 235);
+.button > .button-content {
+  position: relative;
+  z-index: 2;
 }
 
-.Btn:hover .svgIcon {
-  fill: rgb(255, 255, 255);
-  animation: slide-in-top 1s linear infinite;
-}
-
-@keyframes slide-in-top {
+@keyframes spin {
   0% {
-    transform: translateY(-10px);
-    opacity: 0;
+    transform: rotate(0deg);
   }
-
   100% {
-    transform: translateY(0px);
-    opacity: 1;
+    transform: rotate(360deg);
   }
 }
 

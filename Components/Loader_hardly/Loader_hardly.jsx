@@ -3,15 +3,7 @@ import styles from "./Loader_hardly.module.css";
 
 const Loader_hardly = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["ball"]}></div>
-      <div className={styles["ball"]}></div>
-      <div className={styles["ball"]}></div>
-      <div className={styles["ball"]}></div>
-      <div className={styles["ball"]}></div>
-      <div className={styles["ball"]}></div>
-      <div className={styles["ball"]}></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -26,15 +18,7 @@ export default Loader_hardly;
 
         const Loader_hardly = () => (
          <div>
-          <div className="container">
-  <div className="ball"></div>
-  <div className="ball"></div>
-  <div className="ball"></div>
-  <div className="ball"></div>
-  <div className="ball"></div>
-  <div className="ball"></div>
-  <div className="ball"></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

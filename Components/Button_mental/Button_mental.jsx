@@ -3,7 +3,7 @@ import styles from "./Button_mental.module.css";
 
 const Button_mental = () => (
   <div>
-    <button className={styles["button"]}>Subscribe</button>
+    <button className={styles["button"]}>ctrl</button>
   </div>
 );
 
@@ -19,7 +19,7 @@ export default Button_mental;
         const Button_mental = () => (
          <div>
           <button className="button">
-  Subscribe
+  ctrl
 </button>
         </div>
         );

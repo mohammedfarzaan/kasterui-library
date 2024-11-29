@@ -1,30 +1,44 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: black, button, active, hover effect, enter */
-.enter-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 18px;
-  gap: 25px;
-  font-size: 0.7em;
-  letter-spacing: 2px;
-  color: white;
-  cursor: pointer;
-  background: linear-gradient(to right, rgb(59, 59, 59), rgb(34, 34, 34));
+/* From Uiverse.io by satyamchaudharydev - Tags: button */
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
   position: relative;
-  border-radius: 8px;
-  border: 1px solid rgb(65, 65, 65);
-  transition-duration: 0.3s;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
 }
-
-.arrow {
-  height: 20px;
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
 }
-.enter-button:hover {
-  transition-duration: 0.3s;
-  box-shadow: 0px 0px 2px rgb(185, 185, 185), 0px 0px 10px rgb(97, 97, 97);
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
 }
-.enter-button:active {
-  transform: scale(0.95);
-}
-

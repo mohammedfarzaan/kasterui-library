@@ -1,0 +1,80 @@
+
+/* From Uiverse.io by benjimich - Tags: card */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0f0e17;
+  color: white;
+  padding: 2em;
+  border-radius: 8px;
+  transition: all 1s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px 8px rgb(218, 127, 242);
+}
+
+.heading {
+  font-size: 28px;
+  margin-bottom: 2em;
+  text-align: center;
+  color: #fffffe;
+}
+
+.heading span {
+  color: rgb(218, 127, 242);
+  font-weight: 700;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  width: 140px;
+  padding: 10px;
+  margin-bottom: 1em;
+  background: linear-gradient(to top,rgb(218, 127, 242) 0%, rgb(218, 127, 242) 100%) no-repeat;
+  background-size: 0 100%;
+  transform: translateY(0);
+  transition: all .3s ease;
+}
+
+.item:hover {
+  transform: translateY(-4px);
+  background-size: 100% 100%;
+}
+
+.item svg {
+  margin-right: 1em;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  margin-top: 2em;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 8px;
+  background: #e53170;
+  color: #0f0e17;
+  transition: all .2s ease;
+}
+
+button:hover {
+  background: #fff;
+  letter-spacing: .1em;
+  box-shadow: 0 0 8px 4px #fff;
+}

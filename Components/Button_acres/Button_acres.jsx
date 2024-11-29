@@ -3,39 +3,9 @@ import styles from "./Button_acres.module.css";
 
 const Button_acres = () => (
   <div>
-    <div className={styles["tab-container"]}>
-      <input
-        type="radio"
-        name="tab"
-        id="tab1"
-        className={styles["tab"] + styles["tab--1"]}
-      />
-      <label className={styles["tab_label"]} for="tab1">
-        Profile
-      </label>
-
-      <input
-        type="radio"
-        name="tab"
-        id="tab2"
-        className={styles["tab"] + styles["tab--2"]}
-      />
-      <label className={styles["tab_label"]} for="tab2">
-        Settings
-      </label>
-
-      <input
-        type="radio"
-        name="tab"
-        id="tab3"
-        className={styles["tab"] + styles["tab--3"]}
-      />
-      <label className={styles["tab_label"]} for="tab3">
-        Notifications
-      </label>
-
-      <div className={styles["indicator"]}></div>
-    </div>
+    <a className={styles["bck-grnd"]}>
+      <span className={styles["style"]}></span>Hover me{" "}
+    </a>
   </div>
 );
 
@@ -50,18 +20,7 @@ export default Button_acres;
 
         const Button_acres = () => (
          <div>
-          <div className="tab-container">
-  <input type="radio" name="tab" id="tab1" className="tab tab--1" />
-  <label className="tab_label" for="tab1">Profile</label>
-
-  <input type="radio" name="tab" id="tab2" className="tab tab--2" />
-  <label className="tab_label" for="tab2">Settings</label>
-
-  <input type="radio" name="tab" id="tab3" className="tab tab--3" />
-  <label className="tab_label" for="tab3">Notifications</label>
-
-  <div className="indicator"></div>
-</div>
+          <a className="bck-grnd"><span className="style"></span>Hover me </a>
         </div>
         );
 

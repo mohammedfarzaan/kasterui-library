@@ -3,8 +3,17 @@ import styles from "./Loader_pony.module.css";
 
 const Loader_pony = () => (
   <div>
-    <div className={styles["glitch"]} data-text="Loading ...">
-      Loading ...
+    <div id="container">
+      <div id="square" className={styles["shimmer"]}></div>
+      <div id="content">
+        <div id="content-title" className={styles["shimmer"]}></div>
+        <div id="content-desc">
+          <div className={styles["line"] + styles["shimmer"]}></div>
+          <div className={styles["line"] + styles["shimmer"]}></div>
+          <div className={styles["line"] + styles["shimmer"]}></div>
+          <div className={styles["line"] + styles["shimmer"]}></div>
+        </div>
+      </div>
     </div>
   </div>
 );
@@ -20,7 +29,18 @@ export default Loader_pony;
 
         const Loader_pony = () => (
          <div>
-          <div className="glitch" data-text="Loading ...">Loading ...</div>
+          <div id="container">
+  <div id="square" className="shimmer"></div>
+  <div id="content">
+    <div id="content-title" className="shimmer"></div>
+    <div id="content-desc">
+      <div className="line shimmer"></div>
+      <div className="line shimmer"></div>
+      <div className="line shimmer"></div>
+      <div className="line shimmer"></div>
+    </div>
+  </div>
+</div>
         </div>
         );
 

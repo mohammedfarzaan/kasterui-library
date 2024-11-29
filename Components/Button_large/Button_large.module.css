@@ -1,104 +1,31 @@
 
-/* From Uiverse.io by VD232004  - Tags: button, hover button, button hover effect  */
-.unique-button {
-  display: flex;
-  align-items: center;
+/* From Uiverse.io by KhaledMatalkah - Tags: button, hover, transition */
+.button {
+  display: inline-block;
   position: relative;
-  width: 180px;
-  height: 60px;
-  padding: 15px 30px;
-  font-size: 18px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #a634db;
+  padding: 13px 20px;
   border: none;
-  border-radius: 10px;
+  background: rgba(51, 50, 50, 0.287);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: crosshair;
   overflow: hidden;
-  cursor: pointer;
-  transition: 0.3s all ease-in-out;
 }
 
-.unique-button:hover {
-  transition: 0.3s all ease-in-out;
-  box-shadow: 5px 10px 30px #a634db;
-}
-
-.unique-button span {
-  display: block;
-  margin-left: 0.3em;
-  transition: all 0.3s ease-in-out;
-}
-
-.unique-button:hover span {
-  transform: translateX(7em);
-}
-
-.unique-button:hover .svg-wrap {
-  animation: fly-1 0.6s ease-in-out infinite alternate;
-  z-index: 1;
-}
-
-.unique-button svg {
-  display: block;
-  transform-origin: center center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.unique-button:hover svg {
-  transform: translateX(2.5em) rotate(45deg) scale(1.2);
-}
-
-.unique-button:active {
-  transform: scale(0.95);
-}
-
-@keyframes fly-1 {
-  from {
-    transform: translateY(0.1em);
-  }
-
-  to {
-    transform: translateY(-0.1em);
-  }
-}
-
-.unique-button::before {
-  content: "";
+.button:before {
+  content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 80%;
-  border-bottom-left-radius: 60px;
-  border-top-right-radius: 60px;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background-color: #2c3e50;
-  transition: all 0.2s ease-in-out;
-}
-
-.unique-button:hover::before {
+  top: 0;
+  left: -100%;
   width: 100%;
-}
-
-.unique-button::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 0;
-  border-bottom-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 60px;
-  border-bottom-right-radius: 60px;
-  background-color: #2c3e50;
-  transition: all 0.3s ease-in-out;
-}
-
-.unique-button:hover::after {
   height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.14) 50%, transparent 100%);
+  transition: left 0.3s ease;
+}
+
+.button:hover:before {
+  left: 100%;
 }
 

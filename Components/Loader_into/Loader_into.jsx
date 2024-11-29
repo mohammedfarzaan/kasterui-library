@@ -3,38 +3,12 @@ import styles from "./Loader_into.module.css";
 
 const Loader_into = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["road"]}>
-        <div className={styles["police"]}>
-          <div className={styles["light_beam"]}></div>
-          <p>Police</p>
-          <article>Police</article>
-          <div className={styles["side_mirror"]}></div>
-          <span>
-            <b></b>
-            <i></i>
-          </span>
-        </div>
-        <div className={styles["police"]}>
-          <div className={styles["light_beam"]}></div>
-          <p>Police</p>
-          <article>Police</article>
-          <div className={styles["side_mirror"]}></div>
-          <span>
-            <b></b>
-            <i></i>
-          </span>
-        </div>
-        <div className={styles["taxi"]}>
-          <div className={styles["light_beam"]}></div>
-          <div className={styles["side_mirror"]}></div>
-          <span>
-            <b></b>
-            <i></i>
-          </span>
-        </div>
+    <div className={styles["loading"]}>
+      <div className={styles["loading-box"]}>
+        <div className={styles["WH"] + styles["color"] + styles["l1"]}></div>
+        <div className={styles["ball"] + styles["color"]}></div>
+        <div className={styles["WH"] + styles["color"] + styles["l2"]}></div>
       </div>
-      <span className={styles["loading"]}>Loading..</span>
     </div>
   </div>
 );
@@ -50,38 +24,12 @@ export default Loader_into;
 
         const Loader_into = () => (
          <div>
-          <div className="container">
-  <div className="road">
-    <div className="police">
-      <div className="light_beam"></div>
-      <p>Police</p>
-      <article>Police</article>
-      <div className="side_mirror"></div>
-      <span>
-        <b></b>
-        <i></i>
-      </span>
-    </div>
-    <div className="police">
-      <div className="light_beam"></div>
-      <p>Police</p>
-      <article>Police</article>
-      <div className="side_mirror"></div>
-      <span>
-        <b></b>
-        <i></i>
-      </span>
-    </div>
-    <div className="taxi">
-      <div className="light_beam"></div>
-      <div className="side_mirror"></div>
-      <span>
-        <b></b>
-        <i></i>
-      </span>
-    </div>
+          <div className="loading">
+  <div className="loading-box">
+    <div className="WH color l1"></div>
+    <div className="ball color"></div>
+    <div className="WH color l2"></div>
   </div>
-  <span className="loading">Loading..</span>
 </div>
         </div>
         );

@@ -3,7 +3,9 @@ import styles from "./Button_facing.module.css";
 
 const Button_facing = () => (
   <div>
-    <button> I'M READY</button>
+    <button role="button" className={styles["button"]}>
+      <span className={styles["text"]}>Button</span>
+    </button>
   </div>
 );
 
@@ -18,7 +20,8 @@ export default Button_facing;
 
         const Button_facing = () => (
          <div>
-          <button> I'M READY
+          <button role="button" className="button">
+  <span className="text">Button</span>
 </button>
         </div>
         );

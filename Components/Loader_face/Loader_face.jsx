@@ -3,15 +3,13 @@ import styles from "./Loader_face.module.css";
 
 const Loader_face = () => (
   <div>
-    <div className={styles["dot-spinner"]}>
-      <div className={styles["dot-spinner__dot"]}></div>
-      <div className={styles["dot-spinner__dot"]}></div>
-      <div className={styles["dot-spinner__dot"]}></div>
-      <div className={styles["dot-spinner__dot"]}></div>
-      <div className={styles["dot-spinner__dot"]}></div>
-      <div className={styles["dot-spinner__dot"]}></div>
-      <div className={styles["dot-spinner__dot"]}></div>
-      <div className={styles["dot-spinner__dot"]}></div>
+    <div className={styles["cssload-main"]}>
+      <div className={styles["cssload-heart"]}>
+        <span className={styles["cssload-heartL"]}></span>
+        <span className={styles["cssload-heartR"]}></span>
+        <span className={styles["cssload-square"]}></span>
+      </div>
+      <div className={styles["cssload-shadow"]}></div>
     </div>
   </div>
 );
@@ -27,15 +25,13 @@ export default Loader_face;
 
         const Loader_face = () => (
          <div>
-          <div className="dot-spinner">
-    <div className="dot-spinner__dot"></div>
-    <div className="dot-spinner__dot"></div>
-    <div className="dot-spinner__dot"></div>
-    <div className="dot-spinner__dot"></div>
-    <div className="dot-spinner__dot"></div>
-    <div className="dot-spinner__dot"></div>
-    <div className="dot-spinner__dot"></div>
-    <div className="dot-spinner__dot"></div>
+          <div className="cssload-main">
+	<div className="cssload-heart">
+		<span className="cssload-heartL"></span>
+		<span className="cssload-heartR"></span>
+		<span className="cssload-square"></span>
+	</div>
+	<div className="cssload-shadow"></div>
 </div>
         </div>
         );

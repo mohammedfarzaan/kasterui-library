@@ -3,10 +3,7 @@ import styles from "./Button_mouse.module.css";
 
 const Button_mouse = () => (
   <div>
-    <button className={styles["button__click"]}>
-      <div className={styles["button__click__background"]}></div>
-      Click me
-    </button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -21,9 +18,8 @@ export default Button_mouse;
 
         const Button_mouse = () => (
          <div>
-          <button className="button__click">
-  <div className="button__click__background"></div>
-  Click me
+          <button className="button">
+  Button
 </button>
         </div>
         );

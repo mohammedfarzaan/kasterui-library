@@ -3,7 +3,7 @@ import styles from "./Button_has.module.css";
 
 const Button_has = () => (
   <div>
-    <button className={styles["animated-button"]}>Button</button>
+    <button className={styles["btn"]}>Hover</button>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Button_has;
 
         const Button_has = () => (
          <div>
-          <button className="animated-button">Button</button>
+          <button className="btn">Hover</button>
         </div>
         );
 

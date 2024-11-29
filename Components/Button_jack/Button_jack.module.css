@@ -1,19 +1,42 @@
 
-/* From Uiverse.io by hakemdamer222 - Tags: simple, purple, button */
-button, button:focus {
-  font-size: 17px;
-  padding: 10px 25px;
-  border-radius: 0.7rem;
-  background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
-  border: 2px solid rgb(50, 50, 50);
-  border-bottom: 5px solid rgb(50, 50, 50);
-  box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);
-  transform: translate(0, -3px);
-  transition: 0.2s;
-  transition-timing-function: linear;
+/* From Uiverse.io by SalladShooter  - Tags: simple, gradient, button */
+.button {
+  cursor: pointer;
+  padding: 1em;
+  font-size: 1em;
+  width: 7em;
+  aspect-ratio: 1/0.25;
+  color: white;
+  background: #212121;
+  background-size: cover;
+  background-blend-mode: overlay;
+  border-radius: 0.5em;
+  outline: 0.1em solid #353535;
+  border: 0;
+  box-shadow: 0 0 1em 1em rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
 }
 
-button:active {
-  transform: translate(0, 0);
-  border-bottom: 2px solid rgb(50, 50, 50);
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 1em 0.45em rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, #212121, #252525);
+  background: radial-gradient(
+    circle at bottom,
+    rgba(50, 100, 180, 0.5) 10%,
+    #212121 70%
+  );
+  outline: 0;
 }
+
+.icon {
+  fill: white;
+  width: 1em;
+  aspect-ratio: 1;
+  top: 0;
+  left: 0;
+  margin: auto;
+  transform: translate(-35%, 10%);
+}
+

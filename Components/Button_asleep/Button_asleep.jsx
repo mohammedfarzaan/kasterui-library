@@ -3,12 +3,7 @@ import styles from "./Button_asleep.module.css";
 
 const Button_asleep = () => (
   <div>
-    <button className={styles["button"]}>
-      <div className={styles["icon_cont"]}>
-        <span className={styles["icon"]}>🡪</span>
-      </div>
-      <span className={styles["text_button"]}>Hover this button</span>
-    </button>
+    <button>Button</button>
   </div>
 );
 
@@ -23,11 +18,8 @@ export default Button_asleep;
 
         const Button_asleep = () => (
          <div>
-          <button className="button">
-  <div className="icon_cont">
-    <span className="icon">🡪</span>
-  </div>
-  <span className="text_button">Hover this button</span>
+          <button>
+  Button
 </button>
         </div>
         );

@@ -1,75 +1,103 @@
 
-/* From Uiverse.io by bek_uz_time  - Tags: red, loader, css */
+/* From Uiverse.io by Salem795  - Tags: 3d, loader, modern */
 .loader {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  background: transparent;
-  border-radius: 30%;
-  box-shadow: 25px 25px 75px rgba(0, 0, 0, 1.55);
-  border: 1px solid #ecc904;
+  width: fit-content;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
-.loader::before {
-  content: "";
-  position: absolute;
-  inset: 20px;
-  background: transparent;
-  border: 1px dashed #b0a1a1;
-  border-radius: 30%;
-  box-shadow: inset -5px -5px 25px rgba(0, 10, 10, 15),
-    inset 5px 5px 35px rgba(10, 0, 10, 2);
+.truckWrapper {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  overflow-x: hidden;
 }
-
-.loader::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 30%;
-  border: 1px dashed #d6d3d3;
-  box-shadow: inset -5px -5px 25px rgba(10, 10, 10, 2.25),
-    inset 5px 5px 35px rgba(10, 10, 10, 10.45);
+/* truck upper body */
+.truckBody {
+  width: 130px;
+  height: fit-content;
+  margin-bottom: 6px;
+  animation: motion 1s linear infinite;
 }
-
-.loader span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50%;
-  height: 100%;
-  background: transparent;
-  transform-origin: top left;
-  animation: radar81 1s linear infinite;
-  border-top: 1px dashed #c1bdbd;
-}
-
-.loader span::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f20303;
-  /* pink */
-  transform-origin: top left;
-  transform: rotate(-55deg);
-  filter: blur(30px) drop-shadow(20px 20px 20px #ff0241);
-  /* pink */
-}
-
-@keyframes radar81 {
+/* truck suspension animation*/
+@keyframes motion {
   0% {
-    transform: rotate(0deg);
+    transform: translateY(0px);
   }
-
+  50% {
+    transform: translateY(3px);
+  }
   100% {
-    transform: rotate(360deg);
+    transform: translateY(0px);
+  }
+}
+/* truck's tires */
+.truckTires {
+  width: 130px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px 0px 15px;
+  position: absolute;
+  bottom: 0;
+}
+.truckTires svg {
+  width: 24px;
+}
+
+.road {
+  width: 100%;
+  height: 1.5px;
+  background-color: #282828;
+  position: relative;
+  bottom: 0;
+  align-self: flex-end;
+  border-radius: 3px;
+}
+.road::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  background-color: #282828;
+  right: -50%;
+  border-radius: 3px;
+  animation: roadAnimation 1.4s linear infinite;
+  border-left: 10px solid white;
+}
+.road::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background-color: #282828;
+  right: -65%;
+  border-radius: 3px;
+  animation: roadAnimation 1.4s linear infinite;
+  border-left: 4px solid white;
+}
+
+.lampPost {
+  position: absolute;
+  bottom: 0;
+  right: -90%;
+  height: 90px;
+  animation: roadAnimation 1.4s linear infinite;
+}
+
+@keyframes roadAnimation {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-350px);
   }
 }
 

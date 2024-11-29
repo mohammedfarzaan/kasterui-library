@@ -1,69 +1,81 @@
 
-/* From Uiverse.io by satyamchaudharydev - Tags: button */
-button {
-  padding: 0;
-  margin: 0;
+/* From Uiverse.io by AkashKobal - Tags: button */
+.buttonDownload {
+  display: inline-block;
+  position: relative;
+  padding: 10px 25px;
+  background-color: #4CC713;
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 0.9em;
+  text-align: center;
+  text-indent: 15px;
   border: none;
-  background: none;
+  border-radius: 2em;
+  font-weight: bold;
 }
 
-button {
-  --primary-color: #111;
-  --hovered-color: #c84747;
-  position: relative;
-  display: flex;
-  font-weight: 600;
-  font-size: 20px;
-  gap: 0.5rem;
-  align-items: center;
+.buttonDownload:hover {
+  background-color: #1a60a2;
+  color: white;
 }
 
-button p {
-  margin: 0;
-  position: relative;
-  font-size: 20px;
-  color: var(--primary-color)
-}
-
-button::after {
+.buttonDownload:before, .buttonDownload:after {
+  content: ' ';
+  display: block;
   position: absolute;
-  content: "";
-  width: 0;
-  left: 0;
-  bottom: -7px;
-  background: var(--hovered-color);
+  left: 15px;
+  top: 52%;
+}
+
+.buttonDownload:before {
+  width: 10px;
   height: 2px;
-  transition: 0.3s ease-out;
+  border-style: solid;
+  border-width: 0 2px 2px;
 }
 
-button p::before {
-  position: absolute;
-/*   box-sizing: border-box; */
-  content: "Subscribe";
-  width: 0%;
-  inset: 0;
-  color: var(--hovered-color);
-  overflow: hidden;
-  transition: 0.3s ease-out;
+.buttonDownload:after {
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  margin-top: -7px;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: transparent;
+  border-top-color: inherit;
+  animation: downloadArrow 1s linear infinite;
+  animation-play-state: paused;
 }
 
-button:hover::after {
-  width: 100%;
+.buttonDownload:hover:before {
+  border-color: #bdd3ef;
 }
 
-button:hover p::before {
-  width: 100%;
+.buttonDownload:hover:after {
+  border-top-color: #eff1f7;
+  animation-play-state: running;
 }
 
-button:hover svg {
-  transform: translateX(4px);
-  color: var(--hovered-color)
+@keyframes downloadArrow {
+  0% {
+    margin-top: -7px;
+    opacity: 1;
+  }
+
+  0.001% {
+    margin-top: -15px;
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 0.4;
+  }
 }
 
-button svg {
-  color: var(--primary-color);
-  transition: 0.2s;
-  position: relative;
-  width: 15px;
-  transition-delay: 0.2s;
-}

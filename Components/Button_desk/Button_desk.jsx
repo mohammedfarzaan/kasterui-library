@@ -3,10 +3,7 @@ import styles from "./Button_desk.module.css";
 
 const Button_desk = () => (
   <div>
-    <button className={styles["full-rounded"]}>
-      <span>Hover me</span>
-      <div className={styles["border"] + styles["full-rounded"]}></div>
-    </button>
+    <button className={styles["btn"]}>Button</button>
   </div>
 );
 
@@ -21,9 +18,9 @@ export default Button_desk;
 
         const Button_desk = () => (
          <div>
-          <button className="full-rounded">
-<span>Hover me</span>
-<div className="border full-rounded"></div></button>
+          <button className="btn">
+  Button
+</button>
         </div>
         );
 

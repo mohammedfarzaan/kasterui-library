@@ -3,7 +3,7 @@ import styles from "./Button_thrown.module.css";
 
 const Button_thrown = () => (
   <div>
-    <button className={styles["cyberpunk-button"]}>Click me</button>
+    <button className={styles["button"]}></button>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Button_thrown;
 
         const Button_thrown = () => (
          <div>
-          <button className="cyberpunk-button">Click me</button>
+          <button className="button"></button>
         </div>
         );
 

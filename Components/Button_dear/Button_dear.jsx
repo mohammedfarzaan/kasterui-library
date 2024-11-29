@@ -3,7 +3,10 @@ import styles from "./Button_dear.module.css";
 
 const Button_dear = () => (
   <div>
-    <button>Hover Me</button>
+    <button>
+      <span>Button</span>
+      <i></i>
+    </button>
   </div>
 );
 
@@ -19,7 +22,7 @@ export default Button_dear;
         const Button_dear = () => (
          <div>
           <button>
-  Hover Me
+    <span>Button</span><i></i>
 </button>
         </div>
         );

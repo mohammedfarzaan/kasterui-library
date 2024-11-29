@@ -3,7 +3,10 @@ import styles from "./Button_will.module.css";
 
 const Button_will = () => (
   <div>
-    <button> Hexagonal Button</button>
+    <button className={styles["bt"]} id="bt">
+      <span className={styles["msg"]} id="msg"></span>
+      SEND
+    </button>
   </div>
 );
 
@@ -18,7 +21,9 @@ export default Button_will;
 
         const Button_will = () => (
          <div>
-          <button> Hexagonal Button
+          <button className="bt" id="bt">
+    <span className="msg" id="msg"></span>
+    SEND
 </button>
         </div>
         );

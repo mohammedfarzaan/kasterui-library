@@ -3,9 +3,7 @@ import styles from "./Button_mainly.module.css";
 
 const Button_mainly = () => (
   <div>
-    <button className={styles["button"]}>
-      <b>Button</b>
-    </button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -21,9 +19,7 @@ export default Button_mainly;
         const Button_mainly = () => (
          <div>
           <button className="button">
-  <b>
   Button
-  </b>
 </button>
         </div>
         );

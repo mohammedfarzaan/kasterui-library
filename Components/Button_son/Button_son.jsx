@@ -3,7 +3,7 @@ import styles from "./Button_son.module.css";
 
 const Button_son = () => (
   <div>
-    <button className={styles["btn"]}> Button</button>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -18,7 +18,8 @@ export default Button_son;
 
         const Button_son = () => (
          <div>
-          <button className="btn"> Button
+          <button className="button">
+  Button
 </button>
         </div>
         );

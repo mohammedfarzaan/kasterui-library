@@ -3,10 +3,7 @@ import styles from "./Button_flat.module.css";
 
 const Button_flat = () => (
   <div>
-    <button className={styles["button"]}>
-      <span className={styles["liquid"]}></span>
-      <span className={styles["btn-txt"]}>Click Me</span>
-    </button>
+    <button className={styles["button"]}> Button</button>
   </div>
 );
 
@@ -21,9 +18,7 @@ export default Button_flat;
 
         const Button_flat = () => (
          <div>
-          <button className="button">
-  <span className="liquid"></span>  
-  <span className="btn-txt">Click Me</span>
+          <button className="button"> Button
 </button>
         </div>
         );

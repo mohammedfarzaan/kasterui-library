@@ -3,11 +3,12 @@ import styles from "./Loader_pour.module.css";
 
 const Loader_pour = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["book"]}>
-        <div className={styles["page"]}></div>
-        <div className={styles["page"] + styles["page2"]}></div>
-      </div>
+    <div className={styles["loaderRectangle"]}>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </div>
 );
@@ -23,11 +24,12 @@ export default Loader_pour;
 
         const Loader_pour = () => (
          <div>
-          <div className="loader">
-  <div className="book">
-    <div className="page"></div>
-    <div className="page page2"></div>
-  </div>
+          <div className="loaderRectangle">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
 </div>
         </div>
         );

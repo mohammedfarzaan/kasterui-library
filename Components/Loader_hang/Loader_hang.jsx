@@ -3,7 +3,28 @@ import styles from "./Loader_hang.module.css";
 
 const Loader_hang = () => (
   <div>
-    <div className={styles["custom-loader"]}></div>
+    <div className={styles["container"]}>
+      <div className={styles["content"]}>
+        <div className={styles["content__container"]}>
+          <p className={styles["content__container__text"]}>Hello</p>
+
+          <ul className={styles["content__container__list"]}>
+            <li className={styles["content__container__list__item"]}>
+              world !
+            </li>
+            <li className={styles["content__container__list__item"]}>
+              coder !
+            </li>
+            <li className={styles["content__container__list__item"]}>
+              users !
+            </li>
+            <li className={styles["content__container__list__item"]}>
+              uiverse
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 );
 
@@ -18,7 +39,22 @@ export default Loader_hang;
 
         const Loader_hang = () => (
          <div>
-          <div className="custom-loader"></div>
+          <div className="container">
+  <div className="content">
+    <div className="content__container">
+      <p className="content__container__text">
+        Hello
+      </p>
+    
+      <ul className="content__container__list">
+        <li className="content__container__list__item">world !</li>
+        <li className="content__container__list__item">coder !</li>
+        <li className="content__container__list__item">users !</li>
+        <li className="content__container__list__item">uiverse</li>
+      </ul>
+    </div>
+  </div>
+</div>
         </div>
         );
 

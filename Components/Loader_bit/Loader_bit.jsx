@@ -3,7 +3,13 @@ import styles from "./Loader_bit.module.css";
 
 const Loader_bit = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["loader"] + styles["l1"]}></div>
+    <div className={styles["loader"] + styles["l2"]}></div>
+    <div className={styles["loader"] + styles["l3"]}></div>
+    <div className={styles["loader"] + styles["l4"]}></div>
+    <div className={styles["loader"] + styles["l5"]}></div>
+    <div className={styles["loader"] + styles["l6"]}></div>
+    <div className={styles["loader"] + styles["l7"]}></div>
   </div>
 );
 
@@ -18,7 +24,13 @@ export default Loader_bit;
 
         const Loader_bit = () => (
          <div>
-          <div className="loader"></div>
+          <div className="loader l1"></div>
+<div className="loader l2"></div>
+<div className="loader l3"></div>
+<div className="loader l4"></div>
+<div className="loader l5"></div>
+<div className="loader l6"></div>
+<div className="loader l7"></div>
         </div>
         );
 

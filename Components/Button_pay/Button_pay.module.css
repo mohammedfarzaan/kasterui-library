@@ -1,50 +1,30 @@
 
-/* From Uiverse.io by fanishah - Tags: icon, button */
-.button {
-  font-family: inherit;
-  background: #2CA0D9;
-  color: white;
-  padding: 0.35em 0;
-  font-size: 17px;
-  border: none;
-  border-radius: 0.7em;
-  letter-spacing: 0.08em;
-  position: relative;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  overflow: hidden;
-  height: 2.5em;
-  padding-left: 2.8em;
-  padding-right: 0.92em;
+/* From Uiverse.io by satyamchaudharydev - Tags: button */
+/* this button is inspired from this -- https://www.newline.co/pricing */
+button {
+  --width: 150px;
+  --timing: 2s;
+  border: 0;
+  width: var(--width);
+  padding-block: 1em;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  background: rgb(64, 192, 87);
+  transition: all 0.2s;
+  border-radius: 3px;
 }
 
-.button .icon {
-  background: #fff;
-  height: 2em;
-  width: 2em;
-  border-radius: 2em;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 0.4em;
-  transition: all 0.5s;
+button:hover {
+  background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+  animation: var(--timing) linear dance6123 infinite;
+  transform: scale(1.1) translateY(-1px);
 }
 
-.icon svg {
-  margin-left: 0.1em;
-  transition: all 0.5s;
-  color: #2CA0D9;
-  width: 1.2rem;
-  height: 1.2rem;
+@keyframes dance6123 {
+  to {
+    background-position: var(--width);
+  }
 }
 
-.button:hover .icon svg {
-  transform: rotate(360deg);
-}
 
-.button:hover .icon {
-  width: calc(100% - 0.85rem);
-  border-radius: 0.5em;
-}

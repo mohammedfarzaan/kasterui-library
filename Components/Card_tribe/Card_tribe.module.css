@@ -1,0 +1,26 @@
+
+/* From Uiverse.io by MadelineMaid  - Tags: simple, animation, twitter, instagram, card, Discord */
+@keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.image {
+  animation: spin 20s infinite linear;
+}
+icons {
+  fill: white;
+}
+
+.heading {
+  color: white;
+}
+
+.card svg {
+  color: white;
+}
+

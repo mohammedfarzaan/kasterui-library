@@ -1,68 +1,37 @@
 
-/* From Uiverse.io by jeremyssocial  - Tags: 3d, hover, loader, cube, click, hover effect, click effect, 3d loader */
-.loader-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10em;
-  perspective: 800px;
-}
-
-.loader-cube {
+/* From Uiverse.io by elijahgummer  - Tags: loader */
+.loader {
+  width: 35px;
+  height: 80px;
   position: relative;
-  width: 5em;
-  height: 5em;
-  transform-style: preserve-3d;
-  animation: rotateCube 2s infinite linear;
 }
-
-.loader-side {
+.loader:after {
+  content: "";
   position: absolute;
-  width: 5em;
-  height: 5em;
-  background: #333; /* Custom property for theming */
-  border: 0.1em solid #fff; /* Relative sizing for border */
+  inset: 0;
+  padding: 3px 5px;
+  border-top: 1px solid #bbb6aa;
+  border-bottom: 4px solid #bbb6aa;
+  background:
+    linear-gradient(#77d4d4 0 0) bottom no-repeat content-box,
+    #e4e0d7;
+  mix-blend-mode: darken;
+  animation: drink 1.5s infinite linear;
 }
-
-.front {
-  transform: translateZ(2.5em);
+.loader:before {
+  content: "";
+  position: absolute;
+  inset: -18px calc(50% - 2px) 8px;
+  background: #eb6b3e;
+  transform-origin: bottom;
+  transform: rotate(8deg);
 }
-.back {
-  transform: rotateY(180deg) translateZ(2.5em);
-}
-.right {
-  transform: rotateY(90deg) translateZ(2.5em);
-}
-.left {
-  transform: rotateY(-90deg) translateZ(2.5em);
-}
-.top {
-  transform: rotateX(90deg) translateZ(2.5em);
-}
-.bottom {
-  transform: rotateX(-90deg) translateZ(2.5em);
-}
-
-/* Keyframes for continuous rotation */
-@keyframes rotateCube {
-  from {
-    transform: rotateX(0deg) rotateY(0deg);
+@keyframes drink {
+  0% {
+    background-size: 100% 100%;
   }
-  to {
-    transform: rotateX(360deg) rotateY(360deg);
+  100% {
+    background-size: 100% 5%;
   }
-}
-
-/* Interactive states using pseudo-classes */
-.loader-side:hover {
-  background: #555; /* Darker shade on hover */
-}
-
-.loader-side:focus {
-  border: 0.1em solid #999; /* Different border color on focus */
-}
-
-.loader-side:active {
-  opacity: 0.8; /* Slight transparency on active */
 }
 

@@ -3,7 +3,7 @@ import styles from "./Button_went.module.css";
 
 const Button_went = () => (
   <div>
-    <button> Grab it!</button>
+    <button className={styles["beautiful-button"]}>Click me!</button>
   </div>
 );
 
@@ -18,7 +18,8 @@ export default Button_went;
 
         const Button_went = () => (
          <div>
-          <button> Grab it!
+          <button className="beautiful-button">
+  Click me!
 </button>
         </div>
         );

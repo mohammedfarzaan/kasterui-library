@@ -4,8 +4,13 @@ import styles from "./Loader_zebra.module.css";
 const Loader_zebra = () => (
   <div>
     <div className={styles["loader"]}>
-      <span className={styles["loader-text"]}>loading</span>
-      <span className={styles["load"]}></span>
+      <div className={styles["loader-square"]}></div>
+      <div className={styles["loader-square"]}></div>
+      <div className={styles["loader-square"]}></div>
+      <div className={styles["loader-square"]}></div>
+      <div className={styles["loader-square"]}></div>
+      <div className={styles["loader-square"]}></div>
+      <div className={styles["loader-square"]}></div>
     </div>
   </div>
 );
@@ -22,9 +27,14 @@ export default Loader_zebra;
         const Loader_zebra = () => (
          <div>
           <div className="loader">
-    <span className="loader-text">loading</span>
-      <span className="load"></span>
-  </div>
+<div className="loader-square"></div>
+<div className="loader-square"></div>
+<div className="loader-square"></div>
+<div className="loader-square"></div>
+<div className="loader-square"></div>
+<div className="loader-square"></div>
+<div className="loader-square"></div>
+</div>
         </div>
         );
 

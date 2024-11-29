@@ -3,12 +3,14 @@ import styles from "./Input_aboard.module.css";
 
 const Input_aboard = () => (
   <div>
-    <input
-      type="text"
-      name="text"
-      placeholder="Search 'UIverse'"
-      className={styles["input"]}
-    />
+    <div className={styles["input-wrapper"]}>
+      <input
+        className={styles["input-box"]}
+        type="text"
+        placeholder="Enter your text"
+      />
+      <span className={styles["underline"]}></span>
+    </div>
   </div>
 );
 
@@ -23,7 +25,10 @@ export default Input_aboard;
 
         const Input_aboard = () => (
          <div>
-          <input type="text" name="text" placeholder="Search 'UIverse'" className="input" />
+          <div className="input-wrapper">
+  <input className="input-box" type="text" placeholder="Enter your text" />
+  <span className="underline"></span>
+</div>
         </div>
         );
 

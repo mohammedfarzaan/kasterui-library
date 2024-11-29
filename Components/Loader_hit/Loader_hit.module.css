@@ -1,26 +1,42 @@
 
-/* From Uiverse.io by xXJollyHAKERXx - Tags: loader */
+/* From Uiverse.io by satyamchaudharydev - Tags: loader */
 .spinner {
-  background-image: linear-gradient(rgb(186, 66, 255) 35%,rgb(0, 225, 255));
-  width: 100px;
-  height: 100px;
-  animation: spinning82341 1.7s linear infinite;
-  text-align: center;
-  border-radius: 50px;
-  filter: blur(1px);
-  box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+ --gap: 5px;
+ --clr: #d62d20;
+ --height: 23px;
+ width: 100px;
+ height: 100px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: var(--gap);
 }
 
-.spinner1 {
-  background-color: rgb(36, 36, 36);
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  filter: blur(10px);
+.spinner span {
+ background: var(--clr);
+ width: 6px;
+ height: var(--height);
+ animation: grow 1s ease-in-out infinite;
 }
 
-@keyframes spinning82341 {
-  to {
-    transform: rotate(360deg);
-  }
+.spinner span:nth-child(2) {
+ animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.spinner span:nth-child(3) {
+ animation: grow 1s ease-in-out 0.3s infinite;
+}
+
+.spinner span:nth-child(4) {
+ animation: grow 1s ease-in-out 0.475s infinite;
+}
+
+@keyframes grow {
+ 0%,100% {
+  transform: scaleY(1);
+ }
+
+ 50% {
+  transform: scaleY(1.8);
+ }
 }

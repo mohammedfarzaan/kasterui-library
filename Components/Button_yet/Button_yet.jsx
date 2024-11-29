@@ -3,7 +3,9 @@ import styles from "./Button_yet.module.css";
 
 const Button_yet = () => (
   <div>
-    <button> Button</button>
+    <button className={styles["button"]}>
+      <b>Button</b>
+    </button>
   </div>
 );
 
@@ -18,7 +20,10 @@ export default Button_yet;
 
         const Button_yet = () => (
          <div>
-          <button> Button
+          <button className="button">
+  <b>
+  Button
+  </b>
 </button>
         </div>
         );

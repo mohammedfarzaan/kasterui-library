@@ -3,13 +3,12 @@ import styles from "./Loader_summer.module.css";
 
 const Loader_summer = () => (
   <div>
-    <div className={styles["spinner"]}>
-      <div className={styles["outer"]}>
-        <div className={styles["inner"] + styles["tl"]}></div>
-        <div className={styles["inner"] + styles["tr"]}></div>
-        <div className={styles["inner"] + styles["br"]}></div>
-        <div className={styles["inner"] + styles["bl"]}></div>
-      </div>
+    <div className={styles["loader-3"]}>
+      <div className={styles["circle"]}></div>
+      <div className={styles["circle"]}></div>
+      <div className={styles["circle"]}></div>
+      <div className={styles["circle"]}></div>
+      <div className={styles["circle"]}></div>
     </div>
   </div>
 );
@@ -25,13 +24,12 @@ export default Loader_summer;
 
         const Loader_summer = () => (
          <div>
-          <div className="spinner">
-  <div className="outer">
-    <div className="inner tl"></div>
-    <div className="inner tr"></div>
-    <div className="inner br"></div>
-    <div className="inner bl"></div>
-  </div>
+          <div className="loader-3">
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
 </div>
         </div>
         );

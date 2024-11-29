@@ -3,49 +3,12 @@ import styles from "./Button_break.module.css";
 
 const Button_break = () => (
   <div>
-    <div className={styles["main"]}>
-      <div className={styles["buttons"]}>
-        <div className={styles["button_pair"]}>
-          <div className={styles["btn"]}>
-            <button className={styles["button1"]}>
-              <svg
-                viewBox="0 -960 960 960"
-                className="svg1"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M200-440v-80h560v80H200Z"></path>
-              </svg>
-            </button>
-          </div>
-          <div className={styles["btn"]}>
-            <button className={styles["button2"]}>
-              <svg
-                viewBox="0 -960 960 960"
-                xmlns="http://www.w3.org/2000/svg"
-                className="svg2"
-              >
-                <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div className={styles["button_pair"]}>
-          <div className={styles["btn"]}>
-            <button className={styles["button3"]}>
-              <span className={styles["button_text"]}>RECORD</span>
-            </button>
-          </div>
-          <div className={styles["btn"]}>
-            <button className={styles["button4"]}>
-              <span className={styles["button_text"]}>PLAY</span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div className={styles["text"]}>
-        Teenage Engineering [EP-133 K.O. II] - Buttons
-      </div>
-    </div>
+    <button className={styles["Btn"]}>
+      <svg className={styles["svgIcon"]} viewBox="0 0 512 512" height="1.2em">
+        <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path>
+      </svg>
+      Messages
+    </button>
   </div>
 );
 
@@ -60,49 +23,10 @@ export default Button_break;
 
         const Button_break = () => (
          <div>
-          <div className="main">
-  <div className="buttons">
-    <div className="button_pair">
-      <div className="btn">
-        <button className="button1">
-          <svg
-            viewBox="0 -960 960 960"
-            className="svg1"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M200-440v-80h560v80H200Z"></path>
-          </svg>
-        </button>
-      </div>
-      <div className="btn">
-        <button className="button2">
-          <svg
-            viewBox="0 -960 960 960"
-            xmlns="http://www.w3.org/2000/svg"
-            className="svg2"
-          >
-            <path
-              d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"
-            ></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-    <div className="button_pair">
-      <div className="btn">
-        <button className="button3">
-          <span className="button_text">RECORD</span>
-        </button>
-      </div>
-      <div className="btn">
-        <button className="button4">
-          <span className="button_text">PLAY</span>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div className="text">Teenage Engineering [EP-133 K.O. II] - Buttons</div>
-</div>
+          <button className="Btn">
+  <svg className="svgIcon" viewBox="0 0 512 512" height="1.2em"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path></svg>
+  Messages
+</button>
         </div>
         );
 

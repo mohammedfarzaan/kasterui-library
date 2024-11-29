@@ -1,33 +1,84 @@
 
-/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */
-/* HTML: <div class="loader"></div> */
-.loader {
-  width: 60px;
-  height: 30px;
-  display: grid;
-  --c: #0000 calc(100% - 5px),#000 calc(100% - 4px) 96%,#0000;
-  background: radial-gradient(farthest-side at bottom,var(--c)) 0 0,
-    radial-gradient(farthest-side at top   ,var(--c)) 100% 100%;
-  background-size: calc(50% + 2px) 50%;
-  background-repeat: no-repeat;
-  animation: l14 1.5s infinite linear;
+/* From Uiverse.io by Ratinax - Tags: loader, sun, rotate */
+.sun {
+  position: relative;
+  animation: rotate 4s linear infinite;
+  --color: yellow;
+  --scale: 0.4;
 }
 
-.loader:before,
-.loader:after {
-  content: "";
-  grid-area: 1/1;
-  background: inherit;
-  animation: inherit;
-  animation-duration: 2s;
+.center {
+  height: calc(var(--scale) * 10em);
+  width: calc(var(--scale) * 10em);
+  transition: background-color 2s linear, box-shadow 2s linear;
+  background-color: var(--color);
+  border-radius: 50%;
+  box-shadow: 0 0 calc(var(--scale) * 3em) var(--color);
 }
 
-.loader:after {
-  --s: -1;
+.ray {
+  position: absolute;
+  height: calc(var(--scale) * 3em);
+  width: calc(var(--scale) * 0.5em);
+  transition: background-color 2s ease-in-out, box-shadow 2s ease-in-out;
+  box-shadow: 0 0 calc(var(--scale) * 1em) var(--color);
+  background-color: var(--color);
 }
 
-@keyframes l14 {
+.r-1 {
+  margin-left: calc(var(--scale) * 4.75em);
+  margin-top: calc(var(--scale) * 1em);
+}
+
+.r-2 {
+  margin-left: calc(var(--scale) * 12.25em);
+  margin-top: calc(var(--scale) * -6.25em);
+  transform: rotate(90deg);
+}
+
+.r-3 {
+  margin-left: calc(var(--scale) * 4.75em);
+  margin-top: calc(var(--scale) * -14em);
+}
+
+.r-4 {
+  margin-left: calc(var(--scale) * -2.75em);
+  margin-top: calc(var(--scale) * -6.25em);
+  transform: rotate(90deg);
+}
+
+.r-5 {
+  margin-left: calc(var(--scale) * -0.5em);
+  margin-top: calc(var(--scale) * -1em);
+  transform: rotate(45deg);
+}
+
+.r-6 {
+  margin-left: calc(var(--scale) * 9.75em);
+  margin-top: calc(var(--scale) * -1em);
+  transform: rotate(-45deg);
+}
+
+.r-7 {
+  margin-left: calc(var(--scale) * 10.25em);
+  margin-top: calc(var(--scale) * -11.75em);
+  transform: rotate(45deg);
+}
+
+.r-8 {
+  margin-left: calc(var(--scale) * -0.5em);
+  margin-top: calc(var(--scale) * -11.75em);
+  transform: rotate(-45deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    --color: yellow;
+  }
+
   100% {
-    transform: rotate(calc(var(--s,1)*1turn))
+    transform: rotate(360deg);
+    --color: orange;
   }
 }

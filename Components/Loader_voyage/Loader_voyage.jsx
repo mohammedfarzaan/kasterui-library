@@ -3,22 +3,7 @@ import styles from "./Loader_voyage.module.css";
 
 const Loader_voyage = () => (
   <div>
-    <div className={styles["loadingio-spinner-spinner-977el9wwy2v"]}>
-      <div className={styles["ldio-4j5ay0xf86g"]}>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
+    <div className={styles["ping"]}></div>
   </div>
 );
 
@@ -33,9 +18,7 @@ export default Loader_voyage;
 
         const Loader_voyage = () => (
          <div>
-          <div className="loadingio-spinner-spinner-977el9wwy2v"><div className="ldio-4j5ay0xf86g">
-<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-</div></div>
+          <div className="ping"></div>
         </div>
         );
 

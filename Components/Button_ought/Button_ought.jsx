@@ -1,29 +1,36 @@
 import React from "react";
+import styles from "./Button_ought.module.css";
 
 const Button_ought = () => (
   <div>
-    <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        fill="none"
-        className="w-5 h-5 mr-2 -ml-1"
-      >
-        <path
-          d="M12 4v12m8-8l-8 8-8-8"
-          strokeWidth="2"
-          strokeLinejoin="round"
-          strokeLinecap="round"
-        ></path>
-      </svg>
-      Download
+    <button className={styles["btn"]}>
+      Button
+      <span className={styles["icon-right"]}></span>
+      <span className={styles["icon-right"] + styles["after"]}></span>
     </button>
   </div>
 );
 
 export default Button_ought;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_ought = () => (
+         <div>
+          <button className="btn">Button 
+  <span className="icon-right"></span>
+  <span className="icon-right after"></span>
+</button>
+        </div>
+        );
+
+        export default Button_ought;
+        
+        
+         */
 }

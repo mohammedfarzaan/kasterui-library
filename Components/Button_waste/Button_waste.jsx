@@ -3,9 +3,7 @@ import styles from "./Button_waste.module.css";
 
 const Button_waste = () => (
   <div>
-    <button className={styles["btn-5"]}>
-      <span>Button</span>
-    </button>
+    <button className={styles["complex-animated-button"]}>Click me</button>
   </div>
 );
 
@@ -20,7 +18,7 @@ export default Button_waste;
 
         const Button_waste = () => (
          <div>
-          <button className="btn-5"><span>Button</span></button>
+          <button className="complex-animated-button">Click me</button>
         </div>
         );
 

@@ -3,7 +3,7 @@ import styles from "./Button_pie.module.css";
 
 const Button_pie = () => (
   <div>
-    <button className={styles["shadow__btn"]}>uiverse</button>
+    <button className={styles["animated-button"]}>hover me</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_pie;
 
         const Button_pie = () => (
          <div>
-          <button className="shadow__btn">
-    uiverse
-</button>
+          <button className="animated-button">hover me</button>
         </div>
         );
 

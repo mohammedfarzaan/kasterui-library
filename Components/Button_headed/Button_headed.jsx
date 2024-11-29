@@ -3,12 +3,8 @@ import styles from "./Button_headed.module.css";
 
 const Button_headed = () => (
   <div>
-    <button className={styles["btn-1"]}>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      Button
+    <button>
+      <span>Hover me</span>
     </button>
   </div>
 );
@@ -24,13 +20,9 @@ export default Button_headed;
 
         const Button_headed = () => (
          <div>
-          <button className="btn-1">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      Button
-    </button>
+          <button>
+    <span>Hover me</span>
+</button>
         </div>
         );
 

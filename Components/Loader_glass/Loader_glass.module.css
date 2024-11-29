@@ -1,82 +1,24 @@
 
-/* From Uiverse.io by Shoh2008 - Tags: loader */
-.loader {
-  width: 96px;
-  height: 48px;
-  display: inline-block;
-  position: relative;
-  background: #5e5e5e;
-  border-radius: 48px 48px 0 0;
-  box-sizing: border-box;
-  overflow: hidden;
+/* From Uiverse.io by elijahgummer  - Tags: simple, animation, green, loader, smooth, modern, animated, css */
+.container {
+  width: 50px;
+  height: 50px;
 }
 
-.loader::after {
-  content: '';
-  box-sizing: border-box;
-  position: absolute;
-  width: 24px;
-  height: 12px;
-  border-radius: 24px 24px 0 0;
-  background: yellow;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
+.container .boxes {
+  width: 50px;
+  height: 50px;
+  fill: none;
+  stroke-width: 50px;
+  stroke: #43cb85;
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50%;
+  animation: animate 2s linear infinite;
 }
 
-.loader::before {
-  content: '';
-  position: absolute;
-  width: 4px;
-  height: 32px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 0;
-  background: yellow;
-  transform-origin: 50% 100%;
-  box-sizing: border-box;
-  animation: animloader 2s linear infinite alternate;
-}
-
-@keyframes animloader {
-  0% {
-    transform: rotate(-70deg);
-  }
-
-  10% {
-    transform: rotate(-40deg);
-  }
-
-  20%, 45%, 35% {
-    transform: rotate(-10deg);
-  }
-
-  40%, 30% {
-    transform: rotate(-30deg);
-  }
-
-  50%, 60% {
-    transform: rotate(20deg);
-  }
-
-  55%, 65%, 75% {
-    transform: rotate(40deg);
-  }
-
-  70% {
-    transform: rotate(45deg);
-  }
-
-  85%, 90% {
-    transform: rotate(50deg);
-  }
-
-  95% {
-    transform: rotate(75deg);
-  }
-
-  100%, 93% {
-    transform: rotate(70deg);
+@keyframes animate {
+  to {
+    stroke-dashoffset: 250%;
   }
 }
+

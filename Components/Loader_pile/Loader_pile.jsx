@@ -3,102 +3,22 @@ import styles from "./Loader_pile.module.css";
 
 const Loader_pile = () => (
   <div>
-    <div>
+    <div className={styles["spinner"]}>
       <svg
-        className="loader"
-        viewBox="0 0 128 128"
-        width="128px"
-        height="128px"
+        viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
+        width="200"
+        height="200"
+        fill="none"
       >
-        <defs>
-          <linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#000"></stop>
-            <stop offset="40%" stop-color="#fff"></stop>
-            <stop offset="100%" stop-color="#fff"></stop>
-          </linearGradient>
-          <linearGradient id="grad2" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#000"></stop>
-            <stop offset="60%" stop-color="#000"></stop>
-            <stop offset="100%" stop-color="#fff"></stop>
-          </linearGradient>
-          <mask id="mask1">
-            <rect
-              x="0"
-              y="0"
-              width="128"
-              height="128"
-              fill="url(#grad1)"
-            ></rect>
-          </mask>
-          <mask id="mask2">
-            <rect
-              x="0"
-              y="0"
-              width="128"
-              height="128"
-              fill="url(#grad2)"
-            ></rect>
-          </mask>
-        </defs>
-        <g fill="none" strokeLinecap="round" strokeWidth="16">
-          <circle
-            className="loader_ring"
-            r="56"
-            cx="64"
-            cy="64"
-            stroke="#ddd"
-          ></circle>
-          <g stroke="hsl(223,90%,50%)">
-            <path
-              className="loader_worm1"
-              d="M120,64c0,30.928-25.072,56-56,56S8,94.928,8,64"
-              stroke="hsl(343,90%,50%)"
-              stroke-dasharray="43.98 307.87"
-            ></path>
-            <g transform="translate(42,42)">
-              <g className="loader_worm2" transform="translate(-42,0)">
-                <path
-                  className="loader_worm2-1"
-                  d="M8,22c0-7.732,6.268-14,14-14s14,6.268,14,14"
-                  stroke-dasharray="43.98 175.92"
-                ></path>
-              </g>
-            </g>
-          </g>
-          <g stroke="hsl(283,90%,50%)" mask="url(#mask1)">
-            <path
-              className="loader_worm1"
-              d="M120,64c0,30.928-25.072,56-56,56S8,94.928,8,64"
-              stroke-dasharray="43.98 307.87"
-            ></path>
-            <g transform="translate(42,42)">
-              <g className="loader_worm2" transform="translate(-42,0)">
-                <path
-                  className="loader_worm2-1"
-                  d="M8,22c0-7.732,6.268-14,14-14s14,6.268,14,14"
-                  stroke-dasharray="43.98 175.92"
-                ></path>
-              </g>
-            </g>
-          </g>
-          <g stroke="hsl(343,90%,50%)" mask="url(#mask2)">
-            <path
-              className="loader_worm1"
-              d="M120,64c0,30.928-25.072,56-56,56S8,94.928,8,64"
-              stroke-dasharray="43.98 307.87"
-            ></path>
-            <g transform="translate(42,42)">
-              <g className="loader_worm2" transform="translate(-42,0)">
-                <path
-                  className="loader_worm2-1"
-                  d="M8,22c0-7.732,6.268-14,14-14s14,6.268,14,14"
-                  stroke-dasharray="43.98 175.92"
-                ></path>
-              </g>
-            </g>
-          </g>
-        </g>
+        <path
+          stroke="#E91E63"
+          strokeWidth="1.5"
+          d="M9.743 10.25c3.213 1.96 5.017 4.676 7.248 4.676 2.588 0 2.791-4.8.518-5.668-3.107-1.187-5.178 3.719-8.284 5.03-1.415.677-3.41 1.014-4.09-1.14-.251-.797-.13-1.65.133-2.442v0c.425-1.278 2.132-1.66 3.35-1.081.304.144.668.346 1.125.625z"
+          stroke-dashoffset="100"
+          stroke-dasharray="100"
+          className={styles["path"]}
+        ></path>
       </svg>
     </div>
   </div>
@@ -115,55 +35,12 @@ export default Loader_pile;
 
         const Loader_pile = () => (
          <div>
-          <div>
-    <svg className="loader" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#000"></stop>
-          <stop offset="40%" stop-color="#fff"></stop>
-          <stop offset="100%" stop-color="#fff"></stop>
-        </linearGradient>
-        <linearGradient id="grad2" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#000"></stop>
-          <stop offset="60%" stop-color="#000"></stop>
-          <stop offset="100%" stop-color="#fff"></stop>
-        </linearGradient>
-        <mask id="mask1">
-          <rect x="0" y="0" width="128" height="128" fill="url(#grad1)"></rect>
-        </mask>
-        <mask id="mask2">
-          <rect x="0" y="0" width="128" height="128" fill="url(#grad2)"></rect>
-        </mask>
-      </defs>
-      <g fill="none" strokeLinecap="round" strokeWidth="16">
-        <circle className="loader_ring" r="56" cx="64" cy="64" stroke="#ddd"></circle>
-        <g stroke="hsl(223,90%,50%)">
-          <path className="loader_worm1" d="M120,64c0,30.928-25.072,56-56,56S8,94.928,8,64" stroke="hsl(343,90%,50%)" stroke-dasharray="43.98 307.87"></path>
-          <g transform="translate(42,42)">
-            <g className="loader_worm2" transform="translate(-42,0)">
-              <path className="loader_worm2-1" d="M8,22c0-7.732,6.268-14,14-14s14,6.268,14,14" stroke-dasharray="43.98 175.92"></path>
-            </g>
-          </g>
-        </g>
-        <g stroke="hsl(283,90%,50%)" mask="url(#mask1)">
-          <path className="loader_worm1" d="M120,64c0,30.928-25.072,56-56,56S8,94.928,8,64" stroke-dasharray="43.98 307.87"></path>
-          <g transform="translate(42,42)">
-            <g className="loader_worm2" transform="translate(-42,0)">
-              <path className="loader_worm2-1" d="M8,22c0-7.732,6.268-14,14-14s14,6.268,14,14" stroke-dasharray="43.98 175.92"></path>
-            </g>
-          </g>
-        </g>
-        <g stroke="hsl(343,90%,50%)" mask="url(#mask2)">
-          <path className="loader_worm1" d="M120,64c0,30.928-25.072,56-56,56S8,94.928,8,64" stroke-dasharray="43.98 307.87"></path>
-          <g transform="translate(42,42)">
-            <g className="loader_worm2" transform="translate(-42,0)">
-              <path className="loader_worm2-1" d="M8,22c0-7.732,6.268-14,14-14s14,6.268,14,14" stroke-dasharray="43.98 175.92"></path>
-            </g>
-          </g>
-        </g>
-      </g>
-    </svg>
-  </div>
+          <div className="spinner">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="none">
+    <path stroke="#E91E63" strokeWidth="1.5" d="M9.743 10.25c3.213 1.96 5.017 4.676 7.248 4.676 2.588 0 2.791-4.8.518-5.668-3.107-1.187-5.178 3.719-8.284 5.03-1.415.677-3.41 1.014-4.09-1.14-.251-.797-.13-1.65.133-2.442v0c.425-1.278 2.132-1.66 3.35-1.081.304.144.668.346 1.125.625z" stroke-dashoffset="100" stroke-dasharray="100" className="path">
+    </path>
+  </svg>
+</div>
         </div>
         );
 

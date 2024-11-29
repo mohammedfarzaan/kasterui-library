@@ -1,23 +1,52 @@
 
 /* From Uiverse.io by Shoh2008 - Tags: loader */
 .loader {
-  width: 45px;
-  height: 40px;
-  background: linear-gradient(#0000 calc(1*100%/6),#fff 0 calc(3*100%/6),#0000 0),
-            linear-gradient(#0000 calc(2*100%/6),#fff 0 calc(4*100%/6),#0000 0),
-            linear-gradient(#0000 calc(3*100%/6),#fff 0 calc(5*100%/6),#0000 0);
-  background-size: 10px 400%;
-  background-repeat: no-repeat;
-  animation: matrix 1s infinite linear;
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 15px auto;
+  position: relative;
+  color: #FFF;
+  box-sizing: border-box;
+  animation: rotation_19 1s linear infinite;
 }
 
-@keyframes matrix {
+.loader::after,
+.loader::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  background-color: #FFF;
+  border-radius: 50%;
+  animation: scale50 1s infinite ease-in-out;
+}
+
+.loader::before {
+  top: auto;
+  bottom: 0;
+  background-color: #FF3D00;
+  animation-delay: 0.5s;
+}
+
+@keyframes rotation_19 {
   0% {
-    background-position: 0% 100%, 50% 100%, 100% 100%
+    transform: rotate(0deg);
   }
 
   100% {
-    background-position: 0% 0%, 50% 0%, 100% 0%
+    transform: rotate(360deg);
   }
 }
-    
+
+@keyframes scale50 {
+  0%, 100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+} 

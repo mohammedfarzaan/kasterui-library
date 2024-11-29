@@ -3,7 +3,7 @@ import styles from "./Button_active.module.css";
 
 const Button_active = () => (
   <div>
-    <button>All products</button>
+    <button>Button</button>
   </div>
 );
 
@@ -19,7 +19,7 @@ export default Button_active;
         const Button_active = () => (
          <div>
           <button>
-    All products
+  Button
 </button>
         </div>
         );

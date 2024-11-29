@@ -1,95 +1,90 @@
 
-/* From Uiverse.io by Rkyz - Tags: animation, loader, animal */
-.loader {
-  height: 50px;
-  width: 20rem;
+/* From Uiverse.io by htwarriors108 - Tags: animation, 3d, loader, cube, rotate, animated, color, hover effect, css effect, rubik's cube */
+.cube {
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  animation: animate 4s linear infinite;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.cube:hover {
+  scale: 1.2;
+  animation: animate 3s linear infinite;
+}
+
+.cube__face {
+  position: absolute;
+  width: 100px;
+  height: 100px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.dot-two {
-  background-color: black;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  padding: 4px;
-  color: white;
+.faceBox {
+  border: calc(100px / 1000) solid rgba(0, 0, 0, 0.8);
+  width: calc(100px / 3);
+  height: calc(100px / 3);
+  opacity: 1;
 }
 
-.dot-one,
-.dot-three {
-  background-color: black;
-  height: 30px;
-  width: 20px;
-  border-radius: 50%;
-  text-align: center;
-  animation: flap-wings 1s infinite ease-in-out;
+#cube__face--front span {
+  background-color: #FF4949;
 }
 
-.dot-two {
-  position: relative;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background-color: black;
-  animation: flap-wings 1s infinite ease-in-out;
-  animation-delay: 0.1s;
+#cube__face--right span {
+  background-color: #13CE66;
 }
 
-.dot-two::before,
-.dot-two::after {
-  content: "";
-  position: absolute;
-  background-color: black;
+#cube__face--left span {
+  background-color: #2D8EFF;
 }
 
-.dot-two::before {
-  height: 20px;
-  width: 10px;
-  bottom: 20px;
-  left: 1px;
-  border-radius: 50% 50% 0 0;
-  transform: rotate(-20deg);
+#cube__face--top span {
+  background-color: #FFCC3D;
 }
 
-.dot-two::after {
-  height: 20px;
-  width: 10px;
-  bottom: 20px;
-  left: 19px;
-  transform: rotate(20deg);
-  border-radius: 50% 50% 0 0;
+#cube__face--bottom span {
+  background-color: #fefefe;
 }
 
-.dot-one::before,
-.dot-one::after,
-.dot-three::before,
-.dot-three::after {
-  content: "";
-  position: absolute;
-  background-color: white;
+#cube__face--back span {
+  background-color: #f1f03e;
 }
 
-.dot-one::before,
-.dot-three::before {
-  height: 30px;
-  width: 20px;
-  top: 10px;
-  left: 0;
-  background-color: #e8e8e8;
- /*chnage this if u need dark mode to #212121 if need light mode #e8e8e8*/
-  border-radius: 50% 50% 0 0;
+#cube__face--front {
+  transform: rotateY(0deg) translateZ(calc(100px / 2));
 }
 
-@keyframes flap-wings {
-  0%,
-  100% {
-    transform: translateY(0);
+#cube__face--right {
+  transform: rotateY(90deg) translateZ(calc(100px / 2));
+}
+
+#cube__face--back {
+  transform: rotateY(180deg) translateZ(calc(100px / 2));
+}
+
+#cube__face--left {
+  transform: rotateY(-90deg) translateZ(calc(100px / 2));
+}
+
+#cube__face--top {
+  transform: rotateX(90deg) translateZ(calc(100px / 2));
+}
+
+#cube__face--bottom {
+  transform: rotateX(-90deg) translateZ(calc(100px / 2));
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg) rotateZ(0deg);
   }
 
-  50% {
-    transform: translateY(-20px);
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg) rotateZ(360deg);
   }
 }

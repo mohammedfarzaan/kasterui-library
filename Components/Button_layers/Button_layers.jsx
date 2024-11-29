@@ -3,48 +3,10 @@ import styles from "./Button_layers.module.css";
 
 const Button_layers = () => (
   <div>
-    <button className={styles["btn"]}>
-      <div className={styles["wrapper"]}>
-        <p className={styles["text"]}>Flowers </p>
-
-        <div className={styles["flower"] + styles["flower1"]}>
-          <div className={styles["petal"] + styles["one"]}></div>
-          <div className={styles["petal"] + styles["two"]}></div>
-          <div className={styles["petal"] + styles["three"]}></div>
-          <div className={styles["petal"] + styles["four"]}></div>
-        </div>
-        <div className={styles["flower"] + styles["flower2"]}>
-          <div className={styles["petal"] + styles["one"]}></div>
-          <div className={styles["petal"] + styles["two"]}></div>
-          <div className={styles["petal"] + styles["three"]}></div>
-          <div className={styles["petal"] + styles["four"]}></div>
-        </div>
-        <div className={styles["flower"] + styles["flower3"]}>
-          <div className={styles["petal"] + styles["one"]}></div>
-          <div className={styles["petal"] + styles["two"]}></div>
-          <div className={styles["petal"] + styles["three"]}></div>
-          <div className={styles["petal"] + styles["four"]}></div>
-        </div>
-        <div className={styles["flower"] + styles["flower4"]}>
-          <div className={styles["petal"] + styles["one"]}></div>
-          <div className={styles["petal"] + styles["two"]}></div>
-          <div className={styles["petal"] + styles["three"]}></div>
-          <div className={styles["petal"] + styles["four"]}></div>
-        </div>
-        <div className={styles["flower"] + styles["flower5"]}>
-          <div className={styles["petal"] + styles["one"]}></div>
-          <div className={styles["petal"] + styles["two"]}></div>
-          <div className={styles["petal"] + styles["three"]}></div>
-          <div className={styles["petal"] + styles["four"]}></div>
-        </div>
-        <div className={styles["flower"] + styles["flower6"]}>
-          <div className={styles["petal"] + styles["one"]}></div>
-          <div className={styles["petal"] + styles["two"]}></div>
-          <div className={styles["petal"] + styles["three"]}></div>
-          <div className={styles["petal"] + styles["four"]}></div>
-        </div>
-      </div>
-    </button>
+    <div>
+      <button className={styles["button"]}>Hover Me!</button>
+      <span className={styles["backdrop"]}></span>
+    </div>
   </div>
 );
 
@@ -59,48 +21,12 @@ export default Button_layers;
 
         const Button_layers = () => (
          <div>
-          <button className="btn">
-    <div className="wrapper">
-        <p className="text">Flowers </p>
-
-        <div className="flower flower1">
-            <div className="petal one"></div>
-            <div className="petal two"></div>
-            <div className="petal three"></div>
-            <div className="petal four"></div>
-        </div>
-        <div className="flower flower2">
-            <div className="petal one"></div>
-            <div className="petal two"></div>
-            <div className="petal three"></div>
-            <div className="petal four"></div>
-        </div>
-        <div className="flower flower3">
-            <div className="petal one"></div>
-            <div className="petal two"></div>
-            <div className="petal three"></div>
-            <div className="petal four"></div>
-        </div>
-        <div className="flower flower4">
-            <div className="petal one"></div>
-            <div className="petal two"></div>
-            <div className="petal three"></div>
-            <div className="petal four"></div>
-        </div>
-        <div className="flower flower5">
-            <div className="petal one"></div>
-            <div className="petal two"></div>
-            <div className="petal three"></div>
-            <div className="petal four"></div>
-        </div>
-        <div className="flower flower6">
-            <div className="petal one"></div>
-            <div className="petal two"></div>
-            <div className="petal three"></div>
-            <div className="petal four"></div>
-        </div>
-    </div>
+          <div>
+<button className="button">
+  Hover Me!
 </button>
+<span className="backdrop"></span>
+</div>
         </div>
         );
 

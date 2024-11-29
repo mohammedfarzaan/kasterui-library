@@ -3,8 +3,8 @@ import styles from "./Button_shells.module.css";
 
 const Button_shells = () => (
   <div>
-    <button className={styles["mouse"]}>
-      <div className={styles["scroll"]}></div>
+    <button className={styles["button"]}>
+      <span>Hover me</span>
     </button>
   </div>
 );
@@ -20,9 +20,8 @@ export default Button_shells;
 
         const Button_shells = () => (
          <div>
-          <button className="mouse">
-  <div className="scroll"></div>
-
+          <button className="button">
+  <span>Hover me</span>
 </button>
         </div>
         );

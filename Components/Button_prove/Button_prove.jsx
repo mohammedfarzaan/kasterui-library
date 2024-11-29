@@ -3,9 +3,7 @@ import styles from "./Button_prove.module.css";
 
 const Button_prove = () => (
   <div>
-    <button className={styles["button"]}>
-      <span className={styles["button-content"]}>Download </span>
-    </button>
+    <button className={styles["Btn"]}>Join now</button>
   </div>
 );
 
@@ -20,8 +18,8 @@ export default Button_prove;
 
         const Button_prove = () => (
          <div>
-          <button className="button">
-    <span className="button-content">Download </span>
+          <button className="Btn">
+  Join now
 </button>
         </div>
         );

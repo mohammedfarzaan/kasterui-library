@@ -1,63 +1,85 @@
 
-/* From Uiverse.io by ercnersoy  - Tags: simple, switch, creative */
-/* The switch - the box around the slider */
-.switch {
-  font-size: 17px;
-  position: relative;
-  display: inline-block;
-  width: 3.5em;
-  height: 1.5em;
-}
-/* Hide default HTML checkbox */
-.switch input {
+/* From Uiverse.io by JkHuger - Tags: switch */
+.toggle-checkbox {
+  position: absolute;
   opacity: 0;
-  width: 0;
-  height: 0;
-}
-/* The slider */
-.slider {
-  position: absolute;
   cursor: pointer;
-  inset: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 1rem 0rem 1rem;
+  height: 0;
+  width: 0;
 }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 1.5em;
-  width: 1.4em;
-  left: 0em;
-  bottom: 0em;
+.toggle-slot {
+  font-size: 10px;
+  position: relative;
+  height: 3.5em;
+  width: 7em;
+  border: 0px solid transparent;
+  border-radius: 10em;
   background-color: white;
-  transition: 0.4s;
-  border-radius: 1rem 0rem 1rem;
-  border: 3px solid white;
+  transition: background-color 250ms;
 }
 
-.ch:checked + .slider {
-  background-color: #72eb67;
+.toggle-checkbox:checked ~ .toggle-slot {
+  background-color: #374151;
 }
 
-.ch:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
-}
-
-.ch:checked + .slider:before {
-  transform: translateX(2.2em);
-  background-color: green;
-  box-shadow: 0px 0px 40px 5px #72eb67;
-  border: 3px solid white;
-}
-
-.ch:checked + .slider::after {
-  content: "|";
-  color: white;
+.toggle-button {
+  transform: translate(0.3em, 0.25em);
   position: absolute;
-  right: 0.3rem;
-  top: -3.3px;
-  transform: rotate(45deg);
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background-color: #ffeccf;
+  box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
+  transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
 }
 
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+  background-color: #485367;
+  box-shadow: inset 0px 0px 0px 0.75em white;
+  transform: translate(3.65em, 0.25em);
+}
+
+.sun-icon {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  color: #ffbb52;
+}
+
+.sun-icon-wrapper {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  opacity: 1;
+  transform: translate(2em, 2em) rotate(15deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
+  opacity: 0;
+  transform: translate(3em, 2em) rotate(0deg);
+}
+
+.moon-icon {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  color: white;
+}
+
+.moon-icon-wrapper {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  opacity: 0;
+  transform: translate(11em, 2em) rotate(0deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
+  opacity: 1;
+  transform: translate(2em, 2em) rotate(-15deg);
+}

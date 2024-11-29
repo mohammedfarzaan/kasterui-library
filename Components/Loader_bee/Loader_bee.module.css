@@ -1,96 +1,91 @@
 
-/* From Uiverse.io by Admin12121 - Tags: loader, animated, effect loader */
-.con {
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  transform-origin: 60px 50px;
-  -webkit-animation: spin 3s infinite;
-  animation: spin 3s infinite;
-}
-
-.side {
-  width: 110px;
-  height: 30px;
-  background: white;
-  position: absolute;
+/* From Uiverse.io by Shoh2008 - Tags: loader */
+.loader {
+  position: relative;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: #fff;
+  border: 8px solid #131a1d;
   overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  box-sizing: border-box;
 }
 
-.side:before, .side:after {
-  content: "";
-  display: block;
+.loader::after {
+  content: '';
   position: absolute;
-}
-
-.side:before {
-  width: 0;
-  height: 0;
-  border-left: 0px solid transparent;
-  border-right: 20px solid #fff;
-  border-top: 35px solid #111;
   left: 0;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #263238;
+  z-index: 5;
+  border-bottom: 8px solid #131a1d;
+  box-sizing: border-box;
+  animation: eyeShade 3s infinite;
 }
 
-.side:after {
-  width: 0;
-  height: 0;
-  border-left: 0px solid transparent;
-  border-right: 20px solid #111;
-  border-bottom: 35px solid transparent;
-  right: 0;
-}
-
-.left {
-  left: 0px;
-  transform: rotate(120deg);
+.loader::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  width: 32px;
   z-index: 2;
+  height: 32px;
+  background: #111;
+  border-radius: 50%;
+  animation: eyeMove 3s infinite;
 }
 
-.right, .rightAbove {
-  transform: rotate(-120deg);
-  right: -30px;
-  top: 50px;
-}
+@keyframes eyeShade {
+  0% {
+    transform: translateY(0)
+  }
 
-.rightAbove {
-  clip: rect(0px 90px 30px 0);
-  z-index: 4;
-}
+  20% {
+    transform: translateY(5px)
+  }
 
-.under {
-  z-index: 1;
-}
+  40% , 50% {
+    transform: translateY(-5px)
+  }
 
-.bottom {
-  left: -24px;
-  bottom: 30px;
-  z-index: 3;
-}
+  60% {
+    transform: translateY( -8px)
+  }
 
-@-webkit-keyframes spin {
-  50% {
-    transform: rotate(720deg);
+  75% {
+    transform: translateY( 5px)
   }
 
   100% {
-    transform: rotate(720deg);
+    transform: translateY(10px)
   }
 }
 
-@keyframes spin {
-  50% {
-    transform: rotate(720deg);
+@keyframes eyeMove {
+  0% {
+    transform: translate(0 , 0)
+  }
+
+  20% {
+    transform: translate(0px , 5px)
+  }
+
+  40% , 50% {
+    transform: translate(0px , -5px)
+  }
+
+  60% {
+    transform: translate(-10px , -5px)
+  }
+
+  75% {
+    transform: translate(-20px , 5px)
   }
 
   100% {
-    transform: rotate(720deg);
+    transform: translate(0 , 10px)
   }
 }

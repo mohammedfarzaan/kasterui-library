@@ -1,12 +1,12 @@
 
-/* From Uiverse.io by Subaashbala  - Tags: skeuomorphism, minimalist, switch, click animation */
+/* From Uiverse.io by alexruix - Tags: red, switch */
 /* The switch - the box around the slider */
 .switch {
   font-size: 17px;
   position: relative;
   display: inline-block;
   width: 3.5em;
-  height: 0.25em;
+  height: 2em;
 }
 
 /* Hide default HTML checkbox */
@@ -24,42 +24,33 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: hotpink;
-  transition: 0.4s;
   border-radius: 30px;
+  box-shadow: 0 0 0 2px #f32f2150;
+  border: 4px solid transparent;
+  overflow: hidden;
+  transition: .4s;
+  background: transparent;
 }
 
 .slider:before {
   position: absolute;
-  content: "O";
-  display: grid;
-  text-align: center;
-  vertical-align: middle;
-  place-items: center;
-  font-size: 1em;
-  font-weight: 900;
-  width: 2em;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  bottom: 0.3em;
-  left: 0;
-  top: 50%;
-  transform: translate(0, -50%);
-  color: hotpink;
-  background-color: pink;
-  border: 1px solid rgba(255, 105, 180, 0.507);
-  transition: 0.4s;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: #f32f21;
+  transform: translateX(-50%);
+  transition: .4s;
 }
 
-.switch input:checked + .slider {
-  background-color: teal;
+input:checked + .slider {
+  background-color: #f7b48e;
 }
 
-.switch input:checked + .slider:before {
-  content: "|";
-  color: teal;
-  background: paleturquoise;
-  border: 1px solid rgba(0, 128, 128, 0.514);
-  transform: translate(1.75em, -50%) rotateZ(360deg);
+input:focus:checked + .slider {
+  box-shadow: 0 0 0 2px #f32f21, 0 0 4px #777;
 }
 
+input:checked + .slider:before {
+  transform: translateX(1.5em);
+}

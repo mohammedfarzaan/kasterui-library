@@ -1,29 +1,15 @@
 import React from "react";
-import styles from "./Button_enjoy.module.css";
 
 const Button_enjoy = () => (
   <div>
-    <button className={styles["ui-btn"]}>Delete</button>
+    <button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
+      Explore Now
+    </button>
   </div>
 );
 
 export default Button_enjoy;
-{
-  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Button_enjoy = () => (
-         <div>
-          <button className="ui-btn">Delete</button>
-        </div>
-        );
-
-        export default Button_enjoy;
-        
-        
-         */
+{
+  /* */
 }

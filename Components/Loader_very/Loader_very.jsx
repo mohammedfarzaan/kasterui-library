@@ -3,10 +3,11 @@ import styles from "./Loader_very.module.css";
 
 const Loader_very = () => (
   <div>
-    <div className={styles["cell"]}>
-      <div className={styles["card"]}>
-        <span className={styles["flower-loader"]}>Loading…</span>
-      </div>
+    <div className={styles["neomorph-spinner"]}>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   </div>
 );
@@ -22,10 +23,11 @@ export default Loader_very;
 
         const Loader_very = () => (
          <div>
-          <div className="cell">
-  <div className="card">
-    <span className="flower-loader">Loading…</span>
-  </div>
+          <div className="neomorph-spinner">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
 </div>
         </div>
         );

@@ -3,8 +3,12 @@ import styles from "./Button_keep.module.css";
 
 const Button_keep = () => (
   <div>
-    <button className={styles["button"]} style="vertical-align:middle">
-      <span>Download</span>
+    <button className={styles["cta"]}>
+      <span>Contact Us &nbsp;</span>
+      <svg viewBox="0 0 13 10" height="10px" width="15px">
+        <path d="M1,5 L11,5"></path>
+        <polyline points="8 1 12 5 8 9"></polyline>
+      </svg>
     </button>
   </div>
 );
@@ -20,7 +24,13 @@ export default Button_keep;
 
         const Button_keep = () => (
          <div>
-          <button className="button" style="vertical-align:middle"><span>Download</span></button>
+          <button className="cta">
+  <span>Contact Us &nbsp;</span>
+  <svg viewBox="0 0 13 10" height="10px" width="15px">
+    <path d="M1,5 L11,5"></path>
+    <polyline points="8 1 12 5 8 9"></polyline>
+  </svg>
+</button>
         </div>
         );
 

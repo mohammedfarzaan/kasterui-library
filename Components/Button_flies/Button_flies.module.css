@@ -1,50 +1,53 @@
 
-/* From Uiverse.io by joe-watson-sbf - Tags: gradient, button, hover, shop */
-.btn {
-  font-size: 14px;
-  font-weight: 300;
-  text-transform: uppercase;
-  line-height: 8px;
-  border-radius: 30px;
+/* From Uiverse.io by andrew-demchenk0 - Tags: button, hover, add */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 4px;
+  height: 32px;
+  width: 81px;
   border: none;
-  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
-  color: #fff;
-  position: relative;
-  overflow: hidden;
+  background: #1b1b1cd0;
+  border-radius: 20px;
   cursor: pointer;
 }
 
-.btn > * {
-  display: inline-block;
-  transition: all ease-in-out .5s;
+.lable {
+  line-height: 22px;
+  font-size: 17px;
+  color: #DE8A2A;
+  font-family: sans-serif;
+  letter-spacing: 1px;
 }
 
-.btn__visible {
-  padding: 1.2rem 3rem;
-  text-align: center;
+.button:hover {
+  background: #1b1b1cea;
 }
 
-.btn__invisible {
-  width: 100%;
-  position: absolute;
-  padding: 1.2rem 0;
-  left: 0;
-  top: -100%;
+.button:hover .svg-icon {
+  animation: rotate 1.3s linear infinite;
 }
 
-.btn:hover {
-  background-image: linear-gradient(160deg, #f093fb 0%, #f5576c 100%);
-}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
 
-.btn:hover .btn__visible {
-  transform: translateY(100%);
-}
+  25% {
+    transform: rotate(10deg);
+  }
 
-.btn:hover .btn__invisible {
-  top: 0;
-}
+  50% {
+    transform: rotate(0deg);
+  }
 
-.btn:focus {
-  outline: none;
-}
+  75% {
+    transform: rotate(-10deg);
+  }
 
+  100% {
+    transform: rotate(0deg);
+  }
+}

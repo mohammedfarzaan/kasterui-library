@@ -3,12 +3,7 @@ import styles from "./Button_say.module.css";
 
 const Button_say = () => (
   <div>
-    <div className={styles["badges"]}>
-      <button className={styles["blue"]}>Share Online</button>
-      <button className={styles["yellow"]}>Working on it</button>
-      <button className={styles["green"]}>Success</button>
-      <button className={styles["red"]}>Error</button>
-    </div>
+    <button>Hover</button>
   </div>
 );
 
@@ -23,12 +18,9 @@ export default Button_say;
 
         const Button_say = () => (
          <div>
-          <div className="badges">
-    <button className="blue">Share Online</button>
-    <button className="yellow">Working on it</button>
-    <button className="green">Success</button>
-    <button className="red">Error</button>
-</div>
+          <button>
+  Hover
+</button>
         </div>
         );
 

@@ -1,41 +1,41 @@
 
-/* From Uiverse.io by JohnnyCSilva - Tags: button */
-.btn_center {
-  display: table-cell;
-  vertical-align: middle;
+/* From Uiverse.io by ahmedyasserdev  - Tags: button */
+.button {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #9b59b6;
   border: none;
-  background-color: transparent;
+  padding: 15px 40px;
+  border-radius: 12px;
+  box-shadow:
+    0px 5px #7d3c98,
+    10px 14px 8px rgba(125, 60, 152, 0.4);
+  cursor: pointer;
+  transform: rotate3d(1, 1, 1, -10deg);
+  display: flex;
+  gap: 8px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
-.btn_center {
-  color: white;
-  margin: auto;
-  width: 150px;
-  line-height: 50px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  border-radius: 0px;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: #031d67;
-  box-shadow: 0px 15px 18px -6px rgba(35, 22, 214, 0.65);
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  position: relative;
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 4px #7d3c98,
+    0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.btn_center:hover {
-  background-color: #051749;
-  box-shadow: 0px 22px 19px -8px rgba(16, 8, 119, 0.65);
-  transform: scale(1.02,1.02);
+.button:active {
+  transform: translateY(2px);
+  box-shadow:
+    0 2px #7d3c98,
+    0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.btn_center:active {
-  background-color: #051749;
-  box-shadow: 0px 12px 18px -4px rgba(7, 4, 51, 0.65);
-  transform: scale(0.95,0.95);
-  transition: all 0.4s -0.125s;
+.button:focus {
+  outline: none;
 }
+

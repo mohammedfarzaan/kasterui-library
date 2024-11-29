@@ -3,10 +3,7 @@ import styles from "./Button_scared.module.css";
 
 const Button_scared = () => (
   <div>
-    <div>
-      <button className={styles["button"]}>Hover Me!</button>
-      <span className={styles["backdrop"]}></span>
-    </div>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -21,12 +18,9 @@ export default Button_scared;
 
         const Button_scared = () => (
          <div>
-          <div>
-<button className="button">
-  Hover Me!
+          <button className="button">
+  Button
 </button>
-<span className="backdrop"></span>
-</div>
         </div>
         );
 

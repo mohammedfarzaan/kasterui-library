@@ -3,7 +3,24 @@ import styles from "./Button_image.module.css";
 
 const Button_image = () => (
   <div>
-    <button>BUTTON</button>
+    <button>
+      <div className={styles["main"]}>
+        <div className={styles["rings"]} id="ring1"></div>
+        <div className={styles["rings"]} id="ring2"></div>
+        <div className={styles["asteriods-large"]} id="asteriod1"></div>
+        <div className={styles["asteriods-large"]} id="asteriod2"></div>
+        <div className={styles["asteriods-large"]} id="asteriod3"></div>
+        <div className={styles["asteriods-large"]} id="asteriod4"></div>
+        <div className={styles["asteriods-large"]} id="asteriod5"></div>
+        <div className={styles["asteriods-small"]} id="asteriod6"></div>
+        <div className={styles["asteriods-small"]} id="asteriod7"></div>
+        <div className={styles["asteriods-small"]} id="asteriod8"></div>
+        <div className={styles["asteriods-small"]} id="asteriod9"></div>
+        <div className={styles["asteriods-small"]} id="asteriod10"></div>
+        <div id="saturn"></div>
+        <div id="explore">Explore</div>
+      </div>
+    </button>
   </div>
 );
 
@@ -18,7 +35,25 @@ export default Button_image;
 
         const Button_image = () => (
          <div>
-          <button>BUTTON</button>
+          <button>
+  <div className="main">
+    <div className="rings" id="ring1"></div>
+    <div className="rings" id="ring2"></div>
+    <div className="asteriods-large" id="asteriod1"></div>
+    <div className="asteriods-large" id="asteriod2"></div>
+    <div className="asteriods-large" id="asteriod3"></div>
+    <div className="asteriods-large" id="asteriod4"></div>
+    <div className="asteriods-large" id="asteriod5"></div>
+    <div className="asteriods-small" id="asteriod6"></div>
+    <div className="asteriods-small" id="asteriod7"></div>
+    <div className="asteriods-small" id="asteriod8"></div>
+    <div className="asteriods-small" id="asteriod9"></div>
+    <div className="asteriods-small" id="asteriod10"></div>
+    <div id="saturn"></div>
+    <div id="explore">Explore</div>
+
+  </div>
+</button>
         </div>
         );
 

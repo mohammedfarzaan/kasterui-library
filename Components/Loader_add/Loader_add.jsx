@@ -4,8 +4,10 @@ import styles from "./Loader_add.module.css";
 const Loader_add = () => (
   <div>
     <div className={styles["card"]}>
-      <div className={styles["conic_back1"]}></div>
-      <div className={styles["conic_back2"]}></div>
+      <div className={styles["card__skeleton"] + styles["card__title"]}></div>
+      <div className={styles["card__skeleton"] + styles["card__description"]}>
+        {" "}
+      </div>
     </div>
   </div>
 );
@@ -22,8 +24,8 @@ export default Loader_add;
         const Loader_add = () => (
          <div>
           <div className="card">
-  <div className="conic_back1"></div>
-  <div className="conic_back2"></div>
+  <div className="card__skeleton card__title"></div>
+  <div className="card__skeleton card__description">         </div>
 </div>
         </div>
         );

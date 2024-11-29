@@ -4,10 +4,12 @@ import styles from "./Loader_since.module.css";
 const Loader_since = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
+      <div
+        className={styles["loader_cube"] + styles["loader_cube--color"]}
+      ></div>
+      <div
+        className={styles["loader_cube"] + styles["loader_cube--glowing"]}
+      ></div>
     </div>
   </div>
 );
@@ -24,10 +26,8 @@ export default Loader_since;
         const Loader_since = () => (
          <div>
           <div className="loader">
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
+  <div className="loader_cube loader_cube--color"></div>
+   <div className="loader_cube loader_cube--glowing"></div>
 </div>
         </div>
         );

@@ -3,12 +3,7 @@ import styles from "./Button_fur.module.css";
 
 const Button_fur = () => (
   <div>
-    <ul>
-      <li style="--i:#a955ff;--j:#ea51ff;">
-        <span className={styles["icon"]}>🏠</span>
-        <span className={styles["title"]}>Home</span>
-      </li>
-    </ul>
+    <button className={styles["button"]}>Hover me</button>
   </div>
 );
 
@@ -23,12 +18,9 @@ export default Button_fur;
 
         const Button_fur = () => (
          <div>
-          <ul>
-  <li style="--i:#a955ff;--j:#ea51ff;">
-    <span className="icon">🏠</span>
-    <span className="title">Home</span>
-  </li>
-</ul>
+          <button className="button">
+  Hover me
+</button>
         </div>
         );
 

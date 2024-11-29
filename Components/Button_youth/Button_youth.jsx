@@ -3,8 +3,8 @@ import styles from "./Button_youth.module.css";
 
 const Button_youth = () => (
   <div>
-    <button className={styles["button"]}>
-      <span>Hover me</span>
+    <button className={styles["menu__button"]}>
+      <span>Hover me!</span>
     </button>
   </div>
 );
@@ -20,8 +20,8 @@ export default Button_youth;
 
         const Button_youth = () => (
          <div>
-          <button className="button">
-  <span>Hover me</span>
+          <button className="menu__button">
+  <span>Hover me!</span>
 </button>
         </div>
         );

@@ -3,7 +3,17 @@ import styles from "./Button_value.module.css";
 
 const Button_value = () => (
   <div>
-    <button></button>
+    <button className={styles["btn"]} type="button">
+      <strong>SPACE</strong>
+      <div id="container-stars">
+        <div id="stars"></div>
+      </div>
+
+      <div id="glow">
+        <div className={styles["circle"]}></div>
+        <div className={styles["circle"]}></div>
+      </div>
+    </button>
   </div>
 );
 
@@ -18,7 +28,17 @@ export default Button_value;
 
         const Button_value = () => (
          <div>
-          <button></button>
+          <button className="btn" type="button">
+  <strong>SPACE</strong>
+  <div id="container-stars">
+    <div id="stars"></div>
+  </div>
+
+  <div id="glow">
+    <div className="circle"></div>
+    <div className="circle"></div>
+  </div>
+</button>
         </div>
         );
 

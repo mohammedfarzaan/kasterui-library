@@ -3,12 +3,7 @@ import styles from "./Button_poetry.module.css";
 
 const Button_poetry = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["btn"]}>
-        <div className={styles["sides"] + styles["top"]}>BUTTON</div>
-        <div className={styles["sides"] + styles["front"]}></div>
-      </div>
-    </div>
+    <button className={styles["button"]}>Button</button>
   </div>
 );
 
@@ -23,14 +18,9 @@ export default Button_poetry;
 
         const Button_poetry = () => (
          <div>
-          <div className="container">
-  <div className="btn">
-    <div className="sides top">
-      BUTTON
-    </div>
-    <div className="sides front"></div>
-  </div>
-</div>
+          <button className="button">
+  Button
+</button>
         </div>
         );
 

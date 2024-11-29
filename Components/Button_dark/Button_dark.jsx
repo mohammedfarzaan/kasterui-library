@@ -3,7 +3,13 @@ import styles from "./Button_dark.module.css";
 
 const Button_dark = () => (
   <div>
-    <button>Button</button>
+    <div className={styles["container"]}>
+      <div className={styles["toggle"]}>
+        <input type="checkbox" />
+        <span className={styles["button"]}></span>
+        <span className={styles["label"]}>☼</span>
+      </div>
+    </div>
   </div>
 );
 
@@ -18,9 +24,13 @@ export default Button_dark;
 
         const Button_dark = () => (
          <div>
-          <button>
-  Button
-</button>
+          <div className="container">
+  <div className="toggle">
+    <input type="checkbox" />
+    <span className="button"></span>
+    <span className="label">☼</span>
+  </div>
+</div>
         </div>
         );
 

@@ -1,15 +1,31 @@
 import React from "react";
+import styles from "./Button_office.module.css";
 
 const Button_office = () => (
   <div>
-    <button className="border-green-100 hover:border-green-200 text-green-900 rounded-lg border-4 cursor-pointer px-8 py-3 font-bold -skew-x-12 bg-gradient-to-bl from-green-400 to-green-300 opacity-80 hover:opacity-100 focus:opacity-100 focus:scale-105 transition-all duration-300 font-sans">
-      Button
-    </button>
+    <button>Click Me</button>
   </div>
 );
 
 export default Button_office;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_office = () => (
+         <div>
+          <button>
+  Click Me
+</button>
+        </div>
+        );
+
+        export default Button_office;
+        
+        
+         */
 }

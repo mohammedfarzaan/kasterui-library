@@ -3,15 +3,10 @@ import styles from "./Toggle_shine.module.css";
 
 const Toggle_shine = () => (
   <div>
-    <div className={styles["switch"]}>
-      <input
-        role="switch"
-        type="checkbox"
-        className={styles["switch-input"]}
-        id="switchId"
-      />
-      <label className={styles["switch-input-label"]}></label>
-    </div>
+    <label className={styles["switch"]}>
+      <input type="checkbox" />
+      <span className={styles["slider"]}></span>
+    </label>
   </div>
 );
 
@@ -26,10 +21,10 @@ export default Toggle_shine;
 
         const Toggle_shine = () => (
          <div>
-          <div className="switch">
-  <input role="switch" type="checkbox" className="switch-input" id="switchId" />
-  <label className="switch-input-label"></label>
-</div>
+          <label className="switch">
+  <input type="checkbox" />
+  <span className="slider"></span>
+</label>
         </div>
         );
 

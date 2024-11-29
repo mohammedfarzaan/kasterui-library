@@ -3,11 +3,7 @@ import styles from "./Button_moment.module.css";
 
 const Button_moment = () => (
   <div>
-    <button>
-      <span className={styles["shadow"]}></span>
-      <span className={styles["edge"]}></span>
-      <span className={styles["front"] + styles["text"]}> Click me</span>
-    </button>
+    <button className={styles["button"]}>Minecraft</button>
   </div>
 );
 
@@ -22,12 +18,7 @@ export default Button_moment;
 
         const Button_moment = () => (
          <div>
-          <button>
-  <span className="shadow"></span>
-  <span className="edge"></span>
-  <span className="front text"> Click me
-  </span>
-</button>
+          <button className="button">Minecraft</button>
         </div>
         );
 

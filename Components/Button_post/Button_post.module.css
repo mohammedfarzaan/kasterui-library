@@ -1,55 +1,40 @@
 
-/* From Uiverse.io by mateusneves - Tags: button */
-button {
- position: relative;
- font-size: 14px;
- letter-spacing: 3px;
- height: 3em;
- padding: 0 3em;
- border: none;
- background-color: #c41b54;
- color: #fff;
- text-transform: uppercase;
- overflow: hidden;
- border-radius: 5px
+/* From Uiverse.io by Madflows - Tags: button, download */
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
 }
 
-button::before {
- content: '';
- display: block;
- position: absolute;
- z-index: 0;
- bottom: 0;
- left: 0;
- height: 0px;
- width: 100%;
- background: rgb(196,27,84);
- background: linear-gradient(90deg, rgba(196,27,84,1) 20%, rgba(124,7,46,1) 100%);
- transition: 0.2s;
+.button:hover::before {
+  transform: scaleX(1);
 }
 
-button .label {
- position: relative;
+.button-content {
+  position: relative;
+  z-index: 1;
 }
 
-button .icon {
- display: flex;
- align-items: center;
- justify-content: center;
- height: 3em;
- width: 3em;
- position: absolute;
- top: 3em;
- right: 0;
- opacity: 0;
- transition: 0.4s;
-}
-
-button:hover::before {
- height: 100%;
-}
-
-button:hover .icon {
- top: 0;
- opacity: 1;
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
 }

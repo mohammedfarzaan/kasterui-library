@@ -3,7 +3,9 @@ import styles from "./Button_spring.module.css";
 
 const Button_spring = () => (
   <div>
-    <button className={styles["button"]}>Minecraft</button>
+    <div className={styles["container"]}>
+      <button className={styles["button"]}>Button</button>
+    </div>
   </div>
 );
 
@@ -18,7 +20,11 @@ export default Button_spring;
 
         const Button_spring = () => (
          <div>
-          <button className="button">Minecraft</button>
+          <div className="container">
+  <button className="button">
+    Button
+  </button>
+</div>
         </div>
         );
 

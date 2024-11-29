@@ -3,12 +3,7 @@ import styles from "./Button_every.module.css";
 
 const Button_every = () => (
   <div>
-    <div className={styles["btn-container"]}>
-      <button className={styles["glowing-button"]}>
-        click me
-        <span className={styles["arrow"]}>➔</span>
-      </button>
-    </div>
+    <button className={styles["button2"]}>Hover me</button>
   </div>
 );
 
@@ -23,12 +18,9 @@ export default Button_every;
 
         const Button_every = () => (
          <div>
-          <div className="btn-container">
-  <button className="glowing-button">
-    click me
-    <span className="arrow">➔</span>
-  </button>
-</div>
+          <button className="button2">
+    Hover me
+</button>
         </div>
         );
 

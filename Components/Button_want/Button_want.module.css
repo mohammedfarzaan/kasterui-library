@@ -1,39 +1,65 @@
 
-/* From Uiverse.io by vishalparajuli - Tags: button, 3d button, 3d card */
+/* From Uiverse.io by pamtbi - Tags: button, minecraft */
 .button {
-  width: 100px;
-  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 70px;
+  aspect-ratio: 3 / 2;
+  border: none;
+  border-radius: 0px;
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: 0px 5px 0px 0px rgb(102,102,102);
+  transition: all .15s;
   position: relative;
-  perspective: 800px;
+  padding: 0
 }
 
-.button__front,
-  .button__back {
-  width: 100%;
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.button__bg {
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #3498db;
-  border-radius: 5px;
+  aspect-ratio: 1 / 1;
+  align-self: stretch;
+}
+
+.button__bg-1, .button__bg-7, .button__bg-13, .button__bg-20, .button__bg-19, .button__bg-8, .button__bg-9, .button__bg-10, .button__bg-12 {
+  background: #494949;
+}
+
+.button__bg-6, .button__bg-4, .button__bg-5, .button__bg-14, .button__bg-15, .button__bg-16, .button__bg-21 {
+  background: #505050;
+}
+
+.button__bg-2, .button__bg-3, .button__bg-18, .button__bg-17 {
+  background: #5a5a5a;
+}
+
+.button__bg-11, .button__bg-22 {
+  background: #414141;
+}
+
+.button__bg-23, .button__bg-24 {
+  background: #535353;
+}
+
+.span {
   position: absolute;
-  backface-visibility: hidden;
-  transition: transform 0.5s ease;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 9px;
+  width: 100%;
+  color: rgb(223, 217, 189);
+  display: block;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
 }
 
-.button__back {
-  background-color: #e74c3c;
-  transform: rotateY(180deg);
-}
-
-.button:hover .button__front {
-  transform: rotateY(-180deg);
-}
-
-.button:hover .button__back {
-  transform: rotateY(0);
-}

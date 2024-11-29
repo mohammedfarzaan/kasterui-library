@@ -3,7 +3,13 @@ import styles from "./Loader_atom.module.css";
 
 const Loader_atom = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["follow-the-leader-line"]}>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 );
 
@@ -18,7 +24,13 @@ export default Loader_atom;
 
         const Loader_atom = () => (
          <div>
-          <div className="loader"></div>
+          <div className="follow-the-leader-line">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
         </div>
         );
 

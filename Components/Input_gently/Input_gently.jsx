@@ -3,14 +3,14 @@ import styles from "./Input_gently.module.css";
 
 const Input_gently = () => (
   <div>
-    <div className={styles["input-container"]}>
+    <div className={styles["form"]}>
       <input
-        type="text"
-        name="text"
         className={styles["input"]}
-        placeholder="Enter text"
+        placeholder="Type your text"
+        required=""
+        type="text"
       />
-      <div className={styles["highlight"]}></div>
+      <span className={styles["input-border"]}></span>
     </div>
   </div>
 );
@@ -26,9 +26,9 @@ export default Input_gently;
 
         const Input_gently = () => (
          <div>
-          <div className="input-container">
-  <input type="text" name="text" className="input" placeholder="Enter text" />
-  <div className="highlight"></div>
+          <div className="form">
+  <input className="input" placeholder="Type your text" required="" type="text" />
+  <span className="input-border"></span>
 </div>
         </div>
         );

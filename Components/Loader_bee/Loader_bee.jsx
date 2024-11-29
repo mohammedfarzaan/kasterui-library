@@ -3,12 +3,7 @@ import styles from "./Loader_bee.module.css";
 
 const Loader_bee = () => (
   <div>
-    <div className={styles["con"]}>
-      <div className={styles["side"] + styles["left"]}></div>
-      <div className={styles["side"] + styles["right"]}></div>
-      <div className={styles["side"] + styles["rightAbove"]}></div>
-      <div className={styles["side"] + styles["bottom"]}></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -23,12 +18,7 @@ export default Loader_bee;
 
         const Loader_bee = () => (
          <div>
-          <div className="con">
-  <div className="side left"></div>
-  <div className="side right"></div>
-  <div className="side rightAbove"></div>
-  <div className="side bottom"></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

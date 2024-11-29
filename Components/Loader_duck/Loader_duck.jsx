@@ -3,16 +3,7 @@ import styles from "./Loader_duck.module.css";
 
 const Loader_duck = () => (
   <div>
-    <div className={styles["spinner-container"]}>
-      <div className={styles["spinner-inner"]}>
-        <div className={styles["spinner-outer"]}>
-          <div className={styles["spinner-inner-1"]}></div>
-          <div className={styles["spinner-inner-2"]}></div>
-          <div className={styles["spinner-inner-3"]}></div>
-          <div className={styles["spinner-inner-4"]}></div>
-        </div>
-      </div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -27,16 +18,7 @@ export default Loader_duck;
 
         const Loader_duck = () => (
          <div>
-          <div className="spinner-container">
-  <div className="spinner-inner">
-    <div className="spinner-outer">
-      <div className="spinner-inner-1"></div>
-      <div className="spinner-inner-2"></div>
-      <div className="spinner-inner-3"></div>
-      <div className="spinner-inner-4"></div>
-    </div>
-  </div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

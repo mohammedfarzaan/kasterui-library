@@ -3,10 +3,20 @@ import styles from "./Toggle_bus.module.css";
 
 const Toggle_bus = () => (
   <div>
-    <label className={styles["gravity-switch"]}>
-      <input type="checkbox" />
-      <span className={styles["slider"]}></span>
-    </label>
+    <div className={styles["checkbox-wrapper-10"]}>
+      <input
+        checked=""
+        type="checkbox"
+        id="cb5"
+        className={styles["tgl"] + styles["tgl-flip"]}
+      />
+      <label
+        for="cb5"
+        data-tg-on="On"
+        data-tg-off="Off"
+        className={styles["tgl-btn"]}
+      ></label>
+    </div>
   </div>
 );
 
@@ -21,10 +31,10 @@ export default Toggle_bus;
 
         const Toggle_bus = () => (
          <div>
-          <label className="gravity-switch">
-    <input type="checkbox" />
-    <span className="slider"></span>
-</label>
+          <div className="checkbox-wrapper-10">
+  <input checked="" type="checkbox" id="cb5" className="tgl tgl-flip" />
+  <label for="cb5" data-tg-on="On" data-tg-off="Off" className="tgl-btn"></label>
+</div>
         </div>
         );
 

@@ -3,7 +3,9 @@ import styles from "./Button_point.module.css";
 
 const Button_point = () => (
   <div>
-    <button> Button</button>
+    <button>
+      <span> Grab it!</span>
+    </button>
   </div>
 );
 
@@ -18,7 +20,7 @@ export default Button_point;
 
         const Button_point = () => (
          <div>
-          <button> Button
+          <button><span> Grab it!</span>
 </button>
         </div>
         );

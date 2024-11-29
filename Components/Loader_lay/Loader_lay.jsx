@@ -3,17 +3,39 @@ import styles from "./Loader_lay.module.css";
 
 const Loader_lay = () => (
   <div>
-    <div className={styles["loading"]}>
-      <svg width="64px" height="48px">
-        <polyline
-          points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"
-          id="back"
-        ></polyline>
-        <polyline
-          points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24"
-          id="front"
-        ></polyline>
-      </svg>
+    <div className={styles["gearbox"]}>
+      <div className={styles["overlay"]}></div>
+      <div className={styles["gear"] + styles["one"]}>
+        <div className={styles["gear-inner"]}>
+          <div className={styles["bar"]}></div>
+          <div className={styles["bar"]}></div>
+          <div className={styles["bar"]}></div>
+        </div>
+      </div>
+      <div className={styles["gear"] + styles["two"]}>
+        <div className={styles["gear-inner"]}>
+          <div className={styles["bar"]}></div>
+          <div className={styles["bar"]}></div>
+          <div className={styles["bar"]}></div>
+        </div>
+      </div>
+      <div className={styles["gear"] + styles["three"]}>
+        <div className={styles["gear-inner"]}>
+          <div className={styles["bar"]}></div>
+          <div className={styles["bar"]}></div>
+          <div className={styles["bar"]}></div>
+        </div>
+      </div>
+      <div className={styles["gear"] + styles["four"] + styles["large"]}>
+        <div className={styles["gear-inner"]}>
+          <div className={styles["bar"]}></div>
+          <div className={styles["bar"]}></div>
+          <div className={styles["bar"]}></div>
+          <div className={styles["bar"]}></div>
+          <div className={styles["bar"]}></div>
+          <div className={styles["bar"]}></div>
+        </div>
+      </div>
     </div>
   </div>
 );
@@ -29,12 +51,40 @@ export default Loader_lay;
 
         const Loader_lay = () => (
          <div>
-          <div className="loading">
-  <svg width="64px" height="48px">
-      <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
-    <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
-  </svg>
-</div>
+          <div className="gearbox">
+  <div className="overlay"></div>
+    <div className="gear one">
+      <div className="gear-inner">
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+    </div>
+    <div className="gear two">
+      <div className="gear-inner">
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+    </div>
+    <div className="gear three">
+      <div className="gear-inner">
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+    </div>
+    <div className="gear four large">
+      <div className="gear-inner">
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+    </div>
+  </div>
         </div>
         );
 

@@ -3,7 +3,7 @@ import styles from "./Loader_silk.module.css";
 
 const Loader_silk = () => (
   <div>
-    <div className={styles["bars"]}></div>
+    <div className={styles["custom-loader"]}></div>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Loader_silk;
 
         const Loader_silk = () => (
          <div>
-          <div className="bars"></div>
+          <div className="custom-loader"></div>
         </div>
         );
 

@@ -1,51 +1,36 @@
 
-/* From Uiverse.io by vinodjangid07 - Tags: icon, button, pay */
-.Btn {
-  width: 130px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(15, 15, 15);
-  border: none;
-  color: white;
-  font-weight: 600;
-  gap: 8px;
-  cursor: pointer;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
-  position: relative;
-  overflow: hidden;
-  transition-duration: .3s;
+/* From Uiverse.io by hannahyockel - Tags: button */
+button {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ padding: 15px 38px;
+ border-radius: 16px;
+ border: 1px solid transparent;
+ color: #FFFFFF;
+ background-color: #1DC9A0;
+ font-size: 16px;
+ letter-spacing: 1px;
+ transition: all 0.15s linear;
 }
 
-.svgIcon {
-  width: 16px;
+button:hover {
+ background-color: rgba(29, 201, 160, 0.08);
+ border-color: #1DC9A0;
+ color: #1DC9A0;
+ transform: translateY(-5px) scale(1.05);
 }
 
-.svgIcon path {
-  fill: white;
+button:active {
+ background-color: transparent;
+ border-color: #1DC9A0;
+ color: #1DC9A0;
+ transform: translateY(5px) scale(0.95);
 }
 
-.Btn::before {
-  width: 130px;
-  height: 130px;
-  position: absolute;
-  content: "";
-  background-color: white;
-  border-radius: 50%;
-  left: -100%;
-  top: 0;
-  transition-duration: .3s;
-  mix-blend-mode: difference;
-}
-
-.Btn:hover::before {
-  transition-duration: .3s;
-  transform: translate(100%,-50%);
-  border-radius: 0;
-}
-
-.Btn:active {
-  transform: translate(5px,5px);
-  transition-duration: .3s;
+button:disabled {
+ background-color: rgba(255, 255, 255, 0.16);
+ color: #8E8E93;
+ border-color: #8E8E93;
 }

@@ -3,10 +3,78 @@ import styles from "./Loader_till.module.css";
 
 const Loader_till = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["dot-one"]}></div>
-      <div className={styles["dot-two"]}>- -</div>
-      <div className={styles["dot-three"]}></div>
+    <div className={styles["cube"]}>
+      <div className={styles["cube__face"]} id="cube__face--front">
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+      </div>
+
+      <div className={styles["cube__face"]} id="cube__face--back">
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+      </div>
+
+      <div className={styles["cube__face"]} id="cube__face--right">
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+      </div>
+
+      <div className={styles["cube__face"]} id="cube__face--left">
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+      </div>
+
+      <div className={styles["cube__face"]} id="cube__face--top">
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+      </div>
+
+      <div className={styles["cube__face"]} id="cube__face--bottom">
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+        <span className={styles["faceBox"]}></span>
+      </div>
     </div>
   </div>
 );
@@ -22,11 +90,79 @@ export default Loader_till;
 
         const Loader_till = () => (
          <div>
-          <div className="loader">
- <div className="dot-one"></div> 
- <div className="dot-two">-  -</div> 
- <div className="dot-three"></div> 
-</div>
+          <div className="cube">
+                <div className="cube__face" id="cube__face--front">
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                </div>
+
+                <div className="cube__face" id="cube__face--back">
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                </div>
+
+                <div className="cube__face" id="cube__face--right">
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                </div>
+
+                <div className="cube__face" id="cube__face--left">
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                </div>
+
+                <div className="cube__face" id="cube__face--top">
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                </div>
+
+                <div className="cube__face" id="cube__face--bottom">
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                    <span className="faceBox"></span>
+                </div>
+            </div>
         </div>
         );
 

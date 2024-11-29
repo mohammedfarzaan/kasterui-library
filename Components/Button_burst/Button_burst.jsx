@@ -3,21 +3,20 @@ import styles from "./Button_burst.module.css";
 
 const Button_burst = () => (
   <div>
-    <button style="--i:#a955ff;--j:#ea51ff;">
-      <span className={styles["icon"]}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          className="bi bi-heart"
-          viewBox="0 0 16 16"
-        >
-          <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
-        </svg>
+    <a className={styles["playstore-button"]} href="#">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        className={styles["icon"]}
+        viewBox="0 0 512 512"
+      >
+        <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+      </svg>
+      <span className={styles["texts"]}>
+        <span className={styles["text-1"]}>GET IT ON</span>
+        <span className={styles["text-2"]}>Google Play</span>
       </span>
-      <span className={styles["title"]}>i love it</span>
-    </button>
+    </a>
   </div>
 );
 
@@ -32,14 +31,15 @@ export default Button_burst;
 
         const Button_burst = () => (
          <div>
-          <button style="--i:#a955ff;--j:#ea51ff;">
-            <span className="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-heart" viewBox="0 0 16 16">
-  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
-</svg>
-            </span>
-            <span className="title">i love it</span>
-        </button>
+          <a className="playstore-button" href="#">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="icon" viewBox="0 0 512 512">
+    <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+  </svg>
+  <span className="texts">
+    <span className="text-1">GET IT ON</span>
+    <span className="text-2">Google Play</span>
+  </span>
+</a>
         </div>
         );
 

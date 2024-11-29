@@ -1,26 +1,211 @@
 import React from "react";
+import styles from "./Button_shape.module.css";
 
 const Button_shape = () => (
   <div>
-    <button
-      className="inline-block rounded-full bg-green-500 text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:bg-green-600 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-green-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:bg-green-700 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0"
-      type="button"
-    >
-      <div
-        role="status"
-        className="inline-block h-3 w-3 mr-2 animate-spin rounded-full border-2 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-      >
-        <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
-          Loading...
+    <div className={styles["box"]}>
+      <button className={styles["button"]}>MATRIX</button>
+      <div className={styles["matrix"]}>
+        <span style="--i: 6" className={styles["code-line"]}>
+          <p className={styles["code"]}>z</p>
+          <p className={styles["code"]}>6</p>
+          <p className={styles["code"]}>0</p>
+          <p className={styles["code"]}>z</p>
+        </span>
+        <span style="--i: 8" className={styles["code-line"]}>
+          <p className={styles["code"]}>6</p>
+          <p className={styles["code"]}>9</p>
+          <p className={styles["code"]}>p</p>
+        </span>
+        <span style="--i: 5" className={styles["code-line"]}>
+          <p className={styles["code"]}>u</p>
+          <p className={styles["code"]}>3</p>
+          <p className={styles["code"]}>g</p>
+        </span>
+        <span style="--i: 12" className={styles["code-line"]}>
+          <p className={styles["code"]}>a</p>
+          <p className={styles["code"]}>t</p>
+          <p className={styles["code"]}>7</p>
+          <p className={styles["code"]}>2</p>
+          <p className={styles["code"]}>g</p>
+          <p className={styles["code"]}>h</p>
+          <p className={styles["code"]}>0</p>
+          <p className={styles["code"]}>k</p>
+        </span>
+        <span style="--i: 9" className={styles["code-line"]}>
+          <p className={styles["code"]}>6</p>
+          <p className={styles["code"]}>3</p>
+          <p className={styles["code"]}>0</p>
+        </span>
+        <span style="--i: 6" className={styles["code-line"]}>
+          <p className={styles["code"]}>7</p>
+          <p className={styles["code"]}>s</p>
+          <p className={styles["code"]}>b</p>
+          <p className={styles["code"]}>q</p>
+        </span>
+        <span style="--i: 8" className={styles["code-line"]}>
+          <p className={styles["code"]}>m</p>
+          <p className={styles["code"]}>2</p>
+          <p className={styles["code"]}>5</p>
+          <p className={styles["code"]}>4</p>
+          <p className={styles["code"]}>l</p>
+          <p className={styles["code"]}>1</p>
+        </span>
+        <span style="--i: 12" className={styles["code-line"]}>
+          <p className={styles["code"]}>9</p>
+          <p className={styles["code"]}>1</p>
+          <p className={styles["code"]}>s</p>
+          <p className={styles["code"]}>2</p>
+          <p className={styles["code"]}>t</p>
+          <p className={styles["code"]}>7</p>
+          <p className={styles["code"]}>4</p>
+          <p className={styles["code"]}>h</p>
+          <p className={styles["code"]}>0</p>
+        </span>
+        <span style="--i: 16" className={styles["code-line"]}>
+          <p className={styles["code"]}>a</p>
+          <p className={styles["code"]}>b</p>
+          <p className={styles["code"]}>c</p>
+          <p className={styles["code"]}>d</p>
+          <p className={styles["code"]}>e</p>
+        </span>
+        <span style="--i: 9" className={styles["code-line"]}>
+          <p className={styles["code"]}>f</p>
+          <p className={styles["code"]}>g</p>
+          <p className={styles["code"]}>h</p>
+          <p className={styles["code"]}>i</p>
+          <p className={styles["code"]}>j</p>
+        </span>
+        <span style="--i: 6" className={styles["code-line"]}>
+          <p className={styles["code"]}>k</p>
+          <p className={styles["code"]}>l</p>
+          <p className={styles["code"]}>m</p>
+          <p className={styles["code"]}>n</p>
+        </span>
+        <span style="--i: 19" className={styles["code-line"]}>
+          <p className={styles["code"]}>u</p>
+          <p className={styles["code"]}>v</p>
+          <p className={styles["code"]}>w</p>
+          <p className={styles["code"]}>v</p>
+          <p className={styles["code"]}>2</p>
+          <p className={styles["code"]}>3</p>
+        </span>
+        <span style="--i: 7" className={styles["code-line"]}>
+          <p className={styles["code"]}>p</p>
+          <p className={styles["code"]}>q</p>
+          <p className={styles["code"]}>r</p>
+          <p className={styles["code"]}>s</p>
+          <p className={styles["code"]}>t</p>
+        </span>
+        <span style="--i: 12" className={styles["code-line"]}>
+          <p className={styles["code"]}>1</p>
+          <p className={styles["code"]}>2</p>
+          <p className={styles["code"]}>6</p>
+          <p className={styles["code"]}>x</p>
+          <p className={styles["code"]}>5</p>
+          <p className={styles["code"]}>h</p>
+        </span>
+        <span style="--i: 9" className={styles["code-line"]}>
+          <p className={styles["code"]}>6</p>
+          <p className={styles["code"]}>7</p>
+          <p className={styles["code"]}>f</p>
+          <p className={styles["code"]}>a</p>
+          <p className={styles["code"]}>6</p>
+          <p className={styles["code"]}>1</p>
+        </span>
+        <span style="--i: 17" className={styles["code-line"]}>
+          <p className={styles["code"]}>j</p>
+          <p className={styles["code"]}>f</p>
+          <p className={styles["code"]}>0</p>
+          <p className={styles["code"]}>x</p>
+          <p className={styles["code"]}>6</p>
+          <p className={styles["code"]}>0</p>
+        </span>
+        <span style="--i: 10" className={styles["code-line"]}>
+          <p className={styles["code"]}>0</p>
+          <p className={styles["code"]}>k</p>
+          <p className={styles["code"]}>%</p>
+          <p className={styles["code"]}>f</p>
+          <p className={styles["code"]}>6</p>
+          <p className={styles["code"]}>%</p>
         </span>
       </div>
-      Loading
-    </button>
+    </div>
   </div>
 );
 
 export default Button_shape;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_shape = () => (
+         <div>
+          <div className="box">
+  <button className="button">MATRIX</button>
+  <div className="matrix">
+    <span style="--i: 6" className="code-line">
+      <p className="code">z</p><p className="code">6</p><p className="code">0</p><p className="code">z</p>
+    </span>
+    <span style="--i: 8" className="code-line">
+      <p className="code">6</p><p className="code">9</p><p className="code">p</p>
+    </span>
+    <span style="--i: 5" className="code-line">
+      <p className="code">u</p><p className="code">3</p><p className="code">g</p>
+    </span>
+    <span style="--i: 12" className="code-line">
+      <p className="code">a</p><p className="code">t</p><p className="code">7</p><p className="code">2</p><p className="code">g</p><p className="code">h</p><p className="code">0</p><p className="code">k</p>
+    </span>
+    <span style="--i: 9" className="code-line">
+      <p className="code">6</p><p className="code">3</p><p className="code">0</p>
+    </span>
+    <span style="--i: 6" className="code-line">
+      <p className="code">7</p><p className="code">s</p><p className="code">b</p><p className="code">q</p>
+    </span>
+    <span style="--i: 8" className="code-line">
+      <p className="code">m</p><p className="code">2</p><p className="code">5</p><p className="code">4</p><p className="code">l</p><p className="code">1</p>
+    </span>
+    <span style="--i: 12" className="code-line">
+      <p className="code">9</p><p className="code">1</p><p className="code">s</p><p className="code">2</p><p className="code">t</p><p className="code">7</p><p className="code">4</p><p className="code">h</p><p className="code">0</p>
+    </span>
+    <span style="--i: 16" className="code-line">
+      <p className="code">a</p><p className="code">b</p><p className="code">c</p><p className="code">d</p><p className="code">e</p>
+    </span>
+    <span style="--i: 9" className="code-line">
+      <p className="code">f</p><p className="code">g</p><p className="code">h</p><p className="code">i</p><p className="code">j</p>
+    </span>
+    <span style="--i: 6" className="code-line">
+      <p className="code">k</p><p className="code">l</p><p className="code">m</p><p className="code">n</p>
+    </span>
+    <span style="--i: 19" className="code-line">
+      <p className="code">u</p><p className="code">v</p><p className="code">w</p><p className="code">v</p><p className="code">2</p><p className="code">3</p>
+    </span>
+    <span style="--i: 7" className="code-line">
+      <p className="code">p</p><p className="code">q</p><p className="code">r</p><p className="code">s</p><p className="code">t</p>
+    </span>
+    <span style="--i: 12" className="code-line">
+      <p className="code">1</p><p className="code">2</p><p className="code">6</p><p className="code">x</p><p className="code">5</p><p className="code">h</p>
+    </span>
+    <span style="--i: 9" className="code-line">
+      <p className="code">6</p><p className="code">7</p><p className="code">f</p><p className="code">a</p><p className="code">6</p><p className="code">1</p>
+    </span>
+    <span style="--i: 17" className="code-line">
+      <p className="code">j</p><p className="code">f</p><p className="code">0</p><p className="code">x</p><p className="code">6</p><p className="code">0</p>
+    </span>
+    <span style="--i: 10" className="code-line">
+      <p className="code">0</p><p className="code">k</p><p className="code">%</p><p className="code">f</p><p className="code">6</p><p className="code">%</p>
+    </span>
+  </div>
+</div>
+        </div>
+        );
+
+        export default Button_shape;
+        
+        
+         */
 }

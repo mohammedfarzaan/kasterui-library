@@ -4,10 +4,11 @@ import styles from "./Input_dawn.module.css";
 const Input_dawn = () => (
   <div>
     <input
-      type="password"
+      type="text"
+      autocomplete="off"
       name="text"
       className={styles["input"]}
-      placeholder="Enter your password!"
+      placeholder="Username"
     />
   </div>
 );
@@ -23,7 +24,7 @@ export default Input_dawn;
 
         const Input_dawn = () => (
          <div>
-          <input type="password" name="text" className="input" placeholder="Enter your password!" />
+          <input type="text" autocomplete="off" name="text" className="input" placeholder="Username" />
         </div>
         );
 

@@ -3,9 +3,7 @@ import styles from "./Button_apple.module.css";
 
 const Button_apple = () => (
   <div>
-    <div className={styles["container"]}>
-      <button className={styles["join-now-button"]}>Join now</button>
-    </div>
+    <button>Hover Me</button>
   </div>
 );
 
@@ -20,9 +18,9 @@ export default Button_apple;
 
         const Button_apple = () => (
          <div>
-          <div className="container">
-  <button className="join-now-button">Join now</button>
-</div>
+          <button>
+  Hover Me
+</button>
         </div>
         );
 

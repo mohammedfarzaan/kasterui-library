@@ -4,7 +4,7 @@ import styles from "./Toggle_pan.module.css";
 const Toggle_pan = () => (
   <div>
     <label className={styles["switch"]}>
-      <input type="checkbox" />
+      <input className={styles["checkbox"]} type="checkbox" />
       <span className={styles["slider"]}></span>
     </label>
   </div>
@@ -22,8 +22,8 @@ export default Toggle_pan;
         const Toggle_pan = () => (
          <div>
           <label className="switch">
-    <input type="checkbox" />
-    <span className="slider"></span>
+  <input className="checkbox" type="checkbox" />
+  <span className="slider"></span>
 </label>
         </div>
         );

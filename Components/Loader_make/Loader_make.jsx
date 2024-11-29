@@ -3,13 +3,7 @@ import styles from "./Loader_make.module.css";
 
 const Loader_make = () => (
   <div>
-    <div className={styles["loader-box"]}>
-      <div className={styles["loading-wrapper"]}>
-        <div className={styles["loader"]}>
-          <div className={styles["loader-inner"]}></div>
-        </div>
-      </div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -24,14 +18,7 @@ export default Loader_make;
 
         const Loader_make = () => (
          <div>
-          <div className="loader-box">
-    <div className="loading-wrapper">
-        <div className="loader">
-            <div className="loader-inner">
-            </div>
-        </div>
-    </div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

@@ -3,7 +3,7 @@ import styles from "./Loader_bread.module.css";
 
 const Loader_bread = () => (
   <div>
-    <div className={styles["custom-loader"]}></div>
+    <span className={styles["loader"]}></span>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Loader_bread;
 
         const Loader_bread = () => (
          <div>
-          <div className="custom-loader"></div>
+          <span className="loader"></span>
         </div>
         );
 

@@ -3,9 +3,7 @@ import styles from "./Loader_truth.module.css";
 
 const Loader_truth = () => (
   <div>
-    <div id="myProgress">
-      <div id="myBar"></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -20,9 +18,7 @@ export default Loader_truth;
 
         const Loader_truth = () => (
          <div>
-          <div id="myProgress">
-  <div id="myBar"></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

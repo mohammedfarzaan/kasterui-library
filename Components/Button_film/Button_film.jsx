@@ -3,7 +3,9 @@ import styles from "./Button_film.module.css";
 
 const Button_film = () => (
   <div>
-    <button className={styles["neu-button"]}>Press me</button>
+    <a href="#" className={styles["ov-btn-slide-left"]}>
+      Izquierda
+    </a>
   </div>
 );
 
@@ -18,7 +20,8 @@ export default Button_film;
 
         const Button_film = () => (
          <div>
-          <button className="neu-button">Press me</button>
+          <a href="#" className="ov-btn-slide-left">Izquierda
+</a>
         </div>
         );
 

@@ -3,7 +3,10 @@ import styles from "./Loader_straw.module.css";
 
 const Loader_straw = () => (
   <div>
-    <div className={styles["box"]}></div>
+    <div className={styles["ld-ripple"]}>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 );
 
@@ -18,7 +21,10 @@ export default Loader_straw;
 
         const Loader_straw = () => (
          <div>
-          <div className="box"></div>
+          <div className="ld-ripple">
+  <div></div>
+  <div></div>
+</div>
         </div>
         );
 

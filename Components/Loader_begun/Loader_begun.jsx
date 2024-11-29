@@ -3,22 +3,7 @@ import styles from "./Loader_begun.module.css";
 
 const Loader_begun = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["head"]}></div>
-
-      <div className={styles["flames"]}>
-        <div className={styles["particle"]}></div>
-        <div className={styles["particle"]}></div>
-        <div className={styles["particle"]}></div>
-        <div className={styles["particle"]}></div>
-        <div className={styles["particle"]}></div>
-        <div className={styles["particle"]}></div>
-        <div className={styles["particle"]}></div>
-        <div className={styles["particle"]}></div>
-      </div>
-
-      <div className={styles["eye"]}></div>
-    </div>
+    <div className={styles["blob"]}></div>
   </div>
 );
 
@@ -33,22 +18,7 @@ export default Loader_begun;
 
         const Loader_begun = () => (
          <div>
-          <div className="loader">
-  <div className="head"></div>
-  
-  <div className="flames">
-    <div className="particle"></div>
-    <div className="particle"></div>
-    <div className="particle"></div>
-    <div className="particle"></div>
-    <div className="particle"></div>
-    <div className="particle"></div>
-    <div className="particle"></div>
-    <div className="particle"></div>
-  </div>
-  
-  <div className="eye"></div>
-</div>
+          <div className="blob"></div>
         </div>
         );
 

@@ -3,25 +3,15 @@ import styles from "./Loader_eager.module.css";
 
 const Loader_eager = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["square"]}>
-        <span style="--i:0;"></span>
-        <span style="--i:1;"></span>
-        <span style="--i:2;"></span>
-        <span style="--i:3;"></span>
-      </div>
-      <div className={styles["square"]}>
-        <span style="--i:0;"></span>
-        <span style="--i:1;"></span>
-        <span style="--i:2;"></span>
-        <span style="--i:3;"></span>
-      </div>
-      <div className={styles["square"]}>
-        <span style="--i:0;"></span>
-        <span style="--i:1;"></span>
-        <span style="--i:2;"></span>
-        <span style="--i:3;"></span>
-      </div>
+    <div className={styles["spinner"]}>
+      <span className={styles["spinner-part-0"]}></span>
+      <span className={styles["spinner-part-1"]}></span>
+      <span className={styles["spinner-part-2"]}></span>
+      <span className={styles["spinner-part-3"]}></span>
+      <span className={styles["spinner-part-0"]}></span>
+      <span className={styles["spinner-part-1"]}></span>
+      <span className={styles["spinner-part-2"]}></span>
+      <span className={styles["spinner-part-3"]}></span>
     </div>
   </div>
 );
@@ -37,25 +27,15 @@ export default Loader_eager;
 
         const Loader_eager = () => (
          <div>
-          <div className="container">
-  <div className="square">
-    <span style="--i:0;"></span>
-    <span style="--i:1;"></span>
-    <span style="--i:2;"></span>
-    <span style="--i:3;"></span>
-  </div>
-  <div className="square">
-    <span style="--i:0;"></span>
-    <span style="--i:1;"></span>
-    <span style="--i:2;"></span>
-    <span style="--i:3;"></span>
-  </div>
-  <div className="square">
-    <span style="--i:0;"></span>
-    <span style="--i:1;"></span>
-    <span style="--i:2;"></span>
-    <span style="--i:3;"></span>
-  </div>
+          <div className="spinner">
+  <span className="spinner-part-0"></span>
+  <span className="spinner-part-1"></span>
+  <span className="spinner-part-2"></span>
+  <span className="spinner-part-3"></span>
+  <span className="spinner-part-0"></span>
+  <span className="spinner-part-1"></span>
+  <span className="spinner-part-2"></span>
+  <span className="spinner-part-3"></span>
 </div>
         </div>
         );

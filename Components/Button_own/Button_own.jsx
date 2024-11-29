@@ -3,7 +3,7 @@ import styles from "./Button_own.module.css";
 
 const Button_own = () => (
   <div>
-    <button>button</button>
+    <button> Button</button>
   </div>
 );
 
@@ -18,8 +18,7 @@ export default Button_own;
 
         const Button_own = () => (
          <div>
-          <button>
-  button
+          <button> Button
 </button>
         </div>
         );

@@ -3,16 +3,7 @@ import styles from "./Loader_fight.module.css";
 
 const Loader_fight = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["cube"]}>
-        <div className={styles["face"]}></div>
-        <div className={styles["face"]}></div>
-        <div className={styles["face"]}></div>
-        <div className={styles["face"]}></div>
-        <div className={styles["face"]}></div>
-        <div className={styles["face"]}></div>
-      </div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -27,16 +18,7 @@ export default Loader_fight;
 
         const Loader_fight = () => (
          <div>
-          <div className="loader">
-    <div className="cube">
-        <div className="face"></div>
-        <div className="face"></div>
-        <div className="face"></div>
-        <div className="face"></div>
-        <div className="face"></div>
-        <div className="face"></div>
-    </div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

@@ -3,13 +3,7 @@ import styles from "./Loader_rope.module.css";
 
 const Loader_rope = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div
-        className={
-          styles["justify-content-center"] + styles["jimu-primary-loading"]
-        }
-      ></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -24,9 +18,7 @@ export default Loader_rope;
 
         const Loader_rope = () => (
          <div>
-          <div className="loader">
-  <div className="justify-content-center jimu-primary-loading"></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

@@ -3,9 +3,12 @@ import styles from "./Button_seems.module.css";
 
 const Button_seems = () => (
   <div>
-    <button>
-      <div className={styles["arrow-up"]}></div>
-    </button>
+    <div className={styles["nav_bar"]}>
+      <div className={styles["bar1"]}></div>
+      <div className={styles["bar2"]}></div>
+      <div className={styles["bar3_h"]}></div>
+      <div className={styles["bar4"]}></div>
+    </div>
   </div>
 );
 
@@ -20,9 +23,12 @@ export default Button_seems;
 
         const Button_seems = () => (
          <div>
-          <button>
-    <div className="arrow-up"></div>
-</button>
+          <div className="nav_bar">
+  <div className="bar1"></div>
+  <div className="bar2"></div>
+  <div className="bar3_h"></div>
+  <div className="bar4"></div>
+</div>
         </div>
         );
 

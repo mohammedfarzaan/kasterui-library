@@ -1,35 +1,18 @@
 import React from "react";
-import styles from "./Button_close.module.css";
 
 const Button_close = () => (
   <div>
-    <div className={styles["container"]}>
-      <button className={styles["button"]}>Button</button>
-    </div>
+    <button
+      className="cursor-pointer inline-flex items-center rounded-full px-9 py-3 text-xl font-mono font-semibold text-rose-600 hover:text-white border-2 border-rose-600
+hover:bg-rose-600 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-75 hover:bg-rose-600 duration-300  focus:bg-transparent"
+    >
+      BUTTON
+    </button>
   </div>
 );
 
 export default Button_close;
-{
-  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Button_close = () => (
-         <div>
-          <div className="container">
-  <button className="button">
-    Button
-  </button>
-</div>
-        </div>
-        );
-
-        export default Button_close;
-        
-        
-         */
+{
+  /* */
 }

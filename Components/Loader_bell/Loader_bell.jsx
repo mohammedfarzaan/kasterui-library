@@ -3,10 +3,9 @@ import styles from "./Loader_bell.module.css";
 
 const Loader_bell = () => (
   <div>
-    <div className={styles["center-body"]}>
-      <div className={styles["loader-circle-9"]}>
-        Loading
-        <span></span>
+    <div id="box-outer">
+      <div id="box-inner">
+        <div id="box"></div>
       </div>
     </div>
   </div>
@@ -23,10 +22,9 @@ export default Loader_bell;
 
         const Loader_bell = () => (
          <div>
-          <div className="center-body">
-  <div className="loader-circle-9">
-    Loading
-    <span></span>
+          <div id="box-outer">
+  <div id="box-inner">
+    <div id="box"></div>
   </div>
 </div>
         </div>

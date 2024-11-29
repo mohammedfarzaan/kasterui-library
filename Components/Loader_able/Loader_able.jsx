@@ -3,7 +3,7 @@ import styles from "./Loader_able.module.css";
 
 const Loader_able = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["line-wobble"]}></div>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Loader_able;
 
         const Loader_able = () => (
          <div>
-          <div className="loader"></div>
+          <div className="line-wobble"></div>
         </div>
         );
 

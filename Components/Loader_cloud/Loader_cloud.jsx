@@ -3,11 +3,7 @@ import styles from "./Loader_cloud.module.css";
 
 const Loader_cloud = () => (
   <div>
-    <div className={styles["loader"]}>
-      <span className={styles["bar"]}></span>
-      <span className={styles["bar"]}></span>
-      <span className={styles["bar"]}></span>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -22,11 +18,7 @@ export default Loader_cloud;
 
         const Loader_cloud = () => (
          <div>
-          <div className="loader">
-    <span className="bar"></span>
-    <span className="bar"></span>
-    <span className="bar"></span>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

@@ -3,9 +3,11 @@ import styles from "./Button_pen.module.css";
 
 const Button_pen = () => (
   <div>
-    <button>
-      <span> HOVER</span>
-    </button>
+    <div className={styles["button"]}>
+      <a href="#" className={styles["anchor"]}>
+        <span>Download CV</span>
+      </a>
+    </div>
   </div>
 );
 
@@ -20,10 +22,11 @@ export default Button_pen;
 
         const Button_pen = () => (
          <div>
-          <button>
-  <span> HOVER
-  </span>
-</button>
+          <div className="button">
+  <a href="#" className="anchor">
+    <span>Download CV</span>
+  </a>
+</div>
         </div>
         );
 

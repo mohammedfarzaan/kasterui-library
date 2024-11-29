@@ -3,19 +3,7 @@ import styles from "./Loader_shelf.module.css";
 
 const Loader_shelf = () => (
   <div>
-    <div className={styles["spinnerContainer"]}>
-      <div className={styles["spinner"]}></div>
-      <div className={styles["loader"]}>
-        <p>loading</p>
-        <div className={styles["words"]}>
-          <span className={styles["word"]}>posts</span>
-          <span className={styles["word"]}>images</span>
-          <span className={styles["word"]}>followers</span>
-          <span className={styles["word"]}>hashtags</span>
-          <span className={styles["word"]}>posts</span>
-        </div>
-      </div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -30,19 +18,7 @@ export default Loader_shelf;
 
         const Loader_shelf = () => (
          <div>
-          <div className="spinnerContainer">
-  <div className="spinner"></div>
-  <div className="loader">
-    <p>loading</p>
-    <div className="words">
-      <span className="word">posts</span>
-      <span className="word">images</span>
-      <span className="word">followers</span>
-      <span className="word">hashtags</span>
-      <span className="word">posts</span>
-    </div>
-  </div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

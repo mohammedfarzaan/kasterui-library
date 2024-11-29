@@ -3,12 +3,9 @@ import styles from "./Loader_laugh.module.css";
 
 const Loader_laugh = () => (
   <div>
-    <div className={styles["loader-3"]}>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
+    <div className={styles["container"]}>
+      <div className={styles["half"]}></div>
+      <div className={styles["half"]}></div>
     </div>
   </div>
 );
@@ -24,12 +21,9 @@ export default Loader_laugh;
 
         const Loader_laugh = () => (
          <div>
-          <div className="loader-3">
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
+          <div className="container">
+  <div className="half"></div>
+  <div className="half"></div>
 </div>
         </div>
         );

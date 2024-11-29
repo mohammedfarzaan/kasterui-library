@@ -4,12 +4,9 @@ import styles from "./Loader_equal.module.css";
 const Loader_equal = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["square"]}>
-        <div className={styles["mini_square"] + styles["sq-1"]}></div>
-        <div className={styles["mini_square"] + styles["sq-2"]}></div>
-        <div className={styles["mini_square"]}></div>
-        <div className={styles["mini_square"] + styles["sq-4"]}></div>
-      </div>
+      <div className={styles["leaf"]}></div>
+      <div className={styles["leaf"]}></div>
+      <div className={styles["leaf"]}></div>
     </div>
   </div>
 );
@@ -26,12 +23,9 @@ export default Loader_equal;
         const Loader_equal = () => (
          <div>
           <div className="loader">
-  <div className="square">
-    <div className="mini_square sq-1"></div>
-    <div className="mini_square sq-2"></div>
-    <div className="mini_square"></div>
-    <div className="mini_square sq-4"></div>
-  </div>
+  <div className="leaf"></div>
+  <div className="leaf"></div>
+  <div className="leaf"></div>
 </div>
         </div>
         );

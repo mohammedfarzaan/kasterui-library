@@ -3,7 +3,18 @@ import styles from "./Loader_box.module.css";
 
 const Loader_box = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["spinner"]}>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 );
 
@@ -18,7 +29,18 @@ export default Loader_box;
 
         const Loader_box = () => (
          <div>
-          <div className="loader"></div>
+          <div className="spinner">
+  <div></div>   
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+</div>
         </div>
         );
 

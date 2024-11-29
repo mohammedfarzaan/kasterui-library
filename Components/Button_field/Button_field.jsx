@@ -3,10 +3,7 @@ import styles from "./Button_field.module.css";
 
 const Button_field = () => (
   <div>
-    <button className={styles["button-3d"] + styles["button-3d-red"]}>
-      {" "}
-      Button
-    </button>
+    <button>BUTTON</button>
   </div>
 );
 
@@ -21,8 +18,7 @@ export default Button_field;
 
         const Button_field = () => (
          <div>
-          <button className="button-3d button-3d-red"> Button
-</button>
+          <button>BUTTON</button>
         </div>
         );
 

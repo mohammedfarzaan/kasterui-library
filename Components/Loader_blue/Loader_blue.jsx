@@ -3,7 +3,13 @@ import styles from "./Loader_blue.module.css";
 
 const Loader_blue = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["spinner"]}>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 );
 
@@ -18,7 +24,13 @@ export default Loader_blue;
 
         const Loader_blue = () => (
          <div>
-          <div className="loader"></div>
+          <div className="spinner">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
         </div>
         );
 

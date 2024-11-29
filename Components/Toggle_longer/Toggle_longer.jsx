@@ -3,10 +3,10 @@ import styles from "./Toggle_longer.module.css";
 
 const Toggle_longer = () => (
   <div>
-    <div className={styles["toggle"]}>
+    <label className={styles["switch"]}>
       <input type="checkbox" />
-      <label></label>
-    </div>
+      <span className={styles["slider"]}></span>
+    </label>
   </div>
 );
 
@@ -21,10 +21,10 @@ export default Toggle_longer;
 
         const Toggle_longer = () => (
          <div>
-          <div className="toggle">
+          <label className="switch">
   <input type="checkbox" />
-  <label></label>
-</div>
+  <span className="slider"></span>
+</label>
         </div>
         );
 

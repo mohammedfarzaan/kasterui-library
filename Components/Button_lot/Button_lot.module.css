@@ -1,98 +1,81 @@
 
-/* From Uiverse.io by r7chardgh - Tags: 3d, button, nuclear-button */
-.button {
+/* From Uiverse.io by misaraadel - Tags: button, creative, 3d button, css animation, hover idea */
+.btn-shape {
+  transition: all .3s linear;
+  width: 168px;
+  height: 50px;
   display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  outline: none;
+  background-color: #020202;
+  border-radius: 50px;
+  border: 0px;
   position: relative;
-  background: none;
-  border: 0;
-  transform-style: preserve-3d;
-  transform: rotateX(45deg)rotateZ(45deg);
+  z-index: 99;
   cursor: pointer;
 }
 
-.button > .red {
+.btn-shape::after,
+.btn-shape::before {
+  content: '';
   position: absolute;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  background-color: rgb(255, 49, 49);
-  transform: translate(-50%,-50%);
-  transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.red::before {
-  content: "";
-  position: absolute;
+  background-color: #020202;
   width: 100%;
-  height: 1em;
-  left: 0;
-  background-color: rgb(255, 49, 49);
-  transform: rotateZ(-45deg) translateY(-.5em);
-  transition: height 150ms, transform 150ms;
-}
-
-.red::after {
-  content: "";
-  position: absolute;
-  width: 100%;
+  opacity: 0;
   height: 100%;
-  top: 0;
   left: 0;
-  border-radius: 50%;
-  background-color: rgb(255, 49, 49);
-  transform: rotateZ(-45deg) translateY(-1em);
-  transition: transform 150ms;
-  border: 1px solid rgb(255, 196, 196);
+  border-radius: 100px;
+  bottom: 0;
+  z-index: -2;
+  transition: all .3s linear;
 }
 
-.button > .base {
-  position: relative;
-  width: 3em;
-  height: 3em;
-  background-color: rgb(245, 216, 90);
-  transform-style: preserve-3d;
-  border-bottom: 1px solid rgb(255, 255, 255);
-  border-right: 1px solid rgb(255, 255, 255);
+.btn-shape span {
+  font-size: 16px;
+  font-weight: 700;
+  transition: all .3s linear;
+  color: #fff;
+  text-transform: capitalize;
 }
 
-.base::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgb(245, 216, 90);
-  transform-origin: bottom;
-  transform: rotateX(90deg);
-  border-right: 1px solid #fff;
+.btn-shape:hover {
+  transform: translate(-12px, -12px);
 }
 
-.base::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgb(245, 216, 90);
-  transform-origin: right;
-  transform: rotateY(-90deg);
-  border-left: 1px solid #fff;
+.btn-shape:hover:after {
+  transform: translate(6px, 6px);
+  opacity: .5;
 }
 
-.button:active>.red::before {
-  transform: rotateZ(-45deg) translateY(0);
-  height: 0;
+.btn-shape:hover::before {
+  transform: translate(12px, 12px);
+  opacity: .3;
 }
 
-.button:active>.red::after {
-  transform: rotateZ(-45deg) translateY(0);
+.btn-shape:hover span {
+  animation: storm .4s linear both;
 }
 
+@keyframes storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
 
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}

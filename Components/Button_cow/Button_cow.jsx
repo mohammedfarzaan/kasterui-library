@@ -3,10 +3,11 @@ import styles from "./Button_cow.module.css";
 
 const Button_cow = () => (
   <div>
-    <a href="#" className={styles["btn"]}>
-      {" "}
-      Click Me
-    </a>
+    <button type="button" className={styles["button"]}>
+      <div className={styles["button-top"]}>3D Button</div>
+      <div className={styles["button-bottom"]}></div>
+      <div className={styles["button-base"]}></div>
+    </button>
   </div>
 );
 
@@ -21,7 +22,11 @@ export default Button_cow;
 
         const Button_cow = () => (
          <div>
-          <a href="#" className="btn"> Click Me</a>
+          <button type="button" className="button">
+  <div className="button-top">3D Button</div>
+  <div className="button-bottom"></div>
+  <div className="button-base"></div>
+</button>
         </div>
         );
 

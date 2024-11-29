@@ -3,7 +3,7 @@ import styles from "./Loader_leave.module.css";
 
 const Loader_leave = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["meteor"]}></div>
   </div>
 );
 
@@ -18,7 +18,7 @@ export default Loader_leave;
 
         const Loader_leave = () => (
          <div>
-          <div className="loader"></div>
+          <div className="meteor"></div>
         </div>
         );
 

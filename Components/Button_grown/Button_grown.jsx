@@ -3,7 +3,7 @@ import styles from "./Button_grown.module.css";
 
 const Button_grown = () => (
   <div>
-    <button>START</button>
+    <button>click me</button>
   </div>
 );
 
@@ -19,7 +19,7 @@ export default Button_grown;
         const Button_grown = () => (
          <div>
           <button>
-  START
+  click me
 </button>
         </div>
         );

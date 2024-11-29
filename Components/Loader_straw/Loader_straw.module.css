@@ -1,31 +1,53 @@
 
-/* From Uiverse.io by Saiyed-Tanvir - Tags: loader, box, blocky, box-shadow */
-.box {
-  height: 5cm;
-  width: 5cm;
-  border: 5px solid #ffa600;
-  box-shadow: inset 0 0 0 #ffa600;
-  animation: load 2s ease-in-out infinite;
+/* From Uiverse.io by Codecite - Tags: animation, loading, loader */
+.ld-ripple {
+  position: relative;
+  width: 80px;
+  height: 80px;
 }
 
-@keyframes load {
+.ld-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: ld-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.ld-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes ld-ripple {
   0% {
-    box-shadow: inset -2.5cm -2.5cm 0 #ffa600;
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
   }
 
-  25% {
-    box-shadow: inset 2.5cm -2.5cm 0 #ffa600;
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
   }
 
-  50% {
-    box-shadow: inset 2.5cm 2.5cm 0 #ffa600;
-  }
-
-  75% {
-    box-shadow: inset -2.5cm 2.5cm 0 #ffa600;
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
   }
 
   100% {
-    box-shadow: inset -2.5cm -2.5cm 0 #ffa600;
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
   }
 }

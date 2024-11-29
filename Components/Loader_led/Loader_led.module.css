@@ -1,86 +1,30 @@
 
-/* From Uiverse.io by G4b413l - Tags: loader */
-.jelly-triangle {
- --uib-size: 42px;
- --uib-speed: 1.25s;
- --uib-color: #512727;
- position: relative;
- height: var(--uib-size);
- width: var(--uib-size);
- filter: url('#uib-jelly-triangle-ooze');
+/* From Uiverse.io by doniaskima - Tags: simple, material design, loader */
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 80px;
+  height: 70px;
+  border: 5px solid #000;
+  padding: 0 8px;
+  box-sizing: border-box;
+  background: linear-gradient(#fff 0 0) 0    0/8px 20px,
+    linear-gradient(#fff 0 0) 100% 0/8px 20px,
+    radial-gradient(farthest-side,#fff 90%,#0000) 0 5px/8px 8px content-box,
+    #000;
+  background-repeat: no-repeat;
+  animation: l3 2s infinite linear;
 }
 
-.jelly-triangle__dot,
-.jelly-triangle::before,
-.jelly-triangle::after {
- content: '';
- position: absolute;
- width: 33%;
- height: 33%;
- background: var(--uib-color);
- border-radius: 100%;
-}
+@keyframes l3 {
+  25% {
+    background-position: 0 0   ,100% 100%,100% calc(100% - 5px)
+  }
 
-.jelly-triangle__dot {
- top: 6%;
- left: 30%;
- animation: grow0 var(--uib-speed) ease infinite;
-}
+  50% {
+    background-position: 0 100%,100% 100%,0    calc(100% - 5px)
+  }
 
-.jelly-triangle::before {
- bottom: 6%;
- right: 0;
- animation: grow0 var(--uib-speed) ease calc(var(--uib-speed) * -0.666)
-    infinite;
-}
-
-.jelly-triangle::after {
- bottom: 6%;
- left: 0;
- animation: grow0 var(--uib-speed) ease calc(var(--uib-speed) * -0.333)
-    infinite;
-}
-
-.jelly-triangle__traveler {
- position: absolute;
- top: 6%;
- left: 30%;
- width: 33%;
- height: 33%;
- background: var(--uib-color);
- border-radius: 100%;
- animation: triangulate var(--uib-speed) ease infinite;
-}
-
-.jelly-maker {
- width: 0;
- height: 0;
- position: absolute;
-}
-
-@keyframes triangulate {
- 0%,
-  100% {
-  transform: none;
- }
-
- 33.333% {
-  transform: translate(120%, 175%);
- }
-
- 66.666% {
-  transform: translate(-95%, 175%);
- }
-}
-
-@keyframes grow0 {
- 0%,
-  100% {
-  transform: scale(1.5);
- }
-
- 20%,
-  70% {
-  transform: none;
- }
+  75% {
+    background-position: 0 100%,100%    0,100% 5px
+  }
 }

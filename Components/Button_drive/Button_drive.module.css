@@ -1,64 +1,56 @@
 
-/* From Uiverse.io by vinodjangid07  - Tags: simple, animation, button, hover, hover effect, print */
-.print-btn {
-  width: 100px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  border: 1px solid rgb(213, 213, 213);
-  border-radius: 10px;
-  gap: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  overflow: hidden;
-  font-weight: 500;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.065);
-  transition: all 0.3s;
-}
-.printer-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 100%;
-}
-.printer-container {
-  height: 50%;
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+/* From Uiverse.io by zebra76966 - Tags: button, dark, 3d button */
+button {
+  border: none;
 }
 
-.printer-container svg {
-  width: 100%;
-  height: auto;
-  transform: translateY(4px);
+.c-button {
+  background: linear-gradient(140deg, rgba(75, 118, 200, 1) 0%, rgba(31, 70, 145, 1) 100%);
+  border-radius: 45px;
+  font-size: 25px;
+  text-align: left;
+  padding: 11px 0px 11px 0px;
+  border: 4px solid rgb(37, 37, 37) !important;
+  border-style: outset;
+  box-shadow: -6px -5px 18px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
-.printer-page-wrapper {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+
+.c-button .c-main {
+  border-radius: 45px;
+  color: rgba(255, 255, 255, 1);
+  padding: 11px 25px 11px 2px;
+  box-shadow: inset 0px 0px 5px rgba(17, 17, 17, 0);
+  transition: all 0.5s ease-in-out;
+  border: 1px solid transparent;
 }
-.printer-page {
-  width: 70%;
-  height: 10px;
-  border: 1px solid black;
-  background-color: white;
-  transform: translateY(0px);
-  transition: all 0.3s;
-  transform-origin: top;
+
+.c-ico .c-blur {
+  background: linear-gradient(318deg, rgba(75, 118, 200, 1) 0%, rgba(31, 70, 145, 1) 100%);
+  border-radius: 100%;
+  margin-left: 0;
+  padding: 8px 23px;
+  filter: blur(1px);
+  text-align: center;
 }
-.print-btn:hover .printer-page {
-  height: 16px;
-  background-color: rgb(239, 239, 239);
+
+.c-ico {
+  position: relative;
+  margin-right: 20px;
 }
-.print-btn:hover {
-  background-color: rgb(239, 239, 239);
+
+.c-ico .ico-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Hovering */
+
+.c-button .c-main:hover {
+  box-shadow: inset 0px 0px 5px rgba(17, 17, 17, 0.6);
+  border: 1px solid rgba(26, 26, 26,0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 

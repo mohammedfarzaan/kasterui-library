@@ -1,79 +1,55 @@
 
-/* From Uiverse.io by KSAplay - Tags: button */
-.container {
-  transition: 200ms ease;
-}
-
-.button {
+/* From Uiverse.io by gharsh11032000 - Tags: button, hover effect */
+.animated-button {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 40px;
-  border-width: 0;
-  border-radius: 1em;
-  background-color: #19171C;
-  transition: 500ms ease;
+  display: inline-block;
+  padding: 16px 32px;
+  border: none;
+  background-color: #2196F3;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.button p {
-  font-size: 20px;
-  font-weight: bold;
-  background: rgb(137,60,21);
-  background: linear-gradient(90deg, rgba(137,60,21,1) 0%, rgba(255,222,68,1) 17%, rgba(177,116,30,1) 24%, rgba(255,231,82,1) 40%, rgba(224,147,38,1) 50%, rgba(228,150,42,1) 59%, rgba(176,120,27,1) 70%, rgba(239,179,51,1) 85%, rgba(135,58,26,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.button::before {
+.animated-button:before {
+  content: "";
   position: absolute;
-  content: '';
-  width: 190px;
-  height: 50px;
-  border-radius: 1em;
-  background-size: 100%;
-  background: rgb(137,60,21);
-  background: linear-gradient(90deg, rgba(137,60,21,1) 0%, rgba(255,222,68,1) 17%, rgba(177,116,30,1) 24%, rgba(255,231,82,1) 40%, rgba(224,147,38,1) 50%, rgba(228,150,42,1) 59%, rgba(176,120,27,1) 70%, rgba(239,179,51,1) 85%, rgba(135,58,26,1) 100%);
-  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.container:hover .button::before {
-  animation: golden 5s infinite alternate ease-in-out;
+.animated-button span {
+  position: relative;
+  z-index: 1;
 }
 
-.container:hover .button p {
-  animation: golden 5s infinite alternate ease-in-out;
+.animated-button:hover {
+  color: #2196F3;
+  background-color: #fff;
+  box-shadow: 0 0 20px hsla(263, 77%, 31%, 0);
 }
 
-.container:hover {
-  transform: scale(1.1);
+.animated-button:active {
+  scale: 0.9;
 }
 
-.container:active {
-  transform: scale(1);
+.animated-button:hover:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 1;
 }
 
-.container:active .button::before {
-  animation: golden 1s infinite alternate ease-in-out;
-}
 
-.container:active .button p {
-  animation: golden 1s infinite alternate ease-in-out;
-}
 
-@keyframes golden {
-  0% {
-    background-size: 100%;
-    background-position: 50%;
-  }
 
-  50% {
-    background-size: 500%;
-    background-position: 0%;
-  }
 
-  100% {
-    background-size: 200%;
-    background-position: 100%;
-  }
-}

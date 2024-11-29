@@ -3,7 +3,7 @@ import styles from "./Button_hit.module.css";
 
 const Button_hit = () => (
   <div>
-    <button className={styles["button"]}>hover me !</button>
+    <button className={styles["button"]}>Hover me</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_hit;
 
         const Button_hit = () => (
          <div>
-          <button className="button">hover me !</button>
+          <button className="button">
+  Hover me
+</button>
         </div>
         );
 

@@ -3,11 +3,21 @@ import styles from "./Loader_worry.module.css";
 
 const Loader_worry = () => (
   <div>
-    <div className={styles["blocks"]}>
-      <div className={styles["block"]}></div>
-      <div className={styles["block"]}></div>
-      <div className={styles["block"]}></div>
-      <div className={styles["block"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["head"]}></div>
+
+      <div className={styles["flames"]}>
+        <div className={styles["particle"]}></div>
+        <div className={styles["particle"]}></div>
+        <div className={styles["particle"]}></div>
+        <div className={styles["particle"]}></div>
+        <div className={styles["particle"]}></div>
+        <div className={styles["particle"]}></div>
+        <div className={styles["particle"]}></div>
+        <div className={styles["particle"]}></div>
+      </div>
+
+      <div className={styles["eye"]}></div>
     </div>
   </div>
 );
@@ -23,11 +33,21 @@ export default Loader_worry;
 
         const Loader_worry = () => (
          <div>
-          <div className="blocks">
-  <div className="block"></div>
-  <div className="block"></div>
-  <div className="block"></div>
-  <div className="block"></div>
+          <div className="loader">
+  <div className="head"></div>
+  
+  <div className="flames">
+    <div className="particle"></div>
+    <div className="particle"></div>
+    <div className="particle"></div>
+    <div className="particle"></div>
+    <div className="particle"></div>
+    <div className="particle"></div>
+    <div className="particle"></div>
+    <div className="particle"></div>
+  </div>
+  
+  <div className="eye"></div>
 </div>
         </div>
         );

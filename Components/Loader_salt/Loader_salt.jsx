@@ -3,19 +3,11 @@ import styles from "./Loader_salt.module.css";
 
 const Loader_salt = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["loader"]}>
-        <span></span>
-      </div>
-      <div className={styles["loader"]}>
-        <span></span>
-      </div>
-      <div className={styles["loader"]}>
-        <i></i>
-      </div>
-      <div className={styles["loader"]}>
-        <i></i>
-      </div>
+    <div className={styles["loader"]}>
+      <span className={styles["item"]}></span>
+      <span className={styles["item"]}></span>
+      <span className={styles["item"]}></span>
+      <span className={styles["item"]}></span>
     </div>
   </div>
 );
@@ -31,12 +23,12 @@ export default Loader_salt;
 
         const Loader_salt = () => (
          <div>
-          <div className="container">
-        <div className="loader"><span></span></div>
-        <div className="loader"><span></span></div>
-        <div className="loader"><i></i></div>
-        <div className="loader"><i></i></div>
-    </div>
+          <div className="loader">
+  <span className="item"></span>
+  <span className="item"></span>
+  <span className="item"></span>
+  <span className="item"></span>
+</div>
         </div>
         );
 

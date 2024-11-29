@@ -3,7 +3,9 @@ import styles from "./Button_space.module.css";
 
 const Button_space = () => (
   <div>
-    <button className={styles["button"]}>Enter</button>
+    <a href="#">
+      <span>UIVERSE</span>
+    </a>
   </div>
 );
 
@@ -18,9 +20,7 @@ export default Button_space;
 
         const Button_space = () => (
          <div>
-          <button className="button">
-  Enter
-</button>
+          <a href="#"><span>UIVERSE</span></a>
         </div>
         );
 

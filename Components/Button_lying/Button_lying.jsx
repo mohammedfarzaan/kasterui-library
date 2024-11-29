@@ -3,7 +3,11 @@ import styles from "./Button_lying.module.css";
 
 const Button_lying = () => (
   <div>
-    <button className={styles["button"]}>ㅤ JOIN NOW</button>
+    <button className={styles["button"]}>
+      <span>Button</span>
+      <div className={styles["overlay"]}></div>
+      <div className={styles["shine"]}></div>
+    </button>
   </div>
 );
 
@@ -19,7 +23,9 @@ export default Button_lying;
         const Button_lying = () => (
          <div>
           <button className="button">
- ㅤ JOIN NOW
+  <span>Button</span>
+  <div className="overlay"></div>
+  <div className="shine"></div>
 </button>
         </div>
         );

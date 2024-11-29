@@ -3,14 +3,20 @@ import styles from "./Loader_forty.module.css";
 
 const Loader_forty = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["slice"]}></div>
-      <div className={styles["slice"]}></div>
-      <div className={styles["slice"]}></div>
-      <div className={styles["slice"]}></div>
-      <div className={styles["slice"]}></div>
-      <div className={styles["slice"]}></div>
-    </div>
+    <figure>
+      <div style="--i: 1"></div>
+      <div style="--i: 2"></div>
+      <div style="--i: 3"></div>
+      <div style="--i: 4"></div>
+      <div style="--i: 5"></div>
+      <div style="--i: 6"></div>
+      <div style="--i: 7"></div>
+      <div style="--i: 8"></div>
+      <div style="--i: 9"></div>
+      <div style="--i: 10"></div>
+      <div style="--i: 11"></div>
+      <div style="--i: 12"></div>
+    </figure>
   </div>
 );
 
@@ -25,14 +31,20 @@ export default Loader_forty;
 
         const Loader_forty = () => (
          <div>
-          <div className="container">
-  <div className="slice"></div>
-  <div className="slice"></div>
-  <div className="slice"></div>
-  <div className="slice"></div>
-  <div className="slice"></div>
-  <div className="slice"></div>
-</div>
+          <figure>
+  <div style="--i: 1"></div>
+  <div style="--i: 2"></div>
+  <div style="--i: 3"></div>
+  <div style="--i: 4"></div>
+  <div style="--i: 5"></div>
+  <div style="--i: 6"></div>
+  <div style="--i: 7"></div>
+  <div style="--i: 8"></div>
+  <div style="--i: 9"></div>
+  <div style="--i: 10"></div>
+  <div style="--i: 11"></div>
+  <div style="--i: 12"></div>
+</figure>
         </div>
         );
 

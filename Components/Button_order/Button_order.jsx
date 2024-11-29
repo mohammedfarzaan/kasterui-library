@@ -3,7 +3,9 @@ import styles from "./Button_order.module.css";
 
 const Button_order = () => (
   <div>
-    <button className={styles["morph-button"]}></button>
+    <button className={styles["btn-white"]} href="#">
+      Discover
+    </button>
   </div>
 );
 
@@ -18,7 +20,9 @@ export default Button_order;
 
         const Button_order = () => (
          <div>
-          <button className="morph-button"></button>
+          <button className="btn-white" href="#">
+  Discover
+</button>
         </div>
         );
 

@@ -3,15 +3,7 @@ import styles from "./Button_pick.module.css";
 
 const Button_pick = () => (
   <div>
-    <input id="c" type="checkbox" />
-    <label id="upload_app" for="c">
-      <div id="app">
-        <div id="arrow"></div>
-        <div id="success">
-          <i className={styles["fas"] + styles["fa-check-circle"]}></i>
-        </div>
-      </div>
-    </label>
+    <button>INPUT</button>
   </div>
 );
 
@@ -26,15 +18,9 @@ export default Button_pick;
 
         const Button_pick = () => (
          <div>
-          <input id="c" type="checkbox" />
-<label id="upload_app" for="c">
-  <div id="app">
-    <div id="arrow"></div>
-    <div id="success">
-      <i className="fas fa-check-circle"></i>
-    </div>
-  </div>
-</label>
+          <button>
+  INPUT
+</button>
         </div>
         );
 

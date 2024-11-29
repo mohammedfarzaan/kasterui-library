@@ -3,9 +3,12 @@ import styles from "./Button_ate.module.css";
 
 const Button_ate = () => (
   <div>
-    <button>
-      <a>Hover me</a>
-    </button>
+    <div className={styles["badges"]}>
+      <button className={styles["blue"]}>Share Online</button>
+      <button className={styles["yellow"]}>Working on it</button>
+      <button className={styles["green"]}>Success</button>
+      <button className={styles["red"]}>Error</button>
+    </div>
   </div>
 );
 
@@ -20,9 +23,12 @@ export default Button_ate;
 
         const Button_ate = () => (
          <div>
-          <button>
-    <a>Hover me</a>
-</button>
+          <div className="badges">
+    <button className="blue">Share Online</button>
+    <button className="yellow">Working on it</button>
+    <button className="green">Success</button>
+    <button className="red">Error</button>
+</div>
         </div>
         );
 

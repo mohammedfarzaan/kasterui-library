@@ -3,8 +3,11 @@ import styles from "./Loader_sort.module.css";
 
 const Loader_sort = () => (
   <div>
-    <div className={styles["loader"]}>
-      <span></span>
+    <div className={styles["container"]}>
+      <div className={styles["dash"] + styles["first"]}></div>
+      <div className={styles["dash"] + styles["seconde"]}></div>
+      <div className={styles["dash"] + styles["third"]}></div>
+      <div className={styles["dash"] + styles["fourth"]}></div>
     </div>
   </div>
 );
@@ -20,8 +23,11 @@ export default Loader_sort;
 
         const Loader_sort = () => (
          <div>
-          <div className="loader">
-  <span></span>
+          <div className="container">
+  <div className="dash first"></div>
+  <div className="dash seconde"></div>
+  <div className="dash third"></div>
+  <div className="dash fourth"></div>
 </div>
         </div>
         );

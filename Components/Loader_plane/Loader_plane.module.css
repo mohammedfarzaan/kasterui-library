@@ -1,84 +1,44 @@
 
-/* From Uiverse.io by Praashoo7 - Tags: animation, loader */
-.loader2 {
+/* From Uiverse.io by doniaskima - Tags: simple, material design, neumorphism, skeuomorphism, glassmorphism, flashy, loader */
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 100px;
+  height: 60px;
   display: flex;
-  align-items: center;
+  animation: l12-0 2s infinite linear;
 }
 
-.load21 {
-  position: relative;
+.loader::before,
+.loader::after {
   content: "";
-  height: 0.2em;
-  width: 4em;
-  border-radius: 5px;
-  opacity: 0;
-  background-color: white;
-  box-shadow: 0 1px 7px rgba(0,0,0,0.3);
-  animation: 2s flow_21 infinite;
-  animation-delay: 0.2s;
+  flex: 4;
+  background: radial-gradient(at 50% 20%,#0000,#000a) bottom left/20px 20px repeat-x,
+    linear-gradient(red 0 0) bottom/100% 20px no-repeat
+    #ddd;
+  -webkit-mask: repeating-linear-gradient(90deg,#000 0 4px,#0000 0 20px) 8px 0,
+    radial-gradient(farthest-side,#000 90%,#0000) left bottom/20px 20px repeat-x;
 }
 
-.load22 {
-  position: absolute;
-  content: "";
-  height: 0.2em;
-  width: 4em;
-  opacity: 0;
-  border-radius: 5px;
-  background-color: white;
-  animation: 2s flow_21 infinite;
-  animation-delay: 0.4s;
+.loader::after {
+  flex: 1;
+  transform-origin: top;
+  animation: l12-1 1s cubic-bezier(0,20,1,20) infinite;
 }
 
-.load23 {
-  position: absolute;
-  content: "";
-  height: 0.2em;
-  width: 4em;
-  opacity: 0;
-  border-radius: 5px;
-  background-color: white;
-  animation: 2s flow_21 infinite;
-  animation-delay: 0.6s;
-}
-
-.load24 {
-  position: absolute;
-  content: "";
-  height: 0.2em;
-  width: 4em;
-  opacity: 0;
-  border-radius: 5px;
-  background-color: white;
-  animation: 2s flow_21 infinite;
-  animation-delay: 0.8s;
-}
-
-.load25 {
-  position: absolute;
-  content: "";
-  height: 0.2em;
-  width: 4em;
-  opacity: 0;
-  border-radius: 5px;
-  background-color: white;
-  animation: 2s flow_21 infinite;
-  animation-delay: 1s;
-}
-
-@keyframes flow_21 {
-  0% {
-    transform: translateY(1em);
-    opacity: 1;
+@keyframes l12-0 {
+ 
+  0%,49.9% {
+    transform: scaleX(1)
   }
 
-  50% {
-    transform: translateY(-1em);
-    opacity: 1;
+  50%,100% {
+    transform: scaleX(-1)
   }
+}
 
+@keyframes l12-1 {
+ 
   100% {
-    transform: translateY(1em);
-    opacity: 1;
+    transform: rotate(-2deg)
   }
 }

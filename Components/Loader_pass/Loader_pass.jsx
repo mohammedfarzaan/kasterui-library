@@ -3,22 +3,18 @@ import styles from "./Loader_pass.module.css";
 
 const Loader_pass = () => (
   <div>
-    <div id="timer">
-      <div id="div1"></div>
-      <div id="div2"></div>
-      <div id="div3"></div>
-      <div id="div4"></div>
-      <div id="div5"></div>
-      <div id="div6"></div>
-      <div id="div7"></div>
-      <div id="div8"></div>
-      <div id="div9"></div>
-      <div id="div10"></div>
-      <div id="div11"></div>
-      <div id="div12"></div>
-      <div id="div13"></div>
-      <div id="div14"></div>
-      <div id="div15"></div>
+    <div className={styles["ui-abstergo"]}>
+      <div className={styles["abstergo-loader"]}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div className={styles["ui-text"]}>
+        Synchronization
+        <div className={styles["ui-dot"]}></div>
+        <div className={styles["ui-dot"]}></div>
+        <div className={styles["ui-dot"]}></div>
+      </div>
     </div>
   </div>
 );
@@ -34,22 +30,18 @@ export default Loader_pass;
 
         const Loader_pass = () => (
          <div>
-          <div id="timer">
-  <div id="div1"></div>
-  <div id="div2"></div>
-  <div id="div3"></div>
-  <div id="div4"></div>
-  <div id="div5"></div>
-  <div id="div6"></div>
-  <div id="div7"></div>
-  <div id="div8"></div>
-  <div id="div9"></div>
-  <div id="div10"></div>
-  <div id="div11"></div>
-  <div id="div12"></div>
-  <div id="div13"></div>
-  <div id="div14"></div>
-  <div id="div15"></div>
+          <div className="ui-abstergo">
+  <div className="abstergo-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div className="ui-text">
+    Synchronization
+    <div className="ui-dot"></div>
+    <div className="ui-dot"></div>
+    <div className="ui-dot"></div>
+  </div>
 </div>
         </div>
         );

@@ -3,7 +3,7 @@ import styles from "./Button_next.module.css";
 
 const Button_next = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button> Click me !</button>
   </div>
 );
 
@@ -18,8 +18,7 @@ export default Button_next;
 
         const Button_next = () => (
          <div>
-          <button className="button">
-  Button
+          <button> Click me !
 </button>
         </div>
         );

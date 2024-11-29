@@ -1,0 +1,84 @@
+
+/* From Uiverse.io by SouravBandyopadhyay  - Tags: simple, animation, black, social, card, dark, hover button, cardhover  */
+.card {
+  background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  );
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 350px;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.card .image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: scale-down;
+  transition: transform 0.3s ease-in-out;
+}
+.card .image:hover {
+  animation: pendulum 1s infinite ease-in-out;
+}
+
+@keyframes pendulum {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.card .heading {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card .icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card .icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease;
+}
+
+.card .icons a:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.card .icons svg {
+  fill: #f1f4ee;
+}
+
+.instagram svg,
+.x svg,
+.discord svg {
+  width: 24px;
+  height: 24px;
+}
+

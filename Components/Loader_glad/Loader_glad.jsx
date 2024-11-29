@@ -3,7 +3,12 @@ import styles from "./Loader_glad.module.css";
 
 const Loader_glad = () => (
   <div>
-    <div aria-live="assertive" role="alert" className={styles["loader"]}></div>
+    <div className={styles["loader"]}>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 );
 
@@ -18,7 +23,12 @@ export default Loader_glad;
 
         const Loader_glad = () => (
          <div>
-          <div aria-live="assertive" role="alert" className="loader"></div>
+          <div className="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
         </div>
         );
 

@@ -3,7 +3,14 @@ import styles from "./Loader_army.module.css";
 
 const Loader_army = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["spinner-box"]}>
+      <div className={styles["configure-border-1"]}>
+        <div className={styles["configure-core"]}></div>
+      </div>
+      <div className={styles["configure-border-2"]}>
+        <div className={styles["configure-core"]}></div>
+      </div>
+    </div>
   </div>
 );
 
@@ -18,7 +25,14 @@ export default Loader_army;
 
         const Loader_army = () => (
          <div>
-          <div className="loader"></div>
+          <div className="spinner-box">
+  <div className="configure-border-1">  
+    <div className="configure-core"></div>
+  </div>  
+  <div className="configure-border-2">
+    <div className="configure-core"></div>
+  </div> 
+</div>
         </div>
         );
 

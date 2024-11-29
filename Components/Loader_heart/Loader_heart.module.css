@@ -1,54 +1,38 @@
 
-/* From Uiverse.io by terenceodonoghue - Tags: loader */
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: flex;
-  gap: 0.625em;
-  transform: translate(-50%, -50%);
+/* From Uiverse.io by JkHuger - Tags: loader */
+.loader {
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  font-weight: 900;
+  background: conic-gradient(
+    #dff2ae 0 25%,
+    #ff904f 25% 50%,
+    #feefe7 50% 75%,
+    #ffde2b 75%
+  );
+  background-size: 200% 200%;
+  animation: animateBackground 4.5s ease-in-out infinite;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
-.container span {
-  border-radius: 50%;
-  height: 1.5em;
-  width: 1.5em;
-}
-
-.container span::before {
-  content: "";
-  display: block;
-  border-radius: inherit;
-  height: inherit;
-  width: inherit;
-  background-color: inherit;
-  animation: ripple 1.8s ease-out infinite;
-  animation-delay: inherit;
-  z-index: -1;
-}
-
-.container span:nth-of-type(1) {
-  background-color: #84cdfa;
-}
-
-.container span:nth-of-type(2) {
-  background-color: #5ad1cd;
-  animation-delay: 0.2s;
-}
-
-.container span:nth-of-type(3) {
-  background-color: #9b59b6;
-  animation-delay: 0.4s;
-}
-
-@keyframes ripple {
-  from {
-    opacity: 1;
-    transform: scale(0);
+@keyframes animateBackground {
+  25% {
+    background-position: 0 100%;
   }
 
-  to {
-    opacity: 0;
-    transform: scale(3);
+  50% {
+    background-position: 100% 100%;
+  }
+
+  75% {
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background-position: 0 0;
   }
 }
+

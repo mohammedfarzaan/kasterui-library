@@ -1,171 +1,183 @@
 
-/* From Uiverse.io by doniaskima - Tags: bounce animation, 3d button */
-.btn-96,
-.btn-96 *,
-.btn-96 :after,
-.btn-96 :before,
-.btn-96:after,
-.btn-96:before {
-  border: 0 solid;
-  box-sizing: border-box;
+/* From Uiverse.io by ZstarPanda0210  - Tags: social, notification, button, hover, message */
+#btn-message {
+  --text-color: #000;
+  --bg-color-sup: #d2d2d2;
+  --bg-color: #f4f4f4;
+  --bg-hover-color: #ffffff;
+  --online-status: #00da00;
+  --font-size: 16px;
+  --btn-transition: all 0.2s ease-out;
 }
 
-.btn-96 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
-  background-color: #000;
-  background-image: none;
-  color: #fff;
+.button-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 400 var(--font-size) Helvetica Neue, sans-serif;
+  box-shadow: 0 0 2.17382px rgba(0, 0, 0, 0.049),
+    0 1.75px 6.01034px rgba(0, 0, 0, 0.07),
+    0 3.63px 14.4706px rgba(0, 0, 0, 0.091), 0 22px 48px rgba(0, 0, 0, 0.14);
+  background-color: var(--bg-color);
+  border-radius: 68px;
   cursor: pointer;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-size: 100%;
-  line-height: 1.5;
-  margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
-}
-
-.btn-96:disabled {
-  cursor: default;
-}
-
-.btn-96:-moz-focusring {
-  outline: auto;
-}
-
-.btn-96 svg {
-  display: block;
-  vertical-align: middle;
-}
-
-.btn-96 [hidden] {
-  display: none;
-}
-
-.btn-96 {
-  box-sizing: border-box;
-  display: block;
-  font-weight: 900;
-  -webkit-mask-image: none;
-  padding: 2rem 5rem;
-  perspective: 800px;
+  padding: 6px 10px 6px 6px;
+  width: fit-content;
+  height: 40px;
+  border: 0;
+  overflow: hidden;
   position: relative;
-  text-transform: uppercase;
-  transform-style: preserve-3d;
+  transition: var(--btn-transition);
 }
 
-.btn-96 span {
-  background: #fff;
-  color: #000;
-  display: grid;
-  inset: 0;
-  place-items: center;
-  position: absolute;
-  transform: rotateX(0deg);
-  transform-origin: top center;
-  transition: 0.2s;
+.button-message:hover {
+  height: 56px;
+  padding: 8px 20px 8px 8px;
+  background-color: var(--bg-hover-color);
+  transition: var(--btn-transition);
 }
 
-.btn-96:hover span {
-  transform: rotateX(35deg);
+.button-message:active {
+  transform: scale(0.99);
 }
 
-.btn-96:after,
-.btn-96:before {
-  background: #ddd;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transform: rotateX(0deg);
+.content-avatar {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  transition: var(--btn-transition);
+  position: relative;
+}
+
+.button-message:hover .content-avatar {
+  width: 40px;
+  height: 40px;
+}
+
+.avatar {
   width: 100%;
-  z-index: -1;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--bg-color-sup);
 }
 
-.btn-96:after {
-  background: #ccc;
-  width: 0;
+.user-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.btn-96:hover:after {
-  -webkit-animation: progress-bar 1.2s;
-  animation: progress-bar 1.2s;
+.status-user {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  right: 1px;
+  bottom: 1px;
+  border-radius: 50%;
+  outline: solid 2px var(--bg-color);
+  background-color: var(--online-status);
+  transition: var(--btn-transition);
+  animation: active-status 2s ease-in-out infinite;
 }
 
-@-webkit-keyframes progress-bar {
+.button-message:hover .status-user {
+  width: 10px;
+  height: 10px;
+  right: 1px;
+  bottom: 1px;
+  outline: solid 3px var(--bg-hover-color);
+}
+
+.notice-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 8px;
+  text-align: initial;
+  color: var(--text-color);
+}
+
+.username {
+  letter-spacing: -6px;
+  height: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: var(--btn-transition);
+}
+
+.user-id {
+  font-size: 12px;
+  letter-spacing: -6px;
+  height: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: var(--btn-transition);
+}
+
+.lable-message {
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  transform: scaleY(1);
+  transition: var(--btn-transition);
+}
+
+.button-message:hover .username {
+  height: auto;
+  letter-spacing: normal;
+  opacity: 1;
+  transform: translateY(0);
+  transition: var(--btn-transition);
+}
+
+.button-message:hover .user-id {
+  height: auto;
+  letter-spacing: normal;
+  opacity: 1;
+  transform: translateY(0);
+  transition: var(--btn-transition);
+}
+
+.button-message:hover .lable-message {
+  height: 0;
+  transform: scaleY(0);
+  transition: var(--btn-transition);
+}
+
+.lable-message,
+.username {
+  font-weight: 600;
+}
+
+.number-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 8px;
+  font-size: 12px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--bg-color-sup);
+  border-radius: 20px;
+}
+@keyframes active-status {
   0% {
-    opacity: 1;
-    width: 0;
+    background-color: var(--online-status);
   }
 
-  10% {
-    opacity: 1;
-    width: 15%;
+  33.33% {
+    background-color: #93e200;
   }
 
-  25% {
-    opacity: 1;
-    width: 25%;
+  66.33% {
+    background-color: #93e200;
   }
 
-  40% {
-    opacity: 1;
-    width: 35%;
-  }
-
-  55% {
-    opacity: 1;
-    width: 75%;
-  }
-
-  60% {
-    opacity: 1;
-    width: 100%;
-  }
-
-  to {
-    opacity: 0;
-    width: 100%;
-  }
-}
-
-@keyframes progress-bar {
-  0% {
-    opacity: 1;
-    width: 0;
-  }
-
-  10% {
-    opacity: 1;
-    width: 15%;
-  }
-
-  25% {
-    opacity: 1;
-    width: 25%;
-  }
-
-  40% {
-    opacity: 1;
-    width: 35%;
-  }
-
-  55% {
-    opacity: 1;
-    width: 75%;
-  }
-
-  60% {
-    opacity: 1;
-    width: 100%;
-  }
-
-  to {
-    opacity: 0;
-    width: 100%;
+  100% {
+    background-color: var(--online-status);
   }
 }
 

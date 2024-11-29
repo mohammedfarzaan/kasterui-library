@@ -3,7 +3,12 @@ import styles from "./Button_group.module.css";
 
 const Button_group = () => (
   <div>
-    <button>Button</button>
+    <div className={styles["container"]}>
+      <div className={styles["btn"]}>
+        <div className={styles["sides"] + styles["top"]}>BUTTON</div>
+        <div className={styles["sides"] + styles["front"]}></div>
+      </div>
+    </div>
   </div>
 );
 
@@ -18,9 +23,14 @@ export default Button_group;
 
         const Button_group = () => (
          <div>
-          <button>
-  Button
-</button>
+          <div className="container">
+  <div className="btn">
+    <div className="sides top">
+      BUTTON
+    </div>
+    <div className="sides front"></div>
+  </div>
+</div>
         </div>
         );
 

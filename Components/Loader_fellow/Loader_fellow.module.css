@@ -1,46 +1,48 @@
 
-/* From Uiverse.io by Cksunandh  - Tags: loader */
-.triangle1 {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 50px 50px 0 0;
-  border-color: #8086e0 transparent transparent transparent;
-  margin: 0 auto;
-  animation: shk1 1s ease-in-out infinite normal;
+/* From Uiverse.io by Nadabasuony - Tags: loader */
+.loader {
+  display: flex;
 }
 
-.triangle2 {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 50px 50px;
-  border-color: transparent transparent #6554b388 transparent;
-  margin: -50px auto 0;
-  animation: shk2 1s ease-in-out infinite alternate;
+.l,.l:nth-child(9) {
+  margin: 0.15em;
+  border-radius: 5em;
+  width: 0.4em;
+  background-color: #f12711;
+  height: 3em;
+  box-shadow: 1px 1px 4px black;
+  animation: load_5186 cubic-bezier(.41,.44,.72,.69) 2s infinite;
 }
-@keyframes shk1 {
+
+.l:nth-child(2), 
+.l:nth-child(8) {
+  background-color: #f24e13;
+  animation-delay: .25s;
+}
+
+.l:nth-child(3), 
+.l:nth-child(7) {
+  background-color: #f36915;
+  animation-delay: .5s;
+}
+
+.l:nth-child(4), 
+.l:nth-child(6) {
+  background-color: #f48c17;
+  animation-delay: .75s;
+}
+
+.l:nth-child(5) {
+  background-color: #f5af19;
+  animation-delay: 1s;
+}
+
+@keyframes load_5186 {
   0% {
-    transform: rotate(-360deg);
+    transform: scaleY(1);
   }
 
   100% {
+    transform: scaleY(-1);
   }
 }
-
-@keyframes shk2 {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-  }
-}
-
-.text {
-  color: #949494;
-  margin: 30px auto;
-  text-align: center;
-  font-weight: 500;
-  letter-spacing: 4px;
-}
-

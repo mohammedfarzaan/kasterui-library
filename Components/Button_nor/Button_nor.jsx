@@ -3,10 +3,7 @@ import styles from "./Button_nor.module.css";
 
 const Button_nor = () => (
   <div>
-    <div className={styles["arrow"]}>
-      <div className={styles["arrow-top"]}></div>
-      <div className={styles["arrow-bottom"]}></div>
-    </div>
+    <button className={styles["elegant-button"]}>Click Me</button>
   </div>
 );
 
@@ -21,10 +18,7 @@ export default Button_nor;
 
         const Button_nor = () => (
          <div>
-          <div className="arrow">
-  <div className="arrow-top"></div>
-  <div className="arrow-bottom"></div>
-</div>
+          <button className="elegant-button">Click Me</button>
         </div>
         );
 

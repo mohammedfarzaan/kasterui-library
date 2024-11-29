@@ -3,9 +3,9 @@ import styles from "./Button_sort.module.css";
 
 const Button_sort = () => (
   <div>
-    <div className={styles["button-borders"]}>
-      <button className={styles["primary-button"]}> BUTTON</button>
-    </div>
+    <button className={styles["loading"]}>
+      <p>Loading...</p>
+    </button>
   </div>
 );
 
@@ -20,10 +20,9 @@ export default Button_sort;
 
         const Button_sort = () => (
          <div>
-          <div className="button-borders">
-  <button className="primary-button"> BUTTON
-  </button>
-</div>
+          <button className="loading">
+  <p>Loading...</p>
+</button>
         </div>
         );
 

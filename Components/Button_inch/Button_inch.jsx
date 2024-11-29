@@ -3,21 +3,13 @@ import styles from "./Button_inch.module.css";
 
 const Button_inch = () => (
   <div>
-    <div className={styles["center"]}>
-      <button className={styles["btn"]}>
-        <svg viewBox="0 0 150 50" height="50px" width="150px" className="svg">
-          <polyline
-            className="bg-line"
-            points="149,1 149,49 1,49 1,1 149,1"
-          ></polyline>
-          <polyline
-            className="hl-line"
-            points="149,1 149,49 1,49 1,1 149,1"
-          ></polyline>
+    <button>
+      <a href="#">
+        <svg viewBox="0 0 16 16" fill="currentColor" id="facebook">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
         </svg>
-        <span>HOVER ME</span>
-      </button>
-    </div>
+      </a>
+    </button>
   </div>
 );
 
@@ -32,15 +24,13 @@ export default Button_inch;
 
         const Button_inch = () => (
          <div>
-          <div className="center">
-  <button className="btn">
-    <svg viewBox="0 0 150 50" height="50px" width="150px" className="svg">
-      <polyline className="bg-line" points="149,1 149,49 1,49 1,1 149,1"></polyline>
-      <polyline className="hl-line" points="149,1 149,49 1,49 1,1 149,1"></polyline>
-    </svg>
-    <span>HOVER ME</span>
-  </button>
-</div>
+          <button>
+  <a href="#">
+     <svg viewBox="0 0 16 16" fill="currentColor" id="facebook">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                    </svg>
+      </a>
+      </button>
         </div>
         );
 

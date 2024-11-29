@@ -3,7 +3,10 @@ import styles from "./Loader_egg.module.css";
 
 const Loader_egg = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["spinner"]}>
+      <div></div>
+      <div></div>
+    </div>
   </div>
 );
 
@@ -18,7 +21,10 @@ export default Loader_egg;
 
         const Loader_egg = () => (
          <div>
-          <div className="loader"></div>
+          <div className="spinner">
+<div></div>
+<div></div>
+</div>
         </div>
         );
 

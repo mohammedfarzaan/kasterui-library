@@ -3,60 +3,25 @@ import styles from "./Loader_bright.module.css";
 
 const Loader_bright = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["top"]}>
-        <div className={styles["square"]}>
-          <div className={styles["square"]}>
-            <div className={styles["square"]}>
-              <div className={styles["square"]}>
-                <div className={styles["square"]}>
-                  <div className={styles["square"]}></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={styles["bottom"]}>
-        <div className={styles["square"]}>
-          <div className={styles["square"]}>
-            <div className={styles["square"]}>
-              <div className={styles["square"]}>
-                <div className={styles["square"]}>
-                  <div className={styles["square"]}></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={styles["left"]}>
-        <div className={styles["square"]}>
-          <div className={styles["square"]}>
-            <div className={styles["square"]}>
-              <div className={styles["square"]}>
-                <div className={styles["square"]}>
-                  <div className={styles["square"]}></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={styles["right"]}>
-        <div className={styles["square"]}>
-          <div className={styles["square"]}>
-            <div className={styles["square"]}>
-              <div className={styles["square"]}>
-                <div className={styles["square"]}>
-                  <div className={styles["square"]}></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div className={styles["jelly"]}></div>
+    <svg width="0" height="0" className={styles["jelly-maker"]}>
+      <defs>
+        <filter id="uib-jelly-ooze">
+          <feGaussianBlur
+            in="SourceGraphic"
+            stdDeviation="6.25"
+            result="blur"
+          ></feGaussianBlur>
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+            result="ooze"
+          ></feColorMatrix>
+          <feBlend in="SourceGraphic" in2="ooze"></feBlend>
+        </filter>
+      </defs>
+    </svg>
   </div>
 );
 
@@ -71,56 +36,16 @@ export default Loader_bright;
 
         const Loader_bright = () => (
          <div>
-          <div className="container">
-  <div className="top">
-    <div className="square">
-      <div className="square">
-        <div className="square">
-          <div className="square">
-            <div className="square"><div className="square">
-            </div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="bottom">
-    <div className="square">
-      <div className="square">
-        <div className="square">
-          <div className="square">
-            <div className="square"><div className="square">
-            </div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="left">
-    <div className="square">
-      <div className="square">
-        <div className="square">
-          <div className="square">
-            <div className="square"><div className="square">
-            </div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="right">
-    <div className="square">
-      <div className="square">
-        <div className="square">
-          <div className="square">
-            <div className="square"><div className="square">
-            </div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+          <div className="jelly"></div>
+<svg width="0" height="0" className="jelly-maker">
+  <defs>
+    <filter id="uib-jelly-ooze">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6.25" result="blur"></feGaussianBlur>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="ooze"></feColorMatrix>
+      <feBlend in="SourceGraphic" in2="ooze"></feBlend>
+    </filter>
+  </defs>
+</svg>
         </div>
         );
 

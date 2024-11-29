@@ -1,103 +1,121 @@
 
-/* From Uiverse.io by doniaskima - Tags: button, animated bar loader, DoubleTriangle  */
-.btn-9,
-.btn-9 *,
-.btn-9 :after,
-.btn-9 :before,
-.btn-9:after,
-.btn-9:before {
-  border: 0 solid;
-  box-sizing: border-box;
-}
-
-.btn-9 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
-  background-color: #000;
-  background-image: none;
-  color: #fff;
+/* From Uiverse.io by mrhyddenn - Tags: button, download */
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #0f1923;
   cursor: pointer;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-size: 100%;
-  font-weight: 900;
-  line-height: 1.5;
-  margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
+  position: relative;
+  padding: 8px;
+  margin-bottom: 20px;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .15s ease;
 }
 
-.btn-9:disabled {
-  cursor: default;
-}
-
-.btn-9:-moz-focusring {
-  outline: auto;
-}
-
-.btn-9 svg {
+.button::before,
+.button::after {
+  content: '';
   display: block;
-  vertical-align: middle;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid #7D8082;
+  transition: all .15s ease;
 }
 
-.btn-9 [hidden] {
-  display: none;
+.button::before {
+  top: 0;
+  border-bottom-width: 0;
 }
 
-.btn-9 {
-  border-radius: 99rem;
-  border-width: 2px;
+.button::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+
+.button:active,
+.button:focus {
+  outline: none;
+}
+
+.button:active::before,
+.button:active::after {
+  right: 3px;
+  left: 3px;
+}
+
+.button:active::before {
+  top: 3px;
+}
+
+.button:active::after {
+  bottom: 3px;
+}
+
+.button_lg {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0f1923;
   overflow: hidden;
-  padding: 0.8rem 3rem;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.button_lg::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #0f1923;
+}
+
+.button_lg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #0f1923;
+  transition: all .2s ease;
+}
+
+.button_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: #ff4655;
+  transform: skew(-15deg);
+  transition: all .2s ease;
+}
+
+.button_text {
   position: relative;
 }
 
-.btn-9 span {
-  mix-blend-mode: difference;
+.button:hover {
+  color: #0f1923;
 }
 
-.btn-9:after,
-.btn-9:before {
-  --tilt: 1.2rem;
-  background: #fff;
-  -webkit-clip-path: polygon(
-    0 0,
-    calc(100% - var(--tilt)) 0,
-    100% 50%,
-    calc(100% - var(--tilt)) 100%,
-    0 100%
-  );
-  clip-path: polygon(
-    0 0,
-    calc(100% - var(--tilt)) 0,
-    100% 50%,
-    calc(100% - var(--tilt)) 100%,
-    0 100%
-  );
-  content: "";
-  display: block;
-  height: 100%;
-  left: calc(-100% - var(--tilt));
-  position: absolute;
-  top: 0;
-  transform: translateX(var(--progress, 0));
-  transition: transform 0.2s ease;
-  width: calc(100% + var(--tilt));
+.button:hover .button_sl {
+  width: calc(100% + 15px);
 }
 
-.btn-9:after {
-  left: 100%;
-  transform: translateX(var(--progress, 0)) rotate(180deg);
-  z-index: -1;
-}
-
-.btn-9:hover:before {
-  --progress: 100%;
-}
-
-.btn-9:hover:after {
-  --progress: -100%;
+.button:hover .button_lg::after {
+  background-color: #fff;
 }
 

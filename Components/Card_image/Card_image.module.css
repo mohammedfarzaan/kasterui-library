@@ -1,0 +1,96 @@
+
+/* From Uiverse.io by i_vickykrishna  - Tags: material design, glassmorphism, card */
+/* Card Styles */
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  text-align: center;
+  max-width: 25rem;
+  width: 100%;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #ff9900,
+    #e1306c,
+    #7289da,
+    #1da1f2,
+    #ff9900
+  );
+  border-radius: 1rem;
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0.5;
+}
+
+.image {
+  width: 10rem;
+  height: auto;
+}
+
+.heading {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.icons a {
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icons a:hover {
+  transform: scale(1.2);
+}
+
+.instagram svg {
+  fill: #e1306c;
+  stroke: #e1306c;
+}
+
+.x svg {
+  fill: #1da1f2;
+  stroke: #1da1f2;
+}
+
+.discord svg {
+  fill: #7289da;
+  stroke: #7289da;
+}
+
+/* Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.image {
+  animation: pulse 2s infinite;
+}
+

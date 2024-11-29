@@ -1,53 +1,65 @@
 
-/* From Uiverse.io by vinodjangid07 - Tags: button, github, button hover effect  */
-.Btn {
-  width: 45px;
+/* From Uiverse.io by vinodjangid07  - Tags: icon, animation, button, hover, hover effect, file, documents, folder */
+.Documents-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
   height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: none;
-  background-color: transparent;
-  position: relative;
-  /* overflow: hidden; */
-  border-radius: 7px;
+  padding: 0px 15px;
+  border-radius: 5px;
+  background-color: rgb(49, 49, 83);
+  gap: 10px;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-
-.svgContainer {
-  width: 100%;
-  height: 100%;
+.folderContainer {
+  width: 40px;
+  height: fit-content;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  backdrop-filter: blur(0px);
-  letter-spacing: 0.8px;
-  border-radius: 10px;
-  transition: all .3s;
-  border: 1px solid rgba(156, 156, 156, 0.466);
+  justify-content: flex-end;
+  position: relative;
 }
-
-.BG {
+.fileBack {
+  z-index: 1;
+  width: 80%;
+  height: auto;
+}
+.filePage {
+  width: 50%;
+  height: auto;
   position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: #181818;
-  z-index: -1;
-  border-radius: 10px;
-  pointer-events: none;
-  transition: all .3s;
+  z-index: 2;
+  transition: all 0.3s ease-out;
 }
-
-.Btn:hover .BG {
-  transform: rotate(35deg);
+.fileFront {
+  width: 85%;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.95;
   transform-origin: bottom;
+  transition: all 0.3s ease-out;
 }
-
-.Btn:hover .svgContainer {
-  background-color: rgba(156, 156, 156, 0.466);
-  backdrop-filter: blur(4px);
+.text {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.Documents-btn:hover .filePage {
+  transform: translateY(-5px);
+}
+.Documents-btn:hover {
+  background-color: rgb(58, 58, 94);
+}
+.Documents-btn:active {
+  transform: scale(0.95);
+}
+.Documents-btn:hover .fileFront {
+  transform: rotateX(30deg);
 }
 

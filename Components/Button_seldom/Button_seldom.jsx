@@ -3,7 +3,7 @@ import styles from "./Button_seldom.module.css";
 
 const Button_seldom = () => (
   <div>
-    <button className={styles["button"]}>Button</button>
+    <button>Hover me</button>
   </div>
 );
 
@@ -18,8 +18,8 @@ export default Button_seldom;
 
         const Button_seldom = () => (
          <div>
-          <button className="button">
-  Button
+          <button>
+  Hover me
 </button>
         </div>
         );

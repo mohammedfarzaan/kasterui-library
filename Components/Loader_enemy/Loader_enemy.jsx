@@ -3,7 +3,14 @@ import styles from "./Loader_enemy.module.css";
 
 const Loader_enemy = () => (
   <div>
-    <div className={styles["loader"]}></div>
+    <div className={styles["sharingon"]}>
+      <div className={styles["ring"]}>
+        <div className={styles["to"]}></div>
+        <div className={styles["to"]}></div>
+        <div className={styles["to"]}></div>
+        <div className={styles["circle"]}></div>
+      </div>
+    </div>
   </div>
 );
 
@@ -18,7 +25,14 @@ export default Loader_enemy;
 
         const Loader_enemy = () => (
          <div>
-          <div className="loader"></div>
+          <div className="sharingon">
+  <div className="ring">
+  <div className="to"></div>
+<div className="to"></div>
+<div className="to"></div>
+<div className="circle"></div>
+</div>
+</div>
         </div>
         );
 

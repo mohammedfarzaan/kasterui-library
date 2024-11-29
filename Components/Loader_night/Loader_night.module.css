@@ -1,71 +1,64 @@
 
-/* From Uiverse.io by elijahgummer  - Tags: simple, red, loader, diamond, fade, mitsubishi, appear */
+/* From Uiverse.io by escannord  - Tags: animation, 3d, loader, light */
 .loader {
-  width: 50px;
-  height: calc(50px * 0.866);
-  background: #fd135a;
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
-  --c: at 50% 66%, #000 60deg, #0000 0;
-  -webkit-mask:
-    conic-gradient(from 30deg var(--c)) right,
-    conic-gradient(from 150deg var(--c)) bottom,
-    conic-gradient(from -90deg var(--c)) left,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  -webkit-mask-repeat: no-repeat;
-  animation: appear 1.5s infinite;
+  text-align: center;
+  position: relative;
+  display: flex;
 }
-@keyframes appear {
+
+.loader .ball {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.ball {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 8px 5px, white 5%, black);
+  position: relative;
+  transform-origin: 50% -100px;
+}
+
+.ball:last-child {
+  animation: balance-right 1.2s infinite linear;
+}
+
+.ball:first-child {
+  animation: balance-left 1.2s infinite linear;
+}
+
+@keyframes balance-right {
   0% {
-    -webkit-mask-size:
-      0 0,
-      0 0,
-      0 0,
-      auto;
+    transform: rotate(0deg);
+    animation-timing-function: linear;
   }
-  13.33% {
-    -webkit-mask-size:
-      100% 100%,
-      0 0,
-      0 0,
-      auto;
+
+  50% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
   }
-  26.67% {
-    -webkit-mask-size:
-      100% 100%,
-      100% 100%,
-      0 0,
-      auto;
+
+  75% {
+    transform: rotate(-30deg);
+    animation-timing-function: ease-in;
   }
-  40%,
-  60% {
-    -webkit-mask-size:
-      100% 100%,
-      100% 100%,
-      100% 100%,
-      auto;
+}
+
+@keyframes balance-left {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
   }
-  73.33% {
-    -webkit-mask-size:
-      0 0,
-      100% 100%,
-      100% 100%,
-      auto;
+
+  25% {
+    transform: rotate(30deg);
+    animation-timing-function: ease-in;
   }
-  86.67% {
-    -webkit-mask-size:
-      0 0,
-      0 0,
-      100% 100%,
-      auto;
-  }
-  100% {
-    -webkit-mask-size:
-      0 0,
-      0 0,
-      0 0,
-      auto;
+
+  50% {
+    transform: rotate(0deg);
+    animation-timing-function: linear;
   }
 }
 

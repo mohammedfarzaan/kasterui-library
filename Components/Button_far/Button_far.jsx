@@ -3,9 +3,7 @@ import styles from "./Button_far.module.css";
 
 const Button_far = () => (
   <div>
-    <button className={styles["btn"]}>
-      Hover me !<div className={styles["background"]}></div>
-    </button>
+    <button>Button</button>
   </div>
 );
 
@@ -20,8 +18,8 @@ export default Button_far;
 
         const Button_far = () => (
          <div>
-          <button className="btn">Hover me !
-    <div className="background"></div>
+          <button>
+  Button
 </button>
         </div>
         );

@@ -3,7 +3,15 @@ import styles from "./Button_wrong.module.css";
 
 const Button_wrong = () => (
   <div>
-    <button className={styles["beautiful-button"]}>Click me!</button>
+    <button>
+      <div className={styles["progress"]}>
+        <div className={styles["progress-bar"]}> </div>
+      </div>
+
+      <p className={styles["before-scan"]}>Find aliens</p>
+      <p className={styles["scaning"]}>Scanning</p>
+      <p className={styles["complete"]}>No aliens found</p>
+    </button>
   </div>
 );
 
@@ -18,8 +26,14 @@ export default Button_wrong;
 
         const Button_wrong = () => (
          <div>
-          <button className="beautiful-button">
-  Click me!
+          <button>
+  <div className="progress">
+     <div className="progress-bar"> </div>
+  </div>
+  
+  <p className="before-scan">Find aliens</p>
+  <p className="scaning">Scanning</p>
+  <p className="complete">No aliens found</p>
 </button>
         </div>
         );

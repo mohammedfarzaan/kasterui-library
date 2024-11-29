@@ -3,9 +3,7 @@ import styles from "./Button_road.module.css";
 
 const Button_road = () => (
   <div>
-    <div className={styles["container"]}>
-      <button className={styles["button"]}>Hover me</button>
-    </div>
+    <button className={styles["button"]}>Play it</button>
   </div>
 );
 
@@ -20,9 +18,7 @@ export default Button_road;
 
         const Button_road = () => (
          <div>
-          <div className="container">
-  <button className="button">Hover me</button>
-</div>
+          <button className="button">Play it</button>
         </div>
         );
 

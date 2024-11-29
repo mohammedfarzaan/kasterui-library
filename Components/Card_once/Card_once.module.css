@@ -1,0 +1,217 @@
+
+/* From Uiverse.io by EzzoHamdan  - Tags: animation, purple, social, gradient, card, space, glow, creative */
+.card {
+  position: relative;
+  margin: 0 auto;
+  height: fit-content;
+  padding: 20px;
+  background-image: linear-gradient(
+    45deg,
+    blueviolet,
+    black,
+    rgb(116, 214, 247)
+  );
+  background-color: #121212;
+  border-radius: 10px;
+  box-shadow: 5px -5px 25px rgb(116, 214, 247), -5px 5px 25px blueviolet;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0px 5px 10px rgb(116, 214, 247), 0px -5px 10px blueviolet;
+  transform: scale(1.05);
+  background-size: 0 0;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgb(138, 43, 226) 15%,
+    rgba(138, 79, 226, 0.75) 35%,
+    rgba(138, 43, 226, 0.5) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.card:hover::before {
+  opacity: 1;
+  animation: space-animation 25s infinite alternate, sparkle 1.5s infinite;
+}
+
+@keyframes space-animation {
+  0%,
+  100% {
+    background-position: -10%;
+  }
+
+  50% {
+    background-position: 110%;
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.image {
+  width: 100%;
+  max-width: 190px;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: rotate 1s ease, scale 1s ease;
+  rotate: -70deg;
+  animation: float 10s ease infinite;
+  scale: 1.4;
+  z-index: -1;
+}
+
+.card:hover .image {
+  rotate: 70deg;
+  scale: 1.05;
+}
+
+.card:hover .image:hover {
+  scale: 1.15;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-20px);
+  }
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #f0f0f0;
+  transform: translateY(-30px);
+  transition: all 0.3s ease;
+}
+
+.heading:hover {
+  transform: translateY(-40px);
+}
+
+.card:hover .heading {
+  color: rgb(116, 214, 247);
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #f0f0f0;
+  transition: transform 0.3s ease;
+}
+
+.card:hover a {
+  color: rgb(116, 214, 247);
+}
+
+.icons .instagram:hover {
+  color: #e4405f;
+}
+
+.instagram:hover {
+  animation: wiggle 0.5s ease infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.icons .x:hover {
+  color: #14171a;
+}
+
+.x:hover {
+  animation: pulse 0.5s ease infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.icons .discord:hover {
+  color: #7289da;
+}
+
+.discord:hover {
+  animation: bounce 0.5s ease infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+

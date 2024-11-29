@@ -3,7 +3,9 @@ import styles from "./Button_along.module.css";
 
 const Button_along = () => (
   <div>
-    <button className={styles["button"]}>Hover me</button>
+    <button>
+      <span>Button</span>
+    </button>
   </div>
 );
 
@@ -18,8 +20,8 @@ export default Button_along;
 
         const Button_along = () => (
          <div>
-          <button className="button">
-  Hover me
+          <button>
+  <span>Button</span>
 </button>
         </div>
         );

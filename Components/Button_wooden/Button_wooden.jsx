@@ -3,15 +3,7 @@ import styles from "./Button_wooden.module.css";
 
 const Button_wooden = () => (
   <div>
-    <div className={styles["emoji-button-container"]}>
-      <button className={styles["emoji-button"]}>Hover Me</button>
-      <div className={styles["emoji-animations"]}>
-        <span className={styles["emoji"]}>😊</span>
-        <span className={styles["emoji"]}>🎸</span>
-        <span className={styles["emoji"]}>🚀</span>
-        <span className={styles["emoji"]}>❤️</span>
-      </div>
-    </div>
+    <button className={styles["btn_center"]}>Click Me</button>
   </div>
 );
 
@@ -26,15 +18,9 @@ export default Button_wooden;
 
         const Button_wooden = () => (
          <div>
-          <div className="emoji-button-container">
-  <button className="emoji-button">Hover Me</button>
-  <div className="emoji-animations">
-    <span className="emoji">😊</span>
-    <span className="emoji">🎸</span>
-    <span className="emoji">🚀</span>
-    <span className="emoji">❤️</span>
-  </div>
-</div>
+          <button className="btn_center">
+    Click Me
+</button>
         </div>
         );
 

@@ -1,67 +1,19 @@
 
-/* From Uiverse.io by elijahgummer  - Tags: icon, animation, 3d, button, hover, modern, play, cyan */
-.button-with-icon {
-  overflow: hidden;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #0f988e;
-  font-family: "Istok Web", sans-serif;
-  letter-spacing: 1px;
-  padding: 0 12px;
-  text-align: center;
-  width: 120px;
-  height: 40px;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: normal;
-  border-radius: 3px;
-  outline: none;
-  user-select: none;
-  cursor: pointer;
-  transform: translateY(0px);
-  position: relative;
-  box-shadow:
-    inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.3),
-    inset 0 1px 20px rgba(0, 0, 0, 0),
-    0 3px 0 #0f988e,
-    0 3px 2px rgba(0, 0, 0, 0.2),
-    0 5px 10px rgba(0, 0, 0, 0.1),
-    0 10px 20px rgba(0, 0, 0, 0.1);
-  background: #15ccbe;
-  color: white;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-  transition: 150ms all ease-in-out;
+/* From Uiverse.io by Rodrypaladin - Tags: simple, animation, minimalist, black, button, creative, hover effect, click animation */
+.button {
+  color: #202020;
+  background-color: #2d2d2d;
+  letter-spacing: .1em;
+  text-shadow: -1px -1px 1px #111111, 
+      2px 2px 1px #363636;
+  border: 3px solid #363636;
+  font-size: 2em;
+  padding: 10px 20px;
+  transition: all 0.1s ease-in;
 }
 
-.button-with-icon .icon {
-  margin-right: 8px;
-  width: 24px;
-  height: 24px;
-  transition: all 0.5s ease-in-out;
+.button:active {
+  border-color: #111111;
+  color: #111111;
+  padding: 10px 30px;
 }
-
-.button-with-icon:active {
-  transform: translateY(3px);
-  box-shadow:
-    inset 0 16px 2px -15px rgba(0, 0, 0, 0),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.15),
-    inset 0 1px 20px rgba(0, 0, 0, 0.1),
-    0 0 0 #0f988e,
-    0 0 0 2px rgba(255, 255, 255, 0.5),
-    0 0 0 rgba(0, 0, 0, 0),
-    0 0 0 rgba(0, 0, 0, 0);
-}
-
-.button-with-icon:hover .text {
-  transform: translateX(80px);
-}
-.button-with-icon:hover .icon {
-  transform: translate(23px);
-}
-
-.text {
-  transition: all 0.5s ease-in-out;
-}
-

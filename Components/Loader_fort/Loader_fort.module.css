@@ -1,56 +1,110 @@
 
-/* From Uiverse.io by omar-alghaish - Tags: loader */
-.loader-1 {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 5px solid rgb(218, 203, 4);
-  border-left-color: transparent;
-  animation: animate_681 3s linear infinite;
-  position: relative;
+/* From Uiverse.io by Praashoo7 - Tags: animation, loading, loader */
+.l {
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.2s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
 }
 
-.loader-2 {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 5px solid rgb(0, 119, 255);
-  border-top-color: transparent;
-  animation: animate_6810 .9s linear infinite;
-  position: absolute;
-  margin: 5px;
+.o {
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.4s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
 }
 
-.loader-3 {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 5px solid rgb(30, 255, 0);
-  border-right-color: transparent;
-  animation: animate_681 2s linear  infinite;
-  position: absolute;
-  margin: 15px;
+.a {
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.6s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
 }
 
-.loader-4 {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 5px solid rgb(194, 3, 92);
-  border-bottom-color: transparent;
-  animation: animate_6810 .7s linear  infinite;
-  position: absolute;
-  margin: 25px;
+.d {
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 0.8s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
 }
 
-@keyframes animate_6810 {
+.i {
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 1s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+.n {
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 1.2s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+.g {
+  color: black;
+  opacity: 0;
+  animation: pass 2s ease-in-out infinite;
+  animation-delay: 1.4s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+.d1 {
+  color: black;
+  opacity: 0;
+  animation: pass1 2s ease-in-out infinite;
+  animation-delay: 1.6s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+.d2 {
+  color: black;
+  opacity: 0;
+  animation: pass1 2s ease-in-out infinite;
+  animation-delay: 2s;
+  letter-spacing: 0.5em;
+  text-shadow: 2px 2px 3px #919191;
+}
+
+@keyframes pass {
   0% {
-    transform: rotate(360deg);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
-@keyframes animate_681 {
+@keyframes pass1 {
   0% {
-    transform: rotate(-360deg);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

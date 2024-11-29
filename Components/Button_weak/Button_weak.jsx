@@ -3,7 +3,7 @@ import styles from "./Button_weak.module.css";
 
 const Button_weak = () => (
   <div>
-    <button className={styles["button"]}>Hover me</button>
+    <button className={styles["like-button"]}></button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_weak;
 
         const Button_weak = () => (
          <div>
-          <button className="button">
-  Hover me
-</button>
+          <button className="like-button"></button>
         </div>
         );
 

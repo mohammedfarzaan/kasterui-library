@@ -3,10 +3,8 @@ import styles from "./Button_piece.module.css";
 
 const Button_piece = () => (
   <div>
-    <button className={styles["btn"] + styles["btn--primary"]}>
-      <span className={styles["btn-inner"]}>
-        <span className={styles["btn-label"]}>Button</span>
-      </span>
+    <button id="bottone1">
+      <strong>Discover features</strong>
     </button>
   </div>
 );
@@ -22,15 +20,7 @@ export default Button_piece;
 
         const Button_piece = () => (
          <div>
-          <button className="btn btn--primary">
-
-  <span className="btn-inner">
-    <span className="btn-label">
-      Button 
-    </span>
-  </span>
-  
-</button>
+          <button id="bottone1"><strong>Discover features</strong></button>
         </div>
         );
 

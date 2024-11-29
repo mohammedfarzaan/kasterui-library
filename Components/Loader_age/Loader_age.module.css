@@ -1,76 +1,68 @@
 
-/* From Uiverse.io by Pradeepsaranbishnoi - Tags: loader */
-/* The loader */
-.loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  margin-top: -100px;
-  margin-left: -100px;
-  perspective: 600px;
-  transform-style: perserve-3d;
+/* From Uiverse.io by G4b413l - Tags: loader */
+.momentum {
+ --uib-size: 40px;
+ --uib-speed: 1s;
+ --uib-color: rgb(221, 255, 242);
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: var(--uib-size);
+ width: var(--uib-size);
+ animation: rotate01561 var(--uib-speed) linear infinite;
 }
 
-/* The dot */
-.dot {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  margin-top: -50px;
-  margin-left: -50px;
-  border-radius: 100px;
-  border: 20px solid #1e3f57;
-  transform-style: perserve-3d;
-  transform: scale(0) rotateX(60deg);
-  animation: dot 3s cubic-bezier(.67,.08,.46,1.5) infinite;
+.momentum::before,
+.momentum::after {
+ content: '';
+ height: 25%;
+ width: 25%;
+ border-radius: 50%;
+ background-color: var(--uib-color);
 }
 
-.dot:nth-child(2) {
-  animation-delay: 200ms;
+.momentum::before {
+ animation: wobble290123 calc(var(--uib-speed) * 1.25) ease-in-out infinite;
 }
 
-.dot:nth-child(3) {
-  animation-delay: 400ms;
+.momentum::after {
+ animation: wobble9123 calc(var(--uib-speed) * 1.25) ease-in-out infinite;
 }
 
-.dot:nth-child(4) {
-  animation-delay: 600ms;
+.momentum::before {
+ margin-right: 10%;
 }
 
-.dot:nth-child(5) {
-  animation-delay: 800ms;
-}
-
-.dot:nth-child(6) {
-  animation-delay: 1000ms;
-}
-
-.dot:nth-child(7) {
-  animation-delay: 1200ms;
-}
-
-.dot:nth-child(8) {
-  animation-delay: 1400ms;
-}
-
-@keyframes dot {
-  0% {
-    opacity: 0;
-    border-color: #6bb2cd;
-    transform: rotateX(60deg) rotateY(45deg) translateZ(-100px) scale(0.1);
-  }
-
-  40% {
-    opacity: 1;
-    transform: rotateX(0deg) rotateY(20deg) translateZ(0) scale(1);
-  }
-
+@keyframes wobble9123 {
+ 0%,
   100% {
-    opacity: 0;
-    transform: rotateX(60deg) rotateY(-45deg) translateZ(-100px) scale(0.1);
-  }
+  transform: translateX(0);
+ }
+
+ 50% {
+  transform: translateX(calc(var(--uib-size) * 0.2)) scale(1.1);
+ }
 }
+
+@keyframes wobble290123 {
+ 0%,
+  100% {
+  transform: translateX(0);
+ }
+
+ 50% {
+  transform: translateX(calc(var(--uib-size) * -0.2)) scale(1.1);
+ }
+}
+
+@keyframes rotate01561 {
+ 0% {
+  transform: rotate(0deg);
+ }
+
+ 100% {
+  transform: rotate(360deg);
+ }
+}
+

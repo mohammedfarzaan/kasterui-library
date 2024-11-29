@@ -3,9 +3,7 @@ import styles from "./Loader_eat.module.css";
 
 const Loader_eat = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["loader-inner"]}></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -20,9 +18,7 @@ export default Loader_eat;
 
         const Loader_eat = () => (
          <div>
-          <div className="loader">
-  <div className="loader-inner"></div>
-</div>
+          <div className="loader"></div>
         </div>
         );
 

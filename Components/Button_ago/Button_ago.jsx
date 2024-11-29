@@ -3,7 +3,7 @@ import styles from "./Button_ago.module.css";
 
 const Button_ago = () => (
   <div>
-    <button>Button</button>
+    <button className={styles["btn"]}>PLAY</button>
   </div>
 );
 
@@ -18,8 +18,8 @@ export default Button_ago;
 
         const Button_ago = () => (
          <div>
-          <button>
-  Button
+          <button className="btn">
+  PLAY
 </button>
         </div>
         );

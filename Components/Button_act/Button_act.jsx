@@ -3,7 +3,14 @@ import styles from "./Button_act.module.css";
 
 const Button_act = () => (
   <div>
-    <button className={styles["Btn"]}>Click Me</button>
+    <div className={styles["galaxy-button"]}>
+      <button className={styles["space-button"]}>
+        <span className={styles["backdrop"]}></span>
+        <span className={styles["galaxy"]}></span>
+        <label className={styles["text"]}>Space</label>
+      </button>
+      <div className={styles["bodydrop"]}></div>
+    </div>
   </div>
 );
 
@@ -18,7 +25,14 @@ export default Button_act;
 
         const Button_act = () => (
          <div>
-          <button className="Btn">Click Me</button>
+          <div className="galaxy-button">
+  <button className="space-button">
+    <span className="backdrop"></span>
+    <span className="galaxy"></span>
+    <label className="text">Space</label>
+  </button>
+  <div className="bodydrop"></div>
+</div>
         </div>
         );
 

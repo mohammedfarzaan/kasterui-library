@@ -3,7 +3,16 @@ import styles from "./Button_toward.module.css";
 
 const Button_toward = () => (
   <div>
-    <button className={styles["btn"]}>Button</button>
+    <button className={styles["btn-27"]}>
+      <span className={styles["text-container"]}>
+        <span className={styles["text"]}>Button</span>
+      </span>
+      <span className={styles["text-container"]}>
+        <span aria-hidden="" className={styles["text"]}>
+          Button
+        </span>
+      </span>
+    </button>
   </div>
 );
 
@@ -18,8 +27,13 @@ export default Button_toward;
 
         const Button_toward = () => (
          <div>
-          <button className="btn">
-   Button
+          <button className="btn-27">
+  <span className="text-container">
+    <span className="text">Button</span>
+  </span>
+  <span className="text-container">
+    <span aria-hidden="" className="text">Button</span>
+  </span>
 </button>
         </div>
         );

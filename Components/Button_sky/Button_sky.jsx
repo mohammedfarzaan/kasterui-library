@@ -4,22 +4,7 @@ import styles from "./Button_sky.module.css";
 const Button_sky = () => (
   <div>
     <button className={styles["button"]}>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        viewBox="0 0 24 24"
-        height="24"
-        fill="none"
-        className="svg-icon"
-      >
-        <g strokeWidth="2" strokeLinecap="round" stroke="#fff">
-          <rect y="5" x="4" width="16" rx="2" height="16"></rect>
-          <path d="m8 3v4"></path>
-          <path d="m16 3v4"></path>
-          <path d="m4 11h16"></path>
-        </g>
-      </svg>
-      <span className={styles["lable"]}>Add to Calendar</span>
+      <span className={styles["front"]}> ⚡Join Now </span>
     </button>
   </div>
 );
@@ -36,8 +21,7 @@ export default Button_sky;
         const Button_sky = () => (
          <div>
           <button className="button">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none" className="svg-icon"><g strokeWidth="2" strokeLinecap="round" stroke="#fff"><rect y="5" x="4" width="16" rx="2" height="16"></rect><path d="m8 3v4"></path><path d="m16 3v4"></path><path d="m4 11h16"></path></g></svg>
-  <span className="lable">Add to Calendar</span>
+  <span className="front"> ⚡Join Now </span>
 </button>
         </div>
         );

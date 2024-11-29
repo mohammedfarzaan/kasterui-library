@@ -3,7 +3,7 @@ import styles from "./Button_split.module.css";
 
 const Button_split = () => (
   <div>
-    <button> Button</button>
+    <button className={styles["button"]}>HOVER ME</button>
   </div>
 );
 
@@ -18,8 +18,7 @@ export default Button_split;
 
         const Button_split = () => (
          <div>
-          <button> Button
-</button>
+          <button className="button">HOVER ME</button>
         </div>
         );
 

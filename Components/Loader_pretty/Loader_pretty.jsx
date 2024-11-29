@@ -3,9 +3,7 @@ import styles from "./Loader_pretty.module.css";
 
 const Loader_pretty = () => (
   <div>
-    <div className={styles["spinner"]}>
-      <div className={styles["Spinner"]}></div>
-    </div>
+    <div className={styles["loader"]}></div>
   </div>
 );
 
@@ -20,9 +18,7 @@ export default Loader_pretty;
 
         const Loader_pretty = () => (
          <div>
-          <div className="spinner">
-    <div className="Spinner"></div>
-    </div>
+          <div className="loader"></div>
         </div>
         );
 

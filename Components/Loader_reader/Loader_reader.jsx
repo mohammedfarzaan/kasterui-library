@@ -1,16 +1,183 @@
 import React from "react";
+import styles from "./Loader_reader.module.css";
 
 const Loader_reader = () => (
   <div>
-    <div className="hover:scale-110 transition-all ease-in-out cursor-pointer hover:shadow-xl hover:shadow-neutral-700 delay-250 animate-spin delay-50 duration-1000 bg-gradient-to-br border-4 shadow-inner shadow-neutral-700 border-neutral-950 from-white/80 to-gray-600 rounded-full grid place-items-center z-0 h-20 w-20 relative">
-      <div className="rounded-full bg-neutral-900 absolute rotate-[90deg] z-20 h-20 scale-50 w-2"></div>
-      <div className="rounded-full bg-neutral-900 absolute rotate-[180deg] z-20 h-20 scale-50 w-2"></div>
+    <div>
+      <svg
+        className={styles["loader"]}
+        viewBox="0 0 128 128"
+        width="128px"
+        height="128px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#000"></stop>
+            <stop offset="40%" stop-color="#fff"></stop>
+            <stop offset="100%" stop-color="#fff"></stop>
+          </linearGradient>
+          <linearGradient id="grad2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#000"></stop>
+            <stop offset="60%" stop-color="#000"></stop>
+            <stop offset="100%" stop-color="#fff"></stop>
+          </linearGradient>
+          <mask id="mask1">
+            <rect
+              x="0"
+              y="0"
+              width="128"
+              height="128"
+              fill="url(#grad1)"
+            ></rect>
+          </mask>
+          <mask id="mask2">
+            <rect
+              x="0"
+              y="0"
+              width="128"
+              height="128"
+              fill="url(#grad2)"
+            ></rect>
+          </mask>
+        </defs>
+        <g fill="none" strokeLinecap="round" strokeWidth="16">
+          <circle
+            className={styles["loader_ring"]}
+            r="56"
+            cx="64"
+            cy="64"
+            stroke="#ddd"
+          ></circle>
+          <g stroke="hsl(223,90%,50%)">
+            <path
+              className={styles["loader_worm1"]}
+              d="M120,64c0,30.928-25.072,56-56,56S8,94.928,8,64"
+              stroke="hsl(343,90%,50%)"
+              stroke-dasharray="43.98 307.87"
+            ></path>
+            <g transform="translate(42,42)">
+              <g
+                className={styles["loader_worm2"]}
+                transform="translate(-42,0)"
+              >
+                <path
+                  className={styles["loader_worm2-1"]}
+                  d="M8,22c0-7.732,6.268-14,14-14s14,6.268,14,14"
+                  stroke-dasharray="43.98 175.92"
+                ></path>
+              </g>
+            </g>
+          </g>
+          <g stroke="hsl(283,90%,50%)" mask="url(#mask1)">
+            <path
+              className={styles["loader_worm1"]}
+              d="M120,64c0,30.928-25.072,56-56,56S8,94.928,8,64"
+              stroke-dasharray="43.98 307.87"
+            ></path>
+            <g transform="translate(42,42)">
+              <g
+                className={styles["loader_worm2"]}
+                transform="translate(-42,0)"
+              >
+                <path
+                  className={styles["loader_worm2-1"]}
+                  d="M8,22c0-7.732,6.268-14,14-14s14,6.268,14,14"
+                  stroke-dasharray="43.98 175.92"
+                ></path>
+              </g>
+            </g>
+          </g>
+          <g stroke="hsl(343,90%,50%)" mask="url(#mask2)">
+            <path
+              className={styles["loader_worm1"]}
+              d="M120,64c0,30.928-25.072,56-56,56S8,94.928,8,64"
+              stroke-dasharray="43.98 307.87"
+            ></path>
+            <g transform="translate(42,42)">
+              <g
+                className={styles["loader_worm2"]}
+                transform="translate(-42,0)"
+              >
+                <path
+                  className={styles["loader_worm2-1"]}
+                  d="M8,22c0-7.732,6.268-14,14-14s14,6.268,14,14"
+                  stroke-dasharray="43.98 175.92"
+                ></path>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
     </div>
   </div>
 );
 
 export default Loader_reader;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Loader_reader = () => (
+         <div>
+          <div>
+    <svg className="loader" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#000"></stop>
+          <stop offset="40%" stop-color="#fff"></stop>
+          <stop offset="100%" stop-color="#fff"></stop>
+        </linearGradient>
+        <linearGradient id="grad2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#000"></stop>
+          <stop offset="60%" stop-color="#000"></stop>
+          <stop offset="100%" stop-color="#fff"></stop>
+        </linearGradient>
+        <mask id="mask1">
+          <rect x="0" y="0" width="128" height="128" fill="url(#grad1)"></rect>
+        </mask>
+        <mask id="mask2">
+          <rect x="0" y="0" width="128" height="128" fill="url(#grad2)"></rect>
+        </mask>
+      </defs>
+      <g fill="none" strokeLinecap="round" strokeWidth="16">
+        <circle className="loader_ring" r="56" cx="64" cy="64" stroke="#ddd"></circle>
+        <g stroke="hsl(223,90%,50%)">
+          <path className="loader_worm1" d="M120,64c0,30.928-25.072,56-56,56S8,94.928,8,64" stroke="hsl(343,90%,50%)" stroke-dasharray="43.98 307.87"></path>
+          <g transform="translate(42,42)">
+            <g className="loader_worm2" transform="translate(-42,0)">
+              <path className="loader_worm2-1" d="M8,22c0-7.732,6.268-14,14-14s14,6.268,14,14" stroke-dasharray="43.98 175.92"></path>
+            </g>
+          </g>
+        </g>
+        <g stroke="hsl(283,90%,50%)" mask="url(#mask1)">
+          <path className="loader_worm1" d="M120,64c0,30.928-25.072,56-56,56S8,94.928,8,64" stroke-dasharray="43.98 307.87"></path>
+          <g transform="translate(42,42)">
+            <g className="loader_worm2" transform="translate(-42,0)">
+              <path className="loader_worm2-1" d="M8,22c0-7.732,6.268-14,14-14s14,6.268,14,14" stroke-dasharray="43.98 175.92"></path>
+            </g>
+          </g>
+        </g>
+        <g stroke="hsl(343,90%,50%)" mask="url(#mask2)">
+          <path className="loader_worm1" d="M120,64c0,30.928-25.072,56-56,56S8,94.928,8,64" stroke-dasharray="43.98 307.87"></path>
+          <g transform="translate(42,42)">
+            <g className="loader_worm2" transform="translate(-42,0)">
+              <path className="loader_worm2-1" d="M8,22c0-7.732,6.268-14,14-14s14,6.268,14,14" stroke-dasharray="43.98 175.92"></path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+        </div>
+        );
+
+        export default Loader_reader;
+        
+        
+         */
 }

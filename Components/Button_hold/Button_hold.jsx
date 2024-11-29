@@ -3,12 +3,7 @@ import styles from "./Button_hold.module.css";
 
 const Button_hold = () => (
   <div>
-    <div>
-      <button className={styles["btn"]}>
-        <i className={styles["animation"]}></i>BUTTON
-        <i className={styles["animation"]}></i>
-      </button>
-    </div>
+    <button> Hover Me</button>
   </div>
 );
 
@@ -23,10 +18,8 @@ export default Button_hold;
 
         const Button_hold = () => (
          <div>
-          <div>
-    <button className="btn"><i className="animation"></i>BUTTON<i className="animation"></i>
-    </button>
-</div>
+          <button> Hover Me
+</button>
         </div>
         );
 

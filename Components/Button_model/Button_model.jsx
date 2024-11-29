@@ -3,11 +3,9 @@ import styles from "./Button_model.module.css";
 
 const Button_model = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["btn"]}>
-        <a href="#">Read More</a>
-      </div>
-    </div>
+    <button className={styles["btn-60"]}>
+      <span>Button</span>
+    </button>
   </div>
 );
 
@@ -22,9 +20,7 @@ export default Button_model;
 
         const Button_model = () => (
          <div>
-          <div className="container">
-    <div className="btn"><a href="#">Read More</a></div>
- </div>
+          <button className="btn-60"><span>Button</span></button>
         </div>
         );
 

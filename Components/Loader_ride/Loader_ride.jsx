@@ -3,15 +3,7 @@ import styles from "./Loader_ride.module.css";
 
 const Loader_ride = () => (
   <div>
-    <div className={styles["loader"]}>
-      <p className={styles["heading"]}>Loading</p>
-      <div className={styles["loading"]}>
-        <div className={styles["load"]}></div>
-        <div className={styles["load"]}></div>
-        <div className={styles["load"]}></div>
-        <div className={styles["load"]}></div>
-      </div>
-    </div>
+    <div className={styles["custom-loader"]}></div>
   </div>
 );
 
@@ -26,15 +18,7 @@ export default Loader_ride;
 
         const Loader_ride = () => (
          <div>
-          <div className="loader">
-  <p className="heading">Loading</p>
-  <div className="loading">
-    <div className="load"></div>
-    <div className="load"></div>
-    <div className="load"></div>
-    <div className="load"></div>
-  </div>
-</div>
+          <div className="custom-loader"></div>
         </div>
         );
 

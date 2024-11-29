@@ -1,49 +1,48 @@
 
-/* From Uiverse.io by cssbuttons-io - Tags: button */
-.btn {
- position: relative;
- font-size: 17px;
- text-transform: uppercase;
- text-decoration: none;
- padding: 1em 2.5em;
- display: inline-block;
- border-radius: 6em;
- transition: all .2s;
- border: none;
- font-family: inherit;
- font-weight: 500;
- color: black;
- background-color: white;
+/* From Uiverse.io by ilyas-hadi - Tags: button, accessibility, 3d button, 3d form , 3d hover */
+.button {
+  padding: 1.1rem 2.2rem;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+  transition: all .2s;
+  position: relative;
+  border: none;
+  background: #000;
 }
 
-.btn:hover {
- transform: translateY(-3px);
- box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+.button:before,.button:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  background: #ff3d00;
+  height: 108%;
+  width: 0;
+  z-index: -1;
+  transition: all .7s;
+  transform: translateY(-50%);
 }
 
-.btn:active {
- transform: translateY(-1px);
- box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+.button:before {
+  left: 0%;
 }
 
-.btn::after {
- content: "";
- display: inline-block;
- height: 100%;
- width: 100%;
- border-radius: 100px;
- position: absolute;
- top: 0;
- left: 0;
- z-index: -1;
- transition: all .4s;
+.button:after {
+  right: 0%;
 }
 
-.btn::after {
- background-color: #fff;
+.button:hover {
+  color: #fff;
+  box-shadow: #f51a1a7f 0 30px 60px -12px inset, #ff00007f 0 18px 36px -18px inset;
+  z-index: 2;
 }
 
-.btn:hover::after {
- transform: scaleX(1.4) scaleY(1.6);
- opacity: 0;
+.button:hover::before {
+  width: 50%;
+  left: 50%;
+}
+
+.button:hover::after {
+  width: 50%;
+  right: 50%;
 }

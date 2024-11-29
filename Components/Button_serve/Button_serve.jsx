@@ -3,7 +3,7 @@ import styles from "./Button_serve.module.css";
 
 const Button_serve = () => (
   <div>
-    <button>HOVER ME</button>
+    <button className={styles["button"]}>Hover Button</button>
   </div>
 );
 
@@ -18,9 +18,9 @@ export default Button_serve;
 
         const Button_serve = () => (
          <div>
-          <button>
-  HOVER ME
-</button>
+          <button className="button">
+       Hover Button
+    </button>
         </div>
         );
 

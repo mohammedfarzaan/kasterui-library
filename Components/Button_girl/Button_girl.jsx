@@ -3,7 +3,7 @@ import styles from "./Button_girl.module.css";
 
 const Button_girl = () => (
   <div>
-    <button>↑</button>
+    <button className={styles["custom-btn"] + styles["btn-1"]}>Hello!</button>
   </div>
 );
 
@@ -18,9 +18,7 @@ export default Button_girl;
 
         const Button_girl = () => (
          <div>
-          <button>
-  ↑
-</button>
+          <button className="custom-btn btn-1">Hello!</button>
         </div>
         );
 

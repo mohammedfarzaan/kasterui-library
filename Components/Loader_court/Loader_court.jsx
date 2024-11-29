@@ -4,21 +4,11 @@ import styles from "./Loader_court.module.css";
 const Loader_court = () => (
   <div>
     <div className={styles["loader"]}>
-      <svg viewBox="0 0 80 80">
-        <circle r="32" cy="40" cx="40" id="test"></circle>
-      </svg>
-    </div>
-
-    <div className={styles["loader"] + styles["triangle"]}>
-      <svg viewBox="0 0 86 80">
-        <polygon points="43 8 79 72 7 72"></polygon>
-      </svg>
-    </div>
-
-    <div className={styles["loader"]}>
-      <svg viewBox="0 0 80 80">
-        <rect height="64" width="64" y="8" x="8"></rect>
-      </svg>
+      <div
+        className={
+          styles["justify-content-center"] + styles["jimu-primary-loading"]
+        }
+      ></div>
     </div>
   </div>
 );
@@ -35,21 +25,7 @@ export default Loader_court;
         const Loader_court = () => (
          <div>
           <div className="loader">
-  <svg viewBox="0 0 80 80">
-    <circle r="32" cy="40" cx="40" id="test"></circle>
-  </svg>
-</div>
-
-<div className="loader triangle">
-  <svg viewBox="0 0 86 80">
-    <polygon points="43 8 79 72 7 72"></polygon>
-  </svg>
-</div>
-
-<div className="loader">
-  <svg viewBox="0 0 80 80">
-    <rect height="64" width="64" y="8" x="8"></rect>
-  </svg>
+  <div className="justify-content-center jimu-primary-loading"></div>
 </div>
         </div>
         );

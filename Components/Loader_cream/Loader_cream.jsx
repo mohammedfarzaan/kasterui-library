@@ -3,10 +3,15 @@ import styles from "./Loader_cream.module.css";
 
 const Loader_cream = () => (
   <div>
-    <div id="col">
-      <div id="img-wrap">
-        <span className={styles["loader"]}></span>
-      </div>
+    <div className={styles["loader"]}>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
+      <div className={styles["dot"]}></div>
     </div>
   </div>
 );
@@ -22,10 +27,16 @@ export default Loader_cream;
 
         const Loader_cream = () => (
          <div>
-          <div id="col">
-  <div id="img-wrap">
-    <span className="loader"></span>
-</div></div>
+          <div className="loader">
+  <div className="dot"></div>
+  <div className="dot"></div>
+  <div className="dot"></div>
+  <div className="dot"></div>
+  <div className="dot"></div>
+  <div className="dot"></div>
+  <div className="dot"></div>
+  <div className="dot"></div>
+</div>
         </div>
         );
 

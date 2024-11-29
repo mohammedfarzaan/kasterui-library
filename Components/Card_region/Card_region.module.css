@@ -1,0 +1,108 @@
+
+/* From Uiverse.io by Cybercom682  - Tags: card, space, galaxy, contest */
+.card {
+  background-color: #1a1a1a;
+  position: relative;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease-out;
+}
+.card:hover {
+  box-shadow: 4px 4px 6px 0px rgba(82, 20, 137, 0.059);
+  transform: scale(1.02);
+  transition: all 0.1s ease-in;
+}
+.card:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  background-image: radial-gradient(#ffffff2b 2%, transparent 0%),
+    radial-gradient(#ffffff17 1%, transparent 0%);
+  background-size: 100px 100px;
+  background-position: 0 0, 50px 50px;
+  animation: stars 8s ease-in-out infinite;
+}
+
+.image {
+  width: 100%;
+  max-width: 190px;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.card:hover .image {
+  animation: hoverman 8s ease-in-out infinite;
+}
+
+.heading {
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.icons {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.icons a:last-child {
+  margin-right: 0;
+}
+
+.card svg {
+  width: 24px;
+  height: 24px;
+}
+
+.instagram path,
+.twitter path,
+.discord path {
+  stroke: #fff;
+}
+
+.instagram:hover path,
+.twitter:hover path,
+.discord:hover path {
+  stroke: #55acee;
+}
+
+@keyframes hoverman {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes stars {
+  0% {
+    background-position: 0 0, 50px 50px;
+    opacity: 0;
+  }
+  50% {
+    background-position: 30px 10px, 50px 50px;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+

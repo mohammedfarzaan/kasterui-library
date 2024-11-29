@@ -3,16 +3,14 @@ import styles from "./Toggle_matter.module.css";
 
 const Toggle_matter = () => (
   <div>
-    <label className={styles["switch"]}>
-      <input type="checkbox" className={styles["chbox"]} />
-      <div className={styles["slider"] + styles["slider--0"]}>ON</div>
-      <div className={styles["slider"] + styles["slider--1"]}>
-        <div></div>
-        <div></div>
+    <div className={styles["fx-block"]}>
+      <div className={styles["toggle"]}>
+        <div>
+          <input type="checkbox" id="toggles" />
+          <div data-unchecked="On" data-checked="Off"></div>
+        </div>
       </div>
-      <div className={styles["slider"] + styles["slider--2"]}></div>
-      <div className={styles["slider"] + styles["slider--3"]}>OFF</div>
-    </label>
+    </div>
   </div>
 );
 
@@ -27,16 +25,15 @@ export default Toggle_matter;
 
         const Toggle_matter = () => (
          <div>
-          <label className="switch">
-	<input type="checkbox" className="chbox" />
-	<div className="slider slider--0">ON</div>
-	<div className="slider slider--1">
-		<div></div>
-		<div></div>
+          <div className="fx-block">
+	<div className="toggle">
+		<div>
+			<input type="checkbox" id="toggles" />
+			<div data-unchecked="On" data-checked="Off">
+			</div>
+		</div>
 	</div>
-	<div className="slider slider--2"></div>
-	<div className="slider slider--3">OFF</div>
-</label>
+</div>
         </div>
         );
 

@@ -3,8 +3,8 @@ import styles from "./Button_meal.module.css";
 
 const Button_meal = () => (
   <div>
-    <button>
-      <span>Hover</span>
+    <button className={styles["custom-btn"] + styles["btn"]}>
+      <span>Button</span>
     </button>
   </div>
 );
@@ -20,9 +20,7 @@ export default Button_meal;
 
         const Button_meal = () => (
          <div>
-          <button>
-  <span>Hover</span>
-</button>
+          <button className="custom-btn btn"><span>Button</span></button>
         </div>
         );
 

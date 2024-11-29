@@ -3,11 +3,17 @@ import styles from "./Button_park.module.css";
 
 const Button_park = () => (
   <div>
-    <button>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span> Hover me
+    <button className={styles["fancy-3d-button"]}>
+      <svg
+        role="img"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        className={styles["button-icon"]}
+      >
+        <path d="M12 .587l3.668 7.431L24 9.587l-6 5.845L19.335 24 12 20.01 4.665 24 6 15.432 0 9.587l8.332-1.569z"></path>
+      </svg>
+      <span className={styles["button-text"]}>3D Hover</span>
     </button>
   </div>
 );
@@ -23,11 +29,19 @@ export default Button_park;
 
         const Button_park = () => (
          <div>
-          <button>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span> Hover me
+          <button className="fancy-3d-button">
+  <svg
+    role="img"
+    aria-hidden="true"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    className="button-icon"
+  >
+    <path
+      d="M12 .587l3.668 7.431L24 9.587l-6 5.845L19.335 24 12 20.01 4.665 24 6 15.432 0 9.587l8.332-1.569z"
+    ></path>
+  </svg>
+  <span className="button-text">3D Hover</span>
 </button>
         </div>
         );

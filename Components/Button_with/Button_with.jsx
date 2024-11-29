@@ -3,7 +3,7 @@ import styles from "./Button_with.module.css";
 
 const Button_with = () => (
   <div>
-    <button className={styles["designer-btn"]}>Click me</button>
+    <button className={styles["button"]}>Hover me!</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_with;
 
         const Button_with = () => (
          <div>
-          <button className="designer-btn">Click me</button>
+          <button className="button">
+  Hover me!
+</button>
         </div>
         );
 

@@ -3,11 +3,7 @@ import styles from "./Loader_late.module.css";
 
 const Loader_late = () => (
   <div>
-    <div className={styles["loader"] + styles["JS_on"]}>
-      <span className={styles["binary"]}></span>
-      <span className={styles["binary"]}></span>
-      <span className={styles["getting-there"]}>LOADING STUFF...</span>
-    </div>
+    <div className={styles["custom-loader"]}></div>
   </div>
 );
 
@@ -22,11 +18,7 @@ export default Loader_late;
 
         const Loader_late = () => (
          <div>
-          <div className="loader JS_on">
-	<span className="binary"></span>
-	<span className="binary"></span>
-	<span className="getting-there">LOADING STUFF...</span>
-</div>
+          <div className="custom-loader"></div>
         </div>
         );
 

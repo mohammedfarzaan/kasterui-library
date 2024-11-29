@@ -3,86 +3,32 @@ import styles from "./Button_cross.module.css";
 
 const Button_cross = () => (
   <div>
-    <button
-      aria-label="Send Message"
-      className={
-        styles["button"] +
-        styles["relative"] +
-        styles["overflow-hidden"] +
-        styles["flex"] +
-        styles["items-center"] +
-        styles["px-6"] +
-        styles["py-3"] +
-        styles["bg-gradient-to-r"] +
-        styles["from-blue-500"] +
-        styles["to-purple-600"] +
-        styles["border"] +
-        styles["border-transparent"] +
-        styles["rounded-full"] +
-        styles["shadow-lg"] +
-        styles["text-white"] +
-        styles["cursor-pointer"] +
-        styles["transition-all"] +
-        styles["duration-300"] +
-        styles["ease-in-out"] +
-        styles["transform"] +
-        styles["hover:scale-105"] +
-        styles["focus:outline-none"] +
-        styles["focus:ring-4"] +
-        styles["focus:ring-blue-300"] +
-        styles["focus:ring-opacity-50"] +
-        styles["focus:scale-105"] +
-        styles["active:scale-95"]
-      }
-    >
-      <div className={styles["ripple"]}></div>
+    <button className={styles["button"]}>
       <svg
-        className="relative w-12 h-12 mr-2 z-10 transition-transform duration-300 ease-in-out transform hover:rotate-12 shadow-sm transition-colors duration-300 ease-in-out"
-        preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 36.000000 75.000000"
-        height="80pt"
-        width="80pt"
+        stroke="#ffffff"
+        xml:space="preserve"
+        viewBox="0 0 80 80"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
         xmlns="http://www.w3.org/2000/svg"
-        version="1.0"
+        id="Capa_1"
+        version="1.1"
+        fill="#ffffff"
       >
+        <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
         <g
-          stroke="none"
-          fill="#ffffff"
-          transform="translate(0.000000,75.000000) scale(0.100000,-0.100000)"
-        >
-          <path d="M188 481 c-42 -15 -84 -34 -93 -41 -27 -22 -14 -53 31 -74 30 -14 46  -30 60 -60 23 -50 55 -59 78 -24 24 36 56 137 56 174 0 23 -6 37 -19 44 -25 13 -23 13 -113 -19z m110 -20 c4 -28 -37 -158 -55 -173 -17 -14 -39 4 -48 39 -4 19 0 35 14 54 30 41 26 47 -9 14 -30 -29 -30 -29 -65 -12 -58 28 -47 42 65 81 41 14 80 24 85 22 6 -1 11 -13 13 -25z"></path>
+          strokeLinejoin="round"
+          strokeLinecap="round"
+          id="SVGRepo_tracerCarrier"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          {" "}
+          <g>
+            {" "}
+            <path d="M64,48L64,48h-8V32h8c8.836,0,16-7.164,16-16S72.836,0,64,0c-8.837,0-16,7.164-16,16v8H32v-8c0-8.836-7.164-16-16-16 S0,7.164,0,16s7.164,16,16,16h8v16h-8l0,0l0,0C7.164,48,0,55.164,0,64s7.164,16,16,16c8.837,0,16-7.164,16-16l0,0v-8h16v7.98 c0,0.008-0.001,0.014-0.001,0.02c0,8.836,7.164,16,16,16s16-7.164,16-16S72.836,48.002,64,48z M64,8c4.418,0,8,3.582,8,8 s-3.582,8-8,8h-8v-8C56,11.582,59.582,8,64,8z M8,16c0-4.418,3.582-8,8-8s8,3.582,8,8v8h-8C11.582,24,8,20.417,8,16z M16,72 c-4.418,0-8-3.582-8-8s3.582-8,8-8l0,0h8v8C24,68.418,20.418,72,16,72z M32,48V32h16v16H32z M64,72c-4.418,0-8-3.582-8-8l0,0v-8 h7.999c4.418,0,8,3.582,8,8S68.418,72,64,72z"></path>{" "}
+          </g>{" "}
         </g>
       </svg>
-      <svg
-        className="relative w-8 h-8 mr-2 z-10 transition-transform duration-300 ease-in-out transform hover:rotate-12 shadow-sm transition-colors duration-300 ease-in-out"
-        preserveAspectRatio="xMidYMid meet"
-        viewBox="0 0 36.000000 75.000000"
-        height="80pt"
-        width="80pt"
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.0"
-      >
-        <g
-          stroke="none"
-          fill="#ffffff"
-          transform="translate(0.000000,75.000000) scale(0.100000,-0.100000)"
-        >
-          <path d="M100 300 l0 -300 30 0 30 0 0 300 0 300 -30 0 -30 0 0 -300z"></path>
-        </g>
-      </svg>
-      <span
-        className={
-          styles["relative"] +
-          styles["z-10"] +
-          styles["font-semibold"] +
-          styles["text-lg"] +
-          styles["transition-all"] +
-          styles["duration-300"] +
-          styles["ease-in-out"]
-        }
-      >
-        Send Message
-      </span>
+      command
     </button>
   </div>
 );
@@ -98,53 +44,9 @@ export default Button_cross;
 
         const Button_cross = () => (
          <div>
-          <button
-  aria-label="Send Message"
-  className="button relative overflow-hidden flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 border border-transparent rounded-full shadow-lg text-white cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 focus:scale-105 active:scale-95"
->
-  <div className="ripple"></div>
-  <svg
-    className="relative w-12 h-12 mr-2 z-10 transition-transform duration-300 ease-in-out transform hover:rotate-12 shadow-sm transition-colors duration-300 ease-in-out"
-    preserveAspectRatio="xMidYMid meet"
-    viewBox="0 0 36.000000 75.000000"
-    height="80pt"
-    width="80pt"
-    xmlns="http://www.w3.org/2000/svg"
-    version="1.0"
-  >
-    <g
-      stroke="none"
-      fill="#ffffff"
-      transform="translate(0.000000,75.000000) scale(0.100000,-0.100000)"
-    >
-      <path
-        d="M188 481 c-42 -15 -84 -34 -93 -41 -27 -22 -14 -53 31 -74 30 -14 46  -30 60 -60 23 -50 55 -59 78 -24 24 36 56 137 56 174 0 23 -6 37 -19 44 -25 13 -23 13 -113 -19z m110 -20 c4 -28 -37 -158 -55 -173 -17 -14 -39 4 -48 39 -4 19 0 35 14 54 30 41 26 47 -9 14 -30 -29 -30 -29 -65 -12 -58 28 -47 42 65 81 41 14 80 24 85 22 6 -1 11 -13 13 -25z"
-      ></path>
-    </g>
-  </svg>
-  <svg
-    className="relative w-8 h-8 mr-2 z-10 transition-transform duration-300 ease-in-out transform hover:rotate-12 shadow-sm transition-colors duration-300 ease-in-out"
-    preserveAspectRatio="xMidYMid meet"
-    viewBox="0 0 36.000000 75.000000"
-    height="80pt"
-    width="80pt"
-    xmlns="http://www.w3.org/2000/svg"
-    version="1.0"
-  >
-    <g
-      stroke="none"
-      fill="#ffffff"
-      transform="translate(0.000000,75.000000) scale(0.100000,-0.100000)"
-    >
-      <path
-        d="M100 300 l0 -300 30 0 30 0 0 300 0 300 -30 0 -30 0 0 -300z"
-      ></path>
-    </g>
-  </svg>
-  <span
-    className="relative z-10 font-semibold text-lg transition-all duration-300 ease-in-out"
-    >Send Message</span
-  >
+          <button className="button">
+  <svg stroke="#ffffff" xml:space="preserve" viewBox="0 0 80 80" xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Capa_1" version="1.1" fill="#ffffff"><g strokeWidth="0" id="SVGRepo_bgCarrier"></g><g strokeLinejoin="round" strokeLinecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M64,48L64,48h-8V32h8c8.836,0,16-7.164,16-16S72.836,0,64,0c-8.837,0-16,7.164-16,16v8H32v-8c0-8.836-7.164-16-16-16 S0,7.164,0,16s7.164,16,16,16h8v16h-8l0,0l0,0C7.164,48,0,55.164,0,64s7.164,16,16,16c8.837,0,16-7.164,16-16l0,0v-8h16v7.98 c0,0.008-0.001,0.014-0.001,0.02c0,8.836,7.164,16,16,16s16-7.164,16-16S72.836,48.002,64,48z M64,8c4.418,0,8,3.582,8,8 s-3.582,8-8,8h-8v-8C56,11.582,59.582,8,64,8z M8,16c0-4.418,3.582-8,8-8s8,3.582,8,8v8h-8C11.582,24,8,20.417,8,16z M16,72 c-4.418,0-8-3.582-8-8s3.582-8,8-8l0,0h8v8C24,68.418,20.418,72,16,72z M32,48V32h16v16H32z M64,72c-4.418,0-8-3.582-8-8l0,0v-8 h7.999c4.418,0,8,3.582,8,8S68.418,72,64,72z"></path> </g> </g></svg>
+  command
 </button>
         </div>
         );

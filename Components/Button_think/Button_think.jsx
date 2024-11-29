@@ -4,10 +4,7 @@ import styles from "./Button_think.module.css";
 const Button_think = () => (
   <div>
     <button className={styles["button"]}>
-      Get in touch
-      <div className={styles["hoverEffect"]}>
-        <div></div>
-      </div>
+      <p className={styles["btn-txt"]}>Hello !</p>
     </button>
   </div>
 );
@@ -24,11 +21,8 @@ export default Button_think;
         const Button_think = () => (
          <div>
           <button className="button">
-Get in touch
-<div className="hoverEffect">
-<div>
-</div>
-</div></button>
+  <p className="btn-txt">Hello !</p>
+</button>
         </div>
         );
 

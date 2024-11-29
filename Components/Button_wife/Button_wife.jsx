@@ -3,20 +3,12 @@ import styles from "./Button_wife.module.css";
 
 const Button_wife = () => (
   <div>
-    <button className={styles["button"]}>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 97 162"
-        height="162"
-        width="97"
-        className="svg"
-      >
-        <path
-          fill="#262626"
-          d="M47.2124 0H54.0796V151.644L86.6991 128.712H97L50.646 162L0 128.712H10.3009L47.2124 151.644V0Z"
-        ></path>
-      </svg>
+    <button
+      className={
+        styles["btn"] + styles["btn-1"] + styles["hover-filled-slide-left"]
+      }
+    >
+      <span>hover me</span>
     </button>
   </div>
 );
@@ -32,11 +24,8 @@ export default Button_wife;
 
         const Button_wife = () => (
          <div>
-          <button className="button">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 97 162" height="162" width="97" className="svg">
-<path fill="#262626" d="M47.2124 0H54.0796V151.644L86.6991 128.712H97L50.646 162L0 128.712H10.3009L47.2124 151.644V0Z"></path>
-</svg>
-
+          <button className="btn btn-1 hover-filled-slide-left">
+    <span>hover me</span>
 </button>
         </div>
         );

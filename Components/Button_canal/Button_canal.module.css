@@ -1,86 +1,28 @@
 
-/* From Uiverse.io by LilaRest  - Tags: neumorphism, skeuomorphism, social, button, like, heart, realistic, favorite */
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 25px 20px 22px;
-  box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  background-color: #e8e8e8;
-  border-color: #ffe2e2;
-  border-style: solid;
-  border-width: 9px;
-  border-radius: 35px;
-  font-size: 25px;
-  font-weight: 900;
-  color: rgb(134, 124, 124);
-  font-family: monospace;
-  transition: transform 400ms cubic-bezier(.68,-0.55,.27,2.5), 
-  border-color 400ms ease-in-out,
-  background-color 400ms ease-in-out;
-  word-spacing: -2px;
+/* From Uiverse.io by PriyanshuGupta28 - Tags: button, bootsrap button, button hover effect , 2d button */
+.swipe-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  background: linear-gradient(45deg, #3498db, #e74c3c, #9b59b6, #2ecc71);
+  background-size: 200% 200%;
+  background-position: 0 0;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: background-position 0.5s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
-@keyframes movingBorders {
-  0% {
-    border-color: #fce4e4;
-  }
-
-  50% {
-    border-color: #ffd8d8;
-  }
-
-  90% {
-    border-color: #fce4e4;
-  }
+.swipe-button:hover {
+  background-position: 100% 100%;
+  transform: scale(1.05);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
-  background-color: #eee;
-  transform: scale(105%);
-  animation: movingBorders 3s infinite;
+.swipe-button:active {
+  transform: translateY(2px);
+  color: #fff;
+ /* Change text color when active */
 }
 
-button svg {
-  margin-right: 11px;
-  fill: rgb(255, 110, 110);
-  transition: opacity 100ms ease-in-out;
-}
-
-.filled {
-  position: absolute;
-  opacity: 0;
-  top: 20px;
-  left: 22px;
-}
-
-@keyframes beatingHeart {
-  0% {
-    transform: scale(1);
-  }
-
-  15% {
-    transform: scale(1.15);
-  }
-
-  30% {
-    transform: scale(1);
-  }
-
-  45% {
-    transform: scale(1.15);
-  }
-
-  60% {
-    transform: scale(1);
-  }
-}
-
-button:hover .empty {
-  opacity: 0;
-}
-
-button:hover .filled {
-  opacity: 1;
-  animation: beatingHeart 1.2s infinite;
-}

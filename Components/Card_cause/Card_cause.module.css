@@ -1,0 +1,83 @@
+
+/* From Uiverse.io by amanrajnarayan - Tags: card */
+.card {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  background: hsla(180, 68%, 54%, 1);
+  background: linear-gradient(135deg, rgb(39, 160, 220) 0%, rgb(220, 17, 149) 100%);
+  background: -moz-linear-gradient(135deg, rgb(44, 159, 208) 0%, rgb(222, 21, 151) 100%);
+  background: -webkit-linear-gradient(135deg, rgb(58, 103, 217) 0%, rgb(251, 18, 169) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3BD9D9", endColorstr="#FF0DAA", GradientType=1 );
+  /* background: hsla(197, 100%, 63%, 1);
+  background: linear-gradient(315deg, hsla(197, 100%, 63%, 1) 8%, hsla(294, 82%, 46%, 1) 100%);
+  background: -moz-linear-gradient(315deg, hsla(197, 100%, 63%, 1) 8%, hsla(294, 82%, 46%, 1) 100%);
+  background: -webkit-linear-gradient(315deg, hsla(197, 100%, 63%, 1) 8%, hsla(294, 82%, 46%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40c9ff", endColorstr="#C315D6", GradientType=1 ); */
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  /* justify-content: center;  */
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px;
+  border-radius: 7px;
+  margin: 0.4em;
+  padding: 0.7em;
+  box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.565);
+  transition: all 0.1s;
+}
+
+.item:hover {
+  transform: translateY(-0.2em);
+}
+
+.item:nth-child(2) {
+  border: none;
+}
+
+.heading {
+  margin: 1em;
+  margin-top: 0em;
+  margin-bottom: 1.5em;
+  padding: 2px 15px;
+  border-radius: 10px;
+  font-size: large;
+  box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.565);
+}
+
+.heading span {
+  color: #3bd9d9;
+  font-weight: 500;
+}
+
+button {
+  align-items: center;
+  background: none;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.558);
+  border-radius: 10px;
+  margin-top: 1.25em;
+  padding: 0.7em 0.7em;
+  font-size: 1em;
+  transition: all 0.2s;
+}
+
+button:hover {
+  border-color: #a8ff5c;
+  color: white;
+  /* box-shadow: 0em 0.5em 0.5em -0.4em #f1ff5c; */
+  box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.565);
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}

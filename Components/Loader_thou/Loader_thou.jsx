@@ -3,12 +3,27 @@ import styles from "./Loader_thou.module.css";
 
 const Loader_thou = () => (
   <div>
-    <div className={styles["loader3"]}>
-      <div className={styles["circle1"]}></div>
-      <div className={styles["circle1"]}></div>
-      <div className={styles["circle1"]}></div>
-      <div className={styles["circle1"]}></div>
-      <div className={styles["circle1"]}></div>
+    <div className={styles["loader"]}>
+      <div className={styles["box"] + styles["box-1"]}>
+        <div className={styles["side-left"]}></div>
+        <div className={styles["side-right"]}></div>
+        <div className={styles["side-top"]}></div>
+      </div>
+      <div className={styles["box"] + styles["box-2"]}>
+        <div className={styles["side-left"]}></div>
+        <div className={styles["side-right"]}></div>
+        <div className={styles["side-top"]}></div>
+      </div>
+      <div className={styles["box"] + styles["box-3"]}>
+        <div className={styles["side-left"]}></div>
+        <div className={styles["side-right"]}></div>
+        <div className={styles["side-top"]}></div>
+      </div>
+      <div className={styles["box"] + styles["box-4"]}>
+        <div className={styles["side-left"]}></div>
+        <div className={styles["side-right"]}></div>
+        <div className={styles["side-top"]}></div>
+      </div>
     </div>
   </div>
 );
@@ -24,12 +39,27 @@ export default Loader_thou;
 
         const Loader_thou = () => (
          <div>
-          <div className="loader3">
-  <div className="circle1"></div>
-  <div className="circle1"></div>
-  <div className="circle1"></div>
-  <div className="circle1"></div>
-  <div className="circle1"></div>
+          <div className="loader">
+  <div className="box box-1">
+    <div className="side-left"></div>
+    <div className="side-right"></div>
+    <div className="side-top"></div>
+  </div>
+  <div className="box box-2">
+    <div className="side-left"></div>
+    <div className="side-right"></div>
+    <div className="side-top"></div>
+  </div>
+  <div className="box box-3">
+    <div className="side-left"></div>
+    <div className="side-right"></div>
+    <div className="side-top"></div>
+  </div>
+  <div className="box box-4">
+    <div className="side-left"></div>
+    <div className="side-right"></div>
+    <div className="side-top"></div>
+  </div>
 </div>
         </div>
         );

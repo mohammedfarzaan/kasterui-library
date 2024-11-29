@@ -1,19 +1,69 @@
 import React from "react";
+import styles from "./Button_sat.module.css";
 
 const Button_sat = () => (
   <div>
-    <button className="border text-gray-50  duration-300 relative group cursor-pointer   overflow-hidden h-16 w-48 rounded-md bg-neutral-800 p-2  font-extrabold hover:bg-sky-700">
-      <div className="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-16 h-16 rounded-full group-hover:scale-150  duration-700 right-12 top-12 bg-yellow-500"></div>
-      <div className="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-12 h-12 rounded-full group-hover:scale-150  duration-700 right-20 -top-6 bg-orange-500"></div>
-      <div className="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-8 h-8   rounded-full group-hover:scale-150  duration-700 right-32 top-6 bg-pink-500"></div>
-      <div className="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-4 h-4   rounded-full group-hover:scale-150  duration-700 right-2 top-12 bg-red-600"></div>
-      <p className="z-10 absolute bottom-2 left-2">See more</p>
-    </button>
+    <div className={styles["btn-container"]}>
+      <button className={styles["button"]}>
+        <span>Join Today </span>
+        <svg
+          viewBox="0 0 48 48"
+          height="1.2em"
+          width="1.2em"
+          className={styles["svg"]}
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M42 24H6m24-12l12 12l-12 12"
+            strokeWidth="4"
+            strokeLinejoin="round"
+            strokeLinecap="round"
+            stroke="currentColor"
+            fill="none"
+          ></path>
+        </svg>
+      </button>
+    </div>
   </div>
 );
 
 export default Button_sat;
-
 {
-  /* */
+  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
+}
+{
+  /*
+            
+        import React from 'react';
+
+        const Button_sat = () => (
+         <div>
+          <div className="btn-container">
+  <button className="button">
+    <span>Join Today </span>
+    <svg
+      viewBox="0 0 48 48"
+      height="1.2em"
+      width="1.2em"
+      className="svg"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M42 24H6m24-12l12 12l-12 12"
+        strokeWidth="4"
+        strokeLinejoin="round"
+        strokeLinecap="round"
+        stroke="currentColor"
+        fill="none"
+      ></path>
+    </svg>
+  </button>
+</div>
+        </div>
+        );
+
+        export default Button_sat;
+        
+        
+         */
 }

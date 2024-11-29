@@ -3,24 +3,7 @@ import styles from "./Loader_common.module.css";
 
 const Loader_common = () => (
   <div>
-    <div className={styles["container"]}>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-      <div className={styles["dot"]}></div>
-    </div>
+    <div className={styles["spinner"]}></div>
   </div>
 );
 
@@ -35,24 +18,7 @@ export default Loader_common;
 
         const Loader_common = () => (
          <div>
-          <div className="container">
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-  <div className="dot"></div>
-</div>
+          <div className="spinner"></div>
         </div>
         );
 

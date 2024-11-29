@@ -3,10 +3,10 @@ import styles from "./Loader_would.module.css";
 
 const Loader_would = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["ball"]}></div>
-      <div className={styles["ball"]}></div>
-      <div className={styles["ball"]}></div>
+    <div className={styles["container"]}>
+      <div className={styles["loader"]}>
+        <div className={styles["shadow"]}></div>
+      </div>
     </div>
   </div>
 );
@@ -22,10 +22,10 @@ export default Loader_would;
 
         const Loader_would = () => (
          <div>
-          <div className="loader">
-    <div className="ball"></div>
-    <div className="ball"></div>
-    <div className="ball"></div>
+          <div className="container">
+<div className="loader">
+<div className="shadow"></div>
+</div>
 </div>
         </div>
         );

@@ -3,7 +3,7 @@ import styles from "./Button_pan.module.css";
 
 const Button_pan = () => (
   <div>
-    <button>Hover Me</button>
+    <button>Hover Me!</button>
   </div>
 );
 
@@ -19,7 +19,7 @@ export default Button_pan;
         const Button_pan = () => (
          <div>
           <button>
-  Hover Me
+  Hover Me!
 </button>
         </div>
         );

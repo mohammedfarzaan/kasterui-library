@@ -3,9 +3,8 @@ import styles from "./Button_widely.module.css";
 
 const Button_widely = () => (
   <div>
-    <button className={styles["button"]}>
-      Join Today
-      <p>→</p>
+    <button className={styles["btn-9"]}>
+      <span>Button</span>
     </button>
   </div>
 );
@@ -21,10 +20,7 @@ export default Button_widely;
 
         const Button_widely = () => (
          <div>
-          <button className="button">
-  Join Today
-  <p>→</p>
-</button>
+          <button className="btn-9"><span>Button</span></button>
         </div>
         );
 

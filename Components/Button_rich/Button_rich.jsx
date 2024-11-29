@@ -3,7 +3,9 @@ import styles from "./Button_rich.module.css";
 
 const Button_rich = () => (
   <div>
-    <button className={styles["button"]}>Enter</button>
+    <button className={styles["button"]}>
+      <span>Contact</span>
+    </button>
   </div>
 );
 
@@ -18,7 +20,9 @@ export default Button_rich;
 
         const Button_rich = () => (
          <div>
-          <button className="button">Enter</button>
+          <button className="button">
+  <span>Contact</span>
+</button>
         </div>
         );
 

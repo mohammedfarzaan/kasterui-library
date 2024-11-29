@@ -1,51 +1,18 @@
 import React from "react";
-import styles from "./Button_aside.module.css";
 
 const Button_aside = () => (
   <div>
-    <button type="button" className={styles["button"]}>
-      <span className={styles["button__text"]}>Add Item</span>
-      <span className={styles["button__icon"]}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          viewBox="0 0 24 24"
-          strokeWidth="2"
-          strokeLinejoin="round"
-          strokeLinecap="round"
-          stroke="currentColor"
-          height="24"
-          fill="none"
-          className="svg"
-        >
-          <line y2="19" y1="5" x2="12" x1="12"></line>
-          <line y2="12" y1="12" x2="19" x1="5"></line>
-        </svg>
-      </span>
+    <button
+      className="relative px-8 py-2 rounded-md bg-white isolation-auto z-10 border-2 border-lime-500
+        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-lime-500 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"
+    >
+      Hover Me
     </button>
   </div>
 );
 
 export default Button_aside;
-{
-  /* If The CSS Is Not Being Applied Properly Due To module.css Not Being Scoped Globally, Delete The Code Above, Uncomment The Code Below, And Paste The CSS Into Your Global.CSS File. This Should Resolve The Issue. */
-}
-{
-  /*
-            
-        import React from 'react';
 
-        const Button_aside = () => (
-         <div>
-          <button type="button" className="button">
-  <span className="button__text">Add Item</span>
-  <span className="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" stroke="currentColor" height="24" fill="none" className="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
-</button>
-        </div>
-        );
-
-        export default Button_aside;
-        
-        
-         */
+{
+  /* */
 }

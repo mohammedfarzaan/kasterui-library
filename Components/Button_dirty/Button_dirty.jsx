@@ -3,7 +3,7 @@ import styles from "./Button_dirty.module.css";
 
 const Button_dirty = () => (
   <div>
-    <button className={styles["button"]}>Hover Over Me</button>
+    <button className={styles["button"]}>Duolingo Button</button>
   </div>
 );
 
@@ -18,7 +18,9 @@ export default Button_dirty;
 
         const Button_dirty = () => (
          <div>
-          <button className="button">Hover Over Me</button>
+          <button className="button">
+  Duolingo Button
+</button>
         </div>
         );
 

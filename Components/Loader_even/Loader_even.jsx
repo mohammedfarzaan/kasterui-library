@@ -4,11 +4,7 @@ import styles from "./Loader_even.module.css";
 const Loader_even = () => (
   <div>
     <div className={styles["loader"]}>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
-      <div className={styles["circle"]}></div>
+      <div className={styles["inner"]}></div>
     </div>
   </div>
 );
@@ -25,12 +21,9 @@ export default Loader_even;
         const Loader_even = () => (
          <div>
           <div className="loader">
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="circle"></div>
+  <div className="inner">
   </div>
+</div>
         </div>
         );
 

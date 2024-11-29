@@ -3,19 +3,15 @@ import styles from "./Loader_shown.module.css";
 
 const Loader_shown = () => (
   <div>
-    <div className={styles["loader"]}>
-      <div className={styles["bar1"]}></div>
-      <div className={styles["bar2"]}></div>
-      <div className={styles["bar3"]}></div>
-      <div className={styles["bar4"]}></div>
-      <div className={styles["bar5"]}></div>
-      <div className={styles["bar6"]}></div>
-      <div className={styles["bar7"]}></div>
-      <div className={styles["bar8"]}></div>
-      <div className={styles["bar9"]}></div>
-      <div className={styles["bar10"]}></div>
-      <div className={styles["bar11"]}></div>
-      <div className={styles["bar12"]}></div>
+    <div className={styles["loader-container"]}>
+      <div className={styles["loader"]}>
+        <div className={styles["face"] + styles["front"]}></div>
+        <div className={styles["face"] + styles["back"]}></div>
+        <div className={styles["face"] + styles["left"]}></div>
+        <div className={styles["face"] + styles["right"]}></div>
+        <div className={styles["face"] + styles["top"]}></div>
+        <div className={styles["face"] + styles["bottom"]}></div>
+      </div>
     </div>
   </div>
 );
@@ -31,20 +27,16 @@ export default Loader_shown;
 
         const Loader_shown = () => (
          <div>
-          <div className="loader">
-    <div className="bar1"></div>
-    <div className="bar2"></div>
-    <div className="bar3"></div>
-    <div className="bar4"></div>
-    <div className="bar5"></div>
-    <div className="bar6"></div>
-    <div className="bar7"></div>
-    <div className="bar8"></div>
-    <div className="bar9"></div>
-    <div className="bar10"></div>
-    <div className="bar11"></div>
-    <div className="bar12"></div>
-</div>
+          <div className="loader-container">
+    <div className="loader">
+      <div className="face front"></div>
+      <div className="face back"></div>
+      <div className="face left"></div>
+      <div className="face right"></div>
+      <div className="face top"></div>
+      <div className="face bottom"></div>
+    </div>
+  </div>
         </div>
         );
 

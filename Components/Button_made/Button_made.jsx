@@ -3,7 +3,7 @@ import styles from "./Button_made.module.css";
 
 const Button_made = () => (
   <div>
-    <button className={styles["btn"]}> Hover me</button>
+    <button>Button</button>
   </div>
 );
 
@@ -18,7 +18,8 @@ export default Button_made;
 
         const Button_made = () => (
          <div>
-          <button className="btn"> Hover me
+          <button>
+  Button
 </button>
         </div>
         );

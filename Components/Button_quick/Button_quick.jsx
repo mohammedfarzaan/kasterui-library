@@ -3,12 +3,7 @@ import styles from "./Button_quick.module.css";
 
 const Button_quick = () => (
   <div>
-    <span
-      data-active-content="🤨"
-      data-hover-content="😑"
-      data-content="😐"
-      className={styles["💀"]}
-    ></span>
+    <button className={styles["button"]}> Hey, Hover Me</button>
   </div>
 );
 
@@ -23,12 +18,8 @@ export default Button_quick;
 
         const Button_quick = () => (
          <div>
-          <span
-  data-active-content="🤨"
-  data-hover-content="😑"
-  data-content="😐"
-  className="💀"
-></span>
+          <button className="button"> Hey, Hover Me
+</button>
         </div>
         );
 

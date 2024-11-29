@@ -3,10 +3,16 @@ import styles from "./Loader_fellow.module.css";
 
 const Loader_fellow = () => (
   <div>
-    <div className={styles["cssloader"]}>
-      <div className={styles["triangle1"]}></div>
-      <div className={styles["triangle2"]}></div>
-      <p className={styles["text"]}>Please Wait</p>
+    <div className={styles["loader"]}>
+      <div className={styles["l"]}></div>
+      <div className={styles["l"]}></div>
+      <div className={styles["l"]}></div>
+      <div className={styles["l"]}></div>
+      <div className={styles["l"]}></div>
+      <div className={styles["l"]}></div>
+      <div className={styles["l"]}></div>
+      <div className={styles["l"]}></div>
+      <div className={styles["l"]}></div>
     </div>
   </div>
 );
@@ -22,10 +28,16 @@ export default Loader_fellow;
 
         const Loader_fellow = () => (
          <div>
-          <div className="cssloader">
-  <div className="triangle1"></div>
-  <div className="triangle2"></div>
-  <p className="text">Please Wait</p>
+          <div className="loader">
+  <div className="l"></div>
+  <div className="l"></div>
+  <div className="l"></div>
+  <div className="l"></div>
+  <div className="l"></div>
+  <div className="l"></div>
+  <div className="l"></div>
+  <div className="l"></div>
+  <div className="l"></div>
 </div>
         </div>
         );
